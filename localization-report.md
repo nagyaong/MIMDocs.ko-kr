@@ -5,9 +5,9 @@
  -------- | ----- 
  Total Files | 278
 [ Handoff Failed Files ](#handoff-failed-list)| 0
-[ Handoff Success Files ](#handoff-success-list)| 151
+[ Handoff Success Files ](#handoff-success-list)| 149
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 64
+[ Archive Success Files ](#archive-success-list)| 66
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 0
@@ -167,8 +167,6 @@
  [MIMDocs\Understand\media\MIM-Hybrid-downloadReportAgent.jpg](https://github.com/Microsoft/MIMDocs-pr/blob/d3196e23a3bcacc8e563d6a16ec00be7be68fb6d/MIMDocs/Understand/media/MIM-Hybrid-downloadReportAgent.jpg) | HandedOffSuccess | [Details](#7c71abe1409d6676539927896ab4415a043d4340271)
  [MIMDocs\Understand\media\MIM-Hybrid-howitworks.png](https://github.com/Microsoft/MIMDocs-pr/blob/d3196e23a3bcacc8e563d6a16ec00be7be68fb6d/MIMDocs/Understand/media/MIM-Hybrid-howitworks.png) | HandedOffSuccess | [Details](#47bcebc7b3a069d07f32a5a211af8cb66ad3ce51272)
  [MIMDocs\Understand\media\MIM-Hybrid-passwordreset.jpg](https://github.com/Microsoft/MIMDocs-pr/blob/a2056fd081b7e81cea4bb5b47c5543170f410c8c/MIMDocs/Understand/media/MIM-Hybrid-passwordreset.jpg) | HandedOffSuccess | [Details](#f21f8cd1fd0c882b8768f543e10487140c67dc1c273)
- [MIMDocs\Understand\microsoft-identity-manager-2016.md](https://github.com/Microsoft/MIMDocs-pr/blob/f75dfdf78350f9d03dfabd0cbe60647163ff2869/MIMDocs/Understand/microsoft-identity-manager-2016.md) | HandedOffSuccess | [Details](#41aafddbdeb5719fa87bcd42d181b5288a175f6d274)
- [MIMDocs\Understand\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/bd715d12900298a48dbe4fdcce55ee562652a5b8/MIMDocs/Understand/TOC.md) | HandedOffSuccess | [Details](#451ca2da744a506934c79ff0a9abef9e6963b68d275)
 
 ## <a name='archive-failed-list'></a> Archive Failed File List
 
@@ -239,6 +237,8 @@
  [MIMDocs\toc.md](https://github.com/Microsoft/MIMDocs-pr/blob/1a14f9ebdec94d9e153f802b6c02fd229ba6f633/MIMDocs/toc.md) | ArchivedSuccess | [Details](#b23b075b34e915308d532dce949a691881c84d56264)
  [MIMDocs\Troubleshoot\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/a2056fd081b7e81cea4bb5b47c5543170f410c8c/MIMDocs/Troubleshoot/TOC.md) | ArchivedSuccess | [Details](#3036877a4f389967e58c7aa350a9c1fa54ecb5a4267)
  [MIMDocs\Understand\identity-manager-hybrid-reporting-azure.md](https://github.com/Microsoft/MIMDocs-pr/blob/c4a8b95ea7b029c47c0cb42829929c8c262ba897/MIMDocs/Understand/identity-manager-hybrid-reporting-azure.md) | ArchivedSuccess | [Details](#03b75e428c920f68b1816a934cc4ffed8cb47be0269)
+ [MIMDocs\Understand\microsoft-identity-manager-2016.md](https://github.com/Microsoft/MIMDocs-pr/blob/f75dfdf78350f9d03dfabd0cbe60647163ff2869/MIMDocs/Understand/microsoft-identity-manager-2016.md) | ArchivedSuccess | [Details](#41aafddbdeb5719fa87bcd42d181b5288a175f6d274)
+ [MIMDocs\Understand\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/bd715d12900298a48dbe4fdcce55ee562652a5b8/MIMDocs/Understand/TOC.md) | ArchivedSuccess | [Details](#451ca2da744a506934c79ff0a9abef9e6963b68d275)
 
 ## <a name='handback-failed-list'></a> Handback Failed File List
 
@@ -3750,25 +3750,25 @@
 * [Back to Top](#report-top)
 
 ##### <a name='41aafddbdeb5719fa87bcd42d181b5288a175f6d274'></a> Source: [MIMDocs\Understand\microsoft-identity-manager-2016.md](https://github.com/Microsoft/MIMDocs-pr/blob/f75dfdf78350f9d03dfabd0cbe60647163ff2869/MIMDocs/Understand/microsoft-identity-manager-2016.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [microsoft-identity-manager-2016.c859ce21f65f43a82f84385a63d9b72e566e0aa6.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/d6bbd4129641ad550d7087389d8dc0dccbdc6116/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/microsoft-identity-manager-2016.c859ce21f65f43a82f84385a63d9b72e566e0aa6.ko-kr.xlf)
 * Handoff Datetime: 2016-04-11 22:07:14
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [microsoft-identity-manager-2016.c859ce21f65f43a82f84385a63d9b72e566e0aa6.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/3ad1ebba04f8125f793d3911661c36a11d575207/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/archive/microsoft-identity-manager-2016.c859ce21f65f43a82f84385a63d9b72e566e0aa6.ko-kr.xlf)
+* Archive Datetime: 2016-04-16 01:32:27
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='451ca2da744a506934c79ff0a9abef9e6963b68d275'></a> Source: [MIMDocs\Understand\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/bd715d12900298a48dbe4fdcce55ee562652a5b8/MIMDocs/Understand/TOC.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/a62ae3bb410d5350124c34b8d5ed48f2088a885f/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf)
 * Handoff Datetime: 2016-03-30 18:20:03
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/3ad1ebba04f8125f793d3911661c36a11d575207/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/archive/TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf)
+* Archive Datetime: 2016-04-16 01:32:27
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)

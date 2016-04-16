@@ -8062,9 +8062,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.ko-kr\\master\\archive\\TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf",
+      "ArchiveFileCommit": "3ad1ebba04f8125f793d3911661c36a11d575207",
+      "ArchiveFileDateTime": "2016-04-16T01:32:27.9540821Z",
       "ArchiveException": null
     },
     "0d5da3a79e38b3a1a55e76fc841536ddca5096ce": {
@@ -11252,9 +11252,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.ko-kr\\master\\archive\\microsoft-identity-manager-2016.c859ce21f65f43a82f84385a63d9b72e566e0aa6.ko-kr.xlf",
+      "ArchiveFileCommit": "3ad1ebba04f8125f793d3911661c36a11d575207",
+      "ArchiveFileDateTime": "2016-04-16T01:32:27.9540821Z",
       "ArchiveException": null
     },
     "03b75e428c920f68b1816a934cc4ffed8cb47be0": {
