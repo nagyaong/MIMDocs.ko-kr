@@ -1,39 +1,11 @@
 # <a name='report-top'></a> Localization Archive Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [MIMDocs\Understand\microsoft-identity-manager-2016.md](https://github.com/Microsoft/MIMDocs-pr/blob/f75dfdf78350f9d03dfabd0cbe60647163ff2869/MIMDocs/Understand/microsoft-identity-manager-2016.md) | ArchivedSuccess | [Details](#41aafddbdeb5719fa87bcd42d181b5288a175f6d274)
- [MIMDocs\Understand\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/bd715d12900298a48dbe4fdcce55ee562652a5b8/MIMDocs/Understand/TOC.md) | ArchivedSuccess | [Details](#451ca2da744a506934c79ff0a9abef9e6963b68d275)
 
 ## Item Details
-##### <a name='41aafddbdeb5719fa87bcd42d181b5288a175f6d274'></a> Source: [MIMDocs\Understand\microsoft-identity-manager-2016.md](https://github.com/Microsoft/MIMDocs-pr/blob/f75dfdf78350f9d03dfabd0cbe60647163ff2869/MIMDocs/Understand/microsoft-identity-manager-2016.md)
-* Status: ArchivedSuccess
-* Target File: 
-* Handoff File: [microsoft-identity-manager-2016.c859ce21f65f43a82f84385a63d9b72e566e0aa6.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/d6bbd4129641ad550d7087389d8dc0dccbdc6116/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/microsoft-identity-manager-2016.c859ce21f65f43a82f84385a63d9b72e566e0aa6.ko-kr.xlf)
-* Handoff Datetime: 2016-04-11 22:07:14
-* Handoff Reason: Include
-* Archive File: [microsoft-identity-manager-2016.c859ce21f65f43a82f84385a63d9b72e566e0aa6.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/3ad1ebba04f8125f793d3911661c36a11d575207/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/archive/microsoft-identity-manager-2016.c859ce21f65f43a82f84385a63d9b72e566e0aa6.ko-kr.xlf)
-* Archive Datetime: 2016-04-16 01:32:27
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='451ca2da744a506934c79ff0a9abef9e6963b68d275'></a> Source: [MIMDocs\Understand\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/bd715d12900298a48dbe4fdcce55ee562652a5b8/MIMDocs/Understand/TOC.md)
-* Status: ArchivedSuccess
-* Target File: 
-* Handoff File: [TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/a62ae3bb410d5350124c34b8d5ed48f2088a885f/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf)
-* Handoff Datetime: 2016-03-30 18:20:03
-* Handoff Reason: Include
-* Archive File: [TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/3ad1ebba04f8125f793d3911661c36a11d575207/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/archive/TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf)
-* Archive Datetime: 2016-04-16 01:32:27
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
