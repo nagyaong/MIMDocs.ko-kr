@@ -10614,9 +10614,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.ko-kr\\master\\archive\\certificate-manager-for-non-administrators.2d024c7e4e9ca80f8293c9ea15d5d5fe93a207d7.ko-kr.xlf",
+      "ArchiveFileCommit": "0746d43845a8775c7503d2c4429b89631de35c50",
+      "ArchiveFileDateTime": "2016-04-16T01:23:07.3083842Z",
       "ArchiveException": null
     },
     "6b58093744656b9bfa62c1cfcab340ea88e6e168": {
@@ -10643,9 +10643,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.ko-kr\\master\\archive\\certificate-manager-for-software-certificates.e916e294593565422260dde1e4f131163490451c.ko-kr.xlf",
+      "ArchiveFileCommit": "0746d43845a8775c7503d2c4429b89631de35c50",
+      "ArchiveFileDateTime": "2016-04-16T01:23:07.3083842Z",
       "ArchiveException": null
     },
     "6deaa38f2cde7490ea2f18caa4294d525226efb9": {
@@ -10672,9 +10672,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.ko-kr\\master\\archive\\deploying-mim-password-change-notification-service-on-domain-controller.afdb373626bbd0d122da747e9f586318deea2e70.ko-kr.xlf",
+      "ArchiveFileCommit": "0746d43845a8775c7503d2c4429b89631de35c50",
+      "ArchiveFileDateTime": "2016-04-16T01:23:07.3083842Z",
       "ArchiveException": null
     },
     "3b6542ab582661415ac30870c9e54247a3cbbe50": {
@@ -10701,9 +10701,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.ko-kr\\master\\archive\\install-mim-service-portal.bc0a636322f2b40d28e326917fd5d60c15ff855e.ko-kr.xlf",
+      "ArchiveFileCommit": "0746d43845a8775c7503d2c4429b89631de35c50",
+      "ArchiveFileDateTime": "2016-04-16T01:23:07.3083842Z",
       "ArchiveException": null
     },
     "7bd90e9eb8cc80c6dd45dcd8311689d7eb6f6079": {
@@ -10730,9 +10730,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.ko-kr\\master\\archive\\install-mim-sync.187fbc84d7198ab90d1445b38ea0a3044b228547.ko-kr.xlf",
+      "ArchiveFileCommit": "0746d43845a8775c7503d2c4429b89631de35c50",
+      "ArchiveFileDateTime": "2016-04-16T01:23:07.3083842Z",
       "ArchiveException": null
     },
     "cb21ca9c9116e7b6af0848fdd0ceb0437c46ced9": {
@@ -10759,9 +10759,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.ko-kr\\master\\archive\\install-mim-sync-ad-service.2a07d4547ca2bf0ca43e7ed04fa3bf20de000a33.ko-kr.xlf",
+      "ArchiveFileCommit": "0746d43845a8775c7503d2c4429b89631de35c50",
+      "ArchiveFileDateTime": "2016-04-16T01:23:07.3083842Z",
       "ArchiveException": null
     },
     "023100b79dea1a512ccd610cd7ec7cac228eff70": {
