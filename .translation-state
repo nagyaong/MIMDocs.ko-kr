@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "75954d5e949e860350085aef0609ed73c82f8c57",
+  "LastProcessedCommit": "181c38d0ac74f884a0a6e58b40b0ccb8b86c1ac5",
   "LastTranslatedCommit": "c526f87e2e002ff3d0a95798a0414035b25c08b6",
   "Items": {
     "c1e15c9548e46cbbff7810e63478074ceeb06152": {
@@ -12942,6 +12942,36 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.ko-kr\\master\\identity-manager-hybrid-reporting-azure.50c26252fc76f6c50be4c477e24cfaf05cf3c4c7.ko-kr.xlf",
       "HandoffFileCommit": "5d893410036aa9216d1ede14b28f0e6953a46217",
       "HandoffDateTime": "2016-05-16T15:33:50.2557795Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "49841c26e9ecf9d5ea3642e5d9a80883a50eaa18": {
+      "FileHash": "49841c26e9ecf9d5ea3642e5d9a80883a50eaa18",
+      "SourceFileCommit": "4c81ee602b46fa555d6fcb81f91b07e0eee7049f",
+      "SourceFilePath": "MIMDocs\\index.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "MIMDocs\\index.md"
+      ],
+      "HasMetadata": true,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.ko-kr\\master\\index.a54b2324d63a6d513b6900195023b9a8089553b4.ko-kr.xlf",
+      "HandoffFileCommit": "ab9a5b97bee27a5fa7536fa33866a250a25c19cb",
+      "HandoffDateTime": "2016-05-17T20:01:34.8320901Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
