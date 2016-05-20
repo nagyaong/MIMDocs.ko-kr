@@ -1,5 +1,5 @@
-# [이해 및 탐색](/microsoft-identity-manager/Understand/microsoft-identity-manager-2016)
-# [계획 및 디자인](/microsoft-identity-manager/PlanDesign/microsoft-identity-manager-2016-supported-platforms)
+# [이해 및 탐색](/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016)
+# [계획 및 디자인](/microsoft-identity-manager/plan-design/microsoft-identity-manager-2016-supported-platforms)
 # [배포 및 사용](microsoft-identity-manager-deploy.md)
 ## [처음 배포](microsoft-identity-manager-deploy.md)
 ### [도메인 설정](preparing-domain.md)
@@ -20,6 +20,6 @@
 # [개발자 참조](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=Apr16_HO4-->
 
 
