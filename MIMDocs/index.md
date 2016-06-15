@@ -21,12 +21,15 @@ ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
     <section id="hero-content">
       <h1>Microsoft Identity Manager 설명서</h1>
       <h2>MIM(Microsoft Identity Manager)은 온-프레미스 ID와 ID 동기화 및 ID 도용 저지 등을 포함한 액세스 관리 기능을 제공합니다.</h2>
-      <h3>MIM의 새로운 기능 <a href="http://www.microsoft.com/en-us/server-cloud/products/microsoft-identity-manager/" target="\_blank">제품 페이지 방문 &rarr;</a></h3>
+      <h3>MIM의 새로운 기능 <a href="http://www.microsoft.com/en-us/server-cloud/products/microsoft-identity-manager/" target="\_blank">제품 페이지 방문 &rarr;</a></h3>     
     </section>
     <aside class="alert section-border">
       <p>실습 준비</p>
       <ol class="action-list">
-        <li><a href="https://www.microsoft.com/en-us/evalcenter/evaluate-microsoft-identity-manager-2016" target="\_blank" class="button-bordered button-translucent">지금 사용해 보기</a></li>
+        <li><a href="https://www.microsoft.com/evalcenter/evaluate-microsoft-identity-manager-2016" target="\_blank" class="button-bordered button-translucent">무료 평가판 시작</a></li>
+      </ol>
+      <ol class="action-list">
+        <li><a href="http://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=61395" target="\_blank" class="button-bordered button-translucent">향후 기능 미리 보기</a></li>
       </ol>
     </aside>
     <section id="featured" class="container">
@@ -137,6 +140,6 @@ ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
 </article>
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 
