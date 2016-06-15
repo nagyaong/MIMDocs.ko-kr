@@ -9,8 +9,8 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 17
-[ In Sync Handback Files ](#insync-handback-success-list)| 12
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 16
+[ In Sync Handback Files ](#insync-handback-success-list)| 13
 [ Ignored Files ](#ignored-list)| 107
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -179,7 +179,6 @@
  [MIMDocs\DeployUse\deploying-mim-password-change-notification-service-on-domain-controller.md](https://github.com/Microsoft/MIMDocs-pr/blob/875ed6b96929822ac166a4a262cc8547a4ea3b2a/MIMDocs/DeployUse/deploying-mim-password-change-notification-service-on-domain-controller.md) | OutofSyncHandedBackSuccess | [Details](#85e83b85f047ca2c2648b42ec68b832caae645ee8)
  [MIMDocs\DeployUse\install-mim-service-portal.md](https://github.com/Microsoft/MIMDocs-pr/blob/c023d147d0fcc1525fefbe866c952e217f7bee6b/MIMDocs/DeployUse/install-mim-service-portal.md) | OutofSyncHandedBackSuccess | [Details](#eb2af412d9638035de591197fa191e990ade0ca110)
  [MIMDocs\DeployUse\install-mim-sync.md](https://github.com/Microsoft/MIMDocs-pr/blob/c023d147d0fcc1525fefbe866c952e217f7bee6b/MIMDocs/DeployUse/install-mim-sync.md) | OutofSyncHandedBackSuccess | [Details](#8a99b3a291d2b145f453732a72244c43f9c535d612)
- [MIMDocs\DeployUse\install-mim-sync-ad-service.md](https://github.com/Microsoft/MIMDocs-pr/blob/8fd779bcc4d41b6e67d0fa31aa0f37c4ea2b410a/MIMDocs/DeployUse/install-mim-sync-ad-service.md) | OutofSyncHandedBackSuccess | [Details](#f4e94980c6a03b08221fd46e19c421cce226086d11)
  [MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md](https://github.com/Microsoft/MIMDocs-pr/blob/7e61e201b277a2e8ec9fee785e9e34fca3b1cb29/MIMDocs/DeployUse/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md) | OutofSyncHandedBackSuccess | [Details](#24a7bf5bfb0a7450becd08be6743ed7ab175555965)
  [MIMDocs\DeployUse\microsoft-identity-manager-deploy.md](https://github.com/Microsoft/MIMDocs-pr/blob/ca7fdef81eb8a68aff46df528e1989f019f5d2a4/MIMDocs/DeployUse/microsoft-identity-manager-deploy.md) | OutofSyncHandedBackSuccess | [Details](#a56ead9777f1dad1aa0d214a506cf1242f51e16766)
  [MIMDocs\DeployUse\prepare-server-exchange.md](https://github.com/Microsoft/MIMDocs-pr/blob/c023d147d0fcc1525fefbe866c952e217f7bee6b/MIMDocs/DeployUse/prepare-server-exchange.md) | OutofSyncHandedBackSuccess | [Details](#b69ea20f375869d4ad08987a08aba05913fd1db167)
@@ -197,6 +196,7 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [MIMDocs\DeployUse\certificate-manager-for-software-certificates.md](https://github.com/Microsoft/MIMDocs-pr/blob/f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda/MIMDocs/DeployUse/certificate-manager-for-software-certificates.md) | InSyncHandedBackSuccess | [Details](#6b58093744656b9bfa62c1cfcab340ea88e6e1687)
+ [MIMDocs\DeployUse\install-mim-sync-ad-service.md](https://github.com/Microsoft/MIMDocs-pr/blob/8fd779bcc4d41b6e67d0fa31aa0f37c4ea2b410a/MIMDocs/DeployUse/install-mim-sync-ad-service.md) | InSyncHandedBackSuccess | [Details](#f4e94980c6a03b08221fd46e19c421cce226086d11)
  [MIMDocs\DeployUse\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/4426a38419725d2b4f0e3d2b997f1c876a817f2f/MIMDocs/DeployUse/TOC.md) | InSyncHandedBackSuccess | [Details](#2a5810d92b29e1200c68aacdcf180229eae342cd72)
  [MIMDocs\DeployUse\working-with-identity-manager-hybrid-reporting.md](https://github.com/Microsoft/MIMDocs-pr/blob/f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda/MIMDocs/DeployUse/working-with-identity-manager-hybrid-reporting.md) | InSyncHandedBackSuccess | [Details](#e2d0bd6120628d4fd2a14718fc205cde976c778573)
  [MIMDocs\DeployUse\working-with-mim-certificate-manager.md](https://github.com/Microsoft/MIMDocs-pr/blob/f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda/MIMDocs/DeployUse/working-with-mim-certificate-manager.md) | InSyncHandedBackSuccess | [Details](#3e0e6cea0b268836bb6347e81694deec93320ce374)
@@ -478,18 +478,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='f4e94980c6a03b08221fd46e19c421cce226086d11'></a> Source: [MIMDocs\DeployUse\install-mim-sync-ad-service.md](https://github.com/Microsoft/MIMDocs-pr/blob/8fd779bcc4d41b6e67d0fa31aa0f37c4ea2b410a/MIMDocs/DeployUse/install-mim-sync-ad-service.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [MIMDocs\DeployUse\install-mim-sync-ad-service.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/defe6da513b408f9801216bcfd40c53a4b0faae1/MIMDocs/DeployUse/install-mim-sync-ad-service.md)
 * Handoff File: [install-mim-sync-ad-service.2a07d4547ca2bf0ca43e7ed04fa3bf20de000a33.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/58ee361746009cdd3e263a95a8b3f347bd18473a/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/install-mim-sync-ad-service.2a07d4547ca2bf0ca43e7ed04fa3bf20de000a33.ko-kr.xlf)
 * Handoff Datetime: 2016-06-03 18:44:39
 * Handoff Reason: Include
 * Archive File: [install-mim-sync-ad-service.2a07d4547ca2bf0ca43e7ed04fa3bf20de000a33.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/328250d1bfc060199165aabd4a12c67c8c56e196/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/archive/install-mim-sync-ad-service.2a07d4547ca2bf0ca43e7ed04fa3bf20de000a33.ko-kr.xlf)
 * Archive Datetime: 2016-06-09 00:20:09
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [MIMDocs\DeployUse\install-mim-sync-ad-service.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/5bb9efd53b82fff8670802d166f99a52d18f1434/MIMDocs/DeployUse/install-mim-sync-ad-service.md)
-* Current Handback File: [install-mim-sync-ad-service.2a07d4547ca2bf0ca43e7ed04fa3bf20de000a33.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/ec93569b79fe703af18819b36e5f1ca48e772799/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/install-mim-sync-ad-service.2a07d4547ca2bf0ca43e7ed04fa3bf20de000a33.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-03 17:02:00
+* Handback File: [install-mim-sync-ad-service.2a07d4547ca2bf0ca43e7ed04fa3bf20de000a33.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/a0a52c113e35b4a03ebc8dcfbe228008812a481c/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/install-mim-sync-ad-service.2a07d4547ca2bf0ca43e7ed04fa3bf20de000a33.ko-kr.xlf)
+* Handback Datetime: 2016-06-15 10:47:37
 * [Back to Top](#report-top)
 
 ##### <a name='755db60abb7859af5065e2c5ddfbfc6cfb7aeeda13'></a> Source: [MIMDocs\DeployUse\md.style](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/DeployUse/md.style)
