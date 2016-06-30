@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 용량 계획 가이드 | Microsoft Identity Manager
-description: 이 가이드를 사용하여 로드 수준 및 정책 결정 등 MIM 2016을 배포하기 전에 고려해야 하는 변수를 이해할 수 있습니다.
-keywords:
+title: "용량 계획 가이드 | Microsoft Identity Manager"
+description: "이 가이드를 사용하여 로드 수준 및 정책 결정 등 MIM 2016을 배포하기 전에 고려해야 하는 변수를 이해할 수 있습니다."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,11 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 3ac5b990-1678-4996-996d-cbd84b8426b4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: a59e7471a8aaafc6752c9be34d52fd3509104dec
+ms.openlocfilehash: eda408360236b34c8e0b4e99b0c873d4823b6bef
+
 
 ---
 
@@ -93,6 +86,7 @@ MIM 정책 구성 개체에 대한 작업을 수행하는 동안 다음 사항�
 
 ## 참고 항목
 - 다운로드 가능한 [FIM(Forefront Identity Manager) 2010 용량 계획 가이드](http://go.microsoft.com/fwlink/?LinkId=200180)에서는 테스트 빌드 및 성능 테스트 결과에 대해 자세히 알아봅니다.
+
 
 
 <!--HONumber=Apr16_HO2-->

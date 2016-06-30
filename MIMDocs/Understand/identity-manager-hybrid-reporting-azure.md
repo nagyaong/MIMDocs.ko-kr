@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure에서 Identity Manager 하이브리드 보고 식별 | Microsoft Identity Manager
-description: Azure Active Directory 하이브리드 보고를 통해 클라우드 이벤트와 온-프레미스 이벤트를 모두 포함하는 사용자 지정 보고서를 만들 수 있습니다.
-keywords:
+title: "Azure에서 Identity Manager 하이브리드 보고 식별 | Microsoft Identity Manager"
+description: "Azure Active Directory 하이브리드 보고를 통해 클라우드 이벤트와 온-프레미스 이벤트를 모두 포함하는 사용자 지정 보고서를 만들 수 있습니다."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,11 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 7320f014-8b60-4866-92de-cfbd3e6edc48
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: aea1c50e2f02ed5b9b745c1ec24410d1e7c0fc10
+ms.openlocfilehash: 03b75e428c920f68b1816a934cc4ffed8cb47be0
+
 
 ---
 
@@ -56,6 +49,7 @@ ms.suite: ems
 보고 에이전트가 설치된 다음 ID 관리자의 활동 데이터가 Windows 이벤트 로그로 전송됩니다. 보고 에이전트가 이벤트를 처리하여 Azure에 업로드합니다. Azure에서 활동 데이터가 현재는 1개월간 저장됩니다. 보고서를 검색할 때 필요한 보고서에 대해 작업 이벤트의 구문이 분석되고 필터링됩니다. 마지막으로 Azure 관리 포털이 보고 데이터를 검색하고 이 데이터를 작업 보고서로 렌더링합니다.
 
 ![하이브리드 보고 다이어그램](media/MIM-Hybrid-howitworks.png)
+
 
 
 <!--HONumber=Apr16_HO2-->

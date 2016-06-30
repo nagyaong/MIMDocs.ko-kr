@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: MIM 배포를 위한 토폴로지 고려 사항 | Microsoft Identity Manager
-description: MIM 2016 구성 요소를 이해하고 이를 사용자 환경에 배포하는 방법에 대한 제안 사항을 알아봅니다. 
-keywords:
+title: "MIM 배포를 위한 토폴로지 고려 사항 | Microsoft Identity Manager"
+description: "MIM 2016 구성 요소를 이해하고 이를 사용자 환경에 배포하는 방법에 대한 제안 사항을 알아봅니다."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,11 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 735dc357-dfba-4f68-a5b3-d66d6c018803
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: a59e7471a8aaafc6752c9be34d52fd3509104dec
+ms.openlocfilehash: 1b2297c086ad7933c5804128f1b3f33d1ef7fe4d
+
 
 ---
 
@@ -75,6 +68,7 @@ MIM 동기화 서비스 및 MIM 서비스 데이터베이스를 호스트하는 
 
 ## 참고 항목
 - 다운로드 가능한 [FIM(Forefront Identity Manager) 2010 용량 계획 가이드](http://go.microsoft.com/fwlink/?LinkId=200180)에서는 테스트 빌드 및 성능 테스트 결과에 대해 자세히 알아봅니다.
+
 
 
 <!--HONumber=Apr16_HO2-->

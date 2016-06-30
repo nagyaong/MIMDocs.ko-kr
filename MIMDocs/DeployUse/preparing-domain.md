@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 도메인 설정 | Microsoft Identity Manager
-description: MIM 2016을 설치하기 전에 Active Directory 도메인 컨트롤러를 만듭니다.
-keywords:
+title: "도메인 설정 | Microsoft Identity Manager"
+description: "MIM 2016을 설치하기 전에 Active Directory 도메인 컨트롤러를 만듭니다."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,11 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
+ms.openlocfilehash: 9181965b1e7460478546a2142416d156ac9bb3d6
+
 
 ---
 
@@ -90,6 +83,7 @@ MIM을 사용하려면 Active Directory가 이미 설치되어 있어야 합니�
 
 >[!div class="step-by-step"]  
 [Windows Server 2012 R2 »](prepare-server-ws2012r2.md)
+
 
 
 <!--HONumber=Apr16_HO2-->

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: ID 관리 서버 설치&#58; Windows Server 2012 R2 | Microsoft Identity Manager
-description: MIM 2016과 함께 작동하도록 Windows Server 2012 RS를 준비하는 데 필요한 단계 및 최소 요구 사항을 알아봅니다.
-keywords:
+title: "ID 관리 서버 설치&#58; Windows Server 2012 R2 | Microsoft Identity Manager"
+description: "MIM 2016과 함께 작동하도록 Windows Server 2012 RS를 준비하는 데 필요한 단계 및 최소 요구 사항을 알아봅니다."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,11 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
+ms.openlocfilehash: 98c22e90e756e4443db0ce6e0e4b78ad8713badb
+
 
 ---
 
@@ -113,6 +106,7 @@ ms.suite: ems
 >[!div class="step-by-step"]  
 [« 도메인 준비](preparing-domain.md)
 [SQL Server 2014 »](prepare-server-sql2014.md)
+
 
 
 <!--HONumber=Apr16_HO2-->

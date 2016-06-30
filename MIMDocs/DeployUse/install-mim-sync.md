@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: MIM 2016 설치&#58; MIM 동기화 서비스 | Microsoft Identity Manager
-description: 동기화 서비스를 설치 및 구성하여 MIM 2016 구성 요소를 시작합니다.
-keywords:
+title: "MIM 2016 설치&#58; MIM 동기화 서비스 | Microsoft Identity Manager"
+description: "동기화 서비스를 설치 및 구성하여 MIM 2016 구성 요소를 시작합니다."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,11 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
+ms.openlocfilehash: 7bd90e9eb8cc80c6dd45dcd8311689d7eb6f6079
+
 
 ---
 
@@ -111,6 +104,7 @@ Microsoft Identity Manager 2016 구성 요소를 설치하려면 먼저 다음�
 >[!div class="step-by-step"]  
 [« Exchange Server](prepare-server-exchange.md)
 [MIM 서비스 및 포털 »](install-mim-service-portal.md)
+
 
 
 <!--HONumber=Apr16_HO2-->

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 관리자가 아닌 사용자의 스마트 카드 등록 | Microsoft Identity Manager
-description: 관리자가 사용자의 컴퓨터에 액세스하지 않고도 사용자가 인증서 관리자를 사용할 수 있도록 사용자의 스마트 카드를 등록하는 방법을 알아봅니다.
-keywords:
+title: "관리자가 아닌 사용자의 스마트 카드 등록 | Microsoft Identity Manager"
+description: "관리자가 사용자의 컴퓨터에 액세스하지 않고도 사용자가 인증서 관리자를 사용할 수 있도록 사용자의 스마트 카드를 등록하는 방법을 알아봅니다."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,11 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
+ms.openlocfilehash: d577c0a9bd2d25f6404d2620f4f7422a46dbe06e
+
 
 ---
 
@@ -99,6 +92,7 @@ ms.suite: ems
 7.  **관리자가 아닌 계정에서 CM 앱 설치**
 
 8.  **CM 앱을 시작하고 가상 스마트 카드 등록**
+
 
 
 <!--HONumber=Apr16_HO2-->

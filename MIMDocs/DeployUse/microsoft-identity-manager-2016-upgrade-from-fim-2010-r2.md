@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Forefront Identity Manager 2010 R2에서 업그레이드 | Microsoft Identity Manager
-description: FIM 2010 R2 구성 요소를 업그레이드한 다음 MIM 2016의 새로운 구성 요소를 설치하는 방법을 알아봅니다.
-keywords:
+title: "Forefront Identity Manager 2010 R2에서 업그레이드 | Microsoft Identity Manager"
+description: "FIM 2010 R2 구성 요소를 업그레이드한 다음 MIM 2016의 새로운 구성 요소를 설치하는 방법을 알아봅니다."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,11 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
+ms.openlocfilehash: 023100b79dea1a512ccd610cd7ec7cac228eff70
+
 
 ---
 
@@ -199,6 +192,7 @@ ms.suite: ems
 4. **Forefront Identity Manager 서비스** 가 다시 시작되었습니다.
 
 참고: SSPR을 위해 현재 FIM 추가 기능 및 확장이 사용자의 컴퓨터에 배포된 경우 모든 FIM 추가 기능 및 확장이 MIM 2016으로 업그레이드될 때까지 암호 재설정을 위해 새 MFA 전화 게이트를 구성하지 마세요.  FIM 2010 및 FIM 2010 R2 추가 기능 및 확장은 새 게이트를 인식하지 않으므로 오류가 발생하며 사용자가 암호 재설정을 완료할 수 없습니다.
+
 
 
 <!--HONumber=Apr16_HO2-->

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: ID 관리 서버 설치&#58; Exchange | Microsoft Identity Manager
-description: 선택적 단계로, MIM 2016에서 메일을 보내고 사서함을 만들 수 있도록 하려면 Exchange Server를 배포합니다. 
-keywords:
+title: "ID 관리 서버 설치&#58; Exchange | Microsoft Identity Manager"
+description: "선택적 단계로, MIM 2016에서 메일을 보내고 사서함을 만들 수 있도록 하려면 Exchange Server를 배포합니다."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,11 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 34a8c16e-3bed-4e16-939b-b9fe17dd834b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
+ms.openlocfilehash: 689dcce5a1e9b7d198a2b60d6717812b121d9943
+
 
 ---
 
@@ -50,6 +43,7 @@ MIM에서 메일 또는 프로비전 사서함을 보내고 받도록 구성하�
 >[!div class="step-by-step"]  
 [« SharePoint](prepare-server-sharepoint.md)
 [MIM 동기화 서비스 »](install-mim-sync.md)
+
 
 
 <!--HONumber=Apr16_HO2-->
