@@ -422,9 +422,9 @@
 * Archive Datetime: 2016-05-19 21:35:21
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [MIMDocs\DeployUse\certificate-manager-for-non-administrators.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/5bb9efd53b82fff8670802d166f99a52d18f1434/MIMDocs/DeployUse/certificate-manager-for-non-administrators.md)
-* Current Handback File: [certificate-manager-for-non-administrators.2d024c7e4e9ca80f8293c9ea15d5d5fe93a207d7.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/ec93569b79fe703af18819b36e5f1ca48e772799/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/certificate-manager-for-non-administrators.2d024c7e4e9ca80f8293c9ea15d5d5fe93a207d7.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-03 17:02:00
+* Current Target File: [MIMDocs\DeployUse\certificate-manager-for-non-administrators.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/daa9636ff7749c60b605029b098516b8cca3d1f5/MIMDocs/DeployUse/certificate-manager-for-non-administrators.md)
+* Current Handback File: [certificate-manager-for-non-administrators.2d024c7e4e9ca80f8293c9ea15d5d5fe93a207d7.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/8f87bdc718c8c32d338a3b181a139303c57fbaaa/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/certificate-manager-for-non-administrators.2d024c7e4e9ca80f8293c9ea15d5d5fe93a207d7.ko-kr.xlf)
+* Current Handback Datetime: 2016-06-30 21:23:41
 * [Back to Top](#report-top)
 
 ##### <a name='6b58093744656b9bfa62c1cfcab340ea88e6e1687'></a> Source: [MIMDocs\DeployUse\certificate-manager-for-software-certificates.md](https://github.com/Microsoft/MIMDocs-pr/blob/f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda/MIMDocs/DeployUse/certificate-manager-for-software-certificates.md)
@@ -449,9 +449,9 @@
 * Archive Datetime: 2016-05-19 21:35:21
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [MIMDocs\DeployUse\deploying-mim-password-change-notification-service-on-domain-controller.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/c526f87e2e002ff3d0a95798a0414035b25c08b6/MIMDocs/DeployUse/deploying-mim-password-change-notification-service-on-domain-controller.md)
-* Current Handback File: [deploying-mim-password-change-notification-service-on-domain-controller.afdb373626bbd0d122da747e9f586318deea2e70.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/07f1c3ee98b418c10448589fa9ddfb87139411ec/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/deploying-mim-password-change-notification-service-on-domain-controller.afdb373626bbd0d122da747e9f586318deea2e70.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-04 02:25:01
+* Current Target File: [MIMDocs\DeployUse\deploying-mim-password-change-notification-service-on-domain-controller.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/daa9636ff7749c60b605029b098516b8cca3d1f5/MIMDocs/DeployUse/deploying-mim-password-change-notification-service-on-domain-controller.md)
+* Current Handback File: [deploying-mim-password-change-notification-service-on-domain-controller.afdb373626bbd0d122da747e9f586318deea2e70.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/8f87bdc718c8c32d338a3b181a139303c57fbaaa/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/deploying-mim-password-change-notification-service-on-domain-controller.afdb373626bbd0d122da747e9f586318deea2e70.ko-kr.xlf)
+* Current Handback Datetime: 2016-06-30 21:23:41
 * [Back to Top](#report-top)
 
 ##### <a name='4a3d784213816426ae022c9fbabdd65865dca3969'></a> Source: [MIMDocs\DeployUse\docfx.json](https://github.com/Microsoft/MIMDocs-pr/blob/05fd3b508874f87d4407f21f0739974327505e72/MIMDocs/DeployUse/docfx.json)
@@ -476,9 +476,9 @@
 * Archive Datetime: 2016-05-19 21:35:21
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [MIMDocs\DeployUse\install-mim-service-portal.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/5bb9efd53b82fff8670802d166f99a52d18f1434/MIMDocs/DeployUse/install-mim-service-portal.md)
-* Current Handback File: [install-mim-service-portal.bc0a636322f2b40d28e326917fd5d60c15ff855e.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/ec93569b79fe703af18819b36e5f1ca48e772799/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/install-mim-service-portal.bc0a636322f2b40d28e326917fd5d60c15ff855e.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-03 17:02:00
+* Current Target File: [MIMDocs\DeployUse\install-mim-service-portal.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/daa9636ff7749c60b605029b098516b8cca3d1f5/MIMDocs/DeployUse/install-mim-service-portal.md)
+* Current Handback File: [install-mim-service-portal.bc0a636322f2b40d28e326917fd5d60c15ff855e.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/8f87bdc718c8c32d338a3b181a139303c57fbaaa/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/install-mim-service-portal.bc0a636322f2b40d28e326917fd5d60c15ff855e.ko-kr.xlf)
+* Current Handback Datetime: 2016-06-30 21:23:41
 * [Back to Top](#report-top)
 
 ##### <a name='8a99b3a291d2b145f453732a72244c43f9c535d612'></a> Source: [MIMDocs\DeployUse\install-mim-sync.md](https://github.com/Microsoft/MIMDocs-pr/blob/c023d147d0fcc1525fefbe866c952e217f7bee6b/MIMDocs/DeployUse/install-mim-sync.md)
@@ -491,9 +491,9 @@
 * Archive Datetime: 2016-05-19 21:35:21
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [MIMDocs\DeployUse\install-mim-sync.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/5bb9efd53b82fff8670802d166f99a52d18f1434/MIMDocs/DeployUse/install-mim-sync.md)
-* Current Handback File: [install-mim-sync.187fbc84d7198ab90d1445b38ea0a3044b228547.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/ec93569b79fe703af18819b36e5f1ca48e772799/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/install-mim-sync.187fbc84d7198ab90d1445b38ea0a3044b228547.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-03 17:02:00
+* Current Target File: [MIMDocs\DeployUse\install-mim-sync.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/daa9636ff7749c60b605029b098516b8cca3d1f5/MIMDocs/DeployUse/install-mim-sync.md)
+* Current Handback File: [install-mim-sync.187fbc84d7198ab90d1445b38ea0a3044b228547.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/8f87bdc718c8c32d338a3b181a139303c57fbaaa/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/install-mim-sync.187fbc84d7198ab90d1445b38ea0a3044b228547.ko-kr.xlf)
+* Current Handback Datetime: 2016-06-30 21:23:41
 * [Back to Top](#report-top)
 
 ##### <a name='f4e94980c6a03b08221fd46e19c421cce226086d11'></a> Source: [MIMDocs\DeployUse\install-mim-sync-ad-service.md](https://github.com/Microsoft/MIMDocs-pr/blob/8fd779bcc4d41b6e67d0fa31aa0f37c4ea2b410a/MIMDocs/DeployUse/install-mim-sync-ad-service.md)
@@ -1193,9 +1193,9 @@
 * Archive Datetime: 2016-05-19 21:35:21
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/5bb9efd53b82fff8670802d166f99a52d18f1434/MIMDocs/DeployUse/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md)
-* Current Handback File: [microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.436268391a37f93654c5a63fc781f1eae0c91603.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/ec93569b79fe703af18819b36e5f1ca48e772799/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.436268391a37f93654c5a63fc781f1eae0c91603.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-03 17:02:00
+* Current Target File: [MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/daa9636ff7749c60b605029b098516b8cca3d1f5/MIMDocs/DeployUse/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md)
+* Current Handback File: [microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.436268391a37f93654c5a63fc781f1eae0c91603.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/8f87bdc718c8c32d338a3b181a139303c57fbaaa/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.436268391a37f93654c5a63fc781f1eae0c91603.ko-kr.xlf)
+* Current Handback Datetime: 2016-06-30 21:23:41
 * [Back to Top](#report-top)
 
 ##### <a name='a56ead9777f1dad1aa0d214a506cf1242f51e16766'></a> Source: [MIMDocs\DeployUse\microsoft-identity-manager-deploy.md](https://github.com/Microsoft/MIMDocs-pr/blob/ca7fdef81eb8a68aff46df528e1989f019f5d2a4/MIMDocs/DeployUse/microsoft-identity-manager-deploy.md)
@@ -1208,9 +1208,9 @@
 * Archive Datetime: 2016-05-19 21:35:21
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [MIMDocs\DeployUse\microsoft-identity-manager-deploy.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/5bb9efd53b82fff8670802d166f99a52d18f1434/MIMDocs/DeployUse/microsoft-identity-manager-deploy.md)
-* Current Handback File: [microsoft-identity-manager-deploy.44247d56914b6ca85c7193b74b9004ace0e1246d.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/ec93569b79fe703af18819b36e5f1ca48e772799/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/microsoft-identity-manager-deploy.44247d56914b6ca85c7193b74b9004ace0e1246d.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-03 17:02:00
+* Current Target File: [MIMDocs\DeployUse\microsoft-identity-manager-deploy.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/daa9636ff7749c60b605029b098516b8cca3d1f5/MIMDocs/DeployUse/microsoft-identity-manager-deploy.md)
+* Current Handback File: [microsoft-identity-manager-deploy.44247d56914b6ca85c7193b74b9004ace0e1246d.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/8f87bdc718c8c32d338a3b181a139303c57fbaaa/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/microsoft-identity-manager-deploy.44247d56914b6ca85c7193b74b9004ace0e1246d.ko-kr.xlf)
+* Current Handback Datetime: 2016-06-30 21:23:41
 * [Back to Top](#report-top)
 
 ##### <a name='b69ea20f375869d4ad08987a08aba05913fd1db167'></a> Source: [MIMDocs\DeployUse\prepare-server-exchange.md](https://github.com/Microsoft/MIMDocs-pr/blob/c023d147d0fcc1525fefbe866c952e217f7bee6b/MIMDocs/DeployUse/prepare-server-exchange.md)
@@ -1223,9 +1223,9 @@
 * Archive Datetime: 2016-05-19 21:35:21
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [MIMDocs\DeployUse\prepare-server-exchange.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/5bb9efd53b82fff8670802d166f99a52d18f1434/MIMDocs/DeployUse/prepare-server-exchange.md)
-* Current Handback File: [prepare-server-exchange.62b650aec624862b1ad85b574bfdb8525ebc36e5.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/ec93569b79fe703af18819b36e5f1ca48e772799/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/prepare-server-exchange.62b650aec624862b1ad85b574bfdb8525ebc36e5.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-03 17:02:00
+* Current Target File: [MIMDocs\DeployUse\prepare-server-exchange.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/daa9636ff7749c60b605029b098516b8cca3d1f5/MIMDocs/DeployUse/prepare-server-exchange.md)
+* Current Handback File: [prepare-server-exchange.62b650aec624862b1ad85b574bfdb8525ebc36e5.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/8f87bdc718c8c32d338a3b181a139303c57fbaaa/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/prepare-server-exchange.62b650aec624862b1ad85b574bfdb8525ebc36e5.ko-kr.xlf)
+* Current Handback Datetime: 2016-06-30 21:23:41
 * [Back to Top](#report-top)
 
 ##### <a name='b144f28b41eb8e02afa44495c0019ccc8102200568'></a> Source: [MIMDocs\DeployUse\prepare-server-sharepoint.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/DeployUse/prepare-server-sharepoint.md)
@@ -1253,9 +1253,9 @@
 * Archive Datetime: 2016-05-19 21:35:21
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [MIMDocs\DeployUse\prepare-server-sql2014.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/5bb9efd53b82fff8670802d166f99a52d18f1434/MIMDocs/DeployUse/prepare-server-sql2014.md)
-* Current Handback File: [prepare-server-sql2014.908ce04c42d7be500304a71be06bc4b1acfdd6b7.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/ec93569b79fe703af18819b36e5f1ca48e772799/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/prepare-server-sql2014.908ce04c42d7be500304a71be06bc4b1acfdd6b7.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-03 17:02:00
+* Current Target File: [MIMDocs\DeployUse\prepare-server-sql2014.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/daa9636ff7749c60b605029b098516b8cca3d1f5/MIMDocs/DeployUse/prepare-server-sql2014.md)
+* Current Handback File: [prepare-server-sql2014.908ce04c42d7be500304a71be06bc4b1acfdd6b7.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/8f87bdc718c8c32d338a3b181a139303c57fbaaa/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/prepare-server-sql2014.908ce04c42d7be500304a71be06bc4b1acfdd6b7.ko-kr.xlf)
+* Current Handback Datetime: 2016-06-30 21:23:41
 * [Back to Top](#report-top)
 
 ##### <a name='cd4ac84af4e5416512cf546a5d23b342ebe13c3970'></a> Source: [MIMDocs\DeployUse\prepare-server-ws2012r2.md](https://github.com/Microsoft/MIMDocs-pr/blob/af9f7f75f19bb29f2e29577c787252f6b7fabb7d/MIMDocs/DeployUse/prepare-server-ws2012r2.md)
@@ -1268,9 +1268,9 @@
 * Archive Datetime: 2016-05-19 21:35:21
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [MIMDocs\DeployUse\prepare-server-ws2012r2.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/5bb9efd53b82fff8670802d166f99a52d18f1434/MIMDocs/DeployUse/prepare-server-ws2012r2.md)
-* Current Handback File: [prepare-server-ws2012r2.da656f0c9d903e4ab85b248548bd985fcaa0c74a.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/ec93569b79fe703af18819b36e5f1ca48e772799/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/prepare-server-ws2012r2.da656f0c9d903e4ab85b248548bd985fcaa0c74a.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-03 17:02:00
+* Current Target File: [MIMDocs\DeployUse\prepare-server-ws2012r2.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/daa9636ff7749c60b605029b098516b8cca3d1f5/MIMDocs/DeployUse/prepare-server-ws2012r2.md)
+* Current Handback File: [prepare-server-ws2012r2.da656f0c9d903e4ab85b248548bd985fcaa0c74a.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/8f87bdc718c8c32d338a3b181a139303c57fbaaa/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/prepare-server-ws2012r2.da656f0c9d903e4ab85b248548bd985fcaa0c74a.ko-kr.xlf)
+* Current Handback Datetime: 2016-06-30 21:23:41
 * [Back to Top](#report-top)
 
 ##### <a name='b84a6c7c7b53a122eefc3846ba93b92b34edb6ce71'></a> Source: [MIMDocs\DeployUse\preparing-domain.md](https://github.com/Microsoft/MIMDocs-pr/blob/b2578d50f855486183ae182330bacb688011c273/MIMDocs/DeployUse/preparing-domain.md)
@@ -1283,9 +1283,9 @@
 * Archive Datetime: 2016-05-19 21:35:21
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [MIMDocs\DeployUse\preparing-domain.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/5bb9efd53b82fff8670802d166f99a52d18f1434/MIMDocs/DeployUse/preparing-domain.md)
-* Current Handback File: [preparing-domain.9b77cd90d5739c58d60a5f1157edad1db6f26bb3.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/ec93569b79fe703af18819b36e5f1ca48e772799/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/preparing-domain.9b77cd90d5739c58d60a5f1157edad1db6f26bb3.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-03 17:02:00
+* Current Target File: [MIMDocs\DeployUse\preparing-domain.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/daa9636ff7749c60b605029b098516b8cca3d1f5/MIMDocs/DeployUse/preparing-domain.md)
+* Current Handback File: [preparing-domain.9b77cd90d5739c58d60a5f1157edad1db6f26bb3.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/8f87bdc718c8c32d338a3b181a139303c57fbaaa/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/preparing-domain.9b77cd90d5739c58d60a5f1157edad1db6f26bb3.ko-kr.xlf)
+* Current Handback Datetime: 2016-06-30 21:23:41
 * [Back to Top](#report-top)
 
 ##### <a name='15f742d950ce73c665c5c7c1644a23153d6aa36372'></a> Source: [MIMDocs\DeployUse\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/8d151e15ea35fbaf14e8b55697f3fad9858d2aed/MIMDocs/DeployUse/TOC.md)
@@ -3420,9 +3420,9 @@
 * Archive Datetime: 2016-05-19 21:35:21
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [MIMDocs\PlanDesign\capacity-planning-guide.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/5bb9efd53b82fff8670802d166f99a52d18f1434/MIMDocs/PlanDesign/capacity-planning-guide.md)
-* Current Handback File: [capacity-planning-guide.a5b5577289101cd375376319cbd1fa3f32f4d38f.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/ec93569b79fe703af18819b36e5f1ca48e772799/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/capacity-planning-guide.a5b5577289101cd375376319cbd1fa3f32f4d38f.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-03 17:02:00
+* Current Target File: [MIMDocs\PlanDesign\capacity-planning-guide.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/daa9636ff7749c60b605029b098516b8cca3d1f5/MIMDocs/PlanDesign/capacity-planning-guide.md)
+* Current Handback File: [capacity-planning-guide.a5b5577289101cd375376319cbd1fa3f32f4d38f.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/8f87bdc718c8c32d338a3b181a139303c57fbaaa/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/capacity-planning-guide.a5b5577289101cd375376319cbd1fa3f32f4d38f.ko-kr.xlf)
+* Current Handback Datetime: 2016-06-30 21:23:41
 * [Back to Top](#report-top)
 
 ##### <a name='690baba509fc06d6b9029b1247f521948e46ba2a242'></a> Source: [MIMDocs\PlanDesign\docfx.json](https://github.com/Microsoft/MIMDocs-pr/blob/05fd3b508874f87d4407f21f0739974327505e72/MIMDocs/PlanDesign/docfx.json)
@@ -3525,9 +3525,9 @@
 * Archive Datetime: 2016-05-19 21:35:21
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [MIMDocs\PlanDesign\topology-considerations.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/5bb9efd53b82fff8670802d166f99a52d18f1434/MIMDocs/PlanDesign/topology-considerations.md)
-* Current Handback File: [topology-considerations.d6cd599c7ba227a86e53f481eef3d2a96ce028cd.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/ec93569b79fe703af18819b36e5f1ca48e772799/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/topology-considerations.d6cd599c7ba227a86e53f481eef3d2a96ce028cd.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-03 17:02:00
+* Current Target File: [MIMDocs\PlanDesign\topology-considerations.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/daa9636ff7749c60b605029b098516b8cca3d1f5/MIMDocs/PlanDesign/topology-considerations.md)
+* Current Handback File: [topology-considerations.d6cd599c7ba227a86e53f481eef3d2a96ce028cd.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/8f87bdc718c8c32d338a3b181a139303c57fbaaa/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/topology-considerations.d6cd599c7ba227a86e53f481eef3d2a96ce028cd.ko-kr.xlf)
+* Current Handback Datetime: 2016-06-30 21:23:41
 * [Back to Top](#report-top)
 
 ##### <a name='c4f8acfe4371db3a1b2bf7b01f3aaef8d2b4ae2c250'></a> Source: [MIMDocs\reference\assign-smartcard-to-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/05fd3b508874f87d4407f21f0739974327505e72/MIMDocs/reference/assign-smartcard-to-request.md)
@@ -4075,9 +4075,9 @@
 * Archive Datetime: 2016-05-19 21:35:21
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [MIMDocs\Understand\identity-manager-hybrid-reporting-azure.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/5bb9efd53b82fff8670802d166f99a52d18f1434/MIMDocs/Understand/identity-manager-hybrid-reporting-azure.md)
-* Current Handback File: [identity-manager-hybrid-reporting-azure.50c26252fc76f6c50be4c477e24cfaf05cf3c4c7.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/ec93569b79fe703af18819b36e5f1ca48e772799/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/identity-manager-hybrid-reporting-azure.50c26252fc76f6c50be4c477e24cfaf05cf3c4c7.ko-kr.xlf)
-* Current Handback Datetime: 2016-05-03 17:02:00
+* Current Target File: [MIMDocs\Understand\identity-manager-hybrid-reporting-azure.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/daa9636ff7749c60b605029b098516b8cca3d1f5/MIMDocs/Understand/identity-manager-hybrid-reporting-azure.md)
+* Current Handback File: [identity-manager-hybrid-reporting-azure.50c26252fc76f6c50be4c477e24cfaf05cf3c4c7.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/8f87bdc718c8c32d338a3b181a139303c57fbaaa/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/identity-manager-hybrid-reporting-azure.50c26252fc76f6c50be4c477e24cfaf05cf3c4c7.ko-kr.xlf)
+* Current Handback Datetime: 2016-06-30 21:23:41
 * [Back to Top](#report-top)
 
 ##### <a name='755db60abb7859af5065e2c5ddfbfc6cfb7aeeda295'></a> Source: [MIMDocs\Understand\md.style](https://github.com/Microsoft/MIMDocs-pr/blob/05fd3b508874f87d4407f21f0739974327505e72/MIMDocs/Understand/md.style)
