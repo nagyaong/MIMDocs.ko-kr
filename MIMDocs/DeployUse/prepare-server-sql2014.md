@@ -12,8 +12,8 @@ ms.technology: security
 ms.assetid: 297df3b3-192e-4ed9-82ed-c95eb5297c84
 ms.reviewer: mwahl
 ms.suite: ems
-ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
-ms.openlocfilehash: 08105d25e101de109df938e4e7e3133de5fcae21
+ms.sourcegitcommit: c023d147d0fcc1525fefbe866c952e217f7bee6b
+ms.openlocfilehash: 2c0ff0bdbba4bcf979def8d5c7aa381947d6cc87
 
 
 ---
@@ -25,7 +25,10 @@ ms.openlocfilehash: 08105d25e101de109df938e4e7e3133de5fcae21
 [SharePoint »](prepare-server-sharepoint.md)
 
 > [!NOTE]
-> 아래의 모든 예제에서 **mimservername**은 도메인 컨트롤러의 이름을 나타내고 **contoso**는 도메인 이름을 나타내며 **Pass@word1**은 예제 암호를 나타냅니다.
+> 이 연습에서는 Contoso라는 회사의 샘플 이름과 값을 사용합니다. 해당 항목을 사용자의 정보로 바꿉니다. 예를 들면 다음과 같습니다.
+> - 도메인 컨트롤러 이름 - **mimservername**
+> - 도메인 이름 - **contoso**
+> - 암호 - **Pass@word1**
 
 ## **SQL Server 2014 Standard Edition** 설치
 
@@ -45,6 +48,6 @@ ms.openlocfilehash: 08105d25e101de109df938e4e7e3133de5fcae21
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=Apr16_HO3-->
 
 

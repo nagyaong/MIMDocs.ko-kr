@@ -12,8 +12,8 @@ ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
-ms.openlocfilehash: 3b6542ab582661415ac30870c9e54247a3cbbe50
+ms.sourcegitcommit: c023d147d0fcc1525fefbe866c952e217f7bee6b
+ms.openlocfilehash: eb2af412d9638035de591197fa191e990ade0ca1
 
 
 ---
@@ -25,35 +25,36 @@ ms.openlocfilehash: 3b6542ab582661415ac30870c9e54247a3cbbe50
 [데이터베이스 동기화 »](install-mim-sync-ad-service.md)
 
 > [!NOTE]
-> 아래의 모든 예제에서 **mimservername**은 도메인 컨트롤러의 이름을 나타내고 **contoso**는 도메인 이름을 나타내며 **Pass@word1**은 예제 암호를 나타냅니다.
+> 이 연습에서는 Contoso라는 회사의 샘플 이름과 값을 사용합니다. 해당 항목을 사용자의 정보로 바꿉니다. 예를 들면 다음과 같습니다.
+> - 도메인 컨트롤러 이름 - **mimservername**
+> - 도메인 이름 - **contoso**
+> - 암호 - **Pass@word1**
+> - 서비스 계정 이름 - **MIMService**
 
-마지막 단계에서 MIM 설치 패키지를 설치하지 않은 경우 다음 단계에 따라 Microsoft Identity Manager 2016 구성 요소를 설치합니다.
+마지막 단계에서 MIM 설치 패키지를 설정하지 않은 경우 다시 돌아가서 Microsoft Identity Manager 2016 구성 요소를 설치한 후 계속합니다.
 
-1. ID 관리에 사용중인 CORPIDM 서버에 *contoso\Administrator*로 로그인합니다.
-
-2. MIM 설치 패키지의 압축을 풀거나 MIM 이미지 DVD를 마운트합니다.
 
 ## 설치를 위한 MIM 서비스 및 포털 구성
 
-1.  압축을 푼 **서비스 및 포털** 하위 폴더에서 **MIM 서비스 및 포털 설치 관리자**를 실행합니다.
+1. 압축을 푼 **서비스 및 포털** 하위 폴더에서 **MIM 서비스 및 포털 설치 관리자**를 실행합니다.
 
-2.  시작 화면에서 **다음**을 클릭합니다.
+2. 시작 화면에서 **다음**을 클릭합니다.
 
-3.  최종 사용자 사용권 계약을 읽고 사용 조건에 동의하면 **다음**을 클릭합니다.
+3. 최종 사용자 사용권 계약을 읽고 사용 조건에 동의하면 **다음**을 클릭합니다.
 
-4.  **MIM 사용자 환경 개선 프로그램** 화면에서 **다음**을 클릭합니다.
+4. **MIM 사용자 환경 개선 프로그램** 화면에서 **다음**을 클릭합니다.
 
-5.  이 배포에 대한 구성 요소 기능을 선택할 때 MIM 서비스(MIM 보고 제외) 및 MIM 포털 기능을 포함해야 합니다. 또한 MIM 암호 재설정 포털 및 MIM 암호 변경 알림 서비스를 선택할 수 있습니다.
+5. 이 배포에 대한 구성 요소 기능을 선택할 때 MIM 서비스(MIM 보고 제외) 및 MIM 포털 기능을 포함해야 합니다. 또한 MIM 암호 재설정 포털 및 MIM 암호 변경 알림 서비스를 선택할 수 있습니다.
 
-6.  **MIM 데이터베이스 연결 구성** 페이지에서 **새 데이터베이스 만들기**를 지정합니다.
+6. **MIM 데이터베이스 연결 구성** 페이지에서 **새 데이터베이스 만들기**를 선택합니다.
 
     ![MIM 데이터베이스 연결 구성 이미지](media/MIM-Install10.png)
 
-7.  **메일 서버 연결 구성**에서 Exchange Server 이름으로 **Mail Server**를 입력합니다. 구성된 메일 서버가 없는 경우 localhost를 메일 서버 이름으로 지정하고 상위 두 확인란을 선택 취소합니다.  **다음**을 클릭합니다.
+7. **메일 서버 연결 구성**에서 Exchange Server 이름으로 **Mail Server**를 입력합니다. 구성된 메일 서버가 없는 경우 **localhost**를 메일 서버 이름으로 사용하고 상위 두 확인란을 선택 취소합니다.  **다음**을 클릭합니다.
 
     ![메일 서버 연결 구성 이미지](media/MIM-Install11.png)
 
-8.  새 자체 서명된 인증서를 생성하도록 지정하거나 관련 인증서를 선택합니다.
+8. 새 자체 서명된 인증서를 생성하도록 지정하거나 관련 인증서를 선택합니다.
 
 9. 사용할 서비스 계정 이름(예: *MIMService*), 서비스 계정 암호(예: *Pass@word1*), 서비스 계정 도메인(예: *contoso*), 서비스 메일 계정(예: *contoso*)을 지정합니다.
 
@@ -103,8 +104,6 @@ ms.openlocfilehash: 3b6542ab582661415ac30870c9e54247a3cbbe50
 
 사전 설치 정의가 모두 준비되면 **설치**를 클릭하여 선택한 **서비스 및 포털** 구성 요소 설치를 시작합니다.
 
-![MIM 서비스 및 포털 설치 이미지](media/MIM-Install16.png)
-
 설치가 완료된 후 MIM 포털이 활성화되었는지 확인합니다.
 
 1. Internet Explorer를 시작하고 *http://corpidm.contoso.local:82/identitymanagement*에서 MIM 포털에 연결합니다. 이 페이지를 처음 방문할 때 약간 시간이 걸릴 수 있습니다.
@@ -152,6 +151,6 @@ ms.openlocfilehash: 3b6542ab582661415ac30870c9e54247a3cbbe50
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=Apr16_HO3-->
 
 

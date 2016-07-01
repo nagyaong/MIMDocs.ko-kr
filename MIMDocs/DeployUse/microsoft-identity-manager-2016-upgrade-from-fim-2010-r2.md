@@ -4,7 +4,7 @@ description: "FIM 2010 R2 구성 요소를 업그레이드한 다음 MIM 2016의
 keywords: 
 author: kgremban
 manager: stevenpo
-ms.date: 04/28/2016
+ms.date: 05/13/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -12,22 +12,28 @@ ms.technology: security
 ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: mwahl
 ms.suite: ems
-ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
-ms.openlocfilehash: 023100b79dea1a512ccd610cd7ec7cac228eff70
+ms.sourcegitcommit: 7e61e201b277a2e8ec9fee785e9e34fca3b1cb29
+ms.openlocfilehash: 24a7bf5bfb0a7450becd08be6743ed7ab1755559
 
 
 ---
 
-# Forefront Identity Manager 2010 R2에서 Microsoft Identity Manager 2016으로 업그레이드
-이 섹션에서는 기존 테스트 FIM 2010 R2 시스템을 MIM 2016으로 업그레이드하는 작업에 대해 설명합니다. 업그레이드를 위해 사용하는 설치 관리자는 새로운 배포에 사용하는 설치 관리자와 동일합니다.
+# Forefront Identity Manager 2010 R2에서 업그레이드
 
-이 섹션에서는 테스트 환경에 기존 FIM 2010 R2 솔루션이 배포되었다고 가정합니다. 서버는 FIM 2010 R2 서버용 공통 OS인Windows Server 2012, Windows Server 2012 R2 또는 Windows Server 2008 R2에서 실행되고 있고 모든 로컬 및 환경 필수 구성 요소(SQL Server, Exchange Server, SharePoint Services 등)는 FIM 2010 R2용으로 구성되어 있습니다.
+환경이 FIM(Forefront Identity Manager) 2010 R2이며 MIM(Microsoft Identity Manager) 2016을 시도하려는 경우 이 문서를 가이드로 사용합니다. 이 업그레이드에는 세 가지 단계가 있습니다.
 
-1.  먼저 MIM 동기화 서비스(동기화)를 AD 도메인에 도메인 가입되고 동기화의 FIM 2010 R2 인스턴스를 대체하는 서버에 설치하고 실행합니다.
+1.  AD(Active Directory) 도메인에 도메인 가입된 서버에 MIM 동기화 서비스(동기화)를 설치합니다. 그러면 동기화의 FIM 2010 R2 인스턴스가 대체됩니다.
 
-2.  그런 다음 MIM 서비스 및 포털이 설치됩니다. 필요에 따라 SSPR 등록 포털 및 SSPR 서비스 포털을 포함하고, 권한 있는 액세스 관리 기능 세트를 제외합니다.
+2.  MIM 서비스 및 포털을 설치합니다. 이 시점에서 SSPR(셀프 서비스 암호 재설정) 등록 포털 및 서비스 포털을 설치하도록 선택할 수도 있습니다. 그러면 Privileged Access Management 기능 집합을 제외하고 설치됩니다.
 
-3.  그런 다음 SSPR Windows 로그인 통합 클라이언트가 포함된 MIM 추가 기능 및 확장을 별도의 클라이언트 컴퓨터에 배포하면 됩니다.
+3.  MIM 추가 기능 및 확장을 별도의 클라이언트 컴퓨터에 배포합니다. 여기에는 SSPR Windows 로그인 통합 클라이언트가 포함됩니다.
+
+
+이 가이드에서는 다음이 이미 설정되어 있다고 가정합니다.
+- 테스트 환경에 배포된 FIM 2010 R2
+- Windows Server 2012, Windows Server 2012 R2 또는 Windows Server 2008 R2에서 실행 중인 서버
+- FIM 2010 R2용으로 구성된 로컬 및 환경 필수 구성 요소(SQL Server, Exchange Server, SharePoint Services 등)
+
 
 ## 준비
 
@@ -195,6 +201,6 @@ ms.openlocfilehash: 023100b79dea1a512ccd610cd7ec7cac228eff70
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

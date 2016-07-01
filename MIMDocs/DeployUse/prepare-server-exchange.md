@@ -12,8 +12,8 @@ ms.technology: security
 ms.assetid: 34a8c16e-3bed-4e16-939b-b9fe17dd834b
 ms.reviewer: mwahl
 ms.suite: ems
-ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
-ms.openlocfilehash: 689dcce5a1e9b7d198a2b60d6717812b121d9943
+ms.sourcegitcommit: c023d147d0fcc1525fefbe866c952e217f7bee6b
+ms.openlocfilehash: b69ea20f375869d4ad08987a08aba05913fd1db1
 
 
 ---
@@ -23,9 +23,6 @@ ms.openlocfilehash: 689dcce5a1e9b7d198a2b60d6717812b121d9943
 >[!div class="step-by-step"]
 [« SharePoint](prepare-server-sharepoint.md)
 [MIM 동기화 서비스 »](install-mim-sync.md)
-
-> [!NOTE]
-> 아래의 모든 예제에서 **mimservername**은 도메인 컨트롤러의 이름을 나타내고 **contoso**는 도메인 이름을 나타내며 **Pass@word1**은 예제 암호를 나타냅니다.
 
 ## Microsoft Exchange Server 배포
 MIM에서 메일 또는 프로비전 사서함을 보내고 받도록 구성하려는 경우 환경에 Exchange가 있어야 합니다. 아직 Exchange를 배포하지 않은 경우 평가용으로 평가판 버전을 설치할 수 있습니다.
@@ -46,6 +43,6 @@ MIM에서 메일 또는 프로비전 사서함을 보내고 받도록 구성하�
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=Apr16_HO3-->
 
 

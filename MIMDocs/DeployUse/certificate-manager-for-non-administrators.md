@@ -12,8 +12,8 @@ ms.technology: security
 ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
 ms.reviewer: mwahl
 ms.suite: ems
-ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
-ms.openlocfilehash: d577c0a9bd2d25f6404d2620f4f7422a46dbe06e
+ms.sourcegitcommit: 875ed6b96929822ac166a4a262cc8547a4ea3b2a
+ms.openlocfilehash: 50c0edd60abfa6550cb5a873d32a842e8c099811
 
 
 ---
@@ -73,7 +73,7 @@ ms.openlocfilehash: d577c0a9bd2d25f6404d2620f4f7422a46dbe06e
 
     3.  프로필 템플릿의 이름을 입력하고, "nonAdmin"을 추가하고 **확인**을 클릭합니다.
 
-    4.  프로필 템플릿의 일반 설정이 표시되면 아래로 스크롤하여 **스마트 카드 구성**아래에서 **설정 변경**을 클릭합니다.
+    4.  프로필 템플릿의 일반 설정이 표시되면 아래로 스크롤하여 **스마트 카드 구성** 아래에서 **설정 변경**을 클릭합니다.
 
     5.  **Admin key initial value (hex)** (관리자 키 초기 값(16진수)) 아래에서 기본 관리자 키를 입력합니다. "010203040506070801020304050607080102030405060708"
 
@@ -95,6 +95,6 @@ ms.openlocfilehash: d577c0a9bd2d25f6404d2620f4f7422a46dbe06e
 
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=Apr16_HO3-->
 
 
