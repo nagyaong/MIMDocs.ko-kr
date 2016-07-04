@@ -1,9 +1,8 @@
 ---
 asset_id: 90d66a75-a7ec-4fa1-911c-cce683908838
 layout: HubPage
-
-title: Microsoft Identity Manager 설명서
-description: Microsoft Intune 모바일 장치 및 응용 프로그램 관리에 대한 기술 문서
+title: "Microsoft Identity Manager 설명서"
+description: "Microsoft Intune 모바일 장치 및 응용 프로그램 관리에 대한 기술 문서"
 keywords: intune documentation, MDM documentation, Mobile Device Management Documentation, Mobile Device and Application Management Documentation
 author: msstevenpo
 manager: stevenpo
@@ -14,6 +13,10 @@ ms.service: microsoft-identity-manager
 ms.technology: security
 ms.suite: ems
 ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
+translationtype: Human Translation
+ms.sourcegitcommit: 0bbdacbfc5b912221257a9425db13804d6dd6a25
+ms.openlocfilehash: f589140e0feac52474256e7ab29b9d3a7a36c5ec
+
 
 ---
 # Microsoft Identity Management 설명서
@@ -138,6 +141,7 @@ ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
       </ol>
     </aside>
 </article>
+
 
 
 <!--HONumber=Jun16_HO4-->
