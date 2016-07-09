@@ -12,6 +12,7 @@ ms.technology: security
 ms.assetid: fa0af422-b5e9-4599-9d9b-cb6c18ea07f9
 ms.reviewer: mwahl
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: ca7fdef81eb8a68aff46df528e1989f019f5d2a4
 ms.openlocfilehash: a56ead9777f1dad1aa0d214a506cf1242f51e167
 
@@ -49,6 +50,6 @@ MIM은 AD(Active Directory)와 함께 작동하므로 다음 단계에 따라 AD
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 

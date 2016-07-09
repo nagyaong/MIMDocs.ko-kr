@@ -12,6 +12,7 @@ ms.technology: security
 ms.assetid: 7320f014-8b60-4866-92de-cfbd3e6edc48
 ms.reviewer: mwahl
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 7e61e201b277a2e8ec9fee785e9e34fca3b1cb29
 ms.openlocfilehash: b3f3982ade46932b18fb730fe5c16d52cde188a1
 
@@ -46,6 +47,6 @@ Azure AD(Active Directory)를 사용하면 온-프레미스 또는 클라우드�
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 

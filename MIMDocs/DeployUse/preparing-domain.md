@@ -12,6 +12,7 @@ ms.technology: security
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: b2578d50f855486183ae182330bacb688011c273
 ms.openlocfilehash: b84a6c7c7b53a122eefc3846ba93b92b34edb6ce
 
@@ -93,6 +94,6 @@ MIM 배포의 모든 구성 요소에는 도메인에 자체 ID가 있어야 합
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 

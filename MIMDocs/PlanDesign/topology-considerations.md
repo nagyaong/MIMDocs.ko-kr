@@ -12,6 +12,7 @@ ms.technology: security
 ms.assetid: 735dc357-dfba-4f68-a5b3-d66d6c018803
 ms.reviewer: mwahl
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: c023d147d0fcc1525fefbe866c952e217f7bee6b
 ms.openlocfilehash: e33a08d77a0b5c422cdbc8c19516b55df980a2c6
 
@@ -65,6 +66,6 @@ MIM 동기화 서비스 및 MIM 서비스 데이터베이스를 호스트하는 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 

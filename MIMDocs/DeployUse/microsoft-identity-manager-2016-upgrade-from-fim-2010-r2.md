@@ -12,6 +12,7 @@ ms.technology: security
 ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: mwahl
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 7e61e201b277a2e8ec9fee785e9e34fca3b1cb29
 ms.openlocfilehash: 24a7bf5bfb0a7450becd08be6743ed7ab1755559
 
@@ -201,6 +202,6 @@ ms.openlocfilehash: 24a7bf5bfb0a7450becd08be6743ed7ab1755559
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
