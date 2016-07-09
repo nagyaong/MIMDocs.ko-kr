@@ -12,6 +12,7 @@ ms.technology: security
 ms.assetid: 3ac5b990-1678-4996-996d-cbd84b8426b4
 ms.reviewer: mwahl
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 0ea8b3d9032a01bd6a6b1faad8ea27d2cb889fc6
 ms.openlocfilehash: 323a875aba14a238aa7cb3a0e6df192729ce53d6
 
@@ -94,6 +95,6 @@ MIM 정책 구성에는 사용자 환경에서 프로비전하는 방법에 대�
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
