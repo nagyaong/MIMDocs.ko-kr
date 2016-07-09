@@ -9,8 +9,8 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 19
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 17
-[ In Sync Handback Files ](#insync-handback-success-list)| 12
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 16
+[ In Sync Handback Files ](#insync-handback-success-list)| 13
 [ Ignored Files ](#ignored-list)| 110
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -208,7 +208,6 @@
  [MIMDocs\DeployUse\working-with-identity-manager-hybrid-reporting.md](https://github.com/Microsoft/MIMDocs-pr/blob/f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda/MIMDocs/DeployUse/working-with-identity-manager-hybrid-reporting.md) | OutofSyncHandedBackSuccess | [Details](#e2d0bd6120628d4fd2a14718fc205cde976c778573)
  [MIMDocs\DeployUse\working-with-mim-certificate-manager.md](https://github.com/Microsoft/MIMDocs-pr/blob/f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda/MIMDocs/DeployUse/working-with-mim-certificate-manager.md) | OutofSyncHandedBackSuccess | [Details](#3e0e6cea0b268836bb6347e81694deec93320ce374)
  [MIMDocs\DeployUse\working-with-self-service-password-reset.md](https://github.com/Microsoft/MIMDocs-pr/blob/f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda/MIMDocs/DeployUse/working-with-self-service-password-reset.md) | OutofSyncHandedBackSuccess | [Details](#3a4350e54383dc1098c778090bb29b435082045f75)
- [MIMDocs\PlanDesign\capacity-planning-guide.md](https://github.com/Microsoft/MIMDocs-pr/blob/0ea8b3d9032a01bd6a6b1faad8ea27d2cb889fc6/MIMDocs/PlanDesign/capacity-planning-guide.md) | OutofSyncHandedBackSuccess | [Details](#323a875aba14a238aa7cb3a0e6df192729ce53d6241)
  [MIMDocs\PlanDesign\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/5fa6f8f60d3ca99bc16333406663bd82ac4ec2e6/MIMDocs/PlanDesign/TOC.md) | OutofSyncHandedBackSuccess | [Details](#4cb419fa58037307e1352dd813e5f9b1767cfac5249)
  [MIMDocs\toc.md](https://github.com/Microsoft/MIMDocs-pr/blob/8d151e15ea35fbaf14e8b55697f3fad9858d2aed/MIMDocs/toc.md) | OutofSyncHandedBackSuccess | [Details](#511bb7e106b832056f9743419fe24c066366090a289)
  [MIMDocs\Understand\microsoft-identity-manager-2016.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/Understand/microsoft-identity-manager-2016.md) | OutofSyncHandedBackSuccess | [Details](#5247cce895344ac6148b735fe550eb16c39103c7301)
@@ -225,6 +224,7 @@
  [MIMDocs\GetStarted\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/9c9ada27ad1efe6b4b5154677de163afcbd1c850/MIMDocs/GetStarted/TOC.md) | InSyncHandedBackSuccess | [Details](#260aec3bd3dd61ecfd8abbeb1a01aa9d7126baa880)
  [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr/blob/0bbdacbfc5b912221257a9425db13804d6dd6a25/MIMDocs/index.md) | InSyncHandedBackSuccess | [Details](#f589140e0feac52474256e7ab29b9d3a7a36c5ec81)
  [MIMDocs\microsoft-identity-manager-2016-release-notes.md](https://github.com/Microsoft/MIMDocs-pr/blob/62108908497d1dcf69579ba144545346b6a42266/MIMDocs/microsoft-identity-manager-2016-release-notes.md) | InSyncHandedBackSuccess | [Details](#12f245624e644b12825239e378a26752f7a86846197)
+ [MIMDocs\PlanDesign\capacity-planning-guide.md](https://github.com/Microsoft/MIMDocs-pr/blob/0ea8b3d9032a01bd6a6b1faad8ea27d2cb889fc6/MIMDocs/PlanDesign/capacity-planning-guide.md) | InSyncHandedBackSuccess | [Details](#323a875aba14a238aa7cb3a0e6df192729ce53d6241)
  [MIMDocs\PlanDesign\microsoft-identity-manager-2016-supported-platforms.md](https://github.com/Microsoft/MIMDocs-pr/blob/a59e7471a8aaafc6752c9be34d52fd3509104dec/MIMDocs/PlanDesign/microsoft-identity-manager-2016-supported-platforms.md) | InSyncHandedBackSuccess | [Details](#bb3e3abfdc12d78108676d4a9f029531d9df17fd247)
  [MIMDocs\PlanDesign\topology-considerations.md](https://github.com/Microsoft/MIMDocs-pr/blob/c023d147d0fcc1525fefbe866c952e217f7bee6b/MIMDocs/PlanDesign/topology-considerations.md) | InSyncHandedBackSuccess | [Details](#e33a08d77a0b5c422cdbc8c19516b55df980a2c6250)
  [MIMDocs\Troubleshoot\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/93600a1cd5652d947bfaae4d4cfecfe074fb016f/MIMDocs/Troubleshoot/TOC.md) | InSyncHandedBackSuccess | [Details](#260aec3bd3dd61ecfd8abbeb1a01aa9d7126baa8293)
@@ -3383,15 +3383,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='323a875aba14a238aa7cb3a0e6df192729ce53d6241'></a> Source: [MIMDocs\PlanDesign\capacity-planning-guide.md](https://github.com/Microsoft/MIMDocs-pr/blob/0ea8b3d9032a01bd6a6b1faad8ea27d2cb889fc6/MIMDocs/PlanDesign/capacity-planning-guide.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: [MIMDocs\PlanDesign\capacity-planning-guide.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/1e47a2af4d49fbadc9d7d0f7e2a4f40af1119698/MIMDocs/PlanDesign/capacity-planning-guide.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [MIMDocs\PlanDesign\capacity-planning-guide.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/d55f96c83372b44b0fdb131de66e35e67aad213b/MIMDocs/PlanDesign/capacity-planning-guide.md)
 * Handoff File: [capacity-planning-guide.a5b5577289101cd375376319cbd1fa3f32f4d38f.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/23f257972e04af6291bbd8488737c9a91b59c141/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/capacity-planning-guide.a5b5577289101cd375376319cbd1fa3f32f4d38f.ko-kr.xlf)
 * Handoff Datetime: 2016-07-06 22:20:46
 * Handoff Reason: Include
 * Archive File: [capacity-planning-guide.a5b5577289101cd375376319cbd1fa3f32f4d38f.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/f2938d327ebcf91a159681bfb0333f923e4519d1/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/archive/capacity-planning-guide.a5b5577289101cd375376319cbd1fa3f32f4d38f.ko-kr.xlf)
 * Archive Datetime: 2016-07-08 23:15:52
-* Handback File: [capacity-planning-guide.a5b5577289101cd375376319cbd1fa3f32f4d38f.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/c90a0bc0f29dd24372a3c0389a217acd7ca74d0f/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/capacity-planning-guide.a5b5577289101cd375376319cbd1fa3f32f4d38f.ko-kr.xlf)
-* Handback Datetime: 2016-07-01 00:14:14
+* Handback File: [capacity-planning-guide.a5b5577289101cd375376319cbd1fa3f32f4d38f.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/0a6bc9557cae7e401dbd76d3f7c954a9a97bcf1f/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/capacity-planning-guide.a5b5577289101cd375376319cbd1fa3f32f4d38f.ko-kr.xlf)
+* Handback Datetime: 2016-07-09 08:11:34
 * [Back to Top](#report-top)
 
 ##### <a name='690baba509fc06d6b9029b1247f521948e46ba2a242'></a> Source: [MIMDocs\PlanDesign\docfx.json](https://github.com/Microsoft/MIMDocs-pr/blob/93600a1cd5652d947bfaae4d4cfecfe074fb016f/MIMDocs/PlanDesign/docfx.json)
