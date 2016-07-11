@@ -4,9 +4,10 @@
 ## [용량 계획](capacity-planning-guide.md)
 ## [배포 토폴로지](topology-considerations.md)
 # [배포 및 사용](/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy)
+# [Privileged Access Management 사용](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services)
 # [개발자 참조](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO3-->
 
 

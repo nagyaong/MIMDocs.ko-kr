@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: MIM 인증서 관리자 작업 | Microsoft Identity Manager
-description: 사용자가 자신의 액세스 권한을 관리할 수 있도록 인증서 관리자 앱을 배포하는 방법을 알아봅니다. 
-keywords:
+title: "MIM 인증서 관리자 작업 | Microsoft Identity Manager"
+description: "사용자가 자신의 액세스 권한을 관리할 수 있도록 인증서 관리자 앱을 배포하는 방법을 알아봅니다."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 66060045-d0be-4874-914b-5926fd924ede
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
+ms.openlocfilehash: 3e0e6cea0b268836bb6347e81694deec93320ce3
+
 
 ---
 
@@ -71,7 +65,7 @@ MIM 2016 및 인증서 관리자를 실행한 후 MIM 인증서 관리자 Window
 
 14. MMC의 왼쪽 창에서 **인증 기관(로컬)** 을 확장한 다음 인증 기관 목록 내에서 해당 CA를 확장합니다.
 
-15. **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **새로 만들기 > 인증서 템플릿**을 클릭하여 발급합니다.
+15. **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **새로 만들기 &gt; 인증서 템플릿**을 클릭하여 발급합니다.
 
 16. 목록에서 만들어진 새 템플릿을 선택하고 **확인**을 클릭합니다.
 
@@ -154,7 +148,7 @@ MIM 2016 및 인증서 관리자를 실행한 후 MIM 인증서 관리자 Window
 
     -   가상 스마트 카드 응용 프로그램을 엽니다. 이 응용 프로그램을 사용하면 다음 단계에 필요한 값을 보다 쉽게 찾을 수 있습니다.
 
-    -   응용 프로그램을 AD FS 서버에 클라이언트로 추가하고 서버에서 CM을 구성하기 위해 AD FS 서버에서 Windows PowerShell을 열고 명령 `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`을 실행합니다.
+    -   응용 프로그램을 AD FS 서버에 클라이언트로 추가하고 서버에서 CM을 구성하기 위해 AD FS 서버에서 Windows PowerShell을 열고 명령을 실행합니다. `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`
 
         다음은 ConfigureMimCMClientAndRelyingParty.ps1 스크립트입니다.
 
@@ -255,12 +249,13 @@ MIM 2016 및 인증서 관리자를 실행한 후 MIM 인증서 관리자 Window
 
     -   serverFQDN은 MIMCM 서버의 전체 컴퓨터 이름일 뿐입니다.
 
-    -    **ConfigureMIimCMClientAndRelyingParty.ps1** 스크립트에 관련된 도움말을 보려면 `get-help  -detailed ConfigureMimCMClientAndRelyingParty.ps1`를 실행하세요.
+    -   **ConfigureMIimCMClientAndRelyingParty.ps1** 스크립트에 관련된 도움말을 보려면 다음을 실행하세요. `get-help  -detailed ConfigureMimCMClientAndRelyingParty.ps1`
 
 ## 앱 배포
 CM 앱을 설정할 때 다운로드 센터에서 MIMDMModernApp_&lt;version&gt;_AnyCPU_Test.zip 파일을 다운로드하고 모든 콘텐츠를 추출합니다. .appx 파일이 설치 관리자입니다. [System Center Configuration Manager](https://technet.microsoft.com/library/dn613840.aspx)또는 [Intune](https://technet.microsoft.com/library/dn613839.aspx)을 사용하여 일반적인 Windows 스토어 앱 배포 방법으로 이 앱을 배포하여 앱을 테스트용으로 로드할 수 있습니다. 따라서 사용자가 이 앱을 회사 포털을 통해 액세스하거나 자신의 컴퓨터에 직접 푸시되도록 해야 합니다.
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
