@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Identity Manager 하이브리드 보고 작업 | Microsoft Identity Manager
-description: Azure에서 온-프레미스 데이터와 클라우드 데이터를 하이브리드 보고서에 결합하는 방법 및 이러한 보고서를 보고 관리하는 방법을 알아봅니다.
-keywords:
+title: "Identity Manager 하이브리드 보고 작업 | Microsoft Identity Manager"
+description: "Azure에서 온-프레미스 데이터와 클라우드 데이터를 하이브리드 보고서에 결합하는 방법 및 이러한 보고서를 보고 관리하는 방법을 알아봅니다."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 68df2817-2040-407d-b6d2-f46b9a9a3dbb
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
+ms.openlocfilehash: e2d0bd6120628d4fd2a14718fc205cde976c7785
+
 
 ---
 
@@ -108,6 +102,7 @@ Microsoft Identity Manager가 생성한 이벤트는 Windows 이벤트 로그에
 |정보|4137|단일 이벤트에 대한 데이터가 너무 많은 경우에 MIM 4121 이벤트의 확장입니다. 이 이벤트 헤더의 형식은 다음과 같습니다. `"Request: <GUID> , message <xxx> out of <xxx>`|
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
