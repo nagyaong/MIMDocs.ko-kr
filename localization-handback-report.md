@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [MIMDocs\DeployUse\install-mim-sync.md](https://github.com/Microsoft/MIMDocs-pr/blob/c023d147d0fcc1525fefbe866c952e217f7bee6b/MIMDocs/DeployUse/install-mim-sync.md) | InSyncHandedBackSuccess | [Details](#8a99b3a291d2b145f453732a72244c43f9c535d611)
 
 ## Item Details
+##### <a name='8a99b3a291d2b145f453732a72244c43f9c535d611'></a> Source: [MIMDocs\DeployUse\install-mim-sync.md](https://github.com/Microsoft/MIMDocs-pr/blob/c023d147d0fcc1525fefbe866c952e217f7bee6b/MIMDocs/DeployUse/install-mim-sync.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [MIMDocs\DeployUse\install-mim-sync.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/770f9ca876082379c511ba7023de7d02548b5a8c/MIMDocs/DeployUse/install-mim-sync.md)
+* Handoff File: [install-mim-sync.187fbc84d7198ab90d1445b38ea0a3044b228547.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/23f257972e04af6291bbd8488737c9a91b59c141/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/install-mim-sync.187fbc84d7198ab90d1445b38ea0a3044b228547.ko-kr.xlf)
+* Handoff Datetime: 2016-07-06 22:20:46
+* Handoff Reason: Include
+* Archive File: [install-mim-sync.187fbc84d7198ab90d1445b38ea0a3044b228547.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/f2938d327ebcf91a159681bfb0333f923e4519d1/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/archive/install-mim-sync.187fbc84d7198ab90d1445b38ea0a3044b228547.ko-kr.xlf)
+* Archive Datetime: 2016-07-08 23:15:52
+* Handback File: [install-mim-sync.187fbc84d7198ab90d1445b38ea0a3044b228547.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/1441f45163e39f74ebd094717507d5faf7dd2f5c/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/install-mim-sync.187fbc84d7198ab90d1445b38ea0a3044b228547.ko-kr.xlf)
+* Handback Datetime: 2016-07-14 13:45:03
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
