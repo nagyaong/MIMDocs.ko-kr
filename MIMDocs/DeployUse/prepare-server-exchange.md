@@ -12,6 +12,7 @@ ms.technology: security
 ms.assetid: 34a8c16e-3bed-4e16-939b-b9fe17dd834b
 ms.reviewer: mwahl
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: c023d147d0fcc1525fefbe866c952e217f7bee6b
 ms.openlocfilehash: b69ea20f375869d4ad08987a08aba05913fd1db1
 
@@ -43,6 +44,6 @@ MIM에서 메일 또는 프로비전 사서함을 보내고 받도록 구성하�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 

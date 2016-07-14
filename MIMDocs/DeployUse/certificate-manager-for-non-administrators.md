@@ -12,6 +12,7 @@ ms.technology: security
 ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
 ms.reviewer: mwahl
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 875ed6b96929822ac166a4a262cc8547a4ea3b2a
 ms.openlocfilehash: 50c0edd60abfa6550cb5a873d32a842e8c099811
 
@@ -69,7 +70,7 @@ ms.openlocfilehash: 50c0edd60abfa6550cb5a873d32a842e8c099811
 
     1.  CM 포털에 관리자 권한이 있는 사용자로 로그인합니다.
 
-    2.  **관리** &gt; **프로필 템플릿 관리** 로 이동하여 만든 프로필 템플릿 옆에 있는 확인란이 선택되어 있는지 확인한 다음 Copy a selected profile template(선택한 프로필 템플릿 복사)를 클릭합니다.
+    2.  **관리** &gt; **프로필 템플릿 관리**로 이동하여 만든 프로필 템플릿 옆에 있는 확인란이 선택되어 있는지 확인한 다음 Copy a selected profile template(선택한 프로필 템플릿 복사)을 클릭합니다.
 
     3.  프로필 템플릿의 이름을 입력하고, "nonAdmin"을 추가하고 **확인**을 클릭합니다.
 
@@ -95,6 +96,6 @@ ms.openlocfilehash: 50c0edd60abfa6550cb5a873d32a842e8c099811
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
