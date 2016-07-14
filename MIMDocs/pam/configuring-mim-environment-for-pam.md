@@ -37,10 +37,11 @@ ms.openlocfilehash: c9f2cf2ba1f42ea1513ae38d8089839d85ae5553
 
 7.  보호된 리소스에 액세스할 수 있는 높은 권한 요청, 받기 및 사용하는 방법에 대해 설명합니다.
 
->[!div class="step-by-step"] [시작 »](step-1-prepare-corp-domain.md)
+>[!div class="step-by-step"]
+[[!div class="step-by-step"] [시작 »](step-1-prepare-corp-domain.md)](step-1-prepare-corp-domain.md)
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

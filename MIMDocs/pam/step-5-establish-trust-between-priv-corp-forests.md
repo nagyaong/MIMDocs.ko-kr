@@ -20,7 +20,8 @@ ms.openlocfilehash: 1260b4e1792bf43a7288866cf3afa41fabe79fe9
 
 # 5단계 - PRIV 및 CORP 포리스트 간에 트러스트 설정
 
->[!div class="step-by-step"] [« 4단계](step-4-install-mim-components-on-pam-server.md)
+>[!div class="step-by-step"]
+[!div class="step-by-step"] [« 4단계](step-4-install-mim-components-on-pam-server.md)
 [6단계 »](step-6-transition-group-to-pam.md)
 
 
@@ -104,11 +105,12 @@ PAMSRV에서 각 도메인(예: CORPDC)과 단방향 트러스트를 설정하�
 
 다음 단계에서는 PAM으로 그룹을 이동합니다.
 
->[!div class="step-by-step"] [« 4단계](step-4-install-mim-components-on-pam-server.md)
+>[!div class="step-by-step"]
+[!div class="step-by-step"] [« 4단계](step-4-install-mim-components-on-pam-server.md)
 [6단계 »](step-6-transition-group-to-pam.md)
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
