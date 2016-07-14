@@ -12,6 +12,7 @@ ms.technology: security
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: af9f7f75f19bb29f2e29577c787252f6b7fabb7d
 ms.openlocfilehash: cd4ac84af4e5416512cf546a5d23b342ebe13c39
 
@@ -54,7 +55,7 @@ ms.openlocfilehash: cd4ac84af4e5416512cf546a5d23b342ebe13c39
 
     ![PowerShell 기능 이미지](media/MIM-DeployWS2.png)
 
-7. PowerShell에서 다음 명령을 입력합니다. **.NET Framework** 3.5 기능을 위해 원본 파일에 대한 다른 위치를 지정해야 할 수 있습니다. 이러한 기능은 일반적으로 Windows Server가 설치될 때 없지만 OS 설치 디스크 원본 폴더의 SxS(Side-by-Side) 폴더(예: “*d:\Sources\SxS\*”)에 있습니다.
+7. PowerShell에서 다음 명령을 입력합니다. **.NET Framework** 3.5 기능을 위해 원본 파일에 대한 다른 위치를 지정해야 할 수 있습니다. 이러한 기능은 일반적으로 Windows Server가 설치될 때는 없지만 OS 설치 디스크 원본 폴더의 SxS(Side-by-Side) 폴더(예: “*d:\Sources\SxS\*”)에 있습니다.
 
     ```
     import-module ServerManager
@@ -110,6 +111,6 @@ ms.openlocfilehash: cd4ac84af4e5416512cf546a5d23b342ebe13c39
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 
