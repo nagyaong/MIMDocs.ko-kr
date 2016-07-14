@@ -12,6 +12,7 @@ ms.technology: security
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: c023d147d0fcc1525fefbe866c952e217f7bee6b
 ms.openlocfilehash: 8a99b3a291d2b145f453732a72244c43f9c535d6
 
@@ -106,6 +107,6 @@ Microsoft Identity Manager 2016 구성 요소를 설치하려면 먼저 설치 �
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
