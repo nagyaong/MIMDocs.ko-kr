@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "7bde0a52219370e47852ca7551a93544777d957e",
-  "LastTranslatedCommit": "663ae8c88f70f60fc85954351e62589380056d4b",
+  "LastTranslatedCommit": "dfeec219ec5cbdaf0862735a565a7e775d490fde",
   "Items": {
     "c1e15c9548e46cbbff7810e63478074ceeb06152": {
       "FileHash": "c1e15c9548e46cbbff7810e63478074ceeb06152",
@@ -15831,14 +15831,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": "ddff9630a722a84f39d4d5576edf072eb25e2ca3",
+      "TargetFileCommit": "dfeec219ec5cbdaf0862735a565a7e775d490fde",
       "TargetFilePath": "MIMDocs\\pam\\TOC.md",
       "HandbackFilePath": "ol-handback\\Microsoft\\MIMDocs-pr.ko-kr\\master\\TOC.415c292cbd208d0c96e050179393e36f72955690.ko-kr.xlf",
-      "HandbackFileCommit": "f19b11adae82ca59dfe6b85717c2d69a2a1838d0",
-      "HandbackDateTime": "2016-07-11T13:32:13.8492187Z",
+      "HandbackFileCommit": "c19a36e23d155d55820ca0a2d8a33fade6a47b8a",
+      "HandbackDateTime": "2016-07-15T03:30:06.5322304Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "2016-07-11T13:32:13.8492187Z",
+      "UpdatedDateTime": "2016-07-15T03:30:06.5322304Z",
       "ArchiveFilePath": null,
       "ArchiveFileCommit": null,
       "ArchiveFileDateTime": "0001-01-01T00:00:00",

@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [MIMDocs\pam\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/9cf126d898c93faf89d7119136cce4e4963bb63d/MIMDocs/pam/TOC.md) | InSyncHandedBackSuccess | [Details](#6c59c7c73fd09a041b2fb130b533c516c036d540238)
 
 ## Item Details
+##### <a name='6c59c7c73fd09a041b2fb130b533c516c036d540238'></a> Source: [MIMDocs\pam\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/9cf126d898c93faf89d7119136cce4e4963bb63d/MIMDocs/pam/TOC.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [MIMDocs\pam\TOC.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/dfeec219ec5cbdaf0862735a565a7e775d490fde/MIMDocs/pam/TOC.md)
+* Handoff File: [TOC.415c292cbd208d0c96e050179393e36f72955690.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/e8772f9a4a0b3b891cbc7308f66e797947ab0e14/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/TOC.415c292cbd208d0c96e050179393e36f72955690.ko-kr.xlf)
+* Handoff Datetime: 2016-07-11 20:22:42
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [TOC.415c292cbd208d0c96e050179393e36f72955690.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/c19a36e23d155d55820ca0a2d8a33fade6a47b8a/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/TOC.415c292cbd208d0c96e050179393e36f72955690.ko-kr.xlf)
+* Handback Datetime: 2016-07-15 03:30:06
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
