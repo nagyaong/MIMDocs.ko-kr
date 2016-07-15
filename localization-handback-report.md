@@ -1,11 +1,55 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 3
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [MIMDocs\DeployUse\prepare-server-sharepoint.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/DeployUse/prepare-server-sharepoint.md) | InSyncHandedBackSuccess | [Details](#b144f28b41eb8e02afa44495c0019ccc8102200567)
+ [MIMDocs\toc.md](https://github.com/Microsoft/MIMDocs-pr/blob/3b6b7df0a2836f23795c5bc6d5af6c561d361331/MIMDocs/toc.md) | OutofSyncHandedBackSuccess | [Details](#84a2f5e4796c1d7e0a407cfc4a336de1bf65c5f3288)
+ [MIMDocs\Understand\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/8d151e15ea35fbaf14e8b55697f3fad9858d2aed/MIMDocs/Understand/TOC.md) | InSyncHandedBackSuccess | [Details](#0a32b3c5b574f121bcd34d97a9430d0dfd553ca8301)
 
 ## Item Details
+##### <a name='b144f28b41eb8e02afa44495c0019ccc8102200567'></a> Source: [MIMDocs\DeployUse\prepare-server-sharepoint.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/DeployUse/prepare-server-sharepoint.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [MIMDocs\DeployUse\prepare-server-sharepoint.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/663ae8c88f70f60fc85954351e62589380056d4b/MIMDocs/DeployUse/prepare-server-sharepoint.md)
+* Handoff File: [prepare-server-sharepoint.ea9bf41d1869c4bf8841649fee7599cbc80b640e.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/452d9680051dbd1f76f0730b6e4dc41be47030ba/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/prepare-server-sharepoint.ea9bf41d1869c4bf8841649fee7599cbc80b640e.ko-kr.xlf)
+* Handoff Datetime: 2016-06-29 00:59:43
+* Handoff Reason: Include
+* Archive File: [prepare-server-sharepoint.ea9bf41d1869c4bf8841649fee7599cbc80b640e.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/aac1173b24774001989c20f26b1559d9ce2d0f49/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/archive/prepare-server-sharepoint.ea9bf41d1869c4bf8841649fee7599cbc80b640e.ko-kr.xlf)
+* Archive Datetime: 2016-07-01 23:25:46
+* Handback File: [prepare-server-sharepoint.ea9bf41d1869c4bf8841649fee7599cbc80b640e.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/427ec09859b9738e7408254d316874504b21bf43/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/prepare-server-sharepoint.ea9bf41d1869c4bf8841649fee7599cbc80b640e.ko-kr.xlf)
+* Handback Datetime: 2016-07-15 01:03:52
+* [Back to Top](#report-top)
+
+##### <a name='84a2f5e4796c1d7e0a407cfc4a336de1bf65c5f3288'></a> Source: [MIMDocs\toc.md](https://github.com/Microsoft/MIMDocs-pr/blob/3b6b7df0a2836f23795c5bc6d5af6c561d361331/MIMDocs/toc.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [toc.6a59cd1e48b1263518d5152d0f44ced431e431a3.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/89233b52ef5212ea747b443cb1ec52f835464fb2/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/toc.6a59cd1e48b1263518d5152d0f44ced431e431a3.ko-kr.xlf)
+* Handoff Datetime: 2016-07-14 16:54:51
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [MIMDocs\toc.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/663ae8c88f70f60fc85954351e62589380056d4b/MIMDocs/toc.md)
+* Current Handback File: [toc.6a59cd1e48b1263518d5152d0f44ced431e431a3.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/427ec09859b9738e7408254d316874504b21bf43/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/toc.6a59cd1e48b1263518d5152d0f44ced431e431a3.ko-kr.xlf)
+* Current Handback Datetime: 2016-07-15 01:03:52
+* [Back to Top](#report-top)
+
+##### <a name='0a32b3c5b574f121bcd34d97a9430d0dfd553ca8301'></a> Source: [MIMDocs\Understand\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/8d151e15ea35fbaf14e8b55697f3fad9858d2aed/MIMDocs/Understand/TOC.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [MIMDocs\Understand\TOC.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/663ae8c88f70f60fc85954351e62589380056d4b/MIMDocs/Understand/TOC.md)
+* Handoff File: [TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/89233b52ef5212ea747b443cb1ec52f835464fb2/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf)
+* Handoff Datetime: 2016-07-14 16:54:51
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/427ec09859b9738e7408254d316874504b21bf43/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf)
+* Handback Datetime: 2016-07-15 01:03:52
+* [Back to Top](#report-top)
+
 
 ## Error Details
 

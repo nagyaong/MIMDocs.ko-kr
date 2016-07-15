@@ -9,8 +9,8 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 7
-[ In Sync Handback Files ](#insync-handback-success-list)| 41
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 6
+[ In Sync Handback Files ](#insync-handback-success-list)| 42
 [ Ignored Files ](#ignored-list)| 109
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -181,7 +181,6 @@
  [MIMDocs\pam\step-6-transition-group-to-pam.md](https://github.com/Microsoft/MIMDocs-pr/blob/01470689e862b47625346d5d5bc6bc7def11da9c/MIMDocs/pam/step-6-transition-group-to-pam.md) | OutofSyncHandedBackSuccess | [Details](#b21e2fed4588572fd1b793c4942860871ae9a51c235)
  [MIMDocs\pam\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/9cf126d898c93faf89d7119136cce4e4963bb63d/MIMDocs/pam/TOC.md) | OutofSyncHandedBackSuccess | [Details](#6c59c7c73fd09a041b2fb130b533c516c036d540238)
  [MIMDocs\toc.md](https://github.com/Microsoft/MIMDocs-pr/blob/3b6b7df0a2836f23795c5bc6d5af6c561d361331/MIMDocs/toc.md) | OutofSyncHandedBackSuccess | [Details](#84a2f5e4796c1d7e0a407cfc4a336de1bf65c5f3288)
- [MIMDocs\Understand\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/8d151e15ea35fbaf14e8b55697f3fad9858d2aed/MIMDocs/Understand/TOC.md) | OutofSyncHandedBackSuccess | [Details](#0a32b3c5b574f121bcd34d97a9430d0dfd553ca8301)
 
 ## <a name='insync-handback-success-list'></a> In Sync Handback File Success List
  Source File | Status | Details 
@@ -227,6 +226,7 @@
  [MIMDocs\Troubleshoot\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/7bde0a52219370e47852ca7551a93544777d957e/MIMDocs/Troubleshoot/TOC.md) | InSyncHandedBackSuccess | [Details](#260aec3bd3dd61ecfd8abbeb1a01aa9d7126baa8292)
  [MIMDocs\Understand\identity-manager-hybrid-reporting-azure.md](https://github.com/Microsoft/MIMDocs-pr/blob/7e61e201b277a2e8ec9fee785e9e34fca3b1cb29/MIMDocs/Understand/identity-manager-hybrid-reporting-azure.md) | InSyncHandedBackSuccess | [Details](#b3f3982ade46932b18fb730fe5c16d52cde188a1294)
  [MIMDocs\Understand\microsoft-identity-manager-2016.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/Understand/microsoft-identity-manager-2016.md) | InSyncHandedBackSuccess | [Details](#5247cce895344ac6148b735fe550eb16c39103c7300)
+ [MIMDocs\Understand\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/8d151e15ea35fbaf14e8b55697f3fad9858d2aed/MIMDocs/Understand/TOC.md) | InSyncHandedBackSuccess | [Details](#0a32b3c5b574f121bcd34d97a9430d0dfd553ca8301)
 
 ## <a name='ignored-list'></a> Ignored File List
  Source File | Status | Details 
@@ -1202,14 +1202,14 @@
 
 ##### <a name='b144f28b41eb8e02afa44495c0019ccc8102200567'></a> Source: [MIMDocs\DeployUse\prepare-server-sharepoint.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/DeployUse/prepare-server-sharepoint.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [MIMDocs\DeployUse\prepare-server-sharepoint.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/ddff9630a722a84f39d4d5576edf072eb25e2ca3/MIMDocs/DeployUse/prepare-server-sharepoint.md)
+* Target File: [MIMDocs\DeployUse\prepare-server-sharepoint.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/663ae8c88f70f60fc85954351e62589380056d4b/MIMDocs/DeployUse/prepare-server-sharepoint.md)
 * Handoff File: [prepare-server-sharepoint.ea9bf41d1869c4bf8841649fee7599cbc80b640e.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/452d9680051dbd1f76f0730b6e4dc41be47030ba/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/prepare-server-sharepoint.ea9bf41d1869c4bf8841649fee7599cbc80b640e.ko-kr.xlf)
 * Handoff Datetime: 2016-06-29 00:59:43
 * Handoff Reason: Include
 * Archive File: [prepare-server-sharepoint.ea9bf41d1869c4bf8841649fee7599cbc80b640e.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/aac1173b24774001989c20f26b1559d9ce2d0f49/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/archive/prepare-server-sharepoint.ea9bf41d1869c4bf8841649fee7599cbc80b640e.ko-kr.xlf)
 * Archive Datetime: 2016-07-01 23:25:46
-* Handback File: [prepare-server-sharepoint.ea9bf41d1869c4bf8841649fee7599cbc80b640e.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/f19b11adae82ca59dfe6b85717c2d69a2a1838d0/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/prepare-server-sharepoint.ea9bf41d1869c4bf8841649fee7599cbc80b640e.ko-kr.xlf)
-* Handback Datetime: 2016-07-11 13:32:13
+* Handback File: [prepare-server-sharepoint.ea9bf41d1869c4bf8841649fee7599cbc80b640e.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/427ec09859b9738e7408254d316874504b21bf43/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/prepare-server-sharepoint.ea9bf41d1869c4bf8841649fee7599cbc80b640e.ko-kr.xlf)
+* Handback Datetime: 2016-07-15 01:03:52
 * [Back to Top](#report-top)
 
 ##### <a name='2c0ff0bdbba4bcf979def8d5c7aa381947d6cc8768'></a> Source: [MIMDocs\DeployUse\prepare-server-sql2014.md](https://github.com/Microsoft/MIMDocs-pr/blob/c023d147d0fcc1525fefbe866c952e217f7bee6b/MIMDocs/DeployUse/prepare-server-sql2014.md)
@@ -3956,9 +3956,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [MIMDocs\toc.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/2cf971af4ff8c2e964f3daf9d3cf88008170e118/MIMDocs/toc.md)
-* Current Handback File: [toc.6a59cd1e48b1263518d5152d0f44ced431e431a3.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/6cdba4efa683b16fc7965e0e7f8e85944fe789dd/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/toc.6a59cd1e48b1263518d5152d0f44ced431e431a3.ko-kr.xlf)
-* Current Handback Datetime: 2016-07-11 23:18:55
+* Current Target File: [MIMDocs\toc.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/663ae8c88f70f60fc85954351e62589380056d4b/MIMDocs/toc.md)
+* Current Handback File: [toc.6a59cd1e48b1263518d5152d0f44ced431e431a3.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/427ec09859b9738e7408254d316874504b21bf43/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/toc.6a59cd1e48b1263518d5152d0f44ced431e431a3.ko-kr.xlf)
+* Current Handback Datetime: 2016-07-15 01:03:52
 * [Back to Top](#report-top)
 
 ##### <a name='a31c4fee7fa7148519ee78e29ea6bd9c31520315289'></a> Source: [MIMDocs\Troubleshoot\docfx.json](https://github.com/Microsoft/MIMDocs-pr/blob/7bde0a52219370e47852ca7551a93544777d957e/MIMDocs/Troubleshoot/docfx.json)
@@ -4111,15 +4111,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='0a32b3c5b574f121bcd34d97a9430d0dfd553ca8301'></a> Source: [MIMDocs\Understand\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/8d151e15ea35fbaf14e8b55697f3fad9858d2aed/MIMDocs/Understand/TOC.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: [MIMDocs\Understand\TOC.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/2cf971af4ff8c2e964f3daf9d3cf88008170e118/MIMDocs/Understand/TOC.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [MIMDocs\Understand\TOC.md](https://github.com/Microsoft/MIMDocs-pr.ko-kr/blob/663ae8c88f70f60fc85954351e62589380056d4b/MIMDocs/Understand/TOC.md)
 * Handoff File: [TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/89233b52ef5212ea747b443cb1ec52f835464fb2/ol-handoff/Microsoft/MIMDocs-pr.ko-kr/master/TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf)
 * Handoff Datetime: 2016-07-14 16:54:51
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/6cdba4efa683b16fc7965e0e7f8e85944fe789dd/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf)
-* Handback Datetime: 2016-07-11 23:18:55
+* Handback File: [TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/427ec09859b9738e7408254d316874504b21bf43/ol-handback/Microsoft/MIMDocs-pr.ko-kr/master/TOC.cf3c9303083fb125b50bea7db798a930a73afc51.ko-kr.xlf)
+* Handback Datetime: 2016-07-15 01:03:52
 * [Back to Top](#report-top)
 
 ##### <a name='8b38ac1bf813dc8840b1522ce23fddf8de3997c3302'></a> Source: [README.md](https://github.com/Microsoft/MIMDocs-pr/blob/7bde0a52219370e47852ca7551a93544777d957e/README.md)
