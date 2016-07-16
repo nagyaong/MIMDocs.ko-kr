@@ -17,9 +17,10 @@
 ## [MIM 인증서 관리자](working-with-mim-certificate-manager.md)
 ### [스마트 카드 등록](certificate-manager-for-non-administrators.md)
 ### [소프트웨어 인증서 만들기](certificate-manager-for-software-certificates.md)
+# [Privileged Access Management 사용](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services)
 # [개발자 참조](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

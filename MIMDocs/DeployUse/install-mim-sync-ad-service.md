@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: MIM 2016 설치&#58; Active Directory와 MIM 서비스 동기화 | Microsoft Identity Manager
-description: 관리 에이전트 및 MIM 동기화 서비스를 사용하여 Active Directory와 MIM 데이터베이스를 동기화합니다.
-keywords:
+title: "MIM 2016 설치&#58; Active Directory와 MIM 서비스 동기화 | Microsoft Identity Manager"
+description: "관리 에이전트 및 MIM 동기화 서비스를 사용하여 Active Directory와 MIM 데이터베이스를 동기화합니다."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,22 +10,19 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8fd779bcc4d41b6e67d0fa31aa0f37c4ea2b410a
+ms.openlocfilehash: f4e94980c6a03b08221fd46e19c421cce226086d
+
 
 ---
 
 # MIM 2016 설치: Active Directory와 MIM 서비스 동기화
 
->[!div class="step-by-step"] [l« MIM 서비스 및 포털](install-mim-service-portal.md)
+>[!div class="step-by-step"]
+[« MIM 서비스 및 포털](install-mim-service-portal.md)
 
 > [!NOTE]
 > 이 연습에서는 Contoso라는 회사의 샘플 이름과 값을 사용합니다. 해당 항목을 사용자의 정보로 바꿉니다. 예를 들면 다음과 같습니다.
@@ -42,7 +37,8 @@ MIM MA(관리 에이전트)는 MIM 서비스에 대한 MIM 동기화를 위한 �
 
 MIM 관리 에이전트를 구성할 때 사용자 계정을 지정해야 합니다. 이 문서에서는 이 계정에 대한 이름으로 **MIMMA**를 사용합니다.
 
-> [!NOTE]MIM 관리 에이전트에 대해 사용하는 계정은 MIM 서비스를 설치하는 동안 지정한 계정과 동일해야 합니다.
+> [!NOTE]
+> MIM 관리 에이전트에 대해 사용하는 계정은 MIM 서비스를 설치하는 동안 지정한 계정과 동일해야 합니다.
 
 ###MIM MA를 만들려면
 
@@ -437,9 +433,11 @@ MIM 서비스 데이터베이스를 개체로 채우려면 MIMMA 커넥터에서
     - **실행 프로필** 목록에서 실행할 실행 프로필을 선택합니다.
     - 실행 프로필을 시작하려면 **확인**을 클릭합니다.
 
->[!div class="step-by-step"] [l« MIM 서비스 및 포털](install-mim-service-portal.md)
+>[!div class="step-by-step"]
+[« MIM 서비스 및 포털](install-mim-service-portal.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

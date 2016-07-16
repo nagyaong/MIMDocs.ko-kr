@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 셀프 서비스 암호 재설정 작업 | Microsoft Identity Manager
-description: SSPR이 다단계 인증과 함께 작동하는 방식을 포함하여 MIM 2016 셀프 서비스 암호 재설정의 새로운 기능을 확인합니다. 
-keywords:
+title: "셀프 서비스 암호 재설정 작업 | Microsoft Identity Manager"
+description: "SSPR이 다단계 인증과 함께 작동하는 방식을 포함하여 MIM 2016 셀프 서비스 암호 재설정의 새로운 기능을 확인합니다."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
+ms.openlocfilehash: 3a4350e54383dc1098c778090bb29b435082045f
+
 
 ---
 
@@ -50,7 +44,7 @@ Azure MFA를 사용하는 경우 사용자가 해당 계정 및 리소스에 대
 
 -   MIM 2016 동기화 서비스(동기화)가 AD 도메인에 도메인 가입된 서버에 설치되고 실행됩니다.
 
--   SSPR 등록 포털 및 SSPR 재설정 포털을 포함하는 MIM 2016 서비스 및 포털이 서버에 설치되고 실행됩니다(동기화와 함께 배치 가능).
+-   SSPR 등록 포털 및 SSPR 재설정 포털을 포함하는 MIM 2016 서비스 &amp; 포털이 서버에 설치되고 실행됩니다(동기화와 함께 배치 가능).
 
 -   다음을 비롯한 MIM 동기화가 AD-FIM ID 동기화에 대해 구성되어 있습니다.
 
@@ -60,7 +54,7 @@ Azure MFA를 사용하는 경우 사용자가 해당 계정 및 리소스에 대
 
     -   MIM 서비스에서 사용자 데이터 동기화를 허용하고 동기화 기반 작업이 용이하도록 MIM 포털에 동기화 규칙 구성
 
--   SSPR Windows 로그인 통합 클라이언트를 포함하는 MIM 2016 추가 기능 및 확장이 서버 또는 별도 클라이언트 컴퓨터에 배포됩니다.
+-   SSPR Windows 로그인 통합 클라이언트를 포함하는 MIM 2016 추가 기능 &amp; 확장이 서버 또는 별도 클라이언트 컴퓨터에 배포됩니다.
 
 ## 다단계 인증과 함께 작동하도록 MIM 준비
 암호 재설정 및 계정 잠금 해제 기능을 지원하도록 MIM 동기화를 구성합니다. 자세한 내용은 [FIM 추가 기능 및 확장 설치](https://technet.microsoft.com/library/ff512688%28v=ws.10%29.aspx), [FIM SSPR 설치](https://technet.microsoft.com/library/hh322891%28v=ws.10%29.aspx), [SSPR 인증 게이트](https://technet.microsoft.com/library/jj134288%28v=ws.10%29.aspx) 및 [SSPR 테스트 랩 가이드](https://technet.microsoft.com/library/hh826057%28v=ws.10%29.aspx)를 참조하세요.
@@ -73,7 +67,7 @@ Azure MFA를 사용하는 경우 사용자가 해당 계정 및 리소스에 대
 
 2.  왼쪽 아래 모서리에서 **새로 만들기**를 클릭합니다.
 
-3.  **앱 서비스 &gt; Active Directory &gt; Multi-Factor Authentication 공급자 &gt; 빠른 생성**을 클릭합니다.
+3.  **앱 서비스 &gt; Active Directory &gt; 다단계 인증 공급자 &gt; 빨리 만들기**를 클릭합니다.
 
 ![Azure 포털 MFA 빨리 만들기 이미지](media/MIM-SSPR-Azureportal.png)
 
@@ -211,6 +205,7 @@ Azure MFA를 사용하는 경우 사용자가 해당 계정 및 리소스에 대
     ![MIM 로그인 도우미 암호 재설정 이미지](media/MIM-SSPR-PR1.JPG)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 관리자가 아닌 사용자의 스마트 카드 등록 | Microsoft Identity Manager
-description: 관리자가 사용자의 컴퓨터에 액세스하지 않고도 사용자가 인증서 관리자를 사용할 수 있도록 사용자의 스마트 카드를 등록하는 방법을 알아봅니다.
-keywords:
+title: "관리자가 아닌 사용자의 스마트 카드 등록 | Microsoft Identity Manager"
+description: "관리자가 사용자의 컴퓨터에 액세스하지 않고도 사용자가 인증서 관리자를 사용할 수 있도록 사용자의 스마트 카드를 등록하는 방법을 알아봅니다."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 875ed6b96929822ac166a4a262cc8547a4ea3b2a
+ms.openlocfilehash: 50c0edd60abfa6550cb5a873d32a842e8c099811
+
 
 ---
 
@@ -76,11 +70,11 @@ ms.suite: ems
 
     1.  CM 포털에 관리자 권한이 있는 사용자로 로그인합니다.
 
-    2.  **관리** &gt; **프로필 템플릿 관리** 로 이동하여 만든 프로필 템플릿 옆에 있는 확인란이 선택되어 있는지 확인한 다음 Copy a selected profile template(선택한 프로필 템플릿 복사)를 클릭합니다.
+    2.  **관리** &gt; **프로필 템플릿 관리**로 이동하여 만든 프로필 템플릿 옆에 있는 확인란이 선택되어 있는지 확인한 다음 Copy a selected profile template(선택한 프로필 템플릿 복사)을 클릭합니다.
 
     3.  프로필 템플릿의 이름을 입력하고, "nonAdmin"을 추가하고 **확인**을 클릭합니다.
 
-    4.  프로필 템플릿의 일반 설정이 표시되면 아래로 스크롤하여 **스마트 카드 구성**아래에서 **설정 변경**을 클릭합니다.
+    4.  프로필 템플릿의 일반 설정이 표시되면 아래로 스크롤하여 **스마트 카드 구성** 아래에서 **설정 변경**을 클릭합니다.
 
     5.  **Admin key initial value (hex)** (관리자 키 초기 값(16진수)) 아래에서 기본 관리자 키를 입력합니다. "010203040506070801020304050607080102030405060708"
 
@@ -101,6 +95,7 @@ ms.suite: ems
 8.  **CM 앱을 시작하고 가상 스마트 카드 등록**
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

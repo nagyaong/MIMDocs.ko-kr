@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: MIM 배포를 위한 토폴로지 고려 사항 | Microsoft Identity Manager
-description: MIM 2016 구성 요소를 이해하고 이를 사용자 환경에 배포하는 방법에 대한 제안 사항을 알아봅니다. 
-keywords:
+title: "MIM 배포를 위한 토폴로지 고려 사항 | Microsoft Identity Manager"
+description: "MIM 2016 구성 요소를 이해하고 이를 사용자 환경에 배포하는 방법에 대한 제안 사항을 알아봅니다."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 735dc357-dfba-4f68-a5b3-d66d6c018803
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c023d147d0fcc1525fefbe866c952e217f7bee6b
+ms.openlocfilehash: e33a08d77a0b5c422cdbc8c19516b55df980a2c6
+
 
 ---
 
@@ -59,24 +53,19 @@ ms.suite: ems
 
 
 ## 여러 MIM 서비스를 사용하는 다중 계층 토폴로지
-데이터를 외부 시스템과 동기화하면 시스템에 상당한 로드가 추가되고 더 오랜 시간 동안 실행될 수 있습니다. 동기화 구성으로 인해 워크플로 관련 정책이 트리거되는 경우 이러한 정책은 최종 사용자 워크플로와 리소스를 경합합니다. 이러한 문제는 실시간으로 수행되고 최종 사용자가 프로세스가 완료되기를 기다리는 암호 재설정과 같은 인증 워크플로에서 명확히 나타날 수 있습니다. 최종 사용자 작업용 MIM 서비스 인스턴스 하나와 관리 데이터 동기화용 별도 포털을 제공하면 최종 사용자 작업에 대한 향상된 응답성을 제공할 수 있습니다.
+외부 시스템과의 데이터 동기화에는 시간이 오래 걸릴 수 있으며 해당 기간 동안 시스템에 상당한 부하가 추가될 수 있습니다. 동기화 구성으로 인해 워크플로 관련 정책이 트리거되는 경우 이러한 정책은 최종 사용자 워크플로와 리소스를 경합합니다. 이러한 문제는 실시간으로 수행되고 최종 사용자가 프로세스가 완료되기를 기다리는 암호 재설정과 같은 인증 워크플로에서 명확히 나타날 수 있습니다. 최종 사용자 작업용 MIM 서비스 인스턴스 하나와 관리 데이터 동기화용 별도 포털을 제공하면 최종 사용자 작업에 대한 향상된 응답성을 제공할 수 있습니다.
 
 ![MIM 다중 계층 토폴로지 다이어그램](media/MIM-topo-multitier-multiservice.png)
 
 표준 다중 계층 토폴로지와 마찬가지로 NLB 클러스터를 사용하거나 필요에 따라 클러스터의 노드 수를 늘려 MIM 포털 성능을 개선할 수 있습니다.
 
-MIM 동기화 서비스 및 MIM 서비스 데이터베이스를 호스트하는 SQL Server를 실행하는 컴퓨터의 성능은 MIM 배포의 전반적인 성능에 큰 영향을 미칩니다. 따라서 데이터베이스 성능을 최적화하기 위한 SQL Server 설명서의 권장 사항을 따릅니다. 자세한 내용은 다음 문서를 참조하세요.
-
-- [저장소 관련 상위 10가지 모범 사례](http://go.microsoft.com/fwlink/?LinkID=183663)
-
-- [Tempdb 성능 최적화](http://go.microsoft.com/fwlink/?LinkID=188267)
-
-- [SQL Server 최선의 방법 문서](http://go.microsoft.com/fwlink/?LinkID=188268)
+MIM 동기화 서비스 및 MIM 서비스 데이터베이스를 호스트하는 SQL Server를 실행하는 컴퓨터는 MIM 배포의 전반적인 성능에 큰 영향을 미칩니다. 따라서 데이터베이스 성능을 최적화하기 위한 SQL Server 설명서의 권장 사항을 따릅니다. 자세한 내용은 다음 문서를 참조하세요.
 
 ## 참고 항목
 - 다운로드 가능한 [FIM(Forefront Identity Manager) 2010 용량 계획 가이드](http://go.microsoft.com/fwlink/?LinkId=200180)에서는 테스트 빌드 및 성능 테스트 결과에 대해 자세히 알아봅니다.
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 
