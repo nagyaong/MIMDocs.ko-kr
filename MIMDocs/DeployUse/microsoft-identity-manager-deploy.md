@@ -3,8 +3,8 @@ title: "MIM 2016 배포 | Microsoft Identity Manager"
 description: "환경 준비부터 포털 구성까지 Microsoft Identity Manager 2016 배포와 관련된 전체 단계 목록을 확인합니다."
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: fa0af422-b5e9-4599-9d9b-cb6c18ea07f9
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ca7fdef81eb8a68aff46df528e1989f019f5d2a4
-ms.openlocfilehash: a56ead9777f1dad1aa0d214a506cf1242f51e167
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: db062cf8dafe0b480db06cd8d913583c5b709246
 
 
 ---
@@ -50,6 +50,6 @@ MIM은 AD(Active Directory)와 함께 작동하므로 다음 단계에 따라 AD
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -34,6 +34,6 @@ MIM은 Active Directory를 관리하는 온-프레미스 Privileged Identity Man
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 
