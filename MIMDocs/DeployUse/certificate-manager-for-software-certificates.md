@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 소프트웨어 인증서 만들기 | Microsoft Identity Manager
-description: 인증서 관리자를 사용하여 프로필 템플릿으로 소프트웨어 인증서를 만들고 갱신하는 방법을 알아봅니다.
-keywords:
+title: "소프트웨어 인증서 만들기 | Microsoft Identity Manager"
+description: "인증서 관리자를 사용하여 프로필 템플릿으로 소프트웨어 인증서를 만들고 갱신하는 방법을 알아봅니다."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: fed5ada9-d80f-4825-aad7-4172ac5d71d3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
+ms.openlocfilehash: 6b58093744656b9bfa62c1cfcab340ea88e6e168
+
 
 ---
 
@@ -82,7 +76,7 @@ ms.suite: ems
 
 1.  CM 포털에 관리자 권한이 있는 사용자로 로그인합니다.
 
-2.  **관리 &gt; 프로필 관리 템플릿** 으로 이동하고 **MIM CM 샘플 스마트 카드 로그온 프로필 템플릿** 옆에 있는 확인란이 선택되었는지 확인한 다음 **선택한 프로필 템플릿 복사**를 클릭합니다.
+2.  **관리 &gt; 프로필 관리 템플릿**으로 이동하고 **MIM CM 샘플 스마트 카드 로그온 프로필 템플릿** 옆에 있는 확인란이 선택되었는지 확인한 다음 **선택한 프로필 템플릿 복사**를 클릭합니다.
 
 3.  프로필 템플릿의 이름을 입력하고 **확인**을 클릭합니다.
 
@@ -103,6 +97,7 @@ ms.suite: ems
 11. 가상 스마트 카드 CM을 사용 중인 경우 데이터 컬렉션이 설정되어 있으면 작동하지 않으므로 데이터 컬렉션 항목을 사용하지 않도록 설정해야 합니다. 왼쪽 창에서 정책을 클릭하고 **Sample data item** (샘플 데이터 항목) 옆에 있는 확인란의 선택을 취소한 다음 **Delete data collection items**(데이터 컬렉션 항목 삭제)를 클릭하여 각각의 정책 및 모든 정책에 대해 데이터 컬렉션을 사용하지 않도록 설정합니다. 그런 다음 **확인**을 클릭합니다.
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
