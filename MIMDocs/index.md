@@ -1,12 +1,12 @@
 ---
 asset_id: 90d66a75-a7ec-4fa1-911c-cce683908838
 layout: HubPage
-title: "Microsoft Identity Manager 설명서"
-description: "Microsoft Intune 모바일 장치 및 응용 프로그램 관리에 대한 기술 문서"
-keywords: intune documentation, MDM documentation, Mobile Device Management Documentation, Mobile Device and Application Management Documentation
-author: msstevenpo
-manager: stevenpo
-ms.date: 04/28/2016
+title: "Identity Manager 설명서 | Microsoft Docs"
+description: "Microsoft Identity Manager용 기술 설명서 - 온-프레미스 ID 및 액세스 관리"
+keywords: "identity manager 설명서, microsoft identity manager, MIM"
+author: kgremban
+manager: femila
+ms.date: 07/21/2016
 ms.topic: hubpage
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -14,16 +14,16 @@ ms.technology: security
 ms.suite: ems
 ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
 translationtype: Human Translation
-ms.sourcegitcommit: 0bbdacbfc5b912221257a9425db13804d6dd6a25
-ms.openlocfilehash: f589140e0feac52474256e7ab29b9d3a7a36c5ec
+ms.sourcegitcommit: 455a24d3008a2ef54e1229100e7150a1090c9b2e
+ms.openlocfilehash: 0ccbac817271b01e38bfb3e84fa5fc7ece787299
 
 
 ---
-# Microsoft Identity Management 설명서
+# ID 관리 설명서
 <article id="main">
     <section id="hero-content">
-      <h1>Microsoft Identity Manager 설명서</h1>
-      <h2>MIM(Microsoft Identity Manager)은 온-프레미스 ID와 ID 동기화 및 ID 도용 저지 등을 포함한 액세스 관리 기능을 제공합니다.</h2>
+      <h1>Identity Manager 설명서</h1>
+      <h2>Microsoft Identity Manager를 사용하여 온-프레미스 ID 관리를 설정하는 방법을 알아봅니다. ID 동기화, ID 도용 방지 등을 구성하는 방법을 보여 주는 자습서입니다.</h2>
       <h3>MIM의 새로운 기능 <a href="http://go.microsoft.com/fwlink/?LinkId=816853" target="\_blank">제품 페이지 방문 &rarr;</a></h3>     
     </section>
     <aside class="alert section-border">
@@ -44,6 +44,7 @@ ms.openlocfilehash: f589140e0feac52474256e7ab29b9d3a7a36c5ec
         </ul>
         <ul class="column column-half">
           <li><a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy">새 서버에 대한 MIM 소프트웨어 배포</a></li>
+          <li><a href="/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services">Privileged Access Management에 대한 자세한 내용</a></li>
         </ul>
       </div>
     </section>
@@ -144,6 +145,6 @@ ms.openlocfilehash: f589140e0feac52474256e7ab29b9d3a7a36c5ec
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
