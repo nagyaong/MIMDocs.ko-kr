@@ -1,10 +1,10 @@
 ---
-title: "MIM 배포를 위한 토폴로지 고려 사항 | Microsoft Identity Manager"
+title: "배포에 대한 토폴로지 가이드 | Microsoft Identity Manager"
 description: "MIM 2016 구성 요소를 이해하고 이를 사용자 환경에 배포하는 방법에 대한 제안 사항을 알아봅니다."
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 735dc357-dfba-4f68-a5b3-d66d6c018803
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c023d147d0fcc1525fefbe866c952e217f7bee6b
-ms.openlocfilehash: e33a08d77a0b5c422cdbc8c19516b55df980a2c6
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: 8efb513bfe7dfb67d240a17b39535270f0c7fab6
 
 
 ---
@@ -66,6 +66,6 @@ MIM 동기화 서비스 및 MIM 서비스 데이터베이스를 호스트하는 
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

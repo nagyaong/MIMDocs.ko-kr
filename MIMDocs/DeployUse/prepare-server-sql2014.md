@@ -1,10 +1,10 @@
 ---
-title: "ID 관리 서버 설치&#58; SQL Server 2014 | Microsoft Identity Manager"
+title: "SQL Server 구성 | Microsoft Identity Manager"
 description: "MIM 2016 설치를 위한 준비 단계로 SQL Server 2014를 설치합니다."
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: get-started-article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 297df3b3-192e-4ed9-82ed-c95eb5297c84
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c023d147d0fcc1525fefbe866c952e217f7bee6b
-ms.openlocfilehash: 2c0ff0bdbba4bcf979def8d5c7aa381947d6cc87
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: daa297d340638214b81a071b924656b25f93479e
 
 
 ---
@@ -49,6 +49,6 @@ ms.openlocfilehash: 2c0ff0bdbba4bcf979def8d5c7aa381947d6cc87
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

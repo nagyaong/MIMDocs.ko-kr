@@ -1,10 +1,10 @@
 ---
-title: "4단계 – PAM 서버와 워크스테이션에 MIM 구성 요소 설치 | Microsoft Identity Manager"
-description: 
+title: "PAM 배포 4단계 – MIM 설치 | Microsoft Identity Manager"
+description: "Privileged Access Management 서버 및 워크스테이션에서 MIM 서비스 및 포털을 설치하고 구성합니다."
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/16/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: 4e0298099dad9b11812d533e23101fb995fe33d5
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 92939d32da25896d07bec61e4633f58230a78181
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: 4e0298099dad9b11812d533e23101fb995fe33d5
 
 PAMSRV에서 MIM 서비스 및 포털과 샘플 포털 웹 응용 프로그램을 설치할 수 있도록 PRIV\Administrator로 로그인합니다.
 
-  > [!NOTE] 
+  > [!NOTE]
   > 사용자는 도메인 관리자여야 합니다. 도메인 관리자로 다음 명령을 실행하지 않으면 다음 단계에서 트러스트 유효성 확인 검사가 완료되지 않습니다.
 
 MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니다.
@@ -44,7 +44,7 @@ MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니�
 
 2.  공통 서비스 및 MIM 데이터베이스 연결을 구성할 때 **새 데이터베이스 만들기**를 지정합니다.
 
-    > [!NOTE] 
+    > [!NOTE]
     > 고가용성을 위해 MIM 서비스를 여러 번 설치하는 경우 모든 후속 설치에 대해 **기존 데이터베이스 사용**을 지정합니다.
 
 3.  메일 서버 연결을 구성할 때 메일 서버를 CORP 환경에 대한 Exchange 또는 SMTP 서버의 호스트 이름으로 설정하고(메일 서버가 없는 경우 corpdc.contoso.local 사용) **SSL 사용** 및 **Mail Server is Exchange Server 2007 or Exchange Server 2010(메일 서버가 Exchange Server 2007 또는 Exchange Server 2010임)** 확인란을 선택 취소합니다.
@@ -193,6 +193,6 @@ MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니�
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

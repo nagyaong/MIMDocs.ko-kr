@@ -1,10 +1,10 @@
 ---
-title: "활성화에 Azure MFA 사용 | Microsoft Identity Manager"
-description: 
+title: "Azure MFA를 사용하여 PAM 활성화 | Microsoft Identity Manager"
+description: "사용자가 Privileged Access Management에서 역할을 활성화할 때 Azure MFA를 제2의 보안 계층으로 설정합니다."
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/17/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: d6f6927eec479c705fd9ef7f33fafdeec05857e0
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 518a7e165946049745c8eea15ecb61866d6f9c04
 
 
 ---
@@ -70,7 +70,7 @@ Azure MFA를 MIM과 함께 사용하려면 다음이 필요합니다.
 
 7.  결과 ZIP 파일을 MIM 서비스가 설치되는 각 시스템에 복사합니다. 
 
->[!NOTE] 
+>[!NOTE]
 > 이 ZIP 파일에는 Azure MFA 서비스에 인증하는 데 사용되는 키 관련 자료가 들어있습니다.
 
 ## Azure MFA용 MIM 서비스 구성
@@ -99,7 +99,7 @@ Azure MFA를 MIM과 함께 사용하려면 다음이 필요합니다.
 
 11.  MIM 서비스 폴더 `C:\\Program Files\\Microsoft Forefront Identity Manager\\2010\\Service`에 **MfaSettings.xml** 파일을 저장하고 덮어씁니다. 
 
-> [!NOTE] 
+> [!NOTE]
 > 프로세스를 종료할 때 **MfaSettings.xml** 파일이나 복사본 또는 ZIP 파일을 공개적으로 읽을 수 없는지 확인해야 합니다.
 
 ## Azure MFA에 대해 PAM 사용자 구성
@@ -151,6 +151,6 @@ Set-PAMRole (Get-PAMRole -DisplayName "R") -MFAEnabled 1
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

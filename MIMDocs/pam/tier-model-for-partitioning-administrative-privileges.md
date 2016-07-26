@@ -1,10 +1,10 @@
 ---
-title: "관리자 권한 분할에 대한 계층 모델 | Microsoft Identity Manager"
-description: 
+title: "PAM 환경 계층 모델 | Microsoft Identity Manager"
+description: "위험에 대한 취약성을 기준으로 시스템을 분리하는 계층 모델에 대해 알아봅니다."
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/14/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: c6e3cd02-1e32-4194-a8ed-3a0b3d022a43
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: 509c05bbda5f0a0b936518fb023000771c45d4f7
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 1a750bedee2aac667c84113d2d08daa20428c260
 
 
 ---
@@ -44,7 +44,7 @@ ms.openlocfilehash: 509c05bbda5f0a0b936518fb023000771c45d4f7
 - 도메인 관리자(계층 0)는 엔터프라이즈 서버(계층 1) 및 표준 사용자 워크스테이션(계층 2)에 로그온할 수 없습니다.
 - 서버 관리자(계층 1)는 표준 사용자 워크스테이션(계층 2)에 로그온할 수 없습니다.
 
->[!NOTE] 
+>[!NOTE]
 > 서버 관리자는 도메인 관리자 그룹에 속하지 않아야 합니다. 도메인 컨트롤러와 엔터프라이즈 서버를 둘 다 관리하는 직원에게는 별도 계정을 제공해야 합니다.
 
 다음을 사용하여 로그온 제한을 적용할 수 있습니다.
@@ -62,6 +62,6 @@ ms.openlocfilehash: 509c05bbda5f0a0b936518fb023000771c45d4f7
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

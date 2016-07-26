@@ -1,10 +1,10 @@
 ---
-title: "관리자가 아닌 사용자의 스마트 카드 등록 | Microsoft Identity Manager"
+title: "셀프서비스 스마트카드 갱신 | Microsoft Identity Manager"
 description: "관리자가 사용자의 컴퓨터에 액세스하지 않고도 사용자가 인증서 관리자를 사용할 수 있도록 사용자의 스마트 카드를 등록하는 방법을 알아봅니다."
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 875ed6b96929822ac166a4a262cc8547a4ea3b2a
-ms.openlocfilehash: 50c0edd60abfa6550cb5a873d32a842e8c099811
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: 2fddede481b5ba677d0d463be4b14cda4b463865
 
 
 ---
@@ -96,6 +96,6 @@ ms.openlocfilehash: 50c0edd60abfa6550cb5a873d32a842e8c099811
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

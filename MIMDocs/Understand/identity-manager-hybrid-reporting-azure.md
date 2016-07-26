@@ -1,10 +1,10 @@
 ---
-title: "하이브리드 ID 관리 보고서 | Microsoft Identity Manager"
+title: "하이브리드 보고란? | Microsoft Identity Manager"
 description: "Azure Active Directory 하이브리드 보고를 통해 클라우드 이벤트와 온-프레미스 이벤트를 모두 포함하는 사용자 지정 보고서를 만들 수 있습니다."
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 05/13/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 7320f014-8b60-4866-92de-cfbd3e6edc48
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7e61e201b277a2e8ec9fee785e9e34fca3b1cb29
-ms.openlocfilehash: b3f3982ade46932b18fb730fe5c16d52cde188a1
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: a074f3361e6d5be497b1a3c25d56aaa7008b128e
 
 
 ---
@@ -47,6 +47,6 @@ Azure AD(Active Directory)를 사용하면 온-프레미스 또는 클라우드�
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

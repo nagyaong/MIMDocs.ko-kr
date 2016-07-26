@@ -1,10 +1,10 @@
 ---
-title: "Active Directory 도메인 서비스에 대한 Privileged Access Management | Microsoft Identity Manager"
-description: 
+title: "ADDS에 대한 PAM이란? | Microsoft Identity Manager"
+description: "Privileged Access Management란 무엇이고 Active Directory 환경 관리 및 보호에 어떤 도움이 되는지 알아봅니다."
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/13/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: cf3796f7-bc68-4cf7-b887-c5b14e855297
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: 959c92f2e98fe712703ca23d3e38cdec6a8b85dc
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: bbc5c6760bc035d57f9d76d102246abbfe298e8b
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 959c92f2e98fe712703ca23d3e38cdec6a8b85dc
 # Active Directory 도메인 서비스에 대한 Privileged Access Management
 PAM(Privileged Access Management)은 MIM(Microsoft Identity Manager), Windows Server 2012 R2 및 Windows Server Technical Preview를 기반으로 하는 솔루션입니다. 조직은 기존 Active Directory 환경 내에서 권한 있는 액세스를 제한할 수 있습니다.
 
-> [!NOTE] 
+> [!NOTE]
 > PAM은 MIM(Microsoft Identity Manager)을 사용하여 구현된 PIM([Privileged Identity Management](https://azure.microsoft.com/documentation/articles/active-directory-privileged-identity-management-configure/))의 인스턴스입니다.
 
 Privileged Access Management는 다음 두 가지 목표를 수행합니다.
@@ -95,6 +95,6 @@ PAM은 다음과 같은 이점이 있습니다.
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 
