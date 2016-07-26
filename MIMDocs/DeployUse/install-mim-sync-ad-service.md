@@ -1,10 +1,10 @@
 ---
-title: "MIM 2016 설치&#58; Active Directory와 MIM 서비스 동기화 | Microsoft Identity Manager"
+title: "AD를 MIM 서비스와 동기화 | Microsoft Identity Manager"
 description: "관리 에이전트 및 MIM 동기화 서비스를 사용하여 Active Directory와 MIM 데이터베이스를 동기화합니다."
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: get-started-article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8fd779bcc4d41b6e67d0fa31aa0f37c4ea2b410a
-ms.openlocfilehash: f4e94980c6a03b08221fd46e19c421cce226086d
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: f17f256653936ffd06da9fae87dccfbf1c12a553
 
 
 ---
@@ -203,7 +203,7 @@ Active Directory 관리 에이전트는 AD 도메인 서비스용 커넥터입�
     -   company
     -   displayName
     -   employeeID
-    -   employee유형
+    -   employeeType
     -   givenName
     -   groupType
     -   manager
@@ -211,7 +211,7 @@ Active Directory 관리 에이전트는 AD 도메인 서비스용 커넥터입�
     -   멤버
     -   objectSid
     -   sAMAccountName
-    -   sAMAccount유형
+    -   sAMAccountType
     -   sn
     -   unicodePwd
     -   userAccountControl
@@ -316,7 +316,7 @@ AD 사용자 인바운드 동기화 규칙을 만들려면
 
     -   메타버스 리소스 종류: person
     -   외부 시스템: ADMA
-    -   외부 시스템 리소스 종류: person
+    -   외부 시스템 리소스 종류: user
 
 6. **관계** 탭에서 다음 정보를 입력하고 **다음**을 클릭합니다.
 
@@ -328,10 +328,10 @@ AD 사용자 인바운드 동기화 규칙을 만들려면
 
     | 흐름 규칙 | 원본 | 대상 |
     |-|-|-|
-    |규칙 1|samAccountName|f|
+    |규칙 1|samAccountName|accountName|
     |규칙 2|displayName|displayName|
-    |규칙 3|Employee유형|Employee유형|
-    |규칙 4|givenName|givenName|
+    |규칙 3|EmployeeType|employeeType|
+    |규칙 4|givenName|firstName|
     |규칙 5|sn|lastName|
     |규칙 6|Manager|manager|
     |규칙 7|objectSID|ObjectSID|
@@ -438,6 +438,6 @@ MIM 서비스 데이터베이스를 개체로 채우려면 MIMMA 커넥터에서
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

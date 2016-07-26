@@ -1,10 +1,10 @@
 ---
-title: "2단계 - PRIV 도메인 컨트롤러 준비 | Microsoft Identity Manager"
-description: 
+title: "PAM 배포 2단계 - PRIV DC | Microsoft Identity Manager"
+description: "Privileged Access Management가 격리되는 배스천 환경을 제공하는 PRIV 도메인 컨트롤러를 준비합니다."
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/16/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 0e9993a0-b8ae-40e2-8228-040256adb7e2
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: 62d80222ea85fe5066cfa396b5e5a10bced4d3cd
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 048a17c6b8150501185b7a13c3d2cb292791c9e8
 
 
 ---
@@ -221,7 +221,7 @@ PRIVDC에서 PowerShell을 사용하여 PRIV 도메인이 다른 기존 포리�
   Add-DnsServerConditionalForwarderZone –name "contoso.local" –masterservers 10.1.1.31
   ```
 
-> [!NOTE] 
+> [!NOTE]
 > 다른 포리스트 또한 이 도메인 컨트롤러에 PRIV 포리스트에 대한 DNS 쿼리를 라우팅할 수 있어야 합니다.  기존 Active Directory 포리스트가 여러 개인 경우 각 해당 포리스트에 DNS 조건부 전달자도 추가해야 합니다.
 
 ### Kerberos 구성
@@ -235,7 +235,7 @@ PRIVDC에서 PowerShell을 사용하여 PRIV 도메인이 다른 기존 포리�
   setspn -S FIMService/pamsrv PRIV\MIMService
   ```
 
-> [!NOTE] 
+> [!NOTE]
 > 이 문서의 다음 단계에는 MIM 2016 서버 구성 요소를 단일 컴퓨터에 설치하는 방법을 설명합니다. 고가용성을 위해 다른 서버를 추가하려는 경우 [FIM 2010: Kerberos 인증 설정](http://social.technet.microsoft.com/wiki/contents/articles/3385.fim-2010-kerberos-authentication-setup.aspx)에 설명된 대로 추가 Kerberos 구성이 필요합니다.
 
 ### MIM 서비스 계정 액세스를 제공하는 위임 구성
@@ -307,6 +307,6 @@ PRIV 리소스(예: MIM)의 유지 관리를 수행하기 위한 PRIV 도메인�
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: "배스천 환경에 대한 고가용성 및 재해 복구 고려 사항 | Microsoft Identity Manager"
-description: 
+title: "PAM 재해 복구 | Microsoft Identity Manager"
+description: "고가용성 및 재해 복구를 위해 Privileged Access Management를 구성하는 방법을 알아봅니다."
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/17/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 03e521cd-cbf0-49f8-9797-dbc284c63018
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: 1d9e005bfb3e26f9a2b818667f14acd3e5239523
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 9164e48bf10fa27ff6c87ba3816b586a940dda69
 
 
 ---
@@ -161,7 +161,7 @@ Privileged Access Management의 일반적인 프로덕션 배포에는 배스천
 
 또 다른 도메인 컨트롤러를 추가하는 절차는 [기존 도메인에 복제 Windows Server 2012 도메인 컨트롤러 설치(수준 200)](https://technet.microsoft.com/library/jj574134.aspx)를 참조하세요.  
 
->[!NOTE] 
+>[!NOTE]
 > 도메인 컨트롤러가 Hyper-V와 같은 가상화 플랫폼에서 호스트될 경우 [가상화된 도메인 컨트롤러 배포 및 구성](https://technet.microsoft.com/library/jj574223.aspx)의 주의 사항을 검토하세요.
 
 #### 복구
@@ -199,7 +199,7 @@ PRIV 도메인에 가입된 여러 서버에 MIM 서비스를 배포하는 것�
 
 여러 서버에서 프로덕션 배포의 경우 NLB(네트워크 부하 분산)를 사용하여 처리 부하를 분산할 수 있습니다.  하나의 공통 이름을 사용자에게 노출하도록 별칭(예: A 또는 CNAME 레코드)이 있어야 합니다.
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 > Windows Server 2012 R2에서 NLB 기능 이외의 부하 분산 기술을 사용하면 솔루션이 한 세션을 임의의 서버가 아닌 동일한 서버로 리디렉션합니다.
 
 다중 서버 MIM 배포에서 각 MIM 서비스에는 외부 호스트 이름, 서비스 이름 및 서비스 파티션 이름이 있습니다.  서비스 이름의 기본값은 컴퓨터의 이름이며 외부 호스트 이름 및 서비스 파티션 이름의 기본값은 MIM 서비스를 설치하는 동안 MIM 서비스 서버 주소를 요청하는 화면에서 구성합니다. 이러한 세 가지 이름은 `resourceManagementService` 구성 노드의 특성 `externalHostName`, `serviceName` 및 `servicePartitionName`으로 %ProgramFiles%\Microsoft Forefront Identity Manager\Service\Microsoft.ResourceManagementService.exe.config 파일에 저장됩니다.  
@@ -224,6 +224,6 @@ MIM 서비스를 설치한 배스천 환경의 각 컴퓨터에 Privileged Acces
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

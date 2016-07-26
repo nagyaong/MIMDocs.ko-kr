@@ -11,7 +11,7 @@
 ### [역할 정의](defining-roles-for-pam.md)
 ### [고가용성 및 재해 복구](high-availability-disaster-recovery-considerations-bastion-environment.md)
 ### [하드웨어 및 소프트웨어 요구 사항](hardware-software-requirements.md)
-## [Privileged Access Management를 위한 MIM 배포](configuring-mim-environment-for-pam.md)
+## [Privileged Access Management를 위한 MIM 구성](configuring-mim-environment-for-pam.md)
 ### [1단계 - CORP 도메인](step-1-prepare-corp-domain.md)
 ### [2단계 - PRIV 도메인 컨트롤러](step-2-prepare-priv-domain-controller.md)
 ### [3단계 - PAM 서버](step-3-prepare-pam-server.md)
@@ -23,6 +23,6 @@
 # [개발자 참조](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

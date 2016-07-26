@@ -1,10 +1,10 @@
 ---
-title: "하드웨어 및 소프트웨어 요구 사항 | Microsoft Identity Manager"
-description: 
+title: "PAM 소프트웨어 요구 사항 | Microsoft Identity Manager"
+description: "Privileged Access Management를 성공적으로 배포하기 위한 하드웨어 및 소프트웨어 요구 사항 찾기"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/17/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -12,13 +12,18 @@ ms.technology: active-directory-domain-services
 ms.assetid: 82a9085c-9667-4b3b-8079-657eab1d1e58
 ms.reviewer: mwahl
 ms.suite: ems
-ms.sourcegitcommit: a6bdf1b947ee3ebc4c9e89e74b2912697ebf1f60
-ms.openlocfilehash: 77e7174e94ea8032c4e57155db489f493ce18177
+translationtype: Human Translation
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 75a748f7035cfb10e833e4fdbfdc208b5245d3ea
 
 
 ---
 
-기본 소프트웨어 플랫폼, 충분한 메모리 또는 디스크 공간 및 네트워크 연결 이외의 별도 하드웨어는 필요하지 않습니다. 이 문서에서는 기본 배포에 대한 최소 요구 사항을 제공합니다. 성능, 확장성 또는 고가용성을 보여 주기 위한 용도가 아니며, 대기업 또는 프로덕션 환경에서 권장되는 배포 토폴로지를 나타내지 않습니다.
+# 하드웨어 및 소프트웨어 요구 사항
+
+Privileged Access Management의 하드웨어 요구 사항은 기본 소프트웨어 플랫폼의 하드웨어 요구 사항을 초과하지 않습니다. 메모리나 디스크 공간이 충분하고 네트워크에 연결되어 있으면 됩니다.
+
+이 문서에서는 기본 배포에 대한 최소 요구 사항을 제공합니다. 성능, 확장성 또는 고가용성을 보여 주기 위한 용도가 아니며, 대기업 또는 프로덕션 환경에서 권장되는 배포 토폴로지를 나타내지 않습니다.
 
 ## 소프트웨어 패키지에서 설치
 
@@ -70,6 +75,6 @@ PAMSRV의 경우:
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

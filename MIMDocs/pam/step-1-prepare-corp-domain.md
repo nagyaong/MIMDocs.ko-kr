@@ -1,10 +1,10 @@
 ---
-title: "1단계 - 호스트 및 CORP 도메인 준비 | Microsoft Identity Manager"
-description: 
+title: "PAM 배포 1단계 - CORP 도메인 | Microsoft Identity Manager"
+description: "Privileged Identity Manager에서 관리할 CORP 도메인을 기존 또는 새 ID를 사용하여 준비"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/10/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: 7d6888ad4d694ad0ed746598563de32d7c363936
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 9a2fafa86c5c928339ff8d7ad1593472046ccb98
 
 
 ---
@@ -94,7 +94,7 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 새 CORP 도메인을 만든 경우 PAM 시나리오를 시연하려면 추가 사용자 및 그룹을 만들어야 합니다. 데모용 사용자 및 그룹은 도메인 관리자가 될 수 없거나 AD의 adminSDHolder 설정에 의해 제어됩니다.
 
-> [!NOTE] 
+> [!NOTE]
 > 이미 CORP 도메인으로 사용할 도메인이 있고 데모용으로 사용할 수 있는 사용자 및 그룹이 있는 경우에는 [감사 구성](#configure-auditing) 섹션으로 건너뛸 수 있습니다.
 
 *CorpAdmins*라는 보안 그룹 및 *Jen*이라는 사용자를 만들겠습니다. 원하면 다른 이름을 사용할 수 있습니다.
@@ -167,7 +167,7 @@ CORPDC 도메인 컨트롤러가 다시 시작됩니다. 이 레지스트리 설
 
 도메인에 가입한 워크스테이션 컴퓨터가 아직 없는 경우 다음 지침에 따라 준비합니다.  
 
-> [!NOTE] 
+> [!NOTE]
 > 이미 도메인에 가입한 워크스테이션이 있으면 [데모용 리소스 만들기](#create-a-resource-for-demonstration-purposes)로 건너뜁니다.
 
 ### VM으로 Windows 8.1 또는 Windows 10 Enterprise 설치
@@ -215,6 +215,6 @@ PAM을 사용하여 보안 그룹 기반 액세스 제어를 시연하려면 리
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

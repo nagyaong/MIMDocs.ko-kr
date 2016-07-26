@@ -1,10 +1,10 @@
 ---
-title: "Privileged Access Management를 위한 역할 정의 | Microsoft Identity Manager"
-description: 
+title: "PAM에 대한 권한 있는 역할 정의 | Microsoft Identity Manager"
+description: "관리해야 하는 권한 있는 역할을 결정하고 각 역할에 대한 관리 정책을 정의합니다."
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/14/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -12,15 +12,16 @@ ms.technology: active-directory-domain-services
 ms.assetid: 1a368e8e-68e1-4f40-a279-916e605581bc
 ms.reviewer: mwahl
 ms.suite: ems
-ms.sourcegitcommit: b8af77d2354428da19d91d5f02b490012835f544
-ms.openlocfilehash: 7ba6f744f7fb7a1c5052b14669aa3de2cd10ddbb
+translationtype: Human Translation
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 442b596107d9ade0ca466500440a32b2dd26fa14
 
 
 ---
 
 # Privileged Access Management를 위한 역할 정의
 
-Privileged Access Management를 사용하면 Just-In-Time 액세스의 필요에 따라 활성화할 수 있는 권한 있는 역할에 사용자를 할당할 수 있습니다. 이러한 역할을 수동으로 정의하고 배스천 환경에 설정합니다. 이 문서에서는 PAM을 통해 관리 역할을 결정하는 과정과 적절한 사용 권한 및 제한을 사용하여 정의하는 방법을 안내합니다.
+Privileged Access Management를 사용하면 Just-In-Time 액세스의 필요에 따라 활성화할 수 있는 권한 있는 역할에 사용자를 할당할 수 있습니다. 이러한 역할은 배스천 환경에서 수동으로 정의하고 설정합니다. 이 문서에서는 PAM을 통해 관리 역할을 결정하는 과정과 적절한 사용 권한 및 제한을 사용하여 정의하는 방법을 안내합니다.
 
 Privileged Access Management를 위해 역할을 정의하는 간단한 접근 방식은 스프레드시트에 있는 모든 정보를 컴파일하는 것입니다. 역할에 역할을 나열하고 열을 사용하여 거버넌스 요구 사항 및 사용 권한을 식별합니다.
 
@@ -202,6 +203,6 @@ Domain Admins와 같은 기본 그룹 대신 필요한 권한만 제공하는 �
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: "3단계 – PAM 서버 준비 | Microsoft Identity Manager"
-description: 
+title: "PAM 배포 3단계 – PAM 서버 | Microsoft Identity Manager"
+description: "Privileged Access Management 배포를 위한 SQL 및 SharePoint를 모두 호스트하는 PAM 서버를 준비합니다."
 keywords: 
-author: 
+author: kgremban
 manager: femila
-ms.date: 06/17/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: ec65078cea33b73aa9482e831a1870df477c6581
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 1a21399df9528f689b811400a660543853d88472
 
 
 ---
@@ -118,7 +118,7 @@ PowerShell을 사용하려면 다음을 수행합니다.
 
 SharePoint Foundation 2013 SP1 설치 관리자를 사용하여 SharePoint의 소프트웨어 필수 조건을 PAMSRV에 설치합니다.
 
-> [!NOTE] 
+> [!NOTE]
 > 필수 구성 요소를 다운로드하려면 설치 관리자가 인터넷에 연결되어 있어야 합니다. 필수 구성요소가 설치되고 나면 서버가 다시 시작됩니다.
 
 1. PowerShell을 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 선택합니다.  
@@ -158,7 +158,7 @@ SharePoint 제품 구성 마법사를 실행하여 SharePoint를 구성합니다
 
 2. Windows 기본 인증 방법이 사용 중이라는 경고 메시지가 표시되며 최종 명령을 반환하는 데 몇 분 정도 걸릴 수 있습니다.  완료되면 출력에 새 포털의 URL이 표시됩니다.
 
-> [!NOTE] 
+> [!NOTE]
 > 다음 단계에서 사용하도록 SharePoint 2013 관리 셸 창을 계속 열어둡니다.
 
 ## Sharepoint 사이트 모음 만들기
@@ -212,6 +212,6 @@ SharePoint 제품 구성 마법사를 실행하여 SharePoint를 구성합니다
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: "7단계 – 사용자의 액세스 권한 상승 | Microsoft Identity Manager"
-description: 
+title: "PAM 배포 7단계 – 사용자 액세스 | Microsoft Identity Manager"
+description: "마지막 단계로 Privileged Access Management 배포가 성공했음을 보여 주기 위해 권한 있는 사용자에게 임시 액세스 권한을 부여합니다."
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/16/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: ee47c69788a98075372ca62943e0c4b101c5354f
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: b4b3f4c0605fabc7166e8ff8309078f80461301e
 
 
 ---
@@ -46,7 +46,7 @@ ms.openlocfilehash: ee47c69788a98075372ca62943e0c4b101c5354f
 2. 메시지가 나타나면 PRIV.Jen 계정에 대한 암호를 입력합니다. 새 명령 프롬프트 창이 나타납니다.
 3. PowerShell 창이 나타나면 다음 명령을 입력합니다.
 
-    > [!NOTE] 
+    > [!NOTE]
     > 이러한 명령을 실행한 후 다음 모든 단계는 시간이 중요합니다.
 
     ```
@@ -92,7 +92,7 @@ PAM 샘플 포털을 통해 권한 있는 액세스를 요청하여 활성화합
 7. **인터넷 옵션** 대화 상자를 닫습니다.
 8. 왼쪽 탭에서 **활성화**를 클릭합니다. **PAM 역할**을 선택하고 **활성화**를 클릭합니다.
 
-> [!Note] 
+> [!Note]
 > 이 환경에서는 [Privileged Access Management REST API 참조](/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference.md)에 설명된 것처럼 PAM REST API를 사용하는 응용 프로그램을 개발하는 방법도 알아볼 수 있습니다.
 
 ## 요약
@@ -103,6 +103,6 @@ PAM 샘플 포털을 통해 권한 있는 액세스를 요청하여 활성화합
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 
