@@ -12,18 +12,19 @@ ms.technology: active-directory-domain-services
 ms.assetid: cf3796f7-bc68-4cf7-b887-c5b14e855297
 ms.reviewer: mwahl
 ms.suite: ems
-experimental: true
 experiment_id: kgremban_images
 translationtype: Human Translation
 ms.sourcegitcommit: e695dd47e4bd31c4004c7d0d9ec76498d52fb56a
-ms.openlocfilehash: b46c2b50873023d504fb7b440a1d4e40e8fa3ac7
+ms.openlocfilehash: 82c97351f66558c3270821f786560ef4b3e0c473
 
 ---
 
 # Active Directory 도메인 서비스에 대한 Privileged Access Management
-PAM(Privileged Access Management)은 조직이 기존 Active Directory 환경 내에서 권한 있는 액세스를 제한할 수 있도록 지원하는 솔루션입니다.
+PAM(Privileged Access Management)을 사용하면 조직이 기존 Active Directory 환경 내에서 권한 있는 액세스를 제한할 수 있습니다.
 
-Privileged Access Management는 다음 두 가지 목표를 수행합니다.
+![PAM 단계: 준비, 보호, 작동, 모니터링 - 다이어그램](media/MIM_PIM_SetupProcess.png)
+
+Privileged Access Management는 환경을 준비, 보호 및 모니터링하는 순환 과정을 집중적으로 관리하여 다음 두 가지 목표를 달성합니다.
 
 - 악의적인 공격에 영향을 받지 않는 별도의 배스천 환경을 유지 관리함으로써 손상된 Active Directory 환경에 대한 제어를 다시 설정합니다.  
 - 권한 있는 계정의 사용을 격리하여 해당 자격 증명의 도난 위험을 줄입니다.
@@ -43,7 +44,6 @@ PAM은 Just-in-Time 관리의 원칙을 작성하며 [JEA(Just Enough Administra
 
 PAM 설정 및 작업은 네 단계가 있습니다.
 
-![PAM 단계: 준비, 보호, 작동, 모니터링 - 다이어그램](media/MIM_PIM_SetupProcess.png)
 
 1.  **준비**: 기존 포리스트서 어떤 그룹이 상당한 권한이 있는지 식별합니다. 배스천 포리스트에서 구성원 없이 이러한 그룹을 다시 만듭니다.
 
