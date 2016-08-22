@@ -4,7 +4,7 @@ description: "MIM 2016과 함께 작동하도록 Windows Server 2012 RS를 준�
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 08/11/2016
 ms.topic: get-started-article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: e1d69eb7946f9adfdfa7c55cecd3fa1d799a2cd3
+ms.sourcegitcommit: 739797502e09c2b92e35767e2c943308cd1de5c9
+ms.openlocfilehash: bdf1f4b7c5762095f4986506f9e17369dadea011
 
 
 ---
@@ -74,7 +74,7 @@ ms.openlocfilehash: e1d69eb7946f9adfdfa7c55cecd3fa1d799a2cd3
 
     ![로컬 보안 정책 이미지](media/MIM-DeployWS3.png)
 
-4. **사용자 또는 그룹 추가**를 클릭하고 다음 상자에서 `contoso\mimsync; contoso\mimma; contoso\MIMService; contoso\SharePoint; contoso\SqlServer; contoso\mimsspr`을 입력한 다음 **이름 확인**을 클릭하고 **확인**을 클릭합니다.
+4. **사용자 또는 그룹 추가**를 클릭하고 다음 상자에서 `contoso\MIMSync; contoso\MIMMA; contoso\MIMService; contoso\SharePoint; contoso\SqlServer; contoso\MIMSSPR`을 입력한 다음 **이름 확인**을 클릭하고 **확인**을 클릭합니다.
 
 5. **확인**을 클릭하여 **서비스로 로그온 속성** 창을 닫습니다.
 
@@ -111,6 +111,6 @@ ms.openlocfilehash: e1d69eb7946f9adfdfa7c55cecd3fa1d799a2cd3
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 
