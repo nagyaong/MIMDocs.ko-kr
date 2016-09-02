@@ -4,7 +4,7 @@ description: "동기화 서비스를 설치 및 구성하여 MIM 2016 구성 요
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 08/11/2016
 ms.topic: get-started-article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: 2dfc89d32ef3b615201f1eb57ed3b8f5daed513e
+ms.sourcegitcommit: 739797502e09c2b92e35767e2c943308cd1de5c9
+ms.openlocfilehash: ba399da1431ea1d2d1633d0469e054ffd89f1d34
 
 
 ---
@@ -53,7 +53,7 @@ Microsoft Identity Manager 2016 구성 요소를 설치하려면 먼저 설치 �
 
     ![사용자 지정 설치 이미지](media/MIM-Install2.png)
 
-6.  데이터베이스 동기화 구성 화면에서 다음을 선택합니다.
+6.  동기화 서비스 데이터베이스 구성 화면에서 다음을 선택합니다.
 
     1.  SQL Server의 위치: **이 컴퓨터**
 
@@ -71,7 +71,7 @@ Microsoft Identity Manager 2016 구성 요소를 설치하려면 먼저 설치 �
 
     ![서비스 계정 이미지](media/MIM-Install4.png)
 
-8.  MIM 동기화 설치 관리자에서 다음과 같은 관련 보안 그룹을 입력합니다.
+8.  MIM 동기화 서비스 설치 관리자에서 다음과 같은 관련 보안 그룹을 입력합니다.
 
     1. 관리자 = *contoso\MIMSyncAdmins*
 
@@ -87,11 +87,11 @@ Microsoft Identity Manager 2016 구성 요소를 설치하려면 먼저 설치 �
 
 9. 보안 설정 화면에서 **인바운드 RPC 통신에 방화벽 규칙 사용**을 선택하고 **다음**을 클릭합니다.
 
-10. **설치**를 클릭하여 MIM 동기화 설치를 시작합니다.
+10. **설치**를 클릭하여 MIM 동기화 서비스 설치를 시작합니다.
 
     1. MIM 동기화 서비스 계정에 대한 경고가 나타날 수 있습니다. **확인**을 클릭합니다.
 
-    2. MIM 동기화가 설치됩니다.
+    2. MIM 동기화 서비스가 설치됩니다.
 
     3. 암호화 키에 대한 백업 만들기에 대한 알림이 나타납니다. **확인**을 클릭한 다음 암호화 키 백업을 저장할 폴더를 선택합니다.
 
@@ -107,6 +107,6 @@ Microsoft Identity Manager 2016 구성 요소를 설치하려면 먼저 설치 �
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 
