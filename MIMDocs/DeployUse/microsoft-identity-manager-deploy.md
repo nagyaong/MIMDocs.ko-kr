@@ -4,7 +4,7 @@ description: "환경 준비부터 포털 구성까지 Microsoft Identity Manager
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 08/11/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: fa0af422-b5e9-4599-9d9b-cb6c18ea07f9
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: db062cf8dafe0b480db06cd8d913583c5b709246
+ms.sourcegitcommit: 406269e3c8dc3137c2dcd625c50c6cf4eb126d86
+ms.openlocfilehash: 74d7bfd1e0c89c880b2b6a06756f84ad63d3a8cc
 
 
 ---
@@ -25,11 +25,9 @@ ms.openlocfilehash: db062cf8dafe0b480db06cd8d913583c5b709246
 > [!NOTE]
 > 이 섹션에서는 MIM을 시작하고 MIM에 대해 알아보기 위한 용도로만 배포 토폴로지를 설명합니다.  [용량 계획 가이드](/microsoft-identity-manager/plan-design/capacity-planning-guide)는 프로덕션 배포를 위한 토폴로지에 대해 자세한 정보를 제공합니다.  프로덕션 규모 또는 사용을 위해 MIM을 배포하기 전에 해당 문서를 검토하는 것이 좋습니다.
 
-<!---
-Comment: Restore after PAM content is included
+권한 있는 액세스 관리 시나리오는 전용 요새 포리스트 환경이 필요하므로 다른 MIM 시나리오와는 다르게 배포됩니다.  권한 있는 ID 관리를 위해 MIM을 배포하는 방법에 대한 자세한 내용은 [권한 있는 액세스 관리 시작](/microsoft-identity-manager/pam/privileged-access-management-get-started)을 참조하세요.
 
-The privileged access management scenario is deployed differently than other MIM scenarios, as it requires a dedicated bastion forest environment.  If you want to learn more about deploying MIM for Privileged Identity Management, see [Getting Started with Privileged Access Management](privileged-access-management-get-started.md).
---->
+MIM 2016 배포를 위한 프로세스는 이전 버전인 FIM 2010 R2의 프로세스와 매우 유사합니다. FIM 설명서를 참조하려는 경우 [Forefront Identity Manager 2010 R2 배포 가이드](https://technet.microsoft.com/library/jj134310)를 확인하세요.
 
 ## 먼저 첫 번째 도메인을 준비합니다.
 MIM은 AD(Active Directory)와 함께 작동하므로 다음 단계에 따라 AD 도메인 컨트롤러를 구성합니다.
@@ -50,6 +48,6 @@ MIM은 AD(Active Directory)와 함께 작동하므로 다음 단계에 따라 AD
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

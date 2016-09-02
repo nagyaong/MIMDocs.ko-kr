@@ -4,7 +4,7 @@ description: "Microsoft Identity Manager 2016용 MIM 서비스 및 포털을 구
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 08/11/2016
 ms.topic: get-started-article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: c18ea7b0390ca11c213ed66bfd1476454cf86951
+ms.sourcegitcommit: 739797502e09c2b92e35767e2c943308cd1de5c9
+ms.openlocfilehash: 438754773057043b8560562bab0ae260fb3a4bc2
 
 
 ---
@@ -93,7 +93,7 @@ ms.openlocfilehash: c18ea7b0390ca11c213ed66bfd1476454cf86951
 
 1.  SSPR 등록을 위한 서비스 계정 이름을 *Contoso\MIMSSPRService*로 설정하고 암호를 *Pass@word1*로 설정합니다.
 
-2.  MIM 암호 등록에 대한 호스트 이름을 *CORPIDM*으로 지정하고 포트를 **8080**으로 설정합니다. **방화벽에서 포트 열기** 옵션을 선택합니다.
+2.  MIM 암호 재설정 포털에 대한 호스트 이름을 *CORPIDM*으로 지정하고 포트를 **8088**로 설정합니다. **방화벽에서 포트 열기** 옵션을 선택합니다.
 
     ![IIS에서 사용하는 구성 정보 입력 이미지](media/MIM-Install15.png)
 
@@ -152,6 +152,6 @@ ms.openlocfilehash: c18ea7b0390ca11c213ed66bfd1476454cf86951
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 
