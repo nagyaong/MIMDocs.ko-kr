@@ -4,7 +4,7 @@ description:
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/14/2016
+ms.date: 09/16/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: bfc7cb64-60c7-4e35-b36a-bbe73b99444b
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b8af77d2354428da19d91d5f02b490012835f544
-ms.openlocfilehash: 0ed48d43825e1a876c4d96cafcb6c17cac26610f
+ms.sourcegitcommit: 9eefdf21d0cab3f7c488a66cbb3984d40498f4ef
+ms.openlocfilehash: fc4161f98d4367a2124e6253fe11dd1f2712d614
 
 
 ---
@@ -43,7 +43,7 @@ ms.openlocfilehash: 0ed48d43825e1a876c4d96cafcb6c17cac26610f
 
 프로덕션 *CORP* 포리스트는 관리 *PRIV* 포리스트를 신뢰해야 하지만 그 반대의 경우는 아닙니다. 이것은 도메인 트러스트 또는 포리스트 트러스트일 수 있습니다. 추가 응용 프로그램에 양방향 트러스트 관계, 보안 유효성 검사 및 테스트가 필요할 수 있지만, 관리 포리스트 도메인이 Active Directory를 관리하기 위해 관리되는 도메인 및 포리스트를 신뢰할 필요는 없습니다.
 
-관리 포리스트의 계정이 적합한 프로덕션 호스트만 사용하도록 선택적 인증을 사용해야 합니다. Active Directory에서 도메인 컨트롤러를 유지 관리하고 권한을 위임하려는 경우 일반적으로 도메인 컨트롤러에 대한 "로그온 허용" 권한을 관리 포리스트의 지정된 계층 0 계정에 부여해야 할 수 있습니다. 자세한 내용은 [선택적 인증 설정 구성](http://technet.microsoft.com/library/cc755844.aspx)을 참조하세요.
+관리 포리스트의 계정이 적합한 프로덕션 호스트만 사용하도록 선택적 인증을 사용해야 합니다. Active Directory에서 도메인 컨트롤러를 유지 관리하고 권한을 위임하려는 경우 일반적으로 도메인 컨트롤러에 대한 "로그온 허용" 권한을 관리 포리스트의 지정된 계층 0 계정에 부여해야 할 수 있습니다. 자세한 내용은 [선택적 인증 설정 구성](http://technet.microsoft.com/library/cc816580.aspx)을 참조하세요.
 
 ## 논리적 구분 유지
 
@@ -149,7 +149,7 @@ MIM은 PowerShell cmdlet을 사용하여 배스천 환경의 기존 AD 도메인
 
 기존 Active Directory 토폴로지가 변경되면 `Test-PAMTrust`, `Test-PAMDomainConfiguration`, `Remove-PAMTrust` 및 `Remove-PAMDomainConfiguration` cmdlet을 사용하여 트러스트 관계를 업데이트할 수 있습니다.
 
-### 각 포리스트에 대한 트러스트 설정
+## 각 포리스트에 대한 트러스트 설정
 
 `New-PAMTrust` cmdlet은 기존 포리스트마다 한 번씩 실행해야 합니다. 관리 도메인의 MIM 서비스 컴퓨터에서 호출됩니다. 이 명령의 매개 변수는 기존 포리스트에서 상위 도메인의 도메인 이름과 각 도메인 관리자의 자격 증명입니다.
 
@@ -159,11 +159,11 @@ New-PAMTrust -SourceForest "contoso.local" -Credentials (get-credential)
 
 트러스트를 설정한 후 다음 섹션에 설명된 대로 배스천 환경에서 관리를 수행하도록 각 도메인을 구성합니다.
 
-### 각 도메인의 관리를 사용하도록 설정
+## 각 도메인의 관리를 사용하도록 설정
 
 기존 도메인에 대한 관리를 사용하도록 설정하기 위한 7가지 요구 사항이 있습니다.
 
-#### 1. 로컬 도메인의 보안 그룹
+### 1. 로컬 도메인의 보안 그룹
 
 해당 이름이 NetBIOS 도메인 이름과 세 개의 달러 기호(예: *CONTOSO$$$*)로 구성된 기존 도메인의 그룹이어야 합니다. 그룹 범위는 *도메인 로컬*이고 그룹 유형은 *보안*이어야 합니다. 이 도메인의 그룹과 동일한 보안 식별자를 사용하여 전용 관리 포리스트에 그룹을 만들려면 이러한 조건이 충족되어야 합니다. 기존 도메인의 관리자가 기존 도메인에 연결된 워크스테이션에서 다음 PowerShell 명령을 실행하여 이 그룹을 만듭니다.
 
@@ -171,7 +171,7 @@ New-PAMTrust -SourceForest "contoso.local" -Credentials (get-credential)
 New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -SamAccountName 'CONTOSO$$$'
 ```
 
-#### 2. 성공 및 실패 감사
+### 2. 성공 및 실패 감사
 
 감사를 위한 도메인 컨트롤러의 그룹 정책 설정에는 감사 계정 관리 및 감사 디렉터리 서비스 액세스에 대한 성공 및 실패 감사가 모두 포함되어야 합니다. 이 작업은 기존 도메인의 관리자가 기존 도메인에 연결된 워크스테이션에서 그룹 정책 관리 콘솔을 사용하여 수행할 수 있습니다.
 
@@ -201,7 +201,7 @@ New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -
 
 잠시 후 "컴퓨터 정책 업데이트가 완료되었습니다."라는 메시지가 표시됩니다.
 
-#### 3. 로컬 보안 기관에 대한 연결 허용
+### 3. 로컬 보안 기관에 대한 연결 허용
 
 도메인 컨트롤러는 배스천 환경의 LSA(로컬 보안 기관)에 대해 RPC over TCP/IP 연결을 허용해야 합니다. 이전 버전의 Windows Server에서 LSA의 TCP/IP 지원은 다음과 같이 레지스트리에서 사용하도록 설정해야 합니다.
 
@@ -209,7 +209,7 @@ New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -
 New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipClientSupport -PropertyType DWORD -Value 1
 ```
 
-#### 4. PAM 도메인 구성 만들기
+### 4. PAM 도메인 구성 만들기
 
 `New-PAMDomainConfiguration` cmdlet은 관리 도메인의 MIM 서비스 컴퓨터에서 실행해야 합니다. 이 명령의 매개 변수는 기존 도메인의 도메인 이름과 해당 도메인 관리자의 자격 증명입니다.
 
@@ -217,7 +217,7 @@ New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipC
  New-PAMDomainConfiguration -SourceDomain "contoso" -Credentials (get-credential)
 ```
 
-#### 5. 계정에 읽기 사용 권한 부여
+### 5. 계정에 읽기 사용 권한 부여
 
 역할을 설정하는 데 사용하는 배스천 포리스트의 계정( `New-PAMUser` 및 `New-PAMGroup` cmdlet을 사용하는 관리자)과 MIM 모니터 서비스에서 사용되는 계정에는 해당 도메인의 읽기 권한이 필요합니다.
 
@@ -239,11 +239,11 @@ New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipC
 
 18. Active Directory 사용자 및 컴퓨터를 닫습니다.
 
-#### 6. 비상 계정 준비
+### 6. 비상 계정 준비
 
 권한 있는 액세스 관리 프로젝트의 목표가 도메인에 영구적으로 할당된 도메인 관리자 권한이 있는 계정의 수를 줄이는 것이면 나중에 트러스트 관계에 문제가 발생할 경우에 대비하여 도메인에 *비상* 계정이 있어야 합니다. 프로덕션 포리스트에 비상 시에 액세스하기 위한 계정이 각 도메인에 있어야 하고 해당 계정만 도메인 컨트롤러에 로그인할 수 있어야 합니다. 여러 사이트가 있는 조직의 경우 중복성을 위해 추가 계정이 필요할 수 있습니다.
 
-#### 7. 배스천 환경에서 사용 권한 업데이트
+### 7. 배스천 환경에서 사용 권한 업데이트
 
 해당 도메인의 시스템 컨테이너에 있는 *AdminSDHolder* 개체에 대한 사용 권한을 검토합니다. *AdminSDHolder* 개체에는 기본 제공 권한 있는 Active Directory 그룹의 구성원인 보안 주체의 사용 권한을 제어하는 데 사용되는 고유한 ACL(액세스 제어 목록)이 있습니다. 도메인의 관리자 권한이 있는 사용자에게 영향을 미치는 방식으로 기본 권한이 변경되어도 배스천 환경에 계정이 있는 사용자에게는 해당 권한이 적용되지 않습니다.
 
@@ -253,6 +253,6 @@ New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipC
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 
