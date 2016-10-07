@@ -24,7 +24,7 @@
 ### [1단계 PRIV 도메인 구성](sp1-step1-configuring-priv-domain.md)
 ### [2단계 CORP 도메인 구성](sp1-step2-configuring-corp-domain.md)
 ### [3단계 SQL 구성](sp1-step3-installing-configuring-sql.md)
-### [4단계 SharePoint 구성](sp1-step4-configuring-sharepoiint.md)
+### [4단계 SharePoint 구성](sp1-step4-configuring-sharepoint.md)
 ### [5단계 PAM 설치/구성](sp1-step5-configuring-pam.md)
 ### [6단계 PAM 트러스트 설정](sp1-step6-setup-pam-trust.md)
 ### [7단계 SID 기록/SID 필터링 설정](sp1-step7-setup-sidhistory-sidfiltering.md)

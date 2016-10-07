@@ -69,7 +69,8 @@ MIM SP1의 프로덕션 배포 중에 문제가 발생한 경우 Microsoft 고�
 
 Microsoft Identity Manager 2016 서비스 팩 1로 업그레이드하는 고객은 해당 배포에 적용되는 모든 서비스에서 아래 지침을 따라야 합니다.
 
->[!Note] Forefront Identity Manager 2010 R2 SP1 이하를 실행하는 고객은 먼저 2015년 8월에 릴리스된 Microsoft Identity Manager 2016으로 업그레이드한 다음 아래 단계를 따라야 합니다.
+>[!Note]
+>Forefront Identity Manager 2010 R2 SP1 이하를 실행하는 고객은 먼저 2015년 8월에 릴리스된 Microsoft Identity Manager 2016으로 업그레이드한 다음 아래 단계를 따라야 합니다.
 
 시작하기 전에
 
