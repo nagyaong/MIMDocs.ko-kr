@@ -20,9 +20,19 @@
 ### [6단계 - 권한 있는 계정 만들기](step-6-transition-group-to-pam.md)
 ### [7단계 - 사용자의 액세스 권한 상승](step-7-elevate-user-access.md)
 ### [Azure MFA 설정](use-azure-mfa-for-activation.md)
+## [스크립트를 사용하여 PAM 구성](sp1-pam-configure-using-scripts.md)
+### [1단계 PRIV 도메인 구성](sp1-step1-configuring-priv-domain.md)
+### [2단계 CORP 도메인 구성](sp1-step2-configuring-corp-domain.md)
+### [3단계 SQL 구성](sp1-step3-installing-configuring-sql.md)
+### [4단계 SharePoint 구성](sp1-step4-configuring-sharepoint.md)
+### [5단계 PAM 설치/구성](sp1-step5-configuring-pam.md)
+### [6단계 PAM 트러스트 설정](sp1-step6-setup-pam-trust.md)
+### [7단계 SID 기록/SID 필터링 설정](sp1-step7-setup-sidhistory-sidfiltering.md)
+### [8단계 PAM 배포 확인](sp1-step8-pam-deployment-verification.md)
+### [부록](sp1-pam-deployment-addendum.md)
 # [개발자 참조](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
