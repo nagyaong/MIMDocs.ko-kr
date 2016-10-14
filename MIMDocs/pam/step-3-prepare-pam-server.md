@@ -51,7 +51,7 @@ ms.openlocfilehash: 1a21399df9528f689b811400a660543853d88472
 
 1.  PRIV 도메인 관리자(PRIV\Administrator)로 로그인하고 PowerShell을 시작합니다.
 
-2.  다음 명령을 입력합니다. .NET Framework 3.5 기능에 대한 원본 파일에 대해 다른 위치를 지정해야 할 수 있습니다. 이러한 기능은 일반적으로 Windows Server가 설치될 때는 없지만 OS 설치 디스크 원본 폴더의 SxS(Side-by-Side) 폴더(예: d:\Sources\SxS)에 있습니다\.
+2.  다음 명령을 입력합니다. .NET Framework 3.5 기능에 대한 원본 파일에 대해 다른 위치를 지정해야 할 수 있습니다. 이러한 기능은 일반적으로 Windows Server가 설치될 때는 없지만 OS 설치 디스크 원본 폴더의 SxS(Side-by-Side) 폴더(예: “*d:\Sources\SxS”)에 있습니다.
 
     ```
     import-module ServerManager
@@ -212,6 +212,6 @@ SharePoint 제품 구성 마법사를 실행하여 SharePoint를 구성합니다
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 
