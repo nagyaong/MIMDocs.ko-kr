@@ -3,23 +3,27 @@ title: "6단계 PAM 트러스트 설정"
 description: "스크립트를 사용하여 Privileged Identity Manager에서 관리할 기존 또는 새 ID로 CORP 도메인을 준비합니다."
 keywords: 
 author: barclayn
+ms.author: barclayn
 manager: MBaldwin
-ms.date: 09/27/2016
+ms.date: 10/25/2016
 ms.topic: article
-ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 689c2ef0e4e4a681a398ba7e94fb3def525937ea
-ms.openlocfilehash: 46afda513e849e457f5f3644a46f244161467e50
+ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
+ms.openlocfilehash: 5bcf4f4ef201236746ec1bf75c1c8900841a6c79
 
 
 ---
 
-# PAM 트러스트 설정
+# <a name="step-6-set-up-the-pam-trust"></a>6단계 PAM 트러스트 설정
+
+>[!div class="step-by-step"]
+[«5 단계](sp1-step5-configuring-pam.md)
+[7 단계»](sp1-step7-setup-sidhistory-sidfiltering.md)
 
 **PRIV 전용 환경에서는 이 단계를 수행할 필요가 없습니다.** MIMAdmin 계정으로 PAM 서버에 로그인합니다.
 
@@ -31,8 +35,12 @@ ms.openlocfilehash: 46afda513e849e457f5f3644a46f244161467e50
 
   메시지가 나타나면 CORP 관리자 계정의 자격 증명을 입력합니다. 자격 증명을 제공하면 트러스트가 설정되고 구성이 완료됩니다.
 
+>[!div class="step-by-step"]
+[«5 단계](sp1-step5-configuring-pam.md)
+[7 단계»](sp1-step7-setup-sidhistory-sidfiltering.md)
 
 
-<!--HONumber=Sep16_HO4-->
+
+<!--HONumber=Nov16_HO2-->
 
 
