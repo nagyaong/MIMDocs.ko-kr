@@ -1,25 +1,25 @@
 ---
-title: "용량 계획 가이드 | Microsoft Identity Manager"
+title: "용량 계획 가이드 | Microsoft 문서"
 description: "이 가이드를 사용하여 로드 수준 및 정책 결정 등 MIM 2016을 배포하기 전에 고려해야 하는 변수를 이해할 수 있습니다."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/21/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 3ac5b990-1678-4996-996d-cbd84b8426b4
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: 2aeca4630f0d6f64d012e000e5dbabec618e7b1e
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 33e7d901dcd9d8cf1bcaddcfa521625060bb3dbc
 
 
 ---
 
-# 용량 계획 가이드
+# <a name="capacity-planning-guide"></a>용량 계획 가이드
 
 MIM(Microsoft Identity Manager)을 사용하여 조직 전체에서 사용자 계정을 생성, 업데이트 및 제거할 수 있습니다. 또한 최종 사용자에게 자신의 계정 셀프 서비스 기능을 관리하는 기능을 제공합니다. 소규모 환경에서도 이러한 모든 작업을 빠르게 추가할 수 있습니다.
 
@@ -27,7 +27,7 @@ MIM을 시작하기 전에 테스트 환경과 함께 이 가이드를 사용하
 
 아직 MIM 2016 및 해당 구성 요소에 익숙하지 않은 경우 계속하기 전에 [Microsoft Identity Manager 2016](/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016)에 대한 자세한 내용을 확인합니다.
 
-## 개요
+## <a name="overview"></a>개요
 Microsoft Identity Manager 배포의 전체 용량 및 성능에 영향을 줄 수 있는 여러 변수가 있습니다. MIM 구성 요소(토폴로지)를 물리적으로 배포하는 방법뿐 아니라 이러한 구성 요소가 실행되는 하드웨어는 MIM 배포에서 예상할 수 있는 성능 및 용량을 결정하는 데 중요한 요소입니다. MIM 정책 구성 개체의 수와 복잡성은 명확하지 않을 수 있지만 여전히 용량을 계획할 때 고려할 중요한 요소입니다. 마지막으로 예상되는 배포 규모와 예상되는 로드는 일반적으로 성능 및 용량에 영향을 주는 보다 명확한 요소입니다.
 
 MIM 2016 배포에서 예상될 수 있는 용량 및 성능에 영향을 주는 주요 요소는 다음 표에 설명되어 있습니다.
@@ -41,7 +41,7 @@ MIM 2016 배포에서 예상될 수 있는 용량 및 성능에 영향을 주는
 | 로드 | 사용 빈도입니다. 예를 들어 새 그룹 또는 사용자 만들기, 암호 재설정 또는 주어진 기간의 포털 방문에 대해 예상되는 빈도입니다. 부하는 시간, 일, 주 또는 년 중에 다를 수 있습니다. 구성 요소에 따라 최대 부하 또는 평균 부하에 맞게 디자인하도록 선택할 수 있습니다. |
 
 
-## Microsoft Identity Manager 구성 요소 호스트
+## <a name="hosting-microsoft-identity-manager-components"></a>Microsoft Identity Manager 구성 요소 호스트
 
 Microsoft Identity Manager의 구성 요소는 동일한 컴퓨터에 있을 필요가 없습니다. 이러한 구성 요소 및 이 구성 요소를 호스팅할 물리적 컴퓨터 또는 가상 컴퓨터를 고려하는 것은 용량 계획의 중요한 부분입니다.
 
@@ -52,7 +52,7 @@ Microsoft Identity Manager의 구성 요소는 동일한 컴퓨터에 있을 필
 - MIM 2016 서비스 데이터베이스 구성으로 SAN을 사용하는 경우 SAN을 공유하는 다른 응용 프로그램은 무엇입니까? 이러한 응용 프로그램은 SAN에서 공유되는 디스크 리소스를 경합하는 경우 데이터베이스 성능에 어떤 영향을 줄 수 있습니다.
 
 
-## 사용자 및 그룹
+## <a name="users-and-groups"></a>사용자 및 그룹
 사용자 환경의 사용자 및 그룹 수는 배포 규모를 생각할 때의 일반적인 고려 사항입니다. 그러나 계획에 고려해야 하는 여러 다른 관련 고려 사항도 있습니다.
 
 - 사용자가 그룹을 만들 수 있습니까? 그렇다면 새 그룹을 만드는 사용자가 환경 내 그룹 증가에 어떤 영향을 줄지 예측해야 합니다.
@@ -60,7 +60,7 @@ Microsoft Identity Manager의 구성 요소는 동일한 컴퓨터에 있을 필
 - 동적 그룹이 배포됩니까? 사용자 환경에서 예상되는 동적 그룹의 개수와 유형을 파악합니다.
 
 
-## 예상되는 부하 수준
+## <a name="expected-load-levels"></a>예상되는 부하 수준
 MIM 구성 요소에 적용되는 부하의 유형도 고려해야 합니다. 이 정보는 대부분 사용자 환경에서 현재 응용 프로그램을 살펴봄으로써 예상할 수 있습니다. 고려해야 할 몇 가지 관련 질문은 다음과 같습니다.
 
 - 그룹 가입 또는 탈퇴 요청의 예상되는 빈도는 어느 정도입니까?
@@ -74,7 +74,7 @@ MIM 구성 요소에 적용되는 부하의 유형도 고려해야 합니다. �
 - 부하 수준이 표준에서 최대 부하까지 크게 변동될 것으로 예상됩니까? 예를 들어 휴가 기간 후 암호 재설정이 많이 발생하는 경향이 있을 수 있습니다. 시스템 유지 관리 및 동기화 작업은 예상되는 최대 사용량 이외 시간으로 예약해야 합니다. 용량 계획을 고려할 때 최대 부하 기간을 고려해야 합니다.
 
 
-## 정책 구성 개체
+## <a name="policy-configuration-objects"></a>정책 구성 개체
 
 Microsoft Identity Manager 정책 구성 개체에는 특정 배포에 대한 MPR, 집합, 워크플로 및 동기화 규칙이 포함됩니다. MIM 배포는 각 배포의 요구에 맞게 정책 구성이 변경되기 때문에 각 고객에게 고유합니다. MIM 정책 구성 개체와 관련된 주요 성능 고려 사항은 다음과 같습니다.
 
@@ -89,12 +89,12 @@ MIM 정책 구성에는 사용자 환경에서 프로비전하는 방법에 대�
 - 코드 없는 프로비전을 사용할 예정입니까? 그렇다면 이는 예상되는 규칙 항목 수뿐만 아니라 시스템의 연관된 요청 및 워크플로에 영향을 줍니다.
 
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 - [MIM 배포를 위한 토폴로지 고려 사항](topology-considerations.md)
 - 다운로드 가능한 [FIM(Forefront Identity Manager) 2010 용량 계획 가이드](http://go.microsoft.com/fwlink/?LinkId=200180)에서는 테스트 빌드 및 성능 테스트 결과에 대해 자세히 알아봅니다.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

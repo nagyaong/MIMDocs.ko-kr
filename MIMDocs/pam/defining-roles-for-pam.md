@@ -1,25 +1,25 @@
 ---
-title: "PAM에 대한 권한 있는 역할 정의 | Microsoft Identity Manager"
+title: "PAM에 대한 권한 있는 역할 정의 | Microsoft Docs"
 description: "관리해야 하는 권한 있는 역할을 결정하고 각 역할에 대한 관리 정책을 정의합니다."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 1a368e8e-68e1-4f40-a279-916e605581bc
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
-ms.openlocfilehash: 442b596107d9ade0ca466500440a32b2dd26fa14
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: ae582e6aff2449aeee8b68ebe90b22b18e5a67d2
 
 
 ---
 
-# Privileged Access Management를 위한 역할 정의
+# <a name="define-roles-for-privileged-access-management"></a>Privileged Access Management를 위한 역할 정의
 
 Privileged Access Management를 사용하면 Just-In-Time 액세스의 필요에 따라 활성화할 수 있는 권한 있는 역할에 사용자를 할당할 수 있습니다. 이러한 역할은 배스천 환경에서 수동으로 정의하고 설정합니다. 이 문서에서는 PAM을 통해 관리 역할을 결정하는 과정과 적절한 사용 권한 및 제한을 사용하여 정의하는 방법을 안내합니다.
 
@@ -33,7 +33,7 @@ Privileged Access Management를 위해 역할을 정의하는 간단한 접근 �
 
 - Active Directory에 저장된 데이터를 관리하는 데 필요한 권한(예: 사용자 및 그룹 만들기)
 
-## 역할 식별
+## <a name="identify-roles"></a>역할 식별
 
 PAM을 사용하여 관리하려는 모든 역할을 식별하는 작업부터 시작합니다. 각 잠재적인 역할은 스프레드시트에서 자체 행을 갖게 됩니다.
 
@@ -57,7 +57,7 @@ PAM을 사용하여 관리하려는 모든 역할을 식별하는 작업부터 �
 
 - 관리 역할의 사용자가 해당 작업의 감사 레코드를 지울 수 없도록 관리와 감사를 구분할 수 있나요?
 
-## 역할 거버넌스 요구 사항 설정
+## <a name="establish-role-governance-requirements"></a>역할 거버넌스 요구 사항 설정
 
 후보 역할을 확인할 경우 먼저 스프레드시트를 채웁니다. 조직과 관련된 요구 사항을 위한 열을 만듭니다. 고려해야 할 일부 요구 사항은 다음과 같습니다.
 
@@ -79,7 +79,7 @@ PAM을 사용하여 관리하려는 모든 역할을 식별하는 작업부터 �
 
 - 이 역할에 어떤 응용 프로그램 사용 권한(아래 AD에 대한 예제 목록 참조)이 연결되어 있나요?
 
-## 액세스 방법 선택
+## <a name="select-an-access-method"></a>액세스 방법 선택
 
 다른 사용자 커뮤니티에 별도의 액세스 거버넌스 요구 사항이 있는 경우 권한 있는 액세스 관리 시스템에 동일한 사용 권한이 할당된 여러 역할이 있을 수 있습니다. 예를 들어 조직은 정규직 직원에게 아웃소싱된 다른 조직의 IT 직원과는 다른 정책을 적용할 수 있습니다.
 
@@ -95,7 +95,7 @@ PAM을 사용하여 관리하려는 모든 역할을 식별하는 작업부터 �
 
 자격 증명 도난 또는 오용 가능성을 걱정하는 조직을 위해 [활성화를 위해 Azure MFA 사용](use-azure-mfa-for-activation.md) 가이드에는 역할 활성화 시 추가적인 대역 외 검사를 요구하도록 MIM을 구성하는 방법에 대한 지침이 포함되어 있습니다.
 
-## Active Directory 사용 권한 위임
+## <a name="delegate-active-directory-permissions"></a>Active Directory 사용 권한 위임
 
 Windows Server는 새 도메인이 만들어지면 "Domain Admins"와 같은 기본 그룹을 자동으로 만듭니다. 이러한 그룹은 시작을 간소화하며 소규모 조직에 적합할 수 있습니다. 그러나 대규모 조직 또는 관리 권한의 추가적인 분리를 요구하는 조직은 Domain Admins와 같은 그룹을 빈 상태로 유지하고 보다 세분화된 사용 권한을 제공하는 그룹으로 대체해야 합니다.
 
@@ -106,7 +106,7 @@ Domain Admins 그룹의 한 제한은 외부 도메인의 구성원을 포함할
 
 Domain Admins와 같은 기본 그룹 대신 필요한 권한만 제공하는 새 보안 그룹을 만들고 MIM을 사용하여 관리자 계정에 해당 그룹 구성원 자격을 동적으로 제공할 수 있습니다.
 
-### 서비스 관리 사용 권한
+### <a name="service-management-permissions"></a>서비스 관리 사용 권한
 
 다음 표에는 AD를 관리하기 위한 역할에 포함될 수 있는 권한 예제가 나와 있습니다.
 
@@ -122,7 +122,7 @@ Domain Admins와 같은 기본 그룹 대신 필요한 권한만 제공하는 �
 | 영역 관리 | Active Directory에서 DNS 영역 및 개체 만들기, 삭제, 수정 |
 | 계층 0 OU 수정 | Active Directory에서 계층 0 OU 및 포함된 개체 수정 |
 
-### 데이터 관리 사용 권한
+### <a name="data-management-permissions"></a>데이터 관리 사용 권한
 
 다음 표에는 AD에 포함된 데이터를 관리 및 사용하기 위해 역할에 포함될 수 있는 권한 예제가 나와 있습니다.
 
@@ -138,13 +138,13 @@ Domain Admins와 같은 기본 그룹 대신 필요한 권한만 제공하는 �
 | PC/로컬 관리자 연결                    | 모든 워크스테이션에 로컬 관리자 권한                               |
 | Srv/로컬 관리자 연결                   | 모든 서버에 대한 로컬 관리자 권한                                    |
 
-## 예제 역할 정의
+## <a name="example-role-definitions"></a>예제 역할 정의
 
 역할 정의의 선택은 권한 있는 계정에 의해 관리되는 서버 계층에 따라 달라집니다. 또한 Exchange와 같은 응용 프로그램이나 타사 엔터프라이즈 제품(예: SAP)은 위임된 관리를 위해 자신의 추가 역할 정의도 가져오므로 관리되는 응용 프로그램 중 어떤 프로그램을 선택했는지에 따라서도 달라집니다.
 
 다음 섹션에서는 일반적인 엔터프라이즈 시나리오에 대한 예제를 제공합니다.
 
-### 계층 0 - 관리 포리스트
+### <a name="tier-0-administrative-forest"></a>계층 0 - 관리 포리스트
 
 배스천 환경의 계정에 적합한 역할에는 다음이 포함될 수 있습니다.
 
@@ -153,7 +153,7 @@ Domain Admins와 같은 기본 그룹 대신 필요한 권한만 제공하는 �
 - 프로덕션 포리스트의 관리자 사용자
 - 프로덕션 포리스트에 있는 응용 프로그램에 대해 제한된 관리자 권한을 위임받은 사용자
 
-### 계층 0 - 엔터프라이즈 프로덕션 포리스트
+### <a name="tier-0-enterprise-production-forest"></a>계층 0 - 엔터프라이즈 프로덕션 포리스트
 
 계층 0 프로덕션 포리스트 계정 및 리소스를 관리하는 데 적절한 역할에는 다음이 포함될 수 있습니다.
 
@@ -170,7 +170,7 @@ Domain Admins와 같은 기본 그룹 대신 필요한 권한만 제공하는 �
 - 계층 0에 대한 백업 관리자
 - 계층 0 호스트에 연결된 대역 외 및 베이스보드 관리 컨트롤러(KVM 또는 정전 시 관리용)의 사용자
 
-### 계층 1
+### <a name="tier-1"></a>계층 1
 
 계층 1의 서버 관리 및 백업에 대한 역할에는 다음이 포함될 수 있습니다.
 
@@ -192,7 +192,7 @@ Domain Admins와 같은 기본 그룹 대신 필요한 권한만 제공하는 �
 - 클라우드 서비스의 관리자(예: 회사 웹 사이트 또는 공용 DNS)
 - HCM, 재무 또는 법률 시스템 관리자
 
-### 계층 2
+### <a name="tier-2"></a>계층 2
 
 관리자가 아닌 사용자 및 컴퓨터 관리에 대한 역할에는 다음이 포함될 수 있습니다.
 
@@ -203,6 +203,6 @@ Domain Admins와 같은 기본 그룹 대신 필요한 권한만 제공하는 �
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

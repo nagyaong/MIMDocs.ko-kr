@@ -3,28 +3,33 @@ title: "8단계 PAM 배포 확인"
 description: "스크립트를 사용하여 Privileged Identity Manager에서 관리할 기존 또는 새 ID로 CORP 도메인을 준비합니다."
 keywords: 
 author: barclayn
+ms.author: barclayn
 manager: MBaldwin
-ms.date: 09/27/2016
+ms.date: 10/25/2016
 ms.topic: article
-ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 689c2ef0e4e4a681a398ba7e94fb3def525937ea
-ms.openlocfilehash: 743ba586374ccc04e9ddafff759a00574e13f6ac
+ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
+ms.openlocfilehash: 7709b4df5bb196aba6abf056830bc73e024174ef
 
 
 ---
 
-# 8단계 PAM 배포 확인
+# <a name="step-8-pam-deployment-verification"></a>8단계 PAM 배포 확인
+
+>[!div class="step-by-step"]
+[« 7단계](sp1-step7-setup-sidhistory-sidfiltering.md)
+[추록 »](sp1-pam-deployment-addendum.md)
 
 PAM 시나리오를 실행하여 PAM 배포가 예상대로 작동하는지 확인할 수 있는 확인 스크립트가 배포 패키지에 들어 있습니다.
 배포 확인을 사용하려면 PAMDeploymentConfig.xml 섹션(<PamValidation/>)을 수정합니다.
 
->[!Note] 유효성 검사를 수행하려면 클라이언트 컴퓨터 도메인이 PAM 클라이언트 쪽 구성 요소가 설치된 CORP 도메인에 가입되어 있어야 합니다. 클라이언트 설치 방법에 대한 스크립트는 부록을 참조하세요.
+>[!NOTE]
+>유효성 검사를 수행하려면 클라이언트 컴퓨터 도메인이 PAM 클라이언트 쪽 구성 요소가 설치된 CORP 도메인에 가입되어 있어야 합니다. 클라이언트 설치 방법에 대한 스크립트는 부록을 참조하세요.
 
 PAMDeploymentConfig.xml의 <PAMValidationClient/> 태그에서 클라이언트 컴퓨터 이름을 업데이트해야 합니다. <PAMValidation/> 노드의 나머지 데이터는 이 유효성 검사에서 새로 생성되므로 기존 사용자/그룹과 충돌하는 경우에만 편집하면 됩니다.
 다음 단계를 사용하여 유효성 검사를 수행합니다.
@@ -72,8 +77,12 @@ PowerShell 창에서 다음을 입력합니다.
   처음에는 사용자에게 리소스에 대한 액세스 권한이 없습니다. 사용자를 역할에 JIT(Just-In-Time) 추가하면 사용자에게 권한이 부여됩니다. 요청 기간이 만료되면 사용자의 액세스 권한이 사라집니다.
   이 스크립트에서는 만료할 요청에 기본값(11분)을 사용합니다.
 
+>[!div class="step-by-step"]
+[« 7단계](sp1-step7-setup-sidhistory-sidfiltering.md)
+[추록 »](sp1-pam-deployment-addendum.md)
 
 
-<!--HONumber=Sep16_HO4-->
+
+<!--HONumber=Nov16_HO2-->
 
 

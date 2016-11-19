@@ -1,25 +1,25 @@
 ---
-title: "MIM 인증서 관리자 | Microsoft Identity Manager"
+title: "MIM 인증서 관리자 | Microsoft 문서"
 description: "사용자가 자신의 액세스 권한을 관리할 수 있도록 인증서 관리자 앱을 배포하는 방법을 알아봅니다."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/21/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 66060045-d0be-4874-914b-5926fd924ede
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: 1aea9543af4dd7f3eab4f01eab52d8c11b36191d
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: a2be6b5640dde5e2908dce36ea13d920a6643874
 
 
 ---
 
-# MIM 인증서 관리자 작업
+# <a name="working-with-the-mim-certificate-manager"></a>MIM 인증서 관리자 작업
 MIM 2016 및 인증서 관리자를 실행한 후 MIM 인증서 관리자 Windows 스토어 응용 프로그램을 배포할 수 있으므로 사용자가 실제 스마트 카드, 가상 스마트 카드 및 소프트웨어 인증서를 쉽게 관리할 수 있습니다. MIM CM 앱을 배포하는 단계는 다음과 같습니다.
 
 1.  인증서 템플릿을 만듭니다.
@@ -30,7 +30,7 @@ MIM 2016 및 인증서 관리자를 실행한 후 MIM 인증서 관리자 Window
 
 4.  SCCM 또는 Intune을 통해 앱을 배포합니다.
 
-## 인증서 템플릿 만들기
+## <a name="create-a-certificate-template"></a>인증서 템플릿 만들기
 인증서 템플릿이 버전 3 이상이어야 한다는 점을 제외하고 일반적으로 수행하는 동일한 방식으로 CM 앱에 대한 인증서 템플릿을 만듭니다.
 
 1.  AD CS(인증서 서버)를 실행 중인 서버에 로그인합니다.
@@ -69,7 +69,7 @@ MIM 2016 및 인증서 관리자를 실행한 후 MIM 인증서 관리자 Window
 
 16. 목록에서 만들어진 새 템플릿을 선택하고 **확인**을 클릭합니다.
 
-## 프로필 템플릿 만들기
+## <a name="create-a-profile-template"></a>프로필 템플릿 만들기
 프로필 템플릿을 만들 때 vSC를 만들거나 제거하고 데이터 컬렉션을 제거하도록 템플릿을 설정해야 합니다. CM 앱은 수집된 데이터를 처리할 수 없으므로 다음과 같이 사용하지 않도록 설정하는 것이 중요합니다.
 
 1.  CM 포털에 관리자 권한이 있는 사용자로 로그인합니다.
@@ -94,7 +94,7 @@ MIM 2016 및 인증서 관리자를 실행한 후 MIM 인증서 관리자 Window
 
 11. 왼쪽 창에서 정책을 클릭하고 **Sample data item** (샘플 데이터 항목) 옆에 있는 확인란을 선택하여 각 정책 및 모든 정책에 대한 데이터 컬렉션 항목을 사용하지 않도록 설정해야 합니다. 그런 다음 **Delete data collection**(데이터 컬렉션 항목 삭제)을 클릭합니다. 그런 다음 **확인**을 클릭합니다.
 
-## 배포용 CM 앱 준비
+## <a name="prepare-the-cm-app-for-deployment"></a>배포용 CM 앱 준비
 
 1.  명령 프롬프트에서 다음 명령을 실행하여 앱의 압축을 풀고 appx라는 새 하위 폴더에 콘텐츠를 추출한 다음 원본 파일이 수정되지 않도록 복사본을 만듭니다.
 
@@ -148,7 +148,7 @@ MIM 2016 및 인증서 관리자를 실행한 후 MIM 인증서 관리자 Window
 
     -   가상 스마트 카드 응용 프로그램을 엽니다. 이 응용 프로그램을 사용하면 다음 단계에 필요한 값을 보다 쉽게 찾을 수 있습니다.
 
-    -   응용 프로그램을 AD FS 서버에 클라이언트로 추가하고 서버에서 CM을 구성하기 위해 AD FS 서버에서 Windows PowerShell을 열고 명령을 실행합니다. `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`
+    -   응용 프로그램을 AD FS 서버에 클라이언트로 추가하고 서버에서 CM을 구성하기 위해 AD FS 서버에서 Windows PowerShell을 열고 명령 `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`을 실행합니다.
 
         다음은 ConfigureMimCMClientAndRelyingParty.ps1 스크립트입니다.
 
@@ -249,13 +249,13 @@ MIM 2016 및 인증서 관리자를 실행한 후 MIM 인증서 관리자 Window
 
     -   serverFQDN은 MIMCM 서버의 전체 컴퓨터 이름일 뿐입니다.
 
-    -   **ConfigureMIimCMClientAndRelyingParty.ps1** 스크립트에 관련된 도움말을 보려면 다음을 실행하세요. `get-help  -detailed ConfigureMimCMClientAndRelyingParty.ps1`
+    -    **ConfigureMIimCMClientAndRelyingParty.ps1** 스크립트에 관련된 도움말을 보려면 `get-help  -detailed ConfigureMimCMClientAndRelyingParty.ps1`를 실행하세요.
 
-## 앱 배포
+## <a name="deploy-the-app"></a>앱 배포
 CM 앱을 설정할 때 다운로드 센터에서 MIMDMModernApp_&lt;version&gt;_AnyCPU_Test.zip 파일을 다운로드하고 모든 콘텐츠를 추출합니다. .appx 파일이 설치 관리자입니다. [System Center Configuration Manager](https://technet.microsoft.com/library/dn613840.aspx)또는 [Intune](https://technet.microsoft.com/library/dn613839.aspx)을 사용하여 일반적인 Windows 스토어 앱 배포 방법으로 이 앱을 배포하여 앱을 테스트용으로 로드할 수 있습니다. 따라서 사용자가 이 앱을 회사 포털을 통해 액세스하거나 자신의 컴퓨터에 직접 푸시되도록 해야 합니다.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

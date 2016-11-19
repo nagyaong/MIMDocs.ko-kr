@@ -1,25 +1,25 @@
 ---
-title: "MIM 2016 배포 | Microsoft Identity Manager"
+title: "MIM 2016 배포 | Microsoft 문서"
 description: "환경 준비부터 포털 구성까지 Microsoft Identity Manager 2016 배포와 관련된 전체 단계 목록을 확인합니다."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 09/07/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: fa0af422-b5e9-4599-9d9b-cb6c18ea07f9
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 40dbec941eb2f0b1a01de0f47d44e01717aaca21
-ms.openlocfilehash: 77dae279f9078c55abf342a8956aaf77c62773d5
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 7fdad09650af245157264778d2732ac4327f25b5
 
 
 ---
 
-# MIM 2016 배포
+# <a name="deploy-mim-2016"></a>MIM 2016 배포
 이 섹션의 문서에서는 이전에 FIM 또는 MIM을 배포하지 않은 새 서버에서 최종 사용자 셀프 서비스 시나리오를 위해 MIM(Microsoft Identity Manager) 2016을 배포하는 단계별 지침을 제공합니다.
 
 > [!NOTE]
@@ -29,18 +29,18 @@ ms.openlocfilehash: 77dae279f9078c55abf342a8956aaf77c62773d5
 
 MIM 2016 배포를 위한 프로세스는 이전 버전인 FIM 2010 R2의 프로세스와 매우 유사합니다. FIM 설명서를 참조하려는 경우 [Forefront Identity Manager 2010 R2 배포 가이드](https://technet.microsoft.com/library/jj134310)를 확인하세요.
 
-## 먼저 첫 번째 도메인을 준비합니다.
+## <a name="first-prepare-a-domain"></a>먼저 첫 번째 도메인을 준비합니다.
 MIM은 AD(Active Directory)와 함께 작동하므로 다음 단계에 따라 AD 도메인 컨트롤러를 구성합니다.
 - [도메인 설정](preparing-domain.md)
 
-## 다음으로, ID 관리 서버를 준비합니다.
+## <a name="next-prepare-an-identity-management-server"></a>다음으로, ID 관리 서버를 준비합니다.
 도메인이 배치되고 구성되면 회사 ID 관리 서버를 준비합니다. 여기에는 다음 설치가 포함됩니다.
 - [Windows Server 2012 R2](prepare-server-ws2012r2.md)
 - [SQL Server 2014](prepare-server-sql2014.md)
 - [SharePoint](prepare-server-sharepoint.md)
 - [Exchange Server](prepare-server-exchange.md)(선택 사항)
 
-## 마지막으로 Microsoft Identity Manager 2016 구성 요소를 설치합니다.
+## <a name="finally-install-microsoft-identity-manager-2016-components"></a>마지막으로 Microsoft Identity Manager 2016 구성 요소를 설치합니다.
 도메인과 서버를 설정하면 MIM 구성 요소를 설치하고 AD와 동기화하도록 구성할 준비가 된 것입니다.
 - [MIM 동기화 서비스](install-mim-sync.md)
 - [MIM 서비스 및 포털](install-mim-service-portal.md)
@@ -48,6 +48,6 @@ MIM은 AD(Active Directory)와 함께 작동하므로 다음 단계에 따라 AD
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 
