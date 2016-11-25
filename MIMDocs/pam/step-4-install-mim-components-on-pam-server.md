@@ -1,12 +1,12 @@
 ---
-title: "PAM 배포 4단계 – MIM 설치 | Microsoft Identity Manager"
+title: "PAM 배포 4단계 – MIM 설치 | Microsoft 문서"
 description: "Privileged Access Management 서버 및 워크스테이션에서 MIM 서비스 및 포털을 설치하고 구성합니다."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: ef605496-7ed7-40f4-9475-5e4db4857b4f
@@ -14,13 +14,13 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
-ms.openlocfilehash: 92939d32da25896d07bec61e4633f58230a78181
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 5b9653cb8de9e9fc788685ba027f84a795467cf6
 
 
 ---
 
-# 4단계 – PAM 서버와 워크스테이션에 MIM 구성 요소 설치
+# <a name="step-4-install-mim-components-on-pam-server-and-workstation"></a>4단계 – PAM 서버와 워크스테이션에 MIM 구성 요소 설치
 
 >[!div class="step-by-step"]
 [« 3단계](step-3-prepare-pam-server.md)
@@ -34,7 +34,7 @@ PAMSRV에서 MIM 서비스 및 포털과 샘플 포털 웹 응용 프로그램�
 
 MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니다.
 
-##  서비스 및 포털 설치 프로그램을 실행합니다.  
+##  <a name="run-the-service-and-portal-install-program"></a>서비스 및 포털 설치 프로그램을 실행합니다.  
 
 설치 관리자의 지침을 따라 설치를 완료합니다.
 
@@ -98,7 +98,7 @@ MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니�
 
 설치가 완료된 후 서버를 다시 부팅한 다음 MIM 포털이 활성화되어 있는지 확인하고 사용자가 MIM에서 자신의 개체 리소스를 볼 수 있도록 설정합니다.
 
-## MIM 포털 관리 정책 규칙 설정
+## <a name="set-up-mim-portal-management-policy-rules"></a>MIM 포털 관리 정책 규칙 설정
 
 1. PAMSRV를 다시 부팅한 후 PRIV\Administrator로 로그온합니다.
 
@@ -114,7 +114,7 @@ MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니�
 
 7. 이 관리 정책 규칙을 선택하고 **정책 사용 안 함**을 선택 취소하고 **확인**을 클릭한 다음 **제출**을 클릭합니다.
 
-## 방화벽 연결 확인
+## <a name="verify-the-firewall-connections"></a>방화벽 연결 확인
 
 방화벽은 5725, 5726, 8086 및 8090 TCP 포트에 대해 들어오는 연결을 허용해야 합니다.
 
@@ -131,7 +131,7 @@ MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니�
 8.  priv.contoso.local과 도메인 네트워크가 나열된 활성 네트워크가 있는지 확인합니다.  
 9. **제어판**을 닫습니다.
 
-## 샘플 웹 응용 프로그램 설정
+## <a name="set-up-the-sample-web-application"></a>샘플 웹 응용 프로그램 설정
 
 이 섹션에서는 MIM PAM REST API에 대한 샘플 웹 응용 프로그램을 설치하고 구성합니다.
 
@@ -167,7 +167,7 @@ MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니�
 
 7.  (선택 사항) 사용자가 REST API에 인증할 수 있는지 확인합니다. PAMSRV에서 관리자로 웹 브라우저를 엽니다.  웹 사이트 URL http://pamsrv.priv.contoso.local:8086/api/pamresources/pamroles/로 이동하고 필요한 경우 인증하고 다운로드가 발생하는지 확인합니다.
 
-## MIM PAM 요청자 cmdlet 설치
+## <a name="install-the-mim-pam-requestor-cmdlets"></a>MIM PAM 요청자 cmdlet 설치
 
 1단계에서 구성된 워크스테이션에 MIM PAM 요청자 cmdlet을 설치합니다.
 
@@ -193,6 +193,6 @@ MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -1,12 +1,12 @@
 ---
-title: "PAM 배포 3단계 – PAM 서버 | Microsoft Identity Manager"
+title: "PAM 배포 3단계 – PAM 서버 | Microsoft 문서"
 description: "Privileged Access Management 배포를 위한 SQL 및 SharePoint를 모두 호스트하는 PAM 서버를 준비합니다."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 68ec2145-6faa-485e-b79f-2b0c4ce9eff7
@@ -14,19 +14,19 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
-ms.openlocfilehash: 1a21399df9528f689b811400a660543853d88472
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 618b834452aa07a9f31582994fe32129a49f4249
 
 
 ---
 
-# 3단계 – PAM 서버 준비
+# <a name="step-3-prepare-a-pam-server"></a>3단계 – PAM 서버 준비
 
 >[!div class="step-by-step"]
 [« 2단계](step-2-prepare-priv-domain-controller.md)
 [4단계 »](step-4-install-mim-components-on-pam-server.md)
 
-## Windows Server 2012 R2 설치
+## <a name="install-windows-server-2012-r2"></a>Windows Server 2012 R2 설치
 세 번째 가상 컴퓨터에 Windows Server 2012 R2, 특히 Windows Server 2012 R2 Standard(GUI 포함 서버) x64를 설치하여 *PAMSRV*를 만듭니다. 이 컴퓨터에 SQL Server와 SharePoint 2013이 설치되므로 최소 8GB의 RAM이 필요합니다.
 
 1. **Windows Server 2012 R2 Standard(GUI 포함 서버) x64**를 선택합니다.
@@ -46,7 +46,7 @@ ms.openlocfilehash: 1a21399df9528f689b811400a660543853d88472
 7.  서버가 다시 시작하면 관리자로 로그인하여 제어판을 열고 PAMSRV를 PRIV 도메인(priv.contoso.local)에 연결합니다.  이를 위해 PRIV 도메인 관리자(PRIV\\Administrator)의 사용자 이름 및 자격 증명을 제공해야 합니다. 환영 메시지가 표시되면 대화 상자를 닫고 이 서버를 다시 시작합니다.
 
 
-### 웹 서버(IIS) 및 응용 프로그램 서버 역할 추가
+### <a name="add-the-web-server-iis-and-application-server-roles"></a>웹 서버(IIS) 및 응용 프로그램 서버 역할 추가
 웹 서버(IIS), 응용 프로그램 서버 역할, .NET Framework 3.5 기능, Windows PowerShell용 Active Directory 모듈, SharePoint에서 필요한 다른 기능을 추가합니다.
 
 1.  PRIV 도메인 관리자(PRIV\Administrator)로 로그인하고 PowerShell을 시작합니다.
@@ -61,7 +61,7 @@ ms.openlocfilehash: 1a21399df9528f689b811400a660543853d88472
     Xps-Viewer –includeallsubfeature -restart -source d:\sources\SxS
     ```
 
-### 서버 보안 정책 구성
+### <a name="configure-the-server-security-policy"></a>서버 보안 정책 구성
 새로 만든 계정이 서비스로 실행될 수 있도록 서버 보안 정책을 구성합니다.
 
 1.  **로컬 보안 정책** 프로그램을 시작합니다.   
@@ -85,7 +85,7 @@ ms.openlocfilehash: 1a21399df9528f689b811400a660543853d88472
 16. **추가**를 클릭하고 도메인 *PRIV*에 사용자 *SharePoint*를 입력하고 마법사의 다음 화면에서 **이 사용자를 관리자로 추가**를 클릭합니다.  
 17. 제어판을 닫습니다.  
 
-### IIS 구성 변경
+### <a name="change-the-iis-configuration"></a>IIS 구성 변경
 응용 프로그램이 Windows 인증 모드를 사용할 수 있도록 IIS 구성을 변경하는 두 가지 방법이 있습니다. MIMAdmin으로 로그인하고 다음 옵션 중 하나를 따라야 합니다.
 
 PowerShell을 사용하려면 다음을 수행합니다.
@@ -95,15 +95,15 @@ PowerShell을 사용하려면 다음을 수행합니다.
     iisreset /STOP
     C:\Windows\System32\inetsrv\appcmd.exe unlock config /section:windowsAuthentication -commit:apphost
     iisreset /START
-    ```  
+    ```
 
 메모장과 같은 텍스트 편집기를 사용하려면 다음을 수행합니다.   
 1. **C:\Windows\System32\inetsrv\config\applicationHost.config** 파일을 엽니다.   
 2. 해당 파일의 82번째 줄까지 아래로 스크롤합니다. **overrideModeDefault**의 태그 값은 **<section name="windowsAuthentication" overrideModeDefault="Deny" />**입니다.  
 3. **overrideModeDefault**의 값을 *Allow*로 변경합니다.  
-4. 파일을 저장하고 PowerShell 명령을 사용하여 IIS를 다시 시작합니다. `iisreset /START`
+4. 파일을 저장하고 `iisreset /START` PowerShell 명령을 사용하여 IIS를 다시 시작합니다.
 
-## SQL Server 설치
+## <a name="install-sql-server"></a>SQL Server 설치
 배스천 환경에 아직 SQL Server가 없는 경우 SQL Server 2012(서비스 팩 1 이상) 또는 SQL Server 2014를 설치합니다. 다음 단계에서는 SQL 2014로 가정합니다.
 
 1. MIMAdmin으로 로그인해야 합니다.
@@ -111,10 +111,10 @@ PowerShell을 사용하려면 다음을 수행합니다.
 3. SQL Server 설치 프로그램이 위치한 디렉터리로 이동합니다.  
 4. 다음 명령을 입력합니다.  
     ```
-    .\setup.exe /Q /IACCEPTSQLSERVERLICENSETERMS /ACTION=install /FEATURES=SQL,SSMS /INSTANCENAME=MSSQLSERVER /SQLSVCACCOUNT="PRIV\SqlServer" /SQLSVCPASSWORD="Pass@word1"   /AGTSVCSTARTUPTYPE=Automatic /AGTSVCACCOUNT="NT AUTHORITY\Network Service" /SQLSYSADMINACCOUNTS="PRIV\MIMAdmin"
+    .\setup.exe /Q /IACCEPTSQLSERVERLICENSETERMS /ACTION=install /FEATURES=SQL,SSMS /INSTANCENAME=MSSQLSERVER /SQLSVCACCOUNT="PRIV\SqlServer" /SQLSVCPASSWORD="Pass@word1" /AGTSVCSTARTUPTYPE=Automatic /AGTSVCACCOUNT="NT AUTHORITY\Network Service" /SQLSYSADMINACCOUNTS="PRIV\MIMAdmin"
     ```
 
-## SharePoint Foundation 2013 설치
+## <a name="install-sharepoint-foundation-2013"></a>SharePoint Foundation 2013 설치
 
 SharePoint Foundation 2013 SP1 설치 관리자를 사용하여 SharePoint의 소프트웨어 필수 조건을 PAMSRV에 설치합니다.
 
@@ -133,7 +133,7 @@ SharePoint 필수 조건이 설치된 후 SharePoint Foundation 2013 SP1을 설�
 4.  **전체 서버** 형식을 선택합니다.  
 5.  설치가 완료된 후 선택하여 마법사를 실행합니다.  
 
-### SharePoint 구성
+### <a name="configure-sharepoint"></a>SharePoint 구성
 SharePoint 제품 구성 마법사를 실행하여 SharePoint를 구성합니다.
 
 1.  서버 팜에 연결 탭에서 **새 서버 팜 만들기**로 변경합니다.  
@@ -146,7 +146,7 @@ SharePoint 제품 구성 마법사를 실행하여 SharePoint를 구성합니다
 8.  기존의 관리되는 계정(PRIV\SharePoint)을 사용하려면 선택하고 모든 선택적 서비스를 선택 취소하여 사용하지 않도록 설정한 후 **다음**을 클릭합니다.  
 9. 사이트 모음 만들기 창이 표시되면 **건너뛰기**와 **마침**을 차례로 클릭합니다.  
 
-## SharePoint Foundation 2013 웹 응용 프로그램 만들기
+## <a name="create-a-sharepoint-foundation-2013-web-application"></a>SharePoint Foundation 2013 웹 응용 프로그램 만들기
 마법사가 완료된 후 PowerShell을 사용하여 MIM 포털을 호스트할 SharePoint Foundation 2013 웹 응용 프로그램을 만듭니다. 이 연습은 데모용이므로 SSL은 사용하도록 설정되지 않습니다.
 
 1.  SharePoint 2013 관리 셸을 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 선택한 후 다음 PowerShell 스크립트를 실행합니다.
@@ -161,7 +161,7 @@ SharePoint 제품 구성 마법사를 실행하여 SharePoint를 구성합니다
 > [!NOTE]
 > 다음 단계에서 사용하도록 SharePoint 2013 관리 셸 창을 계속 열어둡니다.
 
-## Sharepoint 사이트 모음 만들기
+## <a name="create-a-sharepoint-site-collection"></a>Sharepoint 사이트 모음 만들기
 이제 MIM 포털을 호스트하기 위해 해당 웹 응용 프로그램과 관련된 SharePoint 사이트 모음을 만듭니다.
 
 1.  **SharePoint 2013 관리 셸**이 아직 열려 있지 않은 경우 이를 시작하고 다음 PowerShell 스크립트를 실행합니다.
@@ -186,13 +186,13 @@ SharePoint 제품 구성 마법사를 실행하여 SharePoint를 구성합니다
     Get-SPTimerJob hourly-all-sptimerservice-health-analysis-job | disable-SPTimerJob
     ```
 
-## 업데이트 설정 변경
+## <a name="change-update-settings"></a>업데이트 설정 변경
 
 1. 제어판을 열고 **Windows 업데이트**로 이동한 후 **설정 변경**을 클릭합니다.  
 2. Windows 업데이트에서 업데이트를 수신하고 Microsoft 업데이트에서 기타 제품을 수신하도록 설정을 변경합니다.  
 3. 계속하기 전에 새 업데이트가 있는지 확인하고 보류 중인 모든 중요 업데이트가 설치되어 있는지 확인합니다.
 
-## 로컬 인트라넷으로 웹 사이트 설정
+## <a name="set-the-website-as-the-local-intranet"></a>로컬 인트라넷으로 웹 사이트 설정
 
 1. Internet Explorer를 시작하고 새 웹 브라우저 탭 열기
 2. http://pamsrv.priv.contoso.local:82/로 이동한 후 PRIV\MIMAdmin으로 로그인합니다.  "MIM 포털"이라는 빈 SharePoint 사이트가 나타납니다.  
@@ -200,7 +200,7 @@ SharePoint 제품 구성 마법사를 실행하여 SharePoint를 구성합니다
 
 로그인이 실패하는 경우 [2단계](step-2-prepare-priv-domain-controller.md) 앞부분에서 만든 Kerberos SPN을 업데이트해야 할 수 있습니다.
 
-## SharePoint 관리 서비스 시작
+## <a name="start-the-sharepoint-administration-service"></a>SharePoint 관리 서비스 시작
 
 아직 실행 중이 아닌 경우 **서비스**(관리 도구에 있음)를 사용하여 **SharePoint 관리** 서비스를 시작합니다.
 
@@ -212,6 +212,6 @@ SharePoint 제품 구성 마법사를 실행하여 SharePoint를 구성합니다
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

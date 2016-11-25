@@ -1,27 +1,27 @@
 ---
-title: "암호 변경 알림 | Microsoft Identity Manager"
+title: "암호 변경 알림 | Microsoft 문서"
 description: "도메인 컨트롤러에서 MIM 암호 변경 알림 서비스를 설치하고 구성하는 단계를 알아봅니다."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/21/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 97edae12-6f86-4f9f-8620-a95a096e482a
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: e25f4b3a60f2c432cd33c8f84c750110cbe605ee
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: c608fabc662c74e560878773842e0236c9824daa
 
 
 ---
 
-# 도메인 컨트롤러에 MIM 암호 변경 알림 서비스 배포
+# <a name="deploy-the-mim-password-change-notification-service-on-a-domain-controller"></a>도메인 컨트롤러에 MIM 암호 변경 알림 서비스 배포
 
-## 암호 변경 알림 서비스 설치
+## <a name="install-the-password-change-notification-service"></a>암호 변경 알림 서비스 설치
 PCNS(암호 변경 알림 서비스)는 도메인 컨트롤러에 설치하는 서비스로, 이를 통해 다른 공급업체의 디렉터리 서버 같은 다른 시스템에 대해 MIM에서 암호 동기화를 사용하도록 설정할 수 있습니다. 암호 동기화를 위해 각 도메인 컨트롤러 서버에 PCNS를 설치합니다.
 
 1.  Active Directory 도메인 서비스의 역할을 가진 Windows Server에서 실행 중인 서버에 도메인 관리자로 로그인합니다.
@@ -56,11 +56,11 @@ PCNS(암호 변경 알림 서비스)는 도메인 컨트롤러에 설치하는 �
 
 14. MIM 암호 변경 알림 서비스에 대한 구성 변경 사항을 적용하려면 컴퓨터를 다시 시작합니다. 표시되는 팝업 창에서 **예**를 클릭하여 다시 시작하거나 나중에 다시 시작할 수 있습니다.
 
-## 암호 변경 알림 서비스 구성
+## <a name="configuring-the-password-change-notification-service"></a>암호 변경 알림 서비스 구성
 도메인 관리자로 DC 서버에 다시 연결되면 *C:\Program Files\Microsoft Password Change Notification*으로 이동합니다. *pcnscfg.exe*를 실행합니다.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

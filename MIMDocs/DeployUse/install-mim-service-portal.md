@@ -1,29 +1,29 @@
 ---
-title: "MIM 서비스 및 포털 설치 | Microsoft Identity Manager"
+title: "MIM 서비스 및 포털 설치 | Microsoft 문서"
 description: "Microsoft Identity Manager 2016용 MIM 서비스 및 포털을 구성하고 설치하는 단계를 알아봅니다."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 08/11/2016
 ms.topic: get-started-article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 739797502e09c2b92e35767e2c943308cd1de5c9
-ms.openlocfilehash: 438754773057043b8560562bab0ae260fb3a4bc2
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 4d0f08d84c39c982d43b2a0e0ba2f694aed508da
 
 
 ---
 
-# MIM 2016 설치: MIM 서비스 및 포털
+# <a name="install-mim-2016-mim-service-and-portal"></a>MIM 2016 설치: MIM 서비스 및 포털
 
 >[!div class="step-by-step"]
 [« MIM 동기화 서비스](install-mim-sync.md)
-[데이터베이스 동기화 »](install-mim-sync-ad-service.md)
+[데이터베이스를 동기화 »](install-mim-sync-ad-service.md)
 
 > [!NOTE]
 > 이 연습에서는 Contoso라는 회사의 샘플 이름과 값을 사용합니다. 해당 항목을 사용자의 정보로 바꿉니다. 예를 들면 다음과 같습니다.
@@ -35,7 +35,7 @@ ms.openlocfilehash: 438754773057043b8560562bab0ae260fb3a4bc2
 마지막 단계에서 MIM 설치 패키지를 설정하지 않은 경우 다시 돌아가서 Microsoft Identity Manager 2016 구성 요소를 설치한 후 계속합니다.
 
 
-## 설치를 위한 MIM 서비스 및 포털 구성
+## <a name="configure-mim-service-and-portal-for-installation"></a>설치를 위한 MIM 서비스 및 포털 구성
 
 1. 압축을 푼 **서비스 및 포털** 하위 폴더에서 **MIM 서비스 및 포털 설치 관리자**를 실행합니다.
 
@@ -77,7 +77,7 @@ ms.openlocfilehash: 438754773057043b8560562bab0ae260fb3a4bc2
 
 16. 방화벽에서 포트 5725 및 5726 열기에 대한 확인란 및 MIM 포털에 대해 모든 인증된 사용자 액세스 권한 부여에 대한 확인란을 선택합니다.
 
-## MIM 암호 등록 포털 구성
+## <a name="configure-mim-password-registration-portal"></a>MIM 암호 등록 포털 구성
 
 1.  SSPR 등록을 위한 서비스 계정 이름을 *contoso\MIMSSPR*로 설정하고 암호를 *Pass@word1*로 설정합니다.
 
@@ -89,7 +89,7 @@ ms.openlocfilehash: 438754773057043b8560562bab0ae260fb3a4bc2
 
 4. 다음 MIM 암호 등록 포털 구성 화면에서 암호 등록 포털에 대한 MIM 서비스 서버 주소로 *http://CorpIDM.contoso.local*을 지정합니다.
 
-## FIM 암호 재설정 포털 구성
+## <a name="configure-mim-password-reset-portal"></a>FIM 암호 재설정 포털 구성
 
 1.  SSPR 등록을 위한 서비스 계정 이름을 *Contoso\MIMSSPRService*로 설정하고 암호를 *Pass@word1*로 설정합니다.
 
@@ -101,7 +101,7 @@ ms.openlocfilehash: 438754773057043b8560562bab0ae260fb3a4bc2
 
 4. 다음 MIM 암호 등록 포털 구성 화면에서 암호 등록 포털에 대한 MIM 서비스 서버 주소로 *CorpIDname http://CorpIDname.domain.local*을 지정합니다.
 
-## MIM 서비스 및 포털 설치
+## <a name="install-mim-service-and-portal"></a>MIM 서비스 및 포털 설치
 
 사전 설치 정의가 모두 준비되면 **설치**를 클릭하여 선택한 **서비스 및 포털** 구성 요소 설치를 시작합니다.
 
@@ -148,10 +148,10 @@ ms.openlocfilehash: 438754773057043b8560562bab0ae260fb3a4bc2
 
 >[!div class="step-by-step"]  
 [« MIM 동기화 서비스](install-mim-sync.md)
-[데이터베이스 동기화 »](install-mim-sync-ad-service.md)
+[데이터베이스를 동기화 »](install-mim-sync-ad-service.md)
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

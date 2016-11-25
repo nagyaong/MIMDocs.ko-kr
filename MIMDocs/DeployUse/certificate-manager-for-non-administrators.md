@@ -1,28 +1,28 @@
 ---
-title: "셀프서비스 스마트카드 갱신 | Microsoft Identity Manager"
+title: "셀프서비스 스마트 카드 갱신 | Microsoft 문서"
 description: "관리자가 사용자의 컴퓨터에 액세스하지 않고도 사용자가 인증서 관리자를 사용할 수 있도록 사용자의 스마트 카드를 등록하는 방법을 알아봅니다."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/21/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: 2fddede481b5ba677d0d463be4b14cda4b463865
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 76d72211e1dbddb2647729c796ac19eb82a3b2c6
 
 
 ---
 
-# 관리자가 아닌 사용자의 스마트 카드 등록
+# <a name="enroll-smart-cards-for-nonadministrators"></a>관리자가 아닌 사용자의 스마트 카드 등록
 사용자가 사용하는 컴퓨터의 로컬 관리자가 아니면 기본적으로 해당 컴퓨터에 스마트 카드를 등록할 수 없습니다. 다음 절차를 사용하여 이 제한을 해결할 수 있습니다.
 
-## MIM 2016 인증서 관리자에서 관리자가 아닌 사용자가 스마트 카드를 갱신하도록 설정합니다.
+## <a name="enabling-smart-card-renewal-for-nonadmins-in-mim-2016-certificate-manager"></a>MIM 2016 인증서 관리자에서 관리자가 아닌 사용자가 스마트 카드를 갱신하도록 설정합니다.
 
 1.  **appx 파일의 압축을 풉니다.**
 
@@ -96,6 +96,6 @@ ms.openlocfilehash: 2fddede481b5ba677d0d463be4b14cda4b463865
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

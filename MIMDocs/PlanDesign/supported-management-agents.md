@@ -1,25 +1,25 @@
 ---
-title: "지원되는 커넥터 | Microsoft Identity Manager"
+title: "지원되는 커넥터 | Microsoft 문서"
 description: "커넥터를 사용하여 MIM과 디렉터리 간의 데이터 전송을 관리할 수 있습니다."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 08/11/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 8bc2f6d2-9f53-4db6-aee6-a937ae468163
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 309011c81959971e696d70aa4ec5e1610cc8a2f0
-ms.openlocfilehash: f0842781e3730dae5548ce02a3cb247376d12dc8
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 5841f549cc7f9369943cc5b31c27005f89afcccb
 
 
 ---
 
-# 디렉터리에 연결
+# <a name="connect-to-your-directories"></a>디렉터리에 연결
 
 커넥터는 연결된 특정 데이터 원본을 MIM(Microsoft Identity Manager)에 연결합니다. 커넥터는 데이터를 연결된 데이터 원본에서 MIM으로 이동합니다. 또한 MIM의 데이터가 수정되는 경우 커넥터는 데이터를 연결된 데이터 원본으로 내보내 MIM과 동기화된 상태로 유지합니다. 일반적으로 연결된 각 디렉터리에는 커넥터가 하나 이상 있습니다.
 
@@ -27,7 +27,7 @@ Forefront Identity Manager에서는 커넥터를 관리 에이전트라고 했�
 
 이 문서에서는 MIM에 포함된 커넥터만 다루지만 Extensible Connectivity 2.0용 커넥터를 사용하면 더 많은 데이터 원본과 연결할 수 있습니다. 이 방법으로 자체 커넥터를 만든 파트너도 있으며 전체 목록은 Wiki의 [FIM 2010: Management Agents from Partners](http://social.technet.microsoft.com/wiki/contents/articles/1589.fim-2010-management-agents-from-partners.aspx)(FIM 2010: 파트너의 관리 에이전트)에서 확인할 수 있습니다.
 
-## MIM 2016에서 지원되는 커넥터
+## <a name="supported-connectors-in-mim-2016"></a>MIM 2016에서 지원되는 커넥터
 
 | Name | 지원되는 연결된 데이터 원본 버전 |
 | ---- | ----------------------------------------------- |
@@ -35,7 +35,7 @@ Forefront Identity Manager에서는 커넥터를 관리 에이전트라고 했�
 | ADLDS(Active Directory Lightweight Directory Services) | ADLDS(Active Directory Lightweight Directory Services) |
 | Active Directory GAL(전체 주소 목록) | Active Directory GAL(전체 주소 목록) – Exchange 2000, 2003, 2007, 2010, 2013 |
 | Extensible Connectivity 2.0 | 모든 호출 기반 또는 파일 기반 데이터 원본 |
-| MIM 서비스 | Microsoft Identity Manager 2016 |
+| MIM 서비스 | Microsoft 문서 2016 |
 | IBM DB2 유니버설 데이터베이스 | IBM DB2 버전 9.1, 9.5 또는 9.7, IBM DB2 OLEDB v9.5 FP5 또는 v9.7 FP1 |
 | IBM 디렉터리 서버 | IBM Tivoli 디렉터리 서버 6.x |
 | Novell eDirectory | Novell eDirectory 버전 8.7.3, 8.8.5 및 8.8.6 |
@@ -54,12 +54,12 @@ Forefront Identity Manager에서는 커넥터를 관리 에이전트라고 했�
 | 고정 너비 텍스트 파일 | 고정 너비 텍스트 파일 |
 | LDIF(LDAP 데이터 교환 형식) | LDIF(LDAP 데이터 교환 형식) |
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
 [FIM 2010 R2의 관리 에이전트](https://technet.microsoft.com/library/jj133885.aspx)
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

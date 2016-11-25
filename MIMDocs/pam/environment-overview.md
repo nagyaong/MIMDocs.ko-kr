@@ -1,25 +1,25 @@
 ---
-title: "PAM 환경 개요 | Microsoft Identity Manager"
+title: "PAM 환경 개요 | Microsoft 문서"
 description: "Privileged Access Management를 배포하기 위해 필요한 가상 컴퓨터의 수와 구성 확인"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 479db14c-1bfb-4d7c-a344-cd718a01f328
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
-ms.openlocfilehash: 3057618c609ed251efe1f6cc6b2d3694ac61eafd
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 750ba152813b4c03c913453c42e0e503e90b883b
 
 
 ---
 
-# 환경 개요
+# <a name="environment-overview"></a>환경 개요
 
 Privileged Access Management는 공유 네트워크에서 서로 연결된 별도의 드라이브가 있는 VM(가상 컴퓨터)에서 작동합니다. 이러한 가상 컴퓨터는 Windows 8.1, Windows Server 2012 R2 또는 다른 운영 체제 플랫폼에서 호스트할 수 있습니다.
 
@@ -34,6 +34,6 @@ Privileged Access Management는 공유 네트워크에서 서로 연결된 별�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
