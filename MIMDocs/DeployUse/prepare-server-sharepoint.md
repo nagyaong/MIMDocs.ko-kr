@@ -1,25 +1,25 @@
 ---
-title: "SharePoint 구성 | Microsoft Identity Manager"
+title: "SharePoint 구성 | Microsoft 문서"
 description: "MIM 포털 페이지를 호스트할 수 있도록 SharePoint Foundation을 설치 및 구성합니다."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/21/2016
 ms.topic: get-started-article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: 9885579d9fb72dd4e73ec5a8a359b35c49d10440
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: f67bb8260f0f1e6ef491a5de7e7ef95009651cf2
 
 
 ---
 
-# ID 관리 서버 설치: SharePoint
+# <a name="set-up-an-identity-management-server-sharepoint"></a>ID 관리 서버 설치: SharePoint
 
 >[!div class="step-by-step"]
 [« SQL Server 2014](prepare-server-sql2014.md)
@@ -32,7 +32,7 @@ ms.openlocfilehash: 9885579d9fb72dd4e73ec5a8a359b35c49d10440
 > - 암호 - **Pass@word1**
 
 
-## **SharePoint Foundation 2013 SP1** 설치
+## <a name="install-sharepoint-foundation-2013-with-sp1"></a>**SharePoint Foundation 2013 SP1** 설치
 
 > [!NOTE]
 > 필수 구성 요소를 다운로드하려면 설치 관리자가 인터넷에 연결되어 있어야 합니다. 컴퓨터가 인터넷 연결을 제공하지 않는 가상 네트워크에 있는 경우 인터넷 연결을 제공하는 컴퓨터에 네트워크 인터페이스를 추가합니다. 설치가 완료되면 비활성화할 수 있습니다.
@@ -59,7 +59,7 @@ SharePoint Foundation 2013 SP1을 설치하려면 다음 단계를 수행합니�
 
 4.  설치가 완료된 후 마법사를 실행합니다.
 
-## 마법사를 실행하여 SharePoint 구성
+## <a name="run-the-wizard-to-configure-sharepoint"></a>마법사를 실행하여 SharePoint 구성
 
 **SharePoint 제품 구성 마법사**에 나열된 단계에 따라 MIM과 함께 작동하도록 SharePoint를 구성합니다.
 
@@ -79,7 +79,7 @@ SharePoint Foundation 2013 SP1을 설치하려면 다음 단계를 수행합니�
 
 8. **Creating a Site Collection** (사이트 컬렉션 만들기) 창에서 **건너뛰기**를 클릭합니다.  **마침**을 클릭합니다.
 
-## MIM 포털을 호스트할 SharePoint 준비
+## <a name="prepare-sharepoint-to-host-the-mim-portal"></a>MIM 포털을 호스트할 SharePoint 준비
 
 > [!NOTE]
 > 처음에는 SSL이 구성되어 있지 않습니다. 이 포털에 액세스할 수 있으려면 SSL 또는 이와 동등한 것을 구성해야 합니다.
@@ -137,6 +137,6 @@ SharePoint Foundation 2013 SP1을 설치하려면 다음 단계를 수행합니�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

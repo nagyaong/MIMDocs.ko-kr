@@ -1,25 +1,25 @@
 ---
-title: "AD를 MIM 서비스와 동기화 | Microsoft Identity Manager"
+title: "AD를 MIM 서비스와 동기화 | Microsoft 문서"
 description: "관리 에이전트 및 MIM 동기화 서비스를 사용하여 Active Directory와 MIM 데이터베이스를 동기화합니다."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/21/2016
 ms.topic: get-started-article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: f17f256653936ffd06da9fae87dccfbf1c12a553
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 59e050c8ccd811586e2da8476f842b853d37f2f1
 
 
 ---
 
-# MIM 2016 설치: Active Directory와 MIM 서비스 동기화
+# <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>MIM 2016 설치: Active Directory와 MIM 서비스 동기화
 
 >[!div class="step-by-step"]
 [« MIM 서비스 및 포털](install-mim-service-portal.md)
@@ -32,7 +32,7 @@ ms.openlocfilehash: f17f256653936ffd06da9fae87dccfbf1c12a553
 
 기본적으로 MIM 동기화 서비스(동기화)에는 구성된 커넥터가 없습니다.  일반적인 첫 단계는 MIM 동기화를 사용하여 기존 Active Directory 계정으로 FIM 서비스 데이터베이스를 채우는 것입니다. 이를 위해 MIM 동기화 서비스 응용 프로그램을 사용합니다.
 
-## MIM 관리 에이전트 만들기
+## <a name="create-the-mim-management-agent"></a>MIM 관리 에이전트 만들기
 MIM MA(관리 에이전트)는 MIM 서비스에 대한 MIM 동기화를 위한 커넥터입니다. 이 커넥터를 만들려면 관리 에이전트 만들기 마법사를 사용하면 됩니다.
 
 MIM 관리 에이전트를 구성할 때 사용자 계정을 지정해야 합니다. 이 문서에서는 이 계정에 대한 이름으로 **MIMMA**를 사용합니다.
@@ -40,15 +40,15 @@ MIM 관리 에이전트를 구성할 때 사용자 계정을 지정해야 합니
 > [!NOTE]
 > MIM 관리 에이전트에 대해 사용하는 계정은 MIM 서비스를 설치하는 동안 지정한 계정과 동일해야 합니다.
 
-###MIM MA를 만들려면
+###<a name="to-create-the-mim-ma"></a>MIM MA를 만들려면
 
 1.  동기화 서비스 관리자를 엽니다.
 
-2.  관리 에이전트 만들기 마법사를 열려면 **작업** 메뉴에서 **만들기**를 클릭합니다.
+2.  관리 에이전트 만들기 마법사를 열려면 **관리 작업** 페이지로 변경한 다음 **작업** 메뉴에서 **만들기**를 클릭합니다.
 
 3.  **관리 에이전트 만들기** 페이지에서 다음과 같이 설정하고 **다음**을 클릭합니다.
 
-    -   관리 에이전트 대상: MIM 서비스 관리 에이전트
+    -   관리 에이전트 대상: FIM 서비스 관리 에이전트
 
     -   이름: MIMMA
 
@@ -56,7 +56,7 @@ MIM 관리 에이전트를 구성할 때 사용자 계정을 지정해야 합니
 
     -   서버: localhost
 
-    -   데이터베이스: MIMService
+    -   데이터베이스 FIMService
 
     -   MIM 서비스 기준 주소: http://localhost:5725
 
@@ -70,17 +70,17 @@ MIM 관리 에이전트를 구성할 때 사용자 계정을 지정해야 합니
 
 5.  **선택한 개체 형식** 페이지에서 아래 나열된 개체 형식이 선택되었는지 확인하고 **다음**을 클릭합니다.
 
-    -   ExpectedRuleEntry
-
     -   DetectedRuleEntry
 
-    -   SynchronizationRule
+    -   ExpectedRuleEntry
+
+    -   Group
 
     -   Person
 
-    -   그룹
+    -   SynchronizationRule
 
-6.  **선택한 특성** 페이지에서 나열된 모든 특성이 선택되어 있는지 확인하고 **다음**을 클릭합니다.
+6.  **선택한 특성** 페이지에서 **모두 표시**를 선택하여 나열된 모든 특성이 선택되어 있는지 확인하고 **다음**을 클릭합니다.
 
 7.  **커넥터 필터 구성** 페이지에서 **다음**을 클릭합니다.
 
@@ -90,28 +90,18 @@ MIM 관리 에이전트를 구성할 때 사용자 계정을 지정해야 합니
     - 매핑 대화 상자를 열려면 **매핑 추가**를 클릭합니다.
     - **메타버스 개체 형식** 목록에서 **person**을 선택합니다.
     - 매핑 대화 상자를 닫으려면 **확인**을 클릭합니다.
+    - **데이터 원본 개체 형식** 목록에서 **그룹**을 선택합니다.
+    - 매핑 대화 상자를 열려면 **매핑 추가**를 클릭합니다.
+    - **메타버스 개체 형식** 목록에서 **그룹**을 선택합니다.
+    - 매핑 대화 상자를 닫으려면 **확인**을 클릭합니다.
 
-9.  **특성 흐름 구성** 페이지에서 다음 특성 흐름 매핑을 적용하고 **다음**을 클릭합니다.
+9.  **특성 흐름 구성** 페이지에서 아래에 표시된 대로 특성 흐름 매핑을 만들고 **다음**을 클릭합니다.
 
-    | **데이터 원본 특성** | **흐름 방향** | **메타버스 특성** |
-    |-|-|-|
-    | AccountName | 내보내기 | accountName |
-    | DisplayName | 내보내기 | displayName |
-    | 도메인 | 내보내기 | 도메인 |
-    | EmployeeID | 내보내기 | employeeID |
-    | Employee유형 | 내보내기 | employee유형 |
-    | 전자 메일 | 내보내기 | mail |
-    | 이름 | 내보내기 | firstName |
-    | 성 | 내보내기 | lastName |
-    | ObjectSID | 내보내기 | objectSid |
-
-10.  데이터 원본 개체 형식으로 **Person**을 선택합니다.
-
-    -   메타버스 개체 형식으로 **Person**을 선택합니다.
+    -   데이터 원본 및 메타버스 개체 형식으로 **Person**을 선택합니다.
 
     -   매핑 형식으로 **직접**을 선택합니다.
 
-    -   이전 표의 각 행에 대해 다음 단계를 완료합니다.
+    -   다음 표의 각 행에 대해 다음 단계를 완료합니다.
 
         -   표의 해당 행에 대해 표시된 **흐름 방향**을 선택합니다.
 
@@ -120,6 +110,18 @@ MIM 관리 에이전트를 구성할 때 사용자 계정을 지정해야 합니
         -   표의 해당 행에 대해 표시된 **메타버스 특성**을 선택합니다.
 
         -   흐름 매핑을 적용하려면 **새로 만들기**를 클릭합니다.
+
+    | **데이터 원본 특성** | **흐름 방향** | **메타버스 특성** |
+    |-|-|-|
+    | AccountName | 내보내기 | accountName |
+    | DisplayName | 내보내기 | displayName |
+    | 도메인 | 내보내기 | 도메인 |
+    | 메일 | 내보내기 | mail |
+    | EmployeeID | 내보내기 | employeeID |
+    | EmployeeType | 내보내기 | employeeType |
+    | 이름 | 내보내기 | firstName |
+    | 성 | 내보내기 | lastName |
+    | ObjectSID | 내보내기 | objectSid |
 
     -   데이터 원본 형식 및 메타버스 개체 형식으로 **그룹**을 선택합니다.
 
@@ -140,7 +142,7 @@ MIM 관리 에이전트를 구성할 때 사용자 계정을 지정해야 합니
     | AccountName | 내보내기 | accountName |
     | DisplayName | 내보내기 | displayName |
     | 도메인 | 내보내기 | 도메인 |
-    | 전자 메일 | 내보내기 | mail |
+    | 메일 | 내보내기 | mail |
     | MailNickName | 내보내기 | mailNickName |
     | 멤버 | 내보내기 | 멤버 |
     | ObjectSID | 내보내기 | objectSid |
@@ -148,20 +150,19 @@ MIM 관리 에이전트를 구성할 때 사용자 계정을 지정해야 합니
     | 유형 | 내보내기 | 형식 |
     | 멤버shipAddWorkflow | 내보내기 | membershipAddWorkflow |
     | 멤버shipLocked | 내보내기 | membershipLocked |
-    | DisplayName | 가져오기 | displayName |
-    | 범위 | 가져오기 | scope |
-    | 유형 | 가져오기 | 형식 |
-    | 멤버 | 가져오기 | 멤버 |
     | AccountName | 가져오기 | accountName |
     | DisplayedOwner | 가져오기 | displayedOwner |
+    | DisplayName | 가져오기 | displayName |
     | MailNickName | 가져오기 | mailNickName |
+    | 멤버 | 가져오기 | 멤버 |
+    | 범위 | 가져오기 | scope |
+    | 유형 | 가져오기 | 형식 |
 
+10.  **프로비전 해제 구성** 페이지에서 **다음**을 클릭합니다.
 
-11.  **프로비전 해제 구성** 페이지에서 **다음**을 클릭합니다.
+11.  관리 에이전트를 만들려면 **확장 구성** 페이지에서 **마침**을 클릭합니다.
 
-12.  관리 에이전트를 만들려면 **확장 구성** 페이지에서 **마침**을 클릭합니다.
-
-## AD 관리 에이전트 만들기
+## <a name="create-the-ad-management-agent"></a>AD 관리 에이전트 만들기
 Active Directory 관리 에이전트는 AD 도메인 서비스용 커넥터입니다. 이 커넥터를 만들려면 관리 에이전트 만들기 마법사를 사용하면 됩니다.
 
 1. 관리 에이전트 만들기 마법사를 열려면 **작업** 메뉴에서 **만들기**를 클릭합니다.
@@ -194,20 +195,16 @@ Active Directory 관리 에이전트는 AD 도메인 서비스용 커넥터입�
 
     - **개체 형식** 목록에서 **사용자** 및 **그룹**을 선택합니다.
 
-7. **특성 선택** 페이지에서 다음과 같이 설정하고 **다음**을 클릭합니다.
-
-    - **모두 표시**를 선택합니다.
-
-8. **특성** 목록에서 다음 특성을 선택합니다.
+7. **특성 선택** 페이지에서 **모두 표시**를 선택하여 다음 특성을 선택하고 **다음**을 클릭합니다.
 
     -   company
     -   displayName
     -   employeeID
     -   employeeType
     -   givenName
-    -   groupType
-    -   manager
+    -   group유형
     -   managedBy
+    -   manager
     -   멤버
     -   objectSid
     -   sAMAccountName
@@ -216,22 +213,22 @@ Active Directory 관리 에이전트는 AD 도메인 서비스용 커넥터입�
     -   unicodePwd
     -   userAccountControl
 
-9. **커넥터 필터 구성** 페이지에서 **다음**을 클릭합니다.
+8. **커넥터 필터 구성** 페이지에서 **다음**을 클릭합니다.
 
-10. **조인 및 프로젝션 규칙 구성** 페이지에서 **다음**을 클릭합니다.
+9. **조인 및 프로젝션 규칙 구성** 페이지에서 **다음**을 클릭합니다.
 
-11. **특성 흐름 구성** 페이지에서 **다음**을 클릭합니다.
+10. **특성 흐름 구성** 페이지에서 **다음**을 클릭합니다.
 
-12. **프로비전 해제 구성** 페이지에서 **다음**을 클릭합니다.
+11. **프로비전 해제 구성** 페이지에서 **다음**을 클릭합니다.
 
-13. **확장 구성** 페이지에서 **마침**을 클릭합니다.
+12. **확장 구성** 페이지에서 **마침**을 클릭합니다.
 
 
-## 실행 프로필 만들기
+## <a name="create-run-profiles"></a>실행 프로필 만들기
 
 ADMA 및 MIMMA 커넥터에 대해 실행 프로필을 만듭니다.
 
-### ADMA 커넥터에 대해 실행 프로필을 만듭니다.
+### <a name="create-run-profiles-for-the-adma-connector"></a>ADMA 커넥터에 대해 실행 프로필을 만듭니다.
 
 다음 표에는 ADMA 커넥터에 대해 만들 다섯 가지 실행 프로필이 나와 있습니다.
 
@@ -263,7 +260,7 @@ ADMA 커넥터에 대해 실행 프로필을 만들려면
 
 5. 실행 프로필 구성 대화 상자를 닫으려면 **확인**을 클릭합니다.
 
-### MIMMA 커넥터에 대해 실행 프로필 만들기
+### <a name="create-run-profiles-for-the-mimma-connector"></a>MIMMA 커넥터에 대해 실행 프로필 만들기
 
 다음 표에는 MIMMA 커넥터에 대한 일치하는 다섯 가지 실행 프로필이 나와 있습니다.
 
@@ -295,7 +292,7 @@ MIMMA 커넥터에 대해 실행 프로필을 만들려면
 
 5. 실행 프로필 구성 대화 상자를 닫으려면 **확인**을 클릭합니다.
 
-## MIM 서비스 구성
+## <a name="configure-the-mim-service"></a>MIM 서비스 구성
 
 MIM 포털을 사용하여 MIM 서비스에 대한 AD 사용자 인바운드 동기화 규칙을 만듭니다.
 
@@ -322,7 +319,7 @@ AD 사용자 인바운드 동기화 규칙을 만들려면
 
     -   관계 조건을 구성하려면 MetaverseObject:person(특성) 목록 및 ConnectedSystemObject:person(특성) 목록에서 **ObjectSID**를 선택합니다.
 
-    -   **MIM에서 리소스 만들기**를 선택합니다.
+    -   **FIM에서 리소스 만들기**를 선택합니다.
 
 7. **인바운드 특성 흐름** 페이지에서 다음 정보를 입력하고 **다음**을 클릭합니다.
 
@@ -349,10 +346,10 @@ AD 사용자 인바운드 동기화 규칙을 만들려면
 
 8. **요약** 탭에서 **제출**을 클릭합니다.
 
-## 테스트 환경 초기화
+## <a name="initialize-the-testing-environment"></a>테스트 환경 초기화
 AD 데이터를 사용하여 MIM 구성을 테스트하려면 먼저 다음 4가지 단계를 수행해야 합니다.
 
-### 프로비전 사용
+### <a name="enable-provisioning"></a>프로비전 사용
 
 1. 동기화 서비스 관리자를 엽니다.
 
@@ -362,7 +359,7 @@ AD 데이터를 사용하여 MIM 구성을 테스트하려면 먼저 다음 4가
 
 4. 옵션 대화 상자를 닫으려면 **확인**을 클릭합니다.
 
-### MIMMA 초기화
+### <a name="initialize-the-mimma"></a>MIMMA 초기화
 
 이 커넥터에서 전체 동기화 주기를 실행합니다. 전체 주기는 다음 실행 프로필로 구성됩니다.
 
@@ -387,13 +384,13 @@ AD 데이터를 사용하여 MIM 구성을 테스트하려면 먼저 다음 4가
 
     - 실행 프로필을 시작하려면 **확인**을 클릭합니다.
 
-#### 특성 흐름 우선 순위 구성
+#### <a name="configure-attribute-flow-precedence"></a>특성 흐름 우선 순위 구성
 
 MIM 커넥터를 초기화하는 동안 구성된 동기화 규칙을 메타버스로 가져왔습니다.
 
 이 커넥터에서 제공한 특성의 특성 흐름 우선 순위를 조정하여 AD에 이미 있는 해당 특성이 메타버스로 이동하고, 이후에 MIM 서비스 데이터베이스로도 이동할 수 있도록 합니다.
 
-### ADMA 초기화
+### <a name="initialize-the-adma"></a>ADMA 초기화
 
 Active Directory 커넥터를 초기화하려면 전체 가져오기 및 전체 동기화를 실행해야 합니다. 전체 가져오기는 AD의 기존 개체를 커넥터 공간으로 가져옵니다. 전체 동기화는 MIM 커넥터의 해당 항목과 일치하도록 동기화 규칙을 업데이트합니다.
 
@@ -411,7 +408,7 @@ Active Directory 커넥터를 초기화하려면 전체 가져오기 및 전체 
 
     - 실행 프로필을 시작하려면 **확인**을 클릭합니다.
 
-### MIM 서비스 데이터베이스 채우기
+### <a name="populate-the-mim-service-database"></a>MIM 서비스 데이터베이스 채우기
 
 MIM 서비스 데이터베이스를 개체로 채우려면 MIMMA 커넥터에서 동기화 주기를 실행해야 합니다. 주기는 다음으로 구성됩니다.
 
@@ -438,6 +435,6 @@ MIM 서비스 데이터베이스를 개체로 채우려면 MIMMA 커넥터에서
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

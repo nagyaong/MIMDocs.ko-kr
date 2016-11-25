@@ -1,25 +1,25 @@
 ---
-title: "Windows Server 구성 | Microsoft Identity Manager"
+title: "Windows Server 구성 | Microsoft 문서"
 description: "MIM 2016과 함께 작동하도록 Windows Server 2012 RS를 준비하는 데 필요한 단계 및 최소 요구 사항을 알아봅니다."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 08/11/2016
 ms.topic: get-started-article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 739797502e09c2b92e35767e2c943308cd1de5c9
-ms.openlocfilehash: bdf1f4b7c5762095f4986506f9e17369dadea011
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 06d2365808858dc09d04ab37eafa9d6e3212cbcf
 
 
 ---
 
-# ID 관리 서버 설치: Windows Server 2012 R2
+# <a name="set-up-an-identity-management-server-windows-server-2012-r2"></a>ID 관리 서버 설치: Windows Server 2012 R2
 
 >[!div class="step-by-step"]
 [« 도메인 준비](preparing-domain.md)
@@ -31,7 +31,7 @@ ms.openlocfilehash: bdf1f4b7c5762095f4986506f9e17369dadea011
 > - 도메인 이름 - **contoso**
 > - 암호 - **Pass@word1**
 
-## 도메인에 Windows Server 2012 R2 가입
+## <a name="join-windows-server-2012-r2-to-your-domain"></a>도메인에 Windows Server 2012 R2 가입
 
 최소 8GB의 RAM이 있는 Windows Server 2012 R2 컴퓨터를 시작합니다. 설치할 때 “Windows Server 2012 R2 Standard(GUI 포함 서버) x64” 버전을 지정합니다.
 
@@ -62,7 +62,7 @@ ms.openlocfilehash: bdf1f4b7c5762095f4986506f9e17369dadea011
     Install-WindowsFeature Web-WebServer, Net-Framework-Features,rsat-ad-powershell,Web-Mgmt-Tools,Application-Server,Windows-Identity-Foundation,Server-Media-Foundation,Xps-Viewer –includeallsubfeature -restart -source d:\sources\SxS
     ```
 
-## 서버 보안 정책 구성
+## <a name="configure-the-server-security-policy"></a>서버 보안 정책 구성
 
 새로 만든 계정이 서비스로 실행될 수 있도록 서버 보안 정책을 설정합니다.
 
@@ -93,7 +93,7 @@ ms.openlocfilehash: bdf1f4b7c5762095f4986506f9e17369dadea011
 12. 로컬 보안 정책 창을 닫습니다.
 
 
-## IIS Windows 인증 모드 변경
+## <a name="change-the-iis-windows-authentication-mode"></a>IIS Windows 인증 모드 변경
 
 1.  PowerShell 창을 엽니다.
 
@@ -111,6 +111,6 @@ ms.openlocfilehash: bdf1f4b7c5762095f4986506f9e17369dadea011
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

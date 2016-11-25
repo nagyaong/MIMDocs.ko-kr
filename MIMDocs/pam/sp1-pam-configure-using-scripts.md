@@ -3,23 +3,23 @@ title: "스크립트를 사용하여 PAM 구성"
 description: "스크립트를 사용하여 Privileged Identity Manager에서 관리할 기존 또는 새 ID로 CORP 도메인을 준비합니다."
 keywords: 
 author: barclayn
+ms.author: barclayn
 manager: MBaldwin
-ms.date: 09/26/2016
+ms.date: 10/04/2016
 ms.topic: article
-ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 96c734ade75f5c206858387cf45106761bc0a881
-ms.openlocfilehash: a1e4e5561bf8d38c56c3d27249d94f4bf7103b8c
+ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
+ms.openlocfilehash: 3aca2fb513280f118e760bdbc2ba471151c41b17
 
 
 ---
 
-# 스크립트를 사용하여 PAM 구성
+# <a name="configure-pam-using-scripts"></a>스크립트를 사용하여 PAM 구성
 
 SQL과 SharePoint를 별도의 서버에 설치하려면 아래 지침에 따라 서버를 구성해야 합니다. SQL, SharePoint 및 PAM 구성 요소가 동일한 컴퓨터에 설치된 경우 해당 컴퓨터에서 아래 단계를 실행해야 합니다.
 
@@ -39,11 +39,11 @@ SQL과 SharePoint를 별도의 서버에 설치하려면 아래 지침에 따라
 5. 모든 컴퓨터, CORPDC, PRIVDC, PAM 서버, SQL Server 및 SharePoint Server의 %SYSTEMDRIVE%\PAM 폴더에 동일한 PAMDeploymentConfig.xml을 복사합니다.
 
 
-## 배포 워크시트
+## <a name="deployment-worksheet"></a>배포 워크시트
 
 PAMDeploymentConfig.xml 업데이트를 계속 진행하기 전에 업데이트된 복사본을 모든 컴퓨터에 배치합니다.
 
-### Setup
+### <a name="setup"></a>Setup
 
 |컴퓨터   | 실행 권한   |명령   |
 |---|---|---|
@@ -55,7 +55,7 @@ PAMDeploymentConfig.xml 업데이트를 계속 진행하기 전에 업데이트�
 | PAMServer  | 로컬 관리자(도메인 가입 후 MIM 관리자)  | .\PAMDeployment.ps1 메뉴 옵션 5(MIM PAM 설치) 선택   |
 |  PAMServer |MIM 관리자   | .\PAMDeployment.ps1 메뉴 옵션 6(PAM 트러스트 설정) 선택.\PAMDeployment.ps1 메뉴 옵션 6 (PAM 트러스트 설정) |
 
-### 유효성 검사
+### <a name="validation"></a>유효성 검사
 
 |  컴퓨터 | 실행 권한   | 명령   |
 |---|---|---|
@@ -66,7 +66,11 @@ PAMDeploymentConfig.xml 업데이트를 계속 진행하기 전에 업데이트�
 |  CORPClient | <PRIV>\PRIV.pamRequestor 사용자 및 PRIVOnly의 경우 <CORP>\pamrequestor   | Import-module .\PAMValidation.psm1, Test-PAMValidationScenarioNoApprovalRequest  |
 
 
+>[!div class="step-by-step"]
+[시작 »](sp1-step1-configuring-priv-domain.md)
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO2-->
 
 

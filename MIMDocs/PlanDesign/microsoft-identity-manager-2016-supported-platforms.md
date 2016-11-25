@@ -1,30 +1,30 @@
 ---
-title: "지원되는 소프트웨어 플랫폼 | Microsoft Identity Manager"
+title: "지원되는 소프트웨어 플랫폼 | Microsoft 문서"
 description: "각 MIM 2016 구성 요소와 호환되는 제품 및 버전을 찾습니다."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 09/29/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 4978f60d-044d-4e84-8d93-65801fce1144
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 69e2c327cf897dea450c43618a9b4ce3ab555cc0
-ms.openlocfilehash: 522e9321d7709a7967cfea3eb1cea809dfe8202e
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 55b7dc3c76c5e95153b5839ce1eb6bf4a7997889
 
 
 ---
 
-# MIM 2016에 대해 지원되는 플랫폼
+# <a name="supported-platforms-for-mim-2016"></a>MIM 2016에 대해 지원되는 플랫폼
 
 다음 표에서는 Microsoft Identity Manager 2016의 각 구성 요소에 대한 지원되는 플랫폼 및 버전을 설명합니다. *로 표시된 버전은 MIM 2016 서비스 팩 1에서만 지원됩니다.
 
 
-| **MIM 구성 요소** | **플랫폼** | **Version** |
+| **MIM 구성 요소** | **플랫폼** | **버전** |
 |-------------------|--------------|-------------|
 | **MIM 동기화** | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2<br/>Windows Server 2016 * |
 || | MIM 동기화 데이터베이스 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
@@ -62,6 +62,6 @@ ms.openlocfilehash: 522e9321d7709a7967cfea3eb1cea809dfe8202e
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

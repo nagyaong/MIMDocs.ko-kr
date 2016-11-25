@@ -1,25 +1,25 @@
 ---
-title: "PAM 배포 및 구성 | Microsoft Identity Manager"
+title: "PAM 배포 및 구성 | Microsoft 문서"
 description: "Privileged Access Management를 위한 MIM 설치 및 구성에 대한 로드맵입니다."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: c4ca5b58-ad0c-48af-a9eb-b71b22d0c67c
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
-ms.openlocfilehash: 4b4953089cb676baae97988f380debbfefcd1083
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: a081b49ca8d0de7ce7d5f7385e5a652b09b722c3
 
 
 ---
 
-# Privileged Access Management를 위해 MIM 환경 구성
+# <a name="configure-the-mim-environment-for-privileged-access-management"></a>Privileged Access Management를 위해 MIM 환경 구성
 7개의 단계를 완료하여 크로스 포리스트 액세스를 위한 환경을 설정하고 Active Directory와 Microsoft Identity Manager를 설치 및 구성하며 Just-In-Time 액세스 요청을 보여 줍니다.
 
 다음 단계는 처음부터 시작하고 테스트 환경을 구축할 수 있도록 구성되어 있습니다. 기존 환경에 PAM을 적용할 경우 예제와 일치하는 새 계정을 만드는 대신 자체 도메인 컨트롤러 또는 사용자 계정을 사용할 수 있습니다.
@@ -43,6 +43,6 @@ ms.openlocfilehash: 4b4953089cb676baae97988f380debbfefcd1083
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
