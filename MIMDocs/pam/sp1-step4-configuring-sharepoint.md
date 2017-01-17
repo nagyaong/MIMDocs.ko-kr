@@ -1,11 +1,11 @@
 ---
 title: "4단계 SharePoint 구성"
-description: "스크립트를 사용하여 Privileged Identity Manager에서 관리할 기존 또는 새 ID로 CORP 도메인을 준비합니다."
+description: "스크립트를 사용한 PAM 구성의 4단계입니다. 이 단계에서는 PAM 배포의 일부로 사용할 수 있도록 SharePoint를 구성합니다."
 keywords: 
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
-ms.date: 10/25/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,8 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
-ms.openlocfilehash: 76696f7dce3d79a845c2a8ba9ae8d284012a0df7
+ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
+ms.openlocfilehash: 12eb9a00584f72b9c628e870562a743fb603d4a3
 
 
 ---
@@ -58,6 +58,6 @@ SharePoint를 설치하는 컴퓨터가 인터넷에 연결되어 있지 않아 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

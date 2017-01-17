@@ -1,11 +1,11 @@
 ---
-title: "Microsoft Identity Manager 2016 | Microsoft 문서"
+title: "Microsoft Identity Manager 2016 서비스 팩 1 | Microsoft 문서"
 description: "MIM 2016을 사용하여 클라우드 및 온-프레미스에서 보다 안전하고 편리한 ID 관리 환경을 만드는 방법을 이해합니다."
 keywords: 
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 09/28/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,8 @@ ms.assetid: ccdd8a9f-02da-440a-81a8-354800dcd2a8
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: ed477de53abbf646f47efb90e617b04184bc29a9
+ms.sourcegitcommit: f0947f186b5206d06a67140706ada33a5bc0e016
+ms.openlocfilehash: 4f293a349916ae1a55d8551ef949758cab851b74
 
 
 ---
@@ -24,7 +24,7 @@ Microsoft Identity Manager 서비스 및 업데이트의 정규 릴리스 주기
 
 MIM SP1의 프로덕션 배포 중에 문제가 발생한 경우 Microsoft 고객 지원에 문의하세요.
 
-여러분의 소중한 의견도 듣고 싶습니다! 제품 팀에 대한 의견이나 궁금한 사항이 있는 경우 전자 메일([mim2016@microsoft.com.](mailto:mim2016@microsoft.com))로 보내 주시기 바랍니다.
+여러분의 소중한 의견도 듣고 싶습니다! 제품 팀에 대한 의견이나 궁금한 사항이 있는 경우 메일([mim2016@microsoft.com](mailto:mim2016@microsoft.com))로 보내 주시기 바랍니다.
 
 
 
@@ -85,6 +85,6 @@ MIMService 및 MIM 동기화 데이터베이스를 백업해야 합니다.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

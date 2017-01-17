@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Identity Manager 2016 | Microsoft 문서"
-description: "MIM 2016을 사용하여 클라우드 및 온-프레미스에서 보다 안전하고 편리한 ID 관리 환경을 만드는 방법을 이해합니다."
+description: "MIM은 FIM 2010의 액세스 관리 기능을 포함하며 조직 내에서 사용자, 자격 증명, 정책 및 액세스를 관리하는 데 도움이 됩니다."
 keywords: 
 author: kgremban
 ms.author: kgremban
@@ -13,8 +13,8 @@ ms.assetid: ccdd8a9f-02da-440a-81a8-354800dcd2a8
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 74d93047ad30d81546940fc4ece3d892fe6df2f8
+ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
+ms.openlocfilehash: d38a3613b92c0bce0b27a4bd147177a1cccf47d8
 
 
 ---
@@ -37,6 +37,6 @@ Microsoft Identity Manager는 여전히 이전 버전인 Forefront Identity Mana
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 
