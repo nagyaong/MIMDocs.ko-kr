@@ -1,11 +1,11 @@
 ---
 title: "6단계 PAM 트러스트 설정"
-description: "스크립트를 사용하여 Privileged Identity Manager에서 관리할 기존 또는 새 ID로 CORP 도메인을 준비합니다."
+description: "스크립트를 사용한 PAM 구성의 6단계입니다. 이 섹션에서는 corp 및 priv 도메인 간에 필요한 트러스트를 설정하는 방법을 설명합니다."
 keywords: 
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
-ms.date: 10/25/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,8 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
-ms.openlocfilehash: 5bcf4f4ef201236746ec1bf75c1c8900841a6c79
+ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
+ms.openlocfilehash: 3b232dfa515b42fd42a5606d1beff9d3fe50389c
 
 
 ---
@@ -41,6 +41,6 @@ ms.openlocfilehash: 5bcf4f4ef201236746ec1bf75c1c8900841a6c79
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

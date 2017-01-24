@@ -1,11 +1,11 @@
 ---
 title: "5단계 PAM 설치/구성"
-description: "스크립트를 사용하여 Privileged Identity Manager에서 관리할 기존 또는 새 ID로 CORP 도메인을 준비합니다."
+description: "스크립트를 사용한 권한 있는 ID 관리 구성의 5단계로, PAM 서버에서의 배포 단계를 설명합니다."
 keywords: 
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
-ms.date: 10/25/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,8 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
-ms.openlocfilehash: c641865548f753a609ccee8dbf12c329bb6a1c9f
+ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
+ms.openlocfilehash: 862f62ab9bac87bcee31c35e249db34740e9fb14
 
 
 ---
@@ -49,6 +49,6 @@ PAM 서버를 다시 부팅한 후 MIMAdmin 계정으로 컴퓨터에 다시 로
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

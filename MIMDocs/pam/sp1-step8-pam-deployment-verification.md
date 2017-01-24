@@ -1,11 +1,11 @@
 ---
 title: "8단계 PAM 배포 확인"
-description: "스크립트를 사용하여 Privileged Identity Manager에서 관리할 기존 또는 새 ID로 CORP 도메인을 준비합니다."
+description: "스크립팅된 PAM 배포에는 PAM 시나리오를 실행하여 PAM 배포가 예상대로 작동하는지 확인할 수 있는 확인 스크립트가 포함되어 있습니다."
 keywords: 
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
-ms.date: 10/25/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,8 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
-ms.openlocfilehash: 7709b4df5bb196aba6abf056830bc73e024174ef
+ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
+ms.openlocfilehash: 2f4306dc50ecb869a3c917dfaf320ad80dddedd1
 
 
 ---
@@ -83,6 +83,6 @@ PowerShell 창에서 다음을 입력합니다.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 
