@@ -1,11 +1,11 @@
 ---
 title: "2단계 CORP 도메인 구성"
-description: "스크립트를 사용하여 Privileged Identity Manager에서 관리할 기존 또는 새 ID로 CORP 도메인을 준비합니다."
+description: "이 문서에서는 corp 도메인을 구성하는 데 필요한 두 번째 단계를 설명합니다. 이 단계에는 sids.txt를 CORPDC에 복사한 후 스크립트를 실행하는 작업이 포함됩니다."
 keywords: 
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
-ms.date: 10/25/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,8 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
-ms.openlocfilehash: b7acc475c505b29559c510fd3fa350fed1c3157b
+ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
+ms.openlocfilehash: 8480350f85b3543a32d4db3dbc6a388afcb16352
 
 
 ---
@@ -39,6 +39,6 @@ SIDs.txt를 CORPDC에 복사한 후(**PRIVOnly 배포에는 필요하지 않음*
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
 title: "스크립트를 사용하여 PAM 구성"
-description: "스크립트를 사용하여 Privileged Identity Manager에서 관리할 기존 또는 새 ID로 CORP 도메인을 준비합니다."
+description: "이 문서는 스크립트를 사용한 PAM 구성을 설명하는 일련의 문서 중 하나입니다. 여기서는 PAM 배포 스크립트에서 사용하는 XML 파일을 수정하는 방법을 설명합니다."
 keywords: 
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
-ms.date: 10/04/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,15 +13,15 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
-ms.openlocfilehash: 3aca2fb513280f118e760bdbc2ba471151c41b17
+ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
+ms.openlocfilehash: bd73f43a096d58e1f7250e28b59e33f4411e88a3
 
 
 ---
 
 # <a name="configure-pam-using-scripts"></a>스크립트를 사용하여 PAM 구성
 
-SQL과 SharePoint를 별도의 서버에 설치하려면 아래 지침에 따라 서버를 구성해야 합니다. SQL, SharePoint 및 PAM 구성 요소가 동일한 컴퓨터에 설치된 경우 해당 컴퓨터에서 아래 단계를 실행해야 합니다.
+SQL과 SharePoint를 별도의 서버에 설치하려면 아래 지침에 따라 구성해야 합니다. SQL, SharePoint 및 PAM 구성 요소가 동일한 컴퓨터에 설치된 경우 해당 컴퓨터에서 아래 단계를 실행해야 합니다.
 
 아래 단계에서는 PRIV 도메인이 이미 설정되어 있는 것으로 가정합니다. PRIV 도메인 구성 지침은 이 문서의 끝에 있는 부록을 참조하세요.
 
@@ -71,6 +71,6 @@ PAMDeploymentConfig.xml 업데이트를 계속 진행하기 전에 업데이트�
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
 title: "7단계 SID 기록/SID 필터링 설정"
-description: "스크립트를 사용하여 Privileged Identity Manager에서 관리할 기존 또는 새 ID로 CORP 도메인을 준비합니다."
+description: "스크립트를 사용한 권한 있는 ID 관리자 구성의 7단계입니다. 이 단계에서는 SID 기록/SID 필터링 설정을 다룹니다."
 keywords: 
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
-ms.date: 10/25/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,8 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
-ms.openlocfilehash: a98d83a22c61ef534fcc02725e4cd500be10cc8a
+ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
+ms.openlocfilehash: e608593f40759e3bc995daa56c4575510a71e987
 
 
 ---
@@ -45,6 +45,6 @@ SID 기록의 경우: </br></br>
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 
