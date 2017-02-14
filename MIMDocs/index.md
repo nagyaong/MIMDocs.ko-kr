@@ -1,152 +1,132 @@
 ---
-asset_id: 90d66a75-a7ec-4fa1-911c-cce683908838
-layout: HubPage
-title: "Identity Manager 설명서 | Microsoft Docs"
-description: "Microsoft Identity Manager용 기술 설명서 - 온-프레미스 ID 및 액세스 관리"
-keywords: "identity manager 설명서, microsoft identity manager, MIM"
-author: kgremban
-manager: femila
-ms.date: 10/25/2016
-ms.topic: hubpage
-ms.prod: microsoft-identity-manager
-ms.service: microsoft-identity-manager
-ms.technology: security
-ms.suite: ems
-ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
+layout: LandingPage
+title: "Microsoft Identity Manager 설명서 | Microsoft Docs"
+description: "Microsoft Identity Manager 사용 방법을 알아봅니다."
 translationtype: Human Translation
-ms.sourcegitcommit: 584efc6cc60eebe69fb32e7a0bdff25f568eee7f
-ms.openlocfilehash: b857664f1065f975e6d7e95508928b679548b52c
-
+ms.sourcegitcommit: d6b2c0db8fa071d3cec9ea680667b9e9b7f75267
+ms.openlocfilehash: 921e34c6625d798909e6ded0ea611c731141a052
 
 ---
-# ID 관리 설명서
-<article id="main">
-    <section id="hero-content">
-      <h1>Identity Manager 설명서</h1>
-      <h2>Microsoft Identity Manager를 사용하여 온-프레미스 ID 관리를 설정하는 방법을 알아봅니다. ID 동기화, ID 도용 방지 등을 구성하는 방법을 보여 주는 자습서입니다.</h2>
-      <h3>MIM의 새로운 기능 <a href="http://go.microsoft.com/fwlink/?LinkId=816853" target="\_blank">제품 페이지 방문 &rarr;</a></h3>     
-    </section>
-    <aside class="alert section-border">
-      <p>실습 준비</p>
-      <ol class="action-list">
-        <li><a href="https://www.microsoft.com/evalcenter/evaluate-microsoft-identity-manager-2016" target="\_blank" class="button-bordered button-translucent">무료 평가판 시작</a></li>
-      </ol>
-    </aside>
-    <section id="featured" class="container">
-      <h2 class="section-heading"><span class="icon icon-warning"></span> 주요 콘텐츠</h2>
-      <div class="features row">
-        <ul class="column column-half">
-          <li><mark><b>새로운 기능</b></mark><a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016-sp1-release-notes">Microsoft Identity Manager 2016 서비스 팩 1</a></li>
-          <li><a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy">새 서버에 대한 MIM 소프트웨어 배포</a></li>
-        </ul>
-        <ul class="column column-half">
-          <li><a href="/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference">Privileged Identity Management REST API 참조</a></li>
-          <li><a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">MIM 2016 개요</a></li>
-        </ul>
-      </div>
-    </section>
-    <div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">
-                <div class="title column-third">
-                  <span class="step-number">1</span>
-                  <p>이해 및 탐색</p>
+# <a name="microsoft-identity-manager-documentation"></a>Microsoft Identity Manager 설명서
+
+Microsoft Identity Manager 2016은 Active Directory, LDAP, Oracle 및 Azure Active Directory를 포함한 다른 응용 프로그램을 비롯한 여러 온-프레미스 인증 스토어를 원활하게 브리징하여 Microsoft의 ID 및 액세스 관리 솔루션을 하나로 바인딩합니다. 이는 온-프레미스 LOB 응용 프로그램과 Saas 솔루션에 일관성 있는 경험을 제공합니다.
+
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016-sp1-release-notes">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_whats-new.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Microsoft Identity Manager 2016 서비스 팩 1의 새로운 기능</h3>
+                    </div>
                 </div>
-                <p class="description column-two-thirds">개략적인 개념, 기능 및 Microsoft Identity Manager의 기능에 대해 알아봅니다.
-                </p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">
-                    <h3>MIM 2016이란?</h3>
-                    <p>MIM 2016에서 온-프레미스 및 하이브리드 ID 및 액세스 관리 기능을 제공하는 방식을 알아봅니다.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/microsoft-identity-manager/understand-explore/identity-manager-hybrid-reporting-azure">
-                    <h3>Azure의 하이브리드 보고</h3>
-                    <p>온-프레미스 및 클라우드에서 발생하는 이벤트의 단일 보고서를 만듭니다.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/microsoft-identity-manager/plan-design/microsoft-identity-manager-2016-supported-platforms">
-                    <h3>지원되는 플랫폼</h3>
-                    <p>MIM에서 지원하는 플랫폼, 서버 및 응용 프로그램 목록입니다.</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy">
-                <div class="title column-third">
-                  <span class="step-number">2</span>
-                  <p>배포 및 사용</p>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_learn-about.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Microsoft Identity Manager 정보</h3>
+                    </div>
                 </div>
-                <p class="description column-two-thirds">MIM을 배포하고 사용합니다.
-                </p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy">
-                    <h3>처음 배포</h3>
-                    <p>이전에 FIM 또는 MIM이 없었던 새 서버에 MIM을 배포합니다.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-2016-upgrade-from-fim-2010-R2">
-                    <h3>FIM 2010 R2 업그레이드</h3>
-                    <p>기존 FIM 2010 R2 테스트 시스템을 MIM 2016으로 업그레이드합니다.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/microsoft-identity-manager/deploy-use/deploying-mim-password-change-notification-service-on-domain-controller">
-                    <h3>암호 변경 알림 서비스</h3>
-                    <p>암호 동기화를 사용하려면 각 도메인 컨트롤러 서버에 PCNS를 설치합니다.</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-        </ul>
-      </section>
-    </div>
-    <div class="section-border">
-      <section class="resources container">
-        <h2 class="section-heading"><span class="icon icon-options"></span> 개발자 참조</h2>
-        <div class="resource-list row">
-          <ul class="column-half">
-            <li><a href="/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference">권한 있는 액세스 관리 REST API 참조</a></li>
-          </ul>
-          <ul class="column-half">
-            <li><a href="/microsoft-identity-manager/reference/certificate-management-rest-api-reference">인증서 관리 REST API 참조</a></li>
-          </ul>
+            </div>
         </div>
-        <div class="resource-list row">
-          <ul class="column-half">
-            <li><a href="https://technet.microsoft.com/library/mt604080.aspx">권한 있는 액세스 관리 cmdlet</a></li>
-          </ul>
+        </a>
+    </li>
+    <li>
+        <a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy"> 
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/deploy.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Microsoft Identity Manager 2016 배포</h3>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-    </div>
-    <aside class="alert alert-social">
-      <p>MIM 지원 뉴스 계속 확인</p>
-      <ol class="action-list">
-        <li><a href="https://blogs.technet.microsoft.com/iamsupport/" target="\_blank" class="button-bordered button-translucent">공식 지원 블로그</a></li>
-      </ol>
-    </aside>
-</article>
+        </a>
+    </li>
+</ul>
+
+---
+
+<h2>참조</h2>
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_reference.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>권한 있는 액세스 관리 REST API 참조</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://blogs.technet.microsoft.com/iamsupport/">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_blog.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>ID 및 액세스 관리 지원 팀 블로그</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
+
+<h2>솔루션</h2>
+<ul class="panelContent cardsW">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <p><a href="/enterprise-mobility-security/solutions/manage-access-at-scale">대규모 액세스 관리</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 
