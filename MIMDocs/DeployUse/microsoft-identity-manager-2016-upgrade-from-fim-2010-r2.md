@@ -1,11 +1,11 @@
 ---
-title: "FIM 2010 R2에서 업그레이드 | Microsoft 문서"
+title: "FIM 2010 R2에서 Microsoft Identity Manager 2016으로 업그레이드 | Microsoft 문서"
 description: "FIM 2010 R2 구성 요소를 업그레이드한 다음 MIM 2016의 새로운 구성 요소를 설치하는 방법을 알아봅니다."
 keywords: 
 author: kgremban
 ms.author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,8 @@ ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: ef272ffe665aa5753fa2bf02d26f2ce73efa025b
+ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
+ms.openlocfilehash: 16966d970365c13a3530020234208e72c0e8823f
 
 
 ---
@@ -136,11 +136,11 @@ ms.openlocfilehash: ef272ffe665aa5753fa2bf02d26f2ce73efa025b
 
 13. MIM 포털을 설치할 때 MIM 서비스 서버의 주소를 입력합니다. **다음**을 클릭합니다.
 
-14. MIM 포털을 설치할 때 FIM 포털이 현재 호스트된 SharePoint 사이트 컬렉션의 URL을 입력합니다.  **다음**을 클릭합니다.
+14. MIM 포털을 설치할 때 FIM 포털이 현재 호스트된 SharePoint 사이트 컬렉션의 URL을 입력합니다. **다음**을 클릭합니다.
 
 ## <a name="install-the-mim-password-registration-portal"></a>MIM 암호 등록 포털 설치
 
-1. MIM 암호 등록 포털을 설치하는 경우 요청된 URL을 암호 등록 포털에 입력합니다.  **다음**을 클릭합니다.
+1. MIM 암호 등록 포털을 설치하는 경우 요청된 URL을 암호 등록 포털에 입력합니다. **다음**을 클릭합니다.
 
 2. 서비스 및 포털을 사용하도록 클라이언트 및 최종 사용자에 대한 기능을 구성합니다.
 
@@ -148,7 +148,7 @@ ms.openlocfilehash: ef272ffe665aa5753fa2bf02d26f2ce73efa025b
 
     2.  **MIM 포털 사이트에 대해 인증된 사용자 액세스 권한 부여** 여부를 선택합니다.
 
-    3.   **다음**을 클릭합니다.
+    3.  **다음**을 클릭합니다.
 
 3. MIM 암호 등록을 위한 액세스 정보 및 자격 증명을 제공합니다.
 
@@ -160,7 +160,7 @@ ms.openlocfilehash: ef272ffe665aa5753fa2bf02d26f2ce73efa025b
 
     3.  **open port in firewall** (방화벽에서 포트 열기) 옵션을 선택합니다.
 
-    4.   **다음**을 클릭합니다.
+    4.  **다음**을 클릭합니다.
 
 4. 다음 MIM 암호 등록 구성 화면에서 다음을 수행합니다.
 
@@ -180,7 +180,7 @@ ms.openlocfilehash: ef272ffe665aa5753fa2bf02d26f2ce73efa025b
 
     3.  **open port in firewall** (방화벽에서 포트 열기) 옵션을 선택합니다.
 
-    4.   **다음**을 클릭합니다.
+    4.  **다음**을 클릭합니다.
 
 2. 다음 MIM 암호 재설정 구성 화면에서 다음을 수행합니다.
 
@@ -202,6 +202,6 @@ ms.openlocfilehash: ef272ffe665aa5753fa2bf02d26f2ce73efa025b
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "AD를 MIM 서비스와 동기화 | Microsoft 문서"
+title: "AD와 Microsoft Identity Manager 동기화 사용 | Microsoft 문서"
 description: "관리 에이전트 및 MIM 동기화 서비스를 사용하여 Active Directory와 MIM 데이터베이스를 동기화합니다."
 keywords: 
 author: kgremban
 ms.author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 01/23/2017
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,8 @@ ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 59e050c8ccd811586e2da8476f842b853d37f2f1
+ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
+ms.openlocfilehash: f84fbbdc8de5cfffc8570c52f8298cc69273c3ee
 
 
 ---
@@ -347,7 +347,7 @@ AD 사용자 인바운드 동기화 규칙을 만들려면
 8. **요약** 탭에서 **제출**을 클릭합니다.
 
 ## <a name="initialize-the-testing-environment"></a>테스트 환경 초기화
-AD 데이터를 사용하여 MIM 구성을 테스트하려면 먼저 다음 4가지 단계를 수행해야 합니다.
+AD 데이터를 사용하여 MIM 구성을 테스트하려면 먼저 다음&4;가지 단계를 수행해야 합니다.
 
 ### <a name="enable-provisioning"></a>프로비전 사용
 
@@ -435,6 +435,6 @@ MIM 서비스 데이터베이스를 개체로 채우려면 MIMMA 커넥터에서
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
