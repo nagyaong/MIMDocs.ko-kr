@@ -19,6 +19,7 @@
 ### [5단계 - PRIV 및 CORP 간에 트러스트 설정](step-5-establish-trust-between-priv-corp-forests.md)
 ### [6단계 - 권한 있는 계정 만들기](step-6-transition-group-to-pam.md)
 ### [7단계 - 사용자의 액세스 권한 상승](step-7-elevate-user-access.md)
+### [Windows Server 2016을 사용하여 MIM PAM 배포](deploy-pam-with-windows-server-2016.md)
 ### [Azure MFA 설정](use-azure-mfa-for-activation.md)
 ## [스크립트를 사용하여 PAM 구성](sp1-pam-configure-using-scripts.md)
 ### [1단계 PRIV 도메인 구성](sp1-step1-configuring-priv-domain.md)
@@ -33,6 +34,6 @@
 # [개발자 참조](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 
