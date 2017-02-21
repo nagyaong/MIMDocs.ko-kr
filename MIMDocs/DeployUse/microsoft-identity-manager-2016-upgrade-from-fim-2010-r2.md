@@ -2,10 +2,10 @@
 title: "FIM 2010 R2에서 Microsoft Identity Manager 2016으로 업그레이드 | Microsoft 문서"
 description: "FIM 2010 R2 구성 요소를 업그레이드한 다음 MIM 2016의 새로운 구성 요소를 설치하는 방법을 알아봅니다."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: fimguy
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,8 @@ ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
-ms.openlocfilehash: 16966d970365c13a3530020234208e72c0e8823f
+ms.sourcegitcommit: 2d3092d7d41090e4e03b971fb62ca896cc8db282
+ms.openlocfilehash: 20e733f17d6ed590844c526888b649eb6bf5f322
 
 
 ---
@@ -200,8 +200,10 @@ ms.openlocfilehash: 16966d970365c13a3530020234208e72c0e8823f
 
 참고: SSPR을 위해 현재 FIM 추가 기능 및 확장이 사용자의 컴퓨터에 배포된 경우 모든 FIM 추가 기능 및 확장이 MIM 2016으로 업그레이드될 때까지 암호 재설정을 위해 새 MFA 전화 게이트를 구성하지 마세요.  FIM 2010 및 FIM 2010 R2 추가 기능 및 확장은 새 게이트를 인식하지 않으므로 오류가 발생하며 사용자가 암호 재설정을 완료할 수 없습니다.
 
+Microsoft Identity Manager 2016 SP1 업그레이드 지침은 다음 [Microsoft Identity Manager 2016 Service Pack 1 update package](https://blogs.technet.microsoft.com/iamsupport/2016/11/08/microsoft-identity-manager-2016-service-pack-1-update-package/)(Microsoft Identity Manager 2016 서비스 팩 1 업데이트 패키지)를 참조하세요.
 
 
-<!--HONumber=Jan17_HO4-->
+
+<!--HONumber=Feb17_HO2-->
 
 
