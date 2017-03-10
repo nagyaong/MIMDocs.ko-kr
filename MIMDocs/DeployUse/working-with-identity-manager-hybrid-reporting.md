@@ -1,11 +1,11 @@
 ---
-title: "Azure에서 하이브리드 보고 | Microsoft 문서"
+title: "MIM 2016을 사용하여 Azure에서 하이브리드 보고 작업 | Microsoft 문서"
 description: "Azure에서 온-프레미스 데이터와 클라우드 데이터를 하이브리드 보고서에 결합하는 방법 및 이러한 보고서를 보고 관리하는 방법을 알아봅니다."
 keywords: 
 author: kgremban
 ms.author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 01/27/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,8 @@ ms.assetid: 68df2817-2040-407d-b6d2-f46b9a9a3dbb
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: ff0469da204a9bfa861273d66b04f5da51557c99
+ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
+ms.openlocfilehash: 9e64f930a8fe8422c7f6c8d98e558961ae8b88f2
 
 
 ---
@@ -34,7 +34,7 @@ Azure AD에서 사용할 수 있는 처음 세 가지 MIM(Microsoft Identity Man
 -   셀프 서비스 그룹 작업에는 누군가가 스스로를 그룹에 추가하거나 그룹에서 삭제하고 그룹을 만들려고 하는 각 시도가 표시됩니다.
 
 > [!NOTE]
-> 현재 보고서에는 최대 1개월 전까지의 데이터가 있습니다.
+> 현재 보고서에는 최대&1;개월 전까지의 데이터가 있습니다.
 >
 > 하이브리드 보고서를 제거하려면 MIMreportingAgent.msi 에이전트를 제거합니다.
 
@@ -103,6 +103,6 @@ Microsoft Identity Manager가 생성한 이벤트는 Windows 이벤트 로그에
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

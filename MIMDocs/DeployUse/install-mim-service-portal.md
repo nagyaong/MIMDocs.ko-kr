@@ -1,11 +1,11 @@
 ---
-title: "MIM 서비스 및 포털 설치 | Microsoft 문서"
+title: "Microsoft Identity Manager 서비스 및 포털 설치 | Microsoft 문서"
 description: "Microsoft Identity Manager 2016용 MIM 서비스 및 포털을 구성하고 설치하는 단계를 알아봅니다."
 keywords: 
 author: kgremban
 ms.author: kgremban
 manager: femila
-ms.date: 08/11/2016
+ms.date: 01/23/2017
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,8 @@ ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 4d0f08d84c39c982d43b2a0e0ba2f694aed508da
+ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
+ms.openlocfilehash: eb572bc3f062763265a9f24910a82be0cac77a5e
 
 
 ---
@@ -51,7 +51,7 @@ ms.openlocfilehash: 4d0f08d84c39c982d43b2a0e0ba2f694aed508da
 
     ![MIM 데이터베이스 연결 구성 이미지](media/MIM-Install10.png)
 
-7. **메일 서버 연결 구성**에서 Exchange Server 이름으로 **Mail Server**를 입력합니다. 구성된 메일 서버가 없는 경우 **localhost**를 메일 서버 이름으로 사용하고 상위 두 확인란을 선택 취소합니다.  **다음**을 클릭합니다.
+7. **메일 서버 연결 구성**에서 Exchange Server 이름으로 **Mail Server**를 입력합니다. 구성된 메일 서버가 없는 경우 **localhost**를 메일 서버 이름으로 사용하고 상위 두 확인란을 선택 취소합니다. **다음**을 클릭합니다.
 
     ![메일 서버 연결 구성 이미지](media/MIM-Install11.png)
 
@@ -152,6 +152,6 @@ ms.openlocfilehash: 4d0f08d84c39c982d43b2a0e0ba2f694aed508da
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
