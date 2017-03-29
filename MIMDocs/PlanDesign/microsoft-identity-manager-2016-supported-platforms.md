@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 2f2ae09ab8bc28b83b66073985b3574517a220b7
 ms.openlocfilehash: bed26316673d777f3d1934011668686b3e9def1d
+ms.lasthandoff: 01/13/2017
 
 
 ---
@@ -34,13 +35,13 @@ ms.openlocfilehash: bed26316673d777f3d1934011668686b3e9def1d
 | | 추가 연결된 시스템(선택 사항) | Active Directory 도메인 서비스<br/>Active Directory<br/>Lightweight Directory Services<br/>SQL Server 2000 이상<br/>SharePoint Server 2013<br/> SharePoint Server 2016 * <br/> 기타 타사 제품 |
 | **MIM 서비스** (PAM 시나리오 제외) | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | MIM 서비스 데이터베이스 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
-| | MIM 서비스 승인 및 그룹 관리 메일을 위한 Exchange(선택 사항) | Exchange Server 2007 SP3(설치된 Exchange 관리 콘솔 포함)<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * <br/> Exchange Online * |
+| | MIM 서비스 승인 및 그룹 관리 메일을 위한 Exchange(선택 사항) | Exchange Server 2007 SP3(설치된 Exchange 관리 콘솔 포함)<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 *<br/> Exchange Online* |
 | **MIM 서비스 및 포털** (PAM 시나리오에만 해당)| Windows Server | Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | 배스천 환경 PAM 포리스트를 위한 Active Directory | Windows Server 2012 R2 <br/> Windows Server 2016 * |
-| | 기존 포리스트에 대한 Active Directory | Windows Server 2008 <br/> Windows Server 2008 R2 * <br/> Windows Server 2012 * <br/> Windows Server 2012 R2 * <br/> Windows Server 2016 * |
+| | 기존 포리스트에 대한 Active Directory | Windows Server 2008 <br/> Windows Server 2008 R2 *<br/> Windows Server 2012* <br/> Windows Server 2012 R2 *<br/> Windows Server 2016* |
 | | MIM 서비스 데이터베이스 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
 | | SharePoint | SharePoint Foundation 2010<br/>SharePoint Foundation 2013 SP1 <br/> SharePoint 2016 * |
-| | MIM 서비스 승인 및 그룹 관리 메일을 위한 메일 서버(선택 사항) | Exchange Server 2007 SP3(설치된 Exchange 관리 콘솔 포함)<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * <br/> Exchange Online * |
+| | MIM 서비스 승인 및 그룹 관리 메일을 위한 메일 서버(선택 사항) | Exchange Server 2007 SP3(설치된 Exchange 관리 콘솔 포함)<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 *<br/> Exchange Online* |
 | | 브라우저 | 모든 주요 브라우저 |
 | **MIM 서비스 보고** | Windows Server | Windows Server 2012 <br/> Windows Server 2016 * |
 | | 데이터 웨어하우스 | System Center 2012 Service Manager SP1 |
@@ -59,9 +60,4 @@ ms.openlocfilehash: bed26316673d777f3d1934011668686b3e9def1d
 | | BHOLD 데이터베이스 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2 <br/> SQL Server 2014 * |
 | | 메일 서버(선택 사항) | Exchange Server 2007 SP3<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 |
 | | 웹 브라우저 | Internet Explorer 7, 8, 9, 10 또는 11(Silverlight 포함) |
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 
