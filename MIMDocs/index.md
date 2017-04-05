@@ -3,8 +3,9 @@ layout: LandingPage
 title: "Microsoft Identity Manager 설명서 | Microsoft Docs"
 description: "Microsoft Identity Manager 사용 방법을 알아봅니다."
 translationtype: Human Translation
-ms.sourcegitcommit: 6e171f09720503eedf43fe292d0f251a29671112
-ms.openlocfilehash: 3596e474912d1b56b01a2659886de0baa4cb5f1e
+ms.sourcegitcommit: 1ff73d0bdfcbcb4ab79d0d81feca9abdc33f9213
+ms.openlocfilehash: 244b4e1ba3c51edfcbc78e2dfe9472792184b472
+ms.lasthandoff: 04/04/2017
 
 ---
 # <a name="microsoft-identity-manager-documentation"></a>Microsoft Identity Manager 설명서
@@ -71,7 +72,7 @@ Microsoft Identity Manager 2016은 Active Directory, LDAP, Oracle 및 Azure Acti
 ---
 <br>
 >[!Warning]
-FIM(Forefront Identity Manager) 일반 지원이 2017년 10월 10일에 종료됩니다. Microsoft Identity Manager 2016으로 [업그레이드](/deploy-use/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md)하세요. 추가 정보: </br>  - FIM 수명 주기 정보는 [여기](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010)에 제공됩니다. </br> - ID 제품의 공개 릴리스에 대한 정보는 [Microsoft Identity Software: Public Release Build Versions](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)(Microsoft Identity 소프트웨어: 공용 릴리스 빌드 버전)라는 게시물을 검토하세요.
+FIM(Forefront Identity Manager) 일반 지원이 2017년 10월 10일에 종료됩니다. Microsoft Identity Manager 2016으로 [업그레이드](deploy-use/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md)하세요. 추가 정보: </br>  - FIM 수명 주기 정보는 [여기](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010)에 제공됩니다. </br> - ID 제품의 공개 릴리스에 대한 정보는 [Microsoft Identity Software: Public Release Build Versions](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)(Microsoft Identity 소프트웨어: 공용 릴리스 빌드 버전)라는 게시물을 검토하세요.
 
 <h2>참조</h2>
 <ul class="panelContent cardsFTitle">
@@ -127,9 +128,4 @@ FIM(Forefront Identity Manager) 일반 지원이 2017년 10월 10일에 종료�
         </div>
     </li>
 </ul>
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 
