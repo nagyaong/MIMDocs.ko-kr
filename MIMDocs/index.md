@@ -3,9 +3,9 @@ layout: LandingPage
 title: "Microsoft Identity Manager 설명서 | Microsoft Docs"
 description: "Microsoft Identity Manager 사용 방법을 알아봅니다."
 translationtype: Human Translation
-ms.sourcegitcommit: 1ff73d0bdfcbcb4ab79d0d81feca9abdc33f9213
-ms.openlocfilehash: 244b4e1ba3c51edfcbc78e2dfe9472792184b472
-ms.lasthandoff: 04/04/2017
+ms.sourcegitcommit: 89c49c8d979247b3b888570eabfb57398038934c
+ms.openlocfilehash: 090dd1377ba5afe5162d327569f4af6163e72a18
+ms.lasthandoff: 04/21/2017
 
 ---
 # <a name="microsoft-identity-manager-documentation"></a>Microsoft Identity Manager 설명서
@@ -32,7 +32,7 @@ Microsoft Identity Manager 2016은 Active Directory, LDAP, Oracle 및 Azure Acti
         </a>
     </li>
     <li>
-        <a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">
+-        <a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -42,8 +42,7 @@ Microsoft Identity Manager 2016은 Active Directory, LDAP, Oracle 및 Azure Acti
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Microsoft Identity Manager 정보</h3>
-                    </div>
+                        <h3>Microsoft Identity Manager 정보</h3>                    </div>
                 </div>
             </div>
         </div>
@@ -88,6 +87,24 @@ FIM(Forefront Identity Manager) 일반 지원이 2017년 10월 10일에 종료�
                     </div>
                     <div class="cardText">
                         <h3>권한 있는 액세스 관리 REST API 참조</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+        <li>
+        <a href="/microsoft-identity-manager/reference/certificate-management-rest-api-reference">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_reference.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>인증서 관리 REST API 참조</h3>
                     </div>
                 </div>
             </div>
