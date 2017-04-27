@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
 ms.openlocfilehash: f84fbbdc8de5cfffc8570c52f8298cc69273c3ee
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -347,7 +348,7 @@ AD 사용자 인바운드 동기화 규칙을 만들려면
 8. **요약** 탭에서 **제출**을 클릭합니다.
 
 ## <a name="initialize-the-testing-environment"></a>테스트 환경 초기화
-AD 데이터를 사용하여 MIM 구성을 테스트하려면 먼저 다음&4;가지 단계를 수행해야 합니다.
+AD 데이터를 사용하여 MIM 구성을 테스트하려면 먼저 다음 4가지 단계를 수행해야 합니다.
 
 ### <a name="enable-provisioning"></a>프로비전 사용
 
@@ -432,9 +433,4 @@ MIM 서비스 데이터베이스를 개체로 채우려면 MIMMA 커넥터에서
 
 >[!div class="step-by-step"]
 [« MIM 서비스 및 포털](install-mim-service-portal.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
