@@ -112,3 +112,5 @@
 #### [보류 중인 PAM 요청 가져오기](/microsoft-identity-manager/reference/privileged-access-management-get-pending-requests)
 #### [보류 중인 PAM 요청 승인 또는 거부](/microsoft-identity-manager/reference/privileged-access-management-approve-reject-pending-request)
 #### [PAM 세션 정보 가져오기](/microsoft-identity-manager/reference/privileged-access-management-get-session-info)
+## [기술 참조]
+### [Resource Control Display Configuration XML Reference](/microsoft-identity-manager/reference/rcd-configuration-xml-reference)(리소스 컨트롤 표시 구성 XML 참조)
