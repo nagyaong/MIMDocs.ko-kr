@@ -2,10 +2,10 @@
 title: "ADDS에 대한 PAM이란? | Microsoft 문서"
 description: "PAM(Privileged Access Management)을 사용하면 조직이 기존 Active Directory 환경 내에서 권한 있는 액세스를 제한할 수 있습니다."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/10/2017
+ms.date: 03/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -16,6 +16,7 @@ experiment_id: kgremban_images
 translationtype: Human Translation
 ms.sourcegitcommit: f0947f186b5206d06a67140706ada33a5bc0e016
 ms.openlocfilehash: 9a047644d07e3ee3c2d1abfde7753849b5ddc63b
+ms.lasthandoff: 01/11/2017
 
 ---
 
@@ -93,9 +94,4 @@ PAM은 다음과 같은 이점이 있습니다.
 > 반면 SAM(보안 계정 관리자)은 만료되는 링크를 실시간으로 평가합니다. 그룹 구성원 추가는 액세스 요청을 수신하는 DC에서 복제해야 하지만 그룹 구성원 제거는 모든 DC에서 즉각적으로 평가됩니다.
 
 이 워크플로는 특별히 이러한 관리 계정의 대상입니다. 권한 있는 액세스에 가끔식 액세스가 필요한 관리자(또는 스크립트)는 해당 액세스를 정확하게 요청할 수 있습니다. MIM은 Active Directory에서 요청 및 변경 내용을 기록하여 System Center 2012 - Operations Manager ACS(Audit Collection Services) 또는 기타 타사 도구와 같은 솔루션을 모니터링하는 회사에 데이터를 전송하거나 이벤트 뷰어에서 볼 수 있습니다.
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

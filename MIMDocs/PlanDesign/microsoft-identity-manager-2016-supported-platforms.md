@@ -2,8 +2,8 @@
 title: "지원되는 소프트웨어 플랫폼 | Microsoft 문서"
 description: "각 MIM 2016 구성 요소와 호환되는 제품 및 버전을 찾습니다."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
 ms.date: 03/28/2017
 ms.topic: article

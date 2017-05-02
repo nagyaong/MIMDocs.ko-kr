@@ -2,10 +2,10 @@
 title: "AD와 Microsoft Identity Manager 동기화 사용 | Microsoft 문서"
 description: "관리 에이전트 및 MIM 동기화 서비스를 사용하여 Active Directory와 MIM 데이터베이스를 동기화합니다."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security

@@ -2,10 +2,10 @@
 title: "셀프 서비스 암호 재설정 작업 포털 | Microsoft 문서"
 description: "SSPR이 다단계 인증과 함께 작동하는 방식을 포함하여 MIM 2016 셀프 서비스 암호 재설정의 새로운 기능을 확인합니다."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
 ms.openlocfilehash: 72c773601cd722290b6e7a9d5d13458f0409cfdc
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -203,9 +204,4 @@ Azure MFA를 사용하는 경우 사용자가 해당 계정 및 리소스에 대
 6.  사용자가 암호를 다시 설정하기 위해서는 새 암호를 두 번 입력하고 **다음** 을 클릭하여 암호를 변경하면 됩니다.
 
     ![MIM 로그인 도우미 암호 재설정 이미지](media/MIM-SSPR-PR1.JPG)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
