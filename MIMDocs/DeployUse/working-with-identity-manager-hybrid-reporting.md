@@ -13,9 +13,9 @@ ms.assetid: 68df2817-2040-407d-b6d2-f46b9a9a3dbb
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
-ms.openlocfilehash: 9e64f930a8fe8422c7f6c8d98e558961ae8b88f2
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: 3144ee195675df5dc120896cc801a7124ee12214
+ms.openlocfilehash: 6b3fda2cb78ec885d986462dcf0edb8843811095
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -27,7 +27,7 @@ Azure AD에서 사용할 수 있는 처음 세 가지 MIM(Microsoft Identity Man
 
 -   암호 재설정 작업에는 사용자가 SSPR을 사용하여 암호를 재설정했고 인증에 사용된 **방법** 또는 게이트를 제공할 때의 각 인스턴스가 표시됩니다.
 
-    ![Azure 하이브리드 보고 - 암호 재설정 작업 이미지](media/MIM-Hybrid-passwordreset.jpg)
+    ![Azure 하이브리드 보고 - 암호 재설정 작업 이미지](media/MIM-Hybrid-passwordreset2.jpg)
 
 -   암호 재설정 등록에는 사용자가 SSPR 및 인증에 사용된 **방법** (예: 휴대폰 번호 또는 질문 및 답변)을 등록할 때의 각 시간이 표시됩니다.
     암호 재설정 등록의 경우 SMS 게이트와 MFA 게이트 간의 차이는 없습니다. 둘 다 **휴대폰**으로 간주됩니다.
@@ -41,13 +41,13 @@ Azure AD에서 사용할 수 있는 처음 세 가지 MIM(Microsoft Identity Man
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
-1.  MIM 서비스를 포함하여 Microsoft Identity Manager 2016을 설치합니다.
+1.  Microsoft Identity Manager 2016 RTM 또는 SP1 MIM 서비스를 설치합니다.
 
 2.  사용이 허가된 관리자 권한이 있는 디렉터리에 Azure AD Premium 테넌트가 있는지 확인합니다.
 
 3.  Microsoft Identity Manager 서버에서 Azure로 나가는 인터넷 연결이 있는지 확인합니다.
 
-## <a name="install-microsoft-identity-manager-reporting-in-azure-ad"></a>Azure AD에서 Microsoft Identity Manager 보고 설치
+## <a name="install-microsoft-identity-manager-reporting-agent-in-azure-ad"></a>Azure AD에서 Microsoft Identity Manager 보고 에이전트 설치
 보고 에이전트를 설치하면 MIM에서 Microsoft Identity Manager 작업의 데이터를 Windows 이벤트 로그로 내보냅니다. MIM 보고 에이전트는 이벤트를 처리하여 Azure에 업로드합니다. Azure에서 필요한 보고서를 위해 이벤트가 구문 분석, 암호 해독 및 필터링됩니다.
 
 1.  Microsoft Identity Manager 2016을 설치합니다.
@@ -62,10 +62,8 @@ Azure AD에서 사용할 수 있는 처음 세 가지 MIM(Microsoft Identity Man
 
 3.  Microsoft Identity Manager 보고 에이전트를 설치합니다.
 
-    1.  컴퓨터에 디렉터리를 만듭니다.
-
-    2.  디렉터리에 `MIMHybridReportingAgent.msi` 및 `tenant.cert` 파일을 추출합니다.
-
+    1.  [MIMHReportingAgentSetup.exe](http://download.microsoft.com/download/7/3/1/731D81E1-8C1D-4382-B8EB-E7E7367C0BF2/MIMHReportingAgentSetup.exe)를 Microsoft Identity Manager 서비스 서버로 다운로드합니다.
+    2.  `MIMHReportingAgentSetup.exe`을 실행합니다. 
     3.  에이전트 설치 관리자를 실행합니다.
 
     4.  MIM 보고 에이전트 서비스가 실행되고 있는지 확인합니다.
@@ -78,21 +76,21 @@ Azure AD에서 사용할 수 있는 처음 세 가지 MIM(Microsoft Identity Man
 
 ## <a name="view-hybrid-reports-in-the-azure-classic-portal"></a>Azure 클래식 포털에서 하이브리드 보고서 보기
 
-1.  테넌트에 대한 전역 관리자 계정을 사용하여 [Azure 클래식 포털](https://manage.windowsazure.com/)에 로그인합니다.
+1.  테넌트에 대한 전역 관리자 계정을 사용하여 [Azure Portal](https://portal.azure.com/)에 로그인합니다.
 
-2.  **Active Directory** 아이콘을 클릭합니다.
+2.  **Azure Active Directory** 아이콘을 클릭합니다.
 
 3.  구독에 대해 사용 가능한 디렉터리 목록에서 테넌트 디렉터리를 선택합니다.
 
-4.  **보고서** 를 클릭한 다음 **Password Reset Activity**(암호 재설정 작업)를 클릭합니다.
+4.  **감사 로그**를 클릭합니다.
 
-5.  원본 드롭다운 메뉴에서 **ID 관리자** 를 선택합니다.
+5.  [범주] 드롭다운 메뉴에서 **MIM 서비스**를 선택해야 합니다.
 
 > [!WARNING]
-> Microsoft Identity Manager 데이터를 Azure AD에 표시하려면 약간의 시간이 걸릴 수 있습니다.
+> Microsoft Identity Manager 감사 데이터를 Azure AD에 표시하려면 약간의 시간이 걸릴 수 있습니다.
 
 ## <a name="stop-creating-hybrid-reports"></a>하이브리드 보고서 만들기 중지
-Microsoft Identity Manager에서 Azure Active Directory로 보고 데이터 업로드를 중지하려면 하이브리드 보고 에이전트를 제거합니다. Windows **프로그램 추가/제거** 도구를 사용하여 Microsoft Identity Manager 하이브리드 보고를 제거합니다.
+Microsoft Identity Manager에서 Azure Active Directory로 보고 감사 데이터 업로드를 중지하려면 하이브리드 보고 에이전트를 제거합니다. Windows **프로그램 추가/제거** 도구를 사용하여 Microsoft Identity Manager 하이브리드 보고를 제거합니다.
 
 ## <a name="windows-events-used-for-hybrid-reporting"></a>하이브리드 보고에 사용되는 Windows 이벤트
 Microsoft Identity Manager가 생성한 이벤트는 Windows 이벤트 로그에 기록되고 이벤트 뷰어의 응용 프로그램 및 서비스 로그-&gt; **Identity Manager 요청 로그** 아래에 표시됩니다. 각 MIM 청은 Windows 이벤트 로그의 이벤트(JSON 구조 형식)로 내보내집니다. SIEM으로 내보낼 수 있습니다.
