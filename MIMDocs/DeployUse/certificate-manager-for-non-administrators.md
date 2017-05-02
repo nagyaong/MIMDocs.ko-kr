@@ -2,10 +2,10 @@
 title: "관리자 권한 없이 Microsoft Identity Manager 셀프 서비스 스마트 카드 갱신 | Microsoft 문서"
 description: "관리자가 사용자의 컴퓨터에 액세스하지 않고도 사용자가 인증서 관리자를 사용할 수 있도록 사용자의 스마트 카드를 등록하는 방법을 알아봅니다."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
 ms.openlocfilehash: 89e095cff66984140cdcef3617dd0ccc3d3714d8
+ms.lasthandoff: 02/07/2017
 
 
 ---
@@ -93,9 +94,4 @@ ms.openlocfilehash: 89e095cff66984140cdcef3617dd0ccc3d3714d8
 7.  **관리자가 아닌 계정에서 CM 앱 설치**
 
 8.  **CM 앱을 시작하고 가상 스마트 카드 등록**
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

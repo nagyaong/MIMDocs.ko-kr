@@ -2,10 +2,10 @@
 title: "MIM 인증서 관리자 Windows 응용 프로그램 배포 | Microsoft 문서"
 description: "사용자가 자신의 액세스 권한을 관리할 수 있도록 인증서 관리자 앱을 배포하는 방법을 알아봅니다."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
 ms.openlocfilehash: d714a58796d3a86fc82ed1eb6dc29bdc45920933
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -253,9 +254,4 @@ MIM 2016 및 인증서 관리자를 실행한 후 MIM 인증서 관리자 Window
 
 ## <a name="deploy-the-app"></a>앱 배포
 CM 앱을 설정할 때 다운로드 센터에서 MIMDMModernApp_&lt;version&gt;_AnyCPU_Test.zip 파일을 다운로드하고 모든 콘텐츠를 추출합니다. .appx 파일이 설치 관리자입니다. [System Center Configuration Manager](https://technet.microsoft.com/library/dn613840.aspx)또는 [Intune](https://technet.microsoft.com/library/dn613839.aspx)을 사용하여 일반적인 Windows 스토어 앱 배포 방법으로 이 앱을 배포하여 앱을 테스트용으로 로드할 수 있습니다. 따라서 사용자가 이 앱을 회사 포털을 통해 액세스하거나 자신의 컴퓨터에 직접 푸시되도록 해야 합니다.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

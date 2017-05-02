@@ -2,10 +2,10 @@
 title: "MIM에 대해 Exchange를 구성하여 메일 전송 및 사서함 만들기 | Microsoft 문서"
 description: "선택적 단계로, MIM 2016에서 메일을 보내고 사서함을 만들 수 있도록 하려면 Exchange Server를 배포합니다."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
 ms.openlocfilehash: 01ccb55d200bfd1615ae62ccd30298117c0d6275
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -41,9 +42,4 @@ MIM에서 메일 또는 프로비전 사서함을 보내고 받도록 구성하�
 >[!div class="step-by-step"]  
 [« SharePoint](prepare-server-sharepoint.md)
 [MIM 동기화 서비스 업그레이드 »](install-mim-sync.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -2,10 +2,10 @@
 title: "템플릿을 사용하여 인증서 관리자에서 인증서 요청 | Microsoft 문서"
 description: "인증서 관리자를 사용하여 프로필 템플릿으로 소프트웨어 인증서를 만들고 갱신하는 방법을 알아봅니다."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
 ms.openlocfilehash: 23cfb1134d1cbf2cf838354cb7d915084803cd41
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -38,7 +39,7 @@ ms.openlocfilehash: 23cfb1134d1cbf2cf838354cb7d915084803cd41
 
     1.  **일반** 탭의 표시 이름 필드에 **보관된 인증서 템플릿**을 입력합니다.
 
-    2.  b.  **요청 처리** 탭에서
+    2.  b.    **요청 처리** 탭에서
 
         1.  **용도** 를 서명 및 암호화로 설정합니다.
 
@@ -95,9 +96,4 @@ ms.openlocfilehash: 23cfb1134d1cbf2cf838354cb7d915084803cd41
 10. 보관된 인증서를 다시 발급하려면 **Reissue archived certificates** (보관된 인증서 다시 발행) 왼쪽에 있는 확인란을 선택하고 **확인**을 클릭합니다.
 
 11. 가상 스마트 카드 CM을 사용 중인 경우 데이터 컬렉션이 설정되어 있으면 작동하지 않으므로 데이터 컬렉션 항목을 사용하지 않도록 설정해야 합니다. 왼쪽 창에서 정책을 클릭하고 **Sample data item** (샘플 데이터 항목) 옆에 있는 확인란의 선택을 취소한 다음 **Delete data collection items**(데이터 컬렉션 항목 삭제)를 클릭하여 각각의 정책 및 모든 정책에 대해 데이터 컬렉션을 사용하지 않도록 설정합니다. 그런 다음 **확인**을 클릭합니다.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

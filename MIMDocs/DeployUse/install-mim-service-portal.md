@@ -2,10 +2,10 @@
 title: "Microsoft Identity Manager 서비스 및 포털 설치 | Microsoft 문서"
 description: "Microsoft Identity Manager 2016용 MIM 서비스 및 포털을 구성하고 설치하는 단계를 알아봅니다."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
 ms.openlocfilehash: eb572bc3f062763265a9f24910a82be0cac77a5e
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -149,9 +150,4 @@ ms.openlocfilehash: eb572bc3f062763265a9f24910a82be0cac77a5e
 >[!div class="step-by-step"]  
 [« MIM 동기화 서비스](install-mim-sync.md)
 [데이터베이스를 동기화 »](install-mim-sync-ad-service.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
