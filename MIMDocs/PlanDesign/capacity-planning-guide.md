@@ -2,10 +2,10 @@
 title: "용량 계획 가이드 | Microsoft 문서"
 description: "이 가이드를 사용하여 로드 수준 및 정책 결정 등 MIM 2016을 배포하기 전에 고려해야 하는 변수를 이해할 수 있습니다."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/21/2016
+ms.date: 03/21/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,9 @@ ms.assetid: 3ac5b990-1678-4996-996d-cbd84b8426b4
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 33e7d901dcd9d8cf1bcaddcfa521625060bb3dbc
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: e33c5bb284d15a5e94118e621b968fcad5b65e2d
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -92,9 +93,4 @@ MIM 정책 구성에는 사용자 환경에서 프로비전하는 방법에 대�
 ## <a name="see-also"></a>참고 항목
 - [MIM 배포를 위한 토폴로지 고려 사항](topology-considerations.md)
 - 다운로드 가능한 [FIM(Forefront Identity Manager) 2010 용량 계획 가이드](http://go.microsoft.com/fwlink/?LinkId=200180)에서는 테스트 빌드 및 성능 테스트 결과에 대해 자세히 알아봅니다.
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

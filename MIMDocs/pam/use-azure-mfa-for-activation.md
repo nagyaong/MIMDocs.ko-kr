@@ -2,10 +2,10 @@
 title: "Azure MFA를 사용하여 PAM 활성화 | Microsoft 문서"
 description: "사용자가 Privileged Access Management에서 역할을 활성화할 때 Azure MFA를 제2의 보안 계층으로 설정합니다."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/15/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,9 @@ ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: fa6d69038e5b2f0b933773381661929159198242
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: b937b30da2dff9bbfeabf7dceb43fcaca99a1b63
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -148,9 +149,4 @@ Set-PAMRole (Get-PAMRole -DisplayName "R") -MFAEnabled 1
 5.  시간 범위를 선택하고 추가 보고서 열에서 **이름** 옆의 확인란을 선택합니다. **CSV로 내보내기**를 클릭합니다.
 
 6.  보고서가 생성되면 포털에서 볼 수 있으며, MFA 보고서가 큰 경우에는 CSV 파일로 다운로드할 수 있습니다. **AUTH TYPE** 열의 **SDK** 값은 PAM 활성화 요청과 관련된 행으로, MIM 또는 다른 온-프레미스 소프트웨어에서 시작되는 이벤트를 나타냅니다. **USERNAME** 필드는 MIM 서비스 데이터베이스의 사용자 개체 GUID입니다. 호출에 성공하지 못할 경우 **AUTHD** 열의 값은 **No**가 되고, **CALL RESULT** 열의 값에는 실패의 이유에 대한 세부 정보가 포함됩니다.
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

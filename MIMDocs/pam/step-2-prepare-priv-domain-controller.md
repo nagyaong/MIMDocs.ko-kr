@@ -2,10 +2,10 @@
 title: "PAM 배포 2단계 - PRIV DC | Microsoft 문서"
 description: "Privileged Access Management가 격리되는 배스천 환경을 제공하는 PRIV 도메인 컨트롤러를 준비합니다."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/15/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,13 +13,14 @@ ms.assetid: 0e9993a0-b8ae-40e2-8228-040256adb7e2
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: f84229908f31242b6d2f7636a7c67ca669de45b3
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: edc15b41d4248887f4a93217f68d8125f6500585
+ms.lasthandoff: 05/02/2017
 
 
 ---
 
-# <a name="step-2-prepare-the-first-priv-domain-controller"></a>2단계 - 첫 번째 PRIV 도메인 컨트롤러 준비
+# <a name="step-2---prepare-the-first-priv-domain-controller"></a>2단계 - 첫 번째 PRIV 도메인 컨트롤러 준비
 
 >[!div class="step-by-step"]
 [« 1단계](step-1-prepare-corp-domain.md)
@@ -269,12 +270,12 @@ PRIVDC에서 도메인 관리자로 다음 단계를 수행합니다.
 15. 사용 권한 목록에서 **암호 변경** 및 **암호 다시 설정**을 선택합니다. 그런 후 **다음** 을 클릭하고 **마침**을 클릭합니다.  
 16. Active Directory 사용자 및 컴퓨터를 닫습니다.
 
-17. 명령 프롬프트를 엽니다.  
-18. PRIV 도메인의 AdminSDHolder 개체에 대한 액세스 제어 목록을 검토합니다. 예를 들어 도메인이 "priv.contoso.local"이면 다음 명령을 입력합니다.  
+17.    명령 프롬프트를 엽니다.  
+18.    PRIV 도메인의 AdminSDHolder 개체에 대한 액세스 제어 목록을 검토합니다. 예를 들어 도메인이 "priv.contoso.local"이면 다음 명령을 입력합니다.  
   ```
   dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local"
   ```
-19. MIM 서비스 및 MIM 구성 요소 서비스가 이 ACL에서 보호하는 그룹의 구성원 자격을 업데이트할 수 있도록 필요에 따라 액세스 제어 목록을 업데이트합니다.  다음 명령을 입력합니다.  
+19.    MIM 서비스 및 MIM 구성 요소 서비스가 이 ACL에서 보호하는 그룹의 구성원 자격을 업데이트할 수 있도록 필요에 따라 액세스 제어 목록을 업데이트합니다.  다음 명령을 입력합니다.  
   ```
   dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local" /G priv\mimservice:WP;"member"  
   dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local" /G priv\mimcomponent:WP;"member"
@@ -304,9 +305,4 @@ PRIV 리소스(예: MIM)의 유지 관리를 수행하기 위한 PRIV 도메인�
 >[!div class="step-by-step"]
 [« 1단계](step-1-prepare-corp-domain.md)
 [3단계 »](step-3-prepare-pam-server.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 
