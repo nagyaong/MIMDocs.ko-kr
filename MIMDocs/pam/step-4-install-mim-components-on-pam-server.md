@@ -2,10 +2,10 @@
 title: "PAM 배포 4단계 – MIM 설치 | Microsoft 문서"
 description: "Privileged Access Management 서버 및 워크스테이션에서 MIM 서비스 및 포털을 설치하고 구성합니다."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/15/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -14,13 +14,14 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 5b9653cb8de9e9fc788685ba027f84a795467cf6
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: 3a1ec9db6da0a77f963dde76a3efe8d92f89078d
+ms.lasthandoff: 05/02/2017
 
 
 ---
 
-# <a name="step-4-install-mim-components-on-pam-server-and-workstation"></a>4단계 – PAM 서버와 워크스테이션에 MIM 구성 요소 설치
+# <a name="step-4--install-mim-components-on-pam-server-and-workstation"></a>4단계 – PAM 서버와 워크스테이션에 MIM 구성 요소 설치
 
 >[!div class="step-by-step"]
 [« 3단계](step-3-prepare-pam-server.md)
@@ -190,9 +191,4 @@ MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니�
 >[!div class="step-by-step"]
 [« 3단계](step-3-prepare-pam-server.md)
 [5단계 »](step-5-establish-trust-between-priv-corp-forests.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

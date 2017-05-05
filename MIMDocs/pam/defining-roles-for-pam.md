@@ -2,10 +2,10 @@
 title: "PAM에 대한 권한 있는 역할 정의 | Microsoft Docs"
 description: "관리해야 하는 권한 있는 역할을 결정하고 각 역할에 대한 관리 정책을 정의합니다."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/15/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,9 @@ ms.assetid: 1a368e8e-68e1-4f40-a279-916e605581bc
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: ae582e6aff2449aeee8b68ebe90b22b18e5a67d2
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: 807ee44c23f367c33b820251012008324bb2c005
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -144,7 +145,7 @@ Domain Admins와 같은 기본 그룹 대신 필요한 권한만 제공하는 �
 
 다음 섹션에서는 일반적인 엔터프라이즈 시나리오에 대한 예제를 제공합니다.
 
-### <a name="tier-0-administrative-forest"></a>계층 0 - 관리 포리스트
+### <a name="tier-0---administrative-forest"></a>계층 0 - 관리 포리스트
 
 배스천 환경의 계정에 적합한 역할에는 다음이 포함될 수 있습니다.
 
@@ -153,7 +154,7 @@ Domain Admins와 같은 기본 그룹 대신 필요한 권한만 제공하는 �
 - 프로덕션 포리스트의 관리자 사용자
 - 프로덕션 포리스트에 있는 응용 프로그램에 대해 제한된 관리자 권한을 위임받은 사용자
 
-### <a name="tier-0-enterprise-production-forest"></a>계층 0 - 엔터프라이즈 프로덕션 포리스트
+### <a name="tier-0---enterprise-production-forest"></a>계층 0 - 엔터프라이즈 프로덕션 포리스트
 
 계층 0 프로덕션 포리스트 계정 및 리소스를 관리하는 데 적절한 역할에는 다음이 포함될 수 있습니다.
 
@@ -200,9 +201,4 @@ Domain Admins와 같은 기본 그룹 대신 필요한 권한만 제공하는 �
 - 지원 센터
 - 보안 그룹 관리자
 - 워크스테이션 데스크사이드 지원
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

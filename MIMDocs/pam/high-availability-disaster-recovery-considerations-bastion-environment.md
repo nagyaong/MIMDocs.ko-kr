@@ -2,10 +2,10 @@
 title: "PAM 재해 복구 | Microsoft Docs"
 description: "고가용성 및 재해 복구를 위해 Privileged Access Management를 구성하는 방법을 알아봅니다."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/15/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,9 @@ ms.assetid: 03e521cd-cbf0-49f8-9797-dbc284c63018
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: a61d0bf5aaa263aff28a253e54e721f168ce337c
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: 2fab9af837ed11b1f2f7f32c9ced6d79c8cc9d00
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -221,9 +222,4 @@ MIM 서비스를 설치한 배스천 환경의 각 컴퓨터에 Privileged Acces
 중단 복구 후 MIM 서비스가 하나 이상의 서버에서 실행되고 있는지 확인합니다.  그런 다음 `net start "PAM Monitoring service"`를 사용하여 해당 서버에서 MIM PAM 모니터링 서비스도 실행되도록 합니다.
 
 배스천 환경 포리스트 기능 수준이 Windows Server 2012 R2인 경우 `net start "PAM Component service"` 명령을 사용하여 해당 서버에서 MIM PAM 구성 요소 서비스가 실행되도록 합니다.
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

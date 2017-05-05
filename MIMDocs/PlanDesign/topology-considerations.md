@@ -2,10 +2,10 @@
 title: "배포에 대한 토폴로지 가이드 | Microsoft 문서"
 description: "MIM 2016 구성 요소를 이해하고 이를 사용자 환경에 배포하는 방법에 대한 제안 사항을 알아봅니다."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/21/2016
+ms.date: 03/21/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,9 @@ ms.assetid: 735dc357-dfba-4f68-a5b3-d66d6c018803
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 23ef8843201790bc758e9ef6def5d77d175bfcf0
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: f7e4dc737444df70de3a8a78eb518e9e6f26aadc
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: 23ef8843201790bc758e9ef6def5d77d175bfcf0
 ## <a name="mim-components"></a>MIM 구성 요소
 배포 토폴로지를 설계할 때 각 구성 요소가 무엇이고 어떻게 상호 작용하는지 알아야 합니다.
 
-- <a name="mim-portal-an-interface-for-password-resets-group-management-and-administrative-operations"></a>**MIM 포털** - 암호 재설정, 그룹 관리 및 관리 작업용 인터페이스입니다.
+- <a name="mim-portal---an-interface-for-password-resets-group-management-and-administrative-operations"></a>**MIM 포털** - 암호 재설정, 그룹 관리 및 관리 작업용 인터페이스입니다.
     -
 - **MIM 서비스** - MIM 2016 ID 관리 기능을 구현하는 웹 서비스입니다.
 - **MIM 동기화 서비스** - 다른 ID 시스템과 데이터를 동기화합니다.
@@ -63,9 +64,4 @@ MIM 동기화 서비스 및 MIM 서비스 데이터베이스를 호스트하는 
 
 ## <a name="see-also"></a>참고 항목
 - 다운로드 가능한 [FIM(Forefront Identity Manager) 2010 용량 계획 가이드](http://go.microsoft.com/fwlink/?LinkId=200180)에서는 테스트 빌드 및 성능 테스트 결과에 대해 자세히 알아봅니다.
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

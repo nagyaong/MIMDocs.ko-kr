@@ -2,10 +2,10 @@
 title: "PAM 환경 개요 | Microsoft 문서"
 description: "Privileged Access Management를 배포하기 위해 필요한 가상 컴퓨터의 수와 구성 확인"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/15/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,9 @@ ms.assetid: 479db14c-1bfb-4d7c-a344-cd718a01f328
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 750ba152813b4c03c913453c42e0e503e90b883b
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: 3e6c5a70c6b9ed140a56135676bbd14a84504317
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -31,9 +32,4 @@ Privileged Access Management는 공유 네트워크에서 서로 연결된 별�
 
 > [!NOTE]
 > 현재 MIM CTP(Customer Technical Preview)는 이전 CTP의 데이터베이스 또는 디렉터리 콘텐츠와 호환되지 않습니다. 이전에 PAM 또는 다른 시나리오를 위해 MIM을 평가하고 있었던 경우 해당 테스트에 사용한 가상 컴퓨터를 백업하여 보관하고, MIM 시나리오에 대해 이전에 사용하지 않은 새 가상 컴퓨터 이미지를 사용하여 배포를 시작하세요.
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 
