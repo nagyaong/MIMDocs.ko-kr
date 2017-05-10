@@ -2,10 +2,11 @@
 layout: LandingPage
 title: "Microsoft Identity Manager 설명서 | Microsoft Docs"
 description: "Microsoft Identity Manager 사용 방법을 알아봅니다."
-translationtype: Human Translation
-ms.sourcegitcommit: 2b336fead118a1517287a50e6d300bb09f535bf0
-ms.openlocfilehash: 96a5ae76e5e44ae1bed16e96b22d4efc6bfdc305
-ms.lasthandoff: 05/01/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3797f5789bb4e48836eb21776dafd5a2e0e11613
+ms.openlocfilehash: c49fbae1892bfa0207a1615d11e600fe21d638c8
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/09/2017
 
 ---
 # <a name="microsoft-identity-manager-documentation"></a>Microsoft Identity Manager 설명서
@@ -14,7 +15,7 @@ Microsoft Identity Manager 2016은 Active Directory, LDAP, Oracle 및 Azure Acti
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016-sp1-release-notes">
+        <a href="/microsoft-identity-manager/microsoft-identity-manager-2016-sp1-release-notes">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -32,7 +33,7 @@ Microsoft Identity Manager 2016은 Active Directory, LDAP, Oracle 및 Azure Acti
         </a>
     </li>
     <li>
-        <a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">
+        <a href="/microsoft-identity-manager/microsoft-identity-manager-2016">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -49,7 +50,7 @@ Microsoft Identity Manager 2016은 Active Directory, LDAP, Oracle 및 Azure Acti
         </a>
     </li>
     <li>
-        <a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy">
+        <a href="/microsoft-identity-manager/microsoft-identity-manager-deploy">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -71,7 +72,7 @@ Microsoft Identity Manager 2016은 Active Directory, LDAP, Oracle 및 Azure Acti
 ---
 <br>
 >[!Warning]
-FIM(Forefront Identity Manager) 일반 지원이 2017년 10월 10일에 종료됩니다. Microsoft Identity Manager 2016으로 [업그레이드](DeployUse/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md)하세요. 추가 정보: </br>  - FIM 수명 주기 정보는 [여기](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010)에 제공됩니다. </br> - ID 제품의 공개 릴리스에 대한 정보는 [Microsoft Identity Software: Public Release Build Versions](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)(Microsoft Identity 소프트웨어: 공용 릴리스 빌드 버전)라는 게시물을 검토하세요.
+FIM(Forefront Identity Manager) 일반 지원이 2017년 10월 10일에 종료됩니다. Microsoft Identity Manager 2016으로 [업그레이드](microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md)하세요. 추가 정보: </br>  - FIM 수명 주기 정보는 [여기](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010)에 제공됩니다. </br> - ID 제품의 공개 릴리스에 대한 정보는 [Microsoft Identity Software: Public Release Build Versions](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)(Microsoft Identity 소프트웨어: 공용 릴리스 빌드 버전)라는 게시물을 검토하세요.
 
 <h2>참조</h2>
 <ul class="panelContent cardsFTitle">
