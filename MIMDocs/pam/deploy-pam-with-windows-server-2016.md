@@ -5,15 +5,16 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 03/24/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 
-translationtype: Human Translation
-ms.sourcegitcommit: 77ecdb91ccfdb1afec830e9662163ab9a7ef250c
-ms.openlocfilehash: dc68c4dcf2ae2d347e10930613bd32ca02031f8b
-ms.lasthandoff: 03/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3797f5789bb4e48836eb21776dafd5a2e0e11613
+ms.openlocfilehash: fbdebd59249667a0e60d3a248f183bcb6a75085a
+ms.contentlocale: ko-kr
+ms.lasthandoff: 05/09/2017
 
 
 ---
@@ -40,9 +41,9 @@ Technical Preview 5 전의 Windows Server 2016 기술 미리 보기는 이 MIM �
 랩 환경에 아직 "CORP" 도메인이 없는 경우 해당 도메인에 대한 추가 도메인 컨트롤러가 필요합니다. “CORP” 도메인 컨트롤러는 Windows Server 2016 또는 Windows Server 2012 R2를 실행할 수 있습니다.
 
 
-**다음과 같은 경우를 제외하고** [시작 가이드](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services.md)에 설명된 대로 설치하세요.
+**다음과 같은 경우를 제외하고** [시작 가이드](privileged-identity-management-for-active-directory-domain-services.md)에 설명된 대로 설치하세요.
 
--   새 CORP 도메인을 만드는 경우 [1단계 - CORP 도메인 컨트롤러 준비](/microsoft-identity-manager/pam/step-1-prepare-corp-domain.md)의 지침을 따를 때 Windows Server 2016 기능 수준에서 CORP 도메인을 선택적으로 구성할 수 있습니다. **이 옵션을 선택하는 경우 다음과 같이 조정하세요.**
+-   새 CORP 도메인을 만드는 경우 [1단계 - CORP 도메인 컨트롤러 준비](step-1-prepare-corp-domain.md)의 지침을 따를 때 Windows Server 2016 기능 수준에서 CORP 도메인을 선택적으로 구성할 수 있습니다. **이 옵션을 선택하는 경우 다음과 같이 조정하세요.**
 
     -   Windows Server 2016 미디어를 사용하는 경우 설치 옵션은 Windows Server 2016(데스크톱 환경을 사용하는 서버)입니다.
 
@@ -56,7 +57,7 @@ Technical Preview 5 전의 Windows Server 2016 기술 미리 보기는 이 MIM �
 
 -   CORPDC의 운영 체제로 Windows Server 2012 R2를 사용하도록 선택하는 경우 CORPDC에 핫픽스 2919442, 2919355 및 [업데이트 3155495](http://support.microsoft.com/kb/3156418)를 설치해야 합니다.
 
--   다음과 같은 조정을 제외하고, [2단계 - PRIV 도메인 컨트롤러 준비](/microsoft-identity-manager/pam/step-2-prepare-priv-domain-controller.md)의 지침을 따릅니다.
+-   다음과 같은 조정을 제외하고, [2단계 - PRIV 도메인 컨트롤러 준비](step-2-prepare-priv-domain-controller.md)의 지침을 따릅니다.
 
     -   Windows Server 2016 미디어를 사용하여 설치합니다. 설치 옵션은 Windows Server 2016(데스크톱 환경을 사용하는 서버)입니다.
 
@@ -115,19 +116,19 @@ Technical Preview 5 전의 Windows Server 2016 기술 미리 보기는 이 MIM �
     ```
 
 
--   이러한 조정과 함께 [3단계 - PAM 서버 준비](/microsoft-identity-manager/pam/step-3-prepare-pam-server.md)의 지침을 따릅니다.
+-   이러한 조정과 함께 [3단계 - PAM 서버 준비](step-3-prepare-pam-server.md)의 지침을 따릅니다.
 
     -   Windows Server 2016을 설치하는 경우 "ApplicationServer" 역할을 사용할 수 없습니다.
 
     -   Windows Server 2016에 MIM을 설치하는 경우 **SharePoint 2013을 설치할 수 없습니다**.
 
--   이러한 조정과 함께 [4단계 – PAM 서버와 워크스테이션에 MIM 구성 요소 설치](/microsoft-identity-manager/pam/step-4-install-mim-components-on-pam-server.md)의 지침을 따릅니다.
+-   이러한 조정과 함께 [4단계 – PAM 서버와 워크스테이션에 MIM 구성 요소 설치](step-4-install-mim-components-on-pam-server.md)의 지침을 따릅니다.
 
     -   MIM 설치에서 새 AD OU "PAM 개체"를 만들 때 MIM 서비스 및 PAM 구성 요소를 설치하는 사용자는 **AD의 PRIV 도메인에 대한 쓰기 액세스 권한이 있어야 합니다**.
 
     -   SharePoint가 설치되어 있지 않은 경우 MIM 포털을 설치하지 마세요.
 
--   이러한 조정과 함께 [5단계 - 트러스트 설정](/microsoft-identity-manager/pam/step-5-establish-trust-between-priv-corp-forests.md)의 지침을 따릅니다.
+-   이러한 조정과 함께 [5단계 - 트러스트 설정](step-5-establish-trust-between-priv-corp-forests.md)의 지침을 따릅니다.
 
     -   단방향 트러스트를 설정할 때 처음 두 개의 PowerShell 명령(get-credential 및 New-PAMTrust)만 수행하고 **New-PAMDomainConfiguration 명령을 수행하지 마세요**.
 
@@ -147,7 +148,7 @@ Technical Preview 5 전의 Windows Server 2016 기술 미리 보기는 이 MIM �
 
 ## <a name="more-information"></a>추가 정보
 
-- [Active Directory Domain Services에 대한 권한 있는 액세스 관리](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services.md)
-- [권한 있는 액세스 관리를 위해 MIM 환경 구성](/microsoft-identity-manager/pam/configuring-mim-environment-for-pam.md)
-- [스크립트를 사용하여 PAM 구성](/microsoft-identity-manager/pam/sp1-pam-configure-using-scripts.md)
+- [Active Directory Domain Services에 대한 권한 있는 액세스 관리](privileged-identity-management-for-active-directory-domain-services.md)
+- [권한 있는 액세스 관리를 위해 MIM 환경 구성](configuring-mim-environment-for-pam.md)
+- [스크립트를 사용하여 PAM 구성](sp1-pam-configure-using-scripts.md)
 
