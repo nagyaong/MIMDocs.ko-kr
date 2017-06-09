@@ -458,9 +458,9 @@ TMPR은 전환 집합 또는 역할의 멤버 자격 및 함께 제공되는 워
 >[!NOTE]
 프로비전 해제 워크플로는 [정책 업데이트 시 실행] 특성이 true로 설정되도록 합니다.
 
-#### <a name="enable-the-set-transition-in-mpr-last"></a>[Set Transition In MPR last](마지막에 집합 전환 시작 MPR)을 사용하도록 설정
+#### <a name="enable-the-set-transition-in-mpr-last"></a>[Set Transition In MPR last]\(마지막에 집합 전환 시작 MPR)을 사용하도록 설정
 
-TMPR 쌍을 만들 때 [Set Transition In MPR last](마지막에 집합 전환 시작 MPR)을 켭니다. 이 명령을 사용하면 In MPR이 켜져 있지만 Out MPR이 켜지기 전에 집합에 리소스를 추가하거나 제거하는 경우 해당 자격에 리소스가 남아 있지 않게 됩니다.
+TMPR 쌍을 만들 때 [Set Transition In MPR last]\(마지막에 집합 전환 시작 MPR)을 켭니다. 이 명령을 사용하면 In MPR이 켜져 있지만 Out MPR이 켜지기 전에 집합에 리소스를 추가하거나 제거하는 경우 해당 자격에 리소스가 남아 있지 않게 됩니다.
 
 #### <a name="workflows-in-tmpr-should-check-target-resource-state-first"></a>TMPR의 워크플로는 먼저 대상 리소스 상태를 확인해야 함
 
