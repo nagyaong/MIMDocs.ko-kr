@@ -32,8 +32,3 @@
 ### [8단계 PAM 배포 확인](sp1-step8-pam-deployment-verification.md)
 ### [부록](sp1-pam-deployment-addendum.md)
 # [개발자 참조](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
-
-
-<!--HONumber=Feb17_HO3-->
-
-
