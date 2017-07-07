@@ -40,8 +40,3 @@
 #### [보류 중인 PAM 요청 가져오기](privileged-access-management-get-pending-requests.md)
 #### [보류 중인 PAM 요청 승인 또는 거부](privileged-access-management-approve-reject-pending-request.md)
 #### [PAM 세션 정보 가져오기](privileged-access-management-get-session-info.md)
-
-
-<!--HONumber=Jan17_HO3-->
-
-
