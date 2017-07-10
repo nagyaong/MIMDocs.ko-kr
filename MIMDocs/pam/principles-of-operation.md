@@ -12,15 +12,17 @@ ms.technology: active-directory-domain-services
 ms.assetid: 6498f68f-36d3-448c-8fe6-649ad5a7f97d
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 53fe79f251c3b18426f16b4007cda49e67d7b028
-ms.lasthandoff: 05/02/2017
+ms.contentlocale: ko-kr
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="understand-the-components-of-pam"></a>PAM의 구성 요소 이해
+<a id="understand-the-components-of-pam" class="xliff"></a>
+# PAM의 구성 요소 이해
 
 Privileged Access Management는 관리 액세스를 일상적인 사용자 계정과 구분합니다. 이 솔루션은 병렬 포리스트를 사용합니다.
 

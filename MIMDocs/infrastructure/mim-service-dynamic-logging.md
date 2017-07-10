@@ -10,22 +10,24 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 1ff73d0bdfcbcb4ab79d0d81feca9abdc33f9213
 ms.openlocfilehash: 1e2fb9a9ae508ab601ebad1dec7acc21dc44d13e
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: ko-kr
+ms.lasthandoff: 07/10/2017
 
 
 
 ---
-# <a name="mim-sp1-4414360--service-dynamic-logging"></a>MIM SP1(4.4.1436.0) 서비스 동적 로깅
+<a id="mim-sp1-4414360--service-dynamic-logging" class="xliff"></a>
+# MIM SP1(4.4.1436.0) 서비스 동적 로깅
 4.4.1436.0에서는 새로운 로깅 기능을 도입했습니다. 이 기능을 사용하면 관리자와 지원 엔지니어가 관리 서비스를 다시 시작하지 않고도 로깅을 설정할 수 있습니다.
 
 설치하면 호출되는 Microsoft.ResourceManagement.Service.exe.config에서 다음과 같은 새 줄이 표시됩니다.
 
-*    줄 6: ``<section name="dynamicLogging" type="Microsoft.ResourceManagement.Utilities.DynamicLoggingSection, Microsoft.ResourceManagement.Service" />``
-*    줄 8:  ``<dynamicLogging mode="true" loggingLevel="Verbose" />``
-*    줄 266 ``</system.diagnostics> ``
+*   줄 6: ``<section name="dynamicLogging" type="Microsoft.ResourceManagement.Utilities.DynamicLoggingSection, Microsoft.ResourceManagement.Service" />``
+*   줄 8:  ``<dynamicLogging mode="true" loggingLevel="Verbose" />``
+*   줄 266 ``</system.diagnostics> ``
 
 ![새 동적 로깅 항목을 보여 주는 강조 표시된 섹션](media/mim-service-dynamic-logging/screen01.png)
 

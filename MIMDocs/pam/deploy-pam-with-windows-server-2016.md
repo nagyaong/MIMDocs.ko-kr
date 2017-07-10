@@ -14,14 +14,15 @@ ms.translationtype: Human Translation
 ms.sourcegitcommit: 3797f5789bb4e48836eb21776dafd5a2e0e11613
 ms.openlocfilehash: fbdebd59249667a0e60d3a248f183bcb6a75085a
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
 
 
-# <a name="deploy-mim-pam-with-windows-server-2016"></a>Windows Server 2016을 사용하여 MIM PAM 배포
+<a id="deploy-mim-pam-with-windows-server-2016" class="xliff"></a>
+# Windows Server 2016을 사용하여 MIM PAM 배포
 
 
 이 시나리오에서는 MIM 2016 SP1에서 Windows Server 2016을 “PRIV” 포리스트에 대한 도메인 컨트롤러로 활용하도록 설정합니다.  이 시나리오를 구성한 후에는 사용자의 Kerberos 티켓 시간이 해당 역할의 남은 활성화 시간으로 제한됩니다. 
@@ -29,7 +30,8 @@ ms.lasthandoff: 05/09/2017
 >[!Note]
 Technical Preview 5 전의 Windows Server 2016 기술 미리 보기는 이 MIM 릴리스와 함께 사용할 수 없습니다.
 
-## <a name="preparation"></a>준비
+<a id="preparation" class="xliff"></a>
+## 준비
 
 랩 환경에는 최소 두 개의 VM이 필요합니다.
 
@@ -146,7 +148,8 @@ Technical Preview 5 전의 Windows Server 2016 기술 미리 보기는 이 MIM �
 
 -   항목 #5(트러스트 확인)는 **CORP 및 PRIV 도메인이 모두 Windows Server 2016 도메인 기능 수준에 있는 경우 필요하지 않습니다**.
 
-## <a name="more-information"></a>추가 정보
+<a id="more-information" class="xliff"></a>
+## 추가 정보
 
 - [Active Directory Domain Services에 대한 권한 있는 액세스 관리](privileged-identity-management-for-active-directory-domain-services.md)
 - [권한 있는 액세스 관리를 위해 MIM 환경 구성](configuring-mim-environment-for-pam.md)

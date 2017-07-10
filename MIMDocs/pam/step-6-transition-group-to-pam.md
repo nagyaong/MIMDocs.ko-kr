@@ -12,15 +12,17 @@ ms.technology: active-directory-domain-services
 ms.assetid: 7b689eff-3a10-4f51-97b2-cb1b4827b63c
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: aeffca2c4e5467ec039c2077a88f36a652493e90
-ms.lasthandoff: 05/02/2017
+ms.contentlocale: ko-kr
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="step-6--transition-a-group-to-privileged-access-management"></a>6단계 – 그룹을 권한 있는 액세스 관리로 전환
+<a id="step-6--transition-a-group-to-privileged-access-management" class="xliff"></a>
+# 6단계 – 그룹을 권한 있는 액세스 관리로 전환
 
 >[!div class="step-by-step"]
 [« 5단계 ](step-5-establish-trust-between-priv-corp-forests.md)

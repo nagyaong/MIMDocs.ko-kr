@@ -12,15 +12,17 @@ ms.technology: active-directory-domain-services
 ms.assetid: bfc7cb64-60c7-4e35-b36a-bbe73b99444b
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: b459906f0c8d2c631e9b63813e208c9098ea5a4e
-ms.lasthandoff: 05/02/2017
+ms.contentlocale: ko-kr
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="planning-a-bastion-environment"></a>배스천 환경 계획
+<a id="planning-a-bastion-environment" class="xliff"></a>
+# 배스천 환경 계획
 
 전용 관리 포리스트가 있는 배스천 환경을 Active Directory에 추가하면 조직은 기존 프로덕션 환경보다 더 강력한 보안 제어 기능을 포함하는 환경에서 관리 계정, 워크스테이션 및 그룹을 쉽게 관리할 수 있습니다.
 
@@ -28,25 +30,29 @@ ms.lasthandoff: 05/02/2017
 
 전용 관리 포리스트 외에도 추가 기술을 사용할 수 있습니다. 여기에는 관리 자격 증명이 노출되는 위치를 제한하고, 해당 포리스트에서의 사용자 역할 권한을 제한하고, 표준 사용자 작업(예: 메일 및 웹 검색)에 사용되는 호스트에서 관리 작업이 수행되지 않도록 하는 기능 등이 포함됩니다.
 
-## <a name="best-practice-considerations"></a>모범 사례 고려 사항
+<a id="best-practice-considerations" class="xliff"></a>
+## 모범 사례 고려 사항
 
 전용 관리 포리스트는 Active Directory 관리에 사용되는 표준 단일 도메인 Active Directory 포리스트입니다. 관리 포리스트 및 도메인은 사용 사례가 제한되어 있으므로 프로덕션 포리스트보다 더 많은 보안 조치를 적용할 수 있는 이점이 있습니다. 또한 이 포리스트는 분리되고 조직의 기존 포리스트를 신뢰하지 않으므로 다른 포리스트의 보안이 손상되어도 이 전용 포리스트로 확장되지 않습니다.
 
 관리 포리스트를 디자인할 때는 다음을 고려해야 합니다.
 
-### <a name="limited-scope"></a>제한된 범위
+<a id="limited-scope" class="xliff"></a>
+### 제한된 범위
 
 관리 포리스트의 가치는 높은 수준의 보안을 보증하고 공격 노출 영역을 줄이는 것입니다. 이 포리스트는 추가적인 관리 기능 및 응용 프로그램을 포함할 수 있지만 범위가 증가할 때마다 포리스트의 공격 노출 영역과 해당 리소스가 증가합니다. 포리스트의 기능을 제한하여 공격 노출 영역을 최소화하는 것이 목표입니다.
 
 관리자 권한 분할의 [계층 모델](tier-model-for-partitioning-administrative-privileges.md)에 따라 전용 관리 포리스트의 계정은 단일 계층, 일반적으로 계층 0 또는 계층 1이어야 합니다. 포리스트가 계층 1인 경우 특정 범위의 응용 프로그램(예: 재무 앱) 또는 사용자 커뮤니티(예: 아웃소싱된 IT 공급업체)로 제한하는 것이 좋습니다.
 
-### <a name="restricted-trust"></a>제한된 트러스트
+<a id="restricted-trust" class="xliff"></a>
+### 제한된 트러스트
 
 프로덕션 *CORP* 포리스트는 관리 *PRIV* 포리스트를 신뢰해야 하지만 그 반대의 경우는 아닙니다. 이것은 도메인 트러스트 또는 포리스트 트러스트일 수 있습니다. 추가 응용 프로그램에 양방향 트러스트 관계, 보안 유효성 검사 및 테스트가 필요할 수 있지만, 관리 포리스트 도메인이 Active Directory를 관리하기 위해 관리되는 도메인 및 포리스트를 신뢰할 필요는 없습니다.
 
 관리 포리스트의 계정이 적합한 프로덕션 호스트만 사용하도록 선택적 인증을 사용해야 합니다. Active Directory에서 도메인 컨트롤러를 유지 관리하고 권한을 위임하려는 경우 일반적으로 도메인 컨트롤러에 대한 "로그온 허용" 권한을 관리 포리스트의 지정된 계층 0 계정에 부여해야 할 수 있습니다. 자세한 내용은 [선택적 인증 설정 구성](http://technet.microsoft.com/library/cc816580.aspx)을 참조하세요.
 
-## <a name="maintain-logical-separation"></a>논리적 구분 유지
+<a id="maintain-logical-separation" class="xliff"></a>
+## 논리적 구분 유지
 
 배스천 환경이 조직 Active Directory의 기존 또는 향후 보안 사고의 영향을 받지 않게 하려면 배스천 환경의 시스템을 준비할 때 다음 지침을 고려해야 합니다.
 
@@ -62,7 +68,8 @@ ms.lasthandoff: 05/02/2017
 
 - 배스천 환경 서버를 관리하는 사용자는 기존 환경의 관리자가 액세스할 수 없는 워크스테이션에서 로그인해야 하므로 배스천 환경에 대한 자격 증명이 유출되지 않습니다.
 
-## <a name="ensure-availability-of-administration-services"></a>관리 서비스 가용성 보장
+<a id="ensure-availability-of-administration-services" class="xliff"></a>
+## 관리 서비스 가용성 보장
 
 응용 프로그램 관리가 배스천 환경으로 전환되므로 해당 응용 프로그램의 요구 사항에 맞게 충분한 가용성을 제공하는 방법을 고려해야 합니다. 해당 기술에는 다음이 포함됩니다.
 
@@ -74,7 +81,8 @@ ms.lasthandoff: 05/02/2017
 
 - 전용 관리 포리스트의 사용자 또는 역할 정의를 변경할 때마다 AD 및 SQL의 백업 복사본을 유지합니다.
 
-## <a name="configure-appropriate-active-directory-permissions"></a>해당 Active Directory 사용 권한 구성
+<a id="configure-appropriate-active-directory-permissions" class="xliff"></a>
+## 해당 Active Directory 사용 권한 구성
 
 관리 포리스트는 Active Directory 관리에 대한 요구 사항에 따라 최소 권한으로 구성되어야 합니다.
 
@@ -92,7 +100,8 @@ ms.lasthandoff: 05/02/2017
 
 - **서비스 계정**은 Microsoft Identity Manager, SQL Server 및 기타 소프트웨어에 필요합니다.
 
-## <a name="harden-the-hosts"></a>호스트 보안 강화
+<a id="harden-the-hosts" class="xliff"></a>
+## 호스트 보안 강화
 
 관리 포리스트에 연결된 도메인 컨트롤러, 서버 및 워크스테이션을 비롯한 모든 호스트에는 최신 운영 체제와 서비스 팩이 설치되어 있어야 하고 최신 상태로 유지되어야 합니다.
 
@@ -100,7 +109,8 @@ ms.lasthandoff: 05/02/2017
 
 - 관리 포리스트 호스트는 보안 업데이트로 자동 업데이트해야 합니다. 이로 인해 도메인 컨트롤러 유지 관리 작업이 중단될 수 있지만 패치가 적용되지 않은 취약성으로 인한 보안 위험이 크게 완화될 수 있습니다.
 
-### <a name="identify-administrative-hosts"></a>관리 호스트 식별
+<a id="identify-administrative-hosts" class="xliff"></a>
+### 관리 호스트 식별
 
 시스템 또는 워크스테이션의 위험은 수행되는 가장 위험한 작업(예: 인터넷 검색, 메일 주고받기 또는 알 수 없거나 신뢰할 수 없는 콘텐츠를 처리하는 다른 응용 프로그램의 사용)으로 측정해야 합니다.
 
@@ -114,7 +124,8 @@ ms.lasthandoff: 05/02/2017
 
 - 관리되어야 하는 응용 프로그램을 호스트하고, 제한된 관리자 모드 또는 Windows PowerShell 원격 기능과 함께 RDP를 사용해서 액세스되지 않는 서버
 
-### <a name="deploy-dedicated-administrative-workstations"></a>전용 관리 워크스테이션 배포
+<a id="deploy-dedicated-administrative-workstations" class="xliff"></a>
+### 전용 관리 워크스테이션 배포
 
 불편할 수 있지만 높은 영향력의 관리자 자격 증명이 있는 사용자에게 보안이 강화된 워크스테이션 관리를 전담시켜야 할 수 있습니다. 자격 증명에 위임된 권한 수준보다 크거나 같은 보안 수준을 호스트에 제공하는 것은 중요합니다. 추가로 보호하기 위해 다음과 같은 조치를 통합하는 것이 좋습니다.
 
@@ -144,13 +155,15 @@ ms.lasthandoff: 05/02/2017
 
 이러한 조치 일부는 극단적인 것처럼 보일 수 있지만 최근 몇 년 동안 알려진 바에 따르면 숙련된 악의적 사용자 중 일부는 대상을 손상시키는 엄청난 능력을 보유하고 있습니다.
 
-## <a name="prepare-existing-domains-to-be-managed-by-the-bastion-environment"></a>배스천 환경에서 관리하도록 기존 도메인 준비
+<a id="prepare-existing-domains-to-be-managed-by-the-bastion-environment" class="xliff"></a>
+## 배스천 환경에서 관리하도록 기존 도메인 준비
 
 MIM은 PowerShell cmdlet을 사용하여 배스천 환경의 기존 AD 도메인 및 전용 관리 포리스트 간에 신뢰를 설정합니다. 배스천 환경이 배포된 후 사용자 또는 그룹이 JIT로 변환되기 전에 `New-PAMTrust` 및 `New-PAMDomainConfiguration` cmdlet은 도메인 트러스트 관계를 업데이트하고 AD 및 MIM에 필요한 아티팩트를 만듭니다.
 
 기존 Active Directory 토폴로지가 변경되면 `Test-PAMTrust`, `Test-PAMDomainConfiguration`, `Remove-PAMTrust` 및 `Remove-PAMDomainConfiguration` cmdlet을 사용하여 트러스트 관계를 업데이트할 수 있습니다.
 
-## <a name="establish-trust-for-each-forest"></a>각 포리스트에 대한 트러스트 설정
+<a id="establish-trust-for-each-forest" class="xliff"></a>
+## 각 포리스트에 대한 트러스트 설정
 
 `New-PAMTrust` cmdlet은 기존 포리스트마다 한 번씩 실행해야 합니다. 관리 도메인의 MIM 서비스 컴퓨터에서 호출됩니다. 이 명령의 매개 변수는 기존 포리스트에서 상위 도메인의 도메인 이름과 각 도메인 관리자의 자격 증명입니다.
 
@@ -160,11 +173,13 @@ New-PAMTrust -SourceForest "contoso.local" -Credentials (get-credential)
 
 트러스트를 설정한 후 다음 섹션에 설명된 대로 배스천 환경에서 관리를 수행하도록 각 도메인을 구성합니다.
 
-## <a name="enable-management-of-each-domain"></a>각 도메인의 관리를 사용하도록 설정
+<a id="enable-management-of-each-domain" class="xliff"></a>
+## 각 도메인의 관리를 사용하도록 설정
 
 기존 도메인에 대한 관리를 사용하도록 설정하기 위한 7가지 요구 사항이 있습니다.
 
-### <a name="1-a-security-group-on-the-local-domain"></a>1. 로컬 도메인의 보안 그룹
+<a id="1-a-security-group-on-the-local-domain" class="xliff"></a>
+### 1. 로컬 도메인의 보안 그룹
 
 해당 이름이 NetBIOS 도메인 이름과 세 개의 달러 기호(예: *CONTOSO$$$*)로 구성된 기존 도메인의 그룹이어야 합니다. 그룹 범위는 *도메인 로컬*이고 그룹 유형은 *보안*이어야 합니다. 이 도메인의 그룹과 동일한 보안 식별자를 사용하여 전용 관리 포리스트에 그룹을 만들려면 이러한 조건이 충족되어야 합니다. 기존 도메인의 관리자가 기존 도메인에 연결된 워크스테이션에서 다음 PowerShell 명령을 실행하여 이 그룹을 만듭니다.
 
@@ -172,7 +187,8 @@ New-PAMTrust -SourceForest "contoso.local" -Credentials (get-credential)
 New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -SamAccountName 'CONTOSO$$$'
 ```
 
-### <a name="2-success-and-failure-auditing"></a>2. 성공 및 실패 감사
+<a id="2-success-and-failure-auditing" class="xliff"></a>
+### 2. 성공 및 실패 감사
 
 감사를 위한 도메인 컨트롤러의 그룹 정책 설정에는 감사 계정 관리 및 감사 디렉터리 서비스 액세스에 대한 성공 및 실패 감사가 모두 포함되어야 합니다. 이 작업은 기존 도메인의 관리자가 기존 도메인에 연결된 워크스테이션에서 그룹 정책 관리 콘솔을 사용하여 수행할 수 있습니다.
 
@@ -202,7 +218,8 @@ New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -
 
 잠시 후 "컴퓨터 정책 업데이트가 완료되었습니다."라는 메시지가 표시됩니다.
 
-### <a name="3-allow-connections-to-the-local-security-authority"></a>3. 로컬 보안 기관에 대한 연결 허용
+<a id="3-allow-connections-to-the-local-security-authority" class="xliff"></a>
+### 3. 로컬 보안 기관에 대한 연결 허용
 
 도메인 컨트롤러는 배스천 환경의 LSA(로컬 보안 기관)에 대해 RPC over TCP/IP 연결을 허용해야 합니다. 이전 버전의 Windows Server에서 LSA의 TCP/IP 지원은 다음과 같이 레지스트리에서 사용하도록 설정해야 합니다.
 
@@ -210,7 +227,8 @@ New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -
 New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipClientSupport -PropertyType DWORD -Value 1
 ```
 
-### <a name="4-create-the-pam-domain-configuration"></a>4. PAM 도메인 구성 만들기
+<a id="4-create-the-pam-domain-configuration" class="xliff"></a>
+### 4. PAM 도메인 구성 만들기
 
 `New-PAMDomainConfiguration` cmdlet은 관리 도메인의 MIM 서비스 컴퓨터에서 실행해야 합니다. 이 명령의 매개 변수는 기존 도메인의 도메인 이름과 해당 도메인 관리자의 자격 증명입니다.
 
@@ -218,7 +236,8 @@ New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipC
  New-PAMDomainConfiguration -SourceDomain "contoso" -Credentials (get-credential)
 ```
 
-### <a name="5-give-read-permissions-to-accounts"></a>5. 계정에 읽기 사용 권한 부여
+<a id="5-give-read-permissions-to-accounts" class="xliff"></a>
+### 5. 계정에 읽기 사용 권한 부여
 
 역할을 설정하는 데 사용하는 배스천 포리스트의 계정( `New-PAMUser` 및 `New-PAMGroup` cmdlet을 사용하는 관리자)과 MIM 모니터 서비스에서 사용되는 계정에는 해당 도메인의 읽기 권한이 필요합니다.
 
@@ -240,15 +259,18 @@ New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipC
 
 18. Active Directory 사용자 및 컴퓨터를 닫습니다.
 
-### <a name="6-a-break-glass-account"></a>6. 비상 계정 준비
+<a id="6-a-break-glass-account" class="xliff"></a>
+### 6. 비상 계정 준비
 
 권한 있는 액세스 관리 프로젝트의 목표가 도메인에 영구적으로 할당된 도메인 관리자 권한이 있는 계정의 수를 줄이는 것이면 나중에 트러스트 관계에 문제가 발생할 경우에 대비하여 도메인에 *비상* 계정이 있어야 합니다. 프로덕션 포리스트에 비상 시에 액세스하기 위한 계정이 각 도메인에 있어야 하고 해당 계정만 도메인 컨트롤러에 로그인할 수 있어야 합니다. 여러 사이트가 있는 조직의 경우 중복성을 위해 추가 계정이 필요할 수 있습니다.
 
-### <a name="7-update-permissions-in-the-bastion-environment"></a>7. 배스천 환경에서 사용 권한 업데이트
+<a id="7-update-permissions-in-the-bastion-environment" class="xliff"></a>
+### 7. 배스천 환경에서 사용 권한 업데이트
 
 해당 도메인의 시스템 컨테이너에 있는 *AdminSDHolder* 개체에 대한 사용 권한을 검토합니다. *AdminSDHolder* 개체에는 기본 제공 권한 있는 Active Directory 그룹의 구성원인 보안 주체의 사용 권한을 제어하는 데 사용되는 고유한 ACL(액세스 제어 목록)이 있습니다. 도메인의 관리자 권한이 있는 사용자에게 영향을 미치는 방식으로 기본 권한이 변경되어도 배스천 환경에 계정이 있는 사용자에게는 해당 권한이 적용되지 않습니다.
 
-## <a name="select-users-and-groups-for-inclusion"></a>포함할 사용자 및 그룹 선택
+<a id="select-users-and-groups-for-inclusion" class="xliff"></a>
+## 포함할 사용자 및 그룹 선택
 
 다음 단계는 PAM 역할을 정의하고, 해당 역할에서 액세스할 수 있는 사용자 및 그룹을 연결하는 것입니다. 일반적으로는 배스천 환경에서 관리되는 것으로 식별된 계층에 대한 사용자 및 그룹 하위 집합이 여기에 해당합니다. 자세한 내용은 [Privileged Access Management를 위한 역할 정의](defining-roles-for-pam.md)를 참조하세요.
 
