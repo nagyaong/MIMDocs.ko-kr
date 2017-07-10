@@ -16,12 +16,13 @@ ms.translationtype: Human Translation
 ms.sourcegitcommit: 3797f5789bb4e48836eb21776dafd5a2e0e11613
 ms.openlocfilehash: 12c60e12dc5662ff0313e21bb9180b3709969af6
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="mim2016-sp1-pam-deployment-scripts"></a>MIM2016 SP1 PAM 배포 스크립트
+<a id="mim2016-sp1-pam-deployment-scripts" class="xliff"></a>
+# MIM2016 SP1 PAM 배포 스크립트
 
 이 서비스 팩에는 PAM 배포를 보다 쉽게 수행할 수 있도록 배포 스크립트 집합이 도입되었습니다. 이러한 스크립트는 다운로드 센터에서 사용할 수 있습니다. 스크립트를 사용하기 전에 아래의 가정이 사용자 환경에 적용되는지 확인해야 합니다.
 

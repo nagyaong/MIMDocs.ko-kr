@@ -15,13 +15,14 @@ ms.translationtype: Human Translation
 ms.sourcegitcommit: 1ef7b9816d265d17ef68fc54e010e655535dcdc8
 ms.openlocfilehash: 0a5a3f28af58dd59ab805f2836ffeb88f3508ae0
 ms.contentlocale: ko-kr
-ms.lasthandoff: 05/11/2017
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
 
-# <a name="microsoft-identity-manager-2016-password-management"></a>Microsoft Identity Manager 2016 암호 관리
+<a id="microsoft-identity-manager-2016-password-management" class="xliff"></a>
+# Microsoft Identity Manager 2016 암호 관리
 
 여러 사용자 계정의 암호를 관리하는 것은 여러 데이터 원본이 있는 엔터프라이즈 환경을 관리하는 과정에서 겪게 되는 어려운 작업 중 하나입니다. Microsoft Identity Manager(MIM) 2016은 두 개의 암호 관리 솔루션을 제공합니다.
 
@@ -43,7 +44,8 @@ ms.lasthandoff: 05/11/2017
 
 -   MIM 작업에 영향을 받지 않으면서 실시간으로 암호 관리 작업을 수행합니다.
 
-## <a name="password-extensions"></a>암호 확장
+<a id="password-extensions" class="xliff"></a>
+## 암호 확장
 
 디렉터리 서버용 관리 에이전트는 기본적으로 암호 변경과 설정 작업을 지원합니다. 기본적으로 암호 변경과 설정 작업을 지원하지 않는 파일 기반, 데이터베이스와 확장 가능한 연결 관리 에이전트를 대상으로 .NET 암호 확장 DLL(동적 연결 라이브러리)을 만들 수 있습니다.
 .NET 암호 확장 DLL은 암호가 변경되거나 이러한 관리 에이전트에 대한 호출 설정이 호출된 경우 언제든지 호출됩니다. 암호 확장 설정은 동기화 서비스 관리자의 이러한 관리 에이전트에서 구성됩니다. 암호 확장을 구성하는 방법에 대한 자세한 내용은 FIM Developer Reference(FIM 개발자 참조)를 참조하세요.
@@ -60,7 +62,8 @@ ms.lasthandoff: 05/11/2017
 |                                                                           | Microsoft SQL Server                                                                               |
 |                                                                           | Oracle 데이터베이스                                                                                    |
 
-## <a name="password-synchronization"></a>암호 동기화
+<a id="password-synchronization" class="xliff"></a>
+## 암호 동기화
 
 
 암호 동기화는 Active Directory 도메인에서 PCNS(암호 변경 알림 서비스)와 함께 작동하며 Active Directory에서 발생하는 암호 변경이 연결된 다른 데이터 원본으로 자동으로 전파되도록 허용합니다. MIM은 Active Directory 도메인 컨트롤러에서 암호 변경 알림을 수신하는 RPC(원격 프로시저 호출) 서버로서 실행하면서 이 작업을 수행합니다. 암호 변경 요청을 수신하여 인증되면 MIM에서 처리하고 적합한 관리 에이전트에 전파됩니다.
@@ -86,7 +89,8 @@ PCNS는 각 Active Directory 도메인 컨트롤러에서 실행됩니다. 암�
 -   **암호 확장 DLL** – 암호 확장 DLL은 모든 데이터베이스, 확장 가능한 연결, 파일 기반 관리 에이전트에 대한 확장 규칙을 통해 암호 설정 또는 변경 작업을 구현할 방법을 제공합니다.
     연결 디렉터리에 실제로 존재하지는 않지만 프로비전 규칙 확장에서 액세스 또는 설정할 수 있거나 내보내기 특성 흐름에서 사용될 수 있는 "export_password"이라는 암호화된 내보내기 전용 특성을 만들어서 이 작업을 수행할 수 있습니다. 암호 확장을 구성하는 방법에 대한 자세한 내용은 [FIM Developer Reference](https://msdn.microsoft.com/library/windows/desktop/ee652263(v=vs.100).aspx)(FIM 개발자 참조)를 참조하세요.
 
-## <a name="preparing-for-password-synchronization"></a>암호 동기화 준비
+<a id="preparing-for-password-synchronization" class="xliff"></a>
+## 암호 동기화 준비
 
 MIM 및 Active Directory 환경에서 암호 동기화를 설정하기 전에 다음 사항을 확인합니다.
 
@@ -110,7 +114,8 @@ MIM 및 Active Directory 환경에서 암호 동기화를 설정하기 전에 �
 
 암호 동기화 설정에 대한 자세한 내용은 Using Password Synchronization(암호 동기화 사용)을 참조합니다.
 
-## <a name="password-synchronization-process"></a>암호 동기화 프로세스
+<a id="password-synchronization-process" class="xliff"></a>
+## 암호 동기화 프로세스
 
 Active Directory 도메인 컨트롤러에서 다른 연결된 데이터 원본으로 암호 변경 요청을 동기화하는 프로세스가 다음 다이어그램에 나와 있습니다.
 
@@ -126,7 +131,8 @@ Active Directory 도메인 컨트롤러에서 다른 연결된 데이터 원본�
 
 6.  MIM은 조인 테이블 정보를 사용하여 암호 변경을 수신하는 관리 에이전트를 결정하고 암호 변경을 해당 관리 에이전트에게 푸시합니다.
 
-## <a name="password-synchronization-security"></a>암호 동기화 보안
+<a id="password-synchronization-security" class="xliff"></a>
+## 암호 동기화 보안
 
 다음과 같은 암호 동기화 보안 문제가 해결되었습니다.
 
@@ -140,7 +146,8 @@ Active Directory 도메인 컨트롤러에서 다른 연결된 데이터 원본�
 
 -   보안 암호 큐 – PCNS 암호 큐에 저장된 암호는 전달될 때까지 암호화된 상태를 유지합니다.
 
-## <a name="password-synchronization-error-recovery-scenarios"></a>암호 동기화 오류 복구 시나리오
+<a id="password-synchronization-error-recovery-scenarios" class="xliff"></a>
+## 암호 동기화 오류 복구 시나리오
 
 사용자가 암호를 변경할 때마다 오류 없이 변경이 동기화되는 것이 가장 좋습니다. 다음 시나리오는 MIM이 일반적인 동기화 오류에서 복구하는 방법을 설명합니다.
 
@@ -162,7 +169,8 @@ Active Directory 도메인 컨트롤러에서 다른 연결된 데이터 원본�
 | 6927  | 오류       | 암호가 대상 시스템의 암호 정책을 충족하지 않으므로 암호 동기화 설정 작업에 실패했습니다.                                      |
 | 6928  | 오류       | 대상 관리 에이전트에 대한 암호 확장이 암호 설정 작업을 지원하도록 구성되지 않았으므로 암호 동기화 설정 작업에 실패했습니다. |
 
-## <a name="user-based-password-change-management"></a>사용자 기반 암호 변경 관리
+<a id="user-based-password-change-management" class="xliff"></a>
+## 사용자 기반 암호 변경 관리
 
 MIM은 암호 재설정에 WMI(Windows Management Instrumentation)를 사용하는 두 개의 웹 응용 프로그램을 제공합니다. 암호 동기화와 마찬가지로 관리 에이전트 디자이너에서 관리 에이전트를 구성할 때 암호 관리가 활성화됩니다. 암호 관리 및 WMI에 대한 자세한 내용은 MIM Developer Reference(MIM 개발자 참조)를 참조하세요.
 
