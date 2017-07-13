@@ -10,17 +10,14 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1ff73d0bdfcbcb4ab79d0d81feca9abdc33f9213
 ms.openlocfilehash: 1e2fb9a9ae508ab601ebad1dec7acc21dc44d13e
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/10/2017
-
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-<a id="mim-sp1-4414360--service-dynamic-logging" class="xliff"></a>
 # MIM SP1(4.4.1436.0) 서비스 동적 로깅
+<a id="mim-sp1-4414360--service-dynamic-logging" class="xliff"></a>
 4.4.1436.0에서는 새로운 로깅 기능을 도입했습니다. 이 기능을 사용하면 관리자와 지원 엔지니어가 관리 서비스를 다시 시작하지 않고도 로깅을 설정할 수 있습니다.
 
 설치하면 호출되는 Microsoft.ResourceManagement.Service.exe.config에서 다음과 같은 새 줄이 표시됩니다.
@@ -53,4 +50,3 @@ ms.lasthandoff: 07/10/2017
 추적을 보려면 [서비스 추적 뷰어 도구](https://msdn.microsoft.com//library/aa751795(v=vs.110).aspx)를 사용할 수 있습니다.
 
  ![서비스 추적 뷰어 스크린샷](media/mim-service-dynamic-logging/screen04.png)
-

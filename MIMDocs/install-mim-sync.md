@@ -12,15 +12,14 @@ ms.technology: security
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
-ms.openlocfilehash: c6cf0c93679319716c34904ea6239902010e0860
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: 396c7066275db6123f15312cb8f0bc50d544275e
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="install-mim-2016-mim-synchronization-service"></a>MIM 2016 설치: MIM 동기화 서비스
+# MIM 2016 설치: MIM 동기화 서비스
+<a id="install-mim-2016-mim-synchronization-service" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« Exchange Server](prepare-server-exchange.md)
@@ -38,7 +37,8 @@ Microsoft Identity Manager 2016 구성 요소를 설치하려면 먼저 설치 �
 
 2. MIM 설치 패키지의 압축을 풀거나 MIM 이미지 DVD를 마운트합니다.
 
-## <a name="install-mim-2016-synchronization-service"></a>MIM 2016 동기화 서비스 설치
+## MIM 2016 동기화 서비스 설치
+<a id="install-mim-2016-synchronization-service" class="xliff"></a>
 
 1. 압축을 푼 MIM 설치 폴더에서 **Synchronization Service** 폴더로 이동합니다.
 
@@ -105,4 +105,3 @@ Microsoft Identity Manager 2016 구성 요소를 설치하려면 먼저 설치 �
 >[!div class="step-by-step"]  
 [« Exchange Server](prepare-server-exchange.md)
 [MIM 서비스 및 포털 »](install-mim-service-portal.md)
-

@@ -12,14 +12,14 @@ ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
 ms.openlocfilehash: bd73f43a096d58e1f7250e28b59e33f4411e88a3
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="configure-pam-using-scripts"></a>스크립트를 사용하여 PAM 구성
+# 스크립트를 사용하여 PAM 구성
+<a id="configure-pam-using-scripts" class="xliff"></a>
 
 SQL과 SharePoint를 별도의 서버에 설치하려면 아래 지침에 따라 구성해야 합니다. SQL, SharePoint 및 PAM 구성 요소가 동일한 컴퓨터에 설치된 경우 해당 컴퓨터에서 아래 단계를 실행해야 합니다.
 
@@ -39,11 +39,13 @@ SQL과 SharePoint를 별도의 서버에 설치하려면 아래 지침에 따라
 5. 모든 컴퓨터, CORPDC, PRIVDC, PAM 서버, SQL Server 및 SharePoint Server의 %SYSTEMDRIVE%\PAM 폴더에 동일한 PAMDeploymentConfig.xml을 복사합니다.
 
 
-## <a name="deployment-worksheet"></a>배포 워크시트
+## 배포 워크시트
+<a id="deployment-worksheet" class="xliff"></a>
 
 PAMDeploymentConfig.xml 업데이트를 계속 진행하기 전에 업데이트된 복사본을 모든 컴퓨터에 배치합니다.
 
-### <a name="setup"></a>Setup
+### Setup
+<a id="setup" class="xliff"></a>
 
 |컴퓨터   | 실행 권한   |명령   |
 |---|---|---|
@@ -55,7 +57,8 @@ PAMDeploymentConfig.xml 업데이트를 계속 진행하기 전에 업데이트�
 | PAMServer  | 로컬 관리자(도메인 가입 후 MIM 관리자)  | .\PAMDeployment.ps1 메뉴 옵션 5(MIM PAM 설치) 선택   |
 |  PAMServer |MIM 관리자   | .\PAMDeployment.ps1 메뉴 옵션 6(PAM 트러스트 설정) 선택.\PAMDeployment.ps1 메뉴 옵션 6 (PAM 트러스트 설정) |
 
-### <a name="validation"></a>유효성 검사
+### 유효성 검사
+<a id="validation" class="xliff"></a>
 
 |  컴퓨터 | 실행 권한   | 명령   |
 |---|---|---|
@@ -68,9 +71,3 @@ PAMDeploymentConfig.xml 업데이트를 계속 진행하기 전에 업데이트�
 
 >[!div class="step-by-step"]
 [시작 »](sp1-step1-configuring-priv-domain.md)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
-

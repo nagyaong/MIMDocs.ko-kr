@@ -12,15 +12,14 @@ ms.technology: security
 ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
-ms.openlocfilehash: f84fbbdc8de5cfffc8570c52f8298cc69273c3ee
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: 4ad41fc9679be702ab17fb5bef5d3efab5ff5adc
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>MIM 2016 설치: Active Directory와 MIM 서비스 동기화
+# MIM 2016 설치: Active Directory와 MIM 서비스 동기화
+<a id="install-mim-2016-synchronize-active-directory-and-mim-service" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« MIM 서비스 및 포털](install-mim-service-portal.md)
@@ -33,7 +32,8 @@ ms.lasthandoff: 01/24/2017
 
 기본적으로 MIM 동기화 서비스(동기화)에는 구성된 커넥터가 없습니다.  일반적인 첫 단계는 MIM 동기화를 사용하여 기존 Active Directory 계정으로 FIM 서비스 데이터베이스를 채우는 것입니다. 이를 위해 MIM 동기화 서비스 응용 프로그램을 사용합니다.
 
-## <a name="create-the-mim-management-agent"></a>MIM 관리 에이전트 만들기
+## MIM 관리 에이전트 만들기
+<a id="create-the-mim-management-agent" class="xliff"></a>
 MIM MA(관리 에이전트)는 MIM 서비스에 대한 MIM 동기화를 위한 커넥터입니다. 이 커넥터를 만들려면 관리 에이전트 만들기 마법사를 사용하면 됩니다.
 
 MIM 관리 에이전트를 구성할 때 사용자 계정을 지정해야 합니다. 이 문서에서는 이 계정에 대한 이름으로 **MIMMA**를 사용합니다.
@@ -41,7 +41,8 @@ MIM 관리 에이전트를 구성할 때 사용자 계정을 지정해야 합니
 > [!NOTE]
 > MIM 관리 에이전트에 대해 사용하는 계정은 MIM 서비스를 설치하는 동안 지정한 계정과 동일해야 합니다.
 
-###<a name="to-create-the-mim-ma"></a>MIM MA를 만들려면
+###MIM MA를 만들려면
+<a id="to-create-the-mim-ma" class="xliff"></a>
 
 1.  동기화 서비스 관리자를 엽니다.
 
@@ -163,7 +164,8 @@ MIM 관리 에이전트를 구성할 때 사용자 계정을 지정해야 합니
 
 11.  관리 에이전트를 만들려면 **확장 구성** 페이지에서 **마침**을 클릭합니다.
 
-## <a name="create-the-ad-management-agent"></a>AD 관리 에이전트 만들기
+## AD 관리 에이전트 만들기
+<a id="create-the-ad-management-agent" class="xliff"></a>
 Active Directory 관리 에이전트는 AD 도메인 서비스용 커넥터입니다. 이 커넥터를 만들려면 관리 에이전트 만들기 마법사를 사용하면 됩니다.
 
 1. 관리 에이전트 만들기 마법사를 열려면 **작업** 메뉴에서 **만들기**를 클릭합니다.
@@ -225,11 +227,13 @@ Active Directory 관리 에이전트는 AD 도메인 서비스용 커넥터입�
 12. **확장 구성** 페이지에서 **마침**을 클릭합니다.
 
 
-## <a name="create-run-profiles"></a>실행 프로필 만들기
+## 실행 프로필 만들기
+<a id="create-run-profiles" class="xliff"></a>
 
 ADMA 및 MIMMA 커넥터에 대해 실행 프로필을 만듭니다.
 
-### <a name="create-run-profiles-for-the-adma-connector"></a>ADMA 커넥터에 대해 실행 프로필을 만듭니다.
+### ADMA 커넥터에 대해 실행 프로필을 만듭니다.
+<a id="create-run-profiles-for-the-adma-connector" class="xliff"></a>
 
 다음 표에는 ADMA 커넥터에 대해 만들 다섯 가지 실행 프로필이 나와 있습니다.
 
@@ -261,7 +265,8 @@ ADMA 커넥터에 대해 실행 프로필을 만들려면
 
 5. 실행 프로필 구성 대화 상자를 닫으려면 **확인**을 클릭합니다.
 
-### <a name="create-run-profiles-for-the-mimma-connector"></a>MIMMA 커넥터에 대해 실행 프로필 만들기
+### MIMMA 커넥터에 대해 실행 프로필 만들기
+<a id="create-run-profiles-for-the-mimma-connector" class="xliff"></a>
 
 다음 표에는 MIMMA 커넥터에 대한 일치하는 다섯 가지 실행 프로필이 나와 있습니다.
 
@@ -293,7 +298,8 @@ MIMMA 커넥터에 대해 실행 프로필을 만들려면
 
 5. 실행 프로필 구성 대화 상자를 닫으려면 **확인**을 클릭합니다.
 
-## <a name="configure-the-mim-service"></a>MIM 서비스 구성
+## MIM 서비스 구성
+<a id="configure-the-mim-service" class="xliff"></a>
 
 MIM 포털을 사용하여 MIM 서비스에 대한 AD 사용자 인바운드 동기화 규칙을 만듭니다.
 
@@ -347,10 +353,12 @@ AD 사용자 인바운드 동기화 규칙을 만들려면
 
 8. **요약** 탭에서 **제출**을 클릭합니다.
 
-## <a name="initialize-the-testing-environment"></a>테스트 환경 초기화
+## 테스트 환경 초기화
+<a id="initialize-the-testing-environment" class="xliff"></a>
 AD 데이터를 사용하여 MIM 구성을 테스트하려면 먼저 다음 4가지 단계를 수행해야 합니다.
 
-### <a name="enable-provisioning"></a>프로비전 사용
+### 프로비전 사용
+<a id="enable-provisioning" class="xliff"></a>
 
 1. 동기화 서비스 관리자를 엽니다.
 
@@ -360,7 +368,8 @@ AD 데이터를 사용하여 MIM 구성을 테스트하려면 먼저 다음 4가
 
 4. 옵션 대화 상자를 닫으려면 **확인**을 클릭합니다.
 
-### <a name="initialize-the-mimma"></a>MIMMA 초기화
+### MIMMA 초기화
+<a id="initialize-the-mimma" class="xliff"></a>
 
 이 커넥터에서 전체 동기화 주기를 실행합니다. 전체 주기는 다음 실행 프로필로 구성됩니다.
 
@@ -385,13 +394,15 @@ AD 데이터를 사용하여 MIM 구성을 테스트하려면 먼저 다음 4가
 
     - 실행 프로필을 시작하려면 **확인**을 클릭합니다.
 
-#### <a name="configure-attribute-flow-precedence"></a>특성 흐름 우선 순위 구성
+#### 특성 흐름 우선 순위 구성
+<a id="configure-attribute-flow-precedence" class="xliff"></a>
 
 MIM 커넥터를 초기화하는 동안 구성된 동기화 규칙을 메타버스로 가져왔습니다.
 
 이 커넥터에서 제공한 특성의 특성 흐름 우선 순위를 조정하여 AD에 이미 있는 해당 특성이 메타버스로 이동하고, 이후에 MIM 서비스 데이터베이스로도 이동할 수 있도록 합니다.
 
-### <a name="initialize-the-adma"></a>ADMA 초기화
+### ADMA 초기화
+<a id="initialize-the-adma" class="xliff"></a>
 
 Active Directory 커넥터를 초기화하려면 전체 가져오기 및 전체 동기화를 실행해야 합니다. 전체 가져오기는 AD의 기존 개체를 커넥터 공간으로 가져옵니다. 전체 동기화는 MIM 커넥터의 해당 항목과 일치하도록 동기화 규칙을 업데이트합니다.
 
@@ -409,7 +420,8 @@ Active Directory 커넥터를 초기화하려면 전체 가져오기 및 전체 
 
     - 실행 프로필을 시작하려면 **확인**을 클릭합니다.
 
-### <a name="populate-the-mim-service-database"></a>MIM 서비스 데이터베이스 채우기
+### MIM 서비스 데이터베이스 채우기
+<a id="populate-the-mim-service-database" class="xliff"></a>
 
 MIM 서비스 데이터베이스를 개체로 채우려면 MIMMA 커넥터에서 동기화 주기를 실행해야 합니다. 주기는 다음으로 구성됩니다.
 
@@ -433,4 +445,3 @@ MIM 서비스 데이터베이스를 개체로 채우려면 MIMMA 커넥터에서
 
 >[!div class="step-by-step"]
 [« MIM 서비스 및 포털](install-mim-service-portal.md)
-

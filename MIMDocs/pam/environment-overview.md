@@ -12,17 +12,14 @@ ms.technology: active-directory-domain-services
 ms.assetid: 479db14c-1bfb-4d7c-a344-cd718a01f328
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 3e6c5a70c6b9ed140a56135676bbd14a84504317
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-<a id="environment-overview" class="xliff"></a>
 # 환경 개요
+<a id="environment-overview" class="xliff"></a>
 
 Privileged Access Management는 공유 네트워크에서 서로 연결된 별도의 드라이브가 있는 VM(가상 컴퓨터)에서 작동합니다. 이러한 가상 컴퓨터는 Windows 8.1, Windows Server 2012 R2 또는 다른 운영 체제 플랫폼에서 호스트할 수 있습니다.
 
@@ -34,4 +31,3 @@ Privileged Access Management는 공유 네트워크에서 서로 연결된 별�
 
 > [!NOTE]
 > 현재 MIM CTP(Customer Technical Preview)는 이전 CTP의 데이터베이스 또는 디렉터리 콘텐츠와 호환되지 않습니다. 이전에 PAM 또는 다른 시나리오를 위해 MIM을 평가하고 있었던 경우 해당 테스트에 사용한 가상 컴퓨터를 백업하여 보관하고, MIM 시나리오에 대해 이전에 사용하지 않은 새 가상 컴퓨터 이미지를 사용하여 배포를 시작하세요.
-

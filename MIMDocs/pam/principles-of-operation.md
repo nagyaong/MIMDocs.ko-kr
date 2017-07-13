@@ -12,17 +12,14 @@ ms.technology: active-directory-domain-services
 ms.assetid: 6498f68f-36d3-448c-8fe6-649ad5a7f97d
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 53fe79f251c3b18426f16b4007cda49e67d7b028
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-<a id="understand-the-components-of-pam" class="xliff"></a>
 # PAM의 구성 요소 이해
+<a id="understand-the-components-of-pam" class="xliff"></a>
 
 Privileged Access Management는 관리 액세스를 일상적인 사용자 계정과 구분합니다. 이 솔루션은 병렬 포리스트를 사용합니다.
 
@@ -43,4 +40,3 @@ PAM에 대해 구성된 것처럼 MIM 솔루션은 다음 구성 요소를 포�
 그 결과 사용자가 PowerShell cmdlet을 사용하여 권한 상승을 요청하고 해당 요청이 승인되면 MIM 서비스가 PRIV 포리스트의 해당 계정을 PRIV 포리스트의 그룹에 추가합니다. 사용자가 권한 있는 계정으로 로그인할 때 해당 Kerberos 토큰에 CORP 포리스트에 있는 그룹의 SID와 동일한 SID(보안 식별자)가 포함됩니다. CORP 포리스트는 PRIV 포리스트를 트러스트하도록 구성되었으므로 CORP 포리스트의 리소스에 액세스하는 데 사용되는 권한이 높은 계정은, Kerberos 그룹 구성원 자격을 확인하는 리소스에 대해 해당 리소스의 보안 그룹의 구성원이 됩니다. 이는 Kerberos 크로스 포리스트 인증을 통해 제공됩니다.
 
 또한 이러한 구성원 자격은 미리 구성된 시간 간격 이후에는 사용자의 관리 계정이 더 이상 PRIV 포리스트의 그룹에 속해 있지 않도록 시간이 제한되어 있습니다. 그 결과 추가 리소스에 액세스하기 위해 해당 계정을 더 이상 사용할 수 없습니다.
-

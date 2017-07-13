@@ -12,14 +12,14 @@ ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
 ms.openlocfilehash: e608593f40759e3bc995daa56c4575510a71e987
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="step-7-set-up-sid-historysid-filtering"></a>7단계 SID 기록/SID 필터링 설정
+# 7단계 SID 기록/SID 필터링 설정
+<a id="step-7-set-up-sid-historysid-filtering" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« 6단계](sp1-step6-setup-pam-trust.md)
@@ -42,9 +42,3 @@ SID 기록의 경우: </br></br>
 >[!div class="step-by-step"]
 [« 6단계](sp1-step6-setup-pam-trust.md)
 [8 단계»](sp1-step8-pam-deployment-verification.md)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
-

@@ -12,18 +12,18 @@ ms.technology: security
 ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
-ms.openlocfilehash: 89e095cff66984140cdcef3617dd0ccc3d3714d8
-ms.lasthandoff: 02/07/2017
-
-
+ms.openlocfilehash: f8de75a0027371b7ff88b90d3097adc63c02d933
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="enroll-smart-cards-for-non-administrators"></a>관리자가 아닌 사용자의 스마트 카드 등록
+# 관리자가 아닌 사용자의 스마트 카드 등록
+<a id="enroll-smart-cards-for-non-administrators" class="xliff"></a>
 사용자가 사용하는 컴퓨터의 로컬 관리자가 아니면 기본적으로 해당 컴퓨터에 스마트 카드를 등록할 수 없습니다. 다음 절차를 사용하여 이 제한을 해결할 수 있습니다.
 
-## <a name="enabling-smart-card-renewal-for-non-admins-in-mim-2016-certificate-manager"></a>MIM 2016 인증서 관리자에서 관리자가 아닌 사용자가 스마트 카드를 갱신하도록 설정합니다.
+## MIM 2016 인증서 관리자에서 관리자가 아닌 사용자가 스마트 카드를 갱신하도록 설정합니다.
+<a id="enabling-smart-card-renewal-for-non-admins-in-mim-2016-certificate-manager" class="xliff"></a>
 
 1.  **appx 파일의 압축을 풉니다.**
 
@@ -94,4 +94,3 @@ ms.lasthandoff: 02/07/2017
 7.  **관리자가 아닌 계정에서 CM 앱 설치**
 
 8.  **CM 앱을 시작하고 가상 스마트 카드 등록**
-

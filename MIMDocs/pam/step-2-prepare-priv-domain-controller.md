@@ -12,17 +12,14 @@ ms.technology: active-directory-domain-services
 ms.assetid: 0e9993a0-b8ae-40e2-8228-040256adb7e2
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: edc15b41d4248887f4a93217f68d8125f6500585
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-<a id="step-2---prepare-the-first-priv-domain-controller" class="xliff"></a>
 # 2단계 - 첫 번째 PRIV 도메인 컨트롤러 준비
+<a id="step-2---prepare-the-first-priv-domain-controller" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« 1단계](step-1-prepare-corp-domain.md)
@@ -30,13 +27,13 @@ ms.lasthandoff: 07/10/2017
 
 이 단계에서는 관리자 인증에 배스천 환경을 제공하는 새 도메인을 만듭니다.  이 포리스트에는 하나 이상의 도메인 컨트롤러와 하나 이상의 구성원 서버가 필요합니다. 구성원 서버는 다음 단계에서 구성합니다.
 
-<a id="create-a-new-privileged-access-management-domain-controller" class="xliff"></a>
 ## 새 Privileged Access Management 도메인 컨트롤러 만들기
+<a id="create-a-new-privileged-access-management-domain-controller" class="xliff"></a>
 
 이 섹션에서는 새 포리스트의 도메인 컨트롤러 역할을 수행할 가상 컴퓨터를 설정합니다.
 
-<a id="install-windows-server-2012-r2" class="xliff"></a>
 ### Windows Server 2012 R2 설치
+<a id="install-windows-server-2012-r2" class="xliff"></a>
 소프트웨어가 설치되지 않은 또 하나의 새 가상 컴퓨터에 Windows Server 2012 R2를 설치하여 “PRIVDC” 컴퓨터를 만듭니다.
 
 1. Windows Server의 사용자 지정(업그레이드되지 않음) 설치를 수행하려면 선택합니다. 설치할 때 **Windows Server 2012 R2 Standard(GUI 포함 서버) x64**를 지정합니다. **데이터 센터 또는 Server Core**를 _선택하지 마세요_.
@@ -49,8 +46,8 @@ ms.lasthandoff: 07/10/2017
 
 5. 서버가 다시 시작되면 관리자로 로그인합니다. 제어판에서 업데이트를 확인하도록 컴퓨터를 구성하고 필요한 업데이트를 설치합니다. 이 경우 서버를 다시 시작해야 할 수 있습니다.
 
-<a id="add-roles" class="xliff"></a>
 ### 역할 추가
+<a id="add-roles" class="xliff"></a>
 AD DS(Active Directory 도메인 서비스) 및 DNS 서버 역할을 추가합니다.
 
 1. 관리자 권한으로 PowerShell을 시작합니다.
@@ -63,8 +60,8 @@ AD DS(Active Directory 도메인 서비스) 및 DNS 서버 역할을 추가합�
   Install-WindowsFeature AD-Domain-Services,DNS –restart –IncludeAllSubFeature -IncludeManagementTools
   ```
 
-<a id="configure-registry-settings-for-sid-history-migration" class="xliff"></a>
 ### SID 기록 마이그레이션에 대한 레지스트리 설정을 구성합니다.
+<a id="configure-registry-settings-for-sid-history-migration" class="xliff"></a>
 
 PowerShell을 시작하고 SAM(보안 계정 관리자) 데이터베이스에 대한 RPC(원격 프로시저 호출) 액세스를 허용하도록 원본 도메인을 구성하는 다음 명령을 입력합니다.
 
@@ -72,15 +69,15 @@ PowerShell을 시작하고 SAM(보안 계정 관리자) 데이터베이스에 �
 New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name TcpipClientSupport –PropertyType DWORD –Value 1
 ```
 
-<a id="create-a-new-privileged-access-management-forest" class="xliff"></a>
 ## 새 Privileged Access Management 포리스트 만들기
+<a id="create-a-new-privileged-access-management-forest" class="xliff"></a>
 
 다음으로, 서버를 새 포리스트의 도메인 컨트롤러로 승격합니다.
 
 이 문서에서 이름 priv.contoso.local은 새 포리스트의 도메인 이름으로 사용됩니다.  포리스트의 이름은 중요하지 않으며 조직의 기존 포리스트 이름에 종속될 필요가 없습니다. 그러나 새 포리스트의 도메인 및 NetBIOS 이름은 모두 고유해야 하며 조직에 있는 다른 도메인의 경우와 고유해야 합니다.  
 
-<a id="create-a-domain-and-forest" class="xliff"></a>
 ### 도메인 및 포리스트 만들기
+<a id="create-a-domain-and-forest" class="xliff"></a>
 
 1. PowerShell 창에서 다음 명령을 입력하여 새 도메인을 만듭니다.  이렇게 하면 이전 단계에서 만든 상위 도메인(contoso.local)에서 DNS 위임도 만듭니다.  나중에 DNS를 구성하려면 `CreateDNSDelegation -DNSDelegationCredential $ca` 매개 변수를 생략합니다.
 
@@ -96,8 +93,8 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 포리스트 만들기가 완료되면 서버가 자동으로 다시 시작합니다.
 
-<a id="create-user-and-service-accounts" class="xliff"></a>
 ### 사용자 및 서비스 계정 만들기
+<a id="create-user-and-service-accounts" class="xliff"></a>
 MIM 서비스 및 포털 설정을 위한 사용자 및 서비스 계정을 만듭니다. 이러한 계정은 priv.contoso.local 도메인의 사용자 컨테이너에서 사용됩니다.
 
 1. 서버를 다시 시작한 후 도메인 관리자(PRIV\\Administrator)로 PRIVDC에 로그인합니다.
@@ -168,8 +165,8 @@ MIM 서비스 및 포털 설정을 위한 사용자 및 서비스 계정을 만�
   Add-ADGroupMember "Domain Admins" MIMService
   ```
 
-<a id="configure-auditing-and-logon-rights" class="xliff"></a>
 ### 감사 및 로그온 권한 구성
+<a id="configure-auditing-and-logon-rights" class="xliff"></a>
 
 PAM 구성을 포리스트에서 설정하려면 감사를 설정해야 합니다.  
 
@@ -218,8 +215,8 @@ PAM 구성을 포리스트에서 설정하려면 감사를 설정해야 합니�
   잠시 후 "컴퓨터 정책 업데이트가 완료되었습니다."라는 메시지와 함께 완료됩니다.
 
 
-<a id="configure-dns-name-forwarding-on-privdc" class="xliff"></a>
 ### PRIVDC에서 DNS 이름 전달 구성
+<a id="configure-dns-name-forwarding-on-privdc" class="xliff"></a>
 
 PRIVDC에서 PowerShell을 사용하여 PRIV 도메인이 다른 기존 포리스트를 인식하도록 DNS 이름 전달을 구성합니다.
 
@@ -236,8 +233,8 @@ PRIVDC에서 PowerShell을 사용하여 PRIV 도메인이 다른 기존 포리�
 > [!NOTE]
 > 다른 포리스트 또한 이 도메인 컨트롤러에 PRIV 포리스트에 대한 DNS 쿼리를 라우팅할 수 있어야 합니다.  기존 Active Directory 포리스트가 여러 개인 경우 각 해당 포리스트에 DNS 조건부 전달자도 추가해야 합니다.
 
-<a id="configure-kerberos" class="xliff"></a>
 ### Kerberos 구성
+<a id="configure-kerberos" class="xliff"></a>
 
 1. PowerShell을 사용하여 SharePoint, PAM REST API와 MIM 서비스가 Kerberos 인증을 사용할 수 있도록 SPN을 추가합니다.
 
@@ -251,8 +248,8 @@ PRIVDC에서 PowerShell을 사용하여 PRIV 도메인이 다른 기존 포리�
 > [!NOTE]
 > 이 문서의 다음 단계에는 MIM 2016 서버 구성 요소를 단일 컴퓨터에 설치하는 방법을 설명합니다. 고가용성을 위해 다른 서버를 추가하려는 경우 [FIM 2010: Kerberos 인증 설정](http://social.technet.microsoft.com/wiki/contents/articles/3385.fim-2010-kerberos-authentication-setup.aspx)에 설명된 대로 추가 Kerberos 구성이 필요합니다.
 
-<a id="configure-delegation-to-give-mim-service-accounts-access" class="xliff"></a>
 ### MIM 서비스 계정 액세스를 제공하는 위임 구성
+<a id="configure-delegation-to-give-mim-service-accounts-access" class="xliff"></a>
 
 PRIVDC에서 도메인 관리자로 다음 단계를 수행합니다.
 
@@ -295,13 +292,13 @@ PRIVDC에서 도메인 관리자로 다음 단계를 수행합니다.
   ```
 20. 이러한 변경 내용이 적용되도록 PRIVDC 서버를 다시 시작합니다.
 
-<a id="prepare-a-priv-workstation" class="xliff"></a>
 ## PRIV 워크스테이션 준비
+<a id="prepare-a-priv-workstation" class="xliff"></a>
 
 PRIV 리소스(예: MIM)의 유지 관리를 수행하기 위한 PRIV 도메인에 가입할 워크스테이션 컴퓨터가 아직 없는 경우 다음 지침에 따라 워크스테이션을 준비합니다.  
 
-<a id="install-windows-81-or-windows-10-enterprise" class="xliff"></a>
 ### Windows 8.1 또는 Windows 10 Enterprise 설치
+<a id="install-windows-81-or-windows-10-enterprise" class="xliff"></a>
 
 소프트웨어가 설치되지 않은 또 하나의 새 가상 컴퓨터에 Windows 8.1 Enterprise 또는 Windows 10 Enterprise를 설치하여 *“PRIVWKSTN”* 컴퓨터를 만듭니다.
 
@@ -320,4 +317,3 @@ PRIV 리소스(예: MIM)의 유지 관리를 수행하기 위한 PRIV 도메인�
 >[!div class="step-by-step"]
 [« 1단계](step-1-prepare-corp-domain.md)
 [3단계 »](step-3-prepare-pam-server.md)
-

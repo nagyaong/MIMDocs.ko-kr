@@ -12,15 +12,14 @@ ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
-ms.openlocfilehash: eb572bc3f062763265a9f24910a82be0cac77a5e
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: 974015bbba3a36e1107da33655eedf94e2938582
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="install-mim-2016-mim-service-and-portal"></a>MIM 2016 설치: MIM 서비스 및 포털
+# MIM 2016 설치: MIM 서비스 및 포털
+<a id="install-mim-2016-mim-service-and-portal" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« MIM 동기화 서비스](install-mim-sync.md)
@@ -36,7 +35,8 @@ ms.lasthandoff: 01/24/2017
 마지막 단계에서 MIM 설치 패키지를 설정하지 않은 경우 다시 돌아가서 Microsoft Identity Manager 2016 구성 요소를 설치한 후 계속합니다.
 
 
-## <a name="configure-mim-service-and-portal-for-installation"></a>설치를 위한 MIM 서비스 및 포털 구성
+## 설치를 위한 MIM 서비스 및 포털 구성
+<a id="configure-mim-service-and-portal-for-installation" class="xliff"></a>
 
 1. 압축을 푼 **서비스 및 포털** 하위 폴더에서 **MIM 서비스 및 포털 설치 관리자**를 실행합니다.
 
@@ -78,7 +78,8 @@ ms.lasthandoff: 01/24/2017
 
 16. 방화벽에서 포트 5725 및 5726 열기에 대한 확인란 및 MIM 포털에 대해 모든 인증된 사용자 액세스 권한 부여에 대한 확인란을 선택합니다.
 
-## <a name="configure-mim-password-registration-portal"></a>MIM 암호 등록 포털 구성
+## MIM 암호 등록 포털 구성
+<a id="configure-mim-password-registration-portal" class="xliff"></a>
 
 1.  SSPR 등록을 위한 서비스 계정 이름을 *contoso\MIMSSPR*로 설정하고 암호를 *Pass@word1*로 설정합니다.
 
@@ -90,7 +91,8 @@ ms.lasthandoff: 01/24/2017
 
 4. 다음 MIM 암호 등록 포털 구성 화면에서 암호 등록 포털에 대한 MIM 서비스 서버 주소로 *http://CorpIDM.contoso.local*을 지정합니다.
 
-## <a name="configure-mim-password-reset-portal"></a>FIM 암호 재설정 포털 구성
+## FIM 암호 재설정 포털 구성
+<a id="configure-mim-password-reset-portal" class="xliff"></a>
 
 1.  SSPR 등록을 위한 서비스 계정 이름을 *Contoso\MIMSSPRService*로 설정하고 암호를 *Pass@word1*로 설정합니다.
 
@@ -102,7 +104,8 @@ ms.lasthandoff: 01/24/2017
 
 4. 다음 MIM 암호 등록 포털 구성 화면에서 암호 등록 포털에 대한 MIM 서비스 서버 주소로 *CorpIDname http://CorpIDname.domain.local*을 지정합니다.
 
-## <a name="install-mim-service-and-portal"></a>MIM 서비스 및 포털 설치
+## MIM 서비스 및 포털 설치
+<a id="install-mim-service-and-portal" class="xliff"></a>
 
 사전 설치 정의가 모두 준비되면 **설치**를 클릭하여 선택한 **서비스 및 포털** 구성 요소 설치를 시작합니다.
 
@@ -150,4 +153,3 @@ ms.lasthandoff: 01/24/2017
 >[!div class="step-by-step"]  
 [« MIM 동기화 서비스](install-mim-sync.md)
 [데이터베이스를 동기화 »](install-mim-sync-ad-service.md)
-
