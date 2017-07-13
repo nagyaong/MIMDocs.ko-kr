@@ -12,15 +12,14 @@ ms.technology: security
 ms.assetid: 8bc2f6d2-9f53-4db6-aee6-a937ae468163
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: b26fe7bc56ab8229054afb1409c3652e81464a3d
-ms.lasthandoff: 05/02/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="connect-to-your-directories"></a>디렉터리에 연결
+# 디렉터리에 연결
+<a id="connect-to-your-directories" class="xliff"></a>
 
 커넥터는 연결된 특정 데이터 원본을 MIM(Microsoft Identity Manager)에 연결합니다. 커넥터는 데이터를 연결된 데이터 원본에서 MIM으로 이동합니다. 또한 MIM의 데이터가 수정되는 경우 커넥터는 데이터를 연결된 데이터 원본으로 내보내 MIM과 동기화된 상태로 유지합니다. 일반적으로 연결된 각 디렉터리에는 커넥터가 하나 이상 있습니다.
 
@@ -28,7 +27,8 @@ Forefront Identity Manager에서는 커넥터를 관리 에이전트라고 했�
 
 이 문서에서는 MIM에 포함된 커넥터만 다루지만 Extensible Connectivity 2.0용 커넥터를 사용하면 더 많은 데이터 원본과 연결할 수 있습니다. 이 방법으로 자체 커넥터를 만든 파트너도 있으며 전체 목록은 Wiki의 [FIM 2010: Management Agents from Partners](http://social.technet.microsoft.com/wiki/contents/articles/1589.fim-2010-management-agents-from-partners.aspx)(FIM 2010: 파트너의 관리 에이전트)에서 확인할 수 있습니다.
 
-## <a name="supported-connectors-in-mim-2016"></a>MIM 2016에서 지원되는 커넥터
+## MIM 2016에서 지원되는 커넥터
+<a id="supported-connectors-in-mim-2016" class="xliff"></a>
 
 | Name | 지원되는 연결된 데이터 원본 버전 |
 | ---- | ----------------------------------------------- |
@@ -55,7 +55,7 @@ Forefront Identity Manager에서는 커넥터를 관리 에이전트라고 했�
 | 고정 너비 텍스트 파일 | 고정 너비 텍스트 파일 |
 | LDIF(LDAP 데이터 교환 형식) | LDIF(LDAP 데이터 교환 형식) |
 
-## <a name="related-topics"></a>관련 항목
+## 관련 항목
+<a id="related-topics" class="xliff"></a>
 
 [FIM 2010 R2의 관리 에이전트](https://technet.microsoft.com/library/jj133885.aspx)
-

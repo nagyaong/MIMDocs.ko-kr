@@ -12,15 +12,14 @@ ms.technology: security
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
-ms.openlocfilehash: e16bcc36fe4bccb621ba4d649aa0b015f2adbcdd
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: bd9c0da17c97cfc15023ad624a249e0f4a2d0825
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="set-up-a-domain"></a>도메인 설정
+# 도메인 설정
+<a id="set-up-a-domain" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [Windows Server 2012 R2 »](prepare-server-ws2012r2.md)
@@ -29,7 +28,8 @@ MIM(Microsoft Identity)은 AD(Active Directory) 도메인에서 작동합니다.
 
 이 문서에서는 MIM과 함께 작동하도록 도메인을 준비하는 단계를 안내합니다.
 
-## <a name="create-user-accounts-and-groups"></a>사용자 계정 및 그룹 만들기
+## 사용자 계정 및 그룹 만들기
+<a id="create-user-accounts-and-groups" class="xliff"></a>
 
 MIM 배포의 모든 구성 요소에는 도메인에 자체 ID가 있어야 합니다. 여기에는 SharePoint 및 SQL은 물론 서비스와 동기화같은 MIM 구성 요소도 해당됩니다.
 
@@ -92,4 +92,3 @@ MIM 배포의 모든 구성 요소에는 도메인에 자체 ID가 있어야 합
 
 >[!div class="step-by-step"]
 [Windows Server 2012 R2 »](prepare-server-ws2012r2.md)
-

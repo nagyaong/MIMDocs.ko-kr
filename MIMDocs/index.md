@@ -2,15 +2,14 @@
 layout: LandingPage
 title: "Microsoft Identity Manager 설명서 | Microsoft Docs"
 description: "Microsoft Identity Manager 사용 방법을 알아봅니다."
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3797f5789bb4e48836eb21776dafd5a2e0e11613
 ms.openlocfilehash: c49fbae1892bfa0207a1615d11e600fe21d638c8
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/10/2017
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-<a id="microsoft-identity-manager-documentation" class="xliff"></a>
 # Microsoft Identity Manager 설명서
+<a id="microsoft-identity-manager-documentation" class="xliff"></a>
 
 Microsoft Identity Manager 2016은 Active Directory, LDAP, Oracle 및 Azure Active Directory를 포함한 다른 응용 프로그램을 비롯한 여러 온-프레미스 인증 스토어를 원활하게 브리징하여 Microsoft의 ID 및 액세스 관리 솔루션을 하나로 바인딩합니다. 이는 온-프레미스 LOB 응용 프로그램과 Saas 솔루션에 일관성 있는 경험을 제공합니다.
 
@@ -147,4 +146,3 @@ FIM(Forefront Identity Manager) 일반 지원이 2017년 10월 10일에 종료�
         </div>
     </li>
 </ul>
-

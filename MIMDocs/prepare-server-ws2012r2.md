@@ -12,15 +12,14 @@ ms.technology: security
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
-ms.openlocfilehash: 1cb0d6cd310372ecaeff47c9cc4461ebc43b3390
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: a0241964edb21ca4bf938ae84693b9947f6e2efb
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="set-up-an-identity-management-server-windows-server-2012-r2"></a>ID 관리 서버 설치: Windows Server 2012 R2
+# ID 관리 서버 설치: Windows Server 2012 R2
+<a id="set-up-an-identity-management-server-windows-server-2012-r2" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« 도메인 준비](preparing-domain.md)
@@ -32,7 +31,8 @@ ms.lasthandoff: 01/24/2017
 > - 도메인 이름 - **contoso**
 > - 암호 - **Pass@word1**
 
-## <a name="join-windows-server-2012-r2-to-your-domain"></a>도메인에 Windows Server 2012 R2 가입
+## 도메인에 Windows Server 2012 R2 가입
+<a id="join-windows-server-2012-r2-to-your-domain" class="xliff"></a>
 
 최소 8GB의 RAM이 있는 Windows Server 2012 R2 컴퓨터를 시작합니다. 설치할 때 “Windows Server 2012 R2 Standard(GUI 포함 서버) x64” 버전을 지정합니다.
 
@@ -63,7 +63,8 @@ ms.lasthandoff: 01/24/2017
     Install-WindowsFeature Web-WebServer, Net-Framework-Features,rsat-ad-powershell,Web-Mgmt-Tools,Application-Server,Windows-Identity-Foundation,Server-Media-Foundation,Xps-Viewer –includeallsubfeature -restart -source d:\sources\SxS
     ```
 
-## <a name="configure-the-server-security-policy"></a>서버 보안 정책 구성
+## 서버 보안 정책 구성
+<a id="configure-the-server-security-policy" class="xliff"></a>
 
 새로 만든 계정이 서비스로 실행될 수 있도록 서버 보안 정책을 설정합니다.
 
@@ -94,7 +95,8 @@ ms.lasthandoff: 01/24/2017
 12. 로컬 보안 정책 창을 닫습니다.
 
 
-## <a name="change-the-iis-windows-authentication-mode"></a>IIS Windows 인증 모드 변경
+## IIS Windows 인증 모드 변경
+<a id="change-the-iis-windows-authentication-mode" class="xliff"></a>
 
 1.  PowerShell 창을 엽니다.
 
@@ -109,4 +111,3 @@ ms.lasthandoff: 01/24/2017
 >[!div class="step-by-step"]  
 [« 도메인 준비](preparing-domain.md)
 [SQL Server 2014 »](prepare-server-sql2014.md)
-

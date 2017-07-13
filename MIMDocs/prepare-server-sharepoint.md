@@ -12,15 +12,14 @@ ms.technology: security
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
-ms.openlocfilehash: 2af432036033f8914d00228cd3d2d1af84f13054
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: 1114be2ce13ca012582676803eb1dc29cadae596
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="set-up-an-identity-management-server-sharepoint"></a>ID 관리 서버 설치: SharePoint
+# ID 관리 서버 설치: SharePoint
+<a id="set-up-an-identity-management-server-sharepoint" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« SQL Server 2014](prepare-server-sql2014.md)
@@ -33,7 +32,8 @@ ms.lasthandoff: 01/24/2017
 > - 암호 - **Pass@word1**
 
 
-## <a name="install-sharepoint-foundation-2013-with-sp1"></a>**SharePoint Foundation 2013 SP1** 설치
+## **SharePoint Foundation 2013 SP1** 설치
+<a id="install-sharepoint-foundation-2013-with-sp1" class="xliff"></a>
 
 > [!NOTE]
 > 필수 구성 요소를 다운로드하려면 설치 관리자가 인터넷에 연결되어 있어야 합니다. 컴퓨터가 인터넷 연결을 제공하지 않는 가상 네트워크에 있는 경우 인터넷 연결을 제공하는 컴퓨터에 네트워크 인터페이스를 추가합니다. 설치가 완료되면 비활성화할 수 있습니다.
@@ -60,7 +60,8 @@ SharePoint Foundation 2013 SP1을 설치하려면 다음 단계를 수행합니�
 
 4.  설치가 완료된 후 마법사를 실행합니다.
 
-## <a name="run-the-wizard-to-configure-sharepoint"></a>마법사를 실행하여 SharePoint 구성
+## 마법사를 실행하여 SharePoint 구성
+<a id="run-the-wizard-to-configure-sharepoint" class="xliff"></a>
 
 **SharePoint 제품 구성 마법사**에 나열된 단계에 따라 MIM과 함께 작동하도록 SharePoint를 구성합니다.
 
@@ -80,7 +81,8 @@ SharePoint Foundation 2013 SP1을 설치하려면 다음 단계를 수행합니�
 
 8. **Creating a Site Collection** (사이트 컬렉션 만들기) 창에서 **건너뛰기**를 클릭합니다.  **마침**을 클릭합니다.
 
-## <a name="prepare-sharepoint-to-host-the-mim-portal"></a>MIM 포털을 호스트할 SharePoint 준비
+## MIM 포털을 호스트할 SharePoint 준비
+<a id="prepare-sharepoint-to-host-the-mim-portal" class="xliff"></a>
 
 > [!NOTE]
 > 처음에는 SSL이 구성되어 있지 않습니다. 이 포털에 액세스할 수 있으려면 SSL 또는 이와 동등한 것을 구성해야 합니다.
@@ -134,4 +136,3 @@ SharePoint Foundation 2013 SP1을 설치하려면 다음 단계를 수행합니�
 >[!div class="step-by-step"]  
 [« SQL Server 2014](prepare-server-sql2014.md)
 [Exchange Server »](prepare-server-exchange.md)
-

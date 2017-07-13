@@ -12,14 +12,14 @@ ms.technology: security
 ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2d3092d7d41090e4e03b971fb62ca896cc8db282
 ms.openlocfilehash: 20e733f17d6ed590844c526888b649eb6bf5f322
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="upgrade-from-forefront-identity-manager-2010-r2"></a>Forefront Identity Manager 2010 R2에서 업그레이드
+# Forefront Identity Manager 2010 R2에서 업그레이드
+<a id="upgrade-from-forefront-identity-manager-2010-r2" class="xliff"></a>
 
 환경이 FIM(Forefront Identity Manager) 2010 R2이며 MIM(Microsoft Identity Manager) 2016을 시도하려는 경우 이 문서를 가이드로 사용합니다. 이 업그레이드에는 세 가지 단계가 있습니다.
 
@@ -36,7 +36,8 @@ ms.openlocfilehash: 20e733f17d6ed590844c526888b649eb6bf5f322
 - FIM 2010 R2용으로 구성된 로컬 및 환경 필수 구성 요소(SQL Server, Exchange Server, SharePoint Services 등)
 
 
-## <a name="preparation"></a>준비
+## 준비
+<a id="preparation" class="xliff"></a>
 
 1.  FIM 서비스 데이터베이스, FIM 동기화 데이터베이스, FIM 동기화 및 서비스 구성 및 소프트웨어를 백업합니다.
 
@@ -44,7 +45,8 @@ ms.openlocfilehash: 20e733f17d6ed590844c526888b649eb6bf5f322
 
 3.  MIM 소프트웨어를 다운로드하거나 압축을 풉니다.
 
-## <a name="upgrade-the-synchronization-service"></a>동기화 서비스 업그레이드
+## 동기화 서비스 업그레이드
+<a id="upgrade-the-synchronization-service" class="xliff"></a>
 
 1.  FIM 2010 R2 동기화 서비스("동기화")가 배포되는 서버에 관리자로 로그인합니다.
 
@@ -82,7 +84,8 @@ ms.openlocfilehash: 20e733f17d6ed590844c526888b649eb6bf5f322
 
 13. **동기화 서비스** 가 다시 시작되었습니다.
 
-## <a name="upgrade-the-service-and-portal"></a>서비스 및 포털 업그레이드
+## 서비스 및 포털 업그레이드
+<a id="upgrade-the-service-and-portal" class="xliff"></a>
 
 1.  FIM 2010 R2 서비스 및 포털이 배포되는 서버에 관리자로 로그인합니다.
 
@@ -138,7 +141,8 @@ ms.openlocfilehash: 20e733f17d6ed590844c526888b649eb6bf5f322
 
 14. MIM 포털을 설치할 때 FIM 포털이 현재 호스트된 SharePoint 사이트 컬렉션의 URL을 입력합니다. **다음**을 클릭합니다.
 
-## <a name="install-the-mim-password-registration-portal"></a>MIM 암호 등록 포털 설치
+## MIM 암호 등록 포털 설치
+<a id="install-the-mim-password-registration-portal" class="xliff"></a>
 
 1. MIM 암호 등록 포털을 설치하는 경우 요청된 URL을 암호 등록 포털에 입력합니다. **다음**을 클릭합니다.
 
@@ -168,7 +172,8 @@ ms.openlocfilehash: 20e733f17d6ed590844c526888b649eb6bf5f322
 
     2.  이전에 FIM 암호 재설정에 대해 구성된 대로, 이 포털에 엑스트라넷 및 인트라넷 사용자가 액세스할 수 있는지, 아니면 인트라넷 사용자만 액세스할 수 있는지 결정합니다.
 
-## <a name="install-the-mim-password-reset-portal"></a>MIM 암호 재설정 포털 설치
+## MIM 암호 재설정 포털 설치
+<a id="install-the-mim-password-reset-portal" class="xliff"></a>
 
 1. MIM 암호 재설정 포털을 설치하는 경우 액세스 세부 정보 및 자격 증명을 MIM 암호 재설정에 입력합니다.
 
@@ -188,7 +193,8 @@ ms.openlocfilehash: 20e733f17d6ed590844c526888b649eb6bf5f322
 
     2.  이 포털에 엑스트라넷 및 인트라넷 사용자가 액세스할 수 있는지, 아니면 인트라넷 사용자만 액세스할 수 있는지 지정합니다.
 
-## <a name="finish-installation-and-upgrade"></a>설치 및 업그레이드 완료
+## 설치 및 업그레이드 완료
+<a id="finish-installation-and-upgrade" class="xliff"></a>
 
 1. 모든 구성 정의가 성공적으로 완료되면 설치 페이지가 나타납니다. **설치** 를 클릭하여 MIM 서비스 및 포털의 설치 및 업그레이드를 시작합니다.
 
@@ -201,9 +207,3 @@ ms.openlocfilehash: 20e733f17d6ed590844c526888b649eb6bf5f322
 참고: SSPR을 위해 현재 FIM 추가 기능 및 확장이 사용자의 컴퓨터에 배포된 경우 모든 FIM 추가 기능 및 확장이 MIM 2016으로 업그레이드될 때까지 암호 재설정을 위해 새 MFA 전화 게이트를 구성하지 마세요.  FIM 2010 및 FIM 2010 R2 추가 기능 및 확장은 새 게이트를 인식하지 않으므로 오류가 발생하며 사용자가 암호 재설정을 완료할 수 없습니다.
 
 Microsoft Identity Manager 2016 SP1 업그레이드 지침은 다음 [Microsoft Identity Manager 2016 Service Pack 1 update package](https://blogs.technet.microsoft.com/iamsupport/2016/11/08/microsoft-identity-manager-2016-service-pack-1-update-package/)(Microsoft Identity Manager 2016 서비스 팩 1 업데이트 패키지)를 참조하세요.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
-

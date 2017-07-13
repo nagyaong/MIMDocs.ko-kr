@@ -12,17 +12,14 @@ ms.technology: active-directory-domain-services
 ms.assetid: eef248c4-b3b6-4b28-9dd0-ae2f0b552425
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 1239ca2c0c6d376420723da01d7aa42821f5980f
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-<a id="step-5--establish-trust-between-priv-and-corp-forests" class="xliff"></a>
 # 5단계 - PRIV 및 CORP 포리스트 간에 트러스트 설정
+<a id="step-5--establish-trust-between-priv-and-corp-forests" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« 4단계](step-4-install-mim-components-on-pam-server.md)
@@ -31,8 +28,8 @@ ms.lasthandoff: 07/10/2017
 
 contoso.local과 같은 각 CORP 도메인에 대해 PRIV 및 CONTOSO 도메인 컨트롤러는 트러스트에 구속되어야 합니다. 이렇게 하면 PRIV 도메인의 사용자가 CORP 도메인의 리소스에 액세스할 수 있습니다.
 
-<a id="connect-each-domain-controller-to-its-counterpart" class="xliff"></a>
 ## 각 도메인 컨트롤러를 상대 도메인 컨트롤러에 연결
+<a id="connect-each-domain-controller-to-its-counterpart" class="xliff"></a>
 
 트러스트를 설정하기 전에, 다른 도메인 컨트롤러/DNS 서버의 IP 주소를 기반으로 상대방 도메인 컨트롤러의 DNS 이름 확인을 위해 각 도메인 컨트롤러가 구성되어야 합니다.
 
@@ -50,8 +47,8 @@ contoso.local과 같은 각 CORP 도메인에 대해 PRIV 및 CONTOSO 도메인 
 
     ![priv 키에 대한 파일 구조 - 스크린샷](./media/PAM_GS_DNS_Manager.png)
 
-<a id="establish-trust-on-pamsrv" class="xliff"></a>
 ## PAMSRV에 트러스트 설정
+<a id="establish-trust-on-pamsrv" class="xliff"></a>
 
 PAMSRV에서 각 도메인(예: CORPDC)과 단방향 트러스트를 설정하여 CORP 도메인 컨트롤러가 PRIV 포리스트를 트러스트하도록 합니다.
 
@@ -73,8 +70,8 @@ PAMSRV에서 각 도메인(예: CORPDC)과 단방향 트러스트를 설정하�
     New-PAMDomainConfiguration -SourceDomain "contoso" -Credentials $ca
     ```
 
-<a id="give-forests-read-access-to-active-directory" class="xliff"></a>
 ## Active Directory에 포리스트 읽기 권한 부여
+<a id="give-forests-read-access-to-active-directory" class="xliff"></a>
 
 각 기존 포리스트에 대해 PRIV 관리자 및 모니터링 서비스에 의한 AD의 읽기 권한을 사용하도록 설정합니다.
 
@@ -97,8 +94,8 @@ PAMSRV에서 각 도메인(예: CORPDC)과 단방향 트러스트를 설정하�
 
     또한 출력에 **이 트러스트에 대해 SID 필터링을 사용할 수 없습니다.**가 나타나야 합니다. 자세한 내용은 [SID 필터 격리 사용 안 함](http://technet.microsoft.com/library/cc772816.aspx)을 참조하세요.
 
-<a id="start-the-monitoring-and-component-services" class="xliff"></a>
 ## 모니터링 및 구성 요소 서비스 시작
+<a id="start-the-monitoring-and-component-services" class="xliff"></a>
 
 1.  PRIV 도메인 관리자(PRIV\Administrator)로 PAMSRV에 로그인합니다.
 
@@ -116,4 +113,3 @@ PAMSRV에서 각 도메인(예: CORPDC)과 단방향 트러스트를 설정하�
 >[!div class="step-by-step"]
 [« 4단계](step-4-install-mim-components-on-pam-server.md)
 [6단계 »](step-6-transition-group-to-pam.md)
-

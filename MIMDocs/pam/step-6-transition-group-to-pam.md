@@ -12,17 +12,14 @@ ms.technology: active-directory-domain-services
 ms.assetid: 7b689eff-3a10-4f51-97b2-cb1b4827b63c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: aeffca2c4e5467ec039c2077a88f36a652493e90
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-<a id="step-6--transition-a-group-to-privileged-access-management" class="xliff"></a>
 # 6단계 – 그룹을 권한 있는 액세스 관리로 전환
+<a id="step-6--transition-a-group-to-privileged-access-management" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« 5단계 ](step-5-establish-trust-between-priv-corp-forests.md)
@@ -90,4 +87,3 @@ cmdlet은 각 그룹에 대해 한 번, 그룹의 각 구성원에 대해서 한
 >[!div class="step-by-step"]
 [« 5단계 ](step-5-establish-trust-between-priv-corp-forests.md)
 [7단계 »](step-7-elevate-user-access.md)
-

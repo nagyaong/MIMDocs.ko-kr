@@ -12,24 +12,21 @@ ms.technology: active-directory-domain-services
 ms.assetid: 82a9085c-9667-4b3b-8079-657eab1d1e58
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 2985215821db843d2f90d8a34250a8ca6a84b592
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-<a id="hardware-and-software-requirements" class="xliff"></a>
 # 하드웨어 및 소프트웨어 요구 사항
+<a id="hardware-and-software-requirements" class="xliff"></a>
 
 Privileged Access Management의 하드웨어 요구 사항은 기본 소프트웨어 플랫폼의 하드웨어 요구 사항을 초과하지 않습니다. 메모리나 디스크 공간이 충분하고 네트워크에 연결되어 있으면 됩니다.
 
 이 문서에서는 기본 배포에 대한 최소 요구 사항을 제공합니다. 성능, 확장성 또는 고가용성을 보여 주기 위한 용도가 아니며, 대기업 또는 프로덕션 환경에서 권장되는 배포 토폴로지를 나타내지 않습니다.
 
-<a id="installing-from-software-packages" class="xliff"></a>
 ## 소프트웨어 패키지에서 설치
+<a id="installing-from-software-packages" class="xliff"></a>
 
 TechNet Evaluation Center 또는 MSDN에서 다음 소프트웨어를 다운로드할 수 있습니다.  
 - Microsoft Identity Manager 2016
@@ -39,33 +36,33 @@ TechNet Evaluation Center 또는 MSDN에서 다음 소프트웨어를 다운로�
 다음 소프트웨어는 GitHub에서 다운로드할 수 있습니다.  
 - PAMSamplePortal: REST API용 샘플 웹 응용 프로그램 포함
 
-<a id="required-software" class="xliff"></a>
 ## 필수 소프트웨어
+<a id="required-software" class="xliff"></a>
 
 - Windows Server 2012 R2  
 - Windows 8.1 Enterprise 또는 Windows 10 Enterprise  
 - SQL Server 2012 서비스 팩 1 또는 SQL Server 2014  
 
-<a id="evaluation-software" class="xliff"></a>
 ## 평가용 소프트웨어
+<a id="evaluation-software" class="xliff"></a>
 
 Windows, SQL Server 또는 Windows Server에 대해 라이선스가 없는 경우 평가판을 다운로드할 수 있습니다.
 
-<a id="technet-evaluation-center" class="xliff"></a>
 ### TechNet Evaluation Center
+<a id="technet-evaluation-center" class="xliff"></a>
 
 - [Windows Server 2012 R2](https://www.microsoft.com/evalcenter/evaluate-windows-server-2012-r2)  
 - [Windows 8.1 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-8-1-enterprise)  
 - [Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)  
 
-<a id="microsoft-download-center" class="xliff"></a>
 ### Microsoft 다운로드 센터
+<a id="microsoft-download-center" class="xliff"></a>
 
 - [SQL Server](https://www.microsoft.com/download/details.aspx?id=29066)  
 - [SharePoint Foundation 2013 SP1 및 필수 조건](https://www.microsoft.com/download/details.aspx?id=42039)
 
-<a id="hardware-requirements" class="xliff"></a>
 ## 하드웨어 요구 사항
+<a id="hardware-requirements" class="xliff"></a>
 
 PAM의 각 구성 요소는 소프트웨어 제품의 시스템 요구 사항을 참조하세요.
 
@@ -81,4 +78,3 @@ PRIVDC의 경우:
 PAMSRV의 경우:
 - [Windows Server 2012 R2](https://technet.microsoft.com/library/dn303418.aspx)  
 - [SQL Server 2012](https://msdn.microsoft.com/library/ms143506(sql.110).aspx) 또는 [SQL Server 2014](https://msdn.microsoft.com/en-us/library/ms143506(v=sql.120).aspx)
-

@@ -12,18 +12,18 @@ ms.technology: security
 ms.assetid: fed5ada9-d80f-4825-aad7-4172ac5d71d3
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
-ms.openlocfilehash: 23cfb1134d1cbf2cf838354cb7d915084803cd41
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: 274039a6866c5c0fda807e4326220ecf785ca3bb
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="create-software-certificates-with-certificate-manager"></a>인증서 관리자를 사용하여 소프트웨어 인증서 만들기
+# 인증서 관리자를 사용하여 소프트웨어 인증서 만들기
+<a id="create-software-certificates-with-certificate-manager" class="xliff"></a>
 소프트웨어 인증서를 등록하고 갱신하는 데 관리자 권한 및 가상 스마트 카드가 필요하지 않습니다. 어느 시점에 인증서 작업을 허용하라는 메시지가 표시되고 이는 정상입니다.
 
-## <a name="create-a-software-certificate-profile-template-in-mim-2016-certificate-manager"></a>MIM 2016 인증서 관리자에서 소프트웨어 인증서 프로필 템플릿 만들기
+## MIM 2016 인증서 관리자에서 소프트웨어 인증서 프로필 템플릿 만들기
+<a id="create-a-software-certificate-profile-template-in-mim-2016-certificate-manager" class="xliff"></a>
 
 1.  가상 스마트 카드를 위해 요청하는 인증서에 대한 템플릿을 만듭니다. mmc를 엽니다.
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 01/24/2017
 
     1.  **일반** 탭의 표시 이름 필드에 **보관된 인증서 템플릿**을 입력합니다.
 
-    2.  b.    **요청 처리** 탭에서
+    2.  b.  **요청 처리** 탭에서
 
         1.  **용도** 를 서명 및 암호화로 설정합니다.
 
@@ -73,7 +73,8 @@ ms.lasthandoff: 01/24/2017
 
     10. 목록에서 방금 만든 새 템플릿(**보관된 인증서 템플릿**)을 선택하고 **확인**을 클릭합니다.
 
-## <a name="create-the-profile-template"></a>프로필 템플릿 만들기
+## 프로필 템플릿 만들기
+<a id="create-the-profile-template" class="xliff"></a>
 
 1.  CM 포털에 관리자 권한이 있는 사용자로 로그인합니다.
 
@@ -96,4 +97,3 @@ ms.lasthandoff: 01/24/2017
 10. 보관된 인증서를 다시 발급하려면 **Reissue archived certificates** (보관된 인증서 다시 발행) 왼쪽에 있는 확인란을 선택하고 **확인**을 클릭합니다.
 
 11. 가상 스마트 카드 CM을 사용 중인 경우 데이터 컬렉션이 설정되어 있으면 작동하지 않으므로 데이터 컬렉션 항목을 사용하지 않도록 설정해야 합니다. 왼쪽 창에서 정책을 클릭하고 **Sample data item** (샘플 데이터 항목) 옆에 있는 확인란의 선택을 취소한 다음 **Delete data collection items**(데이터 컬렉션 항목 삭제)를 클릭하여 각각의 정책 및 모든 정책에 대해 데이터 컬렉션을 사용하지 않도록 설정합니다. 그런 다음 **확인**을 클릭합니다.
-

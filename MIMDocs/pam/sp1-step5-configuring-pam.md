@@ -12,13 +12,14 @@ ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
 ms.openlocfilehash: 862f62ab9bac87bcee31c35e249db34740e9fb14
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-# <a name="step-5-installingconfiguring-pam"></a>5단계 PAM 설치/구성
+# 5단계 PAM 설치/구성
+<a id="step-5-installingconfiguring-pam" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« 4단계](sp1-step4-configuring-sharepoint.md)
@@ -46,9 +47,3 @@ PAM 서버를 다시 부팅한 후 MIMAdmin 계정으로 컴퓨터에 다시 로
 >[!div class="step-by-step"]
 [« 4단계](sp1-step4-configuring-sharepoint.md)
 [6단계 »](sp1-step6-setup-pam-trust.md)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
-

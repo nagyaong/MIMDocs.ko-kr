@@ -12,17 +12,14 @@ ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 1164e7efb70d911497b08248b68f8d929bc6d3fb
-ms.contentlocale: ko-kr
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/13/2017
 ---
-
-<a id="step-1---prepare-the-host-and-the-corp-domain" class="xliff"></a>
 # 1단계 - 호스트 및 CORP 도메인 준비
+<a id="step-1---prepare-the-host-and-the-corp-domain" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [2단계 »](step-2-prepare-priv-domain-controller.md)
@@ -32,13 +29,13 @@ ms.lasthandoff: 07/10/2017
 
 Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 기존 AD(Active Directory) 도메인이 이미 있으면 도메인 관리자인 경우 해당 도메인을 대신 사용할 수 있습니다.  
 
-<a id="prepare-the-corp-domain-controller" class="xliff"></a>
 ## CORP 도메인 컨트롤러 준비
+<a id="prepare-the-corp-domain-controller" class="xliff"></a>
 
 이 섹션에서는 CORP 도메인에 대한 도메인 컨트롤러를 설정하는 방법을 설명합니다. CORP 도메인의 관리자는 배스천 환경에서 관리됩니다. 이 예제에 사용된 CORP 도메인의 DNS(Domain Name System) 이름은 *contoso.local*입니다.
 
-<a id="install-windows-server" class="xliff"></a>
 ### Windows Server 설치
+<a id="install-windows-server" class="xliff"></a>
 
 가상 컴퓨터에 Windows Server 2012 R2 또는 Windows Server 2016 Technical Preview 4 이상을 설치하여 *CORPDC*라는 컴퓨터를 만듭니다.
 
@@ -52,8 +49,8 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 5. 서버가 다시 시작되면 관리자로 로그인합니다. 제어판으로 이동합니다. 업데이트를 확인하고 필요한 업데이트를 설치하도록 컴퓨터를 구성합니다. 서버를 다시 시작합니다.
 
-<a id="add-roles-to-establish-a-domain-controller" class="xliff"></a>
 ### 역할을 추가하여 도메인 컨트롤러 설정
+<a id="add-roles-to-establish-a-domain-controller" class="xliff"></a>
 
 이 섹션에서는 AD DS(Active Directory 도메인 서비스), DNS 서버 및 파일 서버(파일 및 저장소 서비스 섹션의 일부) 역할을 추가하고 이 서버의 수준을 새 포리스트 contoso.local의 도메인 컨트롤러로 올립니다.
 
@@ -78,8 +75,8 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 4. 서버를 다시 시작한 후 도메인 관리자로 CORPDC에 로그인합니다. 도메인 관리자는 일반적으로 CONTOSO\\Administrator이며 암호는 CORPDC에 Windows를 설치할 때 만든 것입니다.
 
-<a id="create-a-group" class="xliff"></a>
 ### 그룹 만들기
+<a id="create-a-group" class="xliff"></a>
 
 그룹이 아직 없는 경우 Active Directory에서 감사용 그룹을 만듭니다. 그룹의 이름은 NetBIOS 도메인 이름과 세 개의 달러 기호(예: *CONTOSO$$$*)로 구성되어야 합니다.
 
@@ -97,8 +94,8 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 경우에 따라 이미 그룹이 있을 수 있습니다. 도메인이 AD 마이그레이션 시나리오에도 사용된 경우 이는 정상입니다.
 
-<a id="create-additional-users-and-groups-for-demonstration-purposes" class="xliff"></a>
 ### 데모용 추가 사용자 및 그룹 만들기
+<a id="create-additional-users-and-groups-for-demonstration-purposes" class="xliff"></a>
 
 새 CORP 도메인을 만든 경우 PAM 시나리오를 시연하려면 추가 사용자 및 그룹을 만들어야 합니다. 데모용 사용자 및 그룹은 도메인 관리자가 될 수 없거나 AD의 adminSDHolder 설정에 의해 제어됩니다.
 
@@ -127,8 +124,8 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
   Set-ADUser –identity Jen –Enabled 1 -DisplayName "Jen"
   ```
 
-<a id="configure-auditing" class="xliff"></a>
 ### 감사 구성
+<a id="configure-auditing" class="xliff"></a>
 
 해당 포리스트에 PAM 구성을 설정하려면 기존 포리스트에서 감사를 사용하도록 설정해야 합니다.  
 
@@ -156,8 +153,8 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 잠시 후 **컴퓨터 정책 업데이트가 완료되었습니다**라는 메시지가 표시됩니다.
 
-<a id="configure-registry-settings" class="xliff"></a>
 ### 레지스트리 설정 구성
+<a id="configure-registry-settings" class="xliff"></a>
 
 이 섹션에서는 Privileged Access Management 그룹 만들기에 사용되는 sID 기록 마이그레이션에 필요한 레지스트리 설정을 구성합니다.
 
@@ -173,16 +170,16 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 CORPDC 도메인 컨트롤러가 다시 시작됩니다. 이 레지스트리 설정에 대한 자세한 내용은 [ADMTv2를 사용하여 포리스트 간 sIDHistory 마이그레이션 문제를 해결하는 방법](http://support.microsoft.com/kb/322970)을 참조하세요.
 
-<a id="prepare-a-corp-workstation-and-resource" class="xliff"></a>
 ## CORP 워크스테이션 및 리소스 준비
+<a id="prepare-a-corp-workstation-and-resource" class="xliff"></a>
 
 도메인에 가입한 워크스테이션 컴퓨터가 아직 없는 경우 다음 지침에 따라 준비합니다.  
 
 > [!NOTE]
 > 이미 도메인에 가입한 워크스테이션이 있으면 [데모용 리소스 만들기](#create-a-resource-for-demonstration-purposes)로 건너뜁니다.
 
-<a id="install-windows-81-or-windows-10-enterprise-as-a-vm" class="xliff"></a>
 ### VM으로 Windows 8.1 또는 Windows 10 Enterprise 설치
+<a id="install-windows-81-or-windows-10-enterprise-as-a-vm" class="xliff"></a>
 
 소프트웨어가 설치되지 않은 또 하나의 새 가상 컴퓨터에 Windows 8.1 Enterprise 또는 Windows 10 Enterprise를 설치하여 *CORPWKSTN* 컴퓨터를 만듭니다.
 
@@ -194,8 +191,8 @@ CORPDC 도메인 컨트롤러가 다시 시작됩니다. 이 레지스트리 설
 
 4. 제어판에서 CORPWKSTN 컴퓨터를 contoso.local 도메인에 도메인 가입합니다. Contoso 도메인 관리자 자격 증명을 제공해야 합니다. 그런 다음 이 작업이 완료되면 CORPWKSTN 컴퓨터를 다시 시작합니다.
 
-<a id="create-a-resource-for-demonstration-purposes" class="xliff"></a>
 ### 데모용 리소스 만들기
+<a id="create-a-resource-for-demonstration-purposes" class="xliff"></a>
 
 PAM을 사용하여 보안 그룹 기반 액세스 제어를 시연하려면 리소스가 필요합니다.  리소스가 아직 없는 경우 데모용 파일 폴더를 사용할 수 있습니다.  그러면 contoso.local 도메인에 만든 "CorpAdmins" AD 개체와 "Jen"을 사용합니다.
 
@@ -225,4 +222,3 @@ PAM을 사용하여 보안 그룹 기반 액세스 제어를 시연하려면 리
 
 >[!div class="step-by-step"]
 [2단계 »](step-2-prepare-priv-domain-controller.md)
-
