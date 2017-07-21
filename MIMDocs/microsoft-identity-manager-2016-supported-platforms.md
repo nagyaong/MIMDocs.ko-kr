@@ -5,7 +5,7 @@ keywords:
 author: fimguy
 ms.author: fimguy
 manager: femila
-ms.date: 06/06/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,14 +13,13 @@ ms.assetid: 4978f60d-044d-4e84-8d93-65801fce1144
 ms.reviewer: mwahl
 ms.suite: ems
 ms.custom: mim
-ms.openlocfilehash: e8f1d72930cd5998b5d9957e8b8f5dbd958f8342
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: f2b2bb2c9144e8624bf2a7780093f3d4e553747f
+ms.sourcegitcommit: 0cb8269f07a5f419d2d1cd760d9cc78b8a1c8aa9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/14/2017
 ---
-# MIM 2016에 대해 지원되는 플랫폼
-<a id="supported-platforms-for-mim-2016" class="xliff"></a>
+# <a name="supported-platforms-for-mim-2016"></a>MIM 2016에 대해 지원되는 플랫폼
 
 다음 표에서는 Microsoft Identity Manager 2016의 각 구성 요소에 대한 지원되는 플랫폼 및 버전을 설명합니다. *로 표시된 버전은 MIM 2016 서비스 팩 1에서만 지원됩니다.
 
@@ -32,10 +31,10 @@ ms.lasthandoff: 07/13/2017
 | | 사용자 프로비저닝, PCNS 및 GAL 동기화를 위한 Active Directory(선택 사항)|Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | 사서함 프로비전 및 GAL 동기화를 위한 Exchange(선택 사항)|Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1<br/>Exchange Server 2016* |
 | | 개발 환경(선택 사항) | Visual Studio 2012<br/>Visual Studio 2013 <br/> Visual Studio 2015 <br/> Visual Studio 2017* |
-| | 추가 연결된 시스템(선택 사항) | Active Directory 도메인 서비스<br/>Active Directory<br/>Lightweight Directory Services<br/>SQL Server 2000 이상<br/>SharePoint Server 2013<br/> SharePoint Server 2016 * <br/> 기타 타사 제품 |
+| | 추가 연결된 시스템(선택 사항) | Active Directory 도메인 서비스<br/>Active Directory<br/>Lightweight Directory Services<br/>SQL Server 2008 이상<br/>SharePoint Server 2013<br/> SharePoint Server 2016 * <br/> 기타 타사 제품 |
 | **MIM 서비스 및 포털** | Windows Server | Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | 배스천 환경 PAM 포리스트를 위한 Active Directory | Windows Server 2012 R2 <br/> Windows Server 2016 * |
-| | 기존 포리스트에 대한 Active Directory | Windows Server 2008 <br/> Windows Server 2008 R2 * <br/> Windows Server 2012 * <br/> Windows Server 2012 R2 * <br/> Windows Server 2016 * |
+| | PAM 시나리오 기존 포리스트에 대한 Active Directory | Windows Server 2008 <br/> Windows Server 2008 R2 * <br/> Windows Server 2012 * <br/> Windows Server 2012 R2 * <br/> Windows Server 2016 * |
 | | MIM 서비스 데이터베이스 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
 | | SharePoint | SharePoint Foundation 2010<br/>SharePoint Foundation 2013 SP1 <br/> SharePoint 2016 * |
 | | MIM 서비스 승인 및 그룹 관리 메일을 위한 메일 서버(선택 사항) | Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * <br/> Exchange Online*(알림에만 해당) |
@@ -46,7 +45,7 @@ ms.lasthandoff: 07/13/2017
 | **MIM 암호 다시 설정 및 등록 포털** | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | 웹 브라우저 | 모든 주요 브라우저 |
 | **MIM 추가 기능 및 확장** | Windows | Windows 7<br/>Windows 8<br/>Windows 8.1<br/>Windows 10 |
-| | Outlook 통합(선택 사항) | Outlook 2007 SP2<br/>Outlook 2010<br/>Outlook 2013 <br/> Outlook 2016(Windows 10) * |
+| | Outlook 통합(선택 사항) | Outlook 2010<br/>Outlook 2013 <br/> Outlook 2016(Windows 10) * |
 | | PAM PowerShell 요청자 cmdlet(선택 사항) | Windows 8.1<br/>Windows 10 |
 | **MIM 인증서 관리**(서버 및 CA 통합) | Windows server | Windows Server 2008 R2 SP1<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | 인증 기관 | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
