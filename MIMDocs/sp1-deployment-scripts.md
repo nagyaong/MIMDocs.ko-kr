@@ -5,21 +5,20 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
-ms.date: 01/10/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: 12c60e12dc5662ff0313e21bb9180b3709969af6
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: ae8f6a87f57c95e073b40d3cda944c71f1bf7247
+ms.sourcegitcommit: 0cb8269f07a5f419d2d1cd760d9cc78b8a1c8aa9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/14/2017
 ---
-# MIM2016 SP1 PAM 배포 스크립트
-<a id="mim2016-sp1-pam-deployment-scripts" class="xliff"></a>
+# <a name="mim2016-sp1-pam-deployment-scripts"></a>MIM2016 SP1 PAM 배포 스크립트
 
 이 서비스 팩에는 PAM 배포를 보다 쉽게 수행할 수 있도록 배포 스크립트 집합이 도입되었습니다. 이러한 스크립트는 다운로드 센터에서 사용할 수 있습니다. 스크립트를 사용하기 전에 아래의 가정이 사용자 환경에 적용되는지 확인해야 합니다.
 
@@ -31,6 +30,6 @@ ms.lasthandoff: 07/13/2017
 5. 유효성 검사 옵션의 경우 이 단계를 실행할 전용 클라이언트 컴퓨터가 있는 것으로 가정합니다.
 
 >[!NOTE]
->스크립트를 실행하는 데 문제가 있는 경우 로그를 확인해야 할 수 있습니다. 모든 스크립트 로그는 %AppData%\MIMPAMInstall에 저장됩니다. 폴더를 Zip 파일로 압축하여 작업 및 오류에 대한 세부 정보와 함께 전자 메일mim2016@microsoft.com로 보내 주세요.
+>스크립트를 실행하는 데 문제가 있는 경우 로그를 확인해야 할 수 있습니다. 모든 스크립트 로그는 %AppData%\MIMPAMInstall에 저장됩니다. 폴더를 Zip 파일로 압축하여 지원 사례에서 작업 및 오류에 대한 세부 정보와 함께 이를 포함하세요.
 
 PAM 배포 스크립트를 통해 시작할 준비가 되셨나요? [스크립트를 사용하여 PAM 구성](./pam/sp1-pam-configure-using-scripts.md)
