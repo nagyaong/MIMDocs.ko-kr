@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# ID 관리 서버 설치: SQL Server 2014
-<a id="set-up-an-identity-management-server-sql-server-2014" class="xliff"></a>
+# <a name="set-up-an-identity-management-server-sql-server-2014"></a>ID 관리 서버 설치: SQL Server 2014
 
 >[!div class="step-by-step"]
 [« Windows Server 2012 R2](prepare-server-ws2012r2.md)
@@ -31,8 +30,7 @@ ms.lasthandoff: 07/13/2017
 > - 도메인 이름 - **contoso**
 > - 암호 - **Pass@word1**
 
-## **SQL Server 2014 Standard Edition** 설치
-<a id="install-sql-server-2014-standard-edition" class="xliff"></a>
+## <a name="install-sql-server-2014-standard-edition"></a>**SQL Server 2014 Standard Edition** 설치
 
 1. 도메인 관리자로 **PowerShell** 을 시작합니다.
 

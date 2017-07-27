@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# ID 관리 서버 설치: Windows Server 2012 R2
-<a id="set-up-an-identity-management-server-windows-server-2012-r2" class="xliff"></a>
+# <a name="set-up-an-identity-management-server-windows-server-2012-r2"></a>ID 관리 서버 설치: Windows Server 2012 R2
 
 >[!div class="step-by-step"]
 [« 도메인 준비](preparing-domain.md)
@@ -31,8 +30,7 @@ ms.lasthandoff: 07/13/2017
 > - 도메인 이름 - **contoso**
 > - 암호 - **Pass@word1**
 
-## 도메인에 Windows Server 2012 R2 가입
-<a id="join-windows-server-2012-r2-to-your-domain" class="xliff"></a>
+## <a name="join-windows-server-2012-r2-to-your-domain"></a>도메인에 Windows Server 2012 R2 가입
 
 최소 8GB의 RAM이 있는 Windows Server 2012 R2 컴퓨터를 시작합니다. 설치할 때 “Windows Server 2012 R2 Standard(GUI 포함 서버) x64” 버전을 지정합니다.
 
@@ -63,8 +61,7 @@ ms.lasthandoff: 07/13/2017
     Install-WindowsFeature Web-WebServer, Net-Framework-Features,rsat-ad-powershell,Web-Mgmt-Tools,Application-Server,Windows-Identity-Foundation,Server-Media-Foundation,Xps-Viewer –includeallsubfeature -restart -source d:\sources\SxS
     ```
 
-## 서버 보안 정책 구성
-<a id="configure-the-server-security-policy" class="xliff"></a>
+## <a name="configure-the-server-security-policy"></a>서버 보안 정책 구성
 
 새로 만든 계정이 서비스로 실행될 수 있도록 서버 보안 정책을 설정합니다.
 
@@ -95,8 +92,7 @@ ms.lasthandoff: 07/13/2017
 12. 로컬 보안 정책 창을 닫습니다.
 
 
-## IIS Windows 인증 모드 변경
-<a id="change-the-iis-windows-authentication-mode" class="xliff"></a>
+## <a name="change-the-iis-windows-authentication-mode"></a>IIS Windows 인증 모드 변경
 
 1.  PowerShell 창을 엽니다.
 

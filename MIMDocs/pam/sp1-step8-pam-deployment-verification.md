@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# 8단계 PAM 배포 확인
-<a id="step-8-pam-deployment-verification" class="xliff"></a>
+# <a name="step-8-pam-deployment-verification"></a>8단계 PAM 배포 확인
 
 >[!div class="step-by-step"]
 [« 7단계](sp1-step7-setup-sidhistory-sidfiltering.md)

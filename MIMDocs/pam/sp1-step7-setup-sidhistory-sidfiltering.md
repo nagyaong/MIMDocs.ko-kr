@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# 7단계 SID 기록/SID 필터링 설정
-<a id="step-7-set-up-sid-historysid-filtering" class="xliff"></a>
+# <a name="step-7-set-up-sid-historysid-filtering"></a>7단계 SID 기록/SID 필터링 설정
 
 >[!div class="step-by-step"]
 [« 6단계](sp1-step6-setup-pam-trust.md)

@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# 도메인 설정
-<a id="set-up-a-domain" class="xliff"></a>
+# <a name="set-up-a-domain"></a>도메인 설정
 
 >[!div class="step-by-step"]
 [Windows Server 2012 R2 »](prepare-server-ws2012r2.md)
@@ -28,8 +27,7 @@ MIM(Microsoft Identity)은 AD(Active Directory) 도메인에서 작동합니다.
 
 이 문서에서는 MIM과 함께 작동하도록 도메인을 준비하는 단계를 안내합니다.
 
-## 사용자 계정 및 그룹 만들기
-<a id="create-user-accounts-and-groups" class="xliff"></a>
+## <a name="create-user-accounts-and-groups"></a>사용자 계정 및 그룹 만들기
 
 MIM 배포의 모든 구성 요소에는 도메인에 자체 ID가 있어야 합니다. 여기에는 SharePoint 및 SQL은 물론 서비스와 동기화같은 MIM 구성 요소도 해당됩니다.
 

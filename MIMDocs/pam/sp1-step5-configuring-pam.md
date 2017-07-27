@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# 5단계 PAM 설치/구성
-<a id="step-5-installingconfiguring-pam" class="xliff"></a>
+# <a name="step-5-installingconfiguring-pam"></a>5단계 PAM 설치/구성
 
 >[!div class="step-by-step"]
 [« 4단계](sp1-step4-configuring-sharepoint.md)

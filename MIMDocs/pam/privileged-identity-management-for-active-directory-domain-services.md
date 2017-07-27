@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# Active Directory 도메인 서비스에 대한 Privileged Access Management
-<a id="privileged-access-management-for-active-directory-domain-services" class="xliff"></a>
+# <a name="privileged-access-management-for-active-directory-domain-services"></a>Active Directory 도메인 서비스에 대한 Privileged Access Management
 PAM(Privileged Access Management)은 조직이 기존 Active Directory 환경 내에서 권한 있는 액세스를 제한할 수 있도록 지원하는 솔루션입니다.
 
 Privileged Access Management는 다음 두 가지 목표를 수행합니다.
@@ -30,16 +29,14 @@ Privileged Access Management는 다음 두 가지 목표를 수행합니다.
 > [!NOTE]
 > PAM은 MIM(Microsoft Identity Manager)을 사용하여 구현된 PIM([Privileged Identity Management](https://azure.microsoft.com/documentation/articles/active-directory-privileged-identity-management-configure/))의 인스턴스입니다.
 
-## PAM은 어떤 문제를 해결하는 데 도움을 주나요?
-<a id="what-problems-does-pam-help-solve" class="xliff"></a>
+## <a name="what-problems-does-pam-help-solve"></a>PAM은 어떤 문제를 해결하는 데 도움을 주나요?
 요즘 회사에서는 Active Directory 환경 내에서의 리소스 액세스가 문제가 되고 있습니다. 특히 까다로운 부분은 해시 패스, 티켓 패스, 창 피싱 및 Kerberos 타협을 포함하는 취약점, 권한 없는 권한 증가 및 다른 종류의 무단 액세스 등에 대한 뉴스입니다.
 
 요즘 공격자는 너무 쉽게 Domain Admins 계정 자격 증명을 얻고 사후에 이러한 공격자를 확인하기는 너무 어렵습니다. PAM의 목표는 악의적인 사용자가 권한을 얻을 수 있는 기회를 줄이는 반면 환경에 대한 사용자의 제어 및 인식을 높이는 것입니다.
 
 PAM을 사용하면 공격자가 네트워크에 침투하고 권한 있는 계정 액세스 권한을 얻기 어려워집니다. PAM은 다양한 도메인에 조인된 컴퓨터 및 해당 컴퓨터의 응용 프로그램에서 액세스를 제어하는 권한 있는 그룹을 추가로 보호합니다. 또한 자세한 모니터링, 자세한 표시 유형 및 더 세분화된 컨트롤을 추가하여 권한 있는 관리자가 누구이며 무엇을 하는지 조직이 볼 수 있습니다. PAM은 환경에서 관리 계정이 어떻게 사용되는지 조직이 확인할 수 있습니다.
 
-## PAM 설정 방법
-<a id="how-is-pam-set-up" class="xliff"></a>
+## <a name="how-is-pam-set-up"></a>PAM 설정 방법
 PAM은 Just-in-Time 관리의 원칙을 작성하며 [JEA(Just Enough Administration)](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2014/DCIM-B362)와 관련됩니다. JEA는 관리자가 이러한 명령을 실행하기 위해 권한을 얻을 수 있는 수행할 권한 있는 작업 및 끝점에 대한 명령 집합을 정의하는 Windows PowerShell 도구 키트입니다. JEA에서 관리자는 특정 권한이 있는 사용자가 특정 작업을 수행할 수 있도록 결정합니다. 적합한 사용자가 해당 작업을 수행해야 할 때마다 해당 사용 권한을 사용할 수 있습니다. 악의적인 사용자가 액세스 권한을 도용할 수 없도록 사용 권한은 지정된 기간 후 만료됩니다.
 
 PAM 설정 및 작업은 네 단계가 있습니다.
@@ -54,8 +51,7 @@ PAM 설정 및 작업은 네 단계가 있습니다.
 
 4.  **모니터링**: PAM은 권한 있는 액세스 요청의 감사, 경고 및 보고서를 추가합니다. 권한 있는 액세스의 기록을 검토할 수 있으며 작업을 수행한 사용자를 참조할 수 있습니다. 활동이 유효한지를 결정하고 원래 포리스트에서 권한 있는 그룹에 직접 사용자를 추가하려는 시도와 같은 권한 없는 활동을 식별할 수 있습니다. 이 단계는 "내부" 공격자를 추적할 뿐만 아니라 악성 소프트웨어를 식별하기도 합니다.
 
-## PAM 작동 방법
-<a id="how-does-pam-work" class="xliff"></a>
+## <a name="how-does-pam-work"></a>PAM 작동 방법
 PAM은 AD DS의 새로운 기능, 특히 도메인 계정 인증 및 권한, 그리고 Microsoft Identity Manager의 새로운 기능을 기반으로 합니다. PAM은 기존 Active Directory 환경에서 권한 있는 계정을 분리합니다. 권한 있는 계정을 사용해야 하는 경우 먼저 요청한 다음 승인해야 합니다. 승인 후에 권한 있는 계정은 사용자 또는 응용 프로그램의 현재 포리스트가 아닌 새 요새 포리스트에서 외래 주체 그룹을 통해 권한이 주어집니다. 방호 포리스트를 사용하면 조직은 사용자가 권한 있는 그룹의 멤버일 경우 사용자 인증을 하는 방법과 같은 제어를 강화합니다.
 
 또한 Active Directory, MIM 서비스 및 솔루션의 다른 부분은 고가용성 구성으로 배포할 수 있습니다.
@@ -78,8 +74,7 @@ PAM은 다음과 같은 이점이 있습니다.
 
 -   **사용자 지정 가능한 워크플로**: MIM 워크플로는 다른 시나리오에서 구성할 수 있고 요청하는 사용자 또는 요청된 역할의 매개 변수를 기반으로 다양한 워크플로를 사용할 수 있습니다.
 
-## 사용자가 권한 있는 액세스를 요청하는 방법
-<a id="how-do-users-request-privileged-access" class="xliff"></a>
+## <a name="how-do-users-request-privileged-access"></a>사용자가 권한 있는 액세스를 요청하는 방법
 사용자는 다음과 같이 다양한 방법으로 요청을 제출할 수 있습니다.  
 - MIM 서비스 웹 서비스 API  
 - REST 끝점  
@@ -87,8 +82,7 @@ PAM은 다음과 같은 이점이 있습니다.
 
 [권한 있는 액세스 관리 cmdlet](https://technet.microsoft.com/library/mt604080.aspx)에 대해 자세히 알아보세요.
 
-## 어떤 워크플로 및 모니터링 옵션을 사용할 수 있습니까?
-<a id="what-workflows-and-monitoring-options-are-available" class="xliff"></a>
+## <a name="what-workflows-and-monitoring-options-are-available"></a>어떤 워크플로 및 모니터링 옵션을 사용할 수 있습니까?
 예로써 PIM을 설정하기 전에 사용자가 관리 그룹의 멤버라고 가정해 봅니다. PIM 설치의 일부로써 사용자를 관리 그룹에서 제거하고 MIM에서 정책을 만듭니다. 정책은 해당 사용자가 관리자 권한을 요청하고 MFA로 인증되었는지 지정합니다. 요청이 승인되고 요새 포리스트의 권한 있는 그룹에 사용자를 위한 별도 계정을 추가합니다.
 
 요청이 승인되었다고 가정하고 작업 워크플로가 직접 요새 포리스트 Active Directory와 통신하여 그룹에 사용자를 넣습니다. 예를 들어 Jen이 HR 데이터베이스 관리를 요청하면 Jen에 대한 관리 계정은 몇 초 이내 요새 포리스트에서 권한 있는 그룹에 추가됩니다. 해당 그룹에서 관리자 계정의 구성원 자격은 시간 제한이 지나면 만료됩니다. Windows Server 기술 미리 보기를 사용하여 해당 멤버 자격을 요새 포리스트의 Windows Server 2012 R2와 함께 시간 제한이 있는 Active Directory와 연결합니다. MIM로 해당 시간 제한을 적용합니다.

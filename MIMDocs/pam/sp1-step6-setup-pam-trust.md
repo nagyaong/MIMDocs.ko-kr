@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# 6단계 PAM 트러스트 설정
-<a id="step-6-set-up-the-pam-trust" class="xliff"></a>
+# <a name="step-6-set-up-the-pam-trust"></a>6단계 PAM 트러스트 설정
 
 >[!div class="step-by-step"]
 [«5 단계](sp1-step5-configuring-pam.md)

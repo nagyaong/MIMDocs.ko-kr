@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# 2단계 CORP 도메인 구성
-<a id="step-2-configuring-the-corp-domain" class="xliff"></a>
+# <a name="step-2-configuring-the-corp-domain"></a>2단계 CORP 도메인 구성
 
 >[!div class="step-by-step"]
 [« 1단계](sp1-step1-configuring-priv-domain.md)

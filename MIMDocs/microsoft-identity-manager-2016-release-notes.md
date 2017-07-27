@@ -19,6 +19,5 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# MIM 2016 릴리스 정보
-<a id="release-notes-for-mim-2016" class="xliff"></a>
+# <a name="release-notes-for-mim-2016"></a>MIM 2016 릴리스 정보
 이번에는 릴리스 정보가 없습니다.
