@@ -5,21 +5,20 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
-ms.date: 01/10/2017
+ms.date: 07/20/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: bd73f43a096d58e1f7250e28b59e33f4411e88a3
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: 5718ec64fff049cb8717e4cbb36784c8f4ee4db3
+ms.sourcegitcommit: c13f814ce753e1fdacc7d0814087f59542e5098f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/26/2017
 ---
-# 스크립트를 사용하여 PAM 구성
-<a id="configure-pam-using-scripts" class="xliff"></a>
+# <a name="configure-pam-using-scripts"></a>스크립트를 사용하여 PAM 구성
 
 SQL과 SharePoint를 별도의 서버에 설치하려면 아래 지침에 따라 구성해야 합니다. SQL, SharePoint 및 PAM 구성 요소가 동일한 컴퓨터에 설치된 경우 해당 컴퓨터에서 아래 단계를 실행해야 합니다.
 
@@ -27,25 +26,24 @@ SQL과 SharePoint를 별도의 서버에 설치하려면 아래 지침에 따라
 
 단계:
 
-1. 모든 컴퓨터의 %SYSTEMDRIVE%\PAM 폴더에 압축 파일 “PAMDeploymentScripts.zip”의 압축을 풉니다.
-2. 컴퓨터 중 하나에서 **PAMDeploymentConfig.xml** 파일을 열고 아래 차트 또는 XML 파일 자체 내의 지침을 사용하여 세부 정보를 업데이트합니다. PRIV 및 CORP 포리스트가 이미 설치된 경우 **DNSName** 및 **NetbiosName**만 업데이트하면 됩니다.
-3. Roles 섹션에서 SQL, SharePoint 및 MIM 역할에 대한 **service account**, **machine details** 및 **location of the installation binaries**를 업데이트합니다.
+1. 다운로드하다 [PAM 배포 스크립트](https://www.microsoft.com/download/details.aspx?id=53941)
+2. 모든 컴퓨터의 %SYSTEMDRIVE%\PAM 폴더에 압축 파일 “PAMDeploymentScripts.zip”의 압축을 풉니다.
+3. 컴퓨터 중 하나에서 **PAMDeploymentConfig.xml** 파일을 열고 아래 차트 또는 XML 파일 자체 내의 지침을 사용하여 세부 정보를 업데이트합니다. PRIV 및 CORP 포리스트가 이미 설치된 경우 **DNSName** 및 **NetbiosName**만 업데이트하면 됩니다.
+4. Roles 섹션에서 SQL, SharePoint 및 MIM 역할에 대한 **service account**, **machine details** 및 **location of the installation binaries**를 업데이트합니다.
     1. MIM 바이너리 위치는 “Service and Portal” 폴더가 포함된 디렉터리를 가리켜야 합니다. Client 바이너리 위치는 “Add-ins and Extensions.msi”가 포함된 디렉터리를 가리켜야 합니다.
 
-4. PRIVOnly 환경인 경우 PRIVOnly 태그를 True로 설정해야 합니다.
+5. PRIVOnly 환경인 경우 PRIVOnly 태그를 True로 설정해야 합니다.
     1. PRIVOnly 환경의 경우 PRIV 도메인의 **DNSName** 및 **NetbiosName**을 CORP 도메인과 일치하도록 업데이트합니다. 기본 템플릿 파일에서는 PRIV 및 CORP 구성을 가정하므로 컴퓨터 접미사가 SQL, SharePoint 및 MIM을 설치할 컴퓨터에 올바른지 확인합니다.
     2. PRIVOnly 환경에 대한 자세한 내용을 보려면 여기를 클릭합니다.
 
-5. 모든 컴퓨터, CORPDC, PRIVDC, PAM 서버, SQL Server 및 SharePoint Server의 %SYSTEMDRIVE%\PAM 폴더에 동일한 PAMDeploymentConfig.xml을 복사합니다.
+6. 모든 컴퓨터, CORPDC, PRIVDC, PAM 서버, SQL Server 및 SharePoint Server의 %SYSTEMDRIVE%\PAM 폴더에 동일한 PAMDeploymentConfig.xml을 복사합니다.
 
 
-## 배포 워크시트
-<a id="deployment-worksheet" class="xliff"></a>
+## <a name="deployment-worksheet"></a>배포 워크시트
 
 PAMDeploymentConfig.xml 업데이트를 계속 진행하기 전에 업데이트된 복사본을 모든 컴퓨터에 배치합니다.
 
-### Setup
-<a id="setup" class="xliff"></a>
+### <a name="setup"></a>Setup
 
 |컴퓨터   | 실행 권한   |명령   |
 |---|---|---|
@@ -57,8 +55,7 @@ PAMDeploymentConfig.xml 업데이트를 계속 진행하기 전에 업데이트�
 | PAMServer  | 로컬 관리자(도메인 가입 후 MIM 관리자)  | .\PAMDeployment.ps1 메뉴 옵션 5(MIM PAM 설치) 선택   |
 |  PAMServer |MIM 관리자   | .\PAMDeployment.ps1 메뉴 옵션 6(PAM 트러스트 설정) 선택.\PAMDeployment.ps1 메뉴 옵션 6 (PAM 트러스트 설정) |
 
-### 유효성 검사
-<a id="validation" class="xliff"></a>
+### <a name="validation"></a>유효성 검사
 
 |  컴퓨터 | 실행 권한   | 명령   |
 |---|---|---|
