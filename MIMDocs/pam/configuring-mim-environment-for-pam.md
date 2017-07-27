@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# Privileged Access Management를 위해 MIM 환경 구성
-<a id="configure-the-mim-environment-for-privileged-access-management" class="xliff"></a>
+# <a name="configure-the-mim-environment-for-privileged-access-management"></a>Privileged Access Management를 위해 MIM 환경 구성
 7개의 단계를 완료하여 크로스 포리스트 액세스를 위한 환경을 설정하고 Active Directory와 Microsoft Identity Manager를 설치 및 구성하며 Just-In-Time 액세스 요청을 보여 줍니다.
 
 다음 단계는 처음부터 시작하고 테스트 환경을 구축할 수 있도록 구성되어 있습니다. 기존 환경에 PAM을 적용할 경우 예제와 일치하는 새 계정을 만드는 대신 자체 도메인 컨트롤러 또는 사용자 계정을 사용할 수 있습니다.

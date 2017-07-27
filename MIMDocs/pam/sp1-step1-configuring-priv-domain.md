@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# 1단계 PRIV 도메인 구성
-<a id="step-1-configuring-the-priv-domain" class="xliff"></a>
+# <a name="step-1-configuring-the-priv-domain"></a>1단계 PRIV 도메인 구성
 
 >[!div class="step-by-step"]
 [2단계 »](sp1-step2-configuring-corp-domain.md)

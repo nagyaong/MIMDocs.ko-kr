@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# 3단계 SQL 구성
-<a id="step-3-configuring-sql" class="xliff"></a>
+# <a name="step-3-configuring-sql"></a>3단계 SQL 구성
 
 >[!div class="step-by-step"]
 [« 2단계](sp1-step2-configuring-corp-domain.md)

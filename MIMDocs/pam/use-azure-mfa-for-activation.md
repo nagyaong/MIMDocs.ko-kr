@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# 활성화에 Azure MFA 사용
-<a id="using-azure-mfa-for-activation" class="xliff"></a>
+# <a name="using-azure-mfa-for-activation"></a>활성화에 Azure MFA 사용
 PAM 역할을 구성할 때 역할 활성화를 요청하는 사용자에게 권한을 부여하는 방법을 선택할 수 있습니다. PAM 권한 부여 활동을 구현하는 선택 사항:
 
 - 역할 소유자 승인
@@ -29,8 +28,7 @@ PAM 역할을 구성할 때 역할 활성화를 요청하는 사용자에게 권
 
 Microsoft Azure MFA(Multi-Factor Authentication)는 사용자가 모바일 앱, 전화 통화 또는 문자 메시지를 사용하여 로그인 시도를 확인해야 하는 인증 서비스입니다. Microsoft Azure Active Directory와 함께 사용할 수 있으며 클라우드 및 온-프레미스 엔터프라이즈 응용 프로그램을 위한 서비스로 사용할 수 있습니다. PAM 시나리오의 경우, Azure MFA에서는 이전에 후보 사용자가 Windows PRIV 인증에 사용한 방법에 관계 없이 권한 부여에 사용할 수 있는 추가 인증 메커니즘을 제공합니다.
 
-## 필수 구성 요소
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>필수 구성 요소
 
 Azure MFA를 MIM과 함께 사용하려면 다음이 필요합니다.
 
@@ -39,8 +37,7 @@ Azure MFA를 MIM과 함께 사용하려면 다음이 필요합니다.
 - 후보 사용자의 Azure Active Directory Premium 라이선스 또는 Azure MFA 라이선스 방법
 - 모든 후보 사용자의 전화 번호
 
-## Azure MFA 공급자 만들기
-<a id="creating-an-azure-mfa-provider" class="xliff"></a>
+## <a name="creating-an-azure-mfa-provider"></a>Azure MFA 공급자 만들기
 
 이 섹션에서는 Microsoft Azure Active Directory에 Azure MFA 공급자를 설정합니다.  Azure MFA를 독립 실행형 또는 Azure Active Directory Premium에 구성된 상태로 이미 사용하고 있는 경우에는 다음 섹션을 건너뜁니다.
 
@@ -52,8 +49,7 @@ Azure MFA를 MIM과 함께 사용하려면 다음이 필요합니다.
 
 4.  **이름** 필드에 **PAM**을 입력하고 사용 모델 필드에서 활성화된 사용자별을 선택합니다. Azure AD 디렉터리가 이미 있는 경우에는 해당 디렉터리를 선택 합니다. 마지막으로 **만들기**를 클릭합니다.
 
-## Azure MFA 서비스 자격 증명 다운로드
-<a id="downloading-the-azure-mfa-service-credentials" class="xliff"></a>
+## <a name="downloading-the-azure-mfa-service-credentials"></a>Azure MFA 서비스 자격 증명 다운로드
 
 다음으로, Azure MFA에 연결하기 위해 PAM에 대한 인증 자료가 포함된 파일을 생성합니다.
 
@@ -76,8 +72,7 @@ Azure MFA를 MIM과 함께 사용하려면 다음이 필요합니다.
 >[!NOTE]
 > 이 ZIP 파일에는 Azure MFA 서비스에 인증하는 데 사용되는 키 관련 자료가 들어있습니다.
 
-## Azure MFA용 MIM 서비스 구성
-<a id="configuring-the-mim-service-for-azure-mfa" class="xliff"></a>
+## <a name="configuring-the-mim-service-for-azure-mfa"></a>Azure MFA용 MIM 서비스 구성
 
 1.  MIM 서비스가 설치된 컴퓨터에 관리자나 MIM을 설치한 사용자로 로그인합니다.
 
@@ -106,8 +101,7 @@ Azure MFA를 MIM과 함께 사용하려면 다음이 필요합니다.
 > [!NOTE]
 > 프로세스를 종료할 때 **MfaSettings.xml** 파일이나 복사본 또는 ZIP 파일을 공개적으로 읽을 수 없는지 확인해야 합니다.
 
-## Azure MFA에 대해 PAM 사용자 구성
-<a id="configure-pam-users-for-azure-mfa" class="xliff"></a>
+## <a name="configure-pam-users-for-azure-mfa"></a>Azure MFA에 대해 PAM 사용자 구성
 
 사용자가 Azure MFA가 필요한 역할을 활성화하려면 MIM에 사용자의 전화 번호를 저장해야 합니다. 이 특성을 설정하는 방법에는 두 가지가 있습니다.
 
@@ -120,8 +114,7 @@ Set-PAMUser (Get-PAMUser -SourceDisplayName Jen) -SourcePhoneNumber 12135551212
 ```
 
 
-## Azure MFA에 대해 PAM 역할 구성
-<a id="configure-pam-roles-for-azure-mfa" class="xliff"></a>
+## <a name="configure-pam-roles-for-azure-mfa"></a>Azure MFA에 대해 PAM 역할 구성
 
 PAM 역할의 모든 후보 사용자가 MIM 서비스 데이터베이스에 전화 번호를 저장하고 나면 Azure MFA를 사용하도록 역할을 구성할 수 있습니다. `New-PAMRole` 또는 `Set-PAMRole` 명령을 사용하여 이 작업을 수행합니다. 예:
 
@@ -131,8 +124,7 @@ Set-PAMRole (Get-PAMRole -DisplayName "R") -MFAEnabled 1
 
 `Set-PAMRole` 명령에 "-MFAEnabled 0" 매개 변수를 지정하면 역할에 대해 Azure MFA를 사용하지 않도록 설정할 수 있습니다.
 
-## 문제 해결
-<a id="troubleshooting" class="xliff"></a>
+## <a name="troubleshooting"></a>문제 해결
 
 권한 있는 액세스 관리 이벤트 로그에서 다음 이벤트를 찾을 수 있습니다.
 

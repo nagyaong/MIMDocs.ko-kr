@@ -18,15 +18,13 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# ID 관리 서버 설치: Exchange
-<a id="set-up-an-identity-management-server-exchange" class="xliff"></a>
+# <a name="set-up-an-identity-management-server-exchange"></a>ID 관리 서버 설치: Exchange
 
 >[!div class="step-by-step"]
 [« SharePoint](prepare-server-sharepoint.md)
 [MIM 동기화 서비스 업그레이드 »](install-mim-sync.md)
 
-## Microsoft Exchange Server 배포
-<a id="deploy-microsoft-exchange-server" class="xliff"></a>
+## <a name="deploy-microsoft-exchange-server"></a>Microsoft Exchange Server 배포
 MIM에서 메일 또는 프로비전 사서함을 보내고 받도록 구성하려는 경우 환경에 Exchange가 있어야 합니다. 아직 Exchange를 배포하지 않은 경우 평가용으로 평가판 버전을 설치할 수 있습니다.
 
 1. Microsoft Office 2010 Filter Packs - 버전 2.0 + Microsoft Office 2010 Filter Packs - 버전 2.0 SP1을 다운로드하고 설치합니다.

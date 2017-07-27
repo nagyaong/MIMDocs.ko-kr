@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# PAM의 구성 요소 이해
-<a id="understand-the-components-of-pam" class="xliff"></a>
+# <a name="understand-the-components-of-pam"></a>PAM의 구성 요소 이해
 
 Privileged Access Management는 관리 액세스를 일상적인 사용자 계정과 구분합니다. 이 솔루션은 병렬 포리스트를 사용합니다.
 

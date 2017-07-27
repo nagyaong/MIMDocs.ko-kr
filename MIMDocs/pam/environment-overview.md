@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# 환경 개요
-<a id="environment-overview" class="xliff"></a>
+# <a name="environment-overview"></a>환경 개요
 
 Privileged Access Management는 공유 네트워크에서 서로 연결된 별도의 드라이브가 있는 VM(가상 컴퓨터)에서 작동합니다. 이러한 가상 컴퓨터는 Windows 8.1, Windows Server 2012 R2 또는 다른 운영 체제 플랫폼에서 호스트할 수 있습니다.
 

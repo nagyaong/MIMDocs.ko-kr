@@ -18,12 +18,10 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# 인증서 관리자를 사용하여 소프트웨어 인증서 만들기
-<a id="create-software-certificates-with-certificate-manager" class="xliff"></a>
+# <a name="create-software-certificates-with-certificate-manager"></a>인증서 관리자를 사용하여 소프트웨어 인증서 만들기
 소프트웨어 인증서를 등록하고 갱신하는 데 관리자 권한 및 가상 스마트 카드가 필요하지 않습니다. 어느 시점에 인증서 작업을 허용하라는 메시지가 표시되고 이는 정상입니다.
 
-## MIM 2016 인증서 관리자에서 소프트웨어 인증서 프로필 템플릿 만들기
-<a id="create-a-software-certificate-profile-template-in-mim-2016-certificate-manager" class="xliff"></a>
+## <a name="create-a-software-certificate-profile-template-in-mim-2016-certificate-manager"></a>MIM 2016 인증서 관리자에서 소프트웨어 인증서 프로필 템플릿 만들기
 
 1.  가상 스마트 카드를 위해 요청하는 인증서에 대한 템플릿을 만듭니다. mmc를 엽니다.
 
@@ -73,8 +71,7 @@ ms.lasthandoff: 07/13/2017
 
     10. 목록에서 방금 만든 새 템플릿(**보관된 인증서 템플릿**)을 선택하고 **확인**을 클릭합니다.
 
-## 프로필 템플릿 만들기
-<a id="create-the-profile-template" class="xliff"></a>
+## <a name="create-the-profile-template"></a>프로필 템플릿 만들기
 
 1.  CM 포털에 관리자 권한이 있는 사용자로 로그인합니다.
 

@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# 6단계 – 그룹을 권한 있는 액세스 관리로 전환
-<a id="step-6--transition-a-group-to-privileged-access-management" class="xliff"></a>
+# <a name="step-6--transition-a-group-to-privileged-access-management"></a>6단계 – 그룹을 권한 있는 액세스 관리로 전환
 
 >[!div class="step-by-step"]
 [« 5단계 ](step-5-establish-trust-between-priv-corp-forests.md)

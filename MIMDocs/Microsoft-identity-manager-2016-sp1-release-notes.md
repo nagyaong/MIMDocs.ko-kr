@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# Microsoft Identity Manager 2016 서비스 팩 1의 새로운 기능
-<a id="whats-new-for-microsoft-identity-manager-2016-service-pack-1" class="xliff"></a> #
+# <a name="whats-new-for-microsoft-identity-manager-2016-service-pack-1"></a>Microsoft Identity Manager 2016 서비스 팩 1의 새로운 기능 #
 
 Microsoft Identity Manager 서비스 및 업데이트의 정규 릴리스 주기의 일부로 [Microsoft Identity Manager(MIM) 2016 SP1(서비스 팩 1)](https://msdn.microsoft.com/subscriptions/downloads/?fileid=70212#searchTerm=&Languages=en&PageSize=10&PageIndex=0&FileId=70212)이 출시되었습니다. 이 문서에서는 이 릴리스에 포함된 업데이트, 개선 사항, 기능 및 변경 내용을 간략하게 설명합니다.
 
@@ -29,11 +28,9 @@ MIM SP1의 프로덕션 배포 중에 문제가 발생한 경우 Microsoft 고�
 
 
 
-## 이 서비스 팩의 업데이트 내용
-<a id="updates-in-this-service-pack" class="xliff"></a> #
+## <a name="updates-in-this-service-pack"></a>이 서비스 팩의 업데이트 내용 #
 
-### MIM
-<a id="mim" class="xliff"></a>
+### <a name="mim"></a>MIM
 
 - **최종 사용자 셀프 서비스를 위한 MIM 포털 브라우저 간 호환:** 이 서비스 팩에는 대부분의 주요 브라우저에 대한 지원이 도입되었습니다. 이제 사용자는 Edge, Chrome 및 Safari에서 셀프 서비스 그룹 및 프로필 관리를 위해 MIM 포털에 액세스하고 상호 작용할 수 있습니다.
 
@@ -41,8 +38,7 @@ MIM SP1의 프로덕션 배포 중에 문제가 발생한 경우 Microsoft 고�
 
 - **업로드 시 이미지 파일 형식 유효성 검사:** 이제 MIM에서 포털에 업로드되는 이미지의 파일 형식에 대한 유효성을 검사할 수 있습니다.
 
-### PAM(Privileged Access Management) 사용
-<a id="privileged-access-managementpam" class="xliff"></a>
+### <a name="privileged-access-managementpam"></a>PAM(Privileged Access Management) 사용
 
 - **PAM "PRIV"(배스천) 포리스트에서 Windows Server 2016 기능 수준 지원:** Windows Server 2016의 Active Directory 도메인 서비스 포리스트 기능 수준에서 실행되는 도메인 컨트롤러가 있는 환경에서 MIM PAM 서비스를 구성할 수 있습니다. 구성한 후에는 사용자의 Kerberos 티켓 시간이 해당 역할의 남은 활성화 시간으로 제한됩니다.
 
@@ -59,21 +55,17 @@ MIM SP1의 프로덕션 배포 중에 문제가 발생한 경우 Microsoft 고�
     이러한 Cmdlet은 배포 스크립트의 일부로 자동으로 실행됩니다.
 
 
-## 플랫폼 지원
-<a id="platform-support" class="xliff"></a>
+## <a name="platform-support"></a>플랫폼 지원
 업데이트된 플랫폼 지원 정보는 [MIM 2016에 대해 지원되는 플랫폼](microsoft-identity-manager-2016-supported-platforms.md)에서 확인할 수 있습니다.  이 서비스 팩에서 지원되는 새 플랫폼에는 SQL Server 2016, SharePoint 2016 등이 포함됩니다.
 
-## MIM 2016 GA의 이 릴리스에서 해결된 문제
-<a id="issues-fixed-in-this-release-from-mim-2016-general-availability" class="xliff"></a>
+## <a name="issues-fixed-in-this-release-from-mim-2016-general-availability"></a>MIM 2016 GA의 이 릴리스에서 해결된 문제
 
-### PAM
-<a id="pam" class="xliff"></a>
+### <a name="pam"></a>PAM
 - New-PAMGroup이 PRIV 포리스트의 도메인 로컬 그룹에 대한 MIM 개체를 만들지 못함
 - New-PAMDomainConfiguration이 “netdom” 오류 메시지와 함께 실패함
 - PAM 모니터링 서비스에 PRIV 포리스트의 그룹에 대한 경고가 기록됨
 
-## 서비스 팩 1로 업그레이드하는 방법
-<a id="how-to-upgrade-to-service-pack-1" class="xliff"></a>
+## <a name="how-to-upgrade-to-service-pack-1"></a>서비스 팩 1로 업그레이드하는 방법
 
 Microsoft Identity Manager 2016 서비스 팩 1로 업그레이드하는 고객은 해당 배포에 적용되는 모든 서비스에서 아래 지침을 따라야 합니다.
 

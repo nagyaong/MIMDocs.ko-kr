@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/13/2017
 ---
-# 4단계 SharePoint 구성
-<a id="step-4-configuring-sharepoint" class="xliff"></a>
+# <a name="step-4-configuring-sharepoint"></a>4단계 SharePoint 구성
 
 >[!div class="step-by-step"]
 [« 3단계](sp1-step3-installing-configuring-sql.md)
