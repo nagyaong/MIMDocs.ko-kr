@@ -5,18 +5,18 @@ keywords:
 author: billmath
 ms.author: billmath
 manager: femila
-ms.date: 03/23/2017
+ms.date: 08/16/2017
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 974015bbba3a36e1107da33655eedf94e2938582
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: 03a0e6e90c1d0059872c4d37c88cb6f4f4095bac
+ms.sourcegitcommit: 451c3ddda84758c87b8eb0359dac4043af52865f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/16/2017
 ---
 # <a name="install-mim-2016-mim-service-and-portal"></a>MIM 2016 설치: MIM 서비스 및 포털
 
@@ -62,13 +62,13 @@ ms.lasthandoff: 07/13/2017
 
 10. 현재 구성에서 서비스 계정이 안전하지 않다는 경고가 나타날 수 있습니다.
 
-11. 동기화 서버 위치에 대한 기본값을 적용하고 MIM 관리 에이전트 계정을 *contoso\MIMsync*로 지정합니다.
+11. 동기화 서버 위치에 대한 기본값을 적용하고 MIM 관리 에이전트 계정을 *contoso\MIMMA*로 지정합니다.
 
     ![MIM 서비스 및 포털 구성 이미지](media/MIM-Install13.png)
 
 12. MIM 포털에 대한 MIM 서비스 서버 주소를 *CORPIDM*(이 컴퓨터의 이름)으로 지정합니다.
 
-13. SharePoint 사이트 모음 URL을 *http://CorpIDM.contoso.local:82*로 지정합니다.
+13. SharePoint 사이트 모음 URL을 *http://CorpIDM.contoso.local*로 지정합니다.
 
 14. 암호 등록 URL을 *http://CorpIDM.contoso.local:8080*으로 지정합니다.
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 07/13/2017
 
 설치가 완료된 후 MIM 포털이 활성화되었는지 확인합니다.
 
-1. Internet Explorer를 시작하고 *http://corpidm.contoso.local:82/identitymanagement*에서 MIM 포털에 연결합니다. 이 페이지를 처음 방문할 때 약간 시간이 걸릴 수 있습니다.
+1. Internet Explorer를 시작하고 *http://corpidm.contoso.local/identitymanagement*에서 MIM 포털에 연결합니다. 이 페이지를 처음 방문할 때 약간 시간이 걸릴 수 있습니다.
 
     - 필요한 경우 *contoso\Administrator*로 Internet Explorer에 인증합니다.
 
