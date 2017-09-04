@@ -2,25 +2,25 @@
 title: "PAM 환경 계층 모델 | Microsoft 문서"
 description: "위험에 대한 취약성을 기준으로 시스템을 분리하는 계층 모델에 대해 알아봅니다."
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 08/30/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: c6e3cd02-1e32-4194-a8ed-3a0b3d022a43
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 4c3b43e50403890572e77773191a821cf247269c
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: b6598857d5704accbee461366838bb8efb9b2fc0
+ms.sourcegitcommit: c049dceaf02ab8b6008fe440daae4d07b752ca2e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="tier-model-for-partitioning-administrative-privileges"></a>관리자 권한 분할에 대한 계층 모델
 
-오늘날의 위협 환경에서 공격자가 시스템 액세스 권한을 갖는 것은 시간 문제입니다. 즉, 강력한 경계 방어만큼 내부 보안이 중요합니다. 이 문서에서는 위험도 높은 영역에서 높은 권한 활동을 분리하여 권한 상승을 방지하도록 고안된 보안 모델을 설명합니다. 이 모델은 모범 사례 및 보안 원칙을 따르면서 효율적인 사용자 환경을 제공합니다.
+이 문서에서는 위험도 높은 영역에서 높은 권한 활동을 분리하여 권한 상승을 방지하도록 고안된 보안 모델을 설명합니다. 이 모델은 모범 사례 및 보안 원칙을 따르면서 효율적인 사용자 환경을 제공합니다.
 
 ## <a name="elevation-of-privilege-in-active-directory-forests"></a>Active Directory 포리스트에서의 권한 상승
 
@@ -48,13 +48,16 @@ ms.lasthandoff: 07/13/2017
 
 다음을 사용하여 로그온 제한을 적용할 수 있습니다.
 
-- 그룹 정책 로그온 권한 제한은 다음과 같습니다.  
-    - 네트워크에서 이 컴퓨터 액세스 거부  
-    - 일괄 작업으로 로그온 거부  
-    - 서비스로 로그온 거부  
-    - 로컬 로그온 거부  
+- 그룹 정책 로그온 권한 제한은 다음과 같습니다.
+    - 네트워크에서 이 컴퓨터 액세스 거부
+    - 일괄 작업으로 로그온 거부
+    - 서비스로 로그온 거부
+    - 로컬 로그온 거부
     - 원격 데스크톱 설정을 통한 로그온 거부  
 - 인증 정책 및 사일로(Windows Server 2012 이상을 사용하는 경우)
 - 계정이 전용 관리자 포리스트에 있는 경우 선택적 인증
 
-다음 문서 [배스천 환경 계획](planning-bastion-environment.md)에서는 Microsoft Identity Manager에 대한 전용 관리 포리스트를 추가하여 관리자 계정을 설정하는 방법을 설명합니다.
+## <a name="next-steps"></a>다음 단계
+
+- 다음 문서 [배스천 환경 계획](planning-bastion-environment.md)에서는 Microsoft Identity Manager에 대한 전용 관리 포리스트를 추가하여 관리자 계정을 설정하는 방법을 설명합니다.
+- [Privileged Access Workstation](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations)은 인터넷 공격 및 위협 벡터로부터 보호되는 중요한 작업에 대한 전용 운영 체제를 제공합니다.
