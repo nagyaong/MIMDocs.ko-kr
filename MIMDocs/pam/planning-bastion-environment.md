@@ -12,11 +12,11 @@ ms.technology: active-directory-domain-services
 ms.assetid: bfc7cb64-60c7-4e35-b36a-bbe73b99444b
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: b459906f0c8d2c631e9b63813e208c9098ea5a4e
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: 402c690b514dce62024f13014c1491433fbd8816
+ms.sourcegitcommit: a0e206fd67245f02d94d5f6c9d606970117dd8ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/02/2017
 ---
 # <a name="planning-a-bastion-environment"></a>배스천 환경 계획
 
@@ -195,7 +195,7 @@ New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -
 7. 그룹 정책 관리 편집기 창 및 그룹 정책 관리 창을 닫습니다. 그런 다음 PowerShell 창을 시작하고 다음을 입력하여 감사 설정을 적용합니다.
 
     ```
-    gpupdate /force /target:computere
+    gpupdate /force /target:computer
     ```
 
 잠시 후 "컴퓨터 정책 업데이트가 완료되었습니다."라는 메시지가 표시됩니다.
