@@ -21,6 +21,15 @@
 ### [MIM 설치: 서비스 및 포털](install-mim-service-portal.md)
 ### [MIM 설치: 데이터베이스 동기화](install-mim-sync-ad-service.md)
 ## [Forefront Identity Manager 2010 R2에서 업그레이드](microsoft-identity-manager-2016-upgrade-from-fim-2010-R2.md)
+## [MIM 인증서 관리 설치](./deploy-use/mim-cm-deploy.md)
+## [BHOLD 설치 항목](./deploy-use/bhold-installation-guide.md)
+### [BHOLD core 설치](./deploy-use/bhold-core-installation.md)
+### [BHOLD 통합 설치](./deploy-use/bhold-integration-installation.md)
+### [BHOLD 증명 설치](./deploy-use/bhold-attestation-installation.md)
+### [BHOLD 모델 생성기 설치](./deploy-use/bhold-model-generator-installation.md)
+### [BHOLD 보고 설치](./deploy-use/bhold-reporting-installation.md)
+### [BHOLD 분석 설치](./deploy-use/bhold-analytics-installation.md)
+### [BHOLD 액세스 관리 커넥터 설치](./deploy-use/bhold-access-management-connector-install.md)
 ## [Password Change Notification Service](deploying-mim-password-change-notification-service-on-domain-controller.md)(암호 변경 알림 서비스)
 ## [Identity Manager 하이브리드 보고](working-with-identity-manager-hybrid-reporting.md)
 ## [셀프 서비스 암호 재설정](working-with-self-service-password-reset.md)
@@ -75,7 +84,10 @@
 ### [Reporting Custom Reports and Extensibility](https://technet.microsoft.com/library/jj133861)(사용자 지정 보고서 및 확장성 보고)
 ## [Microsoft identity software: Public release build versions](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)(Microsoft Identity 소프트웨어: 공용 릴리스 빌드 버전)
 # [참조](./reference/microsoft-identity-manager-2016-developer-reference.md)
-## [Microsoft Identity Manager 2016 개발자 참조](./reference/microsoft-identity-manager-2016-developer-reference.md)
+## 개발자 참조
+### [MIM 2016 개발자 참조](./reference/microsoft-identity-manager-2016-developer-reference.md)
+### BHOLD
+#### [BHOLD 개발자 참조](./reference/mim2016-bhold-developer-reference.md) 
 ### [인증서 관리 REST API 참조](./reference/certificate-management-rest-api-reference.md)
 #### [CM REST API 서비스 세부 정보](./reference/certificate-management-rest-api-service-details.md)
 #### [샘플 등록 연습](./reference/sample-enrollment-walkthrough.md)
@@ -117,4 +129,8 @@
 ### [관리 에이전트 실행 오류 코드](./reference/maerrorcodes.md)
 ### [Microsoft Identity Manager 2016에 대한 함수 참조](./reference/mim2016-functions-reference.md)
 ### [Microsoft Identity Manager 2016 암호 관리 참조](./infrastructure/mim2016-password-management.md)
-## [버전 기록](./reference/version-history.md)
+### BHOLD
+#### [BHOLD 개념 가이드](./understand-explore/bhold-concepts-guide.md)
+## 버전 기록
+### [MIM 버전 기록](./reference/version-history.md)
+### [BHOLD 버전 기록](./reference/version-bhold-history.md)
