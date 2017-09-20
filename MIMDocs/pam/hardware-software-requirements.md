@@ -2,43 +2,46 @@
 title: "PAM 소프트웨어 요구 사항 | Microsoft 문서"
 description: "Privileged Access Management를 성공적으로 배포하기 위한 하드웨어 및 소프트웨어 요구 사항 찾기"
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 09/06/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 82a9085c-9667-4b3b-8079-657eab1d1e58
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 2985215821db843d2f90d8a34250a8ca6a84b592
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: 2ff6fd997dc5bc7e4a4949520e978ae2d8283d4b
+ms.sourcegitcommit: f29f02fa8437fa55e86afd7b0b99a36d2306b96b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="hardware-and-software-requirements"></a>하드웨어 및 소프트웨어 요구 사항
 
 Privileged Access Management의 하드웨어 요구 사항은 기본 소프트웨어 플랫폼의 하드웨어 요구 사항을 초과하지 않습니다. 메모리나 디스크 공간이 충분하고 네트워크에 연결되어 있으면 됩니다.
 
-이 문서에서는 기본 배포에 대한 최소 요구 사항을 제공합니다. 성능, 확장성 또는 고가용성을 보여 주기 위한 용도가 아니며, 대기업 또는 프로덕션 환경에서 권장되는 배포 토폴로지를 나타내지 않습니다.
+>[!IMPORTANT]
+이 문서에서는 기본 배포에 대한 최소 요구 사항을 제공합니다. 성능, 확장성 또는 고가용성을 보여 주기 위한 것은 아닙니다. 대기업 또는 프로덕션 환경에 권장되는 배포 토폴로지를 나타내지는 않습니다.
 
 ## <a name="installing-from-software-packages"></a>소프트웨어 패키지에서 설치
 
-TechNet Evaluation Center 또는 MSDN에서 다음 소프트웨어를 다운로드할 수 있습니다.  
+TechNet Evaluation Center 또는 MSDN에서 다음 소프트웨어를 다운로드할 수 있습니다.
+
 - Microsoft Identity Manager 2016
   - 서비스 및 포털: MIM 서비스와 MIM 포털 및 PAM 시나리오용 설치 관리자 포함
   - 추가 기능 및 확장: 요청자 PowerShell cmdlet용 설치 관리자 포함
 
-다음 소프트웨어는 GitHub에서 다운로드할 수 있습니다.  
-- PAMSamplePortal: REST API용 샘플 웹 응용 프로그램 포함
+다음 소프트웨어는 GitHub에서 다운로드할 수 있습니다.
+
+- [PAMSamplePortal](https://github.com/Azure/identity-management-samples): REST API용 샘플 웹 응용 프로그램 포함
 
 ## <a name="required-software"></a>필수 소프트웨어
 
-- Windows Server 2012 R2  
-- Windows 8.1 Enterprise 또는 Windows 10 Enterprise  
-- SQL Server 2012 서비스 팩 1 또는 SQL Server 2014  
+- Windows Server 2012 R2
+- Windows 10 Enterprise
+- SQL Server 2012 서비스 팩 1 또는 SQL Server 2014
 
 ## <a name="evaluation-software"></a>평가용 소프트웨어
 
@@ -46,9 +49,8 @@ Windows, SQL Server 또는 Windows Server에 대해 라이선스가 없는 경�
 
 ### <a name="technet-evaluation-center"></a>TechNet Evaluation Center
 
-- [Windows Server 2012 R2](https://www.microsoft.com/evalcenter/evaluate-windows-server-2012-r2)  
-- [Windows 8.1 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-8-1-enterprise)  
-- [Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)  
+- [Windows Server 2012 R2](https://www.microsoft.com/evalcenter/evaluate-windows-server-2012-r2)
+- [Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)
 
 ### <a name="microsoft-download-center"></a>Microsoft 다운로드 센터
 
@@ -59,15 +61,19 @@ Windows, SQL Server 또는 Windows Server에 대해 라이선스가 없는 경�
 
 PAM의 각 구성 요소는 소프트웨어 제품의 시스템 요구 사항을 참조하세요.
 
-CORPDC의 경우:  
+CORPDC의 경우:
+
 - [Windows Server 2012 R2](https://technet.microsoft.com/library/dn303418.aspx) 또는 이전 버전
 
-CORPWKSTN의 경우:  
-- [Windows 8.1](http://windows.microsoft.com/windows-8/system-requirements)
+CORPWKSTN의 경우:
 
-PRIVDC의 경우:  
+- [Windows 10](https://technet.microsoft.com/windows/dn798752.aspx)
+
+PRIVDC의 경우:
+
 - [Windows Server 2012 R2](https://technet.microsoft.com/library/dn303418.aspx)
 
 PAMSRV의 경우:
-- [Windows Server 2012 R2](https://technet.microsoft.com/library/dn303418.aspx)  
+
+- [Windows Server 2012 R2](https://technet.microsoft.com/library/dn303418.aspx)
 - [SQL Server 2012](https://msdn.microsoft.com/library/ms143506(sql.110).aspx) 또는 [SQL Server 2014](https://msdn.microsoft.com/en-us/library/ms143506(v=sql.120).aspx)
