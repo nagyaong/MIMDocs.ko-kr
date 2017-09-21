@@ -2,28 +2,27 @@
 title: "PAM 배포 5단계 – 포리스트 링크 | 문서"
 description: "PRIV의 권한 있는 사용자가 CORP의 리소스에 계속 액세스할 수 있도록 PRIV 및 CORP 포리스트 간에 트러스트를 설정합니다."
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 09/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: eef248c4-b3b6-4b28-9dd0-ae2f0b552425
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 1239ca2c0c6d376420723da01d7aa42821f5980f
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: 6d57b09508d4c0834619be0281fb373d9d3d361e
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="step-5--establish-trust-between-priv-and-corp-forests"></a>5단계 - PRIV 및 CORP 포리스트 간에 트러스트 설정
 
 >[!div class="step-by-step"]
 [« 4단계](step-4-install-mim-components-on-pam-server.md)
 [6단계 »](step-6-transition-group-to-pam.md)
-
 
 contoso.local과 같은 각 CORP 도메인에 대해 PRIV 및 CONTOSO 도메인 컨트롤러는 트러스트에 구속되어야 합니다. 이렇게 하면 PRIV 도메인의 사용자가 CORP 도메인의 리소스에 액세스할 수 있습니다.
 
@@ -36,7 +35,7 @@ contoso.local과 같은 각 CORP 도메인에 대해 PRIV 및 CONTOSO 도메인 
 
 2.  각 기존 CORP 도메인 컨트롤러가 PRIV 포리스트에 이름을 라우팅할 수 있는지 확인합니다. CORPDC와 같이 PRIV 포리스트 외부의 각 도메인 컨트롤러에서 PowerShell을 시작하고 다음 명령을 입력합니다.
 
-    ```
+    ```cmd
     nslookup -qt=ns priv.contoso.local.
     ```
     PRIV 도메인에 대한 이름 서버 레코드가 올바른 IP 주소와 함께 출력에 표시되는지 확인합니다.
@@ -55,14 +54,14 @@ PAMSRV에서 각 도메인(예: CORPDC)과 단방향 트러스트를 설정하�
 
 3.  각 기존 포리스트에 대해 다음 PowerShell 명령을 입력합니다. 메시지가 표시되면 CORP 도메인 관리자에 대한 자격 증명(CONTOSO\Administrator)을 입력합니다.
 
-    ```
+    ```PowerShell
     $ca = get-credential
     New-PAMTrust -SourceForest "contoso.local" -Credentials $ca
     ```
 
 4.  기존 포리스트의 각 도메인에 대해 다음 PowerShell 명령을 입력합니다. 메시지가 표시되면 CORP 도메인 관리자에 대한 자격 증명(CONTOSO\Administrator)을 입력합니다.
 
-    ```
+    ```PowerShell
     $ca = get-credential
     New-PAMDomainConfiguration -SourceDomain "contoso" -Credentials $ca
     ```
@@ -80,9 +79,9 @@ PAMSRV에서 각 도메인(예: CORPDC)과 단방향 트러스트를 설정하�
 7.  일반 작업 목록에서 **모든 사용자 정보 읽기**를 선택한 후 **다음**과 **마침**을 차례로 클릭합니다.  
 8.  Active Directory 사용자 및 컴퓨터를 닫습니다.
 
-9.  PowerShell 창을 엽니다.  
-10.  `netdom`을 사용하여 SID 기록은 사용하도록 설정되고 SID 필터링은 사용하지 않도록 설정되었는지 확인합니다. 종류:  
-    ```
+9.  PowerShell 창을 엽니다.
+10.  `netdom`을 사용하여 SID 기록은 사용하도록 설정되고 SID 필터링은 사용하지 않도록 설정되었는지 확인합니다. 종류:
+    ```cmd
     netdom trust contoso.local /quarantine /domain priv.contoso.local
     netdom trust /enablesidhistory:yes /domain priv.contoso.local
     ```
@@ -98,7 +97,7 @@ PAMSRV에서 각 도메인(예: CORPDC)과 단방향 트러스트를 설정하�
 
 3.  다음 PowerShell 명령을 입력합니다.
 
-    ```
+    ```cmd
     net start "PAM Component service"
     net start "PAM Monitoring service"
     ```

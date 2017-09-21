@@ -2,10 +2,10 @@
 title: "PAM 배포 4단계 – MIM 설치 | Microsoft 문서"
 description: "Privileged Access Management 서버 및 워크스테이션에서 MIM 서비스 및 포털을 설치하고 구성합니다."
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: barclayn
+ms.date: 09/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,18 +13,17 @@ ms.assetid: ef605496-7ed7-40f4-9475-5e4db4857b4f
 ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 3a1ec9db6da0a77f963dde76a3efe8d92f89078d
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: b69dfc39da63ec523fb09a58661b5f8367e6042c
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="step-4--install-mim-components-on-pam-server-and-workstation"></a>4단계 – PAM 서버와 워크스테이션에 MIM 구성 요소 설치
 
 >[!div class="step-by-step"]
 [« 3단계](step-3-prepare-pam-server.md)
 [5단계 »](step-5-establish-trust-between-priv-corp-forests.md)
-
 
 PAMSRV에서 MIM 서비스 및 포털과 샘플 포털 웹 응용 프로그램을 설치할 수 있도록 PRIV\Administrator로 로그인합니다.
 
@@ -33,7 +32,7 @@ PAMSRV에서 MIM 서비스 및 포털과 샘플 포털 웹 응용 프로그램�
 
 MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니다.
 
-##  <a name="run-the-service-and-portal-install-program"></a>서비스 및 포털 설치 프로그램을 실행합니다.  
+## <a name="run-the-service-and-portal-install-program"></a>서비스 및 포털 설치 프로그램을 실행합니다.
 
 설치 관리자의 지침을 따라 설치를 완료합니다.
 
@@ -140,13 +139,13 @@ MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니�
 
 3.  IIS에서 사이트 이름이 MIM Privileged Access Management 예제 포털이고, 실제 경로가 C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal이면서 포트 8090을 사용하는 새 웹 사이트를 만듭니다.  다음 PowerShell 명령을 사용하여 이를 수행할 수 있습니다.
 
-  ```
+  ```PowerShell
   New-WebSite -Name "MIM Privileged Access Management Example Portal" -Port 8090   -PhysicalPath "C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal\"
   ```
 
 4.  샘플 웹 응용 프로그램을 설정하면 사용자를 MIM PAM REST API로 리디렉션할 수 있습니다. 메모장과 같은 텍스트 편집기를 사용하여 **C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management REST API\web.config** 파일을 편집합니다. **<system.webServer>** 섹션에서 다음 줄을 추가합니다.
 
-  ```
+  ```XML
   <httpProtocol>
     <customHeaders>
       <add name="Access-Control-Allow-Credentials" value="true"  />
@@ -160,7 +159,7 @@ MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니�
 
 6.  이러한 변경 내용을 적용하려면 다음 명령을 사용하여 IIS를 다시 시작합니다.
 
-  ```
+  ```cmd
   iisreset
   ```
 

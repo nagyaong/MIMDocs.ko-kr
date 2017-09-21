@@ -5,15 +5,15 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 09/06/2017
+ms.date: 09/14/2017
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: 0db8c2ebaee204c929dc7345ac6858fff6b0993b
-ms.sourcegitcommit: f29f02fa8437fa55e86afd7b0b99a36d2306b96b
+ms.openlocfilehash: 45054799cdc8bbe6d39fa2beb28e69d13cace031
+ms.sourcegitcommit: ed8dd5563e77ef4a3345b2a52a1426859c95576a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="microsoft-bhold-suite-concepts-guide"></a>Microsoft BHOLD 제품군 개념 가이드
 
@@ -341,3 +341,7 @@ Forefront Identity Manager 2010 및 Forefront Identity Manager 2010 R2의 중요
 MIM 포털에 대한 BHOLD 확장은 셀프 서비스 역할과 워크플로 관리 및 보고를 지원한다는 점에 유의해야 합니다. 증명과 더불어 기타 BHOLD 관리 기능은 MIM 포털과는 별도로 호스팅되는 BHOLD 모듈의 웹 포털에서 제공합니다.
 
 ## <a name="next-steps"></a>다음 단계
+
+- [BHOLD 설치 가이드](../deploy-use/bhold-installation-guide.md)
+- [BHOLD 개발자 참조](../reference/mim2016-bhold-developer-reference.md)
+- [BHOLD 버전 기록](../reference/version-bhold-history.md)

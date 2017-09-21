@@ -2,21 +2,21 @@
 title: "배스천 환경 계획 | Microsoft 문서"
 description: 
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/16/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 09/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: bfc7cb64-60c7-4e35-b36a-bbe73b99444b
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 402c690b514dce62024f13014c1491433fbd8816
-ms.sourcegitcommit: a0e206fd67245f02d94d5f6c9d606970117dd8ed
+ms.openlocfilehash: 16ad83ab9a0fbe2b93428cf318b5ef138e2f3783
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="planning-a-bastion-environment"></a>배스천 환경 계획
 
@@ -166,7 +166,7 @@ New-PAMTrust -SourceForest "contoso.local" -Credentials (get-credential)
 
 해당 이름이 NetBIOS 도메인 이름과 세 개의 달러 기호(예: *CONTOSO$$$*)로 구성된 기존 도메인의 그룹이어야 합니다. 그룹 범위는 *도메인 로컬*이고 그룹 유형은 *보안*이어야 합니다. 이 도메인의 그룹과 동일한 보안 식별자를 사용하여 전용 관리 포리스트에 그룹을 만들려면 이러한 조건이 충족되어야 합니다. 기존 도메인의 관리자가 기존 도메인에 연결된 워크스테이션에서 다음 PowerShell 명령을 실행하여 이 그룹을 만듭니다.
 
-```
+```PowerShell
 New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -SamAccountName 'CONTOSO$$$'
 ```
 
@@ -194,7 +194,7 @@ New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -
 
 7. 그룹 정책 관리 편집기 창 및 그룹 정책 관리 창을 닫습니다. 그런 다음 PowerShell 창을 시작하고 다음을 입력하여 감사 설정을 적용합니다.
 
-    ```
+    ```cmd
     gpupdate /force /target:computer
     ```
 
@@ -204,7 +204,7 @@ New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -
 
 도메인 컨트롤러는 배스천 환경의 LSA(로컬 보안 기관)에 대해 RPC over TCP/IP 연결을 허용해야 합니다. 이전 버전의 Windows Server에서 LSA의 TCP/IP 지원은 다음과 같이 레지스트리에서 사용하도록 설정해야 합니다.
 
-```
+```PowerShell
 New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipClientSupport -PropertyType DWORD -Value 1
 ```
 
@@ -212,7 +212,7 @@ New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipC
 
 `New-PAMDomainConfiguration` cmdlet은 관리 도메인의 MIM 서비스 컴퓨터에서 실행해야 합니다. 이 명령의 매개 변수는 기존 도메인의 도메인 이름과 해당 도메인 관리자의 자격 증명입니다.
 
-```
+```PowerShell
  New-PAMDomainConfiguration -SourceDomain "contoso" -Credentials (get-credential)
 ```
 

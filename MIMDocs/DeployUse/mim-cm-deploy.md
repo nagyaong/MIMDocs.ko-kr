@@ -5,16 +5,16 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 08/16/2017
+ms.date: 09/19/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: 61987d5b259830be0cf0bc12832a853e24e9c282
-ms.sourcegitcommit: f29f02fa8437fa55e86afd7b0b99a36d2306b96b
+ms.openlocfilehash: 2473ef1c3d6fc5350d60d81bd508296a33343f01
+ms.sourcegitcommit: 58d6c628d3bb770669348b987cf8f52ec0576132
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="deploying-microsoft-identity-manager-certificate-manager-2016-mim-cm"></a>MIM CM(Microsoft Identity Manager 인증서 관리자) 2016 배포
 
@@ -54,8 +54,7 @@ MIM 2016에 대해 지원되는 플랫폼에 대한 자세한 내용은 [MIM 201
 
 ## <a name="pre-deployment-steps"></a>배포 전 단계
 
-MIM CM 구성 마법사에는 과정을 성공적으로 완료하기 위한 방법과 함께 정보가 제공되어야 합니다. 배포 전 단계는 다음과 같습니다. (여기에 설명되지 않은 내용)
-
+MIM CM 구성 마법사에는 과정을 성공적으로 완료하기 위한 방법과 함께 정보가 제공되어야 합니다. 
 ![](media/mim-cm-deploy/image003.png)
 
 ### <a name="extending-the-schema"></a>스키마 확장
