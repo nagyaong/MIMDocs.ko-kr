@@ -2,21 +2,21 @@
 title: "PAM 배포 7단계 – 사용자 액세스 | Microsoft Docs"
 description: "마지막 단계로 Privileged Access Management 배포가 성공했음을 보여 주기 위해 권한 있는 사용자에게 임시 액세스 권한을 부여합니다."
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 09/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 89d9b38177b91f64e746fea583684abcecc9d7ff
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: f8ad03bc072dbf6df36a9ef737479dce60b70b8b
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="step-7--elevate-a-users-access"></a>7단계 - 사용자의 액세스 권한 상승
 
@@ -27,6 +27,7 @@ ms.lasthandoff: 07/13/2017
 이 단계에서는 사용자가 MIM을 통해 역할에 대한 액세스를 요청할 수 있다는 것을 보여 줍니다.
 
 ## <a name="verify-that-jen-cannot-access-the-privileged-resource"></a>Jen이 권한 있는 리소스에 액세스할 수 없는지 확인
+
 상승된 권한 없이는 Jen이 CORP 포리스트에서 권한 있는 리소스에 액세스할 수 없습니다.
 
 1. CORPWKSTN에서 로그아웃하여 모든 캐시된 열린 연결을 제거합니다.
@@ -36,9 +37,10 @@ ms.lasthandoff: 07/13/2017
 5. 명령 프롬프트 창을 열어 둡니다.
 
 ## <a name="request-privileged-access-from-mim"></a>MIM에서 권한 있는 액세스를 요청합니다.
+
 1. CORPWKSTN에서 계속 CONTOSO\Jen으로 다음 명령을 입력합니다.
 
-    ```
+    ```cmd
     runas /user:Priv.Jen@priv.contoso.local powershell
     ```
 
@@ -48,7 +50,7 @@ ms.lasthandoff: 07/13/2017
     > [!NOTE]
     > 이러한 명령을 실행한 후 다음 모든 단계는 시간이 중요합니다.
 
-    ```
+    ```PowerShell
     Import-module MIMPAM
     $r = Get-PAMRoleForRequest | ? { $_.DisplayName –eq "CorpAdmins" }
     New-PAMRequest –role $r
@@ -58,7 +60,7 @@ ms.lasthandoff: 07/13/2017
 4. 완료되면 PowerShell 창을 닫습니다.
 5. DOS 명령 창에 다음 명령을 입력합니다.
 
-    ```
+    ```cmd
     runas /user:Priv.Jen@priv.contoso.local powershell
     ```
 
@@ -67,7 +69,7 @@ ms.lasthandoff: 07/13/2017
 ## <a name="validate-the-elevated-access"></a>권한이 상승된 액세스의 유효성을 검사합니다.
 새로 열린 창에 다음 명령을 입력합니다.
 
-```
+```cmd
 whoami /groups
 dir \\corpwkstn\corpfs
 ```
@@ -75,12 +77,13 @@ dir \\corpwkstn\corpfs
 **액세스가 거부되었습니다.** 오류 메시지와 함께 dir 명령이 실패하는 경우 트러스트 관계를 다시 확인합니다.
 
 ## <a name="activate-the-privileged-role"></a>권한 있는 역할 활성화
+
 PAM 샘플 포털을 통해 권한 있는 액세스를 요청하여 활성화합니다.
 
 1. CORPWKSTN에서 CORP\Jen으로 로그인되어 있는지 확인합니다.
 2. DOS 명령 창에 다음 명령을 입력합니다.
 
-    ```
+    ```cmd
     runas /user:Priv.Jen@priv.contoso.local "c:\program files\Internet Explorer\iexplore.exe"
     ```
 
@@ -95,6 +98,7 @@ PAM 샘플 포털을 통해 권한 있는 액세스를 요청하여 활성화합
 > 이 환경에서는 [Privileged Access Management REST API Reference](/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference)(Privileged Access Management REST API 참조)에 설명된 것처럼 PAM REST API를 사용하는 응용 프로그램을 개발하는 방법도 알아볼 수 있습니다.
 
 ## <a name="summary"></a>요약
+
 이 연습의 단계를 완료했으면 Privileged Access Management 시나리오를 확인한 것입니다. 이 시나리오에서는 제한된 기간 동안 사용자 권한이 상승되므로 사용자는 보호된 리소스에 별도의 권한 있는 계정으로 액세스할 수 있습니다. 권한 상승 세션이 만료되는 즉시 권한 있는 계정은 더 이상 보호된 리소스에 액세스할 수 없습니다. 어떤 보안 그룹이 권한 있는 역할을 나타낼지에 대한 결정은 PAM 관리자에 의해 조정됩니다. 액세스 권한이 Privileged Access Management 시스템으로 마이그레이션되면 원래 사용자 계정으로 이전에 가능했던 액세스가 이제는 특별한 권한 있는 계정으로 로그인해야만 가능하고 요청 시 사용할 수 있습니다. 따라서 높은 권한 있는 그룹의 그룹 구성원 자격은 제한된 기간 동안 유효합니다.
 
 >[!div class="step-by-step"]

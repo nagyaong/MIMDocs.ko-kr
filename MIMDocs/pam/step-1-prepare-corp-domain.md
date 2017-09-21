@@ -2,27 +2,26 @@
 title: "PAM 배포 1단계 - CORP 도메인 | Microsoft 문서"
 description: "Privileged Identity Manager에서 관리할 CORP 도메인을 기존 또는 새 ID를 사용하여 준비"
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 09/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 1164e7efb70d911497b08248b68f8d929bc6d3fb
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: d14d2f40972686305abea2426e20f4c13e3e267b
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="step-1---prepare-the-host-and-the-corp-domain"></a>1단계 - 호스트 및 CORP 도메인 준비
 
 >[!div class="step-by-step"]
 [2단계 »](step-2-prepare-priv-domain-controller.md)
-
 
 이 단계에서는 배스천 환경을 호스트할 준비를 합니다. 필요한 경우, 배스천 환경에서 관리하는 ID로 새 도메인 및 포리스트(*CORP* 포리스트)에 도메인 컨트롤러 및 구성원 워크스테이션도 만듭니다. 이 CORP 포리스트는 관리될 리소스가 있는 기존 포리스트를 시뮬레이트합니다. 이 문서는 보호할 예제 리소스, 파일 공유를 포함합니다.
 
@@ -57,7 +56,7 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 2. 다음 명령을 입력합니다.
 
-  ```
+  ```PowoerShell
   import-module ServerManager
 
   Add-WindowsFeature AD-Domain-Services,DNS,FS-FileServer –restart –IncludeAllSubFeature -IncludeManagementTools
@@ -81,7 +80,7 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 2. 다음 명령을 입력하되 "CONTOSO"를 도메인의 NetBIOS 이름으로 바꿉니다.
 
-  ```
+  ```PowerShell
   import-module activedirectory
 
   New-ADGroup –name 'CONTOSO$$$' –GroupCategory Security –GroupScope DomainLocal –SamAccountName 'CONTOSO$$$'
@@ -102,7 +101,7 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 2. 다음 명령을 입력합니다. ‘Pass@word1’ 암호를 다른 암호 문자열로 바꿉니다.
 
-  ```
+  ```PowerShell
   import-module activedirectory
 
   New-ADGroup –name CorpAdmins –GroupCategory Security –GroupScope Global –SamAccountName CorpAdmins
@@ -140,7 +139,7 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 8. PowerShell 창을 시작하고 다음을 입력하여 감사 설정을 적용합니다.
 
-  ```
+  ```cmd
   gpupdate /force /target:computer
   ```
 
@@ -154,7 +153,7 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 2. 다음 명령을 입력하여 SAM(보안 계정 관리자) 데이터베이스에 대한 RPC(원격 프로시저 호출) 액세스를 허용하도록 원본 도메인을 구성합니다.
 
-  ```
+  ```PowerShell
   New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name TcpipClientSupport –PropertyType DWORD –Value 1
 
   Restart-Computer
@@ -193,7 +192,7 @@ PAM을 사용하여 보안 그룹 기반 액세스 제어를 시연하려면 리
 
 4. 다음 명령을 입력합니다.
 
-  ```
+  ```PowerShell
   mkdir c:\corpfs
 
   New-SMBShare –Name corpfs –Path c:\corpfs –ChangeAccess CorpAdmins

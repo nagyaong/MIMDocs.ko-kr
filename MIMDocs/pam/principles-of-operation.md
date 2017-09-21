@@ -2,21 +2,21 @@
 title: "PAM 구성 요소 이해 | Microsoft 문서"
 description: "Privileged Access Management는 MIM과 일부 구성 요소를 공유하며 소수의 자체 구성 요소가 있습니다. 이러한 구성 요소가 함께 어떻게 작동되는지 알아봅니다."
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 09/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 6498f68f-36d3-448c-8fe6-649ad5a7f97d
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 53fe79f251c3b18426f16b4007cda49e67d7b028
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: a129088989bb977c191e9dc372fed07044314403
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="understand-the-components-of-pam"></a>PAM의 구성 요소 이해
 
@@ -27,7 +27,7 @@ Privileged Access Management는 관리 액세스를 일상적인 사용자 계�
 
 PAM에 대해 구성된 것처럼 MIM 솔루션은 다음 구성 요소를 포함합니다.  
 
-- **MIM 서비스**: 권한 있는 계정 관리 및 권한 상승 요청 처리를 포함하여 ID 및 액세스 관리 작업을 수행하기 위한 비즈니스 논리를 구현합니다.   
+- **MIM 서비스**: 권한 있는 계정 관리 및 권한 상승 요청 처리를 포함하여 ID 및 액세스 관리 작업을 수행하기 위한 비즈니스 논리를 구현합니다.
 - **MIM 포털**: SharePoint 2013에서 호스트하는 SharePoint 기반 포털로, 관리자 관리 및 구성 UI를 제공합니다.
 - **MIM 서비스 데이터베이스**: SQL Server 2012 또는 2014에 저장되며 MIM 서비스에 필요한 ID 데이터 및 메타데이터를 저장합니다.
 - **PAM 모니터링 서비스** 및 **PAM 구성 요소 서비스**: 권한 있는 계정의 수명 주기를 관리하고 그룹 구성원 자격의 수명 주기에서 PRIV AD를 지원하는 두 개의 서비스입니다.
