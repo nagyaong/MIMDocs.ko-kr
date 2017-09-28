@@ -2,21 +2,21 @@
 title: "PAM 배포 2단계 - PRIV DC | Microsoft 문서"
 description: "Privileged Access Management가 격리되는 배스천 환경을 제공하는 PRIV 도메인 컨트롤러를 준비합니다."
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 09/14/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 0e9993a0-b8ae-40e2-8228-040256adb7e2
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: edc15b41d4248887f4a93217f68d8125f6500585
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: de3392648f187ce6007bba332c0f191d32980c94
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="step-2---prepare-the-first-priv-domain-controller"></a>2단계 - 첫 번째 PRIV 도메인 컨트롤러 준비
 
@@ -31,6 +31,7 @@ ms.lasthandoff: 07/13/2017
 이 섹션에서는 새 포리스트의 도메인 컨트롤러 역할을 수행할 가상 컴퓨터를 설정합니다.
 
 ### <a name="install-windows-server-2012-r2"></a>Windows Server 2012 R2 설치
+
 소프트웨어가 설치되지 않은 또 하나의 새 가상 컴퓨터에 Windows Server 2012 R2를 설치하여 “PRIVDC” 컴퓨터를 만듭니다.
 
 1. Windows Server의 사용자 지정(업그레이드되지 않음) 설치를 수행하려면 선택합니다. 설치할 때 **Windows Server 2012 R2 Standard(GUI 포함 서버) x64**를 지정합니다. **데이터 센터 또는 Server Core**를 _선택하지 마세요_.
@@ -44,13 +45,14 @@ ms.lasthandoff: 07/13/2017
 5. 서버가 다시 시작되면 관리자로 로그인합니다. 제어판에서 업데이트를 확인하도록 컴퓨터를 구성하고 필요한 업데이트를 설치합니다. 이 경우 서버를 다시 시작해야 할 수 있습니다.
 
 ### <a name="add-roles"></a>역할 추가
+
 AD DS(Active Directory 도메인 서비스) 및 DNS 서버 역할을 추가합니다.
 
 1. 관리자 권한으로 PowerShell을 시작합니다.
 
 2. Windows Server Active Directory 설치를 준비하려면 다음 명령을 입력합니다.
 
-  ```
+  ```PowerShell
   import-module ServerManager
 
   Install-WindowsFeature AD-Domain-Services,DNS –restart –IncludeAllSubFeature -IncludeManagementTools
@@ -60,7 +62,7 @@ AD DS(Active Directory 도메인 서비스) 및 DNS 서버 역할을 추가합�
 
 PowerShell을 시작하고 SAM(보안 계정 관리자) 데이터베이스에 대한 RPC(원격 프로시저 호출) 액세스를 허용하도록 원본 도메인을 구성하는 다음 명령을 입력합니다.
 
-```
+```PowerShell
 New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name TcpipClientSupport –PropertyType DWORD –Value 1
 ```
 
@@ -74,9 +76,8 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 1. PowerShell 창에서 다음 명령을 입력하여 새 도메인을 만듭니다.  이렇게 하면 이전 단계에서 만든 상위 도메인(contoso.local)에서 DNS 위임도 만듭니다.  나중에 DNS를 구성하려면 `CreateDNSDelegation -DNSDelegationCredential $ca` 매개 변수를 생략합니다.
 
-  ```
+  ```PowerShell
   $ca= get-credential
-
   Install-ADDSForest –DomainMode 6 –ForestMode 6 –DomainName priv.contoso.local –DomainNetbiosName priv –Force –CreateDNSDelegation –DNSDelegationCredential $ca
   ```
 
@@ -87,13 +88,14 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 포리스트 만들기가 완료되면 서버가 자동으로 다시 시작합니다.
 
 ### <a name="create-user-and-service-accounts"></a>사용자 및 서비스 계정 만들기
+
 MIM 서비스 및 포털 설정을 위한 사용자 및 서비스 계정을 만듭니다. 이러한 계정은 priv.contoso.local 도메인의 사용자 컨테이너에서 사용됩니다.
 
 1. 서버를 다시 시작한 후 도메인 관리자(PRIV\\Administrator)로 PRIVDC에 로그인합니다.
 
 2. PowerShell을 시작하고 다음 명령을 입력합니다. 암호 'Pass@word1'은 예시일 뿐이며 계정에 다른 암호를 사용합니다.
 
-  ```
+  ```PowerShell
   import-module activedirectory
 
   $sp = ConvertTo-SecureString "Pass@word1" –asplaintext –force
@@ -159,7 +161,7 @@ MIM 서비스 및 포털 설정을 위한 사용자 및 서비스 계정을 만�
 
 ### <a name="configure-auditing-and-logon-rights"></a>감사 및 로그온 권한 구성
 
-PAM 구성을 포리스트에서 설정하려면 감사를 설정해야 합니다.  
+PAM 구성을 포리스트에서 설정하려면 감사를 설정해야 합니다.
 
 1. 도메인 관리자(PRIV\\Administrator)로 로그인해야 합니다.
 
@@ -199,7 +201,7 @@ PAM 구성을 포리스트에서 설정하려면 감사를 설정해야 합니�
 
 19. 관리자로 PowerShell 창을 시작하고 다음 명령을 입력하여 그룹 정책 설정에서 DC를 업데이트합니다.
 
-  ```
+  ```cmd
   gpupdate /force /target:computer
   ```
 
@@ -216,7 +218,7 @@ PRIVDC에서 PowerShell을 사용하여 PRIV 도메인이 다른 기존 포리�
 
   이전 단계에서 하나의 도메인 contoso.local을 만든 경우에는 CORPDC 컴퓨터의 가상 네트워크 IP 주소로 *10.1.1.31*을 지정합니다.
 
-  ```
+  ```PowerShell
   Add-DnsServerConditionalForwarderZone –name "contoso.local" –masterservers 10.1.1.31
   ```
 
@@ -227,7 +229,7 @@ PRIVDC에서 PowerShell을 사용하여 PRIV 도메인이 다른 기존 포리�
 
 1. PowerShell을 사용하여 SharePoint, PAM REST API와 MIM 서비스가 Kerberos 인증을 사용할 수 있도록 SPN을 추가합니다.
 
-  ```
+  ```cmd
   setspn -S http/pamsrv.priv.contoso.local PRIV\SharePoint
   setspn -S http/pamsrv PRIV\SharePoint
   setspn -S FIMService/pamsrv.priv.contoso.local PRIV\MIMService
@@ -241,25 +243,24 @@ PRIVDC에서 PowerShell을 사용하여 PRIV 도메인이 다른 기존 포리�
 
 PRIVDC에서 도메인 관리자로 다음 단계를 수행합니다.
 
-1. **Active Directory 사용자 및 컴퓨터**를 시작합니다.  
-2. 도메인 **priv.contoso.local**을 마우스 오른쪽 단추로 클릭하고 **위임 컨트롤**을 선택합니다.  
-3. 선택한 사용자 및 그룹 탭에서 **추가**를 클릭합니다.  
-4. 사용자, 컴퓨터 또는 그룹 선택 창에서 *mimcomponent; mimmonitor; mimservice*를 입력하고 **이름 확인**을 클릭합니다. 이름에 밑줄이 표시되면 **확인**을 클릭하고 **다음**을 클릭합니다.  
+1. **Active Directory 사용자 및 컴퓨터**를 시작합니다.
+2. 도메인 **priv.contoso.local**을 마우스 오른쪽 단추로 클릭하고 **위임 컨트롤**을 선택합니다.
+3. 선택한 사용자 및 그룹 탭에서 **추가**를 클릭합니다.
+4. 사용자, 컴퓨터 또는 그룹 선택 창에서 *mimcomponent; mimmonitor; mimservice*를 입력하고 **이름 확인**을 클릭합니다. 이름에 밑줄이 표시되면 **확인**을 클릭하고 **다음**을 클릭합니다.
 5. 일반 작업 목록에서 **사용자 계정 만들기, 삭제 및 관리**와 **그룹의 구성원 자격 수정**을 선택한 후 **다음**을 클릭하고 **마침**을 클릭합니다.
 
-6. 도메인 **priv.contoso.local**을 마우스 오른쪽 단추로 클릭하고 **위임 컨트롤**을 선택합니다.  
+6. 도메인 **priv.contoso.local**을 마우스 오른쪽 단추로 클릭하고 **위임 컨트롤**을 선택합니다.
 7. 선택한 사용자 및 그룹 탭에서 **추가**를 클릭합니다.  
-8. 사용자, 컴퓨터 또는 그룹 선택 창에서 *MIMAdmin*을 입력하고 **이름 확인**을 클릭합니다. 이름에 밑줄이 표시되면 **확인**을 클릭하고 **다음**을 클릭합니다.  
-9. **사용자 지정 작업**을 선택하고 **일반 사용 권한**을 사용하여 **이 폴더**에 적용합니다.    
-10. 사용 권한 목록에서 다음을 선택합니다.  
-  - **읽기**  
-  - **쓰기**  
-  - **모든 자식 개체 만들기**  
-  - **모든 자식 개체 삭제**  
-  - **모든 속성 읽기**  
-  - **모든 속성 쓰기**  
-  - **SID 기록 마이그레이션**  
-  **다음** 을 클릭하고 **마침**을 클릭합니다.
+8. 사용자, 컴퓨터 또는 그룹 선택 창에서 *MIMAdmin*을 입력하고 **이름 확인**을 클릭합니다. 이름에 밑줄이 표시되면 **확인**을 클릭하고 **다음**을 클릭합니다.
+9. **사용자 지정 작업**을 선택하고 **일반 사용 권한**을 사용하여 **이 폴더**에 적용합니다.
+10. 사용 권한 목록에서 다음을 선택합니다.
+  - **읽기**
+  - **쓰기**
+  - **모든 자식 개체 만들기**
+  - **모든 자식 개체 삭제**
+  - **모든 속성 읽기**
+  - **모든 속성 쓰기**
+  - **SID 기록 마이그레이션** **다음**, **마침**을 차례로 클릭합니다.
 
 11. 다시 도메인 **priv.contoso.local**을 마우스 오른쪽 단추로 클릭하고 **위임 컨트롤**을 선택합니다.  
 12. 선택한 사용자 및 그룹 탭에서 **추가**를 클릭합니다.  
@@ -269,15 +270,17 @@ PRIVDC에서 도메인 관리자로 다음 단계를 수행합니다.
 16. Active Directory 사용자 및 컴퓨터를 닫습니다.
 
 17. 명령 프롬프트를 엽니다.  
-18. PRIV 도메인의 AdminSDHolder 개체에 대한 액세스 제어 목록을 검토합니다. 예를 들어 도메인이 "priv.contoso.local"이면 다음 명령을 입력합니다.  
-  ```
+18. PRIV 도메인의 AdminSDHolder 개체에 대한 액세스 제어 목록을 검토합니다. 예를 들어 도메인이 "priv.contoso.local"이면 다음 명령을 입력합니다.
+  ```cmd
   dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local"
   ```
-19. MIM 서비스 및 MIM 구성 요소 서비스가 이 ACL에서 보호하는 그룹의 구성원 자격을 업데이트할 수 있도록 필요에 따라 액세스 제어 목록을 업데이트합니다.  다음 명령을 입력합니다.  
-  ```
-  dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local" /G priv\mimservice:WP;"member"  
-  dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local" /G priv\mimcomponent:WP;"member"
-  ```
+19. MIM 서비스 및 MIM 구성 요소 서비스가 이 ACL에서 보호하는 그룹의 구성원 자격을 업데이트할 수 있도록 필요에 따라 액세스 제어 목록을 업데이트합니다.  다음 명령을 입력합니다.
+
+```cmd
+dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local" /G priv\mimservice:WP;"member"
+dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local" /G priv\mimcomponent:WP;"member"
+```
+
 20. 이러한 변경 내용이 적용되도록 PRIVDC 서버를 다시 시작합니다.
 
 ## <a name="prepare-a-priv-workstation"></a>PRIV 워크스테이션 준비
