@@ -65,23 +65,23 @@
 ### [8단계 PAM 배포 확인](./pam/sp1-step8-pam-deployment-verification.md)
 ### [부록](./pam/sp1-pam-deployment-addendum.md)
 # 인프라 관리
-## [Best Practice Analyzer for Identity Manager (Identity Manager에 대한 모범 사례 분석기)](https://technet.microsoft.com/library/jj203402)
-## [Password Change Notification Service (암호 변경 알림 서비스)](https://technet.microsoft.com/library/e27c0bc6-c808-4fdb-9e59-58feeb419308)
+## [Best Practice Analyzer for Identity Manager](https://technet.microsoft.com/library/jj203402)(Identity Manager에 대한 모범 사례 분석기)
+## [Password Change Notification Service](https://technet.microsoft.com/library/e27c0bc6-c808-4fdb-9e59-58feeb419308)(암호 변경 알림 서비스)
 ## 인증서 관리
-### [CLMUtil Command-Line Tool (CLMUtil 명령줄 도구)](https://technet.microsoft.com/library/cc720647)
+### [CLMUtil Command-Line Tool](https://technet.microsoft.com/library/cc720647)(CLMUtil 명령줄 도구)
 ### [Configuration Profile Templates (구성 프로필 템플릿)](https://technet.microsoft.com/library/cc708656)
 ### [Using the certificate management website (인증서 관리 웹 사이트 사용)](https://technet.microsoft.com/library/cc720560)
 ### [Managing Smart Card Applications (스마트 카드 응용 프로그램 관리)](https://technet.microsoft.com/library/cc708681)
-### [Backup and Restore (백업 및 복원)](https://technet.microsoft.com/library/dd883245)
+### [Backup and Restore](https://technet.microsoft.com/library/dd883245)(백업 및 복원)
 ## 셀프 서비스 암호 재설정
-### [Programmatic User Registration (프로그래밍 방식으로 사용자 등록)](https://technet.microsoft.com/library/jj134294)
+### [Programmatic User Registration](https://technet.microsoft.com/library/jj134294)(프로그래밍 방식으로 사용자 등록)
 ### [포털 사용자 지정](./reference/mim-portal-customizations.md)
 ## 서비스 및 포털
 ### [Kerberos](https://technet.microsoft.com/library/jj134299)
 ### [동적 로깅](./infrastructure/mim-service-dynamic-logging.md)
-### [Export Performance Guide (내보내기 성능 가이드)](https://technet.microsoft.com/library/hh322883)
+### [Export Performance Guide](https://technet.microsoft.com/library/hh322883)(내보내기 성능 가이드)
 ## 보고
-### [Reporting Custom Reports and Extensibility (사용자 지정 보고서 및 확장성 보고)](https://technet.microsoft.com/library/jj133861)
+### [Reporting Custom Reports and Extensibility](https://technet.microsoft.com/library/jj133861)(사용자 지정 보고서 및 확장성 보고)
 ## [Microsoft identity software: Public release build versions (Microsoft Identity 소프트웨어: 공용 릴리스 빌드 버전)](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)
 # [참조](./reference/microsoft-identity-manager-2016-developer-reference.md)
 ## 개발자 참조
@@ -125,6 +125,7 @@
 #### [보류 중인 PAM 요청 승인 또는 거부](./reference/privileged-access-management-approve-reject-pending-request.md)
 #### [PAM 세션 정보 가져오기](./reference/privileged-access-management-get-session-info.md)
 ## 기술 참조
+### [Microsoft Identity Manager 2016 SP1 용어](./reference/mim-2016-sp1-terms.md)
 ### [Resource Control Display Configuration XML Reference (리소스 컨트롤 표시 구성 XML 참조)](./reference/rcd-configuration-xml-reference.md)
 ### [관리 에이전트 실행 오류 코드](./reference/maerrorcodes.md)
 ### [Microsoft Identity Manager 2016에 대한 함수 참조](./reference/mim2016-functions-reference.md)
