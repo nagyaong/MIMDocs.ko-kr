@@ -4,19 +4,19 @@ description: "Azure Active Directory의 하이브리드 감사 활동 보고서�
 keywords: 
 author: fimguy
 ms.author: fimguy
-manager: femila
-ms.date: 04/28/2017
+manager: bhu
+ms.date: 09/28/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 7320f014-8b60-4866-92de-cfbd3e6edc48
-ms.reviewer: mwahl
+ms.reviewer: fimguy
 ms.suite: ems
-ms.openlocfilehash: 678626e7c32659570de88d8178c16821cceaf7ee
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: 151fbd26011ca76901d181131a88ded8a718a27a
+ms.sourcegitcommit: 0f99de31fe6b52ec692b3886073909f549a451d6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="hybrid-identity-management-audit-reports-in-azure-active-directory---public-previewrefresh"></a>Azure Active Directory의 하이브리드 ID 관리 감사 보고서 - 공개 미리 보기(새로 고침)
 Azure AD(Active Directory) 감사 활동 보고서를 사용하면 단일 보고서를 보고 온-프레미스 또는 클라우드에서 수행되는 ID 관리 활동을 모니터링할 수 있습니다. 이 기능을 통해 모든 ID 및 액세스 데이터를 한 곳에서 관리할 수 있어 시간이 단축되고 전체 비용이 절감됩니다.
@@ -41,6 +41,9 @@ Azure AD(Active Directory) 감사 활동 보고서를 사용하면 단일 보고
 4. 활동 데이터는 한 달 동안 Azure에 저장됩니다.
 5. Azure Portal에서는 감사 보고 데이터를 검색하고 이 데이터를 Azure 감사 보고 블레이드 내에서 감사로 렌더링합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="next-steps"></a>다음 단계
 - [Identity Manager 하이브리드 보고 작업](working-with-identity-manager-hybrid-reporting.md)에 대한 자세한 내용 보기
 - [Azure Active Directory 포털의 감사 활동 보고서](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs)에 대한 자세한 내용 보기
+- [보고서 보존 정책](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-retention)에 대한 자세한 정보 얻기
+- [Microsoft Azure 로그 통합(SIEM)](https://docs.microsoft.com/en-us/azure/security/security-azure-log-integration-overview)에 대한 자세한 정보 얻기
+- [Azure Active Directory 보고 API](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-api-getting-started)에 대한 자세한 정보 얻기
