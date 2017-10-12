@@ -10,11 +10,11 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: 21a2fb4459f46fe0dea89ff016aa77358f940c24
-ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
+ms.openlocfilehash: 0e039c0b05cc9088a6934c07ead09fb5250f8a81
+ms.sourcegitcommit: 81ad3ede52c3a4308b806c0c8a3fd42b5f5965b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="how-do-i-provision-users-to-ad-ds"></a>How Do I Provision Users to AD DS(AD DS로 사용자를 프로비전하는 방법)
 
@@ -294,7 +294,7 @@ FIM 서비스를 구성하려면 Windows Internet Explorer®에서 http://localh
 
 
  >[!NOTE]
- DN을 대상으로 하는 특성 흐름에 대해 초기 흐름만을 선택했는지 확인합니다.                                                                          
+DN을 대상으로 하는 특성 흐름에 대해 초기 흐름만을 선택했는지 확인합니다.                                                                          
 
 ### <a name="step-7-create-the-workflow"></a>단계 7: 워크플로 만들기
 
