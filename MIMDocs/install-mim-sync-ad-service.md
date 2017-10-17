@@ -63,7 +63,7 @@ MIM 관리 에이전트를 구성할 때 사용자 계정을 지정해야 합니
 
     -   사용자 이름: mimma
 
-    -   암호: Pass@word
+    -   암호: Pass@word 
 
     -   도메인: contoso
 
