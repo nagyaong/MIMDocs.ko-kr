@@ -3,20 +3,20 @@ title: "FIM 2010 R2에서 Microsoft Identity Manager 2016으로 업그레이드 
 description: "FIM 2010 R2 구성 요소를 업그레이드한 다음 MIM 2016의 새로운 구성 요소를 설치하는 방법을 알아봅니다."
 keywords: 
 author: fimguy
-ms.author: billmath
-manager: femila
-ms.date: 02/13/2017
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 10/12/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 20e733f17d6ed590844c526888b649eb6bf5f322
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: 46cc77654543045d1dbf1f1a750e76c4a35b727e
+ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="upgrade-from-forefront-identity-manager-2010-r2"></a>Forefront Identity Manager 2010 R2에서 업그레이드
 

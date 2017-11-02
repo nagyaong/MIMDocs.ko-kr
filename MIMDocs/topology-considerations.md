@@ -3,20 +3,20 @@ title: "배포에 대한 토폴로지 가이드 | Microsoft 문서"
 description: "MIM 2016 구성 요소를 이해하고 이를 사용자 환경에 배포하는 방법에 대한 제안 사항을 알아봅니다."
 keywords: 
 author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 07/13/2017
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 10/12/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 735dc357-dfba-4f68-a5b3-d66d6c018803
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 1695cc2df766df3c38a0e1393f6f974102f9fd36
-ms.sourcegitcommit: 0cb8269f07a5f419d2d1cd760d9cc78b8a1c8aa9
+ms.openlocfilehash: e257a2e64225a4bc545d8a9384167819412e939b
+ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="topology-considerations"></a>토폴로지 고려 사항
 동일한 서버 또는 서로 다른 구성의 여러 서버에서 MIM(Microsoft Identity Manager) 구성 요소를 배포할 수 있습니다. 배포를 위한 선택한 토폴로지는 MIM에서 얻을 수 있는 성능에 영향을 줍니다. 이 문서에서는 구현을 고려할 수 있는 다양한 배포 토폴로지를 소개합니다.
