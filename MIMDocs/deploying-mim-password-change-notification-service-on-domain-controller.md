@@ -3,20 +3,20 @@ title: "암호 변경 알림 서비스 배포 | Microsoft 문서"
 description: "도메인 컨트롤러에서 MIM 암호 변경 알림 서비스를 설치하고 구성하는 단계를 알아봅니다."
 keywords: 
 author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 08/01/2017
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 10/12/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 97edae12-6f86-4f9f-8620-a95a096e482a
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: e0179d21752f31e55b132268e9429009e68ba89d
-ms.sourcegitcommit: 5ba5d916c0ca1e5aa501592af0cef714bfdc8afe
+ms.openlocfilehash: 6ce6f8b78d7ea3518bd5d4beeada51cbc3fdc5a3
+ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="deploy-the-mim-password-change-notification-service-on-a-domain-controller"></a>도메인 컨트롤러에 MIM 암호 변경 알림 서비스 배포
 
