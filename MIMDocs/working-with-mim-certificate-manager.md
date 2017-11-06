@@ -3,50 +3,54 @@ title: "MIM 인증서 관리자 Windows 응용 프로그램 배포 | Microsoft �
 description: "사용자가 자신의 액세스 권한을 관리할 수 있도록 인증서 관리자 앱을 배포하는 방법을 알아봅니다."
 keywords: 
 author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/23/2017
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 10/16/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 66060045-d0be-4874-914b-5926fd924ede
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 8a4582695d41ea605f2de4e336c3a780b2b2559f
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: e472d7cdc07aa19464aa1f18447d8c5dc7d0f0ba
+ms.sourcegitcommit: 1e0626a366a41d610e6a117cdf684241eb65ec63
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 10/17/2017
 ---
-# <a name="working-with-the-mim-certificate-manager"></a>MIM 인증서 관리자 작업
-MIM 2016 및 인증서 관리자를 실행한 후 MIM 인증서 관리자 Windows 스토어 응용 프로그램을 배포할 수 있으므로 사용자가 실제 스마트 카드, 가상 스마트 카드 및 소프트웨어 인증서를 쉽게 관리할 수 있습니다. MIM CM 앱을 배포하는 단계는 다음과 같습니다.
+# <a name="mim-certificate-manager-windows-store-application-deployment"></a>MIM 인증서 관리자 Windows 스토어 응용 프로그램 배포
 
-1.  인증서 템플릿을 만듭니다.
+MIM 2016 및 인증서 관리자를 실행한 후에 MIM 인증서 관리자 Windows 스토어 응용 프로그램을 배포할 수 있습니다. 사용자가 Windows 스토어 응용 프로그램을 사용하여 실제 스마트 카드, 가상 스마트 카드 및 소프트웨어 인증서를 관리할 수 있습니다. MIM CM 앱을 배포하는 단계는 다음과 같습니다.
 
-2.  프로필 템플릿을 만듭니다.
+1. 인증서 템플릿을 만듭니다.
 
-3.  앱을 준비합니다.
+2. 프로필 템플릿을 만듭니다.
 
-4.  SCCM 또는 Intune을 통해 앱을 배포합니다.
+3. 앱을 준비합니다.
+
+4. SCCM 또는 Intune을 통해 앱을 배포합니다.
 
 ## <a name="create-a-certificate-template"></a>인증서 템플릿 만들기
+
 인증서 템플릿이 버전 3 이상이어야 한다는 점을 제외하고 일반적으로 수행하는 동일한 방식으로 CM 앱에 대한 인증서 템플릿을 만듭니다.
 
-1.  AD CS(인증서 서버)를 실행 중인 서버에 로그인합니다.
+1. AD CS(인증서 서버)를 실행 중인 서버에 로그인합니다.
 
-2.  MMC를 엽니다.
+2. MMC를 엽니다.
 
-3.  **파일 &gt; 스냅인 추가/제거**를 클릭합니다.
+3. **파일 &gt; 스냅인 추가/제거**를 클릭합니다.
 
-4.  사용 가능한 스냅인 목록에서 **인증서 템플릿**을 클릭하고 **추가**를 클릭합니다.
+4. 사용 가능한 스냅인 목록에서 **인증서 템플릿**을 클릭하고 **추가**를 클릭합니다.
 
-5.  이제 MMC의 **콘솔 루트** 아래에 **인증서 템플릿** 이 나타납니다. 두 번 클릭하면 모든 사용 가능한 인증서 템플릿이 표시됩니다.
+5. 이제 MMC의 **콘솔 루트** 아래에 **인증서 템플릿** 이 나타납니다. 두 번 클릭하면 모든 사용 가능한 인증서 템플릿이 표시됩니다.
 
-6.  **스마트 카드 로그온** 템플릿을 마우스 오른쪽 단추로 클릭하고 **중복 템플릿**을 클릭합니다.
+6. **스마트 카드 로그온** 템플릿을 마우스 오른쪽 단추로 클릭하고 **중복 템플릿**을 클릭합니다.
 
-7.  호환성 탭의 인증 기관 아래에서 Windows Server 2008을 선택하고 인증서 수신 대상 아래에서 Windows 8.1/Windows Server 2012 R2를 선택합니다.
-    사용자에게 버전 3 이상의 인증서 템플릿이 있고 버전 3만 인증서 관리자 앱에서 작동하므로 이 단계는 중요합니다. 인증서 템플릿을 처음 만들어서 저장할 때 버전이 설정되므로 이 방식으로 인증서 템플릿을 만들지 않은 경우 올바른 버전으로 수정하는 방법이 없으며 계속 진행하기 전에 새로 만들어야 합니다.
+7. 호환성 탭의 인증 기관 아래에서 Windows Server 2008을 선택합니다. 인증서 받는 사람 아래에서 Windows 8.1/Windows Server 2012 R2를 선택합니다. 템플릿 버전은 인증서 템플릿을 처음으로 만들고 저장한 시점에 설정됩니다. 이러한 방식으로 인증서 템플릿을 만들지 않은 경우 올바른 버전으로 수정할 방법이 없습니다.
 
+    >[!NOTE]
+    사용자에게 버전 3(이상) 인증서 템플릿이 있음을 확인했기 때문에 이 단계가 중요합니다. 버전 3 템플릿만이 인증서 관리자 앱에서 작동합니다.
+    
 8.  **일반** 탭에서 **표시 이름** 필드에 앱 UI에 표시할 이름(예: **가상 스마트 카드 로그온**)을 입력합니다.
 
 9. **요청 처리** 탭에서 **용도** 를 **서명 및 암호화** 로 설정하고 **...수행할 작업** 아래에서 **등록 중에 사용자에게 확인**을 선택합니다.
@@ -69,11 +73,12 @@ MIM 2016 및 인증서 관리자를 실행한 후 MIM 인증서 관리자 Window
 16. 목록에서 만들어진 새 템플릿을 선택하고 **확인**을 클릭합니다.
 
 ## <a name="create-a-profile-template"></a>프로필 템플릿 만들기
+
 프로필 템플릿을 만들 때 vSC를 만들거나 제거하고 데이터 컬렉션을 제거하도록 템플릿을 설정해야 합니다. CM 앱은 수집된 데이터를 처리할 수 없으므로 다음과 같이 사용하지 않도록 설정하는 것이 중요합니다.
 
 1.  CM 포털에 관리자 권한이 있는 사용자로 로그인합니다.
 
-2.  관리 &gt; 프로필 관리 템플릿으로 이동하고 MIM CM 샘플 스마트 카드 로그온 프로필 템플릿 옆에 있는 확인란이 선택되었는지 확인한 다음 선택한 프로필 템플릿 복사를 클릭합니다.
+2.  관리 &gt; 프로필 템플릿 관리로 이동합니다. **MIM CM 샘플 스마트 카드 로그온 프로필 템플릿** 옆에 있는 확인란이 선택되었는지 확인한 다음 선택한 프로필 템플릿 복사를 클릭합니다.
 
 3.  프로필 템플릿의 이름을 입력하고 **확인**을 클릭합니다.
 
@@ -91,32 +96,33 @@ MIM 2016 및 인증서 관리자를 실행한 후 MIM 인증서 관리자 Window
 
 10. 왼쪽 창에서 **Renew Policy(정책 갱신) &gt; 일반 설정 변경**을 클릭합니다. **Reuse card on renew** (갱신 시 카드 재사용)를 선택하고 **확인**을 클릭합니다.
 
-11. 왼쪽 창에서 정책을 클릭하고 **Sample data item** (샘플 데이터 항목) 옆에 있는 확인란을 선택하여 각 정책 및 모든 정책에 대한 데이터 컬렉션 항목을 사용하지 않도록 설정해야 합니다. 그런 다음 **Delete data collection**(데이터 컬렉션 항목 삭제)을 클릭합니다. 그런 다음 **확인**을 클릭합니다.
+11. 왼쪽 창에서 정책을 클릭하여 모든 정책에 대한 데이터 컬렉션 항목을 사용하지 않도록 설정해야 합니다. 그런 다음 **샘플 데이터 항목** 옆에 있는 상자를 선택하고 **데이터 컬렉션 항목 삭제**를 클릭한 후 **확인**을 클릭해야 합니다.
 
 ## <a name="prepare-the-cm-app-for-deployment"></a>배포용 CM 앱 준비
 
-1.  명령 프롬프트에서 다음 명령을 실행하여 앱의 압축을 풀고 appx라는 새 하위 폴더에 콘텐츠를 추출한 다음 원본 파일이 수정되지 않도록 복사본을 만듭니다.
+1. 명령 프롬프트에서 다음 명령을 실행하여 앱의 압축을 풉니다. 명령은 appx라는 새 하위 폴더에 콘텐츠를 추출하고 원본 파일이 수정되지 않도록 복사본을 만듭니다.
 
-    ```
+    ```cmd
     makeappx unpack /l /p <app package name>.appx /d ./appx
     ren <app package name>.appx <app package name>.appx.original
     cd appx
     ```
 
-2.  appx 폴더에서 CustomDataExample.xml 파일 이름을 Custom.data로 변경합니다.
+2. appx 폴더에서 CustomDataExample.xml 파일 이름을 Custom.data로 변경합니다.
 
-3.  Custom.data 파일을 열고 필요에 따라 매개 변수를 수정합니다.
+3. Custom.data 파일을 열고 필요에 따라 매개 변수를 수정합니다.
 
     |||
     |-|-|
     |MIMCM URL|CM을 구성하는 데 사용한 포털의 FQDN입니다. 예: https://mimcmServerAddress/certificatemanagement|
-    |ADFS URL|AD FS를 사용하려는 경우 AD FS URL을 삽입합니다. 예: https://adfsServerSame/adfs|
+    |ADFS URL|AD FS를 사용하려는 경우 AD FS URL을 삽입합니다. 예: https://adfsServerSame/adfs </br> ADFS를 사용하지 않는 경우 이 설정이 빈 문자열로 구성합니다.  예: ```<ADFS URL=""/>``` |
     |PrivacyUrl|인증서 등록을 위해 수집한 사용자 세부 정보로 수행할 작업을 설명하는 웹 페이지에 대한 URL을 포함할 수 있습니다.|
     |SupportMail|지원 문제에 대한 메일 주소를 포함할 수 있습니다.|
     |LobComplianceEnable|true 또는 false로 설정할 수 있습니다. 기본 설정은 true입니다.|
     |MinimumPinLength|기본 설정은 6입니다.|
     |NonAdmin|true 또는 false로 설정할 수 있습니다. 기본 설정은 false입니다. 컴퓨터의 관리자가 아닌 사용자가 인증서를 등록하고 갱신하도록 하려면 이 속성만 수정합니다.|
-
+>[!IMPORTANT]
+ADFS URL에 대한 속성을 지정해야 합니다. 값을 지정하지 않으면이 최신 앱을 처음으로 사용할 때 오류가 발생합니다.
 4.  파일을 저장하고 편집기를 종료합니다.
 
 5.  패키지에 서명하면 서명 파일이 만들어집니다. 따라서 AppxSignature.p7x라는 원본 서명 파일을 삭제해야 합니다.
@@ -131,13 +137,13 @@ MIM 2016 및 인증서 관리자를 실행한 후 MIM 인증서 관리자 Window
 
 10. 명령 프롬프트에서 다음 명령을 실행하여 appx 파일을 다시 압축하고 서명합니다.
 
-    ```
+    ```cmd
     cd ..
     makeappx pack /l /d .\appx /p <app package name>.appx
     ```
     여기서 app package name은 복사본을 만들 때 사용한 이름과 같습니다.
 
-    ```
+    ```cmd
     signtool sign /f <path\>mysign.pfx /p <pfx password> /fd "sha256" <app package name>.ap
     px
     ```
@@ -145,13 +151,13 @@ MIM 2016 및 인증서 관리자를 실행한 후 MIM 인증서 관리자 Window
 
 11. AD FS 인증을 사용하여 작업하려면
 
-    -   가상 스마트 카드 응용 프로그램을 엽니다. 이 응용 프로그램을 사용하면 다음 단계에 필요한 값을 보다 쉽게 찾을 수 있습니다.
+    -  가상 스마트 카드 응용 프로그램을 엽니다. 이 응용 프로그램을 사용하면 다음 단계에 필요한 값을 보다 쉽게 찾을 수 있습니다.
 
-    -   응용 프로그램을 AD FS 서버에 클라이언트로 추가하고 서버에서 CM을 구성하기 위해 AD FS 서버에서 Windows PowerShell을 열고 명령 `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`을 실행합니다.
+    -  응용 프로그램을 AD FS 서버에 클라이언트로 추가하고 서버에서 CM을 구성하기 위해 AD FS 서버에서 Windows PowerShell을 열고 명령 `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`을 실행합니다.
 
         다음은 ConfigureMimCMClientAndRelyingParty.ps1 스크립트입니다.
 
-        ```
+       ```PowerShell
         # HELP
 
         <#
@@ -242,13 +248,22 @@ MIM 2016 및 인증서 관리자를 실행한 후 MIM 인증서 관리자 Window
         Write-Host "RP Trust for MIM CM Service has been created"
         ```
 
-    -   redirectUri 및 serverFQDN의 값을 업데이트합니다.
+    - redirectUri 및 serverFQDN의 값을 업데이트합니다.
 
-    -   가상 스마트 카드 응용 프로그램에서 redirectUri를 찾으려면 응용 프로그램 설정 패널을 열고 **설정**을 클릭합니다. 리디렉션 URI는 AD FS 서버 주소 표시줄 아래에 나열되어야 합니다. URI는 ADFS 서버 주소를 구성한 경우에만 나타납니다.
+    - 가상 스마트 카드 응용 프로그램에서 redirectUri를 찾으려면 응용 프로그램 설정 패널을 열고 **설정**을 클릭합니다. 리디렉션 URI는 AD FS 서버 주소 표시줄 아래에 나열되어야 합니다. URI는 ADFS 서버 주소를 구성한 경우에만 나타납니다.
 
-    -   serverFQDN은 MIMCM 서버의 전체 컴퓨터 이름일 뿐입니다.
+    - serverFQDN은 MIMCM 서버의 전체 컴퓨터 이름일 뿐입니다.
 
-    -   **ConfigureMIimCMClientAndRelyingParty.ps1** 스크립트에 관련된 도움말을 보려면 `get-help  -detailed ConfigureMimCMClientAndRelyingParty.ps1`를 실행하세요.
+    - **ConfigureMIimCMClientAndRelyingParty.ps1** 스크립트에 관련된 도움말은 다음을 실행하세요. </br> 
+    ```Powershell
+     get-help  -detailed ConfigureMimCMClientAndRelyingParty.ps1
+    ```
 
 ## <a name="deploy-the-app"></a>앱 배포
+
 CM 앱을 설정할 때 다운로드 센터에서 MIMDMModernApp_&lt;version&gt;_AnyCPU_Test.zip 파일을 다운로드하고 모든 콘텐츠를 추출합니다. .appx 파일이 설치 관리자입니다. [System Center Configuration Manager](https://technet.microsoft.com/library/dn613840.aspx)또는 [Intune](https://technet.microsoft.com/library/dn613839.aspx)을 사용하여 일반적인 Windows 스토어 앱 배포 방법으로 이 앱을 배포하여 앱을 테스트용으로 로드할 수 있습니다. 따라서 사용자가 이 앱을 회사 포털을 통해 액세스하거나 자신의 컴퓨터에 직접 푸시되도록 해야 합니다.
+
+## <a name="next-steps"></a>다음 단계
+
+- [프로필 템플릿 구성](https://technet.microsoft.com/library/cc708656)
+- [Managing Smart Card Applications](https://technet.microsoft.com/library/cc708681)(스마트 카드 응용 프로그램 관리)
