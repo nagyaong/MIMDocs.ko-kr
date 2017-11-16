@@ -11,10 +11,10 @@ ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
 ms.openlocfilehash: ef68de19bd0eabd6d9203469ecc991d496f05846
-ms.sourcegitcommit: ed8dd5563e77ef4a3345b2a52a1426859c95576a
+ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="bhold-fimmim-integration-installation"></a>BHOLD FIM/MIM 통합 설치
 
@@ -189,7 +189,7 @@ BHOLD는 세 가지 방법 중 하나로 셀프 서비스 요청에 대한 승�
 
 18. **조직 구성 단위/루트** 페이지에서 **수정**을 클릭합니다.
 
-19. **조직 구성 단위 특성/루트 수정** 페이지의 **승인자**에서 역할 할당 요청을 승인할 사용자의 도메인과 사용자 이름을 *\<domain\>*\\*\<user\>* 양식으로 입력합니다. 여기서 * \<domain\>*은 NetBIOS(짧음) 도메인 이름이고 *\<user\>*는 사용자의 로그온 이름입니다.
+19. **조직 구성 단위 특성/루트 수정** 페이지의 **승인자**에서 역할 할당 요청을 승인할 사용자의 도메인과 사용자 이름을 *\<domain\>*\\*\<user\>* 양식으로 입력합니다. 여기서  *\<domain\>*은 NetBIOS(짧음) 도메인 이름이고 *\<user\>*는 사용자의 로그온 이름입니다.
 20. **확인**을 클릭합니다.
 
 >[!IMPORTANT]
