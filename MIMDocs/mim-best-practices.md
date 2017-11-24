@@ -5,17 +5,17 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 08/18/2017
+ms.date: 11/15/2017
 ms.topic: reference
 ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: fe361c3f6dd85a478d655a910f0f3ec9802128b0
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.openlocfilehash: 7f56882bf005de6c888997c1bf6a9e2feaea410c
+ms.sourcegitcommit: 42253562ac2f9ed689e9db9d0c470213b7926883
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/16/2017
 ---
 # <a name="microsoft-identity-manager-2016-best-practices"></a>Microsoft Identity Manager 2016 모범 사례
 
@@ -90,7 +90,7 @@ SQL Server를 다른 서비스(즉, MIM 2016 서비스 및 MIM 2016 동기화 �
   WITH OVERRIDE
   ```
 
-  이 예제에서는 최대 12GB(기가바이트) 메모리를 사용하도록 SQL Server를 다시 구성합니다.
+  이 예제에서는 최대 12GB(기가바이트) 메모리를 사용하도록 SQL 서버를 다시 구성합니다.
 
 4.  다음 쿼리를 사용하여 설정을 확인합니다.
 
@@ -108,13 +108,16 @@ SQL Server를 다른 서비스(즉, MIM 2016 서비스 및 MIM 2016 동기화 �
 
 ### <a name="backup-and-recovery-configuration"></a>백업 및 복구 구성
 
-일반적으로 조직의 백업 정책에 따라 데이터베이스 백업을 수행해야 합니다. 증분 로그 백업을 계획하지 않은 경우 데이터베이스를 단순 복구 모드로 설정해야 합니다. 이러한 모델에 대한 디스크 공간 요구 사항뿐만 아니라 백업 전략을 구현하기 전에 다른 복구 모델의 의미를 이해해야 합니다. 전체 복구 모델에서는 디스크 공간을 과도하게 사용하지 않도록 로그를 자주 백업해야 합니다. 자세한 내용은 [Recovery Model Overview](http://go.microsoft.com/fwlink/?LinkID=185370)(복구 모델 개요) 및 [FIM 2010 Backup and Restore Guide](http://go.microsoft.com/fwlink/?LinkID=165864)(FIM 2010 백업 및 복원 가이드)를 참조하세요.
+일반적으로 데이터베이스 관리자와 함께 백업 및 복구 전략을 설계해야 합니다. 일부 권장 사항은 다음과 같습니다.
+- 조직의 백업 정책에 따라 데이터베이스 백업을 수행합니다. 
+- 증분 로그 백업을 계획하지 않은 경우 데이터베이스를 단순 복구 모드로 설정해야 합니다. 
+- 백업 전략을 구현하기 전에 다른 복구 모델의 의미를 파악해야 합니다. 이러한 모델의 디스크 공간 요구 사항을 확인하세요. 전체 복구 모델에서는 디스크 공간을 과도하게 사용하지 않도록 로그를 자주 백업해야 합니다. 
 
-## <a name="create-a-backup-administrator-account-for-the-fimservice-after-installation"></a>설치 후에 FIMService에 대한 백업 관리자 계정 만들기
+자세한 내용은 [Recovery Model Overview](http://go.microsoft.com/fwlink/?LinkID=185370)(복구 모델 개요) 및 [FIM 2010 Backup and Restore Guide](http://go.microsoft.com/fwlink/?LinkID=165864)(FIM 2010 백업 및 복원 가이드)를 참조하세요.
 
+## <a name="create-a-backup-administrator-account-for-the-fim-service-after-installation"></a>설치 후에 FIM Service에 대한 백업 관리자 계정 만들기
 
->[!IMPORTANT]
-FIMService 관리자 집합의 구성원은 FIM 배포의 작동에 중요한 고유한 사용 권한을 갖습니다. 관리자 집합의 일부로 로그온할 수 없는 경우 유일한 해결 방법은 시스템의 이전 백업으로 롤백하는 것입니다. 이 문제를 해결하려면 다른 사용자를 설치 후 구성의 일부로 FIM 관리 집합에 추가하는 것이 좋습니다.
+FIMService 관리자 집합의 구성원은 MIM 배포의 작동에 중요한 고유한 사용 권한을 갖습니다. 관리자 집합의 일부로 로그온할 수 없는 경우 유일한 해결 방법은 시스템의 이전 백업으로 롤백하는 것입니다. 이 문제를 해결하려면 다른 사용자를 설치 후 구성의 일부로 FIM 관리 집합에 추가하는 것이 좋습니다.
 
 ## <a name="fim-service"></a>FIM 서비스
 
@@ -144,7 +147,7 @@ MIM 2016 Service 서비스 계정에 대해 Microsoft Exchange Server를 구성�
 
 ### <a name="disable-sharepoint-indexing"></a>SharePoint 인덱싱 사용 안 함
 
-Microsoft Office SharePoint® 인덱싱을 사용하지 않도록 설정하는 것이 좋습니다. 인덱싱해야 하는 문서가 없으며 인덱싱을 수행하면 FIM 2010에서 많은 오류 로그 항목이 생성되고 잠재적 성능 문제가 발생합니다. SharePoint 인덱싱을 사용하지 않도록 설정하려면
+Microsoft Office SharePoint® 인덱싱을 사용하지 않도록 설정하는 것이 좋습니다. 인덱스화해야 할 문서가 없습니다. 인덱스를 수행하면 많은 오류 로그 항목 및 MIM의 잠재적인 성능 문제가 발생합니다. SharePoint 인덱싱을 사용하지 않으려면 아래 단계를 수행하세요.
 
 1.  MIM 2016 포털을 호스트하는 서버에서 [시작]을 클릭합니다.
 
@@ -164,16 +167,16 @@ Microsoft Office SharePoint® 인덱싱을 사용하지 않도록 설정하는 �
 
 ## <a name="mim-2016-initial-data-load"></a>MIM 2016 초기 데이터 로드
 
-이 섹션에는 외부 시스템에서 FIM 2010으로 수행되는 초기 데이터 로드의 성능을 향상시키기 위한 일련의 단계가 나와 있습니다. 이러한 많은 단계는 시스템을 처음 채우는 동안 임시로 사용되며 완료 시 원래대로 설정해야 합니다. 이 작업은 일회성 작업이며 연속되는 동기화가 아닙니다.
+이 섹션에는 외부 시스템에서 MIM으로 수행되는 초기 데이터 로드의 성능을 향상시키기 위한 일련의 단계가 나와 있습니다. 이러한 단계 여러 개는 시스템의 초기 입력 동안에만 수행된다는 것을 알아두어야 합니다. 로드 완료 시 재설정해야 합니다. 이 작업은 일회성 작업이며 연속되는 동기화가 아닙니다.
 
 >[!NOTE]
-FIM 2010과 AD DS(Active Directory Domain Services) 간에 사용자를 동기화하는 방법에 대한 자세한 내용은 FIM 설명서에서 [How do I Synchronize Users from Active Directory to FIM](http://go.microsoft.com/fwlink/?LinkID=188277)(Active Directory에서 FIM으로 사용자를 동기화하는 방법)을 참조하세요.
+MIM과 AD DS(Active Directory Domain Services) 간에 사용자를 동기화하는 방법에 대한 자세한 내용은 FIM 설명서에서 [How do I Synchronize Users from Active Directory to FIM](http://go.microsoft.com/fwlink/?LinkID=188277)(Active Directory에서 FIM으로 사용자를 동기화하는 방법)을 참조하세요.
 
 >[!IMPORTANT]
-이 가이드의 SQL 설정 섹션에 설명되는 모범 사례를 적용했는지 확인합니다.                                                                                                                                                      |
+이 가이드의 SQL 설정 섹션에 설명되는 모범 사례를 적용했는지 확인합니다. 
 
 ### <a name="step-1-configure-the-sql-server-for-initial-data-load"></a>1단계: 초기 데이터 로드에 대해 SQL Server 구성
-처음에 많은 양의 데이터를 로드하려는 경우 전체 텍스트 검색을 일시적으로 껐다가 MIM 2016 관리 에이전트(FIM MA) 내보내기를 완료한 후 다시 켜서 데이터베이스를 채우는 데 걸리는 시간을 줄일 수 있습니다.
+데이터의 초기 로드는 시간이 오래 걸릴 수 있습니다. 처음에 많은 양의 데이터를 로드하려는 경우 전체 텍스트 검색을 일시적으로 껐다가 MIM 2016 관리 에이전트(FIM MA) 내보내기를 완료한 후 다시 켜서 데이터베이스를 채우는 데 걸리는 시간을 줄일 수 있습니다.
 
 전체 텍스트 검색을 일시적으로 끄려면
 
@@ -184,12 +187,9 @@ FIM 2010과 AD DS(Active Directory Domain Services) 간에 사용자를 동기�
 3.  다음 SQL 문을 실행합니다.
 
 ```SQL
-ALTER FULLTEXT INDEX ON [fim].[ObjectValueString] SET CHANGE_TRACKING =
-MANUAL
+ALTER FULLTEXT INDEX ON [fim].[ObjectValueString] SET CHANGE_TRACKING = MANUAL
 ALTER FULLTEXT INDEX ON [fim].[ObjectValueXml] SET CHANGE_TRACKING = MANUAL
 ```
-
-SQL Server 복구 모델의 디스크 요구 사항을 파악하는 것이 중요합니다. 백업 일정에 따라 초기 시스템을 로드하는 동안 단순 복구 모드를 사용하여 디스크 공간 사용을 제한하는 것이 좋을 수 있지만 데이터 손실 측면을 이해해야 합니다. 전체 복구 모드를 사용할 경우 과도한 디스크 공간 사용을 방지하기 위해 트랜잭션 로그의 잦은 백업을 비롯한 백업을 통해 디스크 사용량을 관리해야 합니다.
 
 >[!IMPORTANT]
 이러한 절차를 구현하지 않으면 디스크 공간 사용량이 높아져서 디스크 공간이 부족해질 수 있습니다. [Recovery Model Overview](http://go.microsoft.com/fwlink/?LinkID=185370)(복구 모델 개요)에서 이 항목에 대한 추가 정보를 찾을 수 있습니다. [The FIM Backup and Restore Guide](http://go.microsoft.com/fwlink/?LinkID=165864)(FIM 백업 및 복원 가이드)에 추가 정보가 포함되어 있습니다.
@@ -200,16 +200,11 @@ SQL Server 복구 모델의 디스크 요구 사항을 파악하는 것이 중�
 
 ### <a name="step-3-configure-and-populate-the-fim-service-with-external-identity-data"></a>3단계: 외부 ID 데이터를 사용해서 FIM 서비스 구성 및 채우기
 
-이제 Active Directory 도메인 서비스의 사용자를 FIM과 동기화하는 방법 가이드에 설명된 절차에 따라
-
-시스템을 구성하고 Active Directory의 사용자와 동기화해야 합니다. 그룹 정보를 동기화해야 하는 경우 해당 프로세스에 대한 절차가 Active Directory Domain Services의 그룹을 FIM과 동기화하는 방법 가이드에 설명되어 있습니다.
+이 시점에서 Active Directory Domain Services에서 FIM으로 사용자를 동기화하는 방법 가이드에서 설명하는 절차에 따라 Active Directory의 사용자로 시스템을 구성하고 동기화하세요. 그룹 정보를 동기화해야 하는 경우 해당 프로세스에 대한 절차가 [How Do I Synchronize Groups from Active Directory Domain Services to FIM](https://technet.microsoft.com/library/ff686936(v=ws.10).aspx)(Active Directory Domain Services의 그룹을 FIM과 동기화하는 방법) 가이드에 설명되어 있습니다.
 
 #### <a name="synchronization-and-export-sequences"></a>동기화 및 내보내기 시퀀스
 
-성능을 최적화하기 위해 동기화를 실행한 후에 내보내기를 실행하면 커넥터 공간에 보류 중인 내보내기 작업이 많아집니다.
-
-그런 다음 영향을 받는 커넥터 공간과 연결된 관리 에이전트에서 확인 가져오기 실행을 수행합니다. 예를 들어 초기 데이터 로드의 일환으로 일부 관리 에이전트에 대해 동기화 실행 프로필을 실행해야 할 경우 각 개별 동기화 실행 후 내보내기를 실행하고 델타 가져오기를 실행해야 합니다.
-
+성능을 최적화하기 위해 동기화를 실행한 후에 내보내기를 실행하면 커넥터 공간에 보류 중인 내보내기 작업이 많아집니다. 그런 다음 영향을 받는 커넥터 공간과 연결된 관리 에이전트에서 확인 가져오기 실행을 수행합니다. 예를 들어 초기 데이터 로드의 일환으로 일부 관리 에이전트에 대해 동기화 실행 프로필을 실행해야 할 경우 각 개별 동기화 실행 후 내보내기를 실행하고 델타 가져오기를 실행해야 합니다.
 초기화 주기에 속하는 각 원본 관리 에이전트에 대해 다음 단계를 수행합니다.
 
 1.  원본 관리 에이전트에 대한 전체 가져오기
@@ -320,7 +315,7 @@ SSL을 구현하려면
 
 7.  파일을 아무 위치에나 저장합니다. 이후 단계에서 이 위치에 액세스해야 합니다.
 
-8.  Windows Internet Explorer®에서 https://servername/certsrv로 이동합니다. servername을 인증서를 발급하는 서버의 이름으로 바꿉니다.
+8.  https://servername/certsrv로 이동합니다. servername을 인증서를 발급하는 서버의 이름으로 바꿉니다.
 
 9.  [새 인증서 요청]을 클릭합니다.
 
@@ -374,7 +369,7 @@ SSL을 구현하려면
 
 -   이 문서의 SQL 설정 섹션에 설명된 대로 SQL 설정 모범 사례를 적용합니다.
 
--   FIM 2010 R2 포털 사이트에서 SharePoint 인덱싱을 끕니다. 자세한 내용은 이 문서의 SharePoint 인덱싱 사용 안 함 섹션을 참조하세요.
+-   MIM 포털 사이트에서 SharePoint 인덱싱을 끕니다. 자세한 내용은 이 문서의 SharePoint 인덱싱 사용 안 함 섹션을 참조하세요.
 
 ## <a name="feature-specific-best-practices--i-want-to-remove-this-and-collapse-this-section-and-just-have-the-specific-features-at-header-2-level-versus-3"></a>기능별 모범 사례(이 내용을 없애고 이 섹션을 축소한 다음 제목 2 수준 및 3에 특정 기능을 포함할 예정임)
 
@@ -392,7 +387,7 @@ MIM은 2가지 MPR 형식인 요청 및 전환 설정을 제공합니다.
 -  RMPR(요청 MPR)
 
   - 리소스에 대한 CRUD(만들기, 읽기, 업데이트 또는 삭제) 작업에 대해 액세스 제어 정책(인증, 권한 부여 및 작업)을 정의하는 데 사용됩니다.
-  - FIM의 대상 리소스에 대해 CRUD 작업이 실행될 때 적용됩니다.
+  - MIM의 대상 리소스에 대해 CRUD 작업이 실행될 때 적용됩니다.
   - 규칙에 정의된 일치 조건, 즉 규칙이 적용되는 CRUD 요청에 따라 범위가 지정됩니다.
 
 - 집합 TMPR(전환 MPR)
@@ -404,7 +399,7 @@ MIM은 2가지 MPR 형식인 요청 및 전환 설정을 제공합니다.
 
 #### <a name="only-enable-mprs-as-necessary"></a>필요할 때만 MPR 사용
 
-구성을 적용할 때 최소 권한 원칙을 사용합니다. MPR은 FIM 배포에 대한 액세스 정책을 제어합니다. 대부분의 사용자가 사용하는 기능만 사용하도록 설정합니다. 예를 들어 모든 사용자가 그룹 관리에 FIM을 사용하지는 않으므로 연결된 그룹 관리 MPR을 사용하지 않도록 설정하는 것이 좋습니다. 기본적으로 FIM에는 대부분의 비관리자 권한이 사용되지 않도록 설정되어 있습니다.
+구성을 적용할 때 최소 권한 원칙을 사용합니다. MPR은 MIM 배포에 대한 액세스 정책을 제어합니다. 대부분의 사용자가 사용하는 기능만 사용하도록 설정합니다. 예를 들어 모든 사용자가 그룹 관리에 MIM을 사용하지는 않으므로 연결된 그룹 관리 MPR을 사용하지 않도록 설정하는 것이 좋습니다. 기본적으로 MIM에는 대부분의 비관리자 권한이 사용되지 않도록 설정되어 있습니다.
 
 #### <a name="duplicate-built-in-mprs-instead-of-directly-modifying"></a>직접 수정 대신 기본 제공 MPR 복제
 기본 제공 MPR을 수정해야 할 경우 필요한 구성으로 새 MPR을 만든 후 기본 제공 MPR을 해제해야 합니다. 이렇게 하면 업그레이드 프로세스를 통해 도입된 기본 제공 MPR에 대한 후속 변경 내용이 시스템 구성에 부정적인 영향을 주지 않습니다.
@@ -431,7 +426,7 @@ MPR에서 특성을 명시적으로 나열할 때 만들기 및 수정에 필요
 
 #### <a name="avoid-giving-unrestricted-access-even-to-selected-principal-groups"></a>선택한 사용자 그룹이더라도 무제한 액세스 권한을 부여하지 않음
 
-FIM에서 사용 권한은 긍정 어설션으로 정의됩니다. FIM은 거부 권한을 지원하지 않으므로 리소스에 대해 무제한 액세스 권한을 부여하면 사용 권한에 예외 항목을 지정해야 하므로 작업이 복잡해집니다. 가장 좋은 방법은 필요한 사용 권한만 부여하는 것입니다.
+MIM에서 사용 권한은 긍정 어설션으로 정의됩니다. MIM은 거부 권한을 지원하지 않으므로 리소스에 대해 무제한 액세스 권한을 부여하면 사용 권한에 예외 항목을 지정해야 하므로 작업이 복잡해집니다. 가장 좋은 방법은 필요한 사용 권한만 부여하는 것입니다.
 
 #### <a name="use-tmprs-to-define-custom-entitlements"></a>TMPR을 사용하여 사용자 지정 자격 정의
 
@@ -470,7 +465,7 @@ TMPR 쌍을 만들 때 [Set Transition In MPR last]\(마지막에 집합 전환 
 
 3.  T-Out MPR을 사용하지 않도록 설정합니다.
 
-자격은 제거하지만 현재 구성원은 그대로 두려면(예: FIM을 사용한 자격 관리 중지)
+자격은 제거하지만 현재 구성원은 그대로 두려면(예: MIM을 사용한 자격 관리 중지)
 
 1.  T-In MPR을 사용하지 않도록 설정합니다. 이렇게 하면 새 권한 부여가 방지됩니다.
 
@@ -504,11 +499,11 @@ TMPR 쌍을 만들 때 [Set Transition In MPR last]\(마지막에 집합 전환 
 
 #### <a name="kiosk-like-computers-that-are-used-for-password-reset-should-set-local-security-to-clear-the-virtual-memory-pagefile"></a>암호 재설정에 사용되는 키오스크 유사 컴퓨터는 가상 메모리 페이지 파일을 지우기 위해 로컬 보안을 설정해야 함
 
-키오스크로 사용하려는 워크스테이션에 FIM 2010 암호 재설정을 배포하는 경우 시스템 종료: 가상 메모리 페이지 파일 지움 로컬 보안 정책 설정을 켜서 프로세스 메모리의 중요한 정보를 권한 없는 사용자가 사용할 수 없게 하는 것이 좋습니다.
+키오스크로 사용하려는 워크스테이션에 MIM 암호 재설정을 배포하는 경우 시스템 종료: 가상 메모리 페이지 파일 지움 로컬 보안 정책 설정을 켜서 프로세스 메모리의 중요한 정보를 권한 없는 사용자가 사용할 수 없게 하는 것이 좋습니다.
 
 #### <a name="users-should-always-register-for-a-password-reset-on-a-computer-that-they-are-logged-on-to"></a>사용자가 로그온된 컴퓨터에서 항상 암호 재설정을 등록해야 함
 
-사용자가 웹 포털을 통해 암호 재설정에 등록하려고 하면 FIM 2010은 웹 사이트에 로그온한 사용자가 누군지 관계 없이, 로그온한 사용자 대신 등록을 시작합니다. 사용자는 로그온된 컴퓨터에서 항상 암호 재설정을 등록해야 합니다.
+사용자가 웹 포털을 통해 암호 재설정에 등록하려고 하면 MIM은 웹 사이트에 로그온한 사용자가 누군지 관계없이, 로그온한 사용자 대신 등록을 시작합니다. 사용자는 로그온된 컴퓨터에서 항상 암호 재설정을 등록해야 합니다.
 
 #### <a name="do-not-set-the-avoidpdconwan-registry-key-to-true"></a>AvoidPdcOnWan 레지스트리 키를 true로 설정하지 말 것
 
@@ -580,7 +575,7 @@ MIM에서 기본적으로 일부 사용자 프로필 정보가 다른 사용자�
 
 #### <a name="making-regular-expressions-case-insensitive"></a>정규식이 대/소문자를 구분하지 않도록 지정
 
-FIM에서 일부 정규식을 대/소문자를 구분하지 않게 설정하면 도움이 수 있습니다. ?!:을 사용하여 그룹 내에서 대/소문자를 무시할 수 있습니다. 예를 들어 Employee 유형에 대해 다음을 사용합니다.
+MIM에서 일부 정규식을 대/소문자를 구분하지 않게 설정하면 도움이 될 수 있습니다. ?!:을 사용하여 그룹 내에서 대/소문자를 무시할 수 있습니다. 예를 들어 Employee 유형에 대해 다음을 사용합니다.
 
 `\^(?!:contractor\|full time employee)%.`
 
@@ -590,17 +585,17 @@ FIM에서 일부 정규식을 대/소문자를 구분하지 않게 설정하면 
 
 #### <a name="leading-and-trailing-spaces-in-strings-are-ignored"></a>문자열의 선행 및 후행 공백이 무시됨
 
-FIM에서 선행 및 후행 공백이 있는 문자열을 입력할 수 있지만 FIM 시스템은 이러한 공백을 무시합니다. 선행 및 후행 공백이 있는 문자열을 제출하면 동기화 엔진 및 웹 서비스가 이러한 공백을 무시합니다.
+MIM에서 선행 및 후행 공백이 있는 문자열을 입력할 수 있지만 MIM 시스템은 이러한 공백을 무시합니다. 선행 및 후행 공백이 있는 문자열을 제출하면 동기화 엔진 및 웹 서비스가 이러한 공백을 무시합니다.
 
 #### <a name="empty-strings-do-not-equal-null"></a>빈 문자열이 null이 아님
 
-이번 FIM 릴리스에서는 빈 문자열이 null이 아닙니다. 빈 문자열 입력이 유효한 값으로 간주됩니다. 없음이 null로 간주됩니다.
+이번 MIM 릴리스에서는 빈 문자열이 null이 아닙니다. 빈 문자열 입력이 유효한 값으로 간주됩니다. 없음이 null로 간주됩니다.
 
 ### <a name="workflow-and-request-processing"></a>워크플로 및 요청 처리
 
 #### <a name="do-not-delete-default-workflows-that-are-shipped-with-mim-2016"></a>MIM 2016에 포함된 기본 워크플로는 삭제하지 말 것
 
-다음과 같은 워크플로가 FIM 2010에 포함되어 있으며 삭제하지 않아야 합니다.
+다음과 같은 워크플로가 MIM에 포함되어 있으며 삭제하지 않아야 합니다.
 
 -   만료 워크플로
 
@@ -634,4 +629,11 @@ FIM에서 선행 및 후행 공백이 있는 문자열을 입력할 수 있지�
 
 ### <a name="understanding-fim-service-partitions"></a>FIM 서비스 파티션의 이해
 
-FIM의 목적은 구성한 비즈니스 정책에 따라 FIM Synchronization Service 및 셀프 서비스 구성 요소와 같은 다양한 FIM 클라이언트가 시작할 수 있는 요청을 처리하는 것입니다. 기본적으로 각 FIM 서비스 인스턴스는 하나 이상의 FIM 서비스 인스턴스로 구성되는 논리적 그룹(FIM 서비스 파티션이라고도 함)에 속합니다. 모든 요청을 처리하기 위해 FIM 서비스 인스턴스를 하나만 배포하는 경우 처리 대기 시간이 발생할 수 있습니다. 일부 작업은 셀프 서비스 작업에 적절한 기본 시간 제한 값을 초과할 수도 있습니다. FIM 서비스 파티션은 이 문제를 해결하는 데 도움이 될 수 있습니다. 자세한 내용은 FIM 서비스 파티션 이해를 참조하세요.
+MIM의 목적은 구성한 비즈니스 정책에 따라 FIM Synchronization Service 및 셀프 서비스 구성 요소와 같은 다양한 MIM 클라이언트가 시작할 수 있는 요청을 처리하는 것입니다. 기본적으로 각 FIM 서비스 인스턴스는 하나 이상의 FIM 서비스 인스턴스로 구성되는 논리적 그룹(FIM 서비스 파티션이라고도 함)에 속합니다. 모든 요청을 처리하기 위해 FIM 서비스 인스턴스를 하나만 배포하는 경우 처리 대기 시간이 발생할 수 있습니다. 일부 작업은 셀프 서비스 작업에 적절한 기본 시간 제한 값을 초과할 수도 있습니다. FIM 서비스 파티션은 이 문제를 해결하는 데 도움이 될 수 있습니다.
+
+자세한 내용은 [Understanding FIM Service Partitions](https://social.technet.microsoft.com/wiki/contents/articles/2363.understanding-fim-service-partitions.aspx)(FIM Service 파티션 이해)를 참조하세요.
+
+## <a name="next-steps"></a>다음 단계
+- [FIM Backup and Restore Guide](http://go.microsoft.com/fwlink/?LinkID=165864)(FIM 백업 및 복원 가이드)
+- [How do I Synchronize Users from Active Directory to FIM](http://go.microsoft.com/fwlink/?LinkID=188277)(Active Directory에서 FIM으로 사용자를 동기화하는 방법) 
+- [Recovery Model Overview](http://go.microsoft.com/fwlink/?LinkID=185370)(복구 모델 개요)

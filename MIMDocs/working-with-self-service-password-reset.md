@@ -12,14 +12,14 @@ ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 90c773c30b0ab23ad29ca1a215745bf59b188764
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.openlocfilehash: 0463a91275f3e181a66eb460c167bb9a2008f444
+ms.sourcegitcommit: 27a23142393bbb0f66a3d533d89a5a8366a29e41
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/20/2017
 ---
 >[!IMPORTANT]
-Azure Multi-Factor Authentication 소프트웨어 개발 키트의 사용 중단 알림 때문입니다. Azure MFA SDK는 기존 고객을 위해 사용 중지 날짜인 2018년 10월 01일까지 지원됩니다. 새 고객과 현재 고객은 더 이상 Azure 클래식 포털을 통해 SDK를 다운로드할 수 없게 됩니다. 다운로드하려면 Azure 고객 지원에 문의하여 생성된 MFA 서비스 자격 증명 패키지를 받아야 합니다. <br> Microsoft 개발 팀은 MFA 서버 SDK와 통합하여 MFA에 적용할 변경 사항을 계획하고 있습니다. 이는 2018년 초에 나올 핫픽스에 포함될 예정입니다.
+Azure Multi-Factor Authentication 소프트웨어 개발 키트의 사용 중단 알림 때문입니다. Azure MFA SDK는 기존 고객을 위해 사용 중지 날짜인 2018년 11월 14일까지 지원됩니다. 새 고객과 현재 고객은 더 이상 Azure 클래식 포털을 통해 SDK를 다운로드할 수 없게 됩니다. 다운로드하려면 Azure 고객 지원에 문의하여 생성된 MFA 서비스 자격 증명 패키지를 받아야 합니다. <br> Microsoft 개발 팀은 MFA 서버 SDK와 통합하여 MFA에 적용할 변경 사항을 계획하고 있습니다. 이는 2018년 초에 나올 핫픽스에 포함될 예정입니다.
 
 # <a name="working-with-self-service-password-reset"></a>셀프 서비스 암호 재설정 작업
 Microsoft Identity Manager 2016에서는 셀프 서비스 암호 재설정 기능에 대한 추가 기능을 제공합니다. 다음과 같은 여러 중요한 기능이 포함되어 이 기능이 향상되었습니다.
