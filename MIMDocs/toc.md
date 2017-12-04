@@ -86,6 +86,13 @@
 # [참조](./reference/microsoft-identity-manager-2016-developer-reference.md)
 ## 개발자 참조
 ### [MIM 2016 개발자 참조](./reference/microsoft-identity-manager-2016-developer-reference.md)
+### 웹 서비스 커넥터
+#### [일반 웹 서비스 커넥터 개요](./reference/microsoft-identity-manager-2016-ma-ws.md)
+#### [웹 구성 도구의 설치 단계](./reference/microsoft-identity-manager-2016-ma-ws-install.md)
+#### [SOAP용 웹 서비스 커넥터 워크플로 가이드](./reference/microsoft-identity-manager-2016-ma-ws-soap.md)
+#### [샘플 Rest용 웹 서비스 커넥터 워크플로 가이드](./reference/microsoft-identity-manager-2016-ma-ws-restgeneric.md)
+#### [웹 서비스 커넥터 Rest 샘플 App Service](./reference/microsoft-identity-manager-2016-ma-ws-restsample.md)
+#### [웹 서비스 커넥터 구성 옵션](./reference/microsoft-identity-manager-2016-ma-ws-maconfig.md)
 ### BHOLD
 #### [BHOLD 개발자 참조](./reference/mim2016-bhold-developer-reference.md) 
 ### [인증서 관리 REST API 참조](./reference/certificate-management-rest-api-reference.md)
