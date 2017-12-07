@@ -5,18 +5,18 @@ keywords:
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 10/12/2017
+ms.date: 11/30/2017
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 34a8c16e-3bed-4e16-939b-b9fe17dd834b
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 145248962f0977f4aa7bc1edf49f0e88543d5cb8
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.openlocfilehash: cdb425938f7458f74cf06b76d33f557d6a38beeb
+ms.sourcegitcommit: 362475d4018e74e5a17ba574ccaec47a2caebaff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="set-up-an-identity-management-server-exchange"></a>ID 관리 서버 설치: Exchange
 
@@ -29,13 +29,13 @@ MIM에서 메일 또는 프로비전 사서함을 보내고 받도록 구성하�
 
 1. Microsoft Office 2010 Filter Packs - 버전 2.0 + Microsoft Office 2010 Filter Packs - 버전 2.0 SP1을 다운로드하고 설치합니다.
 
-    - [MS Office10 FP2.0](http://www.microsoft.com/en-us/download/details.aspx?id=17062)
+    - [MS Office10 FP2.0](http://www.microsoft.com/download/details.aspx?id=17062)
 
-    - [MS Office10 FP2.0 SP1](http://www.microsoft.com/en-us/download/details.aspx?id=26604)
+    - [MS Office10 FP2.0 SP1](http://www.microsoft.com/download/details.aspx?id=26604)
 
-2. [Microsoft Unified Communications Managed API 4.0, 핵심 런타임 64비트](http://www.microsoft.com/en-us/download/details.aspx?id=34992)다운로드 및 설치
+2. [Microsoft Unified Communications Managed API 4.0, 핵심 런타임 64비트](http://www.microsoft.com/download/details.aspx?id=34992)다운로드 및 설치
 
-3. [MS Exchange Server 2013 180일 평가판 버전](http://www.microsoft.com/en-us/evalcenter/evaluate-exchange-server-2013)다운로드 및 설치
+3. [MS Exchange Server 2013 180일 평가판 버전](http://www.microsoft.com/evalcenter/evaluate-exchange-server-2013)다운로드 및 설치
 
 >[!div class="step-by-step"]  
 [« SharePoint](prepare-server-sharepoint.md)
