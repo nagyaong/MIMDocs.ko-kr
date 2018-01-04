@@ -12,11 +12,11 @@ ms.technology: security
 ms.assetid: 7320f014-8b60-4866-92de-cfbd3e6edc48
 ms.reviewer: fimguy
 ms.suite: ems
-ms.openlocfilehash: 151fbd26011ca76901d181131a88ded8a718a27a
-ms.sourcegitcommit: 0f99de31fe6b52ec692b3886073909f549a451d6
+ms.openlocfilehash: ffe372c273aae55278f9b18b45b65425734aa6f7
+ms.sourcegitcommit: e52bab207117390997c6fa8450de24335b502673
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="hybrid-identity-management-audit-reports-in-azure-active-directory---public-previewrefresh"></a>Azure Active Directory의 하이브리드 ID 관리 감사 보고서 - 공개 미리 보기(새로 고침)
 Azure AD(Active Directory) 감사 활동 보고서를 사용하면 단일 보고서를 보고 온-프레미스 또는 클라우드에서 수행되는 ID 관리 활동을 모니터링할 수 있습니다. 이 기능을 통해 모든 ID 및 액세스 데이터를 한 곳에서 관리할 수 있어 시간이 단축되고 전체 비용이 절감됩니다.
@@ -32,7 +32,7 @@ Azure AD(Active Directory) 감사 활동 보고서를 사용하면 단일 보고
 
 ## <a name="how-does-it-work"></a>트래픽 관리자의 작동 방식
 
-온-프레미스 데이터를 수집하려면 먼저 Identity Manager 2016 서버에 보고 에이전트를 설치합니다. 보고 에이전트는 Microsoft 다운로드 페이지([여기](https://www.microsoft.com/en-us/download/details.aspx?id=55112))에서 다운로드합니다.
+온-프레미스 데이터를 수집하려면 먼저 Identity Manager 2016 서버에 보고 에이전트를 설치합니다. 보고 에이전트는 Microsoft 다운로드 페이지([여기](https://www.microsoft.com/download/details.aspx?id=55112))에서 다운로드합니다.
 
 하이브리드 보고 과정은 다음 단계를 따릅니다.
 1. 보고 에이전트가 설치되면 Identity Manager의 활동 데이터가 Windows 이벤트 로그로 전송됩니다.
@@ -43,7 +43,7 @@ Azure AD(Active Directory) 감사 활동 보고서를 사용하면 단일 보고
 
 ## <a name="next-steps"></a>다음 단계
 - [Identity Manager 하이브리드 보고 작업](working-with-identity-manager-hybrid-reporting.md)에 대한 자세한 내용 보기
-- [Azure Active Directory 포털의 감사 활동 보고서](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs)에 대한 자세한 내용 보기
-- [보고서 보존 정책](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-retention)에 대한 자세한 정보 얻기
-- [Microsoft Azure 로그 통합(SIEM)](https://docs.microsoft.com/en-us/azure/security/security-azure-log-integration-overview)에 대한 자세한 정보 얻기
-- [Azure Active Directory 보고 API](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-api-getting-started)에 대한 자세한 정보 얻기
+- [Azure Active Directory 포털의 감사 활동 보고서](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-audit-logs)에 대한 자세한 내용 보기
+- [보고서 보존 정책](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-retention)에 대한 자세한 정보 얻기
+- [Microsoft Azure 로그 통합(SIEM)](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview)에 대한 자세한 정보 얻기
+- [Azure Active Directory 보고 API](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-getting-started)에 대한 자세한 정보 얻기
