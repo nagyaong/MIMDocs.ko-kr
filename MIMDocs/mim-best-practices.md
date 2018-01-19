@@ -5,17 +5,17 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 11/15/2017
+ms.date: 01/05/2018
 ms.topic: reference
 ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: 7f56882bf005de6c888997c1bf6a9e2feaea410c
-ms.sourcegitcommit: 42253562ac2f9ed689e9db9d0c470213b7926883
+ms.openlocfilehash: bb967bfb43218384044e324c270d3d6b35d33afe
+ms.sourcegitcommit: b4513f0f72ac6efd5c2610863f4e3e8c8e65c860
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="microsoft-identity-manager-2016-best-practices"></a>Microsoft Identity Manager 2016 모범 사례
 
@@ -371,7 +371,7 @@ SSL을 구현하려면
 
 -   MIM 포털 사이트에서 SharePoint 인덱싱을 끕니다. 자세한 내용은 이 문서의 SharePoint 인덱싱 사용 안 함 섹션을 참조하세요.
 
-## <a name="feature-specific-best-practices--i-want-to-remove-this-and-collapse-this-section-and-just-have-the-specific-features-at-header-2-level-versus-3"></a>기능별 모범 사례(이 내용을 없애고 이 섹션을 축소한 다음 제목 2 수준 및 3에 특정 기능을 포함할 예정임)
+## <a name="feature-specific-best-practices"></a>기능별 모범 사례 
 
 
 ### <a name="request-management"></a>요청 관리
