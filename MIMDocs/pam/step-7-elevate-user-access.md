@@ -1,22 +1,19 @@
 ---
 title: "PAM 배포 7단계 – 사용자 액세스 | Microsoft Docs"
 description: "마지막 단계로 Privileged Access Management 배포가 성공했음을 보여 주기 위해 권한 있는 사용자에게 임시 액세스 권한을 부여합니다."
-keywords: 
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 09/13/2017
+ms.date: 01/17/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
-ms.reviewer: mwahl
-ms.suite: ems
-ms.openlocfilehash: f8ad03bc072dbf6df36a9ef737479dce60b70b8b
-ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
+ms.openlocfilehash: 2d92be315547da1c352c0e60732f9aeecf0c2d90
+ms.sourcegitcommit: 3d8a2493eae1218bfdb75a399ffa4adc8c2a8fdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 01/20/2018
 ---
 # <a name="step-7--elevate-a-users-access"></a>7단계 - 사용자의 액세스 권한 상승
 
@@ -38,7 +35,12 @@ ms.lasthandoff: 09/14/2017
 
 ## <a name="request-privileged-access-from-mim"></a>MIM에서 권한 있는 액세스를 요청합니다.
 
-1. CORPWKSTN에서 계속 CONTOSO\Jen으로 다음 명령을 입력합니다.
+> [!NOTE]
+> 워크스테이션은 PAW(권한 있는 워크스테이션)인 것이 좋습니다.  자세한 내용은 [PAW](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations)를 참조하세요.
+
+1. PRIVWKSTN에서 PRIV\priv.jen으로 로그온합니다.
+2. **시작**, **실행**을 클릭하고 **PowerShell.exe**를 입력합니다.
+3. 다음 명령을 입력합니다.
 
     ```cmd
     runas /user:Priv.Jen@priv.contoso.local powershell
