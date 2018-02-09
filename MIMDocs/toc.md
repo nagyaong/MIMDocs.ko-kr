@@ -11,6 +11,7 @@
 ## [배포 토폴로지](topology-considerations.md)
 ## [PAM 배포 계획](./pam/environment-overview.md)
 # [배포 및 사용](microsoft-identity-manager-deploy.md)
+## [더 이상 사용되지 않는 기능](microsoft-identity-manager-2016-deprecated-features.md)
 ## [처음 배포](microsoft-identity-manager-deploy.md)
 ### [도메인 설정](preparing-domain.md)
 ### [서버 설치: Windows Server](prepare-server-ws2012r2.md)
