@@ -3,22 +3,21 @@ title: "Identity Manager 2016을 사용하여 Azure에서 하이브리드 보고
 description: "Azure에서 온-프레미스 데이터와 클라우드 데이터를 하이브리드 보고서에 결합하는 방법 및 이러한 보고서를 보고 관리하는 방법을 알아봅니다."
 keywords: 
 author: fimguy
-ms.author: barclayn
+ms.author: davidste
 manager: mbaldwin
-ms.date: 10/12/2017
+ms.date: 2/20/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 68df2817-2040-407d-b6d2-f46b9a9a3dbb
-ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: a96d79d6773a72c813d0cd76de26ea40d28769e1
-ms.sourcegitcommit: 3d8a2493eae1218bfdb75a399ffa4adc8c2a8fdf
+ms.openlocfilehash: e135cc5066220765d97568b3a1e1b984a876b2a2
+ms.sourcegitcommit: b4a39928c5fa1d7718046563c0809bcbf11d833d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2018
+ms.lasthandoff: 02/20/2018
 ---
-# <a name="work-with-hybrid-reporting-in-identity-manager-public-preview-refresh"></a>Identity Manager에서 하이브리드 보고 작업 공개 미리 보기 새로 고침
+# <a name="work-with-hybrid-reporting-in-identity-manager"></a>Identiy Manager에서 하이브리드 보고 작업
 
 이 문서에서는 Azure에서 온-프레미스 데이터와 클라우드 데이터를 하이브리드 보고서에 결합하는 방법 및 이러한 보고서를 관리하고 보는 방법을 설명합니다.
 
@@ -42,7 +41,7 @@ Azure AD(Azure Active Directory)에서 사용할 수 있는 처음 세 개의 Mi
 
 ## <a name="prerequisites"></a>전제 조건
 
-* Identity Manager 2016 RTM 또는 SP1 Identity Manager 서비스
+* Identity Manager 2016 SP1 Identity Manager 서비스, 권장 빌드 [4.4.1749.0](https://support.microsoft.com/en-us/help/4050936/hotfix-rollup-package-build-4-4-1749-0-for-microsoft-identity-manager)
 
 * 디렉터리의 사용 허가를 받은 관리자가 있는 Azure AD Premium 테넌트
 
