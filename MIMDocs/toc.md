@@ -144,3 +144,4 @@
 ## 버전 기록
 ### [MIM 버전 기록](./reference/version-history.md)
 ### [BHOLD 버전 기록](./reference/version-bhold-history.md)
+### [커넥터 버전 릴리스 기록](./reference/microsoft-identity-manager-2016-connector-version-history.md)
