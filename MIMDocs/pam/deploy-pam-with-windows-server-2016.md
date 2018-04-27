@@ -1,7 +1,7 @@
 ---
-title: "Windows Server 2016을 사용하여 MIM 권한 있는 액세스 관리 배포 | Microsoft 문서"
-description: "Sever 2016을 사용하여 권한 있는 액세스 관리 배포에 대한 자세한 정보"
-keywords: 
+title: Windows Server 2016을 사용하여 MIM 권한 있는 액세스 관리 배포 | Microsoft 문서
+description: Sever 2016을 사용하여 권한 있는 액세스 관리 배포에 대한 자세한 정보
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,12 +9,12 @@ ms.date: 08/18/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
-ms.assetid: 
-ms.openlocfilehash: 8827a8b6d49672a7860c9265efac5f0881a2c018
-ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
+ms.assetid: ''
+ms.openlocfilehash: 6088afccec45d1353233a32828353149bcf24740
+ms.sourcegitcommit: 48f89d555c0ac7caa97d149ee42e0b9ef6ccc5f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="deploy-mim-pam-with-windows-server-2016"></a>Windows Server 2016을 사용하여 MIM PAM 배포
 
@@ -130,13 +130,13 @@ Technical Preview 5 전의 Windows Server 2016 기술 미리 보기는 이 MIM �
     -   트러스트를 설정한 다음, PRIV \\관리자로 PRIVDC에 로그온하고, PowerShell을 시작하여 다음 명령을 입력합니다.
   ```
     netdom trust contoso.local /domain:priv.contoso.local /enablesidhistory:yes
-     /usero:contoso\\administrator /passwordo:Pass\@word1
+     /usero:contoso\administrator /passwordo:Pass@word1
 
      netdom trust contoso.local /domain:priv.contoso.local /quarantine:no
-     /usero:contoso\\administrator /passwordo:Pass\@word1  
+     /usero:contoso\administrator /passwordo:Pass@word1  
 
      netdom trust contoso.local /domain:priv.contoso.local /enablepimtrust:yes
-     /usero:contoso\\administrator /passwordo:Pass\@word1
+     /usero:contoso\administrator /passwordo:Pass@word1
   ```
 
 -   항목 #5(트러스트 확인)는 **CORP 및 PRIV 도메인이 모두 Windows Server 2016 도메인 기능 수준에 있는 경우 필요하지 않습니다**.
