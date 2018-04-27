@@ -13,8 +13,8 @@
 # [배포 및 사용](../microsoft-identity-manager-deploy.md)
 ## [처음 배포](../microsoft-identity-manager-deploy.md)
 ### [도메인 설정](../preparing-domain.md)
-### [서버 설치: Windows Server](../prepare-server-ws2012r2.md)
-### [서버 설치: SQL](../prepare-server-sql2014.md)
+### [서버 설치: Windows Server](../prepare-server-ws2016.md)
+### [서버 설치: SQL](../prepare-server-sql2016.md)
 ### [서버 설치: SharePoint](../prepare-server-sharepoint.md)
 ### [서버 설치: Exchange](../prepare-server-exchange.md)
 ### [MIM 설치: 동기화](../install-mim-sync.md)
@@ -65,7 +65,7 @@
 ### [8단계 PAM 배포 확인](../pam/sp1-step8-pam-deployment-verification.md)
 ### [부록](../pam/sp1-pam-deployment-addendum.md)
 # 인프라 관리
-## [Best Practice Analyzer for Identity Manager](https://technet.microsoft.com/library/jj203402)(Identity Manager에 대한 모범 사례 분석기)
+## [Best Practice Analyzer for Identity Manager (Identity Manager에 대한 모범 사례 분석기)](https://technet.microsoft.com/library/jj203402)
 ## [Password Change Notification Service](https://technet.microsoft.com/library/e27c0bc6-c808-4fdb-9e59-58feeb419308)(암호 변경 알림 서비스)
 ## 인증서 관리
 ### [CLMUtil Command-Line Tool](https://technet.microsoft.com/library/cc720647)(CLMUtil 명령줄 도구)
@@ -74,7 +74,7 @@
 ### [Managing Smart Card Applications (스마트 카드 응용 프로그램 관리)](https://technet.microsoft.com/library/cc708681)
 ### [Backup and Restore](https://technet.microsoft.com/library/dd883245)(백업 및 복원)
 ## 셀프 서비스 암호 재설정
-### [Programmatic User Registration](https://technet.microsoft.com/library/jj134294)(프로그래밍 방식으로 사용자 등록)
+### [Programmatic User Registration (프로그래밍 방식으로 사용자 등록)](https://technet.microsoft.com/library/jj134294)
 ### [포털 사용자 지정](../reference/mim-portal-customizations.md)
 ## 서비스 및 포털
 ### [Kerberos](https://technet.microsoft.com/library/jj134299)

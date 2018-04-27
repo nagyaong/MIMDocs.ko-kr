@@ -1,7 +1,7 @@
 ---
-title: "MIM 2016에 대해 Windows Server 2012 R2 구성 | Microsoft 문서"
-description: "MIM 2016과 함께 작동하도록 Windows Server 2012 RS를 준비하는 데 필요한 단계 및 최소 요구 사항을 알아봅니다."
-keywords: 
+title: MIM 2016에 대해 Windows Server 2012 R2 구성 | Microsoft 문서
+description: MIM 2016과 함께 작동하도록 Windows Server 2012 RS를 준비하는 데 필요한 단계 및 최소 요구 사항을 알아봅니다.
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
@@ -13,10 +13,10 @@ ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 76a59292da97583887020c89025add77c7a64c80
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.sourcegitcommit: 637988684768c994398b5725eb142e16e4b03bb3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="set-up-an-identity-management-server-windows-server-2012-r2"></a>ID 관리 서버 설치: Windows Server 2012 R2
 
