@@ -145,3 +145,11 @@
 ### [MIM 버전 기록](./reference/version-history.md)
 ### [BHOLD 버전 기록](./reference/version-bhold-history.md)
 ### [커넥터 버전 릴리스 기록](./reference/microsoft-identity-manager-2016-connector-version-history.md)
+## 커넥터
+### [그래프](microsoft-identity-manager-2016-connector-graph.md)
+### [Lotus Notes](./reference/microsoft-identity-manager-2016-connector-domino.md)
+### [일반 LDAP](./reference/microsoft-identity-manager-2016-connector-genericldap.md)
+### [일반 SQL](./reference/microsoft-identity-manager-2016-connector-genericsql.md)
+### [웹 서비스](./reference/microsoft-identity-manager-2016-ma-ws.md)
+### [PowerShell](./reference/microsoft-identity-manager-2016-connector-powershell.md)
+### [커넥터 버전 릴리스 기록](./reference/microsoft-identity-manager-2016-connector-version-history.md)

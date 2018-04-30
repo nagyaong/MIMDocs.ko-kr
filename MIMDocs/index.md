@@ -3,11 +3,11 @@ layout: LandingPage
 ms.topic: landing-page
 title: Microsoft Identity Manager 설명서 | Microsoft Docs
 description: Microsoft Identity Manager 사용 방법을 알아봅니다.
-ms.openlocfilehash: f57d2f9b4f61eeef09b8abb29ef3023cba798a5d
-ms.sourcegitcommit: 3c422a03c33774d3f94faee72e063d80730a9d1a
+ms.openlocfilehash: 99fdb07edc7bd8996e620f27de9f5906aa6a15ed
+ms.sourcegitcommit: 637988684768c994398b5725eb142e16e4b03bb3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-identity-manager-documentation"></a>Microsoft Identity Manager 설명서
 
@@ -15,17 +15,17 @@ Microsoft Identity Manager 2016은 Active Directory, LDAP, Oracle 및 Azure Acti
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="/microsoft-identity-manager/microsoft-identity-manager-2016-sp1-release-notes">
+        <a href="/microsoft-identity-manager/reference/version-history">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_whats-new.svg" alt="" />
+                            <img src="/media/index/i_whats-new.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Microsoft Identity Manager 2016 서비스 팩 1의 새로운 기능</h3>
+                        <h3>Microsoft Identity Manager 2016 서비스 팩 1의 새 업데이트</h3>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@ Microsoft Identity Manager 2016은 Active Directory, LDAP, Oracle 및 Azure Acti
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="" />
+                            <img src="/media/index/i_learn-about.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -56,7 +56,7 @@ Microsoft Identity Manager 2016은 Active Directory, LDAP, Oracle 및 Azure Acti
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/deploy.svg" alt="" />
+                            <img src="/media/index/i_deploy.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -83,7 +83,7 @@ FIM(Forefront Identity Manager) 일반 지원이 2017년 10월 10일에 종료�
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_reference.svg" alt="" />
+                            <img src="/media/index/i_reference.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -101,7 +101,7 @@ FIM(Forefront Identity Manager) 일반 지원이 2017년 10월 10일에 종료�
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_reference.svg" alt="" />
+                            <img src="/media/index/i_reference.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -119,7 +119,7 @@ FIM(Forefront Identity Manager) 일반 지원이 2017년 10월 10일에 종료�
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_blog.svg" alt="" />
+                            <img src="/media/index/i_blog.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
