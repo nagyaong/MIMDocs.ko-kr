@@ -1,7 +1,7 @@
 ---
-title: "AD와 Microsoft Identity Manager 동기화 사용 | Microsoft 문서"
-description: "관리 에이전트 및 MIM 동기화 서비스를 사용하여 Active Directory와 MIM 데이터베이스를 동기화합니다."
-keywords: 
+title: AD와 Microsoft Identity Manager 동기화 사용 | Microsoft 문서
+description: 관리 에이전트 및 MIM 동기화 서비스를 사용하여 Active Directory와 MIM 데이터베이스를 동기화합니다.
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
@@ -12,11 +12,11 @@ ms.technology: security
 ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 31cc9a61bbcb309dae4ee4d09654432d08bf1e28
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.openlocfilehash: 736d933f2c62d440abafdab27f82b3b1ba0f9a06
+ms.sourcegitcommit: 48f89d555c0ac7caa97d149ee42e0b9ef6ccc5f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>MIM 2016 설치: Active Directory와 MIM 서비스 동기화
 
@@ -43,7 +43,7 @@ MIM 관리 에이전트를 구성할 때 사용자 계정을 지정해야 합니
 
 1.  동기화 서비스 관리자를 엽니다.
 
-2.  관리 에이전트 만들기 마법사를 열려면 **관리 작업** 페이지로 변경한 다음 **작업** 메뉴에서 **만들기**를 클릭합니다.
+2.  관리 에이전트 만들기 마법사를 열려면 **관리 에이전트** 페이지로 변경한 다음, **작업** 메뉴에서 **만들기**를 클릭합니다.
 
 3.  **관리 에이전트 만들기** 페이지에서 다음과 같이 설정하고 **다음**을 클릭합니다.
 
@@ -57,7 +57,7 @@ MIM 관리 에이전트를 구성할 때 사용자 계정을 지정해야 합니
 
     -   데이터베이스 FIMService
 
-    -   MIM 서비스 기준 주소: http://localhost:5725
+    -   MIM 서비스 기본 주소: http://localhost:5725
 
     -   인증 모드: Windows 통합 인증
 
@@ -231,7 +231,7 @@ ADMA 및 MIMMA 커넥터에 대해 실행 프로필을 만듭니다.
 
 다음 표에는 ADMA 커넥터에 대해 만들 다섯 가지 실행 프로필이 나와 있습니다.
 
-| Name | 유형 |
+| 이름 | 유형 |
 | ---- | ---- |
 | Profile1 | 전체 가져오기(스테이지 전용) |
 | Profile2 | 전체 동기화 |
@@ -263,7 +263,7 @@ ADMA 커넥터에 대해 실행 프로필을 만들려면
 
 다음 표에는 MIMMA 커넥터에 대한 일치하는 다섯 가지 실행 프로필이 나와 있습니다.
 
-| Name | 유형 |
+| 이름 | 유형 |
 | -------- | -------- |
 | Profile1 | 전체 가져오기(스테이지 전용) |
 | Profile2 | 전체 동기화 |

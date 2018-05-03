@@ -1,7 +1,7 @@
 ---
-title: "셀프 서비스 암호 재설정 작업 포털 | Microsoft 문서"
-description: "SSPR이 다단계 인증과 함께 작동하는 방식을 포함하여 MIM 2016 셀프 서비스 암호 재설정의 새로운 기능을 확인합니다."
-keywords: 
+title: 셀프 서비스 암호 재설정 작업 포털 | Microsoft 문서
+description: SSPR이 다단계 인증과 함께 작동하는 방식을 포함하여 MIM 2016 셀프 서비스 암호 재설정의 새로운 기능을 확인합니다.
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
@@ -12,11 +12,11 @@ ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 0463a91275f3e181a66eb460c167bb9a2008f444
-ms.sourcegitcommit: 27a23142393bbb0f66a3d533d89a5a8366a29e41
+ms.openlocfilehash: 18c3e4ea623b4b092bbd9236c5fa1b2a63af0486
+ms.sourcegitcommit: 637988684768c994398b5725eb142e16e4b03bb3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 04/26/2018
 ---
 >[!IMPORTANT]
 Azure Multi-Factor Authentication 소프트웨어 개발 키트의 사용 중단 알림 때문입니다. Azure MFA SDK는 기존 고객을 위해 사용 중지 날짜인 2018년 11월 14일까지 지원됩니다. 새 고객과 현재 고객은 더 이상 Azure 클래식 포털을 통해 SDK를 다운로드할 수 없게 됩니다. 다운로드하려면 Azure 고객 지원에 문의하여 생성된 MFA 서비스 자격 증명 패키지를 받아야 합니다. <br> Microsoft 개발 팀은 MFA 서버 SDK와 통합하여 MFA에 적용할 변경 사항을 계획하고 있습니다. 이는 2018년 초에 나올 핫픽스에 포함될 예정입니다.
@@ -65,9 +65,9 @@ Azure MFA를 사용하는 경우 사용자가 해당 계정 및 리소스에 대
 
 ### <a name="register-your-multi-factor-authentication-provider-in-azure"></a>Azure에서 다단계 인증 공급자 등록
 
-1.  [Azure 클래식 포털](http://manage.windowsazure.com)로 이동하여 Azure 구독 관리자로 로그인합니다.
+1.  [MFA 공급자](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider)를 만듭니다.
 
-2.  왼쪽 아래 모서리에서 **새로 만들기**를 클릭합니다.
+2. 지원 사례를 열고 ASP.net 2.0 C#에 대한 직접 SDK를 요청합니다. 직접 SDK는 더 이상 사용되지 않으므로 SDK는 MFA를 통해 MIM의 현재 사용자에게만 제공됩니다. 새 고객은 MFA 서버와 통합될 MIM의 다음 버전을 채택해야 합니다.
 
 3.  **앱 서비스 &gt; Active Directory &gt; 다단계 인증 공급자 &gt; 빨리 만들기**를 클릭합니다.
 
@@ -89,7 +89,7 @@ Azure MFA를 사용하는 경우 사용자가 해당 계정 및 리소스에 대
 
 9. **Azure Multi-Factor Authentication** 창이 열리면 왼쪽 메뉴의 **다운로드** 아래에 있는 **SDK** 를 클릭합니다.
 
-10. 언어가 **SDK for ASP.net 2.0 C#**인 파일의 경우 ZIP 열에서 **다운로드** 링크를 클릭합니다.
+10. 언어가 **SDK for ASP.net 2.0 C#** 인 파일의 경우 ZIP 열에서 **다운로드** 링크를 클릭합니다.
 
     ![Azure MFA zip 파일 다운로드 이미지](media/MIM-SSPR-Azure-MFA.png)
 
