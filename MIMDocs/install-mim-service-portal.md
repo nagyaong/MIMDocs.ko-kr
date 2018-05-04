@@ -1,7 +1,7 @@
 ---
-title: "Microsoft Identity Manager 서비스 및 포털 설치 | Microsoft 문서"
-description: "Microsoft Identity Manager 2016용 MIM 서비스 및 포털을 구성하고 설치하는 단계를 알아봅니다."
-keywords: 
+title: Microsoft Identity Manager 서비스 및 포털 설치 | Microsoft 문서
+description: Microsoft Identity Manager 2016용 MIM 서비스 및 포털을 구성하고 설치하는 단계를 알아봅니다.
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldiwn
@@ -12,11 +12,11 @@ ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 77ceaf1b2152a6fa6e1047656bedda31ce383871
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.openlocfilehash: 204aa33cb21ed3998d9085fc56f0c7bea7afec58
+ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="install-mim-2016-mim-service-and-portal"></a>MIM 2016 설치: MIM 서비스 및 포털
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 10/12/2017
 
     ![MIM 데이터베이스 연결 구성 이미지](media/MIM-Install10.png)
 
-7. **메일 서버 연결 구성**에서 Exchange Server 이름으로 **Mail Server**를 입력합니다. 구성된 메일 서버가 없는 경우 **localhost**를 메일 서버 이름으로 사용하고 상위 두 확인란을 선택 취소합니다. **다음**을 클릭합니다.
+7. **메일 서버 연결 구성**에서 Exchange 서버 이름으로 **Mail Server**를 입력하거나 O365 사서함을 사용할 수 있습니다. 구성된 메일 서버가 없는 경우 **localhost**를 메일 서버 이름으로 사용하고 상위 두 확인란을 선택 취소합니다. **다음**을 클릭합니다.
 
     ![메일 서버 연결 구성 이미지](media/MIM-Install11.png)
 
@@ -68,11 +68,11 @@ ms.lasthandoff: 10/12/2017
 
 12. MIM 포털에 대한 MIM 서비스 서버 주소를 *CORPIDM*(이 컴퓨터의 이름)으로 지정합니다.
 
-13. SharePoint 사이트 모음 URL을 *http://CorpIDM.contoso.local*로 지정합니다.
+13. SharePoint 사이트 모음 URL로 *http://mim.contoso.com*을 지정합니다.
 
-14. 암호 등록 URL을 *http://CorpIDM.contoso.local:8080*으로 지정합니다.
+14. 암호 등록 URL 포트 80으로 *http://passwordregistration.contoso.com*을 지정하고, 나중에 443에서 SSL 인증서로 업데이트하는 것이 좋습니다.
 
-15. 암호 재설정 URL을 *http://CorpIDM.contoso.local:8088*로 지정합니다.
+15. 암호 재설정 URL 포트 80으로 *http://passwordreset.contoso.com*을 지정하고, 나중에 443에서 SSL 인증서로 업데이트하는 것이 좋습니다.
 
 16. 방화벽에서 포트 5725 및 5726 열기에 대한 확인란 및 MIM 포털에 대해 모든 인증된 사용자 액세스 권한 부여에 대한 확인란을 선택합니다.
 
@@ -80,25 +80,25 @@ ms.lasthandoff: 10/12/2017
 
 1.  SSPR 등록을 위한 서비스 계정 이름을 *contoso\MIMSSPR*로 설정하고 암호를 *Pass@word1*로 설정합니다.
 
-2.  MIM 암호 등록에 대한 호스트 이름을 *CORPIDM*으로 지정하고 포트를 **8080**으로 설정합니다. **방화벽에서 포트 열기** 옵션을 선택합니다.
+2.  MIM 암호 등록의 호스트 이름으로 *passwordregistration.contoso.com*을 지정하고 포트를 **80**으로 설정합니다. **방화벽에서 포트 열기** 옵션을 선택합니다.
 
     ![IIS에서 사용하는 구성 정보 입력 이미지](media/MIM-Install14.png)
 
 3.  경고가 표시되면 읽고 **다음**을 클릭합니다.
 
-4. 다음 MIM 암호 등록 포털 구성 화면에서 암호 등록 포털에 대한 MIM 서비스 서버 주소로 *http://CorpIDM.contoso.local*을 지정합니다.
+4. 다음 MIM 암호 등록 포털 구성 화면에서 암호 등록 포털에 대한 MIM 서비스 서버 주소로 *mim.contoso.com*을 지정합니다.
 
 ## <a name="configure-mim-password-reset-portal"></a>FIM 암호 재설정 포털 구성
 
-1.  SSPR 등록을 위한 서비스 계정 이름을 *Contoso\MIMSSPRService*로 설정하고 암호를 *Pass@word1*로 설정합니다.
+1.  SSPR 등록을 위한 서비스 계정 이름을 *Contoso\MIMSSPR*로 설정하고 암호를 *Pass@word1*로 설정합니다.
 
-2.  MIM 암호 재설정 포털에 대한 호스트 이름을 *CORPIDM*으로 지정하고 포트를 **8088**로 설정합니다. **방화벽에서 포트 열기** 옵션을 선택합니다.
+2.  MIM 암호 재설정 포털의 호스트 이름으로 *passwordreset.contoso.com*을 지정하고 포트를 **80**으로 설정합니다. **방화벽에서 포트 열기** 옵션을 선택합니다.
 
     ![IIS에서 사용하는 구성 정보 입력 이미지](media/MIM-Install15.png)
 
 3.  경고가 표시되면 읽고 **다음**을 클릭합니다.
 
-4. 다음 MIM 암호 등록 포털 구성 화면에서 암호 등록 포털에 대한 MIM 서비스 서버 주소로 *CorpIDname http://CorpIDname.domain.local*을 지정합니다.
+4. 다음 MIM 암호 등록 포털 구성 화면에서 암호 재설정 포털에 대한 MIM 서비스 서버 주소로 *mim.contoso.com*을 지정합니다.
 
 ## <a name="install-mim-service-and-portal"></a>MIM 서비스 및 포털 설치
 
@@ -106,9 +106,9 @@ ms.lasthandoff: 10/12/2017
 
 설치가 완료된 후 MIM 포털이 활성화되었는지 확인합니다.
 
-1. Internet Explorer를 시작하고 *http://corpidm.contoso.local/identitymanagement*에서 MIM 포털에 연결합니다. 이 페이지를 처음 방문할 때 약간 시간이 걸릴 수 있습니다.
+1. Internet Explorer를 시작하고 *http://mim.contoso.com/identitymanagement*에서 MIM 포털에 연결합니다. 이 페이지를 처음 방문할 때 약간 시간이 걸릴 수 있습니다.
 
-    - 필요한 경우 *contoso\Administrator*로 Internet Explorer에 인증합니다.
+    - 필요한 경우 *contoso\miminstall*로 Internet Explorer에 인증합니다.
 
 2. Internet Explorer에서 **인터넷 옵션**을 열고 **보안** 탭으로 변경하고 **로컬 인트라넷** 영역에 해당 사이트가 아직 없는 경우 추가합니다.  **인터넷 옵션** 대화 상자를 닫습니다.
 

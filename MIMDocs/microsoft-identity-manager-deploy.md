@@ -1,7 +1,7 @@
 ---
-title: "Microsoft Identity Manager 2016을 배포하는 데 필요한 단계 | Microsoft 문서"
-description: "환경 준비부터 포털 구성까지 Microsoft Identity Manager 2016 배포와 관련된 전체 단계 목록을 확인합니다."
-keywords: 
+title: Microsoft Identity Manager 2016을 배포하는 데 필요한 단계 | Microsoft 문서
+description: 환경 준비부터 포털 구성까지 Microsoft Identity Manager 2016 배포와 관련된 전체 단계 목록을 확인합니다.
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
@@ -12,13 +12,13 @@ ms.technology: security
 ms.assetid: fa0af422-b5e9-4599-9d9b-cb6c18ea07f9
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 2730c41d9b95d3c6e44c12dc734a0e9e13792a32
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.openlocfilehash: a1f2a30dd6d8519ec09ea3765e5584123725fe03
+ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="deploy-mim-2016"></a>MIM 2016 배포
+# <a name="deploy-microsoft-identity-manager-2016-sp1"></a>Microsoft Identity Manager 2016 SP1 배포
 이 섹션의 문서에서는 이전에 FIM 또는 MIM을 배포하지 않은 새 서버에서 최종 사용자 셀프 서비스 시나리오를 위해 MIM(Microsoft Identity Manager) 2016을 배포하는 단계별 지침을 제공합니다.
 
 > [!NOTE]
@@ -26,21 +26,22 @@ ms.lasthandoff: 10/12/2017
 
 권한 있는 액세스 관리 시나리오는 전용 요새 포리스트 환경이 필요하므로 다른 MIM 시나리오와는 다르게 배포됩니다.  Privileged Identity Management를 위해 MIM을 배포하는 방법에 대한 자세한 내용은 [Privileged Access Management를 위해 MIM 환경 구성](./pam/configuring-mim-environment-for-pam.md)을 참조하세요.
 
-MIM 2016 배포를 위한 프로세스는 이전 버전인 FIM 2010 R2의 프로세스와 매우 유사합니다. FIM 설명서를 참조하려는 경우 [Forefront Identity Manager 2010 R2 배포 가이드](https://technet.microsoft.com/library/jj134310)를 확인하세요.
+MIM 배포 프로세스는 이전 버전인 FIM 2010 R2의 프로세스와 매우 유사합니다. FIM 설명서를 참조하려는 경우 [Forefront Identity Manager 2010 R2 배포 가이드](https://technet.microsoft.com/library/jj134310)를 확인하세요.
 
 ## <a name="first-prepare-a-domain"></a>먼저 첫 번째 도메인을 준비합니다.
 MIM은 AD(Active Directory)와 함께 작동하므로 다음 단계에 따라 AD 도메인 컨트롤러를 구성합니다.
 - [도메인 설정](preparing-domain.md)
 
-## <a name="next-prepare-an-identity-management-server"></a>다음으로, ID 관리 서버를 준비합니다.
+## <a name="next-prepare-an-identity-management-servers"></a>그런 다음, ID 관리 서버를 준비합니다.
 도메인이 배치되고 구성되면 회사 ID 관리 서버를 준비합니다. 여기에는 다음 설치가 포함됩니다.
-- [Windows Server 2012 R2](prepare-server-ws2012r2.md)
-- [SQL Server 2014](prepare-server-sql2014.md)
-- [SharePoint](prepare-server-sharepoint.md)
+- [Windows Server 2012 R2](prepare-server-ws2016.md)
+- [SQL Server 2016](prepare-server-sql2016.md)
+- [SharePoint 2016](prepare-server-sharepoint.md)
 - [Exchange Server](prepare-server-exchange.md)(선택 사항)
 
-## <a name="finally-install-microsoft-identity-manager-2016-components"></a>마지막으로 Microsoft Identity Manager 2016 구성 요소를 설치합니다.
+## <a name="finally-install-microsoft-identity-manager-2016-sp1-components"></a>마지막으로, Microsoft Identity Manager 2016 SP1 구성 요소를 설치합니다.
 도메인과 서버를 설정하면 MIM 구성 요소를 설치하고 AD와 동기화하도록 구성할 준비가 된 것입니다.
 - [MIM 동기화 서비스](install-mim-sync.md)
 - [MIM 서비스 및 포털](install-mim-service-portal.md)
 - [Active Directory와 MIM 서비스 동기화](install-mim-sync-ad-service.md)
+- [MIM 2016 이상이 지원되는 플랫폼](microsoft-identity-manager-2016-supported-platforms.md)

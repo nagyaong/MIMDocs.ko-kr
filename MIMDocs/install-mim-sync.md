@@ -1,22 +1,22 @@
 ---
-title: "Microsoft Identity Manager 동기화 서비스 설치 | Microsoft 문서"
-description: "동기화 서비스를 설치 및 구성하여 MIM 2016 구성 요소를 시작합니다."
-keywords: 
+title: Microsoft Identity Manager 동기화 서비스 설치 | Microsoft 문서
+description: 동기화 서비스를 설치 및 구성하여 MIM 2016 구성 요소를 시작합니다.
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 10/12/2017
+ms.date: 04/26/2018
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 836279ecc7fce65912df4a1a34a9d48daf9d1151
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.openlocfilehash: f5204d0396e2b485c9e8c210906703c467a67994
+ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="install-mim-2016-mim-synchronization-service"></a>MIM 2016 설치: MIM 동기화 서비스
 
@@ -26,17 +26,20 @@ ms.lasthandoff: 10/12/2017
 
 > [!NOTE]
 > 이 연습에서는 Contoso라는 회사의 샘플 이름과 값을 사용합니다. 해당 항목을 사용자의 정보로 바꿉니다. 예를 들면 다음과 같습니다.
-> - 도메인 컨트롤러 이름 - **mimservername**
+> - 도메인 컨트롤러 이름 - **corpdc**
 > - 도메인 이름 - **contoso**
+> - MIM 서비스 서버 이름 - **corpservice**
+> - MIM 동기화 서버 이름 - **corpsync**
+> - SQL Server 이름 - **corpsql**
 > - 암호 - **Pass@word1**
 
 Microsoft Identity Manager 2016 구성 요소를 설치하려면 먼저 설치 패키지를 설정합니다.
 
-1. ID 관리에 사용중인 서버에 *contoso\Administrator*로 로그인합니다.
+1. ID 관리 동기화 서버 **corpsync**에 사용할 서버에 *contoso\miminstall*로 로그인합니다.
 
 2. MIM 설치 패키지의 압축을 풀거나 MIM 이미지 DVD를 마운트합니다.
 
-## <a name="install-mim-2016-synchronization-service"></a>MIM 2016 동기화 서비스 설치
+## <a name="install-mim-2016-sp1-synchronization-service"></a>MIM 2016 SP1 동기화 서비스 설치
 
 1. 압축을 푼 MIM 설치 폴더에서 **Synchronization Service** 폴더로 이동합니다.
 
