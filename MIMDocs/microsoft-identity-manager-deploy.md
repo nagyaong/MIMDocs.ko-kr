@@ -12,11 +12,11 @@ ms.technology: security
 ms.assetid: fa0af422-b5e9-4599-9d9b-cb6c18ea07f9
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: a1f2a30dd6d8519ec09ea3765e5584123725fe03
-ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
+ms.openlocfilehash: 3460436682054acf5e9e1b186c3fa39faaa40a43
+ms.sourcegitcommit: 8316fa41f06f137dba0739a8700910116b5575d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="deploy-microsoft-identity-manager-2016-sp1"></a>Microsoft Identity Manager 2016 SP1 배포
 이 섹션의 문서에서는 이전에 FIM 또는 MIM을 배포하지 않은 새 서버에서 최종 사용자 셀프 서비스 시나리오를 위해 MIM(Microsoft Identity Manager) 2016을 배포하는 단계별 지침을 제공합니다.
@@ -34,7 +34,7 @@ MIM은 AD(Active Directory)와 함께 작동하므로 다음 단계에 따라 AD
 
 ## <a name="next-prepare-an-identity-management-servers"></a>그런 다음, ID 관리 서버를 준비합니다.
 도메인이 배치되고 구성되면 회사 ID 관리 서버를 준비합니다. 여기에는 다음 설치가 포함됩니다.
-- [Windows Server 2012 R2](prepare-server-ws2016.md)
+- [Windows Server 2016](prepare-server-ws2016.md)
 - [SQL Server 2016](prepare-server-sql2016.md)
 - [SharePoint 2016](prepare-server-sharepoint.md)
 - [Exchange Server](prepare-server-exchange.md)(선택 사항)
