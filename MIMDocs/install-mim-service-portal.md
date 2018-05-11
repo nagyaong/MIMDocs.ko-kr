@@ -5,18 +5,18 @@ keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldiwn
-ms.date: 10/12/2017
+ms.date: 04/30/2018
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 204aa33cb21ed3998d9085fc56f0c7bea7afec58
-ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
+ms.openlocfilehash: fcc137527d8326c82bf3b201039926699bd4e342
+ms.sourcegitcommit: a98a4c1aee12016d480c400f4ff2c6aadb6518ee
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-mim-2016-mim-service-and-portal"></a>MIM 2016 설치: MIM 서비스 및 포털
 
@@ -48,23 +48,23 @@ ms.lasthandoff: 04/27/2018
 
 6. **MIM 데이터베이스 연결 구성** 페이지에서 **새 데이터베이스 만들기**를 선택합니다.
 
-    ![MIM 데이터베이스 연결 구성 이미지](media/MIM-Install10.png)
+    ![MIM 데이터베이스 연결 구성 이미지](media/install-mim-service-portal/MIM_Install10.png)
 
-7. **메일 서버 연결 구성**에서 Exchange 서버 이름으로 **Mail Server**를 입력하거나 O365 사서함을 사용할 수 있습니다. 구성된 메일 서버가 없는 경우 **localhost**를 메일 서버 이름으로 사용하고 상위 두 확인란을 선택 취소합니다. **다음**을 클릭합니다.
+7. **메일 서버 연결 구성**에서 Exchange 서버 이름으로 **Mail Server**를 입력하거나 **O365 사서함**을 사용할 수 있습니다. 구성된 메일 서버가 없는 경우 **localhost**를 메일 서버 이름으로 사용하고 상위 두 확인란을 선택 취소합니다. **다음**을 클릭합니다.
 
-    ![메일 서버 연결 구성 이미지](media/MIM-Install11.png)
+    ![메일 서버 연결 구성 이미지](media/install-mim-service-portal/MIM_Install11.png)
 
 8. 새 자체 서명된 인증서를 생성하도록 지정하거나 관련 인증서를 선택합니다.
 
 9. 사용할 서비스 계정 이름(예: *MIMService*), 서비스 계정 암호(예: *Pass@word1*), 서비스 계정 도메인(예: *contoso*), 서비스 메일 계정(예: *contoso*)을 지정합니다.
 
-    ![서비스 계정 구성 이미지](media/MIM-Install12.png)
+    ![서비스 계정 구성 이미지](media/install-mim-service-portal/MIM_Install12.png)
 
 10. 현재 구성에서 서비스 계정이 안전하지 않다는 경고가 나타날 수 있습니다.
 
 11. 동기화 서버 위치에 대한 기본값을 적용하고 MIM 관리 에이전트 계정을 *contoso\MIMMA*로 지정합니다.
 
-    ![MIM 서비스 및 포털 구성 이미지](media/MIM-Install13.png)
+    ![MIM 서비스 및 포털 구성 이미지](media/install-mim-service-portal/MIM_Install13.png)
 
 12. MIM 포털에 대한 MIM 서비스 서버 주소를 *CORPIDM*(이 컴퓨터의 이름)으로 지정합니다.
 
@@ -82,7 +82,7 @@ ms.lasthandoff: 04/27/2018
 
 2.  MIM 암호 등록의 호스트 이름으로 *passwordregistration.contoso.com*을 지정하고 포트를 **80**으로 설정합니다. **방화벽에서 포트 열기** 옵션을 선택합니다.
 
-    ![IIS에서 사용하는 구성 정보 입력 이미지](media/MIM-Install14.png)
+    ![IIS에서 사용하는 구성 정보 입력 이미지](media/install-mim-service-portal/MIM_Install14.png)
 
 3.  경고가 표시되면 읽고 **다음**을 클릭합니다.
 
@@ -94,7 +94,7 @@ ms.lasthandoff: 04/27/2018
 
 2.  MIM 암호 재설정 포털의 호스트 이름으로 *passwordreset.contoso.com*을 지정하고 포트를 **80**으로 설정합니다. **방화벽에서 포트 열기** 옵션을 선택합니다.
 
-    ![IIS에서 사용하는 구성 정보 입력 이미지](media/MIM-Install15.png)
+    ![IIS에서 사용하는 구성 정보 입력 이미지](media/install-mim-service-portal/MIM_Install15.png)
 
 3.  경고가 표시되면 읽고 **다음**을 클릭합니다.
 

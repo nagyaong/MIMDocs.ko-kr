@@ -2,21 +2,21 @@
 title: Microsoft Identity Manager 동기화 서비스 설치 | Microsoft 문서
 description: 동기화 서비스를 설치 및 구성하여 MIM 2016 구성 요소를 시작합니다.
 keywords: ''
-author: billmath
+author: fimguy
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 04/26/2018
+ms.date: 05/01/2018
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: f5204d0396e2b485c9e8c210906703c467a67994
-ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
+ms.openlocfilehash: d2f8c000205aacafaeb4e159ef692e9666b4b965
+ms.sourcegitcommit: a98a4c1aee12016d480c400f4ff2c6aadb6518ee
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-mim-2016-mim-synchronization-service"></a>MIM 2016 설치: MIM 동기화 서비스
 
@@ -47,21 +47,21 @@ Microsoft Identity Manager 2016 구성 요소를 설치하려면 먼저 설치 �
 
 3. 시작 화면에서 **다음**을 클릭합니다.
 
-    ![MIM 설치 관리자 마법사 시작 이미지](media/MIM-Install1.png)
+    ![MIM 설치 관리자 마법사 시작 이미지](media/install-mim-sync/MIM_Install1.png)
 
 4. 사용 조건을 검토하고 이에 동의하는 경우 **다음**을 클릭합니다.
 
 5. **사용자 지정 설치** 화면에서 **다음**을 클릭합니다.
 
-    ![사용자 지정 설치 이미지](media/MIM-Install2.png)
+    ![사용자 지정 설치 이미지](media/install-mim-sync/MIM_Install2.png)
 
 6.  동기화 서비스 데이터베이스 구성 화면에서 다음을 선택합니다.
 
-    1.  SQL Server의 위치: **이 컴퓨터**
+    1.  SQL Server 위치: **corpsql.contoso.com**라고 하는 **원격 컴퓨터**.
 
     2.  SQL Server 인스턴스: **기본 인스턴스**
 
-    ![데이터베이스 연결 이미지](media/MIM-Install3.png)
+    ![데이터베이스 연결 이미지](media/install-mim-sync/MIM_Install3.png)
 
 7.  이전에 만든 계정에 따라 동기화 서비스 계정을 구성합니다.
 
@@ -71,7 +71,7 @@ Microsoft Identity Manager 2016 구성 요소를 설치하려면 먼저 설치 �
 
     3.  서비스 계정 도메인 또는 로컬 컴퓨터 이름: *contoso*
 
-    ![서비스 계정 이미지](media/MIM-Install4.png)
+    ![서비스 계정 이미지](media/install-mim-sync/MIM_Install4.png)
 
 8.  MIM 동기화 서비스 설치 관리자에서 다음과 같은 관련 보안 그룹을 입력합니다.
 
@@ -85,7 +85,7 @@ Microsoft Identity Manager 2016 구성 요소를 설치하려면 먼저 설치 �
 
     5. WMI 암호 관리 = *contoso\MIMSyncPasswordReset*
 
-    ![보안 그룹 이미지](media/MIM-Install5.png)
+    ![보안 그룹 이미지](media/install-mim-sync/MIM_Install5.png)
 
 9. 보안 설정 화면에서 **인바운드 RPC 통신에 방화벽 규칙 사용**을 선택하고 **다음**을 클릭합니다.
 

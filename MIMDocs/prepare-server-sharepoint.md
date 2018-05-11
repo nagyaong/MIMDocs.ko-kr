@@ -12,11 +12,11 @@ ms.technology: security
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: eceb1ed31b0212970d5cf0eae0bc8d96aa087ff5
-ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
+ms.openlocfilehash: 6922c3c2f66b6dbb0b0751420be9dd778206a3cf
+ms.sourcegitcommit: 8316fa41f06f137dba0739a8700910116b5575d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="set-up-an-identity-management-server-sharepoint"></a>ID 관리 서버 설치: SharePoint
 
@@ -68,14 +68,15 @@ SharePoint 2016을 설치하려면 다음 단계를 따르세요. 설치가 완�
 1. **서버 팜에 연결** 탭에서 새 서버 팜을 만들도록 변경합니다.
 
 2. 이 서버를 구성 데이터베이스에 대한 데이터베이스 서버(예: **corpsql**)로 지정하고 *Contoso\SharePoint*를 SharePoint에서 사용할 데이터베이스 액세스 계정으로 지정합니다.
-    a. 구성 마법사에서 [MinRole](https://docs.microsoft.com/en-us/sharepoint/install/overview-of-minrole-server-roles-in-sharepoint-server-2016) 유형으로 **프런트 엔드**를 선택하는 것이 좋습니다.
 3. 팜 보안 암호로 사용할 암호를 만듭니다.
 
-4. 구성 마법사가 구성 작업 10/10을 완료할 때 마침을 클릭하면 웹 브라우저가 열립니다.
+4. 구성 마법사에서 [MinRole](https://docs.microsoft.com/en-us/sharepoint/install/overview-of-minrole-server-roles-in-sharepoint-server-2016) 유형으로 **프런트 엔드**를 선택하는 것이 좋습니다.
 
-5. IInternet Explorer 팝업에서 *Contoso\miminstall*(또는 동등한 관리자 계정)로 인증하여 계속 진행합니다.
+5. 구성 마법사가 구성 작업 10/10을 완료할 때 [마침]을 클릭하면 웹 브라우저가 열립니다.
 
-6. 웹앱 내의 웹 마법사에서 **취소/건너뛰기**를 클릭합니다.
+6. Internet Explorer 팝업이 표시되면 *Contoso\miminstall*(또는 동등한 관리자 계정)로 인증하여 계속 진행합니다.
+
+7. 웹앱 내의 웹 마법사에서 **취소/건너뛰기**를 클릭합니다.
 
 
 ## <a name="prepare-sharepoint-to-host-the-mim-portal"></a>MIM 포털을 호스트할 SharePoint 준비
@@ -94,14 +95,13 @@ SharePoint 2016을 설치하려면 다음 단계를 따르세요. 설치가 완�
     > [!NOTE]
     > Windows 기본 인증 방법이 사용 중이라는 경고 메시지가 표시되며 최종 명령을 반환하는 데 몇 분 정도 걸릴 수 있습니다. 완료되면 출력에 새 포털의 URL이 표시됩니다. 나중에 참조할 수 있도록 **SharePoint 2016 관리 셸** 창을 열어 둡니다.
 
-2. SharePoint 2013 관리 셸을 시작한 후 다음 PowerShell 스크립트를 실행하여 해당 웹 응용 프로그램과 연결된 **SharePoint 사이트 모음**을 만듭니다.
+2. SharePoint 2016 관리 셸을 시작한 후 다음 PowerShell 스크립트를 실행하여 해당 웹 응용 프로그램과 연결된 **SharePoint 사이트 모음**을 만듭니다.
 
   ```
     $t = Get-SPWebTemplate -compatibilityLevel 15 -Identity "STS#1"
     $w = Get-SPWebApplication http://mim.contoso.com/
     New-SPSite -Url $w.Url -Template $t -OwnerAlias contoso\miminstall -CompatibilityLevel 15 -Name "MIM Portal"
     $s = SpSite($w.Url)
-    $s.AllowSelfServiceUpgrade = $false
     $s.CompatibilityLevel
   ```
 
@@ -119,7 +119,7 @@ SharePoint 2016을 설치하려면 다음 단계를 따르세요. 설치가 완�
 
 4. ID 관리 서버에서 새 웹 브라우저 탭을 열고 http://mim.contoso.com/으로 이동하여 *contoso\miminstall*로 로그인합니다.  *MIM 포털* 이라는 빈 SharePoint 사이트가 나타납니다.
 
-    ![http://mim.contoso.com/의 MIM 포털 이미지](media/MIM-DeploySP1.png)
+    ![http://mim.contoso.com/의 MIM 포털 이미지](media/prepare-server-sharepoint/MIM_DeploySP1new.png)
 
 5. URL을 복사한 다음 Internet Explorer에서 **인터넷 옵션**을 열고 **보안** 탭으로 변경한 후 **로컬 인트라넷**을 선택하고 **사이트**를 클릭합니다.
 
