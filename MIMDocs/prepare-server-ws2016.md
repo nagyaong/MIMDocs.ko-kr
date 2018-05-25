@@ -58,7 +58,7 @@ ms.lasthandoff: 04/27/2018
 
     ![PowerShell 기능 이미지](media/MIM-DeployWS2.png)
 
-7. PowerShell에서 다음 명령을 입력합니다. **.NET Framework** 3.5 기능을 위해 원본 파일에 대한 다른 위치를 지정해야 할 수 있습니다. 이러한 기능은 일반적으로 Windows Server가 설치될 때는 없지만 OS 설치 디스크 원본 폴더의 SxS(Side-by-Side) 폴더(예: “*d:\Sources\SxS\*”)에 있습니다.
+7. PowerShell에서 다음 명령을 입력합니다. **.NET Framework** 3.5 기능을 위해 원본 파일에 대한 다른 위치를 지정해야 할 수 있습니다. 이러한 기능은 일반적으로 Windows Server가 설치될 때는 없지만 OS 설치 디스크 원본 폴더의 SxS(Side-by-Side) 폴더(예: “\*d:\Sources\SxS\*”)에 있습니다.
 
     ```
     import-module ServerManager
