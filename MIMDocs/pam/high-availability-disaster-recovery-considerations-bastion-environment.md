@@ -1,7 +1,7 @@
 ---
-title: "PAM 재해 복구 | Microsoft Docs"
-description: "고가용성 및 재해 복구를 위해 Privileged Access Management를 구성하는 방법을 알아봅니다."
-keywords: 
+title: PAM 재해 복구 | Microsoft Docs
+description: 고가용성 및 재해 복구를 위해 Privileged Access Management를 구성하는 방법을 알아봅니다.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/14/2017
+ms.locfileid: "22052317"
 ---
 # <a name="high-availability-and-disaster-recovery-considerations-for-the-bastion-environment"></a>배스천 환경에 대한 고가용성 및 재해 복구 고려 사항
 

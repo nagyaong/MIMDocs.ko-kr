@@ -1,7 +1,7 @@
 ---
-title: "BHOLD 액세스 관리 커넥터 설치 | Microsoft Docs"
-description: "BHOLD 커넥터 모듈에서는 데이터의 초기 및 지속적인 동기화를 지원합니다."
-keywords: 
+title: BHOLD 액세스 관리 커넥터 설치 | Microsoft Docs
+description: BHOLD 커넥터 모듈에서는 데이터의 초기 및 지속적인 동기화를 지원합니다.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,12 +9,13 @@ ms.date: 09/07/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
+ms.assetid: ''
 ms.openlocfilehash: 6d7f19f470d0c0f82a68652115ab9265a13b3508
 ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/14/2017
+ms.locfileid: "24522331"
 ---
 # <a name="access-management-connector-installation"></a>액세스 관리 커넥터 설치
 

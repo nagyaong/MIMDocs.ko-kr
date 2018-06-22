@@ -1,7 +1,7 @@
 ---
-title: "PAM 구성 요소 이해 | Microsoft 문서"
-description: "Privileged Access Management는 MIM과 일부 구성 요소를 공유하며 소수의 자체 구성 요소가 있습니다. 이러한 구성 요소가 함께 어떻게 작동되는지 알아봅니다."
-keywords: 
+title: PAM 구성 요소 이해 | Microsoft 문서
+description: Privileged Access Management는 MIM과 일부 구성 요소를 공유하며 소수의 자체 구성 요소가 있습니다. 이러한 구성 요소가 함께 어떻게 작동되는지 알아봅니다.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/14/2017
+ms.locfileid: "22052368"
 ---
 # <a name="understand-the-components-of-pam"></a>PAM의 구성 요소 이해
 

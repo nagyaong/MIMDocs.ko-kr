@@ -1,7 +1,7 @@
 ---
-title: "배스천 환경 계획 | Microsoft 문서"
-description: 
-keywords: 
+title: 배스천 환경 계획 | Microsoft 문서
+description: ''
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/14/2017
+ms.locfileid: "22052419"
 ---
 # <a name="planning-a-bastion-environment"></a>배스천 환경 계획
 

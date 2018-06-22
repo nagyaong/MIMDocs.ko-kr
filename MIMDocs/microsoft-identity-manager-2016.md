@@ -1,7 +1,7 @@
 ---
-title: "Microsoft Identity Manager 2016 | Microsoft 문서"
-description: "MIM은 FIM 2010의 액세스 관리 기능을 포함하며 조직 내에서 사용자, 자격 증명, 정책 및 액세스를 관리하는 데 도움이 됩니다."
-keywords: 
+title: Microsoft Identity Manager 2016 | Microsoft 문서
+description: MIM은 FIM 2010의 액세스 관리 기능을 포함하며 조직 내에서 사용자, 자격 증명, 정책 및 액세스를 관리하는 데 도움이 됩니다.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 06add1a636720f74bc0c0f25b4100b19f1bd31da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/17/2017
+ms.locfileid: "23451160"
 ---
 # <a name="microsoft-identity-manager-2016"></a>Microsoft Identity Manager 2016
 

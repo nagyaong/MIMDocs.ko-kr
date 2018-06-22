@@ -1,7 +1,7 @@
 ---
-title: "ADDS에 대한 PAM이란? | Microsoft 문서"
-description: "PAM(Privileged Access Management)을 사용하면 조직이 기존 Active Directory 환경 내에서 권한 있는 액세스를 제한할 수 있습니다."
-keywords: 
+title: ADDS에 대한 PAM이란? | Microsoft 문서
+description: PAM(Privileged Access Management)을 사용하면 조직이 기존 Active Directory 환경 내에서 권한 있는 액세스를 제한할 수 있습니다.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/14/2017
+ms.locfileid: "22052402"
 ---
 # <a name="privileged-access-management-for-active-directory-domain-services"></a>Active Directory 도메인 서비스에 대한 Privileged Access Management
 

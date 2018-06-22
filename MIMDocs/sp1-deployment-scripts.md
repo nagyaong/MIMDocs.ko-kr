@@ -1,7 +1,7 @@
 ---
-title: "MIM2016 SP1 PAM 배포 스크립트"
-description: "이 페이지는 스크립트를 사용한 권한 있는 ID 관리자 구성을 다루는 일련의 문서 중 일부입니다. 여기에는 환경에 대한 가정 목록이 포함되어 있습니다."
-keywords: 
+title: MIM2016 SP1 PAM 배포 스크립트
+description: 이 페이지는 스크립트를 사용한 권한 있는 ID 관리자 구성을 다루는 일련의 문서 중 일부입니다. 여기에는 환경에 대한 가정 목록이 포함되어 있습니다.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
@@ -10,13 +10,14 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.openlocfilehash: 77a222c0a36f4e244a5114eddfc0edadb168d1cd
 ms.sourcegitcommit: 06add1a636720f74bc0c0f25b4100b19f1bd31da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/17/2017
+ms.locfileid: "23451177"
 ---
 # <a name="mim2016-sp1-pam-deployment-scripts"></a>MIM2016 SP1 PAM 배포 스크립트
 

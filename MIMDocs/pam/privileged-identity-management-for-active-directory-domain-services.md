@@ -1,7 +1,7 @@
 ---
-title: "Active Directory Domain Services에 대한 권한 있는 액세스 관리 | Microsoft 문서"
-description: "Privileged Access Management란 무엇이고 Active Directory 환경 관리 및 보호에 어떤 도움이 되는지 알아봅니다."
-keywords: 
+title: Active Directory Domain Services에 대한 권한 있는 액세스 관리 | Microsoft 문서
+description: Privileged Access Management란 무엇이고 Active Directory 환경 관리 및 보호에 어떤 도움이 되는지 알아봅니다.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: c049dceaf02ab8b6008fe440daae4d07b752ca2e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 08/31/2017
+ms.locfileid: "21942717"
 ---
 # <a name="privileged-access-management-for-active-directory-domain-services"></a>Active Directory 도메인 서비스에 대한 Privileged Access Management
 

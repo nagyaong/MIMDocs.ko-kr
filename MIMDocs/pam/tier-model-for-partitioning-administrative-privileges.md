@@ -1,7 +1,7 @@
 ---
-title: "PAM 환경 계층 모델 | Microsoft 문서"
-description: "위험에 대한 취약성을 기준으로 시스템을 분리하는 계층 모델에 대해 알아봅니다."
-keywords: 
+title: PAM 환경 계층 모델 | Microsoft 문서
+description: 위험에 대한 취약성을 기준으로 시스템을 분리하는 계층 모델에 대해 알아봅니다.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: c049dceaf02ab8b6008fe440daae4d07b752ca2e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 08/31/2017
+ms.locfileid: "21942734"
 ---
 # <a name="tier-model-for-partitioning-administrative-privileges"></a>관리자 권한 분할에 대한 계층 모델
 

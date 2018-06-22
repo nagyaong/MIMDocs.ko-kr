@@ -1,7 +1,7 @@
 ---
-title: "PAM에 대한 권한 있는 역할 정의 | Microsoft Docs"
-description: "관리해야 하는 권한 있는 역할을 결정하고 각 역할에 대한 관리 정책을 정의합니다."
-keywords: 
+title: PAM에 대한 권한 있는 역할 정의 | Microsoft Docs
+description: 관리해야 하는 권한 있는 역할을 결정하고 각 역할에 대한 관리 정책을 정의합니다.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 210195369d2ecd610569d57d0f519d683ea6a13b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/01/2017
+ms.locfileid: "21943760"
 ---
 # <a name="define-roles-for-privileged-access-management"></a>Privileged Access Management를 위한 역할 정의
 
