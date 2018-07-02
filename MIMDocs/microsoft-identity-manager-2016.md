@@ -2,22 +2,22 @@
 title: Microsoft Identity Manager 2016 | Microsoft 문서
 description: MIM은 FIM 2010의 액세스 관리 기능을 포함하며 조직 내에서 사용자, 자격 증명, 정책 및 액세스를 관리하는 데 도움이 됩니다.
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
-ms.date: 10/17/2017
+author: billmath
+ms.author: billmath
+manager: mtillman
+ms.date: 05/02/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ccdd8a9f-02da-440a-81a8-354800dcd2a8
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: cd8191e3fdf571f4140bcdd51c54aa25bd663215
-ms.sourcegitcommit: 06add1a636720f74bc0c0f25b4100b19f1bd31da
+ms.openlocfilehash: bd483ecb0abc3e4bb4444c87715971a3fba9820b
+ms.sourcegitcommit: 5405ed10fea6f50b711eca1153446c04d4faff7a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2017
-ms.locfileid: "23451160"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36927190"
 ---
 # <a name="microsoft-identity-manager-2016"></a>Microsoft Identity Manager 2016
 

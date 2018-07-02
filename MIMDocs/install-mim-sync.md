@@ -12,18 +12,19 @@ ms.technology: security
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: d2f8c000205aacafaeb4e159ef692e9666b4b965
-ms.sourcegitcommit: a98a4c1aee12016d480c400f4ff2c6aadb6518ee
+ms.openlocfilehash: c68b33b2ff28d75b6f4e63fa8caf0c87727a5927
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289400"
 ---
 # <a name="install-mim-2016-mim-synchronization-service"></a>MIM 2016 설치: MIM 동기화 서비스
 
->[!div class="step-by-step"]
-[« Exchange Server](prepare-server-exchange.md)
-[MIM 서비스 및 포털 »](install-mim-service-portal.md)
-
+> [!div class="step-by-step"]
+> [« Exchange Server](prepare-server-exchange.md)
+> [MIM 서비스 및 포털 »](install-mim-service-portal.md)
+> 
 > [!NOTE]
 > 이 연습에서는 Contoso라는 회사의 샘플 이름과 값을 사용합니다. 해당 항목을 사용자의 정보로 바꿉니다. 예를 들면 다음과 같습니다.
 > - 도메인 컨트롤러 이름 - **corpdc**
@@ -31,7 +32,7 @@ ms.lasthandoff: 05/03/2018
 > - MIM 서비스 서버 이름 - **corpservice**
 > - MIM 동기화 서버 이름 - **corpsync**
 > - SQL Server 이름 - **corpsql**
-> - 암호 - **Pass@word1**
+> - 암호 - <strong>Pass@word1</strong>
 
 Microsoft Identity Manager 2016 구성 요소를 설치하려면 먼저 설치 패키지를 설정합니다.
 
@@ -55,37 +56,37 @@ Microsoft Identity Manager 2016 구성 요소를 설치하려면 먼저 설치 �
 
     ![사용자 지정 설치 이미지](media/install-mim-sync/MIM_Install2.png)
 
-6.  동기화 서비스 데이터베이스 구성 화면에서 다음을 선택합니다.
+6. 동기화 서비스 데이터베이스 구성 화면에서 다음을 선택합니다.
 
-    1.  SQL Server 위치: **corpsql.contoso.com**라고 하는 **원격 컴퓨터**.
+   1.  SQL Server 위치: **corpsql.contoso.com**라고 하는 **원격 컴퓨터**.
 
-    2.  SQL Server 인스턴스: **기본 인스턴스**
+   2.  SQL Server 인스턴스: **기본 인스턴스**
 
-    ![데이터베이스 연결 이미지](media/install-mim-sync/MIM_Install3.png)
+   ![데이터베이스 연결 이미지](media/install-mim-sync/MIM_Install3.png)
 
-7.  이전에 만든 계정에 따라 동기화 서비스 계정을 구성합니다.
+7. 이전에 만든 계정에 따라 동기화 서비스 계정을 구성합니다.
 
-    1.  서비스 계정: *MIMSync*
+   1. 서비스 계정: *MIMSync*
 
-    2.  암호: *Pass@word1*
+   2. 암호: <em>Pass@word1</em>
 
-    3.  서비스 계정 도메인 또는 로컬 컴퓨터 이름: *contoso*
+   3. 서비스 계정 도메인 또는 로컬 컴퓨터 이름: *contoso*
 
-    ![서비스 계정 이미지](media/install-mim-sync/MIM_Install4.png)
+   ![서비스 계정 이미지](media/install-mim-sync/MIM_Install4.png)
 
-8.  MIM 동기화 서비스 설치 관리자에서 다음과 같은 관련 보안 그룹을 입력합니다.
+8. MIM 동기화 서비스 설치 관리자에서 다음과 같은 관련 보안 그룹을 입력합니다.
 
-    1. 관리자 = *contoso\MIMSyncAdmins*
+   1. 관리자 = *contoso\MIMSyncAdmins*
 
-    2. 운영자 = *contoso\MIMSyncOperators*
+   2. 운영자 = *contoso\MIMSyncOperators*
 
-    3. 연결자 = *contoso\MIMSyncJoiners*
+   3. 연결자 = *contoso\MIMSyncJoiners*
 
-    4. 커넥터 찾아보기 = *contoso\MIMSyncBrowse*
+   4. 커넥터 찾아보기 = *contoso\MIMSyncBrowse*
 
-    5. WMI 암호 관리 = *contoso\MIMSyncPasswordReset*
+   5. WMI 암호 관리 = *contoso\MIMSyncPasswordReset*
 
-    ![보안 그룹 이미지](media/install-mim-sync/MIM_Install5.png)
+   ![보안 그룹 이미지](media/install-mim-sync/MIM_Install5.png)
 
 9. 보안 설정 화면에서 **인바운드 RPC 통신에 방화벽 규칙 사용**을 선택하고 **다음**을 클릭합니다.
 
@@ -103,6 +104,6 @@ Microsoft Identity Manager 2016 구성 요소를 설치하려면 먼저 설치 �
 
     5. 변경 내용을 적용하려면 로그아웃했다가 그룹 멤버 자격으로 로그인해야 합니다. 로그아웃하려면 **예**를 클릭합니다.
 
->[!div class="step-by-step"]  
-[« Exchange Server](prepare-server-exchange.md)
-[MIM 서비스 및 포털 »](install-mim-service-portal.md)
+> [!div class="step-by-step"]  
+> [« Exchange Server](prepare-server-exchange.md)
+> [MIM 서비스 및 포털 »](install-mim-service-portal.md)

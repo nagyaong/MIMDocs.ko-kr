@@ -1,7 +1,7 @@
 ---
-title: "PAM 소프트웨어 요구 사항 | Microsoft 문서"
-description: "Privileged Access Management를 성공적으로 배포하기 위한 하드웨어 및 소프트웨어 요구 사항 찾기"
-keywords: 
+title: PAM 소프트웨어 요구 사항 | Microsoft 문서
+description: Privileged Access Management를 성공적으로 배포하기 위한 하드웨어 및 소프트웨어 요구 사항 찾기
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -12,18 +12,19 @@ ms.technology: active-directory-domain-services
 ms.assetid: 82a9085c-9667-4b3b-8079-657eab1d1e58
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 2ff6fd997dc5bc7e4a4949520e978ae2d8283d4b
-ms.sourcegitcommit: f29f02fa8437fa55e86afd7b0b99a36d2306b96b
+ms.openlocfilehash: c53d8cc815f792d1a1246a7434350f1cfb087844
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36288965"
 ---
 # <a name="hardware-and-software-requirements"></a>하드웨어 및 소프트웨어 요구 사항
 
 Privileged Access Management의 하드웨어 요구 사항은 기본 소프트웨어 플랫폼의 하드웨어 요구 사항을 초과하지 않습니다. 메모리나 디스크 공간이 충분하고 네트워크에 연결되어 있으면 됩니다.
 
->[!IMPORTANT]
-이 문서에서는 기본 배포에 대한 최소 요구 사항을 제공합니다. 성능, 확장성 또는 고가용성을 보여 주기 위한 것은 아닙니다. 대기업 또는 프로덕션 환경에 권장되는 배포 토폴로지를 나타내지는 않습니다.
+> [!IMPORTANT]
+> 이 문서에서는 기본 배포에 대한 최소 요구 사항을 제공합니다. 성능, 확장성 또는 고가용성을 보여 주기 위한 것은 아닙니다. 대기업 또는 프로덕션 환경에 권장되는 배포 토폴로지를 나타내지는 않습니다.
 
 ## <a name="installing-from-software-packages"></a>소프트웨어 패키지에서 설치
 
@@ -76,4 +77,4 @@ PRIVDC의 경우:
 PAMSRV의 경우:
 
 - [Windows Server 2012 R2](https://technet.microsoft.com/library/dn303418.aspx)
-- [SQL Server 2012](https://msdn.microsoft.com/library/ms143506(sql.110).aspx) 또는 [SQL Server 2014](https://msdn.microsoft.com/en-us/library/ms143506(v=sql.120).aspx)
+- [SQL Server 2012](https://msdn.microsoft.com/library/ms143506(sql.110).aspx) 또는 [SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)

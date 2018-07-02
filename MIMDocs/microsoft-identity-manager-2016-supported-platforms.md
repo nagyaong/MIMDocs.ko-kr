@@ -13,11 +13,12 @@ ms.assetid: 4978f60d-044d-4e84-8d93-65801fce1144
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: mim
-ms.openlocfilehash: 3ff2ca7b9a268d4723861fcdec7f2f11932a6026
-ms.sourcegitcommit: 3502d636687e442f7d436ee56218b9b95f5056cf
+ms.openlocfilehash: 1054d611ae0b230005a0f79be69f5c6c2bba7af2
+ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34479301"
 ---
 # <a name="supported-platforms-for-mim-2016"></a>MIM 2016에 대해 지원되는 플랫폼
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/16/2018
 | |PAM 시나리오: PAM 시나리오 기존(CORP) 포리스트를 위한 Active Directory | Windows Server 2008 <br/> Windows Server 2008 R2 * <br/> Windows Server 2012 * <br/> Windows Server 2012 R2 * <br/> Windows Server 2016 * |
 | | MIM 서비스 데이터베이스 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 |
 | | SharePoint | SharePoint Foundation 2010<br/>SharePoint Foundation 2013 SP1 <br/> SharePoint 2016 * |
-| | MIM 서비스 승인 및 그룹 관리 메일을 위한 메일 서버(선택 사항) | Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * <br/> Exchange Online*([4.4.1749.0](https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/version-history#version-4417490) 빌드 이전 알림만) |
+| | MIM 서비스 승인 및 그룹 관리 메일을 위한 메일 서버(선택 사항) | Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * <br/> Exchange Online*([4.4.1749.0](https://docs.microsoft.com/microsoft-identity-manager/reference/version-history#version-4417490) 빌드 이전 알림만) |
 | | 브라우저 | 지원되는 모든 주요 브라우저*(모바일 장치 제한)|
 | **MIM 서비스 보고** | Windows Server |  Windows Server 2008 R2 SP1<br/>Windows Server 2012 <br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | 데이터 웨어하우스 | System Center 2012 Service Manager <br/> System Center 2012 R2 Service Manager </br> System Center 2016 Service Manager*(4.4.1459 포함)<br/> [System Center 2016에 대한 SQL Server 버전 호환성](https://docs.microsoft.com/system-center/scsm/upgrade-to-sm-2016)

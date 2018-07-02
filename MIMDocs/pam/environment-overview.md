@@ -1,7 +1,7 @@
 ---
-title: "PAM 환경 개요 | Microsoft 문서"
-description: "Privileged Access Management를 배포하기 위해 필요한 가상 컴퓨터의 수와 구성 확인"
-keywords: 
+title: PAM 환경 개요 | Microsoft 문서
+description: Privileged Access Management를 배포하기 위해 필요한 가상 컴퓨터의 수와 구성 확인
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -12,11 +12,12 @@ ms.technology: active-directory-domain-services
 ms.assetid: 479db14c-1bfb-4d7c-a344-cd718a01f328
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 3be2e19673a863098739e830d9c83ce264abf412
-ms.sourcegitcommit: 210195369d2ecd610569d57d0f519d683ea6a13b
+ms.openlocfilehash: e83c326d32645ce80541d5c415cd9c0e9d1dae54
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36288795"
 ---
 # <a name="environment-overview"></a>환경 개요
 
@@ -28,8 +29,8 @@ Privileged Access Management는 공유 네트워크에서 서로 연결된 별�
 
 VM 디스크 이미지를 저장할 드라이브에는 120GB 이상의 여유 디스크 공간이 필요합니다.  고가용성을 위해 배포하려는 경우 디스크 하위 시스템이 SQL 공유 저장소에 대한 요구 사항을 충족해야 합니다.  공유 저장소는 Windows Server 장애 조치(failover) 클러스터링 클러스터 디스크, SAN(저장 영역 네트워크)의 디스크 또는 SMB 서버의 파일 공유 형식일 수 있습니다.
 
->[!IMPORTANT]
-저장소는 배스천 환경에만 사용해야 합니다. 배스천 환경 외부의 다른 워크로드와 저장소를 공유하는 것은 배스천 환경의 무결성을 위협할 수 있으므로 권장되지 않습니다.
+> [!IMPORTANT]
+> 저장소는 배스천 환경에만 사용해야 합니다. 배스천 환경 외부의 다른 워크로드와 저장소를 공유하는 것은 배스천 환경의 무결성을 위협할 수 있으므로 권장되지 않습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

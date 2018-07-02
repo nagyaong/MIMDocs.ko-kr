@@ -1,7 +1,7 @@
 ---
-title: "배포에 대한 토폴로지 가이드 | Microsoft 문서"
-description: "MIM 2016 구성 요소를 이해하고 이를 사용자 환경에 배포하는 방법에 대한 제안 사항을 알아봅니다."
-keywords: 
+title: 배포에 대한 토폴로지 가이드 | Microsoft 문서
+description: MIM 2016 구성 요소를 이해하고 이를 사용자 환경에 배포하는 방법에 대한 제안 사항을 알아봅니다.
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
@@ -12,18 +12,19 @@ ms.technology: security
 ms.assetid: 735dc357-dfba-4f68-a5b3-d66d6c018803
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: e257a2e64225a4bc545d8a9384167819412e939b
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.openlocfilehash: f67068709cf9910fa04110fce75623fd2f94ca4a
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289815"
 ---
 # <a name="topology-considerations"></a>토폴로지 고려 사항
 동일한 서버 또는 서로 다른 구성의 여러 서버에서 MIM(Microsoft Identity Manager) 구성 요소를 배포할 수 있습니다. 배포를 위한 선택한 토폴로지는 MIM에서 얻을 수 있는 성능에 영향을 줍니다. 이 문서에서는 구현을 고려할 수 있는 다양한 배포 토폴로지를 소개합니다.
 
 
->[!NOTE]
-이러한 옵션은 ID 관리를 위해 MIM 동기화, MIM 서비스 및 MIM 포털만을 사용하는 배포에 적용할 수 있습니다.  MIM CM, MIM BHOLD Suite를 사용하거나 권한 있는 액세스 관리를 사용하는 배포에는 서로 다른 배포 옵션이 있습니다.
+> [!NOTE]
+> 이러한 옵션은 ID 관리를 위해 MIM 동기화, MIM 서비스 및 MIM 포털만을 사용하는 배포에 적용할 수 있습니다.  MIM CM, MIM BHOLD Suite를 사용하거나 권한 있는 액세스 관리를 사용하는 배포에는 서로 다른 배포 옵션이 있습니다.
 
 
 ## <a name="mim-components"></a>MIM 구성 요소

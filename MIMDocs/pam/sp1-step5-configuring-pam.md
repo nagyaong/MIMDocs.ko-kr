@@ -1,7 +1,7 @@
 ---
-title: "5단계 PAM 설치/구성"
-description: "스크립트를 사용한 권한 있는 ID 관리 구성의 5단계로, PAM 서버에서의 배포 단계를 설명합니다."
-keywords: 
+title: 5단계 PAM 설치/구성
+description: 스크립트를 사용한 권한 있는 ID 관리 구성의 5단계로, PAM 서버에서의 배포 단계를 설명합니다.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
@@ -10,19 +10,20 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 414851f8550f6419db7e268e982b88065730ab4e
-ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
+ms.openlocfilehash: 839cb4fa69aefa8024d38aeff0ebae96599aefb3
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36288846"
 ---
 # <a name="step-5-installingconfiguring-pam"></a>5단계 PAM 설치/구성
 
->[!div class="step-by-step"]
-[« 4단계](sp1-step4-configuring-sharepoint.md)
-[6단계 »](sp1-step6-setup-pam-trust.md)
+> [!div class="step-by-step"]
+> [« 4단계](sp1-step4-configuring-sharepoint.md)
+> [6단계 »](sp1-step6-setup-pam-trust.md)
 
 도메인에 가입된 PAM 서버의 경우 MIMAdmin으로 로그인하고, 그렇지 않으면 로컬 관리자로 로그인합니다.
 1. 관리자 권한으로 PowerShell을 실행합니다.
@@ -40,9 +41,9 @@ PAM 서버를 다시 부팅한 후 MIMAdmin 계정으로 컴퓨터에 다시 로
 3. .\PAMDeployment.ps1
 4. 메뉴 옵션 5(MIM PAM 설치)를 선택합니다.
 
-  메시지가 나타나면 MIM 모니터 계정, MIM 구성 요소 계정, MIM MA 계정, MIM 서비스 계정, MIM 관리자 계정 및 SharePoint 계정의 암호를 입력합니다.
-  설치가 완료되면 컴퓨터가 다시 부팅됩니다.
+   메시지가 나타나면 MIM 모니터 계정, MIM 구성 요소 계정, MIM MA 계정, MIM 서비스 계정, MIM 관리자 계정 및 SharePoint 계정의 암호를 입력합니다.
+   설치가 완료되면 컴퓨터가 다시 부팅됩니다.
 
->[!div class="step-by-step"]
-[« 4단계](sp1-step4-configuring-sharepoint.md)
-[6단계 »](sp1-step6-setup-pam-trust.md)
+> [!div class="step-by-step"]
+> [« 4단계](sp1-step4-configuring-sharepoint.md)
+> [6단계 »](sp1-step6-setup-pam-trust.md)

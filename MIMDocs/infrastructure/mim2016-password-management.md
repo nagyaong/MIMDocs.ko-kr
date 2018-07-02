@@ -1,7 +1,7 @@
 ---
-title: "Microsoft Identity Manager 2016 암호 관리 | Microsoft 문서"
-description: 
-keywords: 
+title: Microsoft Identity Manager 2016 암호 관리 | Microsoft 문서
+description: ''
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -10,12 +10,13 @@ ms.topic: reference
 ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: 156551f4083c71ee7059e817213751393db5833e
-ms.sourcegitcommit: 5ba5d916c0ca1e5aa501592af0cef714bfdc8afe
+ms.assetid: ''
+ms.openlocfilehash: 86b8b9bdf5c6441d0708cd874742fa48b65177fa
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289366"
 ---
 # <a name="microsoft-identity-manager-2016-password-management"></a>Microsoft Identity Manager 2016 암호 관리
 
@@ -61,8 +62,8 @@ ms.lasthandoff: 08/02/2017
 
 암호 동기화는 Active Directory 도메인에서 PCNS(암호 변경 알림 서비스)와 함께 작동하며 Active Directory에서 발생하는 암호 변경이 연결된 다른 데이터 원본으로 자동으로 전파되도록 허용합니다. MIM은 Active Directory 도메인 컨트롤러에서 암호 변경 알림을 수신하는 RPC(원격 프로시저 호출) 서버로서 실행하면서 이 작업을 수행합니다. 암호 변경 요청을 수신하여 인증되면 MIM에서 처리하고 적합한 관리 에이전트에 전파됩니다.
 
->[!IMPORTANT]
-MIM은 양방향 암호 동기화는 지원되지 않습니다. 양방향 암호 동기화를 구성하면 서버 리소스를 소모하고 Active Directory와 MIM에 부정적인 영향을 미칠 수 있는 루프를 만들 수 있습니다.
+> [!IMPORTANT]
+> MIM은 양방향 암호 동기화는 지원되지 않습니다. 양방향 암호 동기화를 구성하면 서버 리소스를 소모하고 Active Directory와 MIM에 부정적인 영향을 미칠 수 있는 루프를 만들 수 있습니다.
 
 PCNS는 각 Active Directory 도메인 컨트롤러에서 실행됩니다. 암호 알림을 수신하는 시스템을 대상이라고 합니다. 암호 변경이 보내지기 전에 Active Directory에서 MIM 서버가 PCNS 대상으로 구성되어야 합니다. PCNS 구성은 포함 그룹을 반드시 정의해야 하며 제외 그룹은 선택적으로 정의할 수 있습니다. 이러한 그룹은 도메인에서 민감한 암호의 흐름을 제한하는 데 사용됩니다. 예를 들어 모든 사용자에게 암호를 보내지만 관리자 암호는 보내지 않으려면 도메인 사용자를 포함 그룹으로 사용하도록 선택하고 도메인 관리자는 제외 그룹으로 선택할 수 있습니다. 암호 변경 알림 서비스를 구성하는 방법에 대한 자세한 내용은 [Using Password Synchronization](https://technet.microsoft.com/library/jj590288(v=ws.10).aspx)(암호 동기화 사용)을 참조하세요.
 

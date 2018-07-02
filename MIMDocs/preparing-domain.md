@@ -12,16 +12,17 @@ ms.technology: security
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: ff8d8a6f66212b006e2c17186dc299a5bcf3f68b
-ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
+ms.openlocfilehash: ddab5b1ab57d3d332d5cd36ecc5a29abd83222ec
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289033"
 ---
 # <a name="set-up-a-domain"></a>도메인 설정
 
->[!div class="step-by-step"]
-[Windows Server 2016 »](prepare-server-ws2016.md)
+> [!div class="step-by-step"]
+> [Windows Server 2016 »](prepare-server-ws2016.md)
 
 MIM(Microsoft Identity)은 AD(Active Directory) 도메인에서 작동합니다. AD가 이미 설치되어 있어야 하며 사용자 환경에 관리할 수 있는 도메인에 대한 도메인 컨트롤러가 있어야 합니다.
 
@@ -38,7 +39,7 @@ MIM 배포의 모든 구성 요소에는 도메인에 자체 ID가 있어야 합
 > - MIM 서비스 서버 이름 - **corpservice**
 > - MIM 동기화 서버 이름 - **corpsync**
 > - SQL Server 이름 - **corpsql**
-> - 암호 - **Pass@word1**
+> - 암호 - <strong>Pass@word1</strong>
 
 1. 도메인 컨트롤러에 도메인 관리자(*예: Contoso\Administrator*)로 로그인합니다.
 
@@ -105,5 +106,5 @@ MIM 배포의 모든 구성 요소에는 도메인에 자체 ID가 있어야 합
 - passwordreset.contoso.com corpservice의 물리적 IP 주소를 가리킵니다.
 - passwordregistration.contoso.com corpservice의 물리적 IP 주소를 가리킵니다.
 
->[!div class="step-by-step"]
-[Windows Server 2016 »](prepare-server-ws2016.md)
+> [!div class="step-by-step"]
+> [Windows Server 2016 »](prepare-server-ws2016.md)

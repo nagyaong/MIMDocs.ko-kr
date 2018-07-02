@@ -1,19 +1,20 @@
 ---
-title: "Microsoft BHOLD 제품군 개념 가이드 | Microsoft Docs"
-description: "동기화 서비스를 설치 및 구성하여 MIM 2016 구성 요소를 시작합니다."
-keywords: 
+title: Microsoft BHOLD 제품군 개념 가이드 | Microsoft Docs
+description: 동기화 서비스를 설치 및 구성하여 MIM 2016 구성 요소를 시작합니다.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
 ms.date: 09/14/2017
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: 0d814dd27fe53ee7cfc46eac24ec577b05f78e52
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.assetid: ''
+ms.openlocfilehash: 521025de3dc16a9bda02aed8287faeb3449192c1
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290070"
 ---
 # <a name="microsoft-bhold-suite-concepts-guide"></a>Microsoft BHOLD 제품군 개념 가이드
 
@@ -47,7 +48,7 @@ RBAC의 또 다른 이점은 SoD(직무 분리)를 정의하고 시행할 수 �
 BHOLD 제품군을 사용하면 조직 내에서 역할을 지정 및 구성하고, 사용자를 역할에 매핑하고, 적절한 권한을 역할에 매핑할 수 있습니다. 이 구조를 역할 모델이라고 하며 5가지 유형의 개체를 포함하고 연결합니다. 
 
 - 조직 구성 단위
-- Users
+- 사용자
 - 역할
 - 사용 권한
 - 응용 프로그램
@@ -56,8 +57,8 @@ BHOLD 제품군을 사용하면 조직 내에서 역할을 지정 및 구성하�
 
 조직 구성 단위(OrgUnits)는 BHOLD 역할 모델에서 사용자가 구성되는 주요한 수단입니다. 모든 사용자는 하나 이상의 OrgUnit에 속해야 합니다. (실제로 사용자가 BHOLD의 마지막 조직 구성 단위에서 제거되면 사용자의 데이터 레코드가 BHOLD 데이터베이스에서 삭제됩니다.)
 
->[!Important]
-BHOLD 역할 모델의 조직 구성 단위를 AD DS(Active Directory Domain Services)의 조직 구성 단위와 혼동하지 않아야 합니다. 일반적으로 BHOLD의 조직 구성 단위 구조는 네트워크 인프라 요구 사항이 아닌 비즈니스 조직 및 정책을 기반으로 합니다.
+> [!Important]
+> BHOLD 역할 모델의 조직 구성 단위를 AD DS(Active Directory Domain Services)의 조직 구성 단위와 혼동하지 않아야 합니다. 일반적으로 BHOLD의 조직 구성 단위 구조는 네트워크 인프라 요구 사항이 아닌 비즈니스 조직 및 정책을 기반으로 합니다.
 
 반드시 그런 것은 아니지만 대부분의 경우 조직 구성 단위는 실제 조직의 계층 구조를 나타내기 위해 BHOLD로 구조화됩니다(아래와 유사).
 
@@ -73,7 +74,7 @@ BHOLD 역할 모델의 조직 구성 단위를 AD DS(Active Directory Domain Ser
 
 OrgUnits는 BHOLD Core 웹 포털을 사용하거나 BHOLD 모델 생성기를 사용하여 BHOLD 제품군에서 만들 수 있습니다.
 
-#### <a name="users"></a>Users
+#### <a name="users"></a>사용자
 
 위에서 언급한 것처럼 모든 사용자는 적어도 하나의 조직 구성 단위(OrgUnit)에 속해야 합니다. 조직 구성 단위는 사용자를 역할과 연관시키는 주요 메커니즘이기 때문에 대부분의 조직에서 지정된 사용자는 여러 OrgUnits에 속하므로 역할을 해당 사용자와 보다 쉽게 연관시킬 수 있습니다. 그러나 어떤 경우에는 사용자가 속하는 OrgUnits와 별개로 역할을 사용자와 연관시켜야 할 수도 있습니다. 따라서 사용자는 역할에 직접 할당되고 사용자가 속한 OrgUnits에서 역할을 얻을 수 있습니다.
 
@@ -127,8 +128,8 @@ BHOLD 모델 생성기를 사용하는 첫 번째 단계는 이러한 파일을 
 - 조직 구성 단위에 연결되어 있지만 특정 사용자를 위해 활성화해야 하는 제안된 역할
 - 가져온 파일에 소유자가 지정되지 않은 조직 구성 단위 및 역할에 대한 사용자 제어 권한을 부여하는 소유권 역할
 
->[!Important]
-테스트 환경에서 파일을 업로드할 경우 **Retain Existing Model(기존 모델 유지)** 확인란만 선택합니다. 프로덕션 환경에서는 초기 역할 모델을 만드는 데 모델 생성기를 사용해야 합니다. BHOLD 데이터베이스에서 기존 역할 모델을 수정하는 데는 사용할 수 없습니다.
+> [!Important]
+> 테스트 환경에서 파일을 업로드할 경우 **Retain Existing Model(기존 모델 유지)** 확인란만 선택합니다. 프로덕션 환경에서는 초기 역할 모델을 만드는 데 모델 생성기를 사용해야 합니다. BHOLD 데이터베이스에서 기존 역할 모델을 수정하는 데는 사용할 수 없습니다.
 
 모델 생성기가 역할 모델에서 이러한 역할을 만든 후에는 역할 모델을 XML 파일 형식으로 BHOLD 데이터베이스에 내보낼 수 있습니다.
 
@@ -213,7 +214,7 @@ BHOLD 분석 포털에서는 특정 정책 또는 정책 그룹을 테스트하�
 
 규칙은 다음 요소 집합 중 하나를 테스트할 수 있습니다.
 
-- Users
+- 사용자
 - 조직 구성 단위
 - 역할
 - 사용 권한
@@ -232,7 +233,7 @@ BHOLD 분석 포털에서는 특정 정책 또는 정책 그룹을 테스트하�
 |   |   |   |   |   |
 |---|---|---|---|---|
 |**유형:**   | 수   |
-| **키:**  | Users  |
+| **키:**  | 사용자  |
 | **연산자**  | >  |
 | **값:** | 10 |
 
@@ -252,15 +253,15 @@ BHOLD 분석 포털에서는 특정 정책 또는 정책 그룹을 테스트하�
   - **Can only have any(일부만 포함할 수 있음) 및 Can only have all(모두만 포함할 수 있음)**
   - **Exclusively have any(독점적으로 일부 포함) 및 Exclusively have all(독점적으로 모두 포함)**
 
->[!Note]
-제한적 필터는 표시된 연산자를 사용하여 여러 값 집합에 대해 키를 테스트합니다.
+> [!Note]
+> 제한적 필터는 표시된 연산자를 사용하여 여러 값 집합에 대해 키를 테스트합니다.
 
 예를 들어 지불 요청 권한이 있는 사용자에게 지불 승인 권한도 없다는 내용의 SoD(직무 분리) 정책의 구현을 테스트하려는 경우 다음과 같은 규칙을 생성할 수 있습니다.
 
 |   |  |
 |---|--|
 |이름:| 지불 SoD 테스트|
-|요소:| Users|
+|요소:| 사용자|
 |하위 집합 필터:| Having any permission Request Payment(일부 지불 요청 권한 포함)|
 |규칙 필터: | Cannot have any permission Approve Payment(일부 지불 승인 권한 포함할 수 없음)|
 
@@ -276,7 +277,7 @@ BHOLD 분석 포털에서는 특정 정책 또는 정책 그룹을 테스트하�
 |  |  |
 |--|--|
 |이름: | 지불 SoD 테스트 수정|
-|요소: | Users |
+|요소: | 사용자 |
 |하위 집합 필터: | Having any role Manager(일부 관리자 역할 포함)|
 | 규칙 필터: |Must have any permission Modify Payment(일부 지불 수정 권한을 포함해야 함) </br> Must have any permission Approve Payment(일부 지불 승인 권한을 포함해야 함)|
 
@@ -287,7 +288,7 @@ BHOLD 분석 포털에서는 특정 정책 또는 정책 그룹을 테스트하�
 |  |  |
 |--|--|
 |이름: | 승인 검토 테스트|
-|요소: | Users|
+|요소: | 사용자|
 | 하위 집합 필터: | Having any role Manager(일부 관리자 역할 포함)
 |규칙 필터: | Exclusively have any permission Approve Reviews(검토 승인 권한 독점적으로 일부 포함)|
 

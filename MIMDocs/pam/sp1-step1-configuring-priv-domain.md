@@ -1,7 +1,7 @@
 ---
-title: "1단계 PRIV 도메인 구성"
-description: "스크립트를 사용하여 Privileged Identity Manager에서 관리할 기존 또는 새 ID로 CORP 도메인을 준비합니다."
-keywords: 
+title: 1단계 PRIV 도메인 구성
+description: 스크립트를 사용하여 Privileged Identity Manager에서 관리할 기존 또는 새 ID로 CORP 도메인을 준비합니다.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
@@ -10,21 +10,22 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 40822bb7702cf3d7ac23ecd6e98ac392f2d3a480
-ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
+ms.openlocfilehash: e5be140e7ffea7b0c7cacbc1c82d3b2883804203
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290308"
 ---
 # <a name="step-1-configuring-the-priv-domain"></a>1단계 PRIV 도메인 구성
 
->[!div class="step-by-step"]
-[2단계 »](sp1-step2-configuring-corp-domain.md)
+> [!div class="step-by-step"]
+> [2단계 »](sp1-step2-configuring-corp-domain.md)
 
 1. 관리자 권한으로 PRIVDC에 로그인합니다.
-  * PRIV 전용 환경인 경우 CORPDC에 로그인합니다.
+   * PRIV 전용 환경인 경우 CORPDC에 로그인합니다.
 2. 관리자 권한으로 PowerShell을 실행합니다.
 3. cd $env:SYSTEMDRIVE\PAM
 4. .\PAMDeployment.ps1
@@ -41,5 +42,5 @@ Windows Server 2016 아래의 기능 수준에 대해, 추가 구성이 수행�
 $env:SYSTEMDRIVE\PAM에 생성된 SIDs.txt를 CORPDC의 유사한 폴더에 복사합니다. 이는 CORPDC에서 PRIV 사용자가 CORP 사용자 속성을 읽을 수 있는 권한을 설정하는 데 필요합니다.
 스크립트가 완료되면 변경 내용을 적용하기 위해 컴퓨터를 다시 부팅하라는 메시지가 나타납니다.
 
->[!div class="step-by-step"]
-[2단계 »](sp1-step2-configuring-corp-domain.md)
+> [!div class="step-by-step"]
+> [2단계 »](sp1-step2-configuring-corp-domain.md)

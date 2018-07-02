@@ -1,7 +1,7 @@
 ---
-title: "스크립트를 사용하여 PAM 구성"
-description: "이 문서는 스크립트를 사용한 PAM 구성을 설명하는 일련의 문서 중 하나입니다. 여기서는 PAM 배포 스크립트에서 사용하는 XML 파일을 수정하는 방법을 설명합니다."
-keywords: 
+title: 스크립트를 사용하여 PAM 구성
+description: 이 문서는 스크립트를 사용한 PAM 구성을 설명하는 일련의 문서 중 하나입니다. 여기서는 PAM 배포 스크립트에서 사용하는 XML 파일을 수정하는 방법을 설명합니다.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
@@ -10,13 +10,14 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 5718ec64fff049cb8717e4cbb36784c8f4ee4db3
-ms.sourcegitcommit: c13f814ce753e1fdacc7d0814087f59542e5098f
+ms.openlocfilehash: 741d722ce315b7265278997275d05981f44826e8
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289424"
 ---
 # <a name="configure-pam-using-scripts"></a>스크립트를 사용하여 PAM 구성
 
@@ -43,7 +44,7 @@ SQL과 SharePoint를 별도의 서버에 설치하려면 아래 지침에 따라
 
 PAMDeploymentConfig.xml 업데이트를 계속 진행하기 전에 업데이트된 복사본을 모든 컴퓨터에 배치합니다.
 
-### <a name="setup"></a>Setup
+### <a name="setup"></a>설정
 
 |컴퓨터   | 실행 권한   |명령   |
 |---|---|---|
@@ -66,5 +67,5 @@ PAMDeploymentConfig.xml 업데이트를 계속 진행하기 전에 업데이트�
 |  CORPClient | <PRIV>\PRIV.pamRequestor 사용자 및 PRIVOnly의 경우 <CORP>\pamrequestor   | Import-module .\PAMValidation.psm1, Test-PAMValidationScenarioNoApprovalRequest  |
 
 
->[!div class="step-by-step"]
-[시작 »](sp1-step1-configuring-priv-domain.md)
+> [!div class="step-by-step"]
+> [시작 »](sp1-step1-configuring-priv-domain.md)

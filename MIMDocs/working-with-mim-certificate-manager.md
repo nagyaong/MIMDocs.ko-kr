@@ -1,7 +1,7 @@
 ---
-title: "MIM 인증서 관리자 Windows 응용 프로그램 배포 | Microsoft 문서"
-description: "사용자가 자신의 액세스 권한을 관리할 수 있도록 인증서 관리자 앱을 배포하는 방법을 알아봅니다."
-keywords: 
+title: MIM 인증서 관리자 Windows 응용 프로그램 배포 | Microsoft 문서
+description: 사용자가 자신의 액세스 권한을 관리할 수 있도록 인증서 관리자 앱을 배포하는 방법을 알아봅니다.
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
@@ -12,11 +12,12 @@ ms.technology: security
 ms.assetid: 66060045-d0be-4874-914b-5926fd924ede
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: e472d7cdc07aa19464aa1f18447d8c5dc7d0f0ba
-ms.sourcegitcommit: 1e0626a366a41d610e6a117cdf684241eb65ec63
+ms.openlocfilehash: bf655d451e86261ffd3043117a56f4daccb4b460
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289876"
 ---
 # <a name="mim-certificate-manager-windows-store-application-deployment"></a>MIM 인증서 관리자 Windows 스토어 응용 프로그램 배포
 
@@ -48,10 +49,10 @@ MIM 2016 및 인증서 관리자를 실행한 후에 MIM 인증서 관리자 Win
 
 7. 호환성 탭의 인증 기관 아래에서 Windows Server 2008을 선택합니다. 인증서 받는 사람 아래에서 Windows 8.1/Windows Server 2012 R2를 선택합니다. 템플릿 버전은 인증서 템플릿을 처음으로 만들고 저장한 시점에 설정됩니다. 이러한 방식으로 인증서 템플릿을 만들지 않은 경우 올바른 버전으로 수정할 방법이 없습니다.
 
-    >[!NOTE]
-    사용자에게 버전 3(이상) 인증서 템플릿이 있음을 확인했기 때문에 이 단계가 중요합니다. 버전 3 템플릿만이 인증서 관리자 앱에서 작동합니다.
-    
-8.  **일반** 탭에서 **표시 이름** 필드에 앱 UI에 표시할 이름(예: **가상 스마트 카드 로그온**)을 입력합니다.
+   > [!NOTE]
+   >  사용자에게 버전 3(이상) 인증서 템플릿이 있음을 확인했기 때문에 이 단계가 중요합니다. 버전 3 템플릿만이 인증서 관리자 앱에서 작동합니다.
+
+8. **일반** 탭에서 **표시 이름** 필드에 앱 UI에 표시할 이름(예: **가상 스마트 카드 로그온**)을 입력합니다.
 
 9. **요청 처리** 탭에서 **용도** 를 **서명 및 암호화** 로 설정하고 **...수행할 작업** 아래에서 **등록 중에 사용자에게 확인**을 선택합니다.
 
@@ -112,26 +113,28 @@ MIM 2016 및 인증서 관리자를 실행한 후에 MIM 인증서 관리자 Win
 
 3. Custom.data 파일을 열고 필요에 따라 매개 변수를 수정합니다.
 
-    |||
-    |-|-|
-    |MIMCM URL|CM을 구성하는 데 사용한 포털의 FQDN입니다. 예: https://mimcmServerAddress/certificatemanagement|
-    |ADFS URL|AD FS를 사용하려는 경우 AD FS URL을 삽입합니다. 예: https://adfsServerSame/adfs </br> ADFS를 사용하지 않는 경우 이 설정이 빈 문자열로 구성합니다.  예: ```<ADFS URL=""/>``` |
-    |PrivacyUrl|인증서 등록을 위해 수집한 사용자 세부 정보로 수행할 작업을 설명하는 웹 페이지에 대한 URL을 포함할 수 있습니다.|
-    |SupportMail|지원 문제에 대한 메일 주소를 포함할 수 있습니다.|
-    |LobComplianceEnable|true 또는 false로 설정할 수 있습니다. 기본 설정은 true입니다.|
-    |MinimumPinLength|기본 설정은 6입니다.|
-    |NonAdmin|true 또는 false로 설정할 수 있습니다. 기본 설정은 false입니다. 컴퓨터의 관리자가 아닌 사용자가 인증서를 등록하고 갱신하도록 하려면 이 속성만 수정합니다.|
->[!IMPORTANT]
-ADFS URL에 대한 속성을 지정해야 합니다. 값을 지정하지 않으면이 최신 앱을 처음으로 사용할 때 오류가 발생합니다.
-4.  파일을 저장하고 편집기를 종료합니다.
 
-5.  패키지에 서명하면 서명 파일이 만들어집니다. 따라서 AppxSignature.p7x라는 원본 서명 파일을 삭제해야 합니다.
+   |                     |                                                                                                                                                                                                          |
+   |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |      MIMCM URL      |                                              CM을 구성하는 데 사용한 포털의 FQDN입니다. https://mimcmServerAddress/certificatemanagement).                                              |
+   |      ADFS URL       | AD FS를 사용하려는 경우 AD FS URL을 삽입합니다. <https://adfsServerSame/adfs>). </br> ADFS를 사용하지 않는 경우 이 설정이 빈 문자열로 구성합니다.  예: ```<ADFS URL=""/>``` |
+   |     PrivacyUrl      |                                         인증서 등록을 위해 수집한 사용자 세부 정보로 수행할 작업을 설명하는 웹 페이지에 대한 URL을 포함할 수 있습니다.                                          |
+   |     SupportMail     |                                                                           지원 문제에 대한 메일 주소를 포함할 수 있습니다.                                                                           |
+   | LobComplianceEnable |                                                                     true 또는 false로 설정할 수 있습니다. 기본 설정은 true입니다.                                                                      |
+   |  MinimumPinLength   |                                                                                        기본 설정은 6입니다.                                                                                         |
+   |      NonAdmin       |           true 또는 false로 설정할 수 있습니다. 기본 설정은 false입니다. 컴퓨터의 관리자가 아닌 사용자가 인증서를 등록하고 갱신하도록 하려면 이 속성만 수정합니다.            |
 
-6.  AppxManifest.xml 파일은 서명 인증서의 주체 이름을 지정합니다. 이 파일을 열어서 편집합니다.
+   > [!IMPORTANT]
+   > ADFS URL에 대한 속성을 지정해야 합니다. 값을 지정하지 않으면이 최신 앱을 처음으로 사용할 때 오류가 발생합니다.
+4. 파일을 저장하고 편집기를 종료합니다.
 
-7.  이 섹션을 시작하기 전에 서명 인증서를 가져와야 합니다. MIM 2016 인증서 관리자에서 비관리자가 스마트 카드 갱신 사용 설정, 1단계를 참조하세요.
+5. 패키지에 서명하면 서명 파일이 만들어집니다. 따라서 AppxSignature.p7x라는 원본 서명 파일을 삭제해야 합니다.
 
-8.  &lt;Identity&gt; 요소에서 Publisher 특성의 값을 서명 인증서에 나열된 주체와 동일하게 수정합니다(예: "CN=SUBJECT").
+6. AppxManifest.xml 파일은 서명 인증서의 주체 이름을 지정합니다. 이 파일을 열어서 편집합니다.
+
+7. 이 섹션을 시작하기 전에 서명 인증서를 가져와야 합니다. MIM 2016 인증서 관리자에서 비관리자가 스마트 카드 갱신 사용 설정, 1단계를 참조하세요.
+
+8. &lt;Identity&gt; 요소에서 Publisher 특성의 값을 서명 인증서에 나열된 주체와 동일하게 수정합니다(예: "CN=SUBJECT").
 
 9. 파일을 저장하고 편집기를 종료합니다.
 
@@ -151,102 +154,102 @@ ADFS URL에 대한 속성을 지정해야 합니다. 값을 지정하지 않으�
 
 11. AD FS 인증을 사용하여 작업하려면
 
-    -  가상 스마트 카드 응용 프로그램을 엽니다. 이 응용 프로그램을 사용하면 다음 단계에 필요한 값을 보다 쉽게 찾을 수 있습니다.
+    - 가상 스마트 카드 응용 프로그램을 엽니다. 이 응용 프로그램을 사용하면 다음 단계에 필요한 값을 보다 쉽게 찾을 수 있습니다.
 
-    -  응용 프로그램을 AD FS 서버에 클라이언트로 추가하고 서버에서 CM을 구성하기 위해 AD FS 서버에서 Windows PowerShell을 열고 명령 `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`을 실행합니다.
+    - 응용 프로그램을 AD FS 서버에 클라이언트로 추가하고 서버에서 CM을 구성하기 위해 AD FS 서버에서 Windows PowerShell을 열고 명령 `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`을 실행합니다.
 
-        다음은 ConfigureMimCMClientAndRelyingParty.ps1 스크립트입니다.
+       다음은 ConfigureMimCMClientAndRelyingParty.ps1 스크립트입니다.
 
-       ```PowerShell
-        # HELP
+      ```PowerShell
+       # HELP
 
-        <#
-        .SYNOPSIS
-                        Configure ADFS for CM client app and server.
-        .DESCRIPTION
-           What the Script does:
-                                        a. Registers the MIM CM client app on the ADFS server.
-                                        b. Registers the MIM CM server relying party (Tells the ADFS server that it issues tokens for the CM server).
-                        For parameter information, see 'get-help -detailed'
-        .PARAMETER redirectUri
-                        The redirectUri for CM client app. Will be added to ADFS server.
-                        It can be found as follows:
-                        1. Open the settings panel. Under settings, there is a "Redirect Uri" text box (an ADFS server address must be configured in order for the text to display).
-                        2. Open MIM CM client app. Navigate to 'C:\Users\<your_username>\AppData\Local\Packages\CmModernAppv.<version>\LocalState', and open 'Logs_Virtual Smart Card Certificate Manager_<version>'. Search for "Redirect URI".
-        .PARAMETER serverFqdn
-                        Your deployed MIM CM server’s FQDN.
-        .EXAMPLE
-           .\ConfigureMimCMClientAndRelyingParty.ps1 -redirectUri ms-app://s-1-15-2-0123456789-0123456789-0123456789-0123456789-0123456789-0123456789-0123456789/ -serverFqdn WIN-TRUR24L4CFS.corp.cmteam.com
-        #>
+       <#
+       .SYNOPSIS
+                       Configure ADFS for CM client app and server.
+       .DESCRIPTION
+          What the Script does:
+                                       a. Registers the MIM CM client app on the ADFS server.
+                                       b. Registers the MIM CM server relying party (Tells the ADFS server that it issues tokens for the CM server).
+                       For parameter information, see 'get-help -detailed'
+       .PARAMETER redirectUri
+                       The redirectUri for CM client app. Will be added to ADFS server.
+                       It can be found as follows:
+                       1. Open the settings panel. Under settings, there is a "Redirect Uri" text box (an ADFS server address must be configured in order for the text to display).
+                       2. Open MIM CM client app. Navigate to 'C:\Users\<your_username>\AppData\Local\Packages\CmModernAppv.<version>\LocalState', and open 'Logs_Virtual Smart Card Certificate Manager_<version>'. Search for "Redirect URI".
+       .PARAMETER serverFqdn
+                       Your deployed MIM CM server’s FQDN.
+       .EXAMPLE
+          .\ConfigureMimCMClientAndRelyingParty.ps1 -redirectUri ms-app://s-1-15-2-0123456789-0123456789-0123456789-0123456789-0123456789-0123456789-0123456789/ -serverFqdn WIN-TRUR24L4CFS.corp.cmteam.com
+       #>
 
-        # Parameter declaration
-        [CmdletBinding()]
-        Param(
+       # Parameter declaration
+       [CmdletBinding()]
+       Param(
+         [Parameter(Mandatory=$True)]
+          [string]$redirectUri,
+
           [Parameter(Mandatory=$True)]
-           [string]$redirectUri,
+          [string]$serverFqdn
+       )
 
-           [Parameter(Mandatory=$True)]
-           [string]$serverFqdn
-        )
+       Write-Host "Configuring ADFS Objects for OAuth.."
 
-        Write-Host "Configuring ADFS Objects for OAuth.."
+       #Configure SSO to get persistent sign on cookie
+       Set-ADFSProperties -SsoLifetime 2880
 
-        #Configure SSO to get persistent sign on cookie
-        Set-ADFSProperties -SsoLifetime 2880
+       #Configure Authentication Policy
+       #Intranet to use Kerberos
+       #Extranet to use U/P
 
-        #Configure Authentication Policy
-        #Intranet to use Kerberos
-        #Extranet to use U/P
+       #Create Client Objects
 
-        #Create Client Objects
+       Write-Host "Creating Client Objects..."
 
-        Write-Host "Creating Client Objects..."
+       $existingClient = Get-ADFSClient -Name "MIM CM Modern App"
 
-        $existingClient = Get-ADFSClient -Name "MIM CM Modern App"
+       if ($existingClient -ne $null)
+       {
+           Write-Host "Found existing instance of the MIM CM Modern App, removing"
+           Remove-ADFSClient -TargetName "MIM CM Modern App"
+           Write-Host "Client object removed"
+       }
 
-        if ($existingClient -ne $null)
-        {
-            Write-Host "Found existing instance of the MIM CM Modern App, removing"
-            Remove-ADFSClient -TargetName "MIM CM Modern App"
-            Write-Host "Client object removed"
-        }
+       Write-Host "Adding Client Object for MIM CM Modern App client"
+       Add-ADFSClient -Name "MIM CM Modern App" -ClientId "70A8B8B1-862C-4473-80AB-4E55BAE45B4F" -RedirectUri $redirectUri
+       Write-Host "Client Object for MIM CM Modern App client Created"
 
-        Write-Host "Adding Client Object for MIM CM Modern App client"
-        Add-ADFSClient -Name "MIM CM Modern App" -ClientId "70A8B8B1-862C-4473-80AB-4E55BAE45B4F" -RedirectUri $redirectUri
-        Write-Host "Client Object for MIM CM Modern App client Created"
+       #Create Relying Parties
+       Write-Host "Creating Relying Party Objects"
 
-        #Create Relying Parties
-        Write-Host "Creating Relying Party Objects"
+       $existingRp = Get-ADFSRelyingPartyTrust -Name "MIM CM Service"
+       if ($existingRp -ne $null)
+       {
+           Write-Host "Found existing instance of the MIM CM Service RP, removing"
+           Remove-ADFSRelyingPartyTrust -TargetName "MIM CM Service"
+           Write-Host "RP object Removed"
+       }
 
-        $existingRp = Get-ADFSRelyingPartyTrust -Name "MIM CM Service"
-        if ($existingRp -ne $null)
-        {
-            Write-Host "Found existing instance of the MIM CM Service RP, removing"
-            Remove-ADFSRelyingPartyTrust -TargetName "MIM CM Service"
-            Write-Host "RP object Removed"
-        }
+       $authorizationRules =
+       "@RuleTemplate = `"AllowAllAuthzRule`"
+       => issue(Type = `"http://schemas.microsoft.com/authorization/claims/permit`", Value = `"true`");"
 
-        $authorizationRules =
-        "@RuleTemplate = `"AllowAllAuthzRule`"
-        => issue(Type = `"http://schemas.microsoft.com/authorization/claims/permit`", Value = `"true`");"
+       $issuanceRules =
+       "@RuleTemplate = `"LdapClaims`"
+       @RuleName = `"Emit UPN and common name`"
+       c:[Type == `"http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname`", Issuer == `"AD AUTHORITY`"]
+       => issue(store = `"Active Directory`", types =
+       (`"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn`",
+       `"http://schemas.xmlsoap.org/claims/CommonName`"), query =
+       `";userPrincipalName,cn;{0}`", param = c.Value);
 
-        $issuanceRules =
-        "@RuleTemplate = `"LdapClaims`"
-        @RuleName = `"Emit UPN and common name`"
-        c:[Type == `"http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname`", Issuer == `"AD AUTHORITY`"]
-        => issue(store = `"Active Directory`", types =
-        (`"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn`",
-        `"http://schemas.xmlsoap.org/claims/CommonName`"), query =
-        `";userPrincipalName,cn;{0}`", param = c.Value);
+       @RuleTemplate = `"PassThroughClaims`"
+       @RuleName = `"Pass through Windows Account Name`"
+       c:[Type ==`"http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname`"] => issue(claim = c);"
 
-        @RuleTemplate = `"PassThroughClaims`"
-        @RuleName = `"Pass through Windows Account Name`"
-        c:[Type ==`"http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname`"] => issue(claim = c);"
-
-        Write-Host "Creating RP Trust for MIM CM Service"
-        Add-ADFSRelyingPartyTrust -Name "MIM CM Service" -Identifier ("https://"+$serverFqdn+"/certificatemanagement") -IssuanceAuthorizationRules $authorizationRules -IssuanceTransformRules $issuanceRules
-        Write-Host "RP Trust for MIM CM Service has been created"
-        ```
+       Write-Host "Creating RP Trust for MIM CM Service"
+       Add-ADFSRelyingPartyTrust -Name "MIM CM Service" -Identifier ("https://"+$serverFqdn+"/certificatemanagement") -IssuanceAuthorizationRules $authorizationRules -IssuanceTransformRules $issuanceRules
+       Write-Host "RP Trust for MIM CM Service has been created"
+       ```
 
     - redirectUri 및 serverFQDN의 값을 업데이트합니다.
 
@@ -255,9 +258,9 @@ ADFS URL에 대한 속성을 지정해야 합니다. 값을 지정하지 않으�
     - serverFQDN은 MIMCM 서버의 전체 컴퓨터 이름일 뿐입니다.
 
     - **ConfigureMIimCMClientAndRelyingParty.ps1** 스크립트에 관련된 도움말은 다음을 실행하세요. </br> 
-    ```Powershell
-     get-help  -detailed ConfigureMimCMClientAndRelyingParty.ps1
-    ```
+      ```Powershell
+      get-help  -detailed ConfigureMimCMClientAndRelyingParty.ps1
+      ```
 
 ## <a name="deploy-the-app"></a>앱 배포
 

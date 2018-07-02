@@ -10,11 +10,12 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: a0e2e280c3678867efc2ae8afa46c04ed38a1e11
-ms.sourcegitcommit: 637988684768c994398b5725eb142e16e4b03bb3
+ms.openlocfilehash: a66d424e8388005855ac8e64623f5a00f89682e9
+ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34479369"
 ---
 <a name="the-microsoft-identity-manager-management-agent-for-microsoft-graph-public-preview"></a>Microsoft Graph용 Microsoft Identity Manager 관리 에이전트(공개 미리 보기)
 =======================================================================================
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/26/2018
 <a name="b2b-account-lifecycle-management"></a>B2B 계정 수명 주기 관리
 --------------------------------
 
-Microsoft Graph용 Microsoft Identity Manager 관리 에이전트(미리 보기)에 대한 미리 보기의 초기 시나리오는 외부 사용자 AD 계정 수명 주기 관리입니다. 이 시나리오에서 조직은 Azure AD 디렉터리에 게스트를 초대하고 [Azure AD 응용 프로그램](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-application-proxy-publish) 프록시 또는 기타 게이트웨이 메커니즘을 통해 온-프레미스 Windows 통합 인증 또는 Kerberos 기반 응용 프로그램에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다. Azure AD 응용 프로그램 프록시를 사용하려면 식별 및 위임용으로 각 사용자에게 고유한 AD DS 계정이 있어야 합니다.
+Microsoft Graph용 Microsoft Identity Manager 관리 에이전트(미리 보기)에 대한 미리 보기의 초기 시나리오는 외부 사용자 AD 계정 수명 주기 관리입니다. 이 시나리오에서 조직은 Azure AD 디렉터리에 게스트를 초대하고 [Azure AD 응용 프로그램](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-publish) 프록시 또는 기타 게이트웨이 메커니즘을 통해 온-프레미스 Windows 통합 인증 또는 Kerberos 기반 응용 프로그램에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다. Azure AD 응용 프로그램 프록시를 사용하려면 식별 및 위임용으로 각 사용자에게 고유한 AD DS 계정이 있어야 합니다.
 
 추가 시나리오는 나중에 추가되고 [여기에 문서화](./microsoft-identity-manager-2016-graph-b2b-scenario.md)될 수 있습니다.
 
@@ -186,7 +187,7 @@ Force change password for created user at next sign(다음 로그인 시 생성�
 
 그림 7. “액세스 토큰이 만료되었습니다.” 오류
 
-이 문제의 원인은 Azure 측의 액세스 토큰 수명에 대한 구성일 수 있습니다. 기본적으로 액세스 토큰은 1시간 후에 만료됩니다. 만료 시간을 늘리려면 [이 문서](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-configurable-token-lifetimes)를 참조하세요.
+이 문제의 원인은 Azure 측의 액세스 토큰 수명에 대한 구성일 수 있습니다. 기본적으로 액세스 토큰은 1시간 후에 만료됩니다. 만료 시간을 늘리려면 [이 문서](https://docs.microsoft.com/azure/active-directory/active-directory-configurable-token-lifetimes)를 참조하세요.
 
 [Azure AD PowerShell Module Public Preview release](https://www.powershellgallery.com/packages/AzureADPreview)(Azure AD PowerShell 모듈 공개 미리 보기 릴리스) 사용 예
 

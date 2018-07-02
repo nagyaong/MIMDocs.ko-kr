@@ -1,7 +1,7 @@
 ---
-title: "Privileged Access Management를 위한 MIM 2016 구성 | Microsoft 문서"
-description: "Privileged Access Management를 위한 MIM 설치 및 구성에 대한 로드맵입니다."
-keywords: 
+title: Privileged Access Management를 위한 MIM 2016 구성 | Microsoft 문서
+description: Privileged Access Management를 위한 MIM 설치 및 구성에 대한 로드맵입니다.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -12,11 +12,12 @@ ms.technology: active-directory-domain-services
 ms.assetid: c4ca5b58-ad0c-48af-a9eb-b71b22d0c67c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 79de8ef08b49a41638a09e829efbd8c17301004b
-ms.sourcegitcommit: 210195369d2ecd610569d57d0f519d683ea6a13b
+ms.openlocfilehash: 5180d487dcaabcf024ba76cb86c9d849bdf1adc1
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289553"
 ---
 # <a name="configure-the-mim-environment-for-privileged-access-management"></a>Privileged Access Management를 위해 MIM 환경 구성
 
@@ -38,5 +39,5 @@ ms.lasthandoff: 09/01/2017
 
 7.  보호된 리소스에 액세스할 수 있는 높은 권한 요청, 받기 및 사용하는 방법에 대해 설명합니다.
 
->[!div class="step-by-step"]
-[시작 »](step-1-prepare-corp-domain.md)
+> [!div class="step-by-step"]
+> [시작 »](step-1-prepare-corp-domain.md)

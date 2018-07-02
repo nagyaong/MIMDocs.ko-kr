@@ -12,18 +12,19 @@ ms.technology: security
 ms.assetid: 297df3b3-192e-4ed9-82ed-c95eb5297c84
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: e2006ca2a74f8c974f6019004aeaefdc73069fa6
-ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
+ms.openlocfilehash: 915bf316fad2278ca1f62a9c2efd5850039d17a4
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289383"
 ---
 # <a name="set-up-an-identity-management-server-sql-server-2016"></a>ID 관리 서버 설치: SQL Server 2016
 
->[!div class="step-by-step"]
-[« Windows Server 2016](prepare-server-ws2016.md)
-[SharePoint »](prepare-server-sharepoint.md)
-
+> [!div class="step-by-step"]
+> [« Windows Server 2016](prepare-server-ws2016.md)
+> [SharePoint »](prepare-server-sharepoint.md)
+> 
 > [!NOTE]
 > 이 연습에서는 Contoso라는 회사의 샘플 이름과 값을 사용합니다. 해당 항목을 사용자의 정보로 바꿉니다. 예를 들면 다음과 같습니다.
 > - 도메인 컨트롤러 이름 - **corpdc**
@@ -31,7 +32,7 @@ ms.lasthandoff: 04/27/2018
 > - MIM 서비스 서버 이름 - **corpservice**
 > - MIM 동기화 서버 이름 - **corpsync**
 > - SQL Server 이름 - **corpsql**
-> - 암호 - **Pass@word1**
+> - 암호 - <strong>Pass@word1</strong>
 
 ## <a name="install-sql-server-2016-standardenterprise-edition"></a>**SQL Server 2016 Standard/Enterprise Edition** 설치
 
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/27/2018
 More info SQL deployment accounts and services can be found [here](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions?view=sql-server-2017)
 > [!NOTE]
 > SSMS is no longer included in SQL 2016 downlaod details can be found [here](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017)    ```
-
->[!div class="step-by-step"]  
-[« Windows Server 2016](prepare-server-ws2016.md)
-[SharePoint »](prepare-server-sharepoint.md)
+> 
+> [!div class="step-by-step"]  
+> [« Windows Server 2016](prepare-server-ws2016.md)
+> [SharePoint »](prepare-server-sharepoint.md)

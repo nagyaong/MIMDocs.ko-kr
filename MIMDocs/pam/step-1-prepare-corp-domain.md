@@ -1,7 +1,7 @@
 ---
-title: "PAM 배포 1단계 - CORP 도메인 | Microsoft 문서"
-description: "Privileged Identity Manager에서 관리할 CORP 도메인을 기존 또는 새 ID를 사용하여 준비"
-keywords: 
+title: PAM 배포 1단계 - CORP 도메인 | Microsoft 문서
+description: Privileged Identity Manager에서 관리할 CORP 도메인을 기존 또는 새 ID를 사용하여 준비
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -12,16 +12,17 @@ ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: d14d2f40972686305abea2426e20f4c13e3e267b
-ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
+ms.openlocfilehash: f0d2ebd198ad6aee2b2b6ba07c83f5147243f598
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289604"
 ---
 # <a name="step-1---prepare-the-host-and-the-corp-domain"></a>1단계 - 호스트 및 CORP 도메인 준비
 
->[!div class="step-by-step"]
-[2단계 »](step-2-prepare-priv-domain-controller.md)
+> [!div class="step-by-step"]
+> [2단계 »](step-2-prepare-priv-domain-controller.md)
 
 이 단계에서는 배스천 환경을 호스트할 준비를 합니다. 필요한 경우, 배스천 환경에서 관리하는 ID로 새 도메인 및 포리스트(*CORP* 포리스트)에 도메인 컨트롤러 및 구성원 워크스테이션도 만듭니다. 이 CORP 포리스트는 관리될 리소스가 있는 기존 포리스트를 시뮬레이트합니다. 이 문서는 보호할 예제 리소스, 파일 공유를 포함합니다.
 
@@ -33,9 +34,9 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 ### <a name="install-windows-server"></a>Windows Server 설치
 
-가상 컴퓨터에 Windows Server 2012 R2 또는 Windows Server 2016 Technical Preview 4 이상을 설치하여 *CORPDC*라는 컴퓨터를 만듭니다.
+가상 머신에 Windows Server 2012 R2 또는 Windows Server 2016 Technical Preview 4 이상을 설치하여 *CORPDC*라는 컴퓨터를 만듭니다.
 
-1. **Windows Server 2012 R2 Standard(GUI 포함 서버) x64** 또는 **Windows Server 2016 Technical Preview(데스크톱 환경 포함 서버)**를 선택합니다.
+1. **Windows Server 2012 R2 Standard(GUI 포함 서버) x64** 또는 **Windows Server 2016 Technical Preview(데스크톱 환경 포함 서버)** 를 선택합니다.
 
 2. 사용 조건을 검토하고 이에 동의합니다.
 
@@ -56,15 +57,15 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 2. 다음 명령을 입력합니다.
 
-  ```PowoerShell
-  import-module ServerManager
+   ```PowoerShell
+   import-module ServerManager
 
-  Add-WindowsFeature AD-Domain-Services,DNS,FS-FileServer –restart –IncludeAllSubFeature -IncludeManagementTools
+   Add-WindowsFeature AD-Domain-Services,DNS,FS-FileServer –restart –IncludeAllSubFeature -IncludeManagementTools
 
-  Install-ADDSForest –DomainMode Win2008R2 –ForestMode Win2008R2 –DomainName contoso.local –DomainNetbiosName contoso –Force -NoDnsOnNetwork
-  ```
+   Install-ADDSForest –DomainMode Win2008R2 –ForestMode Win2008R2 –DomainName contoso.local –DomainNetbiosName contoso –Force -NoDnsOnNetwork
+   ```
 
-  그러면 사용할 안전 모드 관리자 암호를 입력하라는 메시지가 표시됩니다. DNS 위임 및 암호화 설정에 대한 경고 메시지가 표시되지만 이는 정상입니다.
+   그러면 사용할 안전 모드 관리자 암호를 입력하라는 메시지가 표시됩니다. DNS 위임 및 암호화 설정에 대한 경고 메시지가 표시되지만 이는 정상입니다.
 
 3. 포리스트 만들기가 완료되면 로그아웃합니다. 서버가 자동으로 다시 시작됩니다.
 
@@ -80,11 +81,11 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 2. 다음 명령을 입력하되 "CONTOSO"를 도메인의 NetBIOS 이름으로 바꿉니다.
 
-  ```PowerShell
-  import-module activedirectory
+   ```PowerShell
+   import-module activedirectory
 
-  New-ADGroup –name 'CONTOSO$$$' –GroupCategory Security –GroupScope DomainLocal –SamAccountName 'CONTOSO$$$'
-  ```
+   New-ADGroup –name 'CONTOSO$$$' –GroupCategory Security –GroupScope DomainLocal –SamAccountName 'CONTOSO$$$'
+   ```
 
 경우에 따라 이미 그룹이 있을 수 있습니다. 도메인이 AD 마이그레이션 시나리오에도 사용된 경우 이는 정상입니다.
 
@@ -101,21 +102,21 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 2. 다음 명령을 입력합니다. ‘Pass@word1’ 암호를 다른 암호 문자열로 바꿉니다.
 
-  ```PowerShell
-  import-module activedirectory
+   ```PowerShell
+   import-module activedirectory
 
-  New-ADGroup –name CorpAdmins –GroupCategory Security –GroupScope Global –SamAccountName CorpAdmins
+   New-ADGroup –name CorpAdmins –GroupCategory Security –GroupScope Global –SamAccountName CorpAdmins
 
-  New-ADUser –SamAccountName Jen –name Jen
+   New-ADUser –SamAccountName Jen –name Jen
 
-  Add-ADGroupMember –identity CorpAdmins –Members Jen
+   Add-ADGroupMember –identity CorpAdmins –Members Jen
 
-  $jp = ConvertTo-SecureString "Pass@word1" –asplaintext –force
+   $jp = ConvertTo-SecureString "Pass@word1" –asplaintext –force
 
-  Set-ADAccountPassword –identity Jen –NewPassword $jp
+   Set-ADAccountPassword –identity Jen –NewPassword $jp
 
-  Set-ADUser –identity Jen –Enabled 1 -DisplayName "Jen"
-  ```
+   Set-ADUser –identity Jen –Enabled 1 -DisplayName "Jen"
+   ```
 
 ### <a name="configure-auditing"></a>감사 구성
 
@@ -139,9 +140,9 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 8. PowerShell 창을 시작하고 다음을 입력하여 감사 설정을 적용합니다.
 
-  ```cmd
-  gpupdate /force /target:computer
-  ```
+   ```cmd
+   gpupdate /force /target:computer
+   ```
 
 잠시 후 **컴퓨터 정책 업데이트가 완료되었습니다**라는 메시지가 표시됩니다.
 
@@ -153,11 +154,11 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 2. 다음 명령을 입력하여 SAM(보안 계정 관리자) 데이터베이스에 대한 RPC(원격 프로시저 호출) 액세스를 허용하도록 원본 도메인을 구성합니다.
 
-  ```PowerShell
-  New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name TcpipClientSupport –PropertyType DWORD –Value 1
+   ```PowerShell
+   New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name TcpipClientSupport –PropertyType DWORD –Value 1
 
-  Restart-Computer
-  ```
+   Restart-Computer
+   ```
 
 CORPDC 도메인 컨트롤러가 다시 시작됩니다. 이 레지스트리 설정에 대한 자세한 내용은 [ADMTv2를 사용하여 포리스트 간 sIDHistory 마이그레이션 문제를 해결하는 방법](http://support.microsoft.com/kb/322970)을 참조하세요.
 
@@ -170,7 +171,7 @@ CORPDC 도메인 컨트롤러가 다시 시작됩니다. 이 레지스트리 설
 
 ### <a name="install-windows-81-or-windows-10-enterprise-as-a-vm"></a>VM으로 Windows 8.1 또는 Windows 10 Enterprise 설치
 
-소프트웨어가 설치되지 않은 또 하나의 새 가상 컴퓨터에 Windows 8.1 Enterprise 또는 Windows 10 Enterprise를 설치하여 *CORPWKSTN* 컴퓨터를 만듭니다.
+소프트웨어가 설치되지 않은 또 하나의 새 가상 머신에 Windows 8.1 Enterprise 또는 Windows 10 Enterprise를 설치하여 *CORPWKSTN* 컴퓨터를 만듭니다.
 
 1. 설치하는 동안 기본 설정을 사용합니다.
 
@@ -192,21 +193,21 @@ PAM을 사용하여 보안 그룹 기반 액세스 제어를 시연하려면 리
 
 4. 다음 명령을 입력합니다.
 
-  ```PowerShell
-  mkdir c:\corpfs
+   ```PowerShell
+   mkdir c:\corpfs
 
-  New-SMBShare –Name corpfs –Path c:\corpfs –ChangeAccess CorpAdmins
+   New-SMBShare –Name corpfs –Path c:\corpfs –ChangeAccess CorpAdmins
 
-  $acl = Get-Acl c:\corpfs
+   $acl = Get-Acl c:\corpfs
 
-  $car = New-Object System.Security.AccessControl.FileSystemAccessRule( "CONTOSO\CorpAdmins", "FullControl", "Allow")
+   $car = New-Object System.Security.AccessControl.FileSystemAccessRule( "CONTOSO\CorpAdmins", "FullControl", "Allow")
 
-  $acl.SetAccessRule($car)
+   $acl.SetAccessRule($car)
 
-  Set-Acl c:\corpfs $acl
-  ```
+   Set-Acl c:\corpfs $acl
+   ```
 
 다음 단계에서는 PRIV 도메인 컨트롤러를 준비합니다.
 
->[!div class="step-by-step"]
-[2단계 »](step-2-prepare-priv-domain-controller.md)
+> [!div class="step-by-step"]
+> [2단계 »](step-2-prepare-priv-domain-controller.md)

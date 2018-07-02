@@ -1,7 +1,7 @@
 ---
-title: "BHOLD SP1 설치 | Microsoft Docs"
-description: "BHOLD SP1 설치 설명서"
-keywords: 
+title: BHOLD SP1 설치 | Microsoft Docs
+description: BHOLD SP1 설치 설명서
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,12 +9,13 @@ ms.date: 09/11/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: c36a9d02e90101b98ade913224e573ed21dc3d5c
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.assetid: ''
+ms.openlocfilehash: 11cde4e3b2779f9c32d9849a47713acf5f120b3c
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289699"
 ---
 # <a name="microsoft-bhold-suite-sp1-60-installation-guide"></a>Microsoft BHOLD Suite SP1(6.0) 설치 가이드
 
@@ -29,8 +30,8 @@ Microsoft® BHOLD Suite SP1(Service Pack 1)은 응용 프로그램의 컬렉션�
 - BHOLD Attestation
 
 
->[!NOTE]
-**적용 대상**: Microsoft Identity Manager 2016 SP1
+> [!NOTE]
+> **적용 대상**: Microsoft Identity Manager 2016 SP1
 
 ## <a name="what-this-document-covers"></a>이 문서의 내용
 
@@ -70,8 +71,8 @@ BHOLD Suite SP1과 FIM 포털이 단일 서버에 함께 설치되면 BHOLD 및 
 
 ![이중 서버 아키텍처](media/bhold-installation-guide/dual.png)
 
->[!IMPORTANT]
-BHOLD FIM 통합 모듈의 보고 기능은 BHOLD 및 FIM 데이터베이스가 동일한 SQL Server 인스턴스에 설치되어 있어야 하고 BHOLD 서비스 계정에는 FIM 서비스 데이터베이스에 대한 액세스 권한이 있어야 합니다.
+> [!IMPORTANT]
+> BHOLD FIM 통합 모듈의 보고 기능은 BHOLD 및 FIM 데이터베이스가 동일한 SQL Server 인스턴스에 설치되어 있어야 하고 BHOLD 서비스 계정에는 FIM 서비스 데이터베이스에 대한 액세스 권한이 있어야 합니다.
 
 ### <a name="two-tier-architecture"></a>2계층 아키텍처
 
@@ -109,7 +110,7 @@ Windows Server 2012 또는 2016에서 BHOLD Suite SP1을 설치하는 경우 ```
 
 ## <a name="upgrading-bhold-suite"></a>BHOLD Suite 업그레이드
 
-기존 BHOLD Suite 설치를 업그레이드할 수 없습니다. 대신, BHOLD 모듈을 업데이트하기 전에 기존 BHOLD Suite 설치를 제거해야 합니다. 기존 BHOLD 역할 모델이 설치된 경우 BHOLD 데이터베이스를 업그레이드하고 업데이트된 BHOLD Core 모듈을 설치할 때 사용할 수 있습니다. 자세한 내용은 [BHOLD Suite SP1로 BHOLD Suite 바꾸기](https://technet.microsoft.com/en-us/library/jj874043(v=ws.10).aspx)를 참조하세요.
+기존 BHOLD Suite 설치를 업그레이드할 수 없습니다. 대신, BHOLD 모듈을 업데이트하기 전에 기존 BHOLD Suite 설치를 제거해야 합니다. 기존 BHOLD 역할 모델이 설치된 경우 BHOLD 데이터베이스를 업그레이드하고 업데이트된 BHOLD Core 모듈을 설치할 때 사용할 수 있습니다. 자세한 내용은 [BHOLD Suite SP1로 BHOLD Suite 바꾸기](https://technet.microsoft.com/library/jj874043(v=ws.10).aspx)를 참조하세요.
 
 
 ## <a name="next-steps"></a>다음 단계

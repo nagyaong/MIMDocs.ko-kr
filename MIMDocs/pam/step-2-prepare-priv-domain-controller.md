@@ -1,7 +1,7 @@
 ---
-title: "PAM 배포 2단계 - PRIV DC | Microsoft 문서"
-description: "Privileged Access Management가 격리되는 배스천 환경을 제공하는 PRIV 도메인 컨트롤러를 준비합니다."
-keywords: 
+title: PAM 배포 2단계 - PRIV DC | Microsoft 문서
+description: Privileged Access Management가 격리되는 배스천 환경을 제공하는 PRIV 도메인 컨트롤러를 준비합니다.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -12,27 +12,28 @@ ms.technology: active-directory-domain-services
 ms.assetid: 0e9993a0-b8ae-40e2-8228-040256adb7e2
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: de3392648f187ce6007bba332c0f191d32980c94
-ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
+ms.openlocfilehash: 960ec81d822e02a848c3ef9ac1b65f5fa0d9e61a
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289458"
 ---
 # <a name="step-2---prepare-the-first-priv-domain-controller"></a>2단계 - 첫 번째 PRIV 도메인 컨트롤러 준비
 
->[!div class="step-by-step"]
-[« 1단계](step-1-prepare-corp-domain.md)
-[3단계 »](step-3-prepare-pam-server.md)
+> [!div class="step-by-step"]
+> [« 1단계](step-1-prepare-corp-domain.md)
+> [3단계 »](step-3-prepare-pam-server.md)
 
 이 단계에서는 관리자 인증에 배스천 환경을 제공하는 새 도메인을 만듭니다.  이 포리스트에는 하나 이상의 도메인 컨트롤러와 하나 이상의 구성원 서버가 필요합니다. 구성원 서버는 다음 단계에서 구성합니다.
 
 ## <a name="create-a-new-privileged-access-management-domain-controller"></a>새 Privileged Access Management 도메인 컨트롤러 만들기
 
-이 섹션에서는 새 포리스트의 도메인 컨트롤러 역할을 수행할 가상 컴퓨터를 설정합니다.
+이 섹션에서는 새 포리스트의 도메인 컨트롤러 역할을 수행할 가상 머신을 설정합니다.
 
 ### <a name="install-windows-server-2012-r2"></a>Windows Server 2012 R2 설치
 
-소프트웨어가 설치되지 않은 또 하나의 새 가상 컴퓨터에 Windows Server 2012 R2를 설치하여 “PRIVDC” 컴퓨터를 만듭니다.
+소프트웨어가 설치되지 않은 또 하나의 새 가상 머신에 Windows Server 2012 R2를 설치하여 “PRIVDC” 컴퓨터를 만듭니다.
 
 1. Windows Server의 사용자 지정(업그레이드되지 않음) 설치를 수행하려면 선택합니다. 설치할 때 **Windows Server 2012 R2 Standard(GUI 포함 서버) x64**를 지정합니다. **데이터 센터 또는 Server Core**를 _선택하지 마세요_.
 
@@ -52,11 +53,11 @@ AD DS(Active Directory 도메인 서비스) 및 DNS 서버 역할을 추가합�
 
 2. Windows Server Active Directory 설치를 준비하려면 다음 명령을 입력합니다.
 
-  ```PowerShell
-  import-module ServerManager
+   ```PowerShell
+   import-module ServerManager
 
-  Install-WindowsFeature AD-Domain-Services,DNS –restart –IncludeAllSubFeature -IncludeManagementTools
-  ```
+   Install-WindowsFeature AD-Domain-Services,DNS –restart –IncludeAllSubFeature -IncludeManagementTools
+   ```
 
 ### <a name="configure-registry-settings-for-sid-history-migration"></a>SID 기록 마이그레이션에 대한 레지스트리 설정을 구성합니다.
 
@@ -76,10 +77,10 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 1. PowerShell 창에서 다음 명령을 입력하여 새 도메인을 만듭니다.  이렇게 하면 이전 단계에서 만든 상위 도메인(contoso.local)에서 DNS 위임도 만듭니다.  나중에 DNS를 구성하려면 `CreateDNSDelegation -DNSDelegationCredential $ca` 매개 변수를 생략합니다.
 
-  ```PowerShell
-  $ca= get-credential
-  Install-ADDSForest –DomainMode 6 –ForestMode 6 –DomainName priv.contoso.local –DomainNetbiosName priv –Force –CreateDNSDelegation –DNSDelegationCredential $ca
-  ```
+   ```PowerShell
+   $ca= get-credential
+   Install-ADDSForest –DomainMode 6 –ForestMode 6 –DomainName priv.contoso.local –DomainNetbiosName priv –Force –CreateDNSDelegation –DNSDelegationCredential $ca
+   ```
 
 2. 팝업이 표시되면 CORP 포리스트 관리자에 대한 자격 증명(예: 1단계의 사용자 이름 CONTOSO\\Administrator 및 해당 암호)을 입력합니다.
 
@@ -95,69 +96,69 @@ MIM 서비스 및 포털 설정을 위한 사용자 및 서비스 계정을 만�
 
 2. PowerShell을 시작하고 다음 명령을 입력합니다. 암호 'Pass@word1'은 예시일 뿐이며 계정에 다른 암호를 사용합니다.
 
-  ```PowerShell
-  import-module activedirectory
+   ```PowerShell
+   import-module activedirectory
 
-  $sp = ConvertTo-SecureString "Pass@word1" –asplaintext –force
+   $sp = ConvertTo-SecureString "Pass@word1" –asplaintext –force
 
-  New-ADUser –SamAccountName MIMMA –name MIMMA
+   New-ADUser –SamAccountName MIMMA –name MIMMA
 
-  Set-ADAccountPassword –identity MIMMA –NewPassword $sp
+   Set-ADAccountPassword –identity MIMMA –NewPassword $sp
 
-  Set-ADUser –identity MIMMA –Enabled 1 –PasswordNeverExpires 1
+   Set-ADUser –identity MIMMA –Enabled 1 –PasswordNeverExpires 1
 
-  New-ADUser –SamAccountName MIMMonitor –name MIMMonitor -DisplayName MIMMonitor
+   New-ADUser –SamAccountName MIMMonitor –name MIMMonitor -DisplayName MIMMonitor
 
-  Set-ADAccountPassword –identity MIMMonitor –NewPassword $sp
+   Set-ADAccountPassword –identity MIMMonitor –NewPassword $sp
 
-  Set-ADUser –identity MIMMonitor –Enabled 1 –PasswordNeverExpires 1
+   Set-ADUser –identity MIMMonitor –Enabled 1 –PasswordNeverExpires 1
 
-  New-ADUser –SamAccountName MIMComponent –name MIMComponent -DisplayName MIMComponent
+   New-ADUser –SamAccountName MIMComponent –name MIMComponent -DisplayName MIMComponent
 
-  Set-ADAccountPassword –identity MIMComponent –NewPassword $sp
+   Set-ADAccountPassword –identity MIMComponent –NewPassword $sp
 
-  Set-ADUser –identity MIMComponent –Enabled 1 –PasswordNeverExpires 1
+   Set-ADUser –identity MIMComponent –Enabled 1 –PasswordNeverExpires 1
 
-  New-ADUser –SamAccountName MIMSync –name MIMSync
+   New-ADUser –SamAccountName MIMSync –name MIMSync
 
-  Set-ADAccountPassword –identity MIMSync –NewPassword $sp
+   Set-ADAccountPassword –identity MIMSync –NewPassword $sp
 
-  Set-ADUser –identity MIMSync –Enabled 1 –PasswordNeverExpires 1
+   Set-ADUser –identity MIMSync –Enabled 1 –PasswordNeverExpires 1
 
-  New-ADUser –SamAccountName MIMService –name MIMService
+   New-ADUser –SamAccountName MIMService –name MIMService
 
-  Set-ADAccountPassword –identity MIMService –NewPassword $sp
+   Set-ADAccountPassword –identity MIMService –NewPassword $sp
 
-  Set-ADUser –identity MIMService –Enabled 1 –PasswordNeverExpires 1
+   Set-ADUser –identity MIMService –Enabled 1 –PasswordNeverExpires 1
 
-  New-ADUser –SamAccountName SharePoint –name SharePoint
+   New-ADUser –SamAccountName SharePoint –name SharePoint
 
-  Set-ADAccountPassword –identity SharePoint –NewPassword $sp
+   Set-ADAccountPassword –identity SharePoint –NewPassword $sp
 
-  Set-ADUser –identity SharePoint –Enabled 1 –PasswordNeverExpires 1
+   Set-ADUser –identity SharePoint –Enabled 1 –PasswordNeverExpires 1
 
-  New-ADUser –SamAccountName SqlServer –name SqlServer
+   New-ADUser –SamAccountName SqlServer –name SqlServer
 
-  Set-ADAccountPassword –identity SqlServer –NewPassword $sp
+   Set-ADAccountPassword –identity SqlServer –NewPassword $sp
 
-  Set-ADUser –identity SqlServer –Enabled 1 –PasswordNeverExpires 1
+   Set-ADUser –identity SqlServer –Enabled 1 –PasswordNeverExpires 1
 
-  New-ADUser –SamAccountName BackupAdmin –name BackupAdmin
+   New-ADUser –SamAccountName BackupAdmin –name BackupAdmin
 
-  Set-ADAccountPassword –identity BackupAdmin –NewPassword $sp
+   Set-ADAccountPassword –identity BackupAdmin –NewPassword $sp
 
-  Set-ADUser –identity BackupAdmin –Enabled 1 -PasswordNeverExpires 1
+   Set-ADUser –identity BackupAdmin –Enabled 1 -PasswordNeverExpires 1
 
-  New-ADUser -SamAccountName MIMAdmin -name MIMAdmin
+   New-ADUser -SamAccountName MIMAdmin -name MIMAdmin
 
-  Set-ADAccountPassword –identity MIMAdmin  -NewPassword $sp
+   Set-ADAccountPassword –identity MIMAdmin  -NewPassword $sp
 
-  Set-ADUser -identity MIMAdmin -Enabled 1 -PasswordNeverExpires 1
+   Set-ADUser -identity MIMAdmin -Enabled 1 -PasswordNeverExpires 1
 
-  Add-ADGroupMember "Domain Admins" SharePoint
+   Add-ADGroupMember "Domain Admins" SharePoint
 
-  Add-ADGroupMember "Domain Admins" MIMService
-  ```
+   Add-ADGroupMember "Domain Admins" MIMService
+   ```
 
 ### <a name="configure-auditing-and-logon-rights"></a>감사 및 로그온 권한 구성
 
@@ -201,11 +202,11 @@ PAM 구성을 포리스트에서 설정하려면 감사를 설정해야 합니�
 
 19. 관리자로 PowerShell 창을 시작하고 다음 명령을 입력하여 그룹 정책 설정에서 DC를 업데이트합니다.
 
-  ```cmd
-  gpupdate /force /target:computer
-  ```
+    ```cmd
+    gpupdate /force /target:computer
+    ```
 
-  잠시 후 "컴퓨터 정책 업데이트가 완료되었습니다."라는 메시지와 함께 완료됩니다.
+    잠시 후 "컴퓨터 정책 업데이트가 완료되었습니다."라는 메시지와 함께 완료됩니다.
 
 
 ### <a name="configure-dns-name-forwarding-on-privdc"></a>PRIVDC에서 DNS 이름 전달 구성
@@ -216,11 +217,11 @@ PRIVDC에서 PowerShell을 사용하여 PRIV 도메인이 다른 기존 포리�
 
 2. 각 기존 포리스트의 맨 위에 있는 각 도메인에 다음 명령을 입력하여 기존 DNS 도메인(예: contoso.local) 및 해당 도메인의 마스터 서버 IP 주소를 지정합니다.  
 
-  이전 단계에서 하나의 도메인 contoso.local을 만든 경우에는 CORPDC 컴퓨터의 가상 네트워크 IP 주소로 *10.1.1.31*을 지정합니다.
+   이전 단계에서 하나의 도메인 contoso.local을 만든 경우에는 CORPDC 컴퓨터의 가상 네트워크 IP 주소로 *10.1.1.31*을 지정합니다.
 
-  ```PowerShell
-  Add-DnsServerConditionalForwarderZone –name "contoso.local" –masterservers 10.1.1.31
-  ```
+   ```PowerShell
+   Add-DnsServerConditionalForwarderZone –name "contoso.local" –masterservers 10.1.1.31
+   ```
 
 > [!NOTE]
 > 다른 포리스트 또한 이 도메인 컨트롤러에 PRIV 포리스트에 대한 DNS 쿼리를 라우팅할 수 있어야 합니다.  기존 Active Directory 포리스트가 여러 개인 경우 각 해당 포리스트에 DNS 조건부 전달자도 추가해야 합니다.
@@ -229,12 +230,12 @@ PRIVDC에서 PowerShell을 사용하여 PRIV 도메인이 다른 기존 포리�
 
 1. PowerShell을 사용하여 SharePoint, PAM REST API와 MIM 서비스가 Kerberos 인증을 사용할 수 있도록 SPN을 추가합니다.
 
-  ```cmd
-  setspn -S http/pamsrv.priv.contoso.local PRIV\SharePoint
-  setspn -S http/pamsrv PRIV\SharePoint
-  setspn -S FIMService/pamsrv.priv.contoso.local PRIV\MIMService
-  setspn -S FIMService/pamsrv PRIV\MIMService
-  ```
+   ```cmd
+   setspn -S http/pamsrv.priv.contoso.local PRIV\SharePoint
+   setspn -S http/pamsrv PRIV\SharePoint
+   setspn -S FIMService/pamsrv.priv.contoso.local PRIV\MIMService
+   setspn -S FIMService/pamsrv PRIV\MIMService
+   ```
 
 > [!NOTE]
 > 이 문서의 다음 단계에는 MIM 2016 서버 구성 요소를 단일 컴퓨터에 설치하는 방법을 설명합니다. 고가용성을 위해 다른 서버를 추가하려는 경우 [FIM 2010: Kerberos 인증 설정](http://social.technet.microsoft.com/wiki/contents/articles/3385.fim-2010-kerberos-authentication-setup.aspx)에 설명된 대로 추가 Kerberos 구성이 필요합니다.
@@ -254,13 +255,13 @@ PRIVDC에서 도메인 관리자로 다음 단계를 수행합니다.
 8. 사용자, 컴퓨터 또는 그룹 선택 창에서 *MIMAdmin*을 입력하고 **이름 확인**을 클릭합니다. 이름에 밑줄이 표시되면 **확인**을 클릭하고 **다음**을 클릭합니다.
 9. **사용자 지정 작업**을 선택하고 **일반 사용 권한**을 사용하여 **이 폴더**에 적용합니다.
 10. 사용 권한 목록에서 다음을 선택합니다.
-  - **읽기**
-  - **쓰기**
-  - **모든 자식 개체 만들기**
-  - **모든 자식 개체 삭제**
-  - **모든 속성 읽기**
-  - **모든 속성 쓰기**
-  - **SID 기록 마이그레이션** **다음**, **마침**을 차례로 클릭합니다.
+    - **읽기**
+    - **쓰기**
+    - **모든 자식 개체 만들기**
+    - **모든 자식 개체 삭제**
+    - **모든 속성 읽기**
+    - **모든 속성 쓰기**
+    - **SID 기록 마이그레이션** **다음**, **마침**을 차례로 클릭합니다.
 
 11. 다시 도메인 **priv.contoso.local**을 마우스 오른쪽 단추로 클릭하고 **위임 컨트롤**을 선택합니다.  
 12. 선택한 사용자 및 그룹 탭에서 **추가**를 클릭합니다.  
@@ -271,9 +272,9 @@ PRIVDC에서 도메인 관리자로 다음 단계를 수행합니다.
 
 17. 명령 프롬프트를 엽니다.  
 18. PRIV 도메인의 AdminSDHolder 개체에 대한 액세스 제어 목록을 검토합니다. 예를 들어 도메인이 "priv.contoso.local"이면 다음 명령을 입력합니다.
-  ```cmd
-  dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local"
-  ```
+    ```cmd
+    dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local"
+    ```
 19. MIM 서비스 및 MIM 구성 요소 서비스가 이 ACL에서 보호하는 그룹의 구성원 자격을 업데이트할 수 있도록 필요에 따라 액세스 제어 목록을 업데이트합니다.  다음 명령을 입력합니다.
 
 ```cmd
@@ -289,7 +290,7 @@ PRIV 리소스(예: MIM)의 유지 관리를 수행하기 위한 PRIV 도메인�
 
 ### <a name="install-windows-81-or-windows-10-enterprise"></a>Windows 8.1 또는 Windows 10 Enterprise 설치
 
-소프트웨어가 설치되지 않은 또 하나의 새 가상 컴퓨터에 Windows 8.1 Enterprise 또는 Windows 10 Enterprise를 설치하여 *“PRIVWKSTN”* 컴퓨터를 만듭니다.
+소프트웨어가 설치되지 않은 또 하나의 새 가상 머신에 Windows 8.1 Enterprise 또는 Windows 10 Enterprise를 설치하여 *“PRIVWKSTN”* 컴퓨터를 만듭니다.
 
 1. 설치하는 동안 기본 설정을 사용합니다.
 
@@ -299,10 +300,10 @@ PRIV 리소스(예: MIM)의 유지 관리를 수행하기 위한 PRIV 도메인�
 
 4. 제어판에서 PRIVWKSTN 컴퓨터를 priv.contoso.local 도메인에 도메인 가입합니다. 그러려면 PRIV 도메인 관리자 자격 증명을 제공해야 합니다. 이 작업이 완료되면 PRIVWKSTN 컴퓨터를 다시 시작합니다.
 
-자세한 내용은 [권한 있는 액세스 워크스테이션 보안](https://technet.microsoft.com/en-us/library/mt634654.aspx)을 참조하세요.
+자세한 내용은 [권한 있는 액세스 워크스테이션 보안](https://technet.microsoft.com/library/mt634654.aspx)을 참조하세요.
 
 다음 단계에서는 PAM 서버를 준비합니다.
 
->[!div class="step-by-step"]
-[« 1단계](step-1-prepare-corp-domain.md)
-[3단계 »](step-3-prepare-pam-server.md)
+> [!div class="step-by-step"]
+> [« 1단계](step-1-prepare-corp-domain.md)
+> [3단계 »](step-3-prepare-pam-server.md)

@@ -12,23 +12,24 @@ ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: fcc137527d8326c82bf3b201039926699bd4e342
-ms.sourcegitcommit: a98a4c1aee12016d480c400f4ff2c6aadb6518ee
+ms.openlocfilehash: 562ca6a977509cad7c3423ef42d4b6f6705494d3
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289519"
 ---
 # <a name="install-mim-2016-mim-service-and-portal"></a>MIM 2016 설치: MIM 서비스 및 포털
 
->[!div class="step-by-step"]
-[« MIM 동기화 서비스](install-mim-sync.md)
-[데이터베이스를 동기화 »](install-mim-sync-ad-service.md)
-
+> [!div class="step-by-step"]
+> [« MIM 동기화 서비스](install-mim-sync.md)
+> [데이터베이스를 동기화 »](install-mim-sync-ad-service.md)
+> 
 > [!NOTE]
 > 이 연습에서는 Contoso라는 회사의 샘플 이름과 값을 사용합니다. 해당 항목을 사용자의 정보로 바꿉니다. 예를 들면 다음과 같습니다.
 > - 도메인 컨트롤러 이름 - **mimservername**
 > - 도메인 이름 - **contoso**
-> - 암호 - **Pass@word1**
+> - 암호 - <strong>Pass@word1</strong>
 > - 서비스 계정 이름 - **MIMService**
 
 마지막 단계에서 MIM 설치 패키지를 설정하지 않은 경우 다시 돌아가서 Microsoft Identity Manager 2016 구성 요소를 설치한 후 계속합니다.
@@ -56,7 +57,7 @@ ms.lasthandoff: 05/03/2018
 
 8. 새 자체 서명된 인증서를 생성하도록 지정하거나 관련 인증서를 선택합니다.
 
-9. 사용할 서비스 계정 이름(예: *MIMService*), 서비스 계정 암호(예: *Pass@word1*), 서비스 계정 도메인(예: *contoso*), 서비스 메일 계정(예: *contoso*)을 지정합니다.
+9. 사용할 서비스 계정 이름(예: *MIMService*), 서비스 계정 암호(예: <em>Pass@word1</em>), 서비스 계정 도메인(예: *contoso*), 서비스 메일 계정(예: *contoso*)을 지정합니다.
 
     ![서비스 계정 구성 이미지](media/install-mim-service-portal/MIM_Install12.png)
 
@@ -78,25 +79,25 @@ ms.lasthandoff: 05/03/2018
 
 ## <a name="configure-mim-password-registration-portal"></a>MIM 암호 등록 포털 구성
 
-1.  SSPR 등록을 위한 서비스 계정 이름을 *contoso\MIMSSPR*로 설정하고 암호를 *Pass@word1*로 설정합니다.
+1. SSPR 등록을 위한 서비스 계정 이름을 *contoso\MIMSSPR*로 설정하고 암호를 <em>Pass@word1</em>로 설정합니다.
 
-2.  MIM 암호 등록의 호스트 이름으로 *passwordregistration.contoso.com*을 지정하고 포트를 **80**으로 설정합니다. **방화벽에서 포트 열기** 옵션을 선택합니다.
+2. MIM 암호 등록의 호스트 이름으로 *passwordregistration.contoso.com*을 지정하고 포트를 **80**으로 설정합니다. **방화벽에서 포트 열기** 옵션을 선택합니다.
 
-    ![IIS에서 사용하는 구성 정보 입력 이미지](media/install-mim-service-portal/MIM_Install14.png)
+   ![IIS에서 사용하는 구성 정보 입력 이미지](media/install-mim-service-portal/MIM_Install14.png)
 
-3.  경고가 표시되면 읽고 **다음**을 클릭합니다.
+3. 경고가 표시되면 읽고 **다음**을 클릭합니다.
 
 4. 다음 MIM 암호 등록 포털 구성 화면에서 암호 등록 포털에 대한 MIM 서비스 서버 주소로 *mim.contoso.com*을 지정합니다.
 
 ## <a name="configure-mim-password-reset-portal"></a>FIM 암호 재설정 포털 구성
 
-1.  SSPR 등록을 위한 서비스 계정 이름을 *Contoso\MIMSSPR*로 설정하고 암호를 *Pass@word1*로 설정합니다.
+1. SSPR 등록을 위한 서비스 계정 이름을 *Contoso\MIMSSPR*로 설정하고 암호를 <em>Pass@word1</em>로 설정합니다.
 
-2.  MIM 암호 재설정 포털의 호스트 이름으로 *passwordreset.contoso.com*을 지정하고 포트를 **80**으로 설정합니다. **방화벽에서 포트 열기** 옵션을 선택합니다.
+2. MIM 암호 재설정 포털의 호스트 이름으로 *passwordreset.contoso.com*을 지정하고 포트를 **80**으로 설정합니다. **방화벽에서 포트 열기** 옵션을 선택합니다.
 
-    ![IIS에서 사용하는 구성 정보 입력 이미지](media/install-mim-service-portal/MIM_Install15.png)
+   ![IIS에서 사용하는 구성 정보 입력 이미지](media/install-mim-service-portal/MIM_Install15.png)
 
-3.  경고가 표시되면 읽고 **다음**을 클릭합니다.
+3. 경고가 표시되면 읽고 **다음**을 클릭합니다.
 
 4. 다음 MIM 암호 등록 포털 구성 화면에서 암호 재설정 포털에 대한 MIM 서비스 서버 주소로 *mim.contoso.com*을 지정합니다.
 
@@ -144,7 +145,7 @@ ms.lasthandoff: 05/03/2018
 
 > [!NOTE]
 > 선택 사항: 이제 MIM 추가 기능 및 확장을 설치할 수 있습니다.
-
->[!div class="step-by-step"]  
-[« MIM 동기화 서비스](install-mim-sync.md)
-[데이터베이스를 동기화 »](install-mim-sync-ad-service.md)
+> 
+> [!div class="step-by-step"]  
+> [« MIM 동기화 서비스](install-mim-sync.md)
+> [데이터베이스를 동기화 »](install-mim-sync-ad-service.md)

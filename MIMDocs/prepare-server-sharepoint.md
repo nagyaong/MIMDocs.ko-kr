@@ -12,18 +12,19 @@ ms.technology: security
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 6922c3c2f66b6dbb0b0751420be9dd778206a3cf
-ms.sourcegitcommit: 8316fa41f06f137dba0739a8700910116b5575d8
+ms.openlocfilehash: f69648e7e4229ca7c8de895cdf10ccb2c5f368e2
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289536"
 ---
 # <a name="set-up-an-identity-management-server-sharepoint"></a>ID 관리 서버 설치: SharePoint
 
->[!div class="step-by-step"]
-[« SQL Server 2016](prepare-server-sql2016.md)
-[Exchange Server »](prepare-server-exchange.md)
-
+> [!div class="step-by-step"]
+> [« SQL Server 2016](prepare-server-sql2016.md)
+> [Exchange Server »](prepare-server-exchange.md)
+> 
 > [!NOTE]
 > 이 연습에서는 Contoso라는 회사의 샘플 이름과 값을 사용합니다. 해당 항목을 사용자의 정보로 바꿉니다. 예를 들면 다음과 같습니다.
 > - 도메인 컨트롤러 이름 - **corpdc**
@@ -31,7 +32,7 @@ ms.lasthandoff: 05/04/2018
 > - MIM 서비스 서버 이름 - **corpservice**
 > - MIM 동기화 서버 이름 - **corpsync**
 > - SQL Server 이름 - **corpsql**
-> - 암호 - **Pass@word1**
+> - 암호 - <strong>Pass@word1</strong>
 
 
 ## <a name="install-sharepoint-2016"></a>**SharePoint 2016** 설치
@@ -97,25 +98,25 @@ SharePoint 2016을 설치하려면 다음 단계를 따르세요. 설치가 완�
 
 2. SharePoint 2016 관리 셸을 시작한 후 다음 PowerShell 스크립트를 실행하여 해당 웹 응용 프로그램과 연결된 **SharePoint 사이트 모음**을 만듭니다.
 
-  ```
+   ```
     $t = Get-SPWebTemplate -compatibilityLevel 15 -Identity "STS#1"
     $w = Get-SPWebApplication http://mim.contoso.com/
     New-SPSite -Url $w.Url -Template $t -OwnerAlias contoso\miminstall -CompatibilityLevel 15 -Name "MIM Portal"
     $s = SpSite($w.Url)
     $s.CompatibilityLevel
-  ```
+   ```
 
-  > [!NOTE]
-  > *CompatibilityLevel* 변수의 결과가 “15”인지 확인합니다. 결과가 “15”가 아닌 경우 올바른 환경 버전에 대해 생성된 사이트 컬렉션이 아니므로 사이트 컬렉션을 삭제하고 다시 만듭니다.
+   > [!NOTE]
+   > *CompatibilityLevel* 변수의 결과가 “15”인지 확인합니다. 결과가 “15”가 아닌 경우 올바른 환경 버전에 대해 생성된 사이트 컬렉션이 아니므로 사이트 컬렉션을 삭제하고 다시 만듭니다.
 
 3. **SharePoint 2016 관리 셸**에서 다음 PowerShell 명령을 실행하여 **SharePoint 서버 쪽 Viewstate** 및 SharePoint 작업 “상태 분석 작업(시간별, Microsoft SharePoint Foundation 타이머, 모든 서버)”을 사용하지 않도록 설정합니다.
 
-  ```
-  $contentService = [Microsoft.SharePoint.Administration.SPWebService]::ContentService;
-  $contentService.ViewStateOnServer = $false;
-  $contentService.Update();
-  Get-SPTimerJob hourly-all-sptimerservice-health-analysis-job | disable-SPTimerJob
-  ```
+   ```
+   $contentService = [Microsoft.SharePoint.Administration.SPWebService]::ContentService;
+   $contentService.ViewStateOnServer = $false;
+   $contentService.Update();
+   Get-SPTimerJob hourly-all-sptimerservice-health-analysis-job | disable-SPTimerJob
+   ```
 
 4. ID 관리 서버에서 새 웹 브라우저 탭을 열고 http://mim.contoso.com/으로 이동하여 *contoso\miminstall*로 로그인합니다.  *MIM 포털* 이라는 빈 SharePoint 사이트가 나타납니다.
 
@@ -129,6 +130,6 @@ SharePoint 2016을 설치하려면 다음 단계를 따르세요. 설치가 완�
 
 7. 아직 실행 중이 아닌 경우 **관리 도구** 프로그램을 열고 **서비스**로 이동하여 SharePoint 관리 서비스를 찾아서 시작합니다.
 
->[!div class="step-by-step"]  
-[« SQL Server 2016](prepare-server-sql2016.md)
-[Exchange Server »](prepare-server-exchange.md)
+> [!div class="step-by-step"]  
+> [« SQL Server 2016](prepare-server-sql2016.md)
+> [Exchange Server »](prepare-server-exchange.md)

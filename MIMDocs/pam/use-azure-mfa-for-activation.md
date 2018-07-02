@@ -1,7 +1,7 @@
 ---
-title: "Azure MFA를 사용하여 PAM 활성화 | Microsoft 문서"
-description: "사용자가 Privileged Access Management에서 역할을 활성화할 때 Azure MFA를 제2의 보안 계층으로 설정합니다."
-keywords: 
+title: Azure MFA를 사용하여 PAM 활성화 | Microsoft 문서
+description: 사용자가 Privileged Access Management에서 역할을 활성화할 때 Azure MFA를 제2의 보안 계층으로 설정합니다.
+keywords: ''
 author: barclayn
 ms.author: fimguy
 manager: mbaldwin
@@ -12,15 +12,16 @@ ms.technology: active-directory-domain-services
 ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 1fb012034685257d35ba4f8a79468145187ae5b6
-ms.sourcegitcommit: 27a23142393bbb0f66a3d533d89a5a8366a29e41
+ms.openlocfilehash: 30e683a0bd13d911f73eca19c847a2c9cd10f36d
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289832"
 ---
 # <a name="using-azure-mfa-for-activation"></a>활성화에 Azure MFA 사용
->[!IMPORTANT]
-Azure Multi-Factor Authentication 소프트웨어 개발 키트의 사용 중단 알림 때문입니다. Azure MFA SDK는 기존 고객을 위해 사용 중지 날짜인 2018년 11월 14일까지 지원됩니다. 새 고객과 현재 고객은 더 이상 Azure 클래식 포털을 통해 SDK를 다운로드할 수 없게 됩니다. 다운로드하려면 Azure 고객 지원에 문의하여 생성된 MFA 서비스 자격 증명 패키지를 받아야 합니다. <br> Microsoft 개발 팀은 MFA 서버 SDK와 통합하여 MFA에 적용할 변경 사항을 계획하고 있습니다. 이는 2018년 초에 나올 핫픽스에 포함될 예정입니다.
+> [!IMPORTANT]
+> Azure Multi-Factor Authentication 소프트웨어 개발 키트의 사용 중단 알림 때문입니다. Azure MFA SDK는 기존 고객을 위해 사용 중지 날짜인 2018년 11월 14일까지 지원됩니다. 새 고객과 현재 고객은 더 이상 Azure 클래식 포털을 통해 SDK를 다운로드할 수 없게 됩니다. 다운로드하려면 Azure 고객 지원에 문의하여 생성된 MFA 서비스 자격 증명 패키지를 받아야 합니다. <br> Microsoft 개발 팀은 MFA 서버 SDK와 통합하여 MFA에 적용할 변경 사항을 계획하고 있습니다. 이는 2018년 초에 나올 핫픽스에 포함될 예정입니다.
 
 
 
@@ -68,7 +69,7 @@ Azure MFA를 MIM과 함께 사용하려면 다음이 필요합니다.
 
 5.  **Azure Multi-Factor Authentication** 창에서 **다운로드** 아래에 있는 **SDK**를 클릭합니다.
 
-6.  언어가 **SDK for ASP.net 2.0 C\#**인 파일의 경우 ZIP 열에서 **다운로드** 링크를 클릭합니다.
+6.  언어가 **SDK for ASP.net 2.0 C\#** 인 파일의 경우 ZIP 열에서 **다운로드** 링크를 클릭합니다.
 
 ![Multi-Factor Authentication SDK 다운로드 - 스크린샷](media/PAM-Azure-MFA-Activation-Image-1.png)
 

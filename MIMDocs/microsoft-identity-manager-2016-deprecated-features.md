@@ -11,19 +11,20 @@ ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: 50f7b135ce0d5a46ea08068a7658b229759d2b50
-ms.sourcegitcommit: 24bb3e82f55971696bdefa6c240f1a27f856e110
+ms.openlocfilehash: a4239f1d69d8a43d70dd38af16e9ef8be62bd33c
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36288914"
 ---
 # <a name="deprecated-features"></a>더 이상 사용되지 않는 기능
 
 이 문서에서는 더 이상 사용되지 않는 Microsoft Identity Manager 2016 SP1의 기능에 대해 설명합니다. 이러한 기능은 Microsoft Identity Manager에 여전히 있는 경우에도 계속 지원됩니다. 그러나 기능 릴리스에서 제거될 수 있으므로 새 배포에는 권장되지 않습니다.  개발자는 새 응용 프로그램이나 솔루션에서 더 이상 사용되지 않는 기능을 활용하지 않는 것이 좋습니다.
 
->[!NOTE]
-Microsoft Identity Manager SP1에서 제거될 기능은 **로 식별됩니다. <br>
-지원에 대한 자세한 내용은 [Microsoft Identity Manager 수명 주기](https://support.microsoft.com/en-us/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010)를 참조하세요.
+> [!NOTE]
+> Microsoft Identity Manager SP1에서 제거될 기능은 **로 식별됩니다. <br>
+> 지원에 대한 자세한 내용은 [Microsoft Identity Manager 수명 주기](https://support.microsoft.com/en-us/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010)를 참조하세요.
 
 
 ## <a name="bhold"></a>BHOLD 
@@ -31,6 +32,7 @@ Microsoft Identity Manager SP1에서 제거될 기능은 **로 식별됩니다. 
 고객은 Microsoft BHOLD Suite 구성 요소의 새 배포를 시작하지 않는 것이 좋습니다. 기존의 BHOLD 배포는 계속 지원됩니다. Azure AD는 이제 BHOLD 증명 캠페인 기능 중 일부를 대체하는 [액세스 검토](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)를 제공합니다.
 
 ## <a name="certificate-management"></a>인증서 관리 
+
 | **범주**                | **더 이상 사용되지 않는 기능**              | **대체 및 설명**           |
 |-----------------------------|-------------------------------------|----------------------------------------------|
 | 관리 에이전트 | **FIM 인증서 관리 | FIM 인증서 관리 에이전트는 MIM 2016에서 제거되었습니다.                                                             |
@@ -53,8 +55,8 @@ Microsoft Identity Manager SP1에서 제거될 기능은 **로 식별됩니다. 
 | 관리 에이전트           | 파티션 표시 이름 구성    | 이 기능은 대체되지 않습니다. 이 옵션은 WMI 인터페이스에서 파티션에 대한 대체 이름을 제공하는 데만 사용되었습니다.                                                                                                                                                                       |
 | 실행 프로필                | 결합된 프로필                   | 결합된 프로필 델타 가져오기/동기화, 전체 가져오기/델타 동기화 및 전체 가져오기/동기화가 제거됩니다. 대신 두 단계로 구성된 실행 프로필을 사용해야 합니다. 
 
->[!NOTE]
-많은 수의 기존 단로기로 인해 성능상의 영향을 받는 환경에서만 결합된 실행 프로필을 유지해야 합니다.
+> [!NOTE]
+> 많은 수의 기존 단로기로 인해 성능상의 영향을 받는 환경에서만 결합된 실행 프로필을 유지해야 합니다.
 
 
 | **범주**                | **더 이상 사용되지 않는 기능**              | **대체 및 설명**           |

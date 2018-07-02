@@ -1,7 +1,7 @@
 ---
-title: "템플릿을 사용하여 인증서 관리자에서 인증서 요청 | Microsoft 문서"
-description: "인증서 관리자를 사용하여 프로필 템플릿으로 소프트웨어 인증서를 만들고 갱신하는 방법을 알아봅니다."
-keywords: 
+title: 템플릿을 사용하여 인증서 관리자에서 인증서 요청 | Microsoft 문서
+description: 인증서 관리자를 사용하여 프로필 템플릿으로 소프트웨어 인증서를 만들고 갱신하는 방법을 알아봅니다.
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
@@ -13,10 +13,11 @@ ms.assetid: fed5ada9-d80f-4825-aad7-4172ac5d71d3
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: aebf5af709f4f775ce13be49d8f9075a94e864a2
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290325"
 ---
 # <a name="create-software-certificates-with-certificate-manager"></a>인증서 관리자를 사용하여 소프트웨어 인증서 만들기
 소프트웨어 인증서를 등록하고 갱신하는 데 관리자 권한 및 가상 스마트 카드가 필요하지 않습니다. 어느 시점에 인증서 작업을 허용하라는 메시지가 표시되고 이는 정상입니다.
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/12/2017
 
     7.  **파일**을 선택한 다음 **스냅인 추가/제거**를 클릭하여 MMC 콘솔에서 인증 기관 스냅인을 추가합니다. 어떤 컴퓨터를 관리할지 묻는 메시지가 표시되면 **로컬 컴퓨터**를 선택합니다.
 
-    8.  MMC의 왼쪽 창에서 **인증 기관(로컬)**을 확장한 다음 인증 기관 목록 내의 해당 CA를 확장합니다.
+    8.  MMC의 왼쪽 창에서 **인증 기관(로컬)** 을 확장한 다음 인증 기관 목록 내의 해당 CA를 확장합니다.
 
     9. **인증서 템플릿**을 마우스 오른쪽 단추로 클릭하고 **새로 만들기**를 클릭한 다음 발급할 **인증서 템플릿**을 클릭합니다.
 

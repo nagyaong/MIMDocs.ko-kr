@@ -1,7 +1,7 @@
 ---
-title: "관리자 권한 없이 Microsoft Identity Manager 셀프 서비스 스마트 카드 갱신 | Microsoft 문서"
-description: "관리자가 사용자의 컴퓨터에 액세스하지 않고도 사용자가 인증서 관리자를 사용할 수 있도록 사용자의 스마트 카드를 등록하는 방법을 알아봅니다."
-keywords: 
+title: 관리자 권한 없이 Microsoft Identity Manager 셀프 서비스 스마트 카드 갱신 | Microsoft 문서
+description: 관리자가 사용자의 컴퓨터에 액세스하지 않고도 사용자가 인증서 관리자를 사용할 수 있도록 사용자의 스마트 카드를 등록하는 방법을 알아봅니다.
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
@@ -13,10 +13,11 @@ ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 39becb555d2efe17e60789453dbaf448c90a8b60
-ms.sourcegitcommit: 362475d4018e74e5a17ba574ccaec47a2caebaff
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289165"
 ---
 # <a name="enroll-smart-cards-for-non-administrators"></a>관리자가 아닌 사용자의 스마트 카드 등록
 사용자가 사용하는 컴퓨터의 로컬 관리자가 아니면 기본적으로 해당 컴퓨터에 스마트 카드를 등록할 수 없습니다. 다음 절차를 사용하여 이 제한을 해결할 수 있습니다.

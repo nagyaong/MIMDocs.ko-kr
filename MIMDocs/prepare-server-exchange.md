@@ -1,7 +1,7 @@
 ---
-title: "MIM에 대해 Exchange를 구성하여 메일 전송 및 사서함 만들기 | Microsoft 문서"
-description: "선택적 단계로, MIM 2016에서 메일을 보내고 사서함을 만들 수 있도록 하려면 Exchange Server를 배포합니다."
-keywords: 
+title: MIM에 대해 Exchange를 구성하여 메일 전송 및 사서함 만들기 | Microsoft 문서
+description: 선택적 단계로, MIM 2016에서 메일을 보내고 사서함을 만들 수 있도록 하려면 Exchange Server를 배포합니다.
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
@@ -12,17 +12,18 @@ ms.technology: security
 ms.assetid: 34a8c16e-3bed-4e16-939b-b9fe17dd834b
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: cdb425938f7458f74cf06b76d33f557d6a38beeb
-ms.sourcegitcommit: 362475d4018e74e5a17ba574ccaec47a2caebaff
+ms.openlocfilehash: c5fb54c870d750cdf675dd91c1b27dc9bed7d963
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289077"
 ---
 # <a name="set-up-an-identity-management-server-exchange"></a>ID 관리 서버 설치: Exchange
 
->[!div class="step-by-step"]
-[« SharePoint](prepare-server-sharepoint.md)
-[MIM 동기화 서비스 업그레이드 »](install-mim-sync.md)
+> [!div class="step-by-step"]
+> [« SharePoint](prepare-server-sharepoint.md)
+> [MIM 동기화 서비스 업그레이드 »](install-mim-sync.md)
 
 ## <a name="deploy-microsoft-exchange-server"></a>Microsoft Exchange Server 배포
 MIM에서 메일 또는 프로비전 사서함을 보내고 받도록 구성하려는 경우 환경에 Exchange가 있어야 합니다. 아직 Exchange를 배포하지 않은 경우 평가용으로 평가판 버전을 설치할 수 있습니다.
@@ -37,6 +38,6 @@ MIM에서 메일 또는 프로비전 사서함을 보내고 받도록 구성하�
 
 3. [MS Exchange Server 2013 180일 평가판 버전](http://www.microsoft.com/evalcenter/evaluate-exchange-server-2013)다운로드 및 설치
 
->[!div class="step-by-step"]  
-[« SharePoint](prepare-server-sharepoint.md)
-[MIM 동기화 서비스 업그레이드 »](install-mim-sync.md)
+> [!div class="step-by-step"]  
+> [« SharePoint](prepare-server-sharepoint.md)
+> [MIM 동기화 서비스 업그레이드 »](install-mim-sync.md)
