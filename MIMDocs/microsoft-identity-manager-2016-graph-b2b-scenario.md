@@ -10,20 +10,21 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: 77d322f447546897ad18f0981e5faad12efafef1
-ms.sourcegitcommit: 637988684768c994398b5725eb142e16e4b03bb3
+ms.openlocfilehash: ac11a4dfb23944d50dbbcf0b0d70c915f186c159
+ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34479165"
 ---
 <a name="azure-ad-business-to-business-b2b-collaboration-with-microsoft-identity-managermim-2016-sp1-with-azure-application-proxy-public-preview"></a>Azure 응용 프로그램 프록시(공개 미리 보기)를 사용하여 MIM(Microsoft Identity Manager) 2016 SP1과 Azure AD B2B(기업 간) 공동 작업
 ============================================================================================================================
 
-미리 보기의 초기 시나리오는 외부 사용자 AD 계정 수명 주기 관리입니다.   이 시나리오에서 조직은 Azure AD 디렉터리에 게스트를 초대하고 [Azure AD 응용 프로그램](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-application-proxy-publish) 프록시 또는 기타 게이트웨이 메커니즘을 통해 온-프레미스 Windows 통합 인증 또는 Kerberos 기반 응용 프로그램에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다. Azure AD 응용 프로그램 프록시를 사용하려면 식별 및 위임용으로 각 사용자에게 고유한 AD DS 계정이 있어야 합니다.
+미리 보기의 초기 시나리오는 외부 사용자 AD 계정 수명 주기 관리입니다.   이 시나리오에서 조직은 Azure AD 디렉터리에 게스트를 초대하고 [Azure AD 응용 프로그램](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-publish) 프록시 또는 기타 게이트웨이 메커니즘을 통해 온-프레미스 Windows 통합 인증 또는 Kerberos 기반 응용 프로그램에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다. Azure AD 응용 프로그램 프록시를 사용하려면 식별 및 위임용으로 각 사용자에게 고유한 AD DS 계정이 있어야 합니다.
 
 ## <a name="scenario-specific-supported-guidance"></a>시나리오별 지원 가이드
 
-이 시나리오에서 조직은 Azure AD 디렉터리에 게스트를 초대하고, 온-프레미스 Windows에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다. [Azure AD 응용 프로그램](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-application-proxy-publish) 프록시 또는 기타 게이트웨이 메커니즘을 통해 온-프레미스 Windows 통합 인증 또는 Kerberos 기반 응용 프로그램에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다. Azure AD 응용 프로그램 프록시를 사용하려면 식별 및 위임용으로 각 사용자에게 고유한 AD DS 계정이 있어야 합니다.
+이 시나리오에서 조직은 Azure AD 디렉터리에 게스트를 초대하고, 온-프레미스 Windows에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다. [Azure AD 응용 프로그램](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-publish) 프록시 또는 기타 게이트웨이 메커니즘을 통해 온-프레미스 Windows 통합 인증 또는 Kerberos 기반 응용 프로그램에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다. Azure AD 응용 프로그램 프록시를 사용하려면 식별 및 위임용으로 각 사용자에게 고유한 AD DS 계정이 있어야 합니다.
 
 MIM 및 Azure 응용 프로그램 프록시를 사용한 B2B 구성에서의 몇 가지 가정
 
@@ -33,14 +34,14 @@ MIM 및 Azure 응용 프로그램 프록시를 사용한 B2B 구성에서의 몇
 
     -   [Azure AD Connect](http://robsgroupsblog.com/blog/how-to-write-back-an-office-group-in-azure-active-directory-to-a-mail-enabled-security-group-in-an-on-premises-active-directory)를 사용하여 응용 프로그램 액세스를 제어하는 Office 그룹
 
--   응용 프로그램 프록시 커넥터 및 커넥터 그룹을 이미 설정했습니다. 그렇지 않은 경우 [여기](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-application-proxy-enable#install-and-register-a-connector)를 방문하여 설치하고 구성할 수 있습니다.
+-   응용 프로그램 프록시 커넥터 및 커넥터 그룹을 이미 설정했습니다. 그렇지 않은 경우 [여기](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-enable#install-and-register-a-connector)를 방문하여 설치하고 구성할 수 있습니다.
 
 -   Azure AD 앱 프록시를 통해 Windows 통합 인증 또는 개별 AD 계정을 사용하는 응용 프로그램을 하나 이상 게시했습니다.
 
--   Azure AD <https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-self-service-portal>에서 만든 하나 이상의 게스트를 초대하거나 초대했습니다.
+-   Azure AD <https://docs.microsoft.com/azure/active-directory/active-directory-b2b-self-service-portal>에서 만든 하나 이상의 게스트를 초대하거나 초대했습니다.
 
 -   Microsoft Identity Manager가 설치되어 있으며 서비스 및 포털과 Active Directory 관리 에이전트의 기본 구성이 완료되었습니다.
-    <https://docs.microsoft.com/en-us/microsoft-identity-manager/microsoft-identity-manager-deploy>
+    <https://docs.microsoft.com/microsoft-identity-manager/microsoft-identity-manager-deploy>
 
 ## <a name="b2b-end-to-end-deployment"></a>B2B 종단 간 배포
 
@@ -188,7 +189,7 @@ Contoso Pharmaceuticals는 R&D 부서의 일부로 Trey Research Inc.를 운영�
 
 다음 단계에서는 FIM 서비스 관리 에이전트 및 Active Directory Domain Services 관리 에이전트의 최소 구성을 수행합니다.
 
-구성에 대한 자세한 내용은 How Do I Provision Users to AD DS(AD DS로 사용자를 프로비전하는 방법)(<https://technet.microsoft.com/en-us/library/ff686263(v=ws.10).aspx>)에서 확인할 수 있습니다.
+구성에 대한 자세한 내용은 How Do I Provision Users to AD DS(AD DS로 사용자를 프로비전하는 방법)(<https://technet.microsoft.com/library/ff686263(v=ws.10).aspx>)에서 확인할 수 있습니다.
 
 ### <a name="synchronization-rule-import-guest-user-to-mv-to-synchronization-service-metaverse-from-azure-active-directorybr"></a>동기화 규칙: Azure Active Directory에서 MV 및 동기화 서비스 메타버스로 게스트 사용자 가져오기<br>
 
@@ -292,10 +293,10 @@ MIM 서비스 및 포털로 이동하여 동기화 규칙을 선택하고 새로
 <a name="next-steps"></a>다음 단계
 ----------
 
-[How Do I Provision Users to AD DS](https://technet.microsoft.com/en-us/library/ff686263(v=ws.10).aspx)(AD DS로 사용자를 프로비전하는 방법)
+[How Do I Provision Users to AD DS](https://technet.microsoft.com/library/ff686263(v=ws.10).aspx)(AD DS로 사용자를 프로비전하는 방법)
 
-[Functions Reference for FIM 2010](https://technet.microsoft.com/en-us/library/ff800820(v=ws.10).aspx)(FIM 2010에 대한 함수 참조)
+[Functions Reference for FIM 2010](https://technet.microsoft.com/library/ff800820(v=ws.10).aspx)(FIM 2010에 대한 함수 참조)
 
-[온-프레미스 응용 프로그램에 대한 보안 원격 액세스를 제공하는 방법](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-application-proxy-get-started)
+[온-프레미스 응용 프로그램에 대한 보안 원격 액세스를 제공하는 방법](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)
 
 [Microsoft Graph용 Microsoft Identity Manager 관리 에이전트(미리 보기) 다운로드](http://go.microsoft.com/fwlink/?LinkId=717495)
