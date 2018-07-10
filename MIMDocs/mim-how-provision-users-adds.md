@@ -1,7 +1,7 @@
 ---
-title: "Microsoft Identity Manager 2016 | Microsoft 문서"
-description: "Microsoft Identity Manager 2016을 사용하여 ADDS에 사용자를 만드는 프로세스 이해"
-keywords: 
+title: Microsoft Identity Manager 2016 | Microsoft 문서
+description: Microsoft Identity Manager 2016을 사용하여 ADDS에 사용자를 만드는 프로세스 이해
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,12 +9,13 @@ ms.date: 08/18/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: 171aa1a2e19ea9f78f9fadbc7368404702095d71
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.assetid: ''
+ms.openlocfilehash: a12a8436d70b3ae866df0f615e10a3d76f791168
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290104"
 ---
 # <a name="how-do-i-provision-users-to-ad-ds"></a>How Do I Provision Users to AD DS(AD DS로 사용자를 프로비전하는 방법)
 
@@ -87,8 +88,8 @@ ID 관리 시스템에 대한 기본 요구 사항 중 하나는 외부 시스�
 
 모든 구성 요소를 하나의 컴퓨터에서 실행할 수 있습니다.
 
->[!NOTE]
-MIM 설정에 대한 자세한 내용은 [FIM Installation Guide](http://go.microsoft.com/FWLink/p/?LinkId=165845)(FIM 설치 가이드)를 참조하세요.
+> [!NOTE]
+> MIM 설정에 대한 자세한 내용은 [FIM Installation Guide](http://go.microsoft.com/FWLink/p/?LinkId=165845)(FIM 설치 가이드)를 참조하세요.
 
 ## <a name="scenario-components-list"></a>시나리오 구성 요소 목록
 
@@ -97,9 +98,9 @@ MIM 설정에 대한 자세한 내용은 [FIM Installation Guide](http://go.micr
 
 | ![조직 구성 단위](media/how-provision-users-adds/image005.jpg)   | 조직 구성 단위                | MIM 개체 – 프로비전된 사용자를 대상으로 사용되는 조직 구성 단위(OU)                                                       |
 |----------------------------------------|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![사용자 계정](media/how-provision-users-adds/image006.jpg)   | 사용자 계정                      | &#183; **ADMA** – AD DS에 연결할 수 있는 충분한 권한을 보유한 Active Directory 사용자 계정<br/> &#183; **FIMMA** - MIM에 연결할 수 있는 충분한 권한을 보유한 Active Directory 사용자 계정
+| ![사용자 계정](media/how-provision-users-adds/image006.jpg)   | 사용자 계정                      | & #183; **ADMA** – AD DS에 연결할 수 있는 충분한 권한을 보유한 Active Directory 사용자 계정<br/> & #183; **FIMMA** - MIM에 연결할 수 있는 충분한 권한을 보유한 Active Directory 사용자 계정
                                                                  |
-| ![관리 에이전트 및 실행 프로필](media/how-provision-users-adds/image007.jpg)  | 관리 에이전트 및 실행 프로필 | &#183; **Fabrikam ADMA** – AD DS를 사용하여 데이터를 교환하는 관리 에이전트 <br/> &#183; Fabrikam FIMMA - MIM을 사용하여 데이터를 교환하는 관리 에이전트                                                                                 |
+| ![관리 에이전트 및 실행 프로필](media/how-provision-users-adds/image007.jpg)  | 관리 에이전트 및 실행 프로필 | & #183; **Fabrikam ADMA** – AD DS를 사용하여 데이터를 교환하는 관리 에이전트 <br/> & #183; Fabrikam FIMMA - MIM을 사용하여 데이터를 교환하는 관리 에이전트                                                                                 |
 | ![동기화 규칙](media/how-provision-users-adds/image008.jpg)  | 동기화 규칙              | Fabrikam 그룹 아웃바운드 동기화 규칙 – AD DS에 사용자를 프로비전하는 아웃바운드 동기화 규칙                                     |
 | ![설정](media/how-provision-users-adds/image009.jpg)   | 설정                               | 모든 계약자 – 계약자 EmployeeType 특성 값을 사용하여 모든 개체에 대한 동적 멤버 자격을 설정                                |
 | ![워크플로](media/how-provision-users-adds/image010.jpg)  | 워크플로                          | AD 프로비전 워크플로 - AD 아웃바운드 동기화 규칙의 범위에 MIM 사용자를 가져오는 워크플로                                |
@@ -160,8 +161,8 @@ AD DS에서 사용자를 만들려면 개체의 DN을 포함해야 합니다. �
 
 AD DS에서는 여전히 사용자가 sAMAccountName 특성을 사용하여 디렉터리 서비스에 로그온하는 경우가 많습니다. 이 특성에 대한 값을 지정하지 않으면 디렉터리 서비스에서 임의의 값을 생성합니다. 그러나 사용자에게 이러한 임의 값은 친숙하지 않으며, 사용자에게 친숙한 이 특성의 버전은 AD DS에 내보내기의 일부인 경우가 많습니다. 사용자가 AD DS에 로그온할 수 있도록 하려면 내보내기 논리에 unicodePwd 특성을 사용하여 만든 암호가 포함되도록 해야 합니다.
 
->[!Note]                                
-UnicodePwd로 지정한 값이 대상 AD DS의 암호 정책을 준수하는지 확인해야 합니다.
+> [!Note]
+> UnicodePwd로 지정한 값이 대상 AD DS의 암호 정책을 준수하는지 확인해야 합니다.
 
 AD DS 계정에 대한 암호를 설정하는 경우, 활성화된 계정으로 계정을 만들어야 합니다. userAccountControl 특성을 설정하여 이 작업을 수행합니다. userAccountControl 특성에 대한 자세한 내용은 [Using FIM to Enable or Disable Accounts in Active Directory](http://go.microsoft.com/FWLink/p/?LinkId=189658)(Active Directory에서 FIM을 사용하여 계정 활성화 또는 비활성화)를 참조하세요.
 
@@ -180,8 +181,8 @@ AD DS 계정에 대한 암호를 설정하는 경우, 활성화된 계정으로 
 - Active Directory용 관리 에이전트 사용
 - 디렉터리 파티션 구성
 
->[!Note]
-ExpectedRulesList 특성에 대해 구성된 특성 흐름 규칙 가져오기가 구성되어 있는지 확인합니다.
+> [!Note]
+> ExpectedRulesList 특성에 대해 구성된 특성 흐름 규칙 가져오기가 구성되어 있는지 확인합니다.
 
 ### <a name="step-4-create-the-fabrikam-fimma-management-agent"></a>4단계: Fabrikam FIMMA 관리 에이전트 만들기
 
@@ -211,8 +212,8 @@ FIM 서비스 관리 에이전트를 구성하는 경우 FIM 서비스와의 데
 
 -   디렉터리 파티션 구성
 
->[!NOTE]
- ExpectedRulesList 특성에 대해 구성된 특성 흐름 규칙 가져오기가 구성되어 있는지 확인합니다.
+> [!NOTE]
+>  ExpectedRulesList 특성에 대해 구성된 특성 흐름 규칙 가져오기가 구성되어 있는지 확인합니다.
 
 ### <a name="step-5-create-the-run-profiles"></a>5단계: 실행 프로필 만들기
 
@@ -226,12 +227,12 @@ FIM 서비스 관리 에이전트를 구성하는 경우 FIM 서비스와의 데
 이전 표에 따라 각 관리 에이전트에 대한 실행 프로필을 만듭니다.
 
 
->[!Note]
-자세한 내용은 MIM 도움말의 관리 에이전트 실행 프로필 만들기를 참조하세요.                                                                                                                  
-
-
->[!Important]
- 사용자 환경에서 프로비전이 활성화되어 있는지 확인합니다. Using Windows PowerShell to Enable Provisioning(Windows PowerShell을 사용한 프로비전 활성화)(http://go.microsoft.com/FWLink/p/?LinkId=189660) 스크립트를 실행하여 이 작업을 수행할 수 있습니다.
+> [!Note]
+> 자세한 내용은 MIM 도움말의 관리 에이전트 실행 프로필 만들기를 참조하세요.                                                                                                                  
+> 
+> 
+> [!Important]
+>  사용자 환경에서 프로비전이 활성화되어 있는지 확인합니다. Using Windows PowerShell to Enable Provisioning(Windows PowerShell을 사용한 프로비저닝 활성화)(http://go.microsoft.com/FWLink/p/?LinkId=189660)) 스크립트를 실행하여 이 작업을 수행할 수 있습니다.
 
 
 ## <a name="configuring-the-fim-service"></a>FIM 서비스 구성
@@ -251,7 +252,7 @@ FIM 서비스를 구성하려면 Windows Internet Explorer®에서 http://localh
 
 | 동기화 규칙 구성                                                                         |                                                                             |                                                           
 |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------|
-| Name                                                                                                       | Active Directory 사용자 아웃바운드 동기화 규칙                         |                                                          
+| 이름                                                                                                       | Active Directory 사용자 아웃바운드 동기화 규칙                         |                                                          
 | 설명                                                                                               |                                                                             |                                                           
 | 우선 순위                                                                                                | 2                                                                           |                                                           
 | 데이터 흐름 방향   | 아웃바운드             |       
@@ -293,8 +294,8 @@ FIM 서비스를 구성하려면 Windows Internet Explorer®에서 http://localh
 
 
 
- >[!NOTE]
- DN을 대상으로 하는 특성 흐름에 대해 초기 흐름만을 선택했는지 확인합니다.                                                                          
+> [!NOTE]
+>  DN을 대상으로 하는 특성 흐름에 대해 초기 흐름만을 선택했는지 확인합니다.                                                                          
 
 ### <a name="step-7-create-the-workflow"></a>단계 7: 워크플로 만들기
 
@@ -302,14 +303,14 @@ AD 프로비전 워크플로의 목표는 Fabrikam 프로비전 동기화 규칙
 
 | 워크플로 구성               |                                                                 |
 |--------------------------------------|-----------------------------------------------------------------|
-| Name                                 | Active Directory 사용자 프로비저닝 워크플로                     |
+| 이름                                 | Active Directory 사용자 프로비저닝 워크플로                     |
 | 설명                          |                                                                 |
 | 워크플로 유형                        | 작업                                                          |
 | 정책 업데이트 시 실행                 | False                                                           |
 
 | 동기화 규칙                 |                                                                 |
 |--------------------------------------|-----------------------------------------------------------------|
-| Name                                 | Active Directory 사용자 아웃바운드 동기화 규칙             |
+| 이름                                 | Active Directory 사용자 아웃바운드 동기화 규칙             |
 | 작업                               | 추가                                                             |
 
 
@@ -321,7 +322,7 @@ AD 프로비전 워크플로의 목표는 Fabrikam 프로비전 동기화 규칙
 
 | MPR 구성                    |                                                             |
 |--------------------------------------|-------------------------------------------------------------|
-| Name                                 | AD 사용자 프로비저닝 관리 정책 규칙                 |
+| 이름                                 | AD 사용자 프로비저닝 관리 정책 규칙                 |
 | 설명                          |                                                             |
 | 유형                                 | 전환 설정                                              |
 | 권한 부여                   | False                                                       |
@@ -365,8 +366,8 @@ AD 프로비전 워크플로의 목표는 Fabrikam 프로비전 동기화 규칙
 
 
 
->[!NOTE]
-아웃바운드 동기화 규칙이 메타버스에 성공적으로 프로젝션되었는지 확인해야 합니다.
+> [!NOTE]
+> 아웃바운드 동기화 규칙이 메타버스에 성공적으로 프로젝션되었는지 확인해야 합니다.
 
 ## <a name="testing-the-configuration"></a>구성 테스트
 
@@ -490,8 +491,8 @@ FIM의 각 내보내기 실행에서 내보내기 작업을 완료하려면 다�
 
 이 섹션의 지침에 따라 실행 프로필을 실행합니다.
 
->[!IMPORTANT]
-각 실행 프로필은 오류 없이 성공적으로 실행되어야 합니다.
+> [!IMPORTANT]
+> 각 실행 프로필은 오류 없이 성공적으로 실행되어야 합니다.
 
 ### <a name="step-14-verify-the-provisioned-user-in-ad-ds"></a>14단계: AD DS에서 프로비전된 사용자 확인
 

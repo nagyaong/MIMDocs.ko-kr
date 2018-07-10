@@ -1,7 +1,7 @@
 ---
-title: "PAM 배포 3단계 – PAM 서버 | Microsoft 문서"
-description: "Privileged Access Management 배포를 위한 SQL 및 SharePoint를 모두 호스트하는 PAM 서버를 준비합니다."
-keywords: 
+title: PAM 배포 3단계 – PAM 서버 | Microsoft 문서
+description: Privileged Access Management 배포를 위한 SQL 및 SharePoint를 모두 호스트하는 PAM 서버를 준비합니다.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -13,21 +13,22 @@ ms.assetid: 68ec2145-6faa-485e-b79f-2b0c4ce9eff7
 ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: fd52a191a0592441131249451011c4e2f026ea48
-ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
+ms.openlocfilehash: 3eb79847baed69ef53a27e09443ff9bf4647b347
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289917"
 ---
 # <a name="step-3--prepare-a-pam-server"></a>3단계 – PAM 서버 준비
 
->[!div class="step-by-step"]
-[« 2단계](step-2-prepare-priv-domain-controller.md)
-[4단계 »](step-4-install-mim-components-on-pam-server.md)
+> [!div class="step-by-step"]
+> [« 2단계](step-2-prepare-priv-domain-controller.md)
+> [4단계 »](step-4-install-mim-components-on-pam-server.md)
 
 ## <a name="install-windows-server-2012-r2"></a>Windows Server 2012 R2 설치
 
-세 번째 가상 컴퓨터에 Windows Server 2012 R2, 특히 Windows Server 2012 R2 Standard(GUI 포함 서버) x64를 설치하여 *PAMSRV*를 만듭니다. 이 컴퓨터에 SQL Server와 SharePoint 2013이 설치되므로 최소 8GB의 RAM이 필요합니다.
+세 번째 가상 머신에 Windows Server 2012 R2, 특히 Windows Server 2012 R2 Standard(GUI 포함 서버) x64를 설치하여 *PAMSRV*를 만듭니다. 이 컴퓨터에 SQL Server와 SharePoint 2013이 설치되므로 최소 8GB의 RAM이 필요합니다.
 
 1. **Windows Server 2012 R2 Standard(GUI 포함 서버) x64**를 선택합니다.
 
@@ -93,18 +94,18 @@ ms.lasthandoff: 09/14/2017
 
 PowerShell을 사용하려면 다음을 수행합니다.
 
-1.  PowerShell을 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 선택합니다.
-2.  IIS를 중지하고 다음 명령을 사용하여 응용 프로그램 호스트 설정의 잠금을 해제합니다.
-    ```CMD
-    iisreset /STOP
-    C:\Windows\System32\inetsrv\appcmd.exe unlock config /section:windowsAuthentication -commit:apphost
-    iisreset /START
-    ```
+1. PowerShell을 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 선택합니다.
+2. IIS를 중지하고 다음 명령을 사용하여 응용 프로그램 호스트 설정의 잠금을 해제합니다.
+   ```CMD
+   iisreset /STOP
+   C:\Windows\System32\inetsrv\appcmd.exe unlock config /section:windowsAuthentication -commit:apphost
+   iisreset /START
+   ```
 
 메모장과 같은 텍스트 편집기를 사용하려면 다음을 수행합니다.
 
 1. **C:\Windows\System32\inetsrv\config\applicationHost.config** 파일을 엽니다.
-2. 해당 파일의 82번째 줄까지 아래로 스크롤합니다. **overrideModeDefault**의 태그 값은 **<section name="windowsAuthentication" overrideModeDefault="Deny" />**입니다.  
+2. 해당 파일의 82번째 줄까지 아래로 스크롤합니다. **overrideModeDefault**의 태그 값은 **<section name="windowsAuthentication" overrideModeDefault="Deny" />** 입니다.  
 3. **overrideModeDefault**의 값을 *Allow*로 변경합니다.  
 4. 파일을 저장하고 `iisreset /START` PowerShell 명령을 사용하여 IIS를 다시 시작합니다.
 
@@ -186,7 +187,7 @@ SharePoint 제품 구성 마법사를 실행하여 SharePoint를 구성합니다
 
     **CompatibilityLevel** 변수가 *14*로 설정되어 있는지 확인합니다. *15*를 반환하는 경우 사이트 컬렉션이 2010 환경 버전에 대해 만들어지지 않으므로 사이트 모음을 삭제하고 다시 만듭니다.
 
-2.  **SharePoint 2013 관리 셸**에서 다음 PowerShell 명령을 실행합니다. 이렇게 하면 SharePoint 서버 쪽 viewstate 및 SharePoint 작업 **상태 분석 작업(시간별, Microsoft SharePoint Foundation 타이머, 모든 서버)**을 사용할 수 없습니다.
+2.  **SharePoint 2013 관리 셸**에서 다음 PowerShell 명령을 실행합니다. 이렇게 하면 SharePoint 서버 쪽 viewstate 및 SharePoint 작업 **상태 분석 작업(시간별, Microsoft SharePoint Foundation 타이머, 모든 서버)** 을 사용할 수 없습니다.
 
     ```PowerShell
     $contentService = [Microsoft.SharePoint.Administration.SPWebService]::ContentService;
@@ -204,7 +205,7 @@ SharePoint 제품 구성 마법사를 실행하여 SharePoint를 구성합니다
 ## <a name="set-the-website-as-the-local-intranet"></a>로컬 인트라넷으로 웹 사이트 설정
 
 1. Internet Explorer를 시작하고 새 웹 브라우저 탭 열기
-2. http://pamsrv.priv.contoso.local:82/로 이동한 후 PRIV\MIMAdmin으로 로그인합니다.  "MIM 포털"이라는 빈 SharePoint 사이트가 나타납니다.  
+2. http://pamsrv.priv.contoso.local:82/로 이동하여 PRIV\MIMAdmin으로 로그인합니다.  "MIM 포털"이라는 빈 SharePoint 사이트가 나타납니다.  
 3. Internet Explorer에서 **인터넷 옵션**을 열고 **보안** 탭으로 변경한 후 **로컬 인트라넷**을 선택한 다음 URL `http://pamsrv.priv.contoso.local:82/`를 추가합니다.
 
 로그인이 실패하는 경우 [2단계](step-2-prepare-priv-domain-controller.md) 앞부분에서 만든 Kerberos SPN을 업데이트해야 할 수 있습니다.
@@ -215,6 +216,6 @@ SharePoint 제품 구성 마법사를 실행하여 SharePoint를 구성합니다
 
 4단계에서 PAM 서버에 MIM 구성 요소 설치를 시작합니다.
 
->[!div class="step-by-step"]
-[« 2단계](step-2-prepare-priv-domain-controller.md)
-[4단계 »](step-4-install-mim-components-on-pam-server.md)
+> [!div class="step-by-step"]
+> [« 2단계](step-2-prepare-priv-domain-controller.md)
+> [4단계 »](step-4-install-mim-components-on-pam-server.md)

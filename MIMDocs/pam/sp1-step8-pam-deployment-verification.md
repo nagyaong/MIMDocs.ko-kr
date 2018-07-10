@@ -1,7 +1,7 @@
 ---
-title: "8단계 PAM 배포 확인"
-description: "스크립팅된 PAM 배포에는 PAM 시나리오를 실행하여 PAM 배포가 예상대로 작동하는지 확인할 수 있는 확인 스크립트가 포함되어 있습니다."
-keywords: 
+title: 8단계 PAM 배포 확인
+description: 스크립팅된 PAM 배포에는 PAM 시나리오를 실행하여 PAM 배포가 예상대로 작동하는지 확인할 수 있는 확인 스크립트가 포함되어 있습니다.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
@@ -10,19 +10,20 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 28fcbe10366df749796be76f83f608561b5f39d3
-ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
+ms.openlocfilehash: b01980c020b1027c3b40eaf49b4431631ee041be
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289475"
 ---
 # <a name="step-8-pam-deployment-verification"></a>8단계 PAM 배포 확인
 
->[!div class="step-by-step"]
-[« 7단계](sp1-step7-setup-sidhistory-sidfiltering.md)
-[추록 »](sp1-pam-deployment-addendum.md)
+> [!div class="step-by-step"]
+> [« 7단계](sp1-step7-setup-sidhistory-sidfiltering.md)
+> [추록 »](sp1-pam-deployment-addendum.md)
 
 PAM 시나리오를 실행하여 PAM 배포가 예상대로 작동하는지 확인할 수 있는 확인 스크립트가 배포 패키지에 들어 있습니다.
 배포 확인을 사용하려면 PAMDeploymentConfig.xml 섹션(<PamValidation/>)을 수정합니다.
@@ -76,6 +77,6 @@ PowerShell 창에서 다음을 입력합니다.
   처음에는 사용자에게 리소스에 대한 액세스 권한이 없습니다. 사용자를 역할에 JIT(Just-In-Time) 추가하면 사용자에게 권한이 부여됩니다. 요청 기간이 만료되면 사용자의 액세스 권한이 사라집니다.
   이 스크립트에서는 만료할 요청에 기본값(11분)을 사용합니다.
 
->[!div class="step-by-step"]
-[« 7단계](sp1-step7-setup-sidhistory-sidfiltering.md)
-[추록 »](sp1-pam-deployment-addendum.md)
+> [!div class="step-by-step"]
+> [« 7단계](sp1-step7-setup-sidhistory-sidfiltering.md)
+> [추록 »](sp1-pam-deployment-addendum.md)

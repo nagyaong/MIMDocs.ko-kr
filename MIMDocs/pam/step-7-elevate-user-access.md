@@ -1,6 +1,6 @@
 ---
-title: "PAM 배포 7단계 – 사용자 액세스 | Microsoft Docs"
-description: "마지막 단계로 Privileged Access Management 배포가 성공했음을 보여 주기 위해 권한 있는 사용자에게 임시 액세스 권한을 부여합니다."
+title: PAM 배포 7단계 – 사용자 액세스 | Microsoft Docs
+description: 마지막 단계로 Privileged Access Management 배포가 성공했음을 보여 주기 위해 권한 있는 사용자에게 임시 액세스 권한을 부여합니다.
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,16 +9,17 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
-ms.openlocfilehash: 2d92be315547da1c352c0e60732f9aeecf0c2d90
-ms.sourcegitcommit: 3d8a2493eae1218bfdb75a399ffa4adc8c2a8fdf
+ms.openlocfilehash: 9515d17767a75b349b0d3150fb90c136c478baa2
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289849"
 ---
 # <a name="step-7--elevate-a-users-access"></a>7단계 - 사용자의 액세스 권한 상승
 
->[!div class="step-by-step"]
-[« 6단계](step-6-transition-group-to-pam.md)
+> [!div class="step-by-step"]
+> [« 6단계](step-6-transition-group-to-pam.md)
 
 
 이 단계에서는 사용자가 MIM을 통해 역할에 대한 액세스를 요청할 수 있다는 것을 보여 줍니다.
@@ -90,7 +91,7 @@ PAM 샘플 포털을 통해 권한 있는 액세스를 요청하여 활성화합
     ```
 
 3. 메시지가 나타나면 PRIV.Jen 계정에 대한 암호를 입력합니다. 새 웹 브라우저 창이 나타납니다.
-4. http://pamsrv.priv.contoso.local:8090 으로 이동하고 샘플 포털의 웹 페이지가 표시되는지 확인합니다.
+4. http://pamsrv.priv.contoso.local:8090으로 이동하여 샘플 포털의 웹 페이지가 표시되는지 확인합니다.
 5. Internet Explorer에서 **도구** > **인터넷 옵션**을 선택하고 **보안** 탭을 클릭합니다.
 6. **로컬 인트라넷 영역** > **사이트** > **고급**을 차례로 클릭하고 웹 사이트를 영역에 추가합니다.
 7. **인터넷 옵션** 대화 상자를 닫습니다.
@@ -103,5 +104,5 @@ PAM 샘플 포털을 통해 권한 있는 액세스를 요청하여 활성화합
 
 이 연습의 단계를 완료했으면 Privileged Access Management 시나리오를 확인한 것입니다. 이 시나리오에서는 제한된 기간 동안 사용자 권한이 상승되므로 사용자는 보호된 리소스에 별도의 권한 있는 계정으로 액세스할 수 있습니다. 권한 상승 세션이 만료되는 즉시 권한 있는 계정은 더 이상 보호된 리소스에 액세스할 수 없습니다. 어떤 보안 그룹이 권한 있는 역할을 나타낼지에 대한 결정은 PAM 관리자에 의해 조정됩니다. 액세스 권한이 Privileged Access Management 시스템으로 마이그레이션되면 원래 사용자 계정으로 이전에 가능했던 액세스가 이제는 특별한 권한 있는 계정으로 로그인해야만 가능하고 요청 시 사용할 수 있습니다. 따라서 높은 권한 있는 그룹의 그룹 구성원 자격은 제한된 기간 동안 유효합니다.
 
->[!div class="step-by-step"]
-[« 6단계](step-6-transition-group-to-pam.md)
+> [!div class="step-by-step"]
+> [« 6단계](step-6-transition-group-to-pam.md)

@@ -1,7 +1,7 @@
 ---
-title: "Microsoft Identity Manager 2016 모범 사례 | Microsoft Docs"
-description: 
-keywords: 
+title: Microsoft Identity Manager 2016 모범 사례 | Microsoft Docs
+description: ''
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -10,20 +10,21 @@ ms.topic: reference
 ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: bb967bfb43218384044e324c270d3d6b35d33afe
-ms.sourcegitcommit: b4513f0f72ac6efd5c2610863f4e3e8c8e65c860
+ms.assetid: ''
+ms.openlocfilehash: 9ef96b88942fd33107d9021ddddb90d0d80dbed1
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290121"
 ---
 # <a name="microsoft-identity-manager-2016-best-practices"></a>Microsoft Identity Manager 2016 모범 사례
 
 이 항목에서는 MIM(Microsoft Identity Manager) 2016을 배포 및 작동하기 위한 모범 사례를 설명합니다.
 
 ## <a name="sql-setup"></a>SQL 설정
->[!NOTE]
-SQL을 실행하는 서버를 설정하기 위한 다음 권장 사항은 FIMService 전용 SQL 인스턴스 및 FIMSynchronizationService 데이터베이스 전용 SQL 인스턴스가 있다고 가정합니다. 통합 환경에서 FIMService를 실행하는 경우 구성에 적합하게 조정해야 합니다.
+> [!NOTE]
+> SQL을 실행하는 서버를 설정하기 위한 다음 권장 사항은 FIMService 전용 SQL 인스턴스 및 FIMSynchronizationService 데이터베이스 전용 SQL 인스턴스가 있다고 가정합니다. 통합 환경에서 FIMService를 실행하는 경우 구성에 적합하게 조정해야 합니다.
 
 SQL(구조적 쿼리 언어) 서버의 구성은 최적의 시스템 성능에 매우 중요합니다. 대규모 구현에서 최적의 MIM 성능을 달성하려면 SQL을 실행하는 서버에서 모범 사례를 적절히 적용하는 과정이 필요합니다. 자세한 내용은 SQL 모범 사례에 대한 다음 항목을 참조하세요.
 
@@ -71,40 +72,40 @@ SQL Server 모범 사례에 따라 데이터베이스에 대한 트랜잭션 및
 
 SQL Server를 다른 서비스(즉, MIM 2016 서비스 및 MIM 2016 동기화 서비스)와 함께 공유하는 경우 SQL Server에 있는 메모리 크기에 따라, SQL의 메모리 사용량을 제한하려고 할 수 있습니다. 이렇게 하려면 다음 단계를 수행합니다.
 
-1.  SQL Server Enterprise 관리자를 시작합니다.
+1. SQL Server Enterprise 관리자를 시작합니다.
 
-2.  [새 쿼리]를 선택합니다.
+2. [새 쿼리]를 선택합니다.
 
-3.  다음과 같은 쿼리를 실행합니다.
+3. 다음과 같은 쿼리를 실행합니다.
 
-  ```SQL
-  USE master
+   ```SQL
+   USE master
 
-  EXEC sp_configure 'show advanced options', 1
+   EXEC sp_configure 'show advanced options', 1
 
-  RECONFIGURE WITH OVERRIDE
+   RECONFIGURE WITH OVERRIDE
 
-  USE master
+   USE master
 
-  EXEC sp_configure 'max server memory (MB)', 12000--- max=12G RECONFIGURE
-  WITH OVERRIDE
-  ```
+   EXEC sp_configure 'max server memory (MB)', 12000--- max=12G RECONFIGURE
+   WITH OVERRIDE
+   ```
 
-  이 예제에서는 최대 12GB(기가바이트) 메모리를 사용하도록 SQL 서버를 다시 구성합니다.
+   이 예제에서는 최대 12GB(기가바이트) 메모리를 사용하도록 SQL 서버를 다시 구성합니다.
 
-4.  다음 쿼리를 사용하여 설정을 확인합니다.
+4. 다음 쿼리를 사용하여 설정을 확인합니다.
 
-  ```SQL
-  USE master
+   ```SQL
+   USE master
 
-  EXEC sp_configure 'max server memory (MB)'--- verify the setting
+   EXEC sp_configure 'max server memory (MB)'--- verify the setting
 
-  USE master
+   USE master
 
-  EXEC sp_configure 'show advanced options', 0
+   EXEC sp_configure 'show advanced options', 0
 
-  RECONFIGURE WITH OVERRIDE
-  ```
+   RECONFIGURE WITH OVERRIDE
+   ```
 
 ### <a name="backup-and-recovery-configuration"></a>백업 및 복구 구성
 
@@ -169,11 +170,11 @@ Microsoft Office SharePoint® 인덱싱을 사용하지 않도록 설정하는 �
 
 이 섹션에는 외부 시스템에서 MIM으로 수행되는 초기 데이터 로드의 성능을 향상시키기 위한 일련의 단계가 나와 있습니다. 이러한 단계 여러 개는 시스템의 초기 입력 동안에만 수행된다는 것을 알아두어야 합니다. 로드 완료 시 재설정해야 합니다. 이 작업은 일회성 작업이며 연속되는 동기화가 아닙니다.
 
->[!NOTE]
-MIM과 AD DS(Active Directory Domain Services) 간에 사용자를 동기화하는 방법에 대한 자세한 내용은 FIM 설명서에서 [How do I Synchronize Users from Active Directory to FIM](http://go.microsoft.com/fwlink/?LinkID=188277)(Active Directory에서 FIM으로 사용자를 동기화하는 방법)을 참조하세요.
-
->[!IMPORTANT]
-이 가이드의 SQL 설정 섹션에 설명되는 모범 사례를 적용했는지 확인합니다. 
+> [!NOTE]
+> MIM과 AD DS(Active Directory Domain Services) 간에 사용자를 동기화하는 방법에 대한 자세한 내용은 FIM 설명서에서 [How do I Synchronize Users from Active Directory to FIM](http://go.microsoft.com/fwlink/?LinkID=188277)(Active Directory에서 FIM으로 사용자를 동기화하는 방법)을 참조하세요.
+> 
+> [!IMPORTANT]
+> 이 가이드의 SQL 설정 섹션에 설명되는 모범 사례를 적용했는지 확인합니다. 
 
 ### <a name="step-1-configure-the-sql-server-for-initial-data-load"></a>1단계: 초기 데이터 로드에 대해 SQL Server 구성
 데이터의 초기 로드는 시간이 오래 걸릴 수 있습니다. 처음에 많은 양의 데이터를 로드하려는 경우 전체 텍스트 검색을 일시적으로 껐다가 MIM 2016 관리 에이전트(FIM MA) 내보내기를 완료한 후 다시 켜서 데이터베이스를 채우는 데 걸리는 시간을 줄일 수 있습니다.
@@ -191,8 +192,8 @@ ALTER FULLTEXT INDEX ON [fim].[ObjectValueString] SET CHANGE_TRACKING = MANUAL
 ALTER FULLTEXT INDEX ON [fim].[ObjectValueXml] SET CHANGE_TRACKING = MANUAL
 ```
 
->[!IMPORTANT]
-이러한 절차를 구현하지 않으면 디스크 공간 사용량이 높아져서 디스크 공간이 부족해질 수 있습니다. [Recovery Model Overview](http://go.microsoft.com/fwlink/?LinkID=185370)(복구 모델 개요)에서 이 항목에 대한 추가 정보를 찾을 수 있습니다. [The FIM Backup and Restore Guide](http://go.microsoft.com/fwlink/?LinkID=165864)(FIM 백업 및 복원 가이드)에 추가 정보가 포함되어 있습니다.
+> [!IMPORTANT]
+> 이러한 절차를 구현하지 않으면 디스크 공간 사용량이 높아져서 디스크 공간이 부족해질 수 있습니다. [Recovery Model Overview](http://go.microsoft.com/fwlink/?LinkID=185370)(복구 모델 개요)에서 이 항목에 대한 추가 정보를 찾을 수 있습니다. [The FIM Backup and Restore Guide](http://go.microsoft.com/fwlink/?LinkID=165864)(FIM 백업 및 복원 가이드)에 추가 정보가 포함되어 있습니다.
 
 ### <a name="step-2-apply-the-minimum-necessary-mim-configuration-during-the-load-process"></a>2단계: 로드 프로세스 동안 필요한 최소 MIM 구성 적용
 
@@ -288,8 +289,8 @@ MIM 서버 구성 요소를 실행하는 서버를 안전한 방식으로 구성
 
 FIM Synchronization Service 서비스 계정은 FIM Synchronization Service에 대한 액세스를 제어하는 데 사용되는 보안 그룹(FIMSyncAdmins와 같이 FIMSync로 시작하는 그룹)의 구성원이 아니어야 합니다.
 
->[!IMPORTANT]
- 두 서비스 계정에 동일한 계정을 사용하는 옵션을 선택하고 FIM 서비스 및 FIM Synchronization Service를 분리하는 경우 MMS Synchronization Service 서버에 대해 네트워크에서 이 컴퓨터로의 액세스 거부를 설정할 수 없습니다. 액세스가 거부되면 FIM 서비스가 FIM Synchronization Service에 연결하여 구성 및 관리 암호를 변경하지 못하게 됩니다.
+> [!IMPORTANT]
+>  두 서비스 계정에 동일한 계정을 사용하는 옵션을 선택하고 FIM 서비스 및 FIM Synchronization Service를 분리하는 경우 MMS Synchronization Service 서버에 대해 네트워크에서 이 컴퓨터로의 액세스 거부를 설정할 수 없습니다. 액세스가 거부되면 FIM 서비스가 FIM Synchronization Service에 연결하여 구성 및 관리 암호를 변경하지 못하게 됩니다.
 
 ### <a name="password-reset-deployed-to-kiosk-like-computers-should-set-local-security-to-clear-virtual-memory-pagefile"></a>키오스크 유사 컴퓨터에 배포된 암호 재설정으로 가상 메모리 페이지 파일을 지우도록 로컬 보안을 설정해야 함
 
@@ -315,7 +316,7 @@ SSL을 구현하려면
 
 7.  파일을 아무 위치에나 저장합니다. 이후 단계에서 이 위치에 액세스해야 합니다.
 
-8.  https://servername/certsrv로 이동합니다. servername을 인증서를 발급하는 서버의 이름으로 바꿉니다.
+8.  https://servername/certsrv을 찾아봅니다. servername을 인증서를 발급하는 서버의 이름으로 바꿉니다.
 
 9.  [새 인증서 요청]을 클릭합니다.
 
@@ -357,9 +358,10 @@ SSL을 구현하려면
 
 28. [작업을] 클릭하고 [대체 액세스 매핑]을 클릭합니다.
 
-29. http://servername을 클릭합니다.
+29. 
+          http://servername을 클릭합니다.
 
-30. http://servername을 https://servername으로 변경하고 [확인]을 클릭합니다.
+30. http://servername을 https://servername으로 변경한 다음, [확인]을 클릭합니다.
 
 31. [시작]을 클릭하고, [실행]을 클릭한 후 iisreset을 입력한 후 [확인]을 클릭합니다.
 
@@ -384,7 +386,7 @@ SSL을 구현하려면
 
 MIM은 2가지 MPR 형식인 요청 및 전환 설정을 제공합니다.
 
--  RMPR(요청 MPR)
+- RMPR(요청 MPR)
 
   - 리소스에 대한 CRUD(만들기, 읽기, 업데이트 또는 삭제) 작업에 대해 액세스 제어 정책(인증, 권한 부여 및 작업)을 정의하는 데 사용됩니다.
   - MIM의 대상 리소스에 대해 CRUD 작업이 실행될 때 적용됩니다.
@@ -432,8 +434,8 @@ MIM에서 사용 권한은 긍정 어설션으로 정의됩니다. MIM은 거부
 
 RMPR 대신 집합 TMPR(전환 MPR)을 사용하여 사용자 지정 자격을 정의합니다. TMPR은 전환 집합 또는 역할의 멤버 자격 및 함께 제공되는 워크플로 활동에 따라 자격을 할당하거나 제거하기 위한 상태 기반 모델을 제공합니다. TMPR은 리소스 전환 시작 및 리소스 전환 종료로 이루어진 쌍으로 정의되어야 합니다. 또한 각 전환 MPR은 프로비전 및 프로비전 해제 활동을 위한 별도 워크플로를 포함해야 합니다.
 
->[!NOTE]
-프로비전 해제 워크플로는 [정책 업데이트 시 실행] 특성이 true로 설정되도록 합니다.
+> [!NOTE]
+> 프로비전 해제 워크플로는 [정책 업데이트 시 실행] 특성이 true로 설정되도록 합니다.
 
 #### <a name="enable-the-set-transition-in-mpr-last"></a>[Set Transition In MPR last]\(마지막에 집합 전환 시작 MPR)을 사용하도록 설정
 

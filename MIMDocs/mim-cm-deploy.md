@@ -10,11 +10,12 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: 241ad68d3f4a692c87d0d2a0069781ad042453c7
-ms.sourcegitcommit: 39f34a38967baa9c0da6ae5b57734b222f5771a5
+ms.openlocfilehash: 25a511dc590b02019c65a688c9b2c8dc821fff50
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290087"
 ---
 # <a name="deploying-microsoft-identity-manager-certificate-manager-2016-mim-cm"></a>MIM CM(Microsoft Identity Manager 인증서 관리자) 2016 배포
 
@@ -80,13 +81,13 @@ MIM CM 구성 마법사에는 과정을 성공적으로 완료하기 위한 방�
     ![다이어그램](media/mim-cm-deploy/image005.png)
 
 3. resourceForestModifySchema.vbs 스크립트 단일 포리스트 시나리오를 실행합니다. 리소스 포리스트 시나리오에 대해 다음 스크립트를 실행합니다.
-    - DomainA – 사용자가 있는 위치(userForestModifySchema.vbs)
-    - ResourceForestB – CM 설치 위치(resourceForestModifySchema.vbs).
+   - DomainA – 사용자가 있는 위치(userForestModifySchema.vbs)
+   - ResourceForestB – CM 설치 위치(resourceForestModifySchema.vbs).
 
-    >[!NOTE]
-    >스키마 변경은 단방향 작업이며 포리스트 복구를 롤백해야 하므로 필요한 백업이 있는지 확인해야 합니다. 이 작업을 수행하여 스키마를 변경하는 방법에 대한 자세한 내용은 [Forefront Identity Manager 2010 인증서 관리 스키마 변경](https://technet.microsoft.com/library/jj159298(v=ws.10).aspx) 문서를 검토하세요.
+     >[!NOTE]
+     >스키마 변경은 단방향 작업이며 포리스트 복구를 롤백해야 하므로 필요한 백업이 있는지 확인해야 합니다. 이 작업을 수행하여 스키마를 변경하는 방법에 대한 자세한 내용은 [Forefront Identity Manager 2010 인증서 관리 스키마 변경](https://technet.microsoft.com/library/jj159298(v=ws.10).aspx) 문서를 검토하세요.
 
-    ![다이어그램](media/mim-cm-deploy/image007.png)
+     ![다이어그램](media/mim-cm-deploy/image007.png)
 
 4. 스크립트를 실행하고 스크립트가 완료되면 성공 메시지를 받아야 합니다.
 
@@ -355,7 +356,6 @@ MIMCMWebAgent 계정으로 MIM CM 포털을 실행 중입니다. 기본적으로
 SETSPN -S http/cm.contoso.com contoso\MIMCMWebAgent
 #Delegation for certificate authority
 Get-ADUser CONTOSO\MIMCMWebAgent | Set-ADObject -Add @{"msDS-AllowedToDelegateTo"="rpcss/CORPCA","rpcss/CORPCA.contoso.com"}
-
 ```
 
 **CORPCM에서 IIS 업데이트**
@@ -368,7 +368,6 @@ add-pssnapin WebAdministration
 Set-WebConfigurationProperty -Filter System.webServer/security/authentication/WindowsAuthentication -Location 'Default Web Site' -Name enabled -Value $true
 Set-WebConfigurationProperty -Filter System.webServer/security/authentication/WindowsAuthentication -Location 'Default Web Site' -Name useKernelMode -Value $false
 Set-WebConfigurationProperty -Filter System.webServer/security/authentication/WindowsAuthentication -Location 'Default Web Site' -Name useAppPoolCredentials -Value $true
-
 ```
 
 >[!NOTE]
@@ -465,10 +464,10 @@ CORPCM에 로그인하기 전에 MIMINSTALL을 구성 마법사에 대한 **doma
 
    - 기존 사용자 사용: **사용**
 
-    >[!NOTE]
-    >이러한 계정을 이전에 만들었습니다. 8단계의 프로시저가 6가지 모든 에이전트 계정 탭에 대해 반복되었는지 확인합니다.
+     >[!NOTE]
+     >이러한 계정을 이전에 만들었습니다. 8단계의 프로시저가 6가지 모든 에이전트 계정 탭에 대해 반복되었는지 확인합니다.
 
-    ![MIM CM 계정](media/mim-cm-deploy/image030.png)
+     ![MIM CM 계정](media/mim-cm-deploy/image030.png)
 
 10. 모든 에이전트 계정 정보가 완료되면 **확인**을 클릭합니다.
 
@@ -602,9 +601,9 @@ CORPCM에 로그인하기 전에 MIMINSTALL을 구성 마법사에 대한 **doma
 
 6. **contoso-CORPCA-CA 속성** 대화 상자에서 **확인**을 클릭합니다.
 
-7. **contoso-CORPCA-CA***,* 를 마우스 오른쪽 단추로 클릭하고 **모든 작업**을 가리킨 후 **서비스 중지**를 클릭합니다. Active Directory 인증서 서비스가 중지될 때까지 기다립니다.
+7. **contoso-CORPCA-CA** *,* 를 마우스 오른쪽 단추로 클릭하고 **모든 작업**을 가리킨 후 **서비스 중지**를 클릭합니다. Active Directory 인증서 서비스가 중지될 때까지 기다립니다.
 
-8. **contoso-CORPCA-CA***,* 를 마우스 오른쪽 단추로 클릭하고 **모든 작업**을 가리킨 후 **서비스 시작**을 클릭합니다.
+8. **contoso-CORPCA-CA** *,* 를 마우스 오른쪽 단추로 클릭하고 **모든 작업**을 가리킨 후 **서비스 시작**을 클릭합니다.
 
 9. **인증 기관** 콘솔을 최소화합니다.
 
@@ -668,7 +667,7 @@ CORPCM에 로그인하기 전에 MIMINSTALL을 구성 마법사에 대한 **doma
     - 인증서 대화 상자에서 **Please specify hex-encoded certificate hash(16진수로 인코딩된 인증서 해시를 지정하세요)** 상자를 마우스 오른쪽 단추로 클릭한 후 **붙여넣기**를 클릭합니다.
 
     - **인증서** 대화 상자에서 **확인**을 클릭합니다.
-    
+
         >[!Note]
         >**확인** 단추가 활성화되지 않으면 clmAgent 인증서에서 지문을 복사할 때 지문 문자열에 실수로 숨겨진 문자를 포함한 것입니다. 이 연습에서는 **작업 4: MIMCMAgent 인증서의 지문을 Windows 클립보드에 복사**부터 시작하여 모든 단계를 반복합니다.
 
@@ -678,11 +677,11 @@ CORPCM에 로그인하기 전에 MIMINSTALL을 구성 마법사에 대한 **doma
 
 6. **contoso-CORPCA-CA 속성** 대화 상자에서 **확인**을 클릭합니다.
 
-7. **contoso-CORPCA-CA***,* 를 마우스 오른쪽 단추로 클릭하고 **모든 작업**을 가리킨 후 **서비스 중지**를 클릭합니다.
+7. **contoso-CORPCA-CA** *,* 를 마우스 오른쪽 단추로 클릭하고 **모든 작업**을 가리킨 후 **서비스 중지**를 클릭합니다.
 
 8. Active Directory 인증서 서비스가 중지될 때까지 기다립니다.
 
-9. **contoso-CORPCA-CA***,* 를 마우스 오른쪽 단추로 클릭하고 **모든 작업**을 가리킨 후 **서비스 시작**을 클릭합니다.
+9. **contoso-CORPCA-CA** *,* 를 마우스 오른쪽 단추로 클릭하고 **모든 작업**을 가리킨 후 **서비스 시작**을 클릭합니다.
 
 10. **인증 기관** 콘솔을 닫습니다.
 
@@ -736,7 +735,7 @@ CORPCM에 로그인하기 전에 MIMINSTALL을 구성 마법사에 대한 **doma
 6. **Permission Entry for Contoso(Contoso에 대한 권한 항목)** 대화 상자의 **적용 대상** 목록에서 **하위 사용자 개체**를 선택한 후 다음 **사용 권한**에 대해 **허용** 확인란을 사용합니다.
 
     - **모든 속성 읽기**
-    
+
     - **읽기 권한**
 
     - **FIM CM 감사**
@@ -904,7 +903,7 @@ $adace.GetEnumerator() | **Foreach-Object** {
 $acl = **Get-Acl** *-Path* $_.Value
 $sid=(**Get-ADGroup** "MIMCM-Managers").SID
 $p = **New-Object** System.Security.Principal.SecurityIdentifier($sid)
-##https://msdn.microsoft.com/en-us/library/system.directoryservices.activedirectorysecurityinheritance(v=vs.110).aspx
+##https://msdn.microsoft.com/library/system.directoryservices.activedirectorysecurityinheritance(v=vs.110).aspx
 $ace = **New-Object** System.DirectoryServices.ActiveDirectoryAccessRule
 ($p,[System.DirectoryServices.ActiveDirectoryRights]"GenericAll",[System.Security.AccessControl.AccessControlType]::Allow,
 [DirectoryServices.ActiveDirectorySecurityInheritance]::All)
