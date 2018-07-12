@@ -11,12 +11,12 @@ ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.suite: ems
-ms.openlocfilehash: 6bcf9ab26ba38f3c6eefbdb315d4975320a597b9
-ms.sourcegitcommit: d82c05aa814015fc6bdab37133eafec3366bea3b
+ms.openlocfilehash: e7134e060647153b5d525e9785139eb8c38f8569
+ms.sourcegitcommit: 6b2c77788a69f751fc7f5c18e678aa1fabf23ebb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34449689"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38952508"
 ---
 # <a name="microsoft-identity-manager-data-handling"></a>Microsoft Identity Manager 데이터 처리 
 
@@ -59,22 +59,22 @@ MIM Synchronization Service Manager 콘솔에서 이 사용자를 추적할 수 
 
 서비스 서버(포털 UI 없음)만 설치된 경우에는 [여기](https://social.technet.microsoft.com/wiki/contents/articles/22713.fim-portals-use-powershell-to-find-all-users-without-a-manager.aspx)에 있는 [FIMAutomation PSSnapin] 예제를 기반으로 검색 구문을 실행할 수 있습니다.
 
-PAM은 위의 동일한 구문을 사용하거나 [MIMPAM 모듈](https://docs.microsoft.com/en-us/powershell/module/mimpam/get-pamuser?view=idm-ps-2016sp1), 특히 get-pamuser cmdlet을 사용하여 PAM 환경 내에서 사용자를 검색할 수 있습니다.
+PAM은 위의 동일한 구문을 사용하거나 [MIMPAM 모듈](https://docs.microsoft.com/powershell/module/mimpam/get-pamuser?view=idm-ps-2016sp1), 특히 get-pamuser cmdlet을 사용하여 PAM 환경 내에서 사용자를 검색할 수 있습니다.
 
 사용 가능한 데이터를 검색하기 위한 기타 보고 옵션은 서비스 및 포털에 있습니다.
-- [하이브리드 보고](https://docs.microsoft.com/en-us/microsoft-identity-manager/identity-manager-hybrid-reporting-azure)
-- [SCSM으로 보고](https://docs.microsoft.com/en-us/previous-versions/mim/jj133853%28v%3dws.10%29)
+- [하이브리드 보고](https://docs.microsoft.com/microsoft-identity-manager/identity-manager-hybrid-reporting-azure)
+- [SCSM으로 보고](https://docs.microsoft.com/previous-versions/mim/jj133853%28v%3dws.10%29)
 
 ### <a name="bhold"></a>BHOLD
 Bhold 코어 서비스에는 사용자 또는 특성을 검색할 수 있는 UI가 있습니다. 
 
 ![bhold 검색](media/mim-privacy-compliance/mim-privacy-compliance-bhold.PNG)
 
-동기화 서비스를 위해 BHOLD를 [액세스 관리 커넥터](https://docs.microsoft.com/en-us/microsoft-identity-manager/bhold/bhold-access-management-connector-install)와 동기화하는 경우 연결된 사용자 개체와 BHOLD 코어로 전송하는 특성을 확인할 수 있습니다.
+동기화 서비스를 위해 BHOLD를 [액세스 관리 커넥터](https://docs.microsoft.com/microsoft-identity-manager/bhold/bhold-access-management-connector-install)와 동기화하는 경우 연결된 사용자 개체와 BHOLD 코어로 전송하는 특성을 확인할 수 있습니다.
 
 또한 BHOLD Reporting 모듈을 로드할 수 있습니다.
 
-- [BHOLD Reporting](https://docs.microsoft.com/en-us/microsoft-identity-manager/bhold/bhold-concepts-guide#reporting)
+- [BHOLD Reporting](https://docs.microsoft.com/microsoft-identity-manager/bhold/bhold-concepts-guide#reporting)
 
 ### <a name="certificate-management"></a>인증서 관리
 인증서 관리 서비스 검색은 UI에서 기본 제공됩니다. 관리자가 ‘사용자 찾기 및 해당 정보 보기 또는 관리’를 시작하고 선택합니다.  
@@ -89,9 +89,9 @@ MIM의 엔터티와 관련된 데이터가 여러 원본에서 파생되므로 �
 
 
 ### <a name="service-and-portal--pam"></a>서비스 및 포털/PAM
-이 데이터를 내보낼 수 있는 PAM과 함께 서비스 및 포털은 [여기](https://social.technet.microsoft.com/wiki/contents/articles/22713.fim-portals-use-powershell-to-find-all-users-without-a-manager.aspx)에 있는 [FIMAutomation PSSnapin], 예제를 기반으로 검색 구문을 실행하고 [csv](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/export-csv?view=powershell-6)에 파이프합니다.
+이 데이터를 내보낼 수 있는 PAM과 함께 서비스 및 포털은 [여기](https://social.technet.microsoft.com/wiki/contents/articles/22713.fim-portals-use-powershell-to-find-all-users-without-a-manager.aspx)에 있는 [FIMAutomation PSSnapin], 예제를 기반으로 검색 구문을 실행하고 [csv](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/export-csv?view=powershell-6)에 파이프합니다.
 
-PAM은 위의 동일한 구문을 사용하거나 [MIMPAM 모듈](https://docs.microsoft.com/en-us/powershell/module/mimpam/get-pamuser?view=idm-ps-2016sp1), 특히 get-pamuser를 사용하여 PAM 환경 내에서 사용자를 검색하고 csv에 파이프할 수 있습니다.
+PAM은 위의 동일한 구문을 사용하거나 [MIMPAM 모듈](https://docs.microsoft.com/powershell/module/mimpam/get-pamuser?view=idm-ps-2016sp1), 특히 get-pamuser를 사용하여 PAM 환경 내에서 사용자를 검색하고 csv에 파이프할 수 있습니다.
 
 - [PowerShell을 사용하여 MIM 서비스를 쿼리하는 예제](https://gallery.technet.microsoft.com/Querying-The-FIMMIM-dcb82de3)
 
@@ -107,14 +107,14 @@ MIM 솔루션의 사용자 또는 개체에 대한 개인 데이터는 일반적
 
 ### <a name="synchronization-service"></a>동기화 서비스
 
-관리 작업을 수행하려면 관리자가 [여기](https://docs.microsoft.com/en-us/previous-versions/mim/jj590183(v%3dws.10))에 정의된 동기화 작업 또는 관리에 속해야 합니다.
+관리 작업을 수행하려면 관리자가 [여기](https://docs.microsoft.com/previous-versions/mim/jj590183(v%3dws.10))에 정의된 동기화 작업 또는 관리에 속해야 합니다.
 
 데이터 업데이트는 인증 원본에서 규칙을 정의하여 수행됩니다. 관리 콘솔을 통해 원본에서 업데이트할 인증 원본을 식별할 수 있습니다. 다른 옵션은 동기화 규칙 또는 규칙 확장을 만들어 HR 데이터와 같은 원본을 유지해야 하는 경우 데이터 업데이트를 제어하는 것입니다. 이러한 옵션은 사용 가능한 지원 옵션입니다.
 
 특성을 업데이트하는 다른 방법에 대한 자세한 내용은 아래를 참조하세요. 
 
-- [Using Rules Extensions](https://msdn.microsoft.com/en-us/library/windows/desktop/ms698810(v=vs.100).aspx)(규칙 확장 사용)
-- [Understanding Data Synchronization with External Systems](https://docs.microsoft.com/en-us/previous-versions/mim/jj133850(v%3dws.10))(외부 시스템과 데이터 동기화 이해)
+- [Using Rules Extensions](https://msdn.microsoft.com/library/windows/desktop/ms698810(v=vs.100).aspx)(규칙 확장 사용)
+- [Understanding Data Synchronization with External Systems](https://docs.microsoft.com/previous-versions/mim/jj133850(v%3dws.10))(외부 시스템과 데이터 동기화 이해)
 
 ### <a name="service-and-portal--pam"></a>서비스 및 포털/PAM
 
@@ -139,8 +139,8 @@ MIM의 데이터가 동기화되고 연결된 데이터 원본에서 항상 업�
 동기화 서비스는 비즈니스 프로세스에 따라 데이터를 처리하거나 데이터를 삭제하는 여러 가지 방법을 제공합니다. 이해를 돕기 위해 다음은 특성 삭제 및 업데이트 옵션을 이해하는 데 도움이 되는 몇 가지 문서입니다. 
 
 - [Understanding Deprovisioning](https://social.technet.microsoft.com/wiki/contents/articles/1270.understanding-deprovisioning-in-fim.aspx)(프로비전 해제 이해)
-- [Using Rules Extensions](https://msdn.microsoft.com/en-us/library/windows/desktop/ms698810(v=vs.100).aspx)(규칙 확장 사용)
-- [MIM Best Practices](https://docs.microsoft.com/en-us/microsoft-identity-manager/mim-best-practices)(MIM 모범 사례)
+- [Using Rules Extensions](https://msdn.microsoft.com/library/windows/desktop/ms698810(v=vs.100).aspx)(규칙 확장 사용)
+- [MIM Best Practices](https://docs.microsoft.com/microsoft-identity-manager/mim-best-practices)(MIM 모범 사례)
 
 ### <a name="service-and-portal--pam"></a>서비스 및 포털/PAM
 
@@ -177,6 +177,6 @@ CM에서 사용자를 제거하려면 Active Directory에서 사용자를 삭제
 ![mim-privacy-compliance-ceip2.PNG](media/mim-privacy-compliance/mim-privacy-compliance-ceip2.PNG)
 
 ## <a name="next-steps"></a>다음 단계 
-- [SQL 관련 개인 정보 취급 방침 관련 지침](https://docs.microsoft.com/en-us/sql/relational-databases/security/microsoft-sql-and-the-gdpr-requirements?view=sql-server-2017)
+- [SQL 관련 개인 정보 취급 방침 관련 지침](https://docs.microsoft.com/sql/relational-databases/security/microsoft-sql-and-the-gdpr-requirements?view=sql-server-2017)
 - [Service Trust Portal의 GDPR 섹션](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
 - [FIM 2010 Archive: Ramp Up - Implementing Forefront Identity Manager 2010](https://social.technet.microsoft.com/wiki/contents/articles/35789.fim-2010-archive-ramp-up-implementing-forefront-identity-manager-2010.aspx)(FIM 2010 보관: 확장 - Forefront Identity Manager 2010 구현)

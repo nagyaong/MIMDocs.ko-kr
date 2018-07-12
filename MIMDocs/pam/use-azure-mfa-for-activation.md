@@ -2,27 +2,25 @@
 title: Azure MFA를 사용하여 PAM 활성화 | Microsoft 문서
 description: 사용자가 Privileged Access Management에서 역할을 활성화할 때 Azure MFA를 제2의 보안 계층으로 설정합니다.
 keywords: ''
-author: barclayn
-ms.author: fimguy
-manager: mbaldwin
-ms.date: 11/14/2017
+author: billmath
+ms.author: billmath
+ms.reviewer: fimguy
+manager: mtillman
+ms.date: 07/06/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
-ms.reviewer: mwahl
-ms.suite: ems
-ms.openlocfilehash: 30e683a0bd13d911f73eca19c847a2c9cd10f36d
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: ad47de279dd18239ff55d89c1b717ccafe16374f
+ms.sourcegitcommit: 0b6cb02d1d6e0d821b00c17090622ba354252188
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289832"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895506"
 ---
 # <a name="using-azure-mfa-for-activation"></a>활성화에 Azure MFA 사용
 > [!IMPORTANT]
-> Azure Multi-Factor Authentication 소프트웨어 개발 키트의 사용 중단 알림 때문입니다. Azure MFA SDK는 기존 고객을 위해 사용 중지 날짜인 2018년 11월 14일까지 지원됩니다. 새 고객과 현재 고객은 더 이상 Azure 클래식 포털을 통해 SDK를 다운로드할 수 없게 됩니다. 다운로드하려면 Azure 고객 지원에 문의하여 생성된 MFA 서비스 자격 증명 패키지를 받아야 합니다. <br> Microsoft 개발 팀은 MFA 서버 SDK와 통합하여 MFA에 적용할 변경 사항을 계획하고 있습니다. 이는 2018년 초에 나올 핫픽스에 포함될 예정입니다.
-
+> Azure Multi-Factor Authentication 소프트웨어 개발 키트의 사용 중단 알림 때문입니다. Azure MFA SDK는 기존 고객을 위해 사용 중지 날짜인 2018년 11월 14일까지 지원됩니다. 새 고객과 현재 고객은 더 이상 Azure 클래식 포털을 통해 SDK를 다운로드할 수 없게 됩니다. 다운로드하려면 Azure 고객 지원에 문의하여 생성된 MFA 서비스 자격 증명 패키지를 받아야 합니다. <br> Microsoft 개발 팀은 MFA 서버 SDK와 통합하여 MFA에 대한 변경을 진행하고 있습니다.  이 변경 사항은 향후 핫픽스에 포함될 예정이며, 공지 사항은 [버전 기록](/reference/version-history.md)을 참조하세요. 
 
 
 PAM 역할을 구성할 때 역할 활성화를 요청하는 사용자에게 권한을 부여하는 방법을 선택할 수 있습니다. PAM 권한 부여 활동을 구현하는 선택 사항:
