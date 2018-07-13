@@ -163,15 +163,15 @@ Windows 도메인 컨트롤러의 Fist 단계
 
 4.  MIM 서비스의 관리자 권한 MSI를 실행하고 [변경]을 선택합니다.
 
-5.  “Configure main server connection”(주 서버 연결 구성 페이지) 페이지에서 “Use different account for Exchange (for managed accounts)”(Exchange에 다른 계정 사용(관리되는 계정의 경우)) 확인란을 선택합니다. 여기에서 사서함이 있는 이전 계정을 사용하거나 클라우드 사서함을 사용하는 옵션이 있습니다.
+5.  “Configure main server connection”(주 서버 연결 구성) 페이지에서 “Use different account for Exchange (for managed accounts)”(Exchange에 다른 계정 사용(관리되는 계정의 경우)) 확인란을 선택합니다. 여기에서 사서함이 있는 이전 계정을 사용하거나 클라우드 사서함을 사용하는 옵션이 있습니다.
 
 ![](media/0cd8ce521ed7945c43bef6100f8eb222.png)
 
-6.  “Configure MIM Service account”(MIM 서비스 계정 구성) 페이지에서 끝에 \$ 기호를 포함하여 서비스 계정을 입력합니다. 서비스 메일 계정 암호도 입력합니다. 서비스 계정 암호는 사용하지 않도록 설정해야 합니다.
+6.  “Configure MIM Service account”(MIM 서비스 계정 구성) 페이지에서 끝에 \$ 기호를 포함하여 서비스 계정을 입력합니다. 서비스 메일 계정 암호도 입력합니다. 서비스 계정 암호는 비활성화되어 있어야 합니다.
 
 ![](media/db0d543df6e1b0174a47135617c23fcb.png)
 
-7.  LogonUser 함수는 관리되는 계정에 대해 작동하지 않으므로 다음 페이지에서 “Please check if Service Account is secure in its current configuration”(서비스 계정이 현재 구성에서 안전한지 확인하세요.)이라는 경고가 표시됩니다.
+7.  LogonUser 기능이 관리되는 계정에 대해 작동하지 않으므로 다음 페이지에서 “Please check if Service Account is secure in its current configuration”(서비스 계정이 현재 구성에서 안전한지 확인하세요.)이라는 경고가 표시됩니다.
 
 ![cid:image007.png\@01D36EB7.562E6CF0](media/d350bc13751b2d0a884620db072ed019.png)
 
