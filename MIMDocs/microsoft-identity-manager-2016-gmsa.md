@@ -48,7 +48,7 @@ ms.locfileid: "37065145"
 
 -   <https://technet.microsoft.com/en-us/library/jj128430(v=ws.11).aspx>
 
-Windows 도메인 컨트롤러의 Fist 단계
+Windows 도메인 컨트롤러의 첫 번째 단계
 
 1.  필요한 경우, KDS(키 배포 서비스) 루트 키를 도메인당 한 개만 만듭니다. 루트 키는 DC의 KDS 서비스에서 다른 정보와 함께 사용하여 암호를 생성합니다.
 
@@ -61,7 +61,7 @@ Windows 도메인 컨트롤러의 Fist 단계
 ## <a name="synchronization-service"></a>동기화 서비스
 -----------------------
 
-1.  Fist 단계에서는 그룹 호출 “MIMSync_Servers”를 만들고 모든 동기화 서버를 이 그룹에 추가합니다.
+1.  첫 번째 단계에서는 그룹 호출 “MIMSync_Servers”를 만들고 모든 동기화 서버를 이 그룹에 추가합니다.
 
 ![](media/a4dc3f6c0cb1f715ba690744f54dce5c.png)
 
