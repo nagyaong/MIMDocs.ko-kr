@@ -116,7 +116,7 @@ MIM 2016 및 인증서 관리자를 실행한 후에 MIM 인증서 관리자 Win
 
    |                     |                                                                                                                                                                                                          |
    |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |      MIMCM URL      |                                              CM을 구성하는 데 사용한 포털의 FQDN입니다. https://mimcmServerAddress/certificatemanagement).                                              |
+   |      MIMCM URL      |                                              CM을 구성하는 데 사용한 포털의 FQDN입니다. 예, https://mimcmServerAddress/certificatemanagement                                               |
    |      ADFS URL       | AD FS를 사용하려는 경우 AD FS URL을 삽입합니다. <https://adfsServerSame/adfs>). </br> ADFS를 사용하지 않는 경우 이 설정이 빈 문자열로 구성합니다.  예: ```<ADFS URL=""/>``` |
    |     PrivacyUrl      |                                         인증서 등록을 위해 수집한 사용자 세부 정보로 수행할 작업을 설명하는 웹 페이지에 대한 URL을 포함할 수 있습니다.                                          |
    |     SupportMail     |                                                                           지원 문제에 대한 메일 주소를 포함할 수 있습니다.                                                                           |

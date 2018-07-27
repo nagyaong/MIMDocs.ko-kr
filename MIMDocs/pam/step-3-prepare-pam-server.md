@@ -205,7 +205,7 @@ SharePoint 제품 구성 마법사를 실행하여 SharePoint를 구성합니다
 ## <a name="set-the-website-as-the-local-intranet"></a>로컬 인트라넷으로 웹 사이트 설정
 
 1. Internet Explorer를 시작하고 새 웹 브라우저 탭 열기
-2. http://pamsrv.priv.contoso.local:82/로 이동하여 PRIV\MIMAdmin으로 로그인합니다.  "MIM 포털"이라는 빈 SharePoint 사이트가 나타납니다.  
+2. http://pamsrv.priv.contoso.local:82/ 로 이동하여 PRIV\MIMAdmin으로 로그인합니다.  "MIM 포털"이라는 빈 SharePoint 사이트가 나타납니다.  
 3. Internet Explorer에서 **인터넷 옵션**을 열고 **보안** 탭으로 변경한 후 **로컬 인트라넷**을 선택한 다음 URL `http://pamsrv.priv.contoso.local:82/`를 추가합니다.
 
 로그인이 실패하는 경우 [2단계](step-2-prepare-priv-domain-controller.md) 앞부분에서 만든 Kerberos SPN을 업데이트해야 할 수 있습니다.
