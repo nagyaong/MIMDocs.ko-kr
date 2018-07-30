@@ -8,12 +8,12 @@ ms.date: 06/27/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.openlocfilehash: 090e82cac6c734beb9767e2d2e6230320e44c26f
-ms.sourcegitcommit: c6cb2556bb9f2256b959a3c95db7ca5bbfc2b437
+ms.openlocfilehash: ca1dacdd32a025bc08c00bde6088d85d6444be99
+ms.sourcegitcommit: 8b2623f6247621098d386cbe84e10b5b5373abfb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065145"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39149916"
 ---
 # <a name="conversion-of-mim-specific-services-to-gmsa"></a>MIM 특정 서비스를 gMSA로 변환
 
@@ -61,7 +61,7 @@ Windows 도메인 컨트롤러의 첫 번째 단계
 ## <a name="synchronization-service"></a>동기화 서비스
 -----------------------
 
-1.  첫 번째 단계에서는 그룹 호출 “MIMSync_Servers”를 만들고 모든 동기화 서버를 이 그룹에 추가합니다.
+1.  “MIMSync_Servers”라는 그룹을 만들고 모든 동기화 서버를 이 그룹에 추가합니다.
 
 ![](media/a4dc3f6c0cb1f715ba690744f54dce5c.png)
 
