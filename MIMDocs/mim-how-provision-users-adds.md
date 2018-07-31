@@ -98,9 +98,9 @@ ID 관리 시스템에 대한 기본 요구 사항 중 하나는 외부 시스�
 
 | ![조직 구성 단위](media/how-provision-users-adds/image005.jpg)   | 조직 구성 단위                | MIM 개체 – 프로비전된 사용자를 대상으로 사용되는 조직 구성 단위(OU)                                                       |
 |----------------------------------------|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![사용자 계정](media/how-provision-users-adds/image006.jpg)   | 사용자 계정                      | & #183; **ADMA** – AD DS에 연결할 수 있는 충분한 권한을 보유한 Active Directory 사용자 계정<br/> & #183; **FIMMA** - MIM에 연결할 수 있는 충분한 권한을 보유한 Active Directory 사용자 계정
+| ![사용자 계정](media/how-provision-users-adds/image006.jpg)   | 사용자 계정                      | &#183; **ADMA** – AD DS에 연결할 수 있는 충분한 권한을 보유한 Active Directory 사용자 계정<br/> &#183; **FIMMA** - MIM에 연결할 수 있는 충분한 권한을 보유한 Active Directory 사용자 계정
                                                                  |
-| ![관리 에이전트 및 실행 프로필](media/how-provision-users-adds/image007.jpg)  | 관리 에이전트 및 실행 프로필 | & #183; **Fabrikam ADMA** – AD DS를 사용하여 데이터를 교환하는 관리 에이전트 <br/> & #183; Fabrikam FIMMA - MIM을 사용하여 데이터를 교환하는 관리 에이전트                                                                                 |
+| ![관리 에이전트 및 실행 프로필](media/how-provision-users-adds/image007.jpg)  | 관리 에이전트 및 실행 프로필 | &#183; **Fabrikam ADMA** – AD DS를 사용하여 데이터를 교환하는 관리 에이전트 <br/> &#183; Fabrikam FIMMA - MIM을 사용하여 데이터를 교환하는 관리 에이전트                                                                                 |
 | ![동기화 규칙](media/how-provision-users-adds/image008.jpg)  | 동기화 규칙              | Fabrikam 그룹 아웃바운드 동기화 규칙 – AD DS에 사용자를 프로비전하는 아웃바운드 동기화 규칙                                     |
 | ![설정](media/how-provision-users-adds/image009.jpg)   | 설정                               | 모든 계약자 – 계약자 EmployeeType 특성 값을 사용하여 모든 개체에 대한 동적 멤버 자격을 설정                                |
 | ![워크플로](media/how-provision-users-adds/image010.jpg)  | 워크플로                          | AD 프로비전 워크플로 - AD 아웃바운드 동기화 규칙의 범위에 MIM 사용자를 가져오는 워크플로                                |
