@@ -316,7 +316,7 @@ SSL을 구현하려면
 
 7.  파일을 아무 위치에나 저장합니다. 이후 단계에서 이 위치에 액세스해야 합니다.
 
-8.  https://servername/certsrv을 찾아봅니다. servername을 인증서를 발급하는 서버의 이름으로 바꿉니다.
+8.  을 찾아봅니다 https://servername/certsrv. servername을 인증서를 발급하는 서버의 이름으로 바꿉니다.
 
 9.  [새 인증서 요청]을 클릭합니다.
 
@@ -358,10 +358,9 @@ SSL을 구현하려면
 
 28. [작업을] 클릭하고 [대체 액세스 매핑]을 클릭합니다.
 
-29. 
-          http://servername을 클릭합니다.
+29. 을 클릭합니다 http://servername 
 
-30. http://servername을 https://servername으로 변경한 다음, [확인]을 클릭합니다.
+30. 변화 http://servername을 https://servername으로 변경한 다음, [확인]을 클릭합니다.
 
 31. [시작]을 클릭하고, [실행]을 클릭한 후 iisreset을 입력한 후 [확인]을 클릭합니다.
 
