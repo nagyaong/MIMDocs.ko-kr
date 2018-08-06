@@ -60,7 +60,7 @@ MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니�
 
 7. MIM 서비스 서버 주소를 *PAMSRV*로 설정합니다.
 
-8. SharePoint 사이트 모음 URL로 *http://pamsrv.priv.contoso.local:82*를 지정합니다.
+8. SharePoint 사이트 모음 URL로 *http://pamsrv.priv.contoso.local:82* 를 지정합니다.
 
 9. 등록 포털 URL은 비워 둡니다.
 
