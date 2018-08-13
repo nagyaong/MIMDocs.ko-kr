@@ -69,11 +69,11 @@ ms.locfileid: "36289519"
 
 12. MIM 포털에 대한 MIM 서비스 서버 주소를 *CORPIDM*(이 컴퓨터의 이름)으로 지정합니다.
 
-13. SharePoint 사이트 모음 URL로 *http://mim.contoso.com*을 지정합니다.
+13. SharePoint 사이트 모음 URL로 *http://mim.contoso.com* 을 지정합니다.
 
-14. 암호 등록 URL 포트 80으로 *http://passwordregistration.contoso.com*을 지정하고, 나중에 443에서 SSL 인증서로 업데이트하는 것이 좋습니다.
+14. 암호 등록 URL 포트 80으로 *http://passwordregistration.contoso.com* 을 지정하고, 나중에 443에서 SSL 인증서로 업데이트하는 것이 좋습니다.
 
-15. 암호 재설정 URL 포트 80으로 *http://passwordreset.contoso.com*을 지정하고, 나중에 443에서 SSL 인증서로 업데이트하는 것이 좋습니다.
+15. 암호 재설정 URL 포트 80으로 *http://passwordreset.contoso.com* 을 지정하고, 나중에 443에서 SSL 인증서로 업데이트하는 것이 좋습니다.
 
 16. 방화벽에서 포트 5725 및 5726 열기에 대한 확인란 및 MIM 포털에 대해 모든 인증된 사용자 액세스 권한 부여에 대한 확인란을 선택합니다.
 
@@ -107,7 +107,7 @@ ms.locfileid: "36289519"
 
 설치가 완료된 후 MIM 포털이 활성화되었는지 확인합니다.
 
-1. Internet Explorer를 시작하고 *http://mim.contoso.com/identitymanagement*에서 MIM 포털에 연결합니다. 이 페이지를 처음 방문할 때 약간 시간이 걸릴 수 있습니다.
+1. Internet Explorer를 시작하고 *http://mim.contoso.com/identitymanagement* 에서 MIM 포털에 연결합니다. 이 페이지를 처음 방문할 때 약간 시간이 걸릴 수 있습니다.
 
     - 필요한 경우 *contoso\miminstall*로 Internet Explorer에 인증합니다.
 
