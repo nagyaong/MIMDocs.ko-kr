@@ -1,37 +1,48 @@
 ---
-title: 셀프 서비스 암호 재설정 작업 포털 | Microsoft 문서
+title: 셀프 서비스 암호 재설정 사용 | Microsoft Docs
 description: SSPR이 다단계 인증과 함께 작동하는 방식을 포함하여 MIM 2016 셀프 서비스 암호 재설정의 새로운 기능을 확인합니다.
 keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
-ms.reviewer: davidste
-ms.date: 06/26/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: b1b30b744a5f735512f31d98184a561ce3f9b047
-ms.sourcegitcommit: 03617b441135a55b664e0d81cce4d17541bee93b
+ms.openlocfilehash: a7314aaf559836fb77b32ae191527917c4854417
+ms.sourcegitcommit: acb2c61831cb634278acc439d6d9496ff51a6a54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36963378"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43694625"
 ---
-# <a name="working-with-self-service-password-reset"></a>셀프 서비스 암호 재설정 작업
+# <a name="self-service-password-reset-deployment-options"></a>셀프 서비스 암호 재설정 배포 옵션
 
-> [!IMPORTANT]
-> Azure Multi-Factor Authentication 소프트웨어 개발 키트의 사용 중단 알림 때문입니다. Azure MFA SDK는 기존 고객을 위해 사용 중지 날짜인 2018년 11월 14일까지 지원됩니다. 새 고객과 현재 고객은 더 이상 Azure 클래식 포털을 통해 SDK를 다운로드할 수 없게 됩니다. 다운로드하려면 Azure 고객 지원에 문의하여 생성된 MFA 서비스 자격 증명 패키지를 받아야 합니다. <br> Microsoft 개발 팀은 MFA 서버 SDK와 통합하여 MFA에 대한 변경을 진행하고 있습니다.  이 변경 사항은 향후 핫픽스에 포함될 예정이며, 공지 사항은 [버전 기록](/reference/version-history.md)을 참조하세요.
+[Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-licensing)에 대한 라이선스가 있는 신규 고객의 경우 [Azure AD 셀프 서비스 암호 재설정](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-howitworks.md)을 사용하여 최종 사용자 환경을 제공하는 것이 좋습니다.  Azure AD 셀프 서비스 암호 재설정은 사용자가 자신의 암호를 재설정할 수 있도록 웹 기반 및 Windows 통합 환경을 제공하며 대체 이메일 및 Q&A 게이트와 같은 MIM과 동일한 기능을 대부분 지원합니다.  Azure AD 셀프 서비스 암호 재설정을 배포할 때 Azure AD Connect는 [새 암호를 AD DS에 다시 쓰는 것](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-writeback.md)을 지원하고 MIM [암호 변경 알림 서비스](deploying-mim-password-change-notification-service-on-domain-controller.md)를 사용하여 암호를 다른 시스템(예: 다른 공급업체의 디렉터리 서버)에도 전달할 수 있습니다.  [암호 관리](infrastructure/mim2016-password-management.md)를 위한 MIM 배포를 위해서 MIM 서비스 또는 MIM 셀프 서비스 암호 재설정이 필요하지 않으며 등록 포털을 배포하지 않아도 됩니다.  대신, 다음 단계를 수행하세요.
 
-Microsoft Identity Manager 2016에서는 셀프 서비스 암호 재설정 기능에 대한 추가 기능을 제공합니다. 다음과 같은 여러 중요한 기능이 포함되어 이 기능이 향상되었습니다.
+- 먼저, Azure AD 및 AD DS가 아닌 다른 디렉터리에 암호를 보내야 하는 경우 Active Directory Domain Services 및 추가 대상 시스템에 대한 커넥터가 있는 MIM 동기화를 배포하고 [암호 관리](infrastructure/mim2016-password-management.md)를 위한 MIM을 구성한 다음, [암호 변경 알림 서비스](deploying-mim-password-change-notification-service-on-domain-controller.md)를 배포합니다.
+- 그런 다음, Azure AD가 아닌 디렉터리에 암호를 보내야 하는 경우 [새 암호를 AD DS에 다시 쓰기](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-writeback.md) 위한 Azure AD Connect를 구성합니다.
+- 필요에 따라 [사용자를 미리 등록](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-authenticationdata.md)합니다.
+- 마지막으로, [Azure AD 셀프 서비스 암호 재설정을 최종 사용자에게 롤아웃](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment.md)합니다.
 
--   이제 사용자는 셀프 서비스 암호 재설정 포털 및 Windows 로그인 화면에서 암호를 변경하거나 지원 관리자에게 문의하지 않고도 계정의 잠금을 해제할 수 있습니다. 사용자는 이전 암호를 입력하거나, 두 가지 언어를 사용하는 컴퓨터에서 키보드를 잘못된 언어로 설정하거나, 다른 누군가의 계정에 대해 이미 열려 있는 공유 워크스테이션에 로그인하려고 시도하는 등의 여러 가지 합법적인 이유로 인해 계정이 잠기게 됩니다.
+이전에 셀프 서비스 암호 재설정을 위해 FIM(Forefront Identity Manager)을 배포했고 Azure Active Directory Premium에 대한 라이선스가 있는 기존 고객이라면  Azure AD 셀프 서비스 암호 재설정으로 전환을 계획하는 것이 좋습니다.  [사용자의 보조 이메일 또는 휴대폰 번호를 PowerShell을 통해 동기화하거나 설정](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-authenticationdata.md)하여 최종 사용자를 다시 등록할 필요 없이 Azure AD 셀프 서비스 암호 재설정으로 전환할 수 있습니다. 사용자가 Azure AD 셀프 서비스 암호 재설정에 등록되면 FIM 암호 재설정 포털을 서비스 해제할 수 있습니다.
 
--   새 인증 게이트인 전화 게이트가 추가되었습니다. 이 게이트를 사용하면 전화 통화로 사용자 인증을 수행할 수 있습니다.
+해당 사용자에 대해 Azure AD 셀프 서비스 암호 재설정을 아직 배포하지 않은 고객의 경우 MIM은 셀프 서비스 암호 재설정 포털도 제공합니다.  FIM과는 달리, MIM 2016은 다음과 같이 변경되었습니다.
 
--   Microsoft Azure MFA(Multi-Factor Authentication) 서비스에 대한 지원이 추가되었습니다. 이 서비스는 기존의 SMS 일회용 암호 게이트 또는 새 전화 게이트에 사용할 수 있습니다.
+- 사용자는 MIM 셀프 서비스 암호 재설정 포털 및 Windows 로그인 화면에서 암호를 변경하지 않고도 계정의 잠금을 해제할 수 있습니다.
+- 새 인증 게이트인 전화 게이트가 MIM에 추가되었습니다. 따라서 MFA(Microsoft Azure Multi-Factor Authentication) 서비스를 통해 전화를 통한 사용자 인증을 수행할 수 있습니다.
 
-## <a name="azure-for-multi-factor-authentication"></a>다단계 인증을 위한 Azure
+MIM 2016 릴리스 빌드 버전 4.5.26.0까지는 고객이 Azure MFA SDK(Azure Multi-Factor Authentication 소프트웨어 개발 키트)를 다운로드해야 합니다.  해당 SDK는 더 이상 사용되지 않으며 Azure MFA SDK는 기존 고객을 위해 사용 중지 날짜인 2018년 11월 14일까지 지원됩니다. 그때까지 고객은 Azure MFA SDK를 다운로드할 수 없으므로 생성된 MFA 서비스 자격 증명 패키지를 받으려면 Azure 고객 지원팀에 문의해야 합니다. 
+
+#### <a name="new-update-current-azure-mfa-configuration-to-azure-multi-factor-authentication-server"></a>새 기능! 현재 Azure MFA 구성을 Azure Multi-Factor Authentication 서버로 업데이트
+
+이 [문서](working-with-mfaserver-for-mim.md)에서는 다단계 인증에 Azure Multi-Factor Authentication 서버를 사용하여 배포 MIM 셀프 서비스 암호 재설정 포털 및 PAM 구성을 업데이트하는 방법에 대해 설명합니다.
+
+## <a name="deploying-mim-self-service-password-reset-portal-using-azure-mfa-for-multi-factor-authentication"></a>Multi-Factor Authentication에 Azure MFA를 사용하여 MIM 셀프 서비스 암호 재설정 포털 배포
+
+다음 섹션에서는 다단계 인증에 Azure MFA를 사용하여 MIM 셀프 서비스 암호 재설정 포털을 배포하는 방법에 대해 설명합니다.  이러한 단계는 사용자에게 Azure AD 셀프 서비스 암호 재설정을 사용하지 않는 고객에게만 필요합니다.
+
 Microsoft Azure Multi-Factor Authentication은 사용자가 모바일 앱, 전화 통화 또는 문자 메시지를 사용하여 로그인 시도를 확인해야 하는 인증 서비스입니다. Microsoft Azure Active Directory와 함께 사용할 수 있으며 클라우드 및 온-프레미스 엔터프라이즈 응용 프로그램을 위한 서비스로 사용할 수 있습니다.
 
 Azure MFA는 셀프 서비스 로그인 지원을 위해 MIM에서 수행하는 메커니즘처럼, 기존 인증 프로세스를 강화할 수 있는 추가 인증 메커니즘을 제공합니다.
@@ -39,7 +50,8 @@ Azure MFA는 셀프 서비스 로그인 지원을 위해 MIM에서 수행하는 
 Azure MFA를 사용하는 경우 사용자가 해당 계정 및 리소스에 대한 액세스 권한을 다시 얻으려고 시도할 때 해당 ID를 확인하기 위해 시스템을 인증합니다. SMS 또는 전화 통화를 통해 인증할 수 있습니다.   인증이 강력할수록 액세스 권한을 얻으려는 사용자가 ID를 소유하는 실제 사용자일 신뢰성도 높아집니다. 인증되고 나면 사용자는 새 암호를 선택하여 이전 암호를 바꿀 수 있습니다.
 
 ## <a name="prerequisites-to-set-up-self-service-account-unlock-and-password-reset-using-mfa"></a>MFA를 사용하여 셀프 서비스 계정 잠금 해제 및 암호 재설정을 설정하기 위한 필수 구성 요소
-이 섹션에서는 다음 구성 요소 및 서비스를 포함하여 Microsoft Identity Manager 2016을 다운로드하고 배포를 완료했다고 가정합니다.
+
+이 섹션에서는 다음 구성 요소 및 서비스를 포함하여 Microsoft Identity Manager 2016 [MIM 동기화, MIM 서비스 및 MIM 포털 구성 요소](microsoft-identity-manager-deploy.md)를 다운로드하고 배포를 완료했다고 가정합니다.
 
 -   Windows Server 2008 R2 이상이 지정된 도메인(“corporate”도메인)과 함께 AD 도메인 서비스 및 도메인 컨트롤러를 포함하는 Active Directory 서버로 설정되었습니다.
 
@@ -59,42 +71,20 @@ Azure MFA를 사용하는 경우 사용자가 해당 계정 및 리소스에 대
 
 -   SSPR Windows 로그인 통합 클라이언트를 포함하는 MIM 2016 추가 기능 &amp; 확장이 서버 또는 별도 클라이언트 컴퓨터에 배포됩니다.
 
+이 시나리오에서는 사용자에 대한 MIM CAL과 Azure MFA에 대한 구독이 있어야 합니다.
+
 ## <a name="prepare-mim-to-work-with-multi-factor-authentication"></a>다단계 인증과 함께 작동하도록 MIM 준비
 암호 재설정 및 계정 잠금 해제 기능을 지원하도록 MIM 동기화를 구성합니다. 자세한 내용은 [FIM 추가 기능 및 확장 설치](https://technet.microsoft.com/library/ff512688%28v=ws.10%29.aspx), [FIM SSPR 설치](https://technet.microsoft.com/library/hh322891%28v=ws.10%29.aspx), [SSPR 인증 게이트](https://technet.microsoft.com/library/jj134288%28v=ws.10%29.aspx) 및 [SSPR 테스트 랩 가이드](https://technet.microsoft.com/library/hh826057%28v=ws.10%29.aspx)를 참조하세요.
 
-다음 섹션에서는 Microsoft Azure Active Directory에 Azure MFA 공급자를 설정합니다. 또한 Azure MFA에 연결하기 위해 MFA에서 필요로 하는 인증 자료가 포함된 파일을 생성합니다.  계속 진행하려면 Azure 구독이 필요합니다.
+다음 섹션에서는 Microsoft Azure Active Directory에 Azure MFA 공급자를 설정합니다. 이 작업 중에는 Azure MFA에 연결하기 위해 MFA에서 필요로 하는 인증 자료를 포함하는 파일을 생성합니다.  계속 진행하려면 Azure 구독이 필요합니다.
 
 ### <a name="register-your-multi-factor-authentication-provider-in-azure"></a>Azure에서 다단계 인증 공급자 등록
 
-1.  [MFA 공급자](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider)를 만듭니다.
+1.  [MFA 공급자](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider.md)를 만듭니다.
 
 2. 지원 사례를 열고 ASP.net 2.0 C#에 대한 직접 SDK를 요청합니다. 직접 SDK는 더 이상 사용되지 않으므로 SDK는 MFA를 통해 MIM의 현재 사용자에게만 제공됩니다. 새 고객은 MFA 서버와 통합될 MIM의 다음 버전을 채택해야 합니다.
 
-3.  **앱 서비스 &gt; Active Directory &gt; 다단계 인증 공급자 &gt; 빨리 만들기**를 클릭합니다.
-
-![Azure Portal MFA 빨리 만들기 이미지](media/MIM-SSPR-Azureportal.png)
-
-4.  **이름** 필드에 **SSPRMFA** 를 입력하고 **만들기**를 클릭합니다.
-
-![Azure 포털 MFA 이미지](media/MIM-SSPR-Azureportal-2.png)
-
-5.  Azure 클래식 포털 메뉴에서 **Active Directory** 를 클릭한 다음 **다단계 인증 공급자** 탭을 클릭합니다.
-
-6.  **SSPRMFA** 를 클릭하고 화면 맨 아래에서 **관리** 를 클릭합니다.
-
-    ![Azure 포털 관리 아이콘](media/MIM-SSPR-ManageButton.png)
-
-7.  새 창의 왼쪽 패널에서 **구성** 아래에 있는 **설정**을 클릭합니다.
-
-8.  **사기 경고** 아래에서 **사기 행위가 보고되면 사용자 차단을 선택 취소합니다. 확인란을 선택 취소하면 전체 서비스 차단이 방지됩니다.
-
-9. **Azure Multi-Factor Authentication** 창이 열리면 왼쪽 메뉴의 **다운로드** 아래에 있는 **SDK** 를 클릭합니다.
-
-10. 언어가 **SDK for ASP.net 2.0 C#** 인 파일의 경우 ZIP 열에서 **다운로드** 링크를 클릭합니다.
-
-    ![Azure MFA zip 파일 다운로드 이미지](media/MIM-SSPR-Azure-MFA.png)
-
-11. 결과 ZIP 파일을 MIM 서비스가 설치되는 각 시스템에 복사합니다.  이 ZIP 파일에는 Azure MFA 서비스에 인증하는 데 사용되는 키 관련 자료가 들어있습니다.
+3. 결과 ZIP 파일을 MIM 서비스가 설치되는 각 시스템에 복사합니다.  이 ZIP 파일에는 Azure MFA 서비스에 인증하는 데 사용되는 키 관련 자료가 들어있습니다.
 
 ### <a name="update-the-configuration-file"></a>구성 파일 업데이트
 
@@ -118,13 +108,13 @@ Azure MFA를 사용하는 경우 사용자가 해당 계정 및 리소스에 대
 
 9. `<username>` 요소에 사용자 이름을 입력합니다.
 
-10. `<DefaultCountryCode>` 요소에 기본 국가 코드를 입력합니다. 국가 코드가 없는 사용자에 대해 전화 번호가 등록된 경우 사용자는 이 국가 코드를 받게 됩니다. 사용자가 국제 국가 코드를 사용하는 경우 등록된 전화 번호에 이 코드가 포함되어야 합니다.
+10. `<DefaultCountryCode>` 요소에 기본 국가 코드를 입력합니다. 국가 코드가 없는 사용자에 대해 전화 번호가 등록된 경우 이 국가 코드를 받게 됩니다. 사용자가 국제 국가 코드를 사용하는 경우 등록된 전화 번호에 이 코드가 포함되어야 합니다.
 
 11. MfaSettings.xml 파일을 동일한 위치에 동일한 이름으로 저장합니다.
 
 #### <a name="configure-the-phone-gate-or-the-one-time-password-sms-gate"></a>전화 게이트 또는 일회용 암호 SMS 게이트 구성
 
-1.  Internet Explorer를 시작하고 MIM 포털로 이동하여 MIM 관리자로 인증한 다음, 왼쪽 탐색 모음에서 **워크플로**를 클릭합니다.
+1.  Internet Explorer를 시작하고 MIM 포털로 이동하여 MIM 관리자로 인증한 다음, 왼쪽 탐색 모음에서  **워크플로** 를 클릭합니다.
 
     ![MIM 포털 탐색 이미지](media/MIM-SSPR-workflow.jpg)
 
@@ -157,7 +147,7 @@ Azure MFA를 사용하는 경우 사용자가 해당 계정 및 리소스에 대
 
 사용자는 조직 네트워크를 통해 MIM 서비스에 연결된 도메인 가입 컴퓨터에 MIM 추가 기능 및 확장을 설치하여 데스크톱 로그인 환경에서 잊은 암호를 복구할 수 있습니다.  다음 단계는 이 프로세스에 관한 것입니다.
 
-#### <a name="windows-desktop-login-integrated-password-reset"></a>Windows 데스크톱 로그인 통합 암호 재설정
+#### <a name="windows-desktop-login-integrated-password-reset"></a>Windows 데스크톱 로그인과 암호 재설정의 통합
 
 1.  사용자가 잘못된 암호를 여러 번 입력하는 경우, 로그인 화면에 **Problems logging in?** (로그인에 문제가 있나요?)를 클릭하는 옵션이 표시됩니다. .
 
@@ -169,7 +159,7 @@ Azure MFA를 사용하는 경우 사용자가 해당 계정 및 리소스에 대
 
 2.  인증이 진행됩니다. MFA가 구성된 경우 사용자는 전화를 받게 됩니다.
 
-3.  Azure MFA에서 사용자가 서비스에 등록할 때 입력한 번호로 전화를 거는 작업이 백그라운드에서 이루어집니다.
+3.  Azure MFA에서 사용자가 서비스에 등록할 때 입력한 전화 번호로 전화를 거는 작업이 백그라운드에서 이루어집니다.
 
 4.  사용자가 전화를 받으면 우물정자(#)를 누르라는 안내가 나옵니다. 그런 다음 사용자가 포털에서 **다음** 을 클릭합니다.
 
@@ -186,7 +176,7 @@ Azure MFA를 사용하는 경우 사용자가 해당 계정 및 리소스에 대
 
 1.  사용자가 웹 브라우저를 열고, **암호 재설정 포털** 로 이동하고, 사용자 이름을 입력한 후, **다음**을 클릭합니다.
 
-    MFA가 구성된 경우 사용자는 전화를 받게 됩니다. Azure MFA에서 사용자가 서비스에 등록할 때 입력한 번호로 전화를 거는 작업이 백그라운드에서 이루어집니다.
+    MFA가 구성된 경우 사용자는 전화를 받게 됩니다. Azure MFA에서 사용자가 서비스에 등록할 때 입력한 전화 번호로 전화를 거는 작업이 백그라운드에서 이루어집니다.
 
     사용자가 전화를 받으면 우물정자(#)를 누르라는 안내가 나옵니다. 그런 다음 사용자가 포털에서 **다음** 을 클릭합니다.
 
@@ -201,8 +191,7 @@ Azure MFA를 사용하는 경우 사용자가 해당 계정 및 리소스에 대
 
 4.  인증이 성공하면 사용자에게 두 가지 옵션이 제공됩니다. 현재 암호를 유지하거나 새 암호를 설정하는 것입니다.
 
-5.  ![MIM 계정 잠금 해제 성공 이미지](media/MIM-SSPR-account-unlock.JPG)
+5.  ![MIM 계정
+6.  잠금 해제 성공 이미지](media/MIM-SSPR-account-unlock.JPG)
 
 6.  사용자가 암호를 다시 설정하기 위해서는 새 암호를 두 번 입력하고 **다음** 을 클릭하여 암호를 변경하면 됩니다.
-
-    ![MIM 로그인 도우미 암호 재설정 이미지](media/MIM-SSPR-PR1.JPG)

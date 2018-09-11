@@ -10,12 +10,12 @@ ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
-ms.openlocfilehash: 834343243dfeefa8d1874414fa369751288fd64d
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: bb0287b894786d13398819b04bdb089f0f36b33e
+ms.sourcegitcommit: acb2c61831cb634278acc439d6d9496ff51a6a54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36288873"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43694642"
 ---
 # <a name="supported-languages"></a>지원되는 언어
 
@@ -26,7 +26,7 @@ ms.locfileid: "36288873"
 Microsoft MIM 서비스 및 포털 언어 팩은 다음 33개의 언어를 지원합니다.  
 
 > [!NOTE]
-> [4.4.1642.0](https://support.microsoft.com/en-us/help/4021562/hotfix-rollup-package-build-4-4-1642-0-is-available-for-microsoft)에서는 “OverrideDefaultUILocale”이라는 레지스트리 키가 MIM 추가 기능 및 확장 언어 팩에 추가되었고, 모든 비슷한 언어를 지원되는 언어에 매핑하려고 합니다. 예를 들어, Windows 표시 언어가 ES-CL(스페인어(칠레)) 또는 ES-**인 경우 이를 ES-ES(스페인어(스페인))에 매핑하려고 합니다.
+> [4.4.1642.0](https://support.microsoft.com/en-us/help/4021562/hotfix-rollup-package-build-4-4-1642-0-is-available-for-microsoft)에서는 “OverrideDefaultUILocale”이라는 레지스트리 키가 MIM 추가 기능 및 확장 언어 팩에 추가되었고, 모든 비슷한 언어를 지원되는 언어에 매핑하려고 합니다. 예를 들어, Windows 표시 언어가 ES-CL(스페인어(칠레)) 또는 ES-\*인 경우 이를 ES-ES(스페인어(스페인))에 매핑하려고 합니다.
 
 > [!IMPORTANT]
 > SSPR 추가 기능 및 포털의 텍스트는 지역화되지만, 질문은 추가 작업이 없으면 지역화되지 않습니다. 각 언어의 질문에 대한 대상을 대상 위치로 지정하려면 AuthN 워크플로(및 이를 대상으로 지정하기 위한 해당 집합 및 MPR)를 만들어야 합니다.
