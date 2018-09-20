@@ -12,12 +12,12 @@ ms.technology: security
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: f69648e7e4229ca7c8de895cdf10ccb2c5f368e2
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: a64ee79897ce73242d0f8510842fdcb6758fab2c
+ms.sourcegitcommit: 28834821cbddd6384613d8ba45424c35f4c39ce6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289536"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45538577"
 ---
 # <a name="set-up-an-identity-management-server-sharepoint"></a>ID 관리 서버 설치: SharePoint
 
@@ -71,7 +71,7 @@ SharePoint 2016을 설치하려면 다음 단계를 따르세요. 설치가 완�
 2. 이 서버를 구성 데이터베이스에 대한 데이터베이스 서버(예: **corpsql**)로 지정하고 *Contoso\SharePoint*를 SharePoint에서 사용할 데이터베이스 액세스 계정으로 지정합니다.
 3. 팜 보안 암호로 사용할 암호를 만듭니다.
 
-4. 구성 마법사에서 [MinRole](https://docs.microsoft.com/en-us/sharepoint/install/overview-of-minrole-server-roles-in-sharepoint-server-2016) 유형으로 **프런트 엔드**를 선택하는 것이 좋습니다.
+4. 구성 마법사에서 [MinRole](https://docs.microsoft.com/sharepoint/install/overview-of-minrole-server-roles-in-sharepoint-server-2016) 유형으로 **프런트 엔드**를 선택하는 것이 좋습니다.
 
 5. 구성 마법사가 구성 작업 10/10을 완료할 때 [마침]을 클릭하면 웹 브라우저가 열립니다.
 

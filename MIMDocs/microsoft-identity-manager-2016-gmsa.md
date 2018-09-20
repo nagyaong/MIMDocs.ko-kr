@@ -8,12 +8,12 @@ ms.date: 06/27/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.openlocfilehash: ca1dacdd32a025bc08c00bde6088d85d6444be99
-ms.sourcegitcommit: 8b2623f6247621098d386cbe84e10b5b5373abfb
+ms.openlocfilehash: 61ff4a806f496396a6ab84e933268e59d58f6670
+ms.sourcegitcommit: 28834821cbddd6384613d8ba45424c35f4c39ce6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39149916"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45538594"
 ---
 # <a name="conversion-of-mim-specific-services-to-gmsa"></a>MIM 특정 서비스를 gMSA로 변환
 
@@ -44,9 +44,9 @@ ms.locfileid: "39149916"
 
 -   [그룹 관리 서비스 계정 개요](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)
 
--   <https://docs.microsoft.com/en-us/powershell/module/addsadministration/new-adserviceaccount?view=win10-ps>
+-   <https://docs.microsoft.com/powershell/module/addsadministration/new-adserviceaccount?view=win10-ps>
 
--   <https://technet.microsoft.com/en-us/library/jj128430(v=ws.11).aspx>
+-   <https://technet.microsoft.com/library/jj128430(v=ws.11).aspx>
 
 Windows 도메인 컨트롤러의 첫 번째 단계
 
@@ -110,7 +110,7 @@ Windows 도메인 컨트롤러의 첫 번째 단계
 ![](media/ef5f16085ec1b2b1637fa3d577a95dbf.png)
 
 
-5. 최신 [핫픽스 4.5.x.x](https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/version-history) 이상을 설치합니다.
+5. 최신 [핫픽스 4.5.x.x](https://docs.microsoft.com/microsoft-identity-manager/reference/version-history) 이상을 설치합니다.
 
 - 패치를 적용했으면 FIM 동기화 서비스를 중지합니다.
 - 제어판 [프로그램 및 기능] Microsoft Identity Manager
@@ -159,7 +159,7 @@ Windows 도메인 컨트롤러의 첫 번째 단계
 
     이 명령을 실행하여 네트워크가 작동 중일 때(일반적으로 부트 주기 초기) Microsoft 키 배포 서비스를 시작합니다.
 
-    <https://social.technet.microsoft.com/Forums/en-US/a290c5c0-3112-409f-8cb0-ff23e083e5d1/ad-fs-windows-2012-r2-adfssrv-hangs-in-starting-mode?forum=winserverDS>에서 유사한 문제에 대한 토론을 참조하세요.
+    <https://social.technet.microsoft.com/Forums/a290c5c0-3112-409f-8cb0-ff23e083e5d1/ad-fs-windows-2012-r2-adfssrv-hangs-in-starting-mode?forum=winserverDS>에서 유사한 문제에 대한 토론을 참조하세요.
 
 4.  MIM 서비스의 관리자 권한 MSI를 실행하고 [변경]을 선택합니다.
 
