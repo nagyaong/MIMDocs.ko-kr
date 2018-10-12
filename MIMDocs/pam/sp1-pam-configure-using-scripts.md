@@ -12,12 +12,12 @@ ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 741d722ce315b7265278997275d05981f44826e8
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: f5ae81fe8c0c695b26f2a28626512e056df4db8b
+ms.sourcegitcommit: 46c68e2e0ebbf3cebae9fc04f1d2ba73bc987d5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289424"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47414978"
 ---
 # <a name="configure-pam-using-scripts"></a>스크립트를 사용하여 PAM 구성
 
@@ -42,7 +42,7 @@ SQL과 SharePoint를 별도의 서버에 설치하려면 아래 지침에 따라
 
 ## <a name="deployment-worksheet"></a>배포 워크시트
 
-PAMDeploymentConfig.xml 업데이트를 계속 진행하기 전에 업데이트된 복사본을 모든 컴퓨터에 배치합니다.
+PAMDeploymentConfig.xml 업데이트를 계속 진행하기 전에 업데이트된 복사본을 모든 머신에 배치합니다.
 
 ### <a name="setup"></a>설정
 
