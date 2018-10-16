@@ -1,14 +1,15 @@
 ---
 layout: LandingPage
 ms.topic: landing-page
+ms.prod: microsoft-identity-manager
 title: Microsoft Identity Manager 설명서 | Microsoft Docs
 description: Microsoft Identity Manager 사용 방법을 알아봅니다.
-ms.openlocfilehash: 46aaf8fffc6cf4629c2d2768979ba6a5a68c2f54
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 7fbe483455d3300c465abe47adc21a2381d7893f
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36288890"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49333992"
 ---
 # <a name="microsoft-identity-manager-documentation"></a>Microsoft Identity Manager 설명서
 
@@ -72,7 +73,7 @@ Microsoft Identity Manager 2016은 Active Directory, LDAP, Oracle 및 Azure Acti
 
 ---
 <br>
-&gt;[!Warning]
+&gt;로 변환해야 합니다.[!Warning]
 FIM(Forefront Identity Manager) 일반 지원이 2017년 10월 10일에 종료되었습니다. Microsoft Identity Manager 2016으로 <a href="microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md" data-raw-source="[upgrade](microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md)">업그레이드</a>하세요. 추가 정보: </br>  - FIM 수명 주기 정보는 <a href="https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010" data-raw-source="[here](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010)">여기</a>에 제공됩니다. </br> - ID 제품의 공개 릴리스에 대한 정보는 <a href="https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/" data-raw-source="[Microsoft Identity Software: Public Release Build Versions](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)">Microsoft Identity Software: Public Release Build Versions</a>(Microsoft Identity 소프트웨어: 공용 릴리스 빌드 버전)라는 게시물을 검토하세요.
 
 <h2>참조</h2>
