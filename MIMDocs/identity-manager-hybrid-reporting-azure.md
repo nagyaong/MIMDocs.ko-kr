@@ -2,21 +2,20 @@
 title: Azure AD의 하이브리드 보고란 무엇인가요? | Microsoft 문서
 description: Azure Active Directory의 하이브리드 감사 활동 보고서를 통해 클라우드와 온-프레미스 모두에서 감사된 이벤트를 볼 수 있습니다.
 keywords: ''
-author: davidste
-ms.author: davidste
-manager: bhu
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 02/20/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: 7320f014-8b60-4866-92de-cfbd3e6edc48
 ms.suite: ems
-ms.openlocfilehash: eb9725df484fb5ac2ee44bd9a0423bdb4fbe7e86
-ms.sourcegitcommit: b4a39928c5fa1d7718046563c0809bcbf11d833d
+ms.openlocfilehash: dd87f00fb3faded60671a47a0ba1dab7e4c2a531
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2018
-ms.locfileid: "29370381"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358179"
 ---
 # <a name="hybrid-identity-management-audit-reporting-in-azure-active-directory"></a>Azure Active Directory의 하이브리드 ID 관리 감사 보고
 Azure AD(Azure Active Directory) 감사 활동 보고를 통해 온-프레미스 또는 클라우드의 ID 관리 활동을 모니터링할 수 있습니다. 단일 보고서에서 모든 ID 및 액세스 데이터를 관리하여 시간을 절약하고 전체 비용을 줄일 수 있습니다.

@@ -3,21 +3,20 @@ title: Microsoft Identity Manager 서비스 및 포털 설치 | Microsoft 문서
 description: Microsoft Identity Manager 2016용 MIM 서비스 및 포털을 구성하고 설치하는 단계를 알아봅니다.
 keywords: ''
 author: billmath
-ms.author: barclayn
-manager: mbaldiwn
+ms.author: billmath
+manager: mtillman
 ms.date: 04/30/2018
 ms.topic: get-started-article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 562ca6a977509cad7c3423ef42d4b6f6705494d3
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 535c80fa2ff1b6250ae9a3f340cb514e58f390a9
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289519"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358621"
 ---
 # <a name="install-mim-2016-mim-service-and-portal"></a>MIM 2016 설치: MIM 서비스 및 포털
 
@@ -69,9 +68,9 @@ ms.locfileid: "36289519"
 
 12. MIM 포털에 대한 MIM 서비스 서버 주소를 *CORPIDM*(이 컴퓨터의 이름)으로 지정합니다.
 
-13. SharePoint 사이트 모음 URL로 *http://mim.contoso.com* 을 지정합니다.
+13. SharePoint 사이트 모음 URL로 *http://mim.contoso.com*을 지정합니다.
 
-14. 암호 등록 URL 포트 80으로 *http://passwordregistration.contoso.com* 을 지정하고, 나중에 443에서 SSL 인증서로 업데이트하는 것이 좋습니다.
+14. 암호 등록 URL 포트 80으로 *http://passwordregistration.contoso.com*을 지정하고, 나중에 443에서 SSL 인증서로 업데이트하는 것이 좋습니다.
 
 15. 암호 재설정 URL 포트 80으로 *http://passwordreset.contoso.com* 을 지정하고, 나중에 443에서 SSL 인증서로 업데이트하는 것이 좋습니다.
 

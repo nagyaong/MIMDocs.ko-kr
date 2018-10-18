@@ -3,21 +3,20 @@ title: Microsoft Identity Manager 2016 SP1에 대해 SQL Server 구성 | Microso
 description: MIM 2016 설치를 위한 준비 단계로 SQL Server 2016을 설치합니다.
 keywords: ''
 author: billmath
-ms.author: barclayn
-manager: mbaldwin
+ms.author: billmath
+manager: mtillman
 ms.date: 04/26/2018
 ms.topic: get-started-article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: 297df3b3-192e-4ed9-82ed-c95eb5297c84
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 6fe251a3976167909aa55a687884585b1937ebf3
-ms.sourcegitcommit: 28834821cbddd6384613d8ba45424c35f4c39ce6
+ms.openlocfilehash: cc6b2680f2e5cd8d2063af01b2031ce3a4a7be0f
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45538560"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358264"
 ---
 # <a name="set-up-an-identity-management-server-sql-server-2016"></a>ID 관리 서버 설치: SQL Server 2016
 

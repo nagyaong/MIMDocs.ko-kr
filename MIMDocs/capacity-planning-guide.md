@@ -3,21 +3,20 @@ title: 용량 계획 가이드 | Microsoft 문서
 description: 이 가이드를 사용하여 로드 수준 및 정책 결정 등 MIM 2016을 배포하기 전에 고려해야 하는 변수를 이해할 수 있습니다.
 keywords: ''
 author: billmath
-ms.author: barclayn
-manager: mbaldwin
+ms.author: billmath
+manager: mtillman
 ms.date: 10/12/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: 3ac5b990-1678-4996-996d-cbd84b8426b4
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 32cdf03ffa0d0d282a6277af766f97e93e3a3f3a
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 7df93a0a24aee886ec4d07ee2894d93a91606fa0
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289016"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358390"
 ---
 # <a name="capacity-planning-guide"></a>용량 계획 가이드
 

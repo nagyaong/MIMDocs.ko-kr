@@ -2,22 +2,21 @@
 title: Microsoft Identity Manager 동기화 서비스 설치 | Microsoft 문서
 description: 동기화 서비스를 설치 및 구성하여 MIM 2016 구성 요소를 시작합니다.
 keywords: ''
-author: fimguy
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 05/01/2018
 ms.topic: get-started-article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: c68b33b2ff28d75b6f4e63fa8caf0c87727a5927
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 1bc313a66776778fe3617969645076a6d2d10418
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289400"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357839"
 ---
 # <a name="install-mim-2016-mim-synchronization-service"></a>MIM 2016 설치: MIM 동기화 서비스
 

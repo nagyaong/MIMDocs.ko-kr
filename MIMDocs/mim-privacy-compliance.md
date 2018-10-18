@@ -2,21 +2,20 @@
 title: Microsoft Identity Manager 데이터 처리 | Microsoft Docs
 description: 환경 내의 데이터를 식별하고 이에 대해 보고하려면 Microsoft Identity Manager 데이터 처리를 해석하고 운영 기능 및 요구 사항에 따라 지정된 시스템에서 작업을 수행합니다.
 keywords: ''
-author: fimguy
-ms.author: davidste
-manager: mbaldiwn
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 05/22/2018
 ms.topic: get-started-article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.suite: ems
-ms.openlocfilehash: e7134e060647153b5d525e9785139eb8c38f8569
-ms.sourcegitcommit: 6b2c77788a69f751fc7f5c18e678aa1fabf23ebb
+ms.openlocfilehash: 4102ffc450b993faaa62da66bb25f242b7e39280
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38952508"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358723"
 ---
 # <a name="microsoft-identity-manager-data-handling"></a>Microsoft Identity Manager 데이터 처리 
 

@@ -2,21 +2,20 @@
 title: Identity Manager 2016을 사용하여 Azure에서 하이브리드 보고 작업 | Microsoft Docs
 description: Azure에서 온-프레미스 데이터와 클라우드 데이터를 하이브리드 보고서에 결합하는 방법 및 이러한 보고서를 보고 관리하는 방법을 알아봅니다.
 keywords: ''
-author: fimguy
-ms.author: davidste
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 2/20/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: 68df2817-2040-407d-b6d2-f46b9a9a3dbb
 ms.suite: ems
-ms.openlocfilehash: 3c9e8c0fa0a0de3cf9710003d4d7f4ed9c0b03bd
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 18e4127b1d854a53734142bb58442627619491ef
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289648"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358536"
 ---
 # <a name="work-with-hybrid-reporting-in-identity-manager"></a>Identiy Manager에서 하이브리드 보고 작업
 
@@ -57,10 +56,10 @@ Identity Manager 하이브리드 보고를 사용하기 위한 요구 사항은 
 |                                      Azure AD Premium                                       |                                                                                                        하이브리드 보고는 Azure AD Premium 기능으로, Azure AD Premium이 있어야 사용할 수 있습니다. </br>자세한 내용은 [Azure AD Premium 시작](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)을 참조하세요. </br>[Azure AD Premium 30일 평가판](https://azure.microsoft.com/trial/get-started-active-directory/)을 받으세요.                                                                                                         |
 |                     Azure AD의 전역 관리자여야 함                     |                                                                   기본적으로 전역 관리자만 시작할 에이전트를 설치 및 구성하고, 포털에 액세스하고, Azure 내에서 작업을 수행할 수 있습니다. </br>**중요**: 에이전트를 설치할 때 사용하는 계정은 회사 또는 학교 계정이어야 합니다. Microsoft 계정은 사용할 수 없습니다. 자세한 내용은 [조직으로 Azure 등록](https://docs.microsoft.com/azure/active-directory/sign-up-organization)을 참조하세요.                                                                   |
 | Identity Manager 하이브리드 에이전트가 각 대상 Identity Manager 서비스 서버에 설치되어 있어야 함 |                                                                                                                                                                                                       데이터를 수신하고 모니터링 및 분석 기능을 제공하려는 경우 하이브리드 보고를 사용하려면 대상 서버에서 에이전트를 설치 및 구성해야 합니다.  </br>                                                                                                                                                                                                       |
-|                    Azure 서비스 끝점에 대한 아웃바운드 연결                     | 설치 중과 런타임에 에이전트는 Azure 서비스 끝점에 연결해야 합니다. 아웃바운드 연결이 방화벽에 의해 차단한 경우 다음 끝점을 허용 목록에 추가해야 합니다.<ul><li>\*.blob.core.windows.net </li><li>\*.servicebus.windows.net - Port: 5671 </li><li>\*.adhybridhealth.azure.com/</li><li><https://management.azure.com> </li><li><https://policykeyservice.dc.ad.msft.net/></li><li><https://login.windows.net></li><li><https://login.microsoftonline.com></li><li><https://secure.aadcdn.microsoftonline-p.com></li></ul> |
+|                    Azure 서비스 엔드포인트에 대한 아웃바운드 연결                     | 설치 중과 런타임에 에이전트는 Azure 서비스 엔드포인트에 연결해야 합니다. 아웃바운드 연결이 방화벽에 의해 차단한 경우 다음 엔드포인트를 허용 목록에 추가해야 합니다.<ul><li>\*.blob.core.windows.net </li><li>\*.servicebus.windows.net - Port: 5671 </li><li>\*.adhybridhealth.azure.com/</li><li><https://management.azure.com> </li><li><https://policykeyservice.dc.ad.msft.net/></li><li><https://login.windows.net></li><li><https://login.microsoftonline.com></li><li><https://secure.aadcdn.microsoftonline-p.com></li></ul> |
 |                         IP 주소 기반 아웃바운드 연결                         |                                                                                                                                                                                                                      방화벽의 IP 주소 기반 필터링에 대해서는 [Azure IP Ranges](https://www.microsoft.com/download/details.aspx?id=41653)(Azure IP 범위)를 참조하세요.                                                                                                                                                                                                                      |
 |                 아웃바운드 트래픽에 대한 SSL 검사를 필터링하거나 사용하지 않도록 설정                 |                                                                                                                                                                                                               네트워크 계층에서 아웃바운드 트래픽에 대한 SSL 검사 또는 종료가 설정되어 있으면 에이전트 등록 단계나 데이터 업로드 작업이 실패할 수 있습니다.                                                                                                                                                                                                                |
-|                      에이전트를 실행하는 서버의 방화벽 포트                       |                                                                                                                                                                                                          에이전트가 Azure 서비스 끝점과 통신하려면 다음과 같은 방화벽 포트를 열어야 합니다.<ul><li>TCP 포트 443</li><li>TCP 포트 5671</li></ul>                                                                                                                                                                                                          |
+|                      에이전트를 실행하는 서버의 방화벽 포트                       |                                                                                                                                                                                                          에이전트가 Azure 서비스 엔드포인트와 통신하려면 다음과 같은 방화벽 포트를 열어야 합니다.<ul><li>TCP 포트 443</li><li>TCP 포트 5671</li></ul>                                                                                                                                                                                                          |
 |          Internet Explorer 보안 강화가 사용하도록 설정된 경우 특정 웹 사이트 허용           |                                                                                Internet Explorer 보안 강화가 사용하도록 설정된 경우 에이전트가 설치된 서버에서 다음 웹 사이트를 허용해야 합니다.<ul><li><https://login.microsoftonline.com></li><li><https://secure.aadcdn.microsoftonline-p.com></li><li><https://login.windows.net></li><li>Azure Active Directory에서 신뢰하는 조직의 페더레이션 서버(예: <https://sts.contoso.com>)</li></ul>                                                                                |
 
 </BR>
@@ -82,8 +81,7 @@ Identity Manager 하이브리드 보고를 사용하기 위한 요구 사항은 
 
     a.  Identity Manager 서비스 서버용 [MIMHReportingAgentSetup.exe 파일](http://download.microsoft.com/download/7/3/1/731D81E1-8C1D-4382-B8EB-E7E7367C0BF2/MIMHReportingAgentSetup.exe)을 다운로드합니다.
 
-    b.  
-          `MIMHReportingAgentSetup.exe`을 실행합니다. 
+    b.  `MIMHReportingAgentSetup.exe`을 실행합니다. 
 
     c.  에이전트 설치 관리자를 실행합니다.
 

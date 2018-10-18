@@ -2,20 +2,19 @@
 title: BHOLD Reporting 설치 | Microsoft Docs
 description: BHOLD Reporting 모듈을 통해 역할 및 권한 부여 정책에 대한 보고서를 생성할 수 있습니다.
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 09/07/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: deb43aeb9133d7eed958730b0eb2cbd22fe3a0ef
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 1f69f9f08cba24898509c771e4477b81c5ed272f
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289308"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358011"
 ---
 # <a name="bhold-reporting-installation"></a>BHOLD Reporting 설치
 

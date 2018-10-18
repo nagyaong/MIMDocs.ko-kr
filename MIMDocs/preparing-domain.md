@@ -3,21 +3,20 @@ title: Microsoft Identity Manager 2016에 대한 도메인 설정 | Microsoft �
 description: MIM 2016을 설치하기 전에 Active Directory 도메인 컨트롤러를 만듭니다.
 keywords: ''
 author: billmath
-ms.author: barclayn
-manager: mbaldwin
+ms.author: billmath
+manager: mtillman
 ms.date: 10/26/2017
 ms.topic: get-started-article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: ddab5b1ab57d3d332d5cd36ecc5a29abd83222ec
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: cbba7abe810fea0943e087206f7b0b6e3baa7cbb
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289033"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357885"
 ---
 # <a name="set-up-a-domain"></a>도메인 설정
 

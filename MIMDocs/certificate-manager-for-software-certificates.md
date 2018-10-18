@@ -3,21 +3,20 @@ title: 템플릿을 사용하여 인증서 관리자에서 인증서 요청 | Mi
 description: 인증서 관리자를 사용하여 프로필 템플릿으로 소프트웨어 인증서를 만들고 갱신하는 방법을 알아봅니다.
 keywords: ''
 author: billmath
-ms.author: barclayn
-manager: mbaldwin
+ms.author: billmath
+manager: mtillman
 ms.date: 10/12/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: fed5ada9-d80f-4825-aad7-4172ac5d71d3
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: aebf5af709f4f775ce13be49d8f9075a94e864a2
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: e9454643f425a6bd306c2828479129312d5a5d4f
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36290325"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358368"
 ---
 # <a name="create-software-certificates-with-certificate-manager"></a>인증서 관리자를 사용하여 소프트웨어 인증서 만들기
 소프트웨어 인증서를 등록하고 갱신하는 데 관리자 권한 및 가상 스마트 카드가 필요하지 않습니다. 어느 시점에 인증서 작업을 허용하라는 메시지가 표시되고 이는 정상입니다.

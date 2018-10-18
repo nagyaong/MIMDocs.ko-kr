@@ -7,17 +7,17 @@ ms.author: barclayn
 manager: mbaldwin
 ms.date: 03/13/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: cf3796f7-bc68-4cf7-b887-c5b14e855297
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 00bae1f1c202e4808e641068c13a40f50ffd479a
-ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
+ms.openlocfilehash: ce5d168c429928ec46b090dec038f1b5bbe61666
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
-ms.locfileid: "22052402"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49334417"
 ---
 # <a name="privileged-access-management-for-active-directory-domain-services"></a>Active Directory 도메인 서비스에 대한 Privileged Access Management
 
@@ -43,7 +43,7 @@ PAM을 사용하면 공격자가 네트워크에 침투하고 권한 있는 계�
 
 ## <a name="how-is-pam-set-up"></a>PAM 설정 방법
 
-PAM은 Just-in-Time 관리의 원칙을 작성하며 [JEA(Just Enough Administration)](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2014/DCIM-B362)와 관련됩니다. JEA는 관리자가 이러한 명령을 실행하기 위해 권한을 얻을 수 있는 수행할 권한 있는 작업 및 끝점에 대한 명령 집합을 정의하는 Windows PowerShell 도구 키트입니다. JEA에서 관리자는 특정 권한이 있는 사용자가 특정 작업을 수행할 수 있도록 결정합니다. 적합한 사용자가 해당 작업을 수행해야 할 때마다 해당 사용 권한을 사용할 수 있습니다. 악의적인 사용자가 액세스 권한을 도용할 수 없도록 사용 권한은 지정된 기간 후 만료됩니다.
+PAM은 Just-in-Time 관리의 원칙을 작성하며 [JEA(Just Enough Administration)](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2014/DCIM-B362)와 관련됩니다. JEA는 관리자가 이러한 명령을 실행하기 위해 권한을 얻을 수 있는 수행할 권한 있는 작업 및 엔드포인트에 대한 명령 집합을 정의하는 Windows PowerShell 도구 키트입니다. JEA에서 관리자는 특정 권한이 있는 사용자가 특정 작업을 수행할 수 있도록 결정합니다. 적합한 사용자가 해당 작업을 수행해야 할 때마다 해당 사용 권한을 사용할 수 있습니다. 악의적인 사용자가 액세스 권한을 도용할 수 없도록 사용 권한은 지정된 기간 후 만료됩니다.
 
 PAM 설정 및 작업은 네 단계가 있습니다.
 
@@ -84,7 +84,7 @@ PAM은 다음과 같은 이점이 있습니다.
 사용자는 다음과 같이 다양한 방법으로 요청을 제출할 수 있습니다.  
 
 - MIM 서비스 웹 서비스 API  
-- REST 끝점  
+- REST 엔드포인트  
 - Windows PowerShell(`New-PAMRequest`)
 
 ## <a name="what-workflows-and-monitoring-options-are-available"></a>어떤 워크플로 및 모니터링 옵션을 사용할 수 있습니까?

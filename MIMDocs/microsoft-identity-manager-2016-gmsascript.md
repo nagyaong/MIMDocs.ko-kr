@@ -1,19 +1,18 @@
 ---
 title: gMSA가 사용하도록 설정된 경우 알림 및 승인을 위해 MIM 특정 서비스 계정 업데이트 | Microsoft Docs
 description: gMSA를 구성하는 기본 단계를 설명하는 항목입니다.
-author: fimguy
+author: billmath
 ms.author: billmath
 manager: mtillman
 ms.date: 06/27/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
-ms.openlocfilehash: cc33293c0a836f9e5118fc372abc5d96c1a5373d
-ms.sourcegitcommit: c6cb2556bb9f2256b959a3c95db7ca5bbfc2b437
+ms.prod: microsoft-identity-manager
+ms.openlocfilehash: af293106b11651dfd720c03165938f8079a3e49b
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065166"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358227"
 ---
 # <a name="update-of-mim-specific-service-account-for-notifications-to-gmsa"></a>알림을 위해 gMSA로 MIM 특정 서비스 계정 업데이트
 ===========================================

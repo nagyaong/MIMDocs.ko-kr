@@ -7,17 +7,17 @@ ms.author: barclayn
 manager: mbaldwin
 ms.date: 08/30/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: cf3796f7-bc68-4cf7-b887-c5b14e855297
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 890e0f77219f6871de3fc43e3122fbc829c6adba
-ms.sourcegitcommit: c049dceaf02ab8b6008fe440daae4d07b752ca2e
+ms.openlocfilehash: f3c5a74966498264cd60033b2f7751622d111e2e
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2017
-ms.locfileid: "21942717"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49333550"
 ---
 # <a name="privileged-access-management-for-active-directory-domain-services"></a>Active Directory 도메인 서비스에 대한 Privileged Access Management
 
@@ -49,13 +49,13 @@ PAM을 사용하면 공격자가 네트워크에 침투하고 권한 있는 계�
 
 ## <a name="setting-up-pam"></a>PAM 설정
 
-PAM은 Just-in-Time 관리의 원칙을 작성하며 [JEA(Just Enough Administration)](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2014/DCIM-B362)와 관련됩니다. JEA는 권한 있는 작업을 수행하기 위한 명령 집합을 정의하는 Windows PowerShell 도구 키트입니다. 관리자가 명령을 실행하는 권한 부여를 얻을 수 있는 끝점입니다. JEA에서 관리자는 특정 권한이 있는 사용자가 특정 작업을 수행할 수 있도록 결정합니다. 적합한 사용자가 해당 작업을 수행해야 할 때마다 해당 사용 권한을 사용할 수 있습니다. 악의적인 사용자가 액세스 권한을 도용할 수 없도록 사용 권한은 지정된 기간 후 만료됩니다.
+PAM은 Just-in-Time 관리의 원칙을 작성하며 [JEA(Just Enough Administration)](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2014/DCIM-B362)와 관련됩니다. JEA는 권한 있는 작업을 수행하기 위한 명령 집합을 정의하는 Windows PowerShell 도구 키트입니다. 관리자가 명령을 실행하는 권한 부여를 얻을 수 있는 엔드포인트입니다. JEA에서 관리자는 특정 권한이 있는 사용자가 특정 작업을 수행할 수 있도록 결정합니다. 적합한 사용자가 해당 작업을 수행해야 할 때마다 해당 사용 권한을 사용할 수 있습니다. 악의적인 사용자가 액세스 권한을 도용할 수 없도록 사용 권한은 지정된 기간 후 만료됩니다.
 
 PAM 설정 및 작업은 네 단계가 있습니다.
 
 ![PAM 단계: 준비, 보호, 작동, 모니터링 - 다이어그램](media/MIM_PIM_SetupProcess.png)
 
-1. **준비**: 기존 포리스트에서 어떤 그룹이 상당한 권한이 있는지 식별합니다. 배스천 포리스트에서 구성원 없이 이러한 그룹을 다시 만듭니다.
+1. **준비**: 기존 포리스트서 어떤 그룹이 상당한 권한이 있는지 식별합니다. 배스천 포리스트에서 구성원 없이 이러한 그룹을 다시 만듭니다.
 2. **보호**: 사용자가 Just-In-Time 관리를 요청하는 경우 MFA(Multi-Factor Authentication)와 같은 수명 주기 및 인증 보호를 설정합니다. MFA는 프로그래밍 공격을 악성 소프트웨어 또는 다음의 자격 증명 도난에서 방지합니다.
 3. **작동**: 인증 요구 사항이 충족되고 요청이 승인된 후에 사용자 계정을 배스천 포리스트의 권한 있는 그룹에 일시적으로 추가합니다. 미리 설정 시간 동안 관리자는 해당 그룹에 할당되는 모든 권한 및 액세스 권한을 갖습니다. 이 시간 후 계정이 그룹에서 제거됩니다.
 4. **모니터링**: PAM은 권한 있는 액세스 요청의 감사, 경고 및 보고서를 추가합니다. 권한 있는 액세스의 기록을 검토할 수 있으며 작업을 수행한 사용자를 참조할 수 있습니다. 활동이 유효한지를 결정하고 원래 포리스트에서 권한 있는 그룹에 직접 사용자를 추가하려는 시도와 같은 권한 없는 활동을 식별할 수 있습니다. 이 단계는 "내부" 공격자를 추적할 뿐만 아니라 악성 소프트웨어를 식별하기도 합니다.
@@ -89,7 +89,7 @@ PAM은 다음과 같은 이점이 있습니다.
 사용자는 다음과 같이 다양한 방법으로 요청을 제출할 수 있습니다.
 
 - MIM 서비스 웹 서비스 API
-- REST 끝점
+- REST 엔드포인트
 - Windows PowerShell(`New-PAMRequest`)
 
 [권한 있는 액세스 관리 cmdlet](https://docs.microsoft.com/powershell/identitymanager/mimpam/vlatest/mimpam)에 대해 자세히 알아보세요.

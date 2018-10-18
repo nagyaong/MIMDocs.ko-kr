@@ -3,21 +3,20 @@ title: MIM 인증서 관리자 Windows 응용 프로그램 배포 | Microsoft �
 description: 사용자가 자신의 액세스 권한을 관리할 수 있도록 인증서 관리자 앱을 배포하는 방법을 알아봅니다.
 keywords: ''
 author: billmath
-ms.author: barclayn
-manager: mbaldwin
+ms.author: billmath
+manager: mtillman
 ms.date: 10/16/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: 66060045-d0be-4874-914b-5926fd924ede
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: bf655d451e86261ffd3043117a56f4daccb4b460
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 8ff9edce6da865418e300095ff0827853a35d4eb
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289876"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358349"
 ---
 # <a name="mim-certificate-manager-windows-store-application-deployment"></a>MIM 인증서 관리자 Windows 스토어 응용 프로그램 배포
 
@@ -117,7 +116,7 @@ MIM 2016 및 인증서 관리자를 실행한 후에 MIM 인증서 관리자 Win
    |                     |                                                                                                                                                                                                          |
    |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |      MIMCM URL      |                                              CM을 구성하는 데 사용한 포털의 FQDN입니다. 예, https://mimcmServerAddress/certificatemanagement                                               |
-   |      ADFS URL       | AD FS를 사용하려는 경우 AD FS URL을 삽입합니다. <https://adfsServerSame/adfs>). </br> ADFS를 사용하지 않는 경우 이 설정이 빈 문자열로 구성합니다.  예: ```<ADFS URL=""/>``` |
+   |      ADFS URL       | AD FS를 사용하려는 경우 AD FS URL을 삽입합니다. 예, <https://adfsServerSame/adfs>  </br> ADFS를 사용하지 않는 경우 이 설정이 빈 문자열로 구성합니다.  예: ```<ADFS URL=""/>``` |
    |     PrivacyUrl      |                                         인증서 등록을 위해 수집한 사용자 세부 정보로 수행할 작업을 설명하는 웹 페이지에 대한 URL을 포함할 수 있습니다.                                          |
    |     SupportMail     |                                                                           지원 문제에 대한 메일 주소를 포함할 수 있습니다.                                                                           |
    | LobComplianceEnable |                                                                     true 또는 false로 설정할 수 있습니다. 기본 설정은 true입니다.                                                                      |

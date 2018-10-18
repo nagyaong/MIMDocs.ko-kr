@@ -2,22 +2,21 @@
 title: Microsoft Identity Manager 2016에 대해 SharePoint 구성 | Microsoft 문서
 description: MIM 포털 페이지를 호스트할 수 있도록 SharePoint Foundation을 설치 및 구성합니다.
 keywords: ''
-author: fimguy
-ms.author: davidste
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 04/26/2018
 ms.topic: get-started-article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: a64ee79897ce73242d0f8510842fdcb6758fab2c
-ms.sourcegitcommit: 28834821cbddd6384613d8ba45424c35f4c39ce6
+ms.openlocfilehash: 466f5eb7d4aee27336948e15f96087d6ba898170
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45538577"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358638"
 ---
 # <a name="set-up-an-identity-management-server-sharepoint"></a>ID 관리 서버 설치: SharePoint
 

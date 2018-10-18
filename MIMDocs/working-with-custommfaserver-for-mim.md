@@ -8,14 +8,13 @@ ms.reviewer: fimguy
 manager: mtillman
 ms.date: 09/04/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: active-directory-domain-services
-ms.openlocfilehash: 85ab84231c2ebfede125ffaf5fb39964e8a8450c
-ms.sourcegitcommit: acb2c61831cb634278acc439d6d9496ff51a6a54
+ms.prod: microsoft-identity-manager
+ms.openlocfilehash: 750947d04f540e2c8317861c5826c2145deba1fd
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43694841"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358405"
 ---
 # <a name="use-a-custom-multi-factor-authentication-provider-via-an-api-during-pam-role-activation-or-in-sspr"></a>PAM 역할 활성화 중에 또는 SSPR에서 API를 통해 사용자 지정 Multi-Factor Authentication 공급자 사용
 

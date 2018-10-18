@@ -4,18 +4,17 @@ author: fimguy
 description: Microsoft Graph용 Microsoft Identity Manager 커넥터는 외부 사용자 AD 계정 수명 주기 관리를 활성화합니다. 이 시나리오에서 조직은 Azure AD 디렉터리에 게스트를 초대하고 온-프레미스 Windows 통합 인증 또는 Kerberos 기반 응용 프로그램에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다.
 keywords: ''
 ms.author: billmath
-manager: bhu
+manager: mtillman
 ms.date: 10/02/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: 09052bc9f5cecd0a599e9a93ee43cc44ce435671
-ms.sourcegitcommit: 032b3cdd8a88b1ccfb30c0070f216020feee6293
+ms.openlocfilehash: 2e376bcc88518b911f93ce9cd4ab920eb428815b
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48045652"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358655"
 ---
 <a name="microsoft-identity-manager-connector-for-microsoft-graph"></a>Microsoft Graph용 Microsoft Identity Manager 커넥터
 =======================================================================================
