@@ -7,15 +7,14 @@ ms.author: billmath
 manager: mtillman
 ms.date: 10/02/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: b7623da4c210711bd09882a8222377e725162991
-ms.sourcegitcommit: 032b3cdd8a88b1ccfb30c0070f216020feee6293
+ms.openlocfilehash: 139c58510117ad422529a4ff0facd23040023713
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48045669"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358774"
 ---
 <a name="azure-ad-business-to-business-b2b-collaboration-with-microsoft-identity-managermim-2016-sp1-with-azure-application-proxy"></a>Azure 응용 프로그램 프록시를 사용하여 MIM(Microsoft Identity Manager) 2016 SP1과 Azure AD B2B(기업 간) 공동 작업
 ============================================================================================================================
