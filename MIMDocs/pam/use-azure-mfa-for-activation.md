@@ -9,14 +9,13 @@ manager: mtillman
 ms.date: 07/06/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
-ms.openlocfilehash: 10c8d4246122daa507d79a3f2e26e945c6ab5709
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 9cb1e37f966db5c663694aaccd71f2b4c799dd4b
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49333726"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379942"
 ---
 # <a name="using-azure-mfa-for-activation"></a>활성화에 Azure MFA 사용
 > [!IMPORTANT]
@@ -43,7 +42,7 @@ Azure MFA를 MIM과 함께 사용하려면 다음이 필요합니다.
 
 ## <a name="creating-an-azure-mfa-provider"></a>Azure MFA 공급자 만들기
 
-이 섹션에서는 Microsoft Azure Active Directory에 Azure MFA 공급자를 설정합니다.  Azure MFA를 독립 실행형 또는 Azure Active Directory Premium에 구성된 상태로 이미 사용하고 있는 경우에는 다음 섹션을 건너뜁니다.
+이 섹션에서는 Microsoft Azure Active Directory에 Azure MFA 공급자를 설정합니다.  Azure MFA를 독립 실행형 또는 Azure Active Directory Premium에 구성된 상태로 이미 사용하고 있는 경우에는 다음 섹션을 건너뜁니다.
 
 1.  웹 브라우저를 열고 Azure 구독 관리자로 [Azure 클래식 포털](https://manage.windowsazure.com)에 연결합니다.
 
@@ -71,7 +70,7 @@ Azure MFA를 MIM과 함께 사용하려면 다음이 필요합니다.
 
 ![Multi-Factor Authentication SDK 다운로드 - 스크린샷](media/PAM-Azure-MFA-Activation-Image-1.png)
 
-7.  결과 ZIP 파일을 MIM 서비스가 설치되는 각 시스템에 복사합니다. 
+7.  결과 ZIP 파일을 MIM 서비스가 설치되는 각 시스템에 복사합니다. 
 
 >[!NOTE]
 > 이 ZIP 파일에는 Azure MFA 서비스에 인증하는 데 사용되는 키 관련 자료가 들어있습니다.

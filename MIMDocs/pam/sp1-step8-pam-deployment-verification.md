@@ -2,22 +2,21 @@
 title: 8단계 PAM 배포 확인
 description: 스크립팅된 PAM 배포에는 PAM 시나리오를 실행하여 PAM 배포가 예상대로 작동하는지 확인할 수 있는 확인 스크립트가 포함되어 있습니다.
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: MBaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 53ffcd4832ded5dce0878715cc716559c3883d6a
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: d6b0327b39a76799b2943565dd0c3e00f55f745f
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49332989"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379959"
 ---
 # <a name="step-8-pam-deployment-verification"></a>8단계 PAM 배포 확인
 

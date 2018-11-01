@@ -2,22 +2,21 @@
 title: PAM 배포 5단계 – 포리스트 링크 | 문서
 description: PRIV의 권한 있는 사용자가 CORP의 리소스에 계속 액세스할 수 있도록 PRIV 및 CORP 포리스트 간에 트러스트를 설정합니다.
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 11/29/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: eef248c4-b3b6-4b28-9dd0-ae2f0b552425
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: a18ddac2c324cbefa0c87e24cec654175c9021dc
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 04195febdb721291e9dcf72f5bbda04923075596
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49333382"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379770"
 ---
 # <a name="step-5--establish-trust-between-priv-and-corp-forests"></a>5단계 - PRIV 및 CORP 포리스트 간에 트러스트 설정
 

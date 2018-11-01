@@ -2,22 +2,21 @@
 title: 4단계 SharePoint 구성
 description: 스크립트를 사용한 PAM 구성의 4단계입니다. 이 단계에서는 PAM 배포의 일부로 사용할 수 있도록 SharePoint를 구성합니다.
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: MBaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: af91fc1283e8576b38dcfef3deda2d2da6eed24e
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 422c4c973d76f5b91fb2463e237ead1984153484
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49333210"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379433"
 ---
 # <a name="step-4-configuring-sharepoint"></a>4단계 SharePoint 구성
 

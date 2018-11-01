@@ -5,16 +5,16 @@ keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
-ms.date: 09/02/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: b92a217dd86d9e4de177ebec9ecec7c76222d7b1
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 69b7f8f4b94f9f94b2aef6afd9573ad8173e148e
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358281"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379797"
 ---
 # <a name="use-azure-multi-factor-authentication-server-to-activate-pam-or-sspr"></a>Azure Multi-Factor Authentication 서버를 사용하여 PAM 또는 SSPR 시나리오 활성화
 다음 문서에서는 사용자가 Privileged Access Management 및 셀프 서비스 암호 재설정에서 역할을 활성화할 때 Azure MFA 서버를 두 번째 보안 계층으로 설정하는 방법을 설명합니다.
@@ -22,7 +22,7 @@ ms.locfileid: "49358281"
 > [!IMPORTANT]
 > Azure Multi-Factor Authentication 소프트웨어 개발 키트의 사용 중단 알림 때문입니다. Azure MFA SDK는 기존 고객을 위해 사용 중지 날짜인 2018년 11월 14일까지 지원됩니다. 새 고객과 현재 고객은 더 이상 Azure 클래식 포털을 통해 SDK를 다운로드할 수 없게 됩니다. 다운로드하려면 Azure 고객 지원에 문의하여 생성된 MFA 서비스 자격 증명 패키지를 받아야 합니다. <br> Microsoft 개발 팀은 Multi-Factor Authentication 서버 SDK와 통합하여 MFA에 대한 변경을 진행하고 있습니다.
 
-아래 문서에서는 릴리스 시 Azure MFA SDK에서 Azure Multi-Factor Authentication 서버 SDK로의 간단한 전환을 설정하는 단계와 구성 업데이트에 대해 간략히 설명합니다.이 내용은 향후 핫픽스에 포함될 예정이므로 공지 사항은 [버전 기록](/reference/version-history.md)을 참조하세요. 
+아래 문서에서는 릴리스 시 Azure MFA SDK에서 Azure Multi-Factor Authentication 서버 SDK로의 간단한 전환을 설정하는 단계와 구성 업데이트에 대해 간략히 설명합니다.이 내용은 향후 핫픽스에 포함될 예정이므로 공지 사항은 [버전 기록](./reference/version-history.md)을 참조하세요. 
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -33,7 +33,7 @@ Azure Multi-Factor Authentication 서버와 MIM을 함께 사용하려면 다음
 - 설치에서 Azure MFA SDK를 이미 사용 중
 - 후보 사용자의 Azure Active Directory Premium 라이선스 또는 Azure MFA 라이선스 방법
 - 모든 후보 사용자의 전화 번호
-- MIM 핫픽스 4.5 이상. 공지 사항은 [버전 기록](/reference/version-history.md) 참조
+- MIM 핫픽스 4.5 이상. 공지 사항은 [버전 기록](./reference/version-history.md) 참조
 
 ## <a name="azure-multi-factor-authentication-server-configuration"></a>Azure Multi-Factor Authentication 서버 구성 
 > [!NOTE] 

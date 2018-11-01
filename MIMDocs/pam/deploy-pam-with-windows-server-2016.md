@@ -2,25 +2,24 @@
 title: Windows Server 2016을 사용하여 MIM 권한 있는 액세스 관리 배포 | Microsoft 문서
 description: Sever 2016을 사용하여 권한 있는 액세스 관리 배포에 대한 자세한 정보
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: ''
-ms.openlocfilehash: fca3ed1b37a1cc3bf9833c2de4d606845867d5d8
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 347eda5872792872a9bb30357c45835303f92e01
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49332904"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379753"
 ---
 # <a name="deploy-mim-pam-with-windows-server-2016"></a>Windows Server 2016을 사용하여 MIM PAM 배포
 
 
-이 시나리오에서는 MIM 2016 SP1에서 Windows Server 2016을 “PRIV” 포리스트에 대한 도메인 컨트롤러로 활용하도록 설정합니다.  이 시나리오를 구성한 후에는 사용자의 Kerberos 티켓 시간이 해당 역할의 남은 활성화 시간으로 제한됩니다. 
+이 시나리오에서는 MIM 2016 SP1에서 Windows Server 2016을 “PRIV” 포리스트에 대한 도메인 컨트롤러로 활용하도록 설정합니다.  이 시나리오를 구성한 후에는 사용자의 Kerberos 티켓 시간이 해당 역할의 남은 활성화 시간으로 제한됩니다. 
 
 > [!Note]
 > Technical Preview 5 전의 Windows Server 2016 기술 미리 보기는 이 MIM 릴리스와 함께 사용할 수 없습니다.

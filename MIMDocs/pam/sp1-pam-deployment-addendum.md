@@ -2,22 +2,21 @@
 title: 부록
 description: 스크립팅된 PAM 배포를 설명하는 문서의 부록입니다. PRIV 및 CORP 도메인 구성과 더불어 유효성 검사를 수행하도록 클라이언트를 설정하는 방법과 지원 요청 방법에 대한 정보를 다룹니다.
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: MBaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: fb478c7f5df50cc4f4a8f9fb9fff1b3a0b431a14
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 814386272bba0c3fa2cb73bc93dc842ac46e86fb
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49333924"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379467"
 ---
 # <a name="pam-deployment-scripts-addendum"></a>PAM 배포 스크립트 추록:
 

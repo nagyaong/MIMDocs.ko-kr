@@ -2,22 +2,21 @@
 title: 5단계 PAM 설치/구성
 description: 스크립트를 사용한 권한 있는 ID 관리 구성의 5단계로, PAM 서버에서의 배포 단계를 설명합니다.
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: MBaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: e3e0d45f01f651400842b52e275ca4b6939f78c4
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 03c5b1cb52f16090e6b241d588bbded6be4c6687
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49333839"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379365"
 ---
 # <a name="step-5-installingconfiguring-pam"></a>5단계 PAM 설치/구성
 
