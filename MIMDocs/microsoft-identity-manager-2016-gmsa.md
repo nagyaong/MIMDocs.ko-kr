@@ -7,12 +7,12 @@ manager: mtillman
 ms.date: 06/27/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.openlocfilehash: d3c0b6677c42d4f14d4f6255a2a661d3ef23661d
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 63f2509d35355a8fe3a59b173756257298079a92
+ms.sourcegitcommit: 6374aa4f7d58b7218626d36d0fc2dc4b38cb8332
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358298"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50237233"
 ---
 # <a name="conversion-of-mim-specific-services-to-gmsa"></a>MIM 특정 서비스를 gMSA로 변환
 
@@ -82,9 +82,9 @@ Windows 도메인 컨트롤러의 첫 번째 단계
 
     -   동기화 서비스가 설치되는 서버에서 동기화 서비스 키 관리 도구를 찾습니다.
 
-    -   기본적으로 **내보내기 키 집합**이 이미 선택되어 있습니다.
+    -   기본적으로 **내보내기 키 집합** 이 이미 선택되어 있습니다.
 
-    -   **다음**을 클릭합니다.
+    -    **다음**을 클릭합니다.
 
     -   이제 기존 동기화 계정 정보를 입력하라는 메시지가 표시됩니다.
 
@@ -96,13 +96,13 @@ Windows 도메인 컨트롤러의 첫 번째 단계
 
         -   도메인 - 동기화 서비스 계정이 속한 도메인
 
-    -   **다음**을 클릭합니다.
+    -    **다음**을 클릭합니다.
 
     -   정보를 잘못 입력한 경우, 다음 오류가 표시됩니다.
 
     -   이제 계정 정보를 입력했으므로 백업 암호화 키의 대상(내보내기 파일 위치)을 변경하는 옵션이 표시됩니다.
 
-        -   기본적으로 내보내기 파일 위치는 **C:\\Windows\\system32**\\miiskeys-1.bin입니다.
+        -   기본적으로 내보내기 파일 위치는  **C:\\Windows\\system32**\\miiskeys-1.bin입니다.
 
 4. Microsoft Identity Manager SP1 동기화 서비스 빌드 4.4.1302.0을 설치합니다. 볼륨 라이선스 다운로드 센터 또는 MSDN 다운로드 사이트에서 찾을 수 있습니다. 설치를 완료했으면 키 집합 miiskeys.bin을 저장해야 합니다.
 
@@ -152,7 +152,7 @@ Windows 도메인 컨트롤러의 첫 번째 단계
 
 ![](media/0201f0281325c80eb70f91cbf0ac4d5b.jpg)
 
-3.  **참고**.  Windows를 다시 시작한 후 시작되지 않는 Microsoft 키 배포 서비스로 인해 관리 계정을 사용하는 서비스가 서버를 다시 시작한 후 중지되는 알려진 문제가 있습니다. 서비스를 시작할 수 없으며 Windows도 다시 시작할 수 없습니다. 이 문제는 Windows Server 2012 R2 이상에서 재현 가능합니다. 이 문제의 해결 방법은 다음 명령을 실행하는 것입니다. 
+3.  **참고**.  Windows를 다시 시작한 후 시작되지 않는 Microsoft 키 배포 서비스로 인해 관리 계정을 사용하는 서비스가 서버를 다시 시작한 후 중지되는 알려진 문제가 있습니다. 서비스를 시작할 수 없으며 Windows도 다시 시작할 수 없습니다. 이 문제는 Windows Server 2012 R2 이상에서 재현 가능합니다. 이 문제의 해결 방법은 다음 명령을 실행하는 것입니다. 
 
 -   **sc triggerinfo kdssvc start/networkon**
 
