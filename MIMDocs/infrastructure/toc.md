@@ -1,6 +1,5 @@
 # [이해 및 탐색](../microsoft-identity-manager-2016.md)
 ## [MIM 2016이란?](../microsoft-identity-manager-2016.md)
-## [서비스 팩 1의 새로운 기능](../Microsoft-identity-manager-2016-sp1-release-notes.md)
 ### [MIM2016 SP1 PAM 배포 스크립트](../sp1-deployment-scripts.md)
 ## [PAM에 대해 알아보기](../pam/privileged-identity-management-for-active-directory-domain-services.md)
 ## [Azure의 하이브리드 보고](../identity-manager-hybrid-reporting-azure.md)
