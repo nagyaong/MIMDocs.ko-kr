@@ -9,18 +9,18 @@ ms.date: 11/05/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.technology: security
-ms.openlocfilehash: b25819d864f773578ba8aa52217c7b27536b7327
-ms.sourcegitcommit: f73a83f424d7e32b0119e870bc0020c061e966f7
+ms.openlocfilehash: 67064d930935f0091c14c64bf271dd0e1ded6bb4
+ms.sourcegitcommit: 3b514aba69af203f176b40cdb7c2a51c477c944a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265268"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51718228"
 ---
 # <a name="microsoft-identity-manager-2016-news-and-updates"></a>Microsoft Identity Manager 2016 뉴스 및 업데이트
 
 MIM(Microsoft Identity Manager) 2016은 Forefront Identity Manager의 ID 및 액세스 관리 기능을 기반으로 합니다. 이전의 프로세서처럼 MIM으로 조직 내의 사용자, 자격 증명, 정책, 액세스를 관리할 수 있습니다.  또한 MIM 2016에는 하이브리드 환경, 권한 있는 액세스 관리 기능, 새로운 플랫폼 지원이 추가되었습니다.
 
-일반 지원이 제공되는 현재 릴리스는 MIM 2016 SP1(서비스 팩 1)입니다.  2017년 8월에 이 릴리스에는 MIM 포털, PAM 시나리오 및 새 플랫폼에 대해 추가된 지원이 포함되었습니다.  FIM 또는 MIM 2016 SP1 이전의 MIM 버전을 실행 중인 고객은 MIM 2016 SP1 이상 핫픽스로 업그레이드해야 합니다.  [MIM 2016 SP1으로 업그레이드](microsoft-identity-manager-2016-sp1-release-notes.md)에 대해 자세히 알아보세요.
+일반 지원이 제공되는 현재 릴리스는 MIM 2016 SP1(서비스 팩 1)입니다.  2017년 8월에 이 릴리스에는 MIM 포털, PAM 시나리오 및 새 플랫폼에 대해 추가된 지원이 포함되었습니다.  FIM 또는 MIM 2016 SP1 이전의 MIM 버전을 실행 중인 고객은 MIM 2016 SP1 이상 핫픽스로 업그레이드해야 합니다.  [MIM 2016 SP1으로 업그레이드](./reference/version-history.md)에 대해 자세히 알아보세요.
 
 ## <a name="updates-since-mim-2016-sp1"></a>MIM 2016 SP1 이후 업데이트
 

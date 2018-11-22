@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 8bc2f6d2-9f53-4db6-aee6-a937ae468163
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 16dba460d9b5f9ce81076f8f883c352b1e8f4a81
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 4c39b5e3ba651464989bd0bc1f600629c7e89a0f
+ms.sourcegitcommit: 3b514aba69af203f176b40cdb7c2a51c477c944a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358429"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51718254"
 ---
 # <a name="connect-to-your-directories"></a>디렉터리에 연결
 
@@ -44,7 +44,7 @@ Forefront Identity Manager에서는 커넥터를 관리 에이전트라고 했�
 | [FIM 2010 R2용 Windows PowerShell 커넥터](https://msdn.microsoft.com/library/dn640417.aspx) | Windows PowerShell 2.0 이상 |
 | [FIM 2010 R2용 Microsoft Azure Active Directory 커넥터](https://msdn.microsoft.com/library/dn511001.aspx) | Microsoft Azure Active Directory |
 | [FIM 2010 R2용 일반 LDAP 커넥터](https://msdn.microsoft.com/library/dn510997.aspx) | [LDAP v3 서버(RFC 4510 규격)](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-connector-genericldap) |
-| [Generic SQL Connector for FIM 2010 R2 / MIM](https://msdn.microsoft.com/library/dn510997.aspx)(FIM 2010 R2/MIM용 일반 SQL 커넥터) | [커넥터는 모든 64비트 ODBC 드라이버와 함께 지원됨](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-connector-genericsql) |
+| [Generic SQL Connector for FIM 2010 R2 / MIM](./reference/microsoft-identity-manager-2016-connector-genericsql.md)(FIM 2010 R2/MIM용 일반 SQL 커넥터) | [커넥터는 모든 64비트 ODBC 드라이버와 함께 지원됨](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-connector-genericsql.md) |
 | [Lotus Domino용 커넥터](https://msdn.microsoft.com/library/hh859750.aspx) | Lotus Notes 릴리스 v8.5.x |
 | [SharePoint Services 커넥터 UPA](https://msdn.microsoft.com/library/dn511003.aspx) | UPA(사용자 프로필 서비스 응용 프로그램)를 포함하는 SharePoint Server 2013 또는 2016 |
 | [웹 서비스용 커넥터](https://www.microsoft.com/en-us/download/details.aspx?id=51495) | [SAP ECC 5.0 또는 6.0, Oracle PeopleSoft 9.1, Oracle eBusiness 12.1](https://docs.microsoft.com/microsoft-identity-manager/reference/microsoft-identity-manager-2016-ma-ws) |
