@@ -12,12 +12,12 @@ ms.assetid: 4978f60d-044d-4e84-8d93-65801fce1144
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: mim
-ms.openlocfilehash: 0501dbeb279dc37655d1d9a5e99545b07eea0623
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 077a0330e3a9169583331854525d19cee2d9eaf4
+ms.sourcegitcommit: 3b514aba69af203f176b40cdb7c2a51c477c944a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358689"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51718319"
 ---
 # <a name="supported-platforms-for-mim-2016"></a>MIM 2016에 대해 지원되는 플랫폼
 
@@ -47,7 +47,7 @@ ms.locfileid: "49358689"
 | **MIM 암호 다시 설정 및 등록 포털** | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | 웹 브라우저 | 지원되는 모든 주요 브라우저 |
 | **MIM 추가 기능 및 확장** | Windows | Windows 7<br/>Windows 8<br/>Windows 8.1<br/>Windows 10 |
-| | Outlook 통합(선택 사항) | Outlook 2010<br/>Outlook 2013 <br/> Outlook 2016(Windows 10) * |
+| | Outlook 통합(선택 사항) | Outlook 2010(간편 실행을 제외하고 Windows에서)<br/>Outlook 2013(간편 실행을 제외하고 Windows에서) <br/> Outlook 2016(간편 실행을 제외하고 Windows 10에서) |
 | | PAM PowerShell 요청자 cmdlet(선택 사항) | Windows 8.1<br/>Windows 10 |
 | **MIM 인증서 관리**(서버 및 CA 통합) | Windows server | Windows Server 2008 R2 SP1<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | 인증 기관 | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |

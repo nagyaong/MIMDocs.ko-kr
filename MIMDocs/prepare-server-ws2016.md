@@ -11,14 +11,14 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 49e549913a5fd87528df2205b8d5b0a83f3d2b24
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: a0fa1e837fd73872043748ee73f19a29d1d1412f
+ms.sourcegitcommit: 3b514aba69af203f176b40cdb7c2a51c477c944a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358247"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51718325"
 ---
-# <a name="set-up-an-identity-management-servers-windows-server-2016"></a>ID 관리 서버 설치: Windows Server 2016
+# <a name="set-up-an-identity-management-server-windows-server-2016"></a>ID 관리 서버 설정: Windows Server 2016
 
 > [!div class="step-by-step"]
 > [« 도메인 준비](preparing-domain.md)
@@ -39,9 +39,9 @@ ms.locfileid: "49358247"
 
 1. 해당 관리자로 새 컴퓨터에 로그인합니다.
 
-2. 제어판을 사용하여 네트워크에서 컴퓨터의 고정 IP 주소를 지정합니다. 이전 단계에서 사용한 도메인 컨트롤러의 IP 주소로 DNS 쿼리를 보내도록 해당 네트워크 인터페이스를 구성한 다음 컴퓨터 이름을 **CORPSERVICE**로 설정합니다.  이 경우 서버를 다시 시작해야 합니다.
+2. 제어판을 사용하여 네트워크에서 컴퓨터의 고정 IP 주소를 지정합니다. 이전 단계에서 사용한 도메인 컨트롤러의 IP 주소로 DNS 쿼리를 보내도록 해당 네트워크 인터페이스를 구성한 다음 컴퓨터 이름을 **CORPSERVICE**로 설정합니다.  이 작업에서는 서버를 다시 시작해야 합니다.
 
-3. 제어판을 열고 마지막 단계에서 구성한 도메인(*contoso.com*)에 컴퓨터를 연결합니다.  이를 위해 *Contoso\Administrator*와 같은 도메인 관리자의 사용자 이름 및 자격 증명을 입력해야 합니다.  환영 메시지가 표시되면 대화 상자를 닫고 이 서버를 다시 시작합니다.
+3. 제어판을 열고 마지막 단계에서 구성한 도메인(*contoso.com*)에 컴퓨터를 연결합니다.  이 작업에서는 *Contoso\Administrator*와 같은 도메인 관리자의 사용자 이름 및 자격 증명을 입력해야 합니다.  환영 메시지가 표시되면 대화 상자를 닫고 이 서버를 다시 시작합니다.
 
 4. *Contoso\MIMINSTALL* 등의 로컬 컴퓨터 관리자가 있는 도메인 계정으로 *CORPSERVICE* 컴퓨터에 로그인합니다.
 
@@ -69,7 +69,7 @@ ms.locfileid: "49358247"
 
 새로 만든 계정이 서비스로 실행될 수 있도록 서버 보안 정책을 설정합니다.
 > [!NOTE] 
-> 단일 서버(올인원) 또는 분산 서버 구성에 따라 동기화 서버 등 구성원 컴퓨터의 기준 역할만 추가하면 됩니다. 
+> 단일 서버(올인원) 또는 분산 서버 구성에 따라 멤버 버신의 역할에 기반한 동기화 서버 등을 추가하면 됩니다. 
 
 1. 로컬 보안 정책 프로그램을 시작합니다.
 
@@ -85,7 +85,7 @@ ms.locfileid: "49358247"
 
 6.  세부 정보 창에서 **네트워크에서 이 컴퓨터 액세스 거부**를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
 
-[!NOTE] 별도의 역할 서버가 있는 경우, 이 단계에서 SSPR 기능과 같은 일부 기능이 중단됩니다.
+[!NOTE] 서버 역할을 분리하면 SSPR와 같은 일부 기능이 중단됩니다.
 
 7. **사용자 또는 그룹 추가**를 클릭하고 다음 상자에서 `contoso\MIMSync; contoso\MIMService`을 입력한 다음 **확인**을 클릭합니다.
 
