@@ -5,21 +5,23 @@ keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
-ms.date: 05/22/2018
+ms.date: 12/02/2018
 ms.topic: get-started-article
 ms.prod: microsoft-identity-manager
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.suite: ems
-ms.openlocfilehash: 4102ffc450b993faaa62da66bb25f242b7e39280
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: f75eb69360852c9f629b60d4900638c8b51e068a
+ms.sourcegitcommit: 9e420840815adb133ac014a8694de9af4d307815
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358723"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52825793"
 ---
 # <a name="microsoft-identity-manager-data-handling"></a>Microsoft Identity Manager 데이터 처리 
 
-이 문서에서는 검색, 삭제, 업데이트 및 보고 작업을 통해 조직이 여러 연결된 데이터 원본에서 연습하거나 구현해야 하는 의사 결정을 내리는 방법에 대한 지침을 제공합니다. 삭제 또는 업데이트 방법을 결정하기 전에 ID 관리자 시스템(MIM)의 현재 디자인 및 구성을 이해하는 것이 중요합니다. 다음은 고객이 다음 질문에 대해 고려하고 답변해야 하는 몇 가지 시나리오입니다. 
+이 문서에서는 조직이 여러 연결된 데이터 원본에 적용할 수 있는 의사 결정을 내릴 수 있는 방법에 대한 지침을 제공합니다.  검색, 삭제, 업데이트 및 보고 작업을 통해 수행할 수 있습니다.  삭제 또는 업데이트 방법을 결정하기 전에 ID 관리자 시스템(MIM)의 현재 디자인 및 구성을 이해하는 것이 중요합니다. 
+
+다음은 고객이 다음 질문에 대해 고려하고 답변해야 하는 몇 가지 시나리오입니다. 
 
 - 비즈니스 프로세스에서 도움이 되는 ID 관리에 필요한 데이터는 무엇인가요?
 - 현재 데이터는 MIM에서 어디에 저장되나요?
