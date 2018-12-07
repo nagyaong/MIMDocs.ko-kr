@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 535c80fa2ff1b6250ae9a3f340cb514e58f390a9
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: fc70a0edb610fcb862d85902dd5e611e65f6e689
+ms.sourcegitcommit: 9e420840815adb133ac014a8694de9af4d307815
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358621"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52825810"
 ---
 # <a name="install-mim-2016-mim-service-and-portal"></a>MIM 2016 설치: MIM 서비스 및 포털
 
@@ -68,11 +68,11 @@ ms.locfileid: "49358621"
 
 12. MIM 포털에 대한 MIM 서비스 서버 주소를 *CORPIDM*(이 컴퓨터의 이름)으로 지정합니다.
 
-13. SharePoint 사이트 모음 URL로 *http://mim.contoso.com*을 지정합니다.
+13. SharePoint 사이트 모음 URL로 `*http://mim.contoso.com*`을 지정합니다.
 
-14. 암호 등록 URL 포트 80으로 *http://passwordregistration.contoso.com*을 지정하고, 나중에 443에서 SSL 인증서로 업데이트하는 것이 좋습니다.
+14. 암호 등록 URL 포트 80으로 `*http://passwordregistration.contoso.com*`을 지정하고, 나중에 443에서 SSL 인증서로 업데이트하는 것이 좋습니다.
 
-15. 암호 재설정 URL 포트 80으로 *http://passwordreset.contoso.com* 을 지정하고, 나중에 443에서 SSL 인증서로 업데이트하는 것이 좋습니다.
+15. 암호 재설정 URL 포트 80으로 `*http://passwordreset.contoso.com*`을 지정하고, 나중에 443에서 SSL 인증서로 업데이트하는 것이 좋습니다.
 
 16. 방화벽에서 포트 5725 및 5726 열기에 대한 확인란 및 MIM 포털에 대해 모든 인증된 사용자 액세스 권한 부여에 대한 확인란을 선택합니다.
 
