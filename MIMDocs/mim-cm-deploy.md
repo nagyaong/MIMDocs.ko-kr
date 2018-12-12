@@ -9,12 +9,12 @@ ms.date: 09/19/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: 01c5c8357c8cb0424bd38b61836919f5c2c3e96a
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 7ab76d386d8633de8919167c6b8f26b5137323e5
+ms.sourcegitcommit: 9e420840815adb133ac014a8694de9af4d307815
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358876"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52825844"
 ---
 # <a name="deploying-microsoft-identity-manager-certificate-manager-2016-mim-cm"></a>MIM CM(Microsoft Identity Manager 인증서 관리자) 2016 배포
 
@@ -499,9 +499,9 @@ CORPCM에 로그인하기 전에 MIMINSTALL을 구성 마법사에 대한 **doma
 
 18. 열려 있는 창을 모두 닫습니다.
 
-19. https://cm.contoso.com/certificatemanagement를 브라우저의 로컬 인트라넷 영역에 추가합니다.
+19. `https://cm.contoso.com/certificatemanagement`를 브라우저의 로컬 인트라넷 영역에 추가합니다.
 
-20. 서버 CORPCM https://cm.contoso.com/certificatemanagement에서 사이트 방문  
+20. 서버 CORPCM `https://cm.contoso.com/certificatemanagement`에서 사이트 방문  
 
     ![다이어그램](media/mim-cm-deploy/image035.png)
 
