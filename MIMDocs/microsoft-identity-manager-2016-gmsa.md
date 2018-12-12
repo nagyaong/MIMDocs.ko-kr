@@ -7,12 +7,12 @@ manager: mtillman
 ms.date: 06/27/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.openlocfilehash: 63f2509d35355a8fe3a59b173756257298079a92
-ms.sourcegitcommit: 6374aa4f7d58b7218626d36d0fc2dc4b38cb8332
+ms.openlocfilehash: 96d375d82a71a21f0be444d628f387c4e1ffdd09
+ms.sourcegitcommit: 9e420840815adb133ac014a8694de9af4d307815
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50237233"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52825776"
 ---
 # <a name="conversion-of-mim-specific-services-to-gmsa"></a>MIM 특정 서비스를 gMSA로 변환
 
@@ -84,7 +84,7 @@ Windows 도메인 컨트롤러의 첫 번째 단계
 
     -   기본적으로 **내보내기 키 집합** 이 이미 선택되어 있습니다.
 
-    -    **다음** 을 클릭합니다.
+    -   **다음**을 클릭합니다.
 
     -   이제 기존 동기화 계정 정보를 입력하라는 메시지가 표시됩니다.
 
@@ -96,7 +96,7 @@ Windows 도메인 컨트롤러의 첫 번째 단계
 
         -   도메인 - 동기화 서비스 계정이 속한 도메인
 
-    -    **다음** 을 클릭합니다.
+    -   **다음**을 클릭합니다.
 
     -   정보를 잘못 입력한 경우, 다음 오류가 표시됩니다.
 
