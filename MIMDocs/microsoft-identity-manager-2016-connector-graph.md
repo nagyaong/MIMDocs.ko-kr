@@ -37,7 +37,7 @@ Microsoft Graph용 Microsoft Identity Manager 커넥터의 초기 시나리오�
 <a name="other-identity-management-scenarios"></a>기타 ID 관리 시나리오
 ---------------
 
-Azure AD에 대한 사용자 및 그룹 동기화 외에 Azure AD에서 사용자, 그룹 및 연락처 개체의 만들기, 읽기, 업데이트 및 삭제를 포함하는 다른 특정 ID 관리 시나리오에 커넥터를 사용할 수 있습니다. 잠재적 시나리오를 평가할 때 이 커넥터는 데이터 흐름 겹침, Azure AD Connect 배포와의 실제 또는 잠재적 동기화 충돌을 발생시키는 시나리오에서 작동될 수 없습니다.  [Azure AD Connect](https://www.microsoft.com/en-us/download/details.aspx?id=47594)는 온-프레미스 디렉터리에서 Azure AD로 사용자 및 그룹을 동기화하여 Azure AD와 온-프레미스 디렉터리를 통합하는 권장되는 방법입니다.  Azure AD Connect에는 많은 동기화 기능이 있으며 MIM에서 생성된 개체에 사용할 수 없는 암호 및 장치 쓰기 저장과 같은 시나리오를 활성화합니다. 예를 들어 데이터를 AD DS로 가져오는 경우 해당 개체를 Azure AD 디렉터리에 다시 일치시키도록 시도하는 Azure AD Connect에서 제외되었는지 확인합니다.  또는 Azure AD Connect에서 만든 Azure AD 개체를 변경하는데 이 커넥터를 사용할 수 없습니다.
+Azure AD에 대한 사용자 및 그룹 동기화 외에 Azure AD에서 사용자, 그룹 및 연락처 개체의 만들기, 읽기, 업데이트 및 삭제를 포함하는 다른 특정 ID 관리 시나리오에 커넥터를 사용할 수 있습니다. 잠재적 시나리오를 평가할 때 이 커넥터는 데이터 흐름 겹침, Azure AD Connect 배포와의 실제 또는 잠재적 동기화 충돌을 발생시키는 시나리오에서 작동될 수 없습니다.  [Azure AD Connect](https://www.microsoft.com/en-us/download/details.aspx?id=47594)는 온-프레미스 디렉터리에서 Azure AD로 사용자 및 그룹을 동기화하여 Azure AD와 온-프레미스 디렉터리를 통합하는 권장되는 방법입니다.  Azure AD Connect에는 많은 동기화 기능이 있으며 MIM에서 생성된 개체에 사용할 수 없는 암호 및 디바이스 쓰기 저장과 같은 시나리오를 활성화합니다. 예를 들어 데이터를 AD DS로 가져오는 경우 해당 개체를 Azure AD 디렉터리에 다시 일치시키도록 시도하는 Azure AD Connect에서 제외되었는지 확인합니다.  또는 Azure AD Connect에서 만든 Azure AD 개체를 변경하는데 이 커넥터를 사용할 수 없습니다.
 
 
 
