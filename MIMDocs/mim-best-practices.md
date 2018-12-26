@@ -247,7 +247,7 @@ MPR과 같은 많은 개체 형식에서 syncproduction.ps1 스크립트는 두 
 
 ### <a name="avoid-changing-the-content-of-intermediate-files"></a>중간 파일의 내용 변경 안 함
 
-하위 수준 개체의 파일 형식 및 API(응용 프로그래밍 인터페이스)는 공용이며 개발자가 조작을 지원하지만, 마이그레이션 동안 중간 형식의 콘텐츠는 변경하지 않는 것이 좋습니다. 그러나 전체 ImportObjects를 changes.xml에서 제거하거나 pilot.xml에 대해 찾기 및 바꾸기 작업을 수행하여 버전 번호 또는 프로덕션 DNS 정보에 대한 파일DNS럿 DNS(Domain Name System) 정보를 바꾸어야 할 수 있습니다.
+하위 수준 개체의 파일 형식 및 API(애플리케이션 프로그래밍 인터페이스)는 공용이며 개발자가 조작을 지원하지만, 마이그레이션 동안 중간 형식의 콘텐츠는 변경하지 않는 것이 좋습니다. 그러나 전체 ImportObjects를 changes.xml에서 제거하거나 pilot.xml에 대해 찾기 및 바꾸기 작업을 수행하여 버전 번호 또는 프로덕션 DNS 정보에 대한 파일DNS럿 DNS(Domain Name System) 정보를 바꾸어야 할 수 있습니다.
 
 ### <a name="ensure-that-the-version-number-is-correct-in-pilotxml-when-migrating-across-versions"></a>버전 간에 마이그레이션을 수행할 때 pilot.xml에서 버전 번호가 올바른지 확인
 

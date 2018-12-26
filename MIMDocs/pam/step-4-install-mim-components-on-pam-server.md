@@ -25,7 +25,7 @@ ms.locfileid: "50379925"
 > [« 3단계](step-3-prepare-pam-server.md)
 > [5단계 »](step-5-establish-trust-between-priv-corp-forests.md)
 
-PAMSRV에서 MIM 서비스 및 포털과 샘플 포털 웹 응용 프로그램을 설치할 수 있도록 PRIV\Administrator로 로그인합니다.
+PAMSRV에서 MIM 서비스 및 포털과 샘플 포털 웹 애플리케이션을 설치할 수 있도록 PRIV\Administrator로 로그인합니다.
 
   > [!NOTE]
   > 사용자는 도메인 관리자여야 합니다. 도메인 관리자로 다음 명령을 실행하지 않으면 다음 단계에서 트러스트 유효성 확인 검사가 완료되지 않습니다.
@@ -70,11 +70,11 @@ MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니�
     ![PAM REST API에 대한 바인딩 정보 - 스크린샷](./media/PAM_GS_MIM_2015_Service_Portal_configure_application_pool.png)
 
 12. SharePoint와 동일한 계정을 사용하도록 MIM PAM REST API 계정을 구성합니다(MIM 포털이 이 서버에 함께 있을 때).
-    - 응용 프로그램 풀 계정 이름: *SharePoint*  
-    - 응용 프로그램 풀 계정 암호: <em>Pass@word1</em>(또는 2단계에서 만든 암호)  
-    - 응용 프로그램 풀 계정 도메인: *PRIV*  
+    - 애플리케이션 풀 계정 이름: *SharePoint*  
+    - 애플리케이션 풀 계정 암호: <em>Pass@word1</em>(또는 2단계에서 만든 암호)  
+    - 애플리케이션 풀 계정 도메인: *PRIV*  
 
-    ![응용 프로그램 풀 계정 자격 증명 - 스크린샷](./media/PAM_GS_Configure_Component_Service.png)
+    ![애플리케이션 풀 계정 자격 증명 - 스크린샷](./media/PAM_GS_Configure_Component_Service.png)
 
     현재 구성에서 서비스 계정이 안전하지 않다는 경고가 나타날 수 있습니다. 하지만 괜찮습니다.
 
@@ -122,18 +122,18 @@ MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니�
     - Forefront Identity Manager 서비스(STS)
     - Forefront Identity Manager 서비스(웹 서비스)  
 4.  **새 규칙** > **포트** > **TCP**를 클릭하고 특정 로컬 포트 *8086* 및 *8090*을 입력합니다. 마법사에서 기본값을 적용하고 규칙 이름을 지정하고 **마침**을 클릭합니다.  
-5.  마법사를 완료한 후 Windows 방화벽 응용 프로그램을 닫습니다.
+5.  마법사를 완료한 후 Windows 방화벽 애플리케이션을 닫습니다.
 
 6.  **제어판**을 시작합니다.  
 7.  네트워크 및 인터넷 아래에서 **네트워크 상태 및 작업 보기**를 선택합니다.  
 8.  priv.contoso.local과 도메인 네트워크가 나열된 활성 네트워크가 있는지 확인합니다.  
 9. **제어판**을 닫습니다.
 
-## <a name="set-up-the-sample-web-application"></a>샘플 웹 응용 프로그램 설정
+## <a name="set-up-the-sample-web-application"></a>샘플 웹 애플리케이션 설정
 
-이 섹션에서는 MIM PAM REST API에 대한 샘플 웹 응용 프로그램을 설치하고 구성합니다.
+이 섹션에서는 MIM PAM REST API에 대한 샘플 웹 애플리케이션을 설치하고 구성합니다.
 
-1. 샘플 웹 응용 프로그램 보관 파일에서 [ID 관리 샘플](https://github.com/Azure/identity-management-samples)을 zip 파일로 다운로드합니다.
+1. 샘플 웹 애플리케이션 보관 파일에서 [ID 관리 샘플](https://github.com/Azure/identity-management-samples)을 zip 파일로 다운로드합니다.
 
 2. 새 폴더 **C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal**에 **identity-management-samples-master\Privileged-Access-Management-Portal\src** 폴더 콘텐츠의 압축을 풉니다.
 
@@ -143,7 +143,7 @@ MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니�
    New-WebSite -Name "MIM Privileged Access Management Example Portal" -Port 8090   -PhysicalPath "C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal\"
    ```
 
-4. 샘플 웹 응용 프로그램을 설정하면 사용자를 MIM PAM REST API로 리디렉션할 수 있습니다. 메모장과 같은 텍스트 편집기를 사용하여 **C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management REST API\web.config** 파일을 편집합니다. **<system.webServer>** 섹션에서 다음 줄을 추가합니다.
+4. 샘플 웹 애플리케이션을 설정하면 사용자를 MIM PAM REST API로 리디렉션할 수 있습니다. 메모장과 같은 텍스트 편집기를 사용하여 **C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management REST API\web.config** 파일을 편집합니다. **<system.webServer>** 섹션에서 다음 줄을 추가합니다.
 
    ```XML
    <httpProtocol>
@@ -155,7 +155,7 @@ MIM을 다운로드한 경우 새 폴더로 MIM 설치 보관 압축을 풉니�
    </httpProtocol>
    ```
 
-5. 샘플 웹 응용 프로그램을 구성합니다. 메모장과 같은 텍스트 편집기를 사용하여 **C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal\js\utils.js** 파일을 편집합니다. **pamRespApiUrl**의 값을 *http://pamsrv.priv.contoso.local:8086/api/pamresources/* 로 설정합니다.
+5. 샘플 웹 애플리케이션을 구성합니다. 메모장과 같은 텍스트 편집기를 사용하여 **C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal\js\utils.js** 파일을 편집합니다. **pamRespApiUrl**의 값을 *http://pamsrv.priv.contoso.local:8086/api/pamresources/* 로 설정합니다.
 
 6. 이러한 변경 내용을 적용하려면 다음 명령을 사용하여 IIS를 다시 시작합니다.
 

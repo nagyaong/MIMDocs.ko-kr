@@ -1,5 +1,5 @@
 ---
-title: MIM 인증서 관리자 Windows 응용 프로그램 배포 | Microsoft 문서
+title: MIM 인증서 관리자 Windows 애플리케이션 배포 | Microsoft 문서
 description: 사용자가 자신의 액세스 권한을 관리할 수 있도록 인증서 관리자 앱을 배포하는 방법을 알아봅니다.
 keywords: ''
 author: billmath
@@ -18,9 +18,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/16/2018
 ms.locfileid: "49358349"
 ---
-# <a name="mim-certificate-manager-windows-store-application-deployment"></a>MIM 인증서 관리자 Windows 스토어 응용 프로그램 배포
+# <a name="mim-certificate-manager-windows-store-application-deployment"></a>MIM 인증서 관리자 Windows 스토어 애플리케이션 배포
 
-MIM 2016 및 인증서 관리자를 실행한 후에 MIM 인증서 관리자 Windows 스토어 응용 프로그램을 배포할 수 있습니다. 사용자가 Windows 스토어 응용 프로그램을 사용하여 실제 스마트 카드, 가상 스마트 카드 및 소프트웨어 인증서를 관리할 수 있습니다. MIM CM 앱을 배포하는 단계는 다음과 같습니다.
+MIM 2016 및 인증서 관리자를 실행한 후에 MIM 인증서 관리자 Windows 스토어 애플리케이션을 배포할 수 있습니다. 사용자가 Windows 스토어 애플리케이션을 사용하여 실제 스마트 카드, 가상 스마트 카드 및 소프트웨어 인증서를 관리할 수 있습니다. MIM CM 앱을 배포하는 단계는 다음과 같습니다.
 
 1. 인증서 템플릿을 만듭니다.
 
@@ -153,9 +153,9 @@ MIM 2016 및 인증서 관리자를 실행한 후에 MIM 인증서 관리자 Win
 
 11. AD FS 인증을 사용하여 작업하려면
 
-    - 가상 스마트 카드 응용 프로그램을 엽니다. 이 응용 프로그램을 사용하면 다음 단계에 필요한 값을 보다 쉽게 찾을 수 있습니다.
+    - 가상 스마트 카드 애플리케이션을 엽니다. 이 응용 프로그램을 사용하면 다음 단계에 필요한 값을 보다 쉽게 찾을 수 있습니다.
 
-    - 응용 프로그램을 AD FS 서버에 클라이언트로 추가하고 서버에서 CM을 구성하기 위해 AD FS 서버에서 Windows PowerShell을 열고 명령 `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`을 실행합니다.
+    - 애플리케이션을 AD FS 서버에 클라이언트로 추가하고 서버에서 CM을 구성하기 위해 AD FS 서버에서 Windows PowerShell을 열고 명령 `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`을 실행합니다.
 
        다음은 ConfigureMimCMClientAndRelyingParty.ps1 스크립트입니다.
 
@@ -252,7 +252,7 @@ MIM 2016 및 인증서 관리자를 실행한 후에 MIM 인증서 관리자 Win
 
     - redirectUri 및 serverFQDN의 값을 업데이트합니다.
 
-    - 가상 스마트 카드 응용 프로그램에서 redirectUri를 찾으려면 응용 프로그램 설정 패널을 열고 **설정**을 클릭합니다. 리디렉션 URI는 AD FS 서버 주소 표시줄 아래에 나열되어야 합니다. URI는 ADFS 서버 주소를 구성한 경우에만 나타납니다.
+    - 가상 스마트 카드 애플리케이션에서 redirectUri를 찾으려면 애플리케이션 설정 패널을 열고 **설정**을 클릭합니다. 리디렉션 URI는 AD FS 서버 주소 표시줄 아래에 나열되어야 합니다. URI는 ADFS 서버 주소를 구성한 경우에만 나타납니다.
 
     - serverFQDN은 MIMCM 서버의 전체 컴퓨터 이름일 뿐입니다.
 

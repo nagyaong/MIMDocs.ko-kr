@@ -174,7 +174,7 @@ Windows 도메인 컨트롤러의 첫 번째 단계
 
 ![cid:image007.png\@01D36EB7.562E6CF0](media/d350bc13751b2d0a884620db072ed019.png)
 
-8.  “Configure Privileged Access Management REST API”(Privileged Access Management REST API 구성) 페이지에서 끝에 \$ 기호를 포함하여 응용 프로그램 풀 계정 이름을 입력하고 암호 필드는 비워 둡니다.
+8.  “Configure Privileged Access Management REST API”(Privileged Access Management REST API 구성) 페이지에서 끝에 \$ 기호를 포함하여 애플리케이션 풀 계정 이름을 입력하고 암호 필드는 비워 둡니다.
 
 ![](media/88db2f6f291fff8bcdd0da5d538aafc6.png)
 
@@ -212,6 +212,6 @@ Windows 도메인 컨트롤러의 첫 번째 단계
 
 - Exchange 암호를 암호화하기 위해 설치 관리자는 추가 서비스를 만들고
     - 관리되는 계정으로 실행합니다. 설치하는 동안 다음 메시지가
-    - 응용 프로그램 이벤트 로그에 추가됩니다.
+    - 애플리케이션 이벤트 로그에 추가됩니다.
 
 ![cid:image016.jpg\@01D36F53.303D5190](media/95b315454705cd4d939b55ac5ad910f5.jpg)

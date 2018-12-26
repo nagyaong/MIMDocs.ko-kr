@@ -159,7 +159,7 @@ Active Directory 도메인 컨트롤러에서 다른 연결된 데이터 원본�
 
 ## <a name="user-based-password-change-management"></a>사용자 기반 암호 변경 관리
 
-MIM은 암호 재설정에 WMI(Windows Management Instrumentation)를 사용하는 두 개의 웹 응용 프로그램을 제공합니다. 암호 동기화와 마찬가지로 관리 에이전트 디자이너에서 관리 에이전트를 구성할 때 암호 관리가 활성화됩니다. 암호 관리 및 WMI에 대한 자세한 내용은 MIM Developer Reference(MIM 개발자 참조)를 참조하세요.
+MIM은 암호 재설정에 WMI(Windows Management Instrumentation)를 사용하는 두 개의 웹 애플리케이션을 제공합니다. 암호 동기화와 마찬가지로 관리 에이전트 디자이너에서 관리 에이전트를 구성할 때 암호 관리가 활성화됩니다. 암호 관리 및 WMI에 대한 자세한 내용은 MIM Developer Reference(MIM 개발자 참조)를 참조하세요.
 
 MIM에서는 설치 과정 중에 암호 관리 작업을 특별히 지원하는 두 개의 보안 그룹을 만듭니다.
 

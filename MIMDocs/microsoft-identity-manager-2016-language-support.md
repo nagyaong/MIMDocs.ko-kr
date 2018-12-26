@@ -81,8 +81,8 @@ Microsoft 인증서 관리는 다음 9개 언어를 지원합니다.
 |포르투갈어(포르투갈)|pt-PT|pt-PT|
 |스페인어|es-ES|예|
 
-## <a name="certificate-management-modern-application"></a>인증서 관리 최신 응용 프로그램  
-Microsoft 인증서 관리 최신 응용 프로그램은 다음 33개 언어를 지원합니다. 
+## <a name="certificate-management-modern-application"></a>인증서 관리 최신 애플리케이션  
+Microsoft 인증서 관리 최신 애플리케이션은 다음 33개 언어를 지원합니다. 
 
 |Language | [1.0.225.104](https://www.microsoft.com/en-us/download/details.aspx?id=54954) | |
 |-----|-----|-----|-----|

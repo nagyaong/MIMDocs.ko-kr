@@ -29,7 +29,7 @@ PAM 역할을 구성할 때 역할 활성화를 요청하는 사용자에게 권
 
 검사를 전혀 사용하지 않는 경우 후보 사용자가 자신의 역할에 대해 자동으로 활성화됩니다.
 
-Microsoft Azure MFA(Multi-Factor Authentication)는 사용자가 모바일 앱, 전화 통화 또는 문자 메시지를 사용하여 로그인 시도를 확인해야 하는 인증 서비스입니다. Microsoft Azure Active Directory와 함께 사용할 수 있으며 클라우드 및 온-프레미스 엔터프라이즈 응용 프로그램을 위한 서비스로 사용할 수 있습니다. PAM 시나리오의 경우 Azure MFA는 추가 인증 메커니즘을 제공합니다. 사용자가 Windows PRIV 도메인에 인증하는 방법에 관계 없이 권한 부여를 위해 Azure MFA를 사용할 수 있습니다.
+Microsoft Azure MFA(Multi-Factor Authentication)는 사용자가 모바일 앱, 전화 통화 또는 문자 메시지를 사용하여 로그인 시도를 확인해야 하는 인증 서비스입니다. Microsoft Azure Active Directory와 함께 사용할 수 있으며 클라우드 및 온-프레미스 엔터프라이즈 애플리케이션을 위한 서비스로 사용할 수 있습니다. PAM 시나리오의 경우 Azure MFA는 추가 인증 메커니즘을 제공합니다. 사용자가 Windows PRIV 도메인에 인증하는 방법에 관계 없이 권한 부여를 위해 Azure MFA를 사용할 수 있습니다.
 
 ## <a name="prerequisites"></a>전제 조건
 

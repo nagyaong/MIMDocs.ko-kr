@@ -95,7 +95,7 @@ SharePoint 2016을 설치하려면 다음 단계를 따르세요. 설치가 완�
     > [!NOTE]
     > Windows 기본 인증 방법이 사용 중이라는 경고 메시지가 표시되며 최종 명령을 반환하는 데 몇 분 정도 걸릴 수 있습니다. 완료되면 출력에 새 포털의 URL이 표시됩니다. 나중에 참조할 수 있도록 **SharePoint 2016 관리 셸** 창을 열어 둡니다.
 
-2. SharePoint 2016 관리 셸을 시작한 후 다음 PowerShell 스크립트를 실행하여 해당 웹 응용 프로그램과 연결된 **SharePoint 사이트 모음**을 만듭니다.
+2. SharePoint 2016 관리 셸을 시작한 후 다음 PowerShell 스크립트를 실행하여 해당 웹 애플리케이션과 연결된 **SharePoint 사이트 모음**을 만듭니다.
 
    ```
     $t = Get-SPWebTemplate -compatibilityLevel 15 -Identity "STS#1"

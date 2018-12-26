@@ -97,7 +97,7 @@ PAM 샘플 포털을 통해 권한 있는 액세스를 요청하여 활성화합
 8. 왼쪽 탭에서 **활성화**를 클릭합니다. **PAM 역할**을 선택하고 **활성화**를 클릭합니다.
 
 > [!Note]
-> 이 환경에서는 [Privileged Access Management REST API Reference](/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference)(Privileged Access Management REST API 참조)에 설명된 것처럼 PAM REST API를 사용하는 응용 프로그램을 개발하는 방법도 알아볼 수 있습니다.
+> 이 환경에서는 [Privileged Access Management REST API 참조](/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference)에 설명된 것처럼 PAM REST API를 사용하는 애플리케이션을 개발하는 방법도 알아볼 수 있습니다.
 
 ## <a name="summary"></a>요약
 

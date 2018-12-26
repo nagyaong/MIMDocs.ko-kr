@@ -1,7 +1,7 @@
 ---
 title: Microsoft Graph용 Microsoft Identity Manager 커넥터 | Microsoft Docs
 author: fimguy
-description: Microsoft Graph용 Microsoft Identity Manager 커넥터는 외부 사용자 AD 계정 수명 주기 관리를 활성화합니다. 이 시나리오에서 조직은 Azure AD 디렉터리에 게스트를 초대하고 온-프레미스 Windows 통합 인증 또는 Kerberos 기반 응용 프로그램에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다.
+description: Microsoft Graph용 Microsoft Identity Manager 커넥터는 외부 사용자 AD 계정 수명 주기 관리를 활성화합니다. 이 시나리오에서 조직은 Azure AD 디렉터리에 게스트를 초대하고 온-프레미스 Windows 통합 인증 또는 Kerberos 기반 애플리케이션에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다.
 keywords: ''
 ms.author: billmath
 manager: mtillman
@@ -30,9 +30,9 @@ ms.locfileid: "49358655"
 <a name="b2b-account-lifecycle-management"></a>B2B 계정 수명 주기 관리
 --------------------------------
 
-Microsoft Graph용 Microsoft Identity Manager 커넥터의 초기 시나리오는 외부 사용자에 대한 AD DS 계정 수명 주기 관리를 자동화하는 데 도움이 되는 커넥터입니다. 이 시나리오에서 조직은 Azure AD Connect를 사용하여 AD DS에서 Azure AD로 직원을 동기화하고, Azure AD 디렉터리로 게스트를 초대합니다. 게스트를 초대하면 외부 사용자 개체가 해당 조직의 AD DS가 아닌 해당 조직의 Azure AD 디렉터리에 있게 됩니다. 그런 다음, 조직은 [Azure AD 응용 프로그램 프록시](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-publish) 또는 기타 게이트웨이 메커니즘을 통해 온-프레미스 Windows 통합 인증 또는 Kerberos 기반 응용 프로그램에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다. Azure AD 응용 프로그램 프록시를 사용하려면 식별 및 위임용으로 각 사용자에게 고유한 AD DS 계정이 있어야 합니다.  
+Microsoft Graph용 Microsoft Identity Manager 커넥터의 초기 시나리오는 외부 사용자에 대한 AD DS 계정 수명 주기 관리를 자동화하는 데 도움이 되는 커넥터입니다. 이 시나리오에서 조직은 Azure AD Connect를 사용하여 AD DS에서 Azure AD로 직원을 동기화하고, Azure AD 디렉터리로 게스트를 초대합니다. 게스트를 초대하면 외부 사용자 개체가 해당 조직의 AD DS가 아닌 해당 조직의 Azure AD 디렉터리에 있게 됩니다. 그런 다음, 조직은 [Azure AD 애플리케이션 프록시](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-publish) 또는 기타 게이트웨이 메커니즘을 통해 온-프레미스 Windows 통합 인증 또는 Kerberos 기반 애플리케이션에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다. Azure AD 애플리케이션 프록시를 사용하려면 식별 및 위임용으로 각 사용자에게 고유한 AD DS 계정이 있어야 합니다.  
 
-게스트에 대한 AD DS 계정을 자동으로 만들고 유지 관리하도록 MIM 동기화를 구성하는 방법을 알아보려면 [Azure 응용 프로그램 프록시를 사용하여 MIM 2016 SP1과 Azure AD B2B(기업 간) 공동 작업](~/microsoft-identity-manager-2016-graph-b2b-scenario.md) 문서를 참조하세요.  해당 문서는 커넥터에 필요한 동기화 규칙을 보여줍니다.
+게스트에 대한 AD DS 계정을 자동으로 만들고 유지 관리하도록 MIM 동기화를 구성하는 방법을 알아보려면 [Azure 애플리케이션 프록시를 사용하여 MIM 2016 SP1과 Azure AD B2B(기업 간) 공동 작업](~/microsoft-identity-manager-2016-graph-b2b-scenario.md) 문서를 참조하세요.  해당 문서는 커넥터에 필요한 동기화 규칙을 보여줍니다.
 
 <a name="other-identity-management-scenarios"></a>기타 ID 관리 시나리오
 ---------------
@@ -47,13 +47,13 @@ Azure AD에 대한 사용자 및 그룹 동기화 외에 Azure AD에서 사용�
 <a name="authorizing-the-connector-to-retrieve-or-manage-objects-in-your-azure-ad-directory"></a>Azure AD 디렉터리에서 개체를 검색하거나 관리하도록 커넥터에 권한 부여
 ----------------------------------------------------
 
-1.  커넥터를 사용하려면 Microsoft Graph를 통해 Azure AD 개체에서 작동하는 데 적절한 권한을 부여할 수 있도록 Azure AD에 웹앱/API 응용 프로그램을 만들어야 합니다.
+1.  커넥터를 사용하려면 Microsoft Graph를 통해 Azure AD 개체에서 작동하는 데 적절한 권한을 부여할 수 있도록 Azure AD에 웹앱/API 애플리케이션을 만들어야 합니다.
 
 ![](media/microsoft-identity-manager-2016-ma-graph/724d3fc33b4c405ab7eb9126e7fe831f.png)
 
-그림 1. 새 응용 프로그램 등록
+그림 1. 새 애플리케이션 등록
 
-2.  Azure Portal에서 만든 응용 프로그램을 열고, MA의 연결 페이지에서 나중에 사용하도록 클라이언트 ID로 응용 프로그램 ID를 저장합니다.
+2.  Azure Portal에서 만든 애플리케이션을 열고, MA의 연결 페이지에서 나중에 사용하도록 클라이언트 ID로 애플리케이션 ID를 저장합니다.
 
 ![](media/microsoft-identity-manager-2016-ma-graph/ecfcb97674790290aa9ca2dcaccdafbc.png)
 
@@ -65,22 +65,22 @@ Azure AD에 대한 사용자 및 그룹 동기화 외에 Azure AD에서 사용�
 
 그림 3. 새 클라이언트 암호
 
-4.  “필수 사용 권한”을 열어 응용 프로그램에 “Microsoft Graph API”를 추가합니다.
+4.  “필수 사용 권한”을 열어 애플리케이션에 “Microsoft Graph API”를 추가합니다.
 
 ![](media/microsoft-identity-manager-2016-ma-graph/908788fbf8c3c75101f7b663a8d78a4b.png)
 
 그림 4. 새 API 추가
 
-시나리오에 따라 “Microsoft Graph API”를 사용할 수 있도록 응용 프로그램에 다음 권한을 추가해야 합니다.
+시나리오에 따라 “Microsoft Graph API”를 사용할 수 있도록 애플리케이션에 다음 권한을 추가해야 합니다.
 
 | 개체 작업 | 필요한 권한                                                                  | 권한 유형 |
 |-----------------------|--------------------------------------------------------------------------------------|-----------------|
-| 그룹 가져오기          | `Group.Read.All` 또는 `Group.ReadWrite.All`                                                | 응용 프로그램     |
-| 사용자 가져오기           | `User.Read.All`, `User.ReadWrite.All`, `Directory.Read.All` 또는 `Directory.ReadWrite.All` | 응용 프로그램     |
+| 그룹 가져오기          | `Group.Read.All` 또는 `Group.ReadWrite.All`                                                | 애플리케이션     |
+| 사용자 가져오기           | `User.Read.All`, `User.ReadWrite.All`, `Directory.Read.All` 또는 `Directory.ReadWrite.All` | 애플리케이션     |
 
 필요한 권한에 대한 자세한 내용은 [여기](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference)에서 확인할 수 있습니다.
 
-5. 응용 프로그램에 필요한 권한을 부여합니다.
+5. 애플리케이션에 필요한 권한을 부여합니다.
 
 
 <a name="installing-the-connector"></a>커넥터 설치
@@ -105,14 +105,14 @@ Azure AD에 대한 사용자 및 그룹 동기화 외에 Azure AD에서 사용�
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/d95c6b2cc7951b607388cbd25920d7d0.png)
 
 
-10. MIM 동기화 서비스 UI에서 응용 프로그램 ID 및 생성된 클라이언트 비밀을 지정합니다. MIM 동기화에 구성된 각 관리 에이전트에는 동일한 응용 프로그램에 대해 병렬로 가져오기를 실행하지 않도록 Azure AD에서 자체 응용 프로그램이 있어야 합니다.
+10. MIM 동기화 서비스 UI에서 애플리케이션 ID 및 생성된 클라이언트 비밀을 지정합니다. MIM 동기화에 구성된 각 관리 에이전트에는 동일한 애플리케이션에 대해 병렬로 가져오기를 실행하지 않도록 Azure AD에서 자체 애플리케이션이 있어야 합니다.
 
 
 ![](media/microsoft-identity-manager-2016-ma-graph/77c2eb73bab8d5187da06293938f5fd9.png)
 
 그림 5. 연결 페이지
 
-연결 페이지(그림 5)에는 사용되는 Graph API 버전과 테넌트 이름이 포함되어 있습니다. 클라이언트 ID 및 클라이언트 비밀은 Azure AD에서 만들어야 하는 WebAPI 응용 프로그램의 응용 프로그램 ID 및 키 값을 나타냅니다.
+연결 페이지(그림 5)에는 사용되는 Graph API 버전과 테넌트 이름이 포함되어 있습니다. 클라이언트 ID 및 클라이언트 비밀은 Azure AD에서 만들어야 하는 WebAPI 애플리케이션의 애플리케이션 ID 및 키 값을 나타냅니다.
 
 11. 글로벌 매개 변수 페이지에서 필요한 변경 내용을 만듭니다.
 
@@ -124,7 +124,7 @@ Azure AD에 대한 사용자 및 그룹 동기화 외에 Azure AD에서 사용�
 
 - DateTime 형식 - Edm.DateTimeOffset 유형의 특성에 사용되는 형식입니다. 모든 날짜는 가져오는 동안 해당 형식을 사용하여 문자열로 변환됩니다. 설정 형식은 모든 특성에 대해 적용되며, 날짜를 저장합니다.
 
- - HTTP 시간 제한(초) - WebAPI 응용 프로그램에 대한 각 HTTP 호출 중에 사용될 시간 제한(초)입니다.
+ - HTTP 시간 제한(초) - WebAPI 애플리케이션에 대한 각 HTTP 호출 중에 사용될 시간 제한(초)입니다.
 
  - Force change password for created user at next sign(다음 로그인 시 생성된 사용자의 암호 강제 변경) - 이 옵션은 내보내기 중 생성되는 새 사용자에 사용됩니다. 이 옵션을 사용하면 [forceChangePasswordNextSignIn](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/passwordprofile) 속성이 true로 설정되고, 그러지 않으면 false입니다.
 
@@ -166,7 +166,7 @@ Azure AD에 대한 사용자 및 그룹 동기화 외에 Azure AD에서 사용�
 <a name="access-token-lifetime"></a>액세스 토큰 수명
 =====================
 
-그래프 응용 프로그램에서 Graph API에 액세스하려면 액세스 토큰이 필요합니다. 커넥터는 각 가져오기 반복에 대해 새 액세스 토큰을 요청합니다. 가져오기 반복은 페이지 크기에 따라 달라집니다. 예를 들면 다음과 같습니다.
+그래프 애플리케이션에서 Graph API에 액세스하려면 액세스 토큰이 필요합니다. 커넥터는 각 가져오기 반복에 대해 새 액세스 토큰을 요청합니다. 가져오기 반복은 페이지 크기에 따라 달라집니다. 예를 들면 다음과 같습니다.
 
 -   Azure AD에 10000개의 개체가 포함되어 있음
 

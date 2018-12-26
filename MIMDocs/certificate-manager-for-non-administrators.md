@@ -25,7 +25,7 @@ ms.locfileid: "49358220"
 
 1.  **appx 파일의 압축을 풉니다.**
 
-    서명 인증서를 가져옵니다. 단계에 따라 [내부 PKI를 사용하여 Windows 8 응용 프로그램에 서명](http://blogs.technet.com/b/deploymentguys/archive/2013/06/14/signing-windows-8-applications-using-an-internal-pki.aspx)합니다. "응용 프로그램에 서명"이 표시되면 중지합니다. 내보낸 pfx 파일의 이름을 지정합니다. .cer 파일로도 내보내고 이 파일을 새 서명 인증서의 cer 파일을 사용하는 클라이언트에 가져옵니다.
+    서명 인증서를 가져옵니다. 단계에 따라 [내부 PKI를 사용하여 Windows 8 애플리케이션에 서명](http://blogs.technet.com/b/deploymentguys/archive/2013/06/14/signing-windows-8-applications-using-an-internal-pki.aspx)합니다. "애플리케이션에 서명"이 표시되면 중지합니다. 내보낸 pfx 파일의 이름을 지정합니다. .cer 파일로도 내보내고 이 파일을 새 서명 인증서의 cer 파일을 사용하는 클라이언트에 가져옵니다.
 
     다음을 실행하여 appx 파일의 압축을 풉니다.
 

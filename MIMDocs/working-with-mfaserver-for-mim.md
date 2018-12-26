@@ -49,7 +49,7 @@ Azure Multi-Factor Authentication 서버와 MIM을 함께 사용하려면 다음
 ### <a name="step-3-install-the-azure-multi-factor-authentication-server"></a>3단계: Azure Multi-Factor Authentication 서버 설치
 서버를 다운로드한 후 [설치](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfaserver-deploy#install-and-configure-the-mfa-server)합니다.  활성화 자격 증명이 필요합니다. 
 
-### <a name="step-4-create-your-iis-web-application-that-will-host-the-sdk"></a>4단계: SDK를 호스트하는 IIS 웹 응용 프로그램 만들기
+### <a name="step-4-create-your-iis-web-application-that-will-host-the-sdk"></a>4단계: SDK를 호스트하는 IIS 웹 애플리케이션 만들기
 1. IIS 관리자를 엽니다. ![working-with-mfaserver-for-mim_iis.PNG](media/working-with-mfaserver-for-mim/working-with-mfaserver-for-mim_iis.PNG)
 2.  새 웹 사이트 호출 “MIM MFASDK”를 만들어 빈 디렉터리에 연결합니다. ![working-with-mfaserver-for-mim_sdkweb.PNG](media/working-with-mfaserver-for-mim/working-with-mfaserver-for-mim_sdkweb.PNG)
 3. Multi-Factor Authentication 콘솔을 열고 웹 서비스 SDK를 클릭합니다. ![working-with-mfaserver-for-mim_sdkinstall.PNG](media/working-with-mfaserver-for-mim/working-with-mfaserver-for-mim_sdkinstall.PNG)

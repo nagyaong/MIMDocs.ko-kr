@@ -46,7 +46,7 @@ Forefront Identity Manager에서는 커넥터를 관리 에이전트라고 했�
 | [FIM 2010 R2용 일반 LDAP 커넥터](https://msdn.microsoft.com/library/dn510997.aspx) | [LDAP v3 서버(RFC 4510 규격)](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-connector-genericldap) |
 | [Generic SQL Connector for FIM 2010 R2 / MIM](./reference/microsoft-identity-manager-2016-connector-genericsql.md)(FIM 2010 R2/MIM용 일반 SQL 커넥터) | [커넥터는 모든 64비트 ODBC 드라이버와 함께 지원됨](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-connector-genericsql.md) |
 | [Lotus Domino용 커넥터](https://msdn.microsoft.com/library/hh859750.aspx) | Lotus Notes 릴리스 v8.5.x |
-| [SharePoint Services 커넥터 UPA](https://msdn.microsoft.com/library/dn511003.aspx) | UPA(사용자 프로필 서비스 응용 프로그램)를 포함하는 SharePoint Server 2013 또는 2016 |
+| [SharePoint Services 커넥터 UPA](https://msdn.microsoft.com/library/dn511003.aspx) | UPA(사용자 프로필 서비스 애플리케이션)를 포함하는 SharePoint Server 2013 또는 2016 |
 | [웹 서비스용 커넥터](https://www.microsoft.com/en-us/download/details.aspx?id=51495) | [SAP ECC 5.0 또는 6.0, Oracle PeopleSoft 9.1, Oracle eBusiness 12.1](https://docs.microsoft.com/microsoft-identity-manager/reference/microsoft-identity-manager-2016-ma-ws) |
 | [특성-값 쌍 텍스트 파일](https://technet.microsoft.com/library/cc708644(v=ws.10).aspx) | 특성-값 쌍 텍스트 파일 |
 | [구분된 텍스트 파일](https://technet.microsoft.com/library/cc720612(v=ws.10).aspx) | 구분된 텍스트 파일 |

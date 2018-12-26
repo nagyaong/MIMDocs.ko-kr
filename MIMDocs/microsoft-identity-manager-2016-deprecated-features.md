@@ -18,7 +18,7 @@ ms.locfileid: "49358442"
 ---
 # <a name="deprecated-features"></a>더 이상 사용되지 않는 기능
 
-이 문서에서는 더 이상 사용되지 않는 Microsoft Identity Manager 2016 SP1의 기능에 대해 설명합니다. 이러한 기능은 Microsoft Identity Manager에 여전히 있는 경우에도 계속 지원됩니다. 그러나 기능 릴리스에서 제거될 수 있으므로 새 배포에는 권장되지 않습니다.  개발자는 새 응용 프로그램이나 솔루션에서 더 이상 사용되지 않는 기능을 활용하지 않는 것이 좋습니다.
+이 문서에서는 더 이상 사용되지 않는 Microsoft Identity Manager 2016 SP1의 기능에 대해 설명합니다. 이러한 기능은 Microsoft Identity Manager에 여전히 있는 경우에도 계속 지원됩니다. 그러나 기능 릴리스에서 제거될 수 있으므로 새 배포에는 권장되지 않습니다.  개발자는 새 애플리케이션이나 솔루션에서 더 이상 사용되지 않는 기능을 활용하지 않는 것이 좋습니다.
 
 > [!NOTE]
 > Microsoft Identity Manager SP1에서 제거될 기능은 **로 식별됩니다. <br>

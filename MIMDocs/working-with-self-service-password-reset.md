@@ -42,7 +42,7 @@ MIM 2016 릴리스 빌드 버전 4.5.26.0까지는 고객이 Azure MFA SDK(Azure
 
 다음 섹션에서는 다단계 인증에 Azure MFA를 사용하여 MIM 셀프 서비스 암호 재설정 포털을 배포하는 방법에 대해 설명합니다.  이러한 단계는 사용자에게 Azure AD 셀프 서비스 암호 재설정을 사용하지 않는 고객에게만 필요합니다.
 
-Microsoft Azure Multi-Factor Authentication은 사용자가 모바일 앱, 전화 통화 또는 문자 메시지를 사용하여 로그인 시도를 확인해야 하는 인증 서비스입니다. Microsoft Azure Active Directory와 함께 사용할 수 있으며 클라우드 및 온-프레미스 엔터프라이즈 응용 프로그램을 위한 서비스로 사용할 수 있습니다.
+Microsoft Azure Multi-Factor Authentication은 사용자가 모바일 앱, 전화 통화 또는 문자 메시지를 사용하여 로그인 시도를 확인해야 하는 인증 서비스입니다. Microsoft Azure Active Directory와 함께 사용할 수 있으며 클라우드 및 온-프레미스 엔터프라이즈 애플리케이션을 위한 서비스로 사용할 수 있습니다.
 
 Azure MFA는 셀프 서비스 로그인 지원을 위해 MIM에서 수행하는 메커니즘처럼, 기존 인증 프로세스를 강화할 수 있는 추가 인증 메커니즘을 제공합니다.
 

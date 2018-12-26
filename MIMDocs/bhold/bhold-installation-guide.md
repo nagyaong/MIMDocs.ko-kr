@@ -18,7 +18,7 @@ ms.locfileid: "49358504"
 ---
 # <a name="microsoft-bhold-suite-sp1-60-installation-guide"></a>Microsoft BHOLD Suite SP1(6.0) 설치 가이드
 
-Microsoft® BHOLD Suite SP1(Service Pack 1)은 응용 프로그램의 컬렉션이며 Microsoft Identity Manager 2016 SP1(MIM)에서 사용하는 경우 MIM에 대한 실제 역할 관리, 분석 및 증명을 추가합니다. Microsoft BHOLD Suite SP1은 다음 모듈로 구성됩니다.
+Microsoft® BHOLD Suite SP1(Service Pack 1)은 애플리케이션의 컬렉션이며 Microsoft Identity Manager 2016 SP1(MIM)에서 사용하는 경우 MIM에 대한 실제 역할 관리, 분석 및 증명을 추가합니다. Microsoft BHOLD Suite SP1은 다음 모듈로 구성됩니다.
 
 - BHOLD Core
 - 액세스 관리 커넥터

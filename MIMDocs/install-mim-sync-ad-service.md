@@ -29,7 +29,7 @@ ms.locfileid: "49358825"
 > - 도메인 이름 - **contoso**
 > - 암호 - <strong>Pass@word1</strong>
 
-기본적으로 MIM 동기화 서비스(동기화)에는 구성된 커넥터가 없습니다.  일반적인 첫 단계는 MIM 동기화를 사용하여 기존 Active Directory 계정으로 FIM 서비스 데이터베이스를 채우는 것입니다. 이를 위해 MIM 동기화 서비스 응용 프로그램을 사용합니다.
+기본적으로 MIM 동기화 서비스(동기화)에는 구성된 커넥터가 없습니다.  일반적인 첫 단계는 MIM 동기화를 사용하여 기존 Active Directory 계정으로 FIM 서비스 데이터베이스를 채우는 것입니다. 이를 위해 MIM 동기화 서비스 애플리케이션을 사용합니다.
 
 ## <a name="create-the-mim-management-agent"></a>MIM 관리 에이전트 만들기
 MIM MA(관리 에이전트)는 MIM 서비스에 대한 MIM 동기화를 위한 커넥터입니다. 이 커넥터를 만들려면 관리 에이전트 만들기 마법사를 사용하면 됩니다.

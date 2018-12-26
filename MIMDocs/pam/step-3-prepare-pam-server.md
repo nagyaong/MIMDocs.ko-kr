@@ -46,9 +46,9 @@ ms.locfileid: "50379908"
 7.  서버가 다시 시작하면 관리자로 로그인하여 제어판을 열고 PAMSRV를 PRIV 도메인(priv.contoso.local)에 연결합니다.  이를 위해 PRIV 도메인 관리자(PRIV\\Administrator)의 사용자 이름 및 자격 증명을 제공해야 합니다. 환영 메시지가 표시되면 대화 상자를 닫고 이 서버를 다시 시작합니다.
 
 
-### <a name="add-the-web-server-iis-and-application-server-roles"></a>웹 서버(IIS) 및 응용 프로그램 서버 역할 추가
+### <a name="add-the-web-server-iis-and-application-server-roles"></a>웹 서버(IIS) 및 애플리케이션 서버 역할 추가
 
-웹 서버(IIS), 응용 프로그램 서버 역할, .NET Framework 3.5 기능, Windows PowerShell용 Active Directory 모듈, SharePoint에서 필요한 다른 기능을 추가합니다.
+웹 서버(IIS), 애플리케이션 서버 역할, .NET Framework 3.5 기능, Windows PowerShell용 Active Directory 모듈, SharePoint에서 필요한 다른 기능을 추가합니다.
 
 1.  PRIV 도메인 관리자(PRIV\Administrator)로 로그인하고 PowerShell을 시작합니다.
 
@@ -89,12 +89,12 @@ ms.locfileid: "50379908"
 
 ### <a name="change-the-iis-configuration"></a>IIS 구성 변경
 
-응용 프로그램이 Windows 인증 모드를 사용할 수 있도록 IIS 구성을 변경하는 두 가지 방법이 있습니다. MIMAdmin으로 로그인하고 다음 옵션 중 하나를 따라야 합니다.
+애플리케이션이 Windows 인증 모드를 사용할 수 있도록 IIS 구성을 변경하는 두 가지 방법이 있습니다. MIMAdmin으로 로그인하고 다음 옵션 중 하나를 따라야 합니다.
 
 PowerShell을 사용하려면 다음을 수행합니다.
 
 1. PowerShell을 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 선택합니다.
-2. IIS를 중지하고 다음 명령을 사용하여 응용 프로그램 호스트 설정의 잠금을 해제합니다.
+2. IIS를 중지하고 다음 명령을 사용하여 애플리케이션 호스트 설정의 잠금을 해제합니다.
    ```CMD
    iisreset /STOP
    C:\Windows\System32\inetsrv\appcmd.exe unlock config /section:windowsAuthentication -commit:apphost
@@ -153,9 +153,9 @@ SharePoint 제품 구성 마법사를 실행하여 SharePoint를 구성합니다
 8.  기존의 관리되는 계정(PRIV\SharePoint)을 사용하려면 선택하고 모든 선택적 서비스를 선택 취소하여 사용하지 않도록 설정한 후 **다음**을 클릭합니다.  
 9. 사이트 모음 만들기 창이 표시되면 **건너뛰기**와 **마침**을 차례로 클릭합니다.  
 
-## <a name="create-a-sharepoint-foundation-2013-web-application"></a>SharePoint Foundation 2013 웹 응용 프로그램 만들기
+## <a name="create-a-sharepoint-foundation-2013-web-application"></a>SharePoint Foundation 2013 웹 애플리케이션 만들기
 
-마법사가 완료된 후 PowerShell을 사용하여 MIM 포털을 호스트할 SharePoint Foundation 2013 웹 응용 프로그램을 만듭니다. 이 연습은 데모용이므로 SSL은 사용하도록 설정되지 않습니다.
+마법사가 완료된 후 PowerShell을 사용하여 MIM 포털을 호스트할 SharePoint Foundation 2013 웹 애플리케이션을 만듭니다. 이 연습은 데모용이므로 SSL은 사용하도록 설정되지 않습니다.
 
 1.  SharePoint 2013 관리 셸을 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 선택한 후 다음 PowerShell 스크립트를 실행합니다.
 
@@ -171,7 +171,7 @@ SharePoint 제품 구성 마법사를 실행하여 SharePoint를 구성합니다
 
 ## <a name="create-a-sharepoint-site-collection"></a>Sharepoint 사이트 모음 만들기
 
-이제 MIM 포털을 호스트하기 위해 해당 웹 응용 프로그램과 관련된 SharePoint 사이트 모음을 만듭니다.
+이제 MIM 포털을 호스트하기 위해 해당 웹 애플리케이션과 관련된 SharePoint 사이트 모음을 만듭니다.
 
 1.  **SharePoint 2013 관리 셸**이 아직 열려 있지 않은 경우 이를 시작하고 다음 PowerShell 스크립트를 실행합니다.
 
