@@ -1,7 +1,7 @@
 ---
 title: B2B에 대한 Microsoft Graph용 Microsoft Identity Manager 커넥터 구성 | Microsoft Docs
 author: billmath
-description: Microsoft Graph 커넥터는 외부 사용자 AD 계정 수명 주기 관리입니다. 이 시나리오에서 조직은 Azure AD 디렉터리에 게스트를 초대하고 온-프레미스 Windows 통합 인증 또는 Kerberos 기반 응용 프로그램에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다.
+description: Microsoft Graph 커넥터는 외부 사용자 AD 계정 수명 주기 관리입니다. 이 시나리오에서 조직은 Azure AD 디렉터리에 게스트를 초대하고 온-프레미스 Windows 통합 인증 또는 Kerberos 기반 애플리케이션에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다.
 keywords: ''
 ms.author: billmath
 manager: mtillman
@@ -16,14 +16,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/16/2018
 ms.locfileid: "49358774"
 ---
-<a name="azure-ad-business-to-business-b2b-collaboration-with-microsoft-identity-managermim-2016-sp1-with-azure-application-proxy"></a>Azure 응용 프로그램 프록시를 사용하여 MIM(Microsoft Identity Manager) 2016 SP1과 Azure AD B2B(기업 간) 공동 작업
+<a name="azure-ad-business-to-business-b2b-collaboration-with-microsoft-identity-managermim-2016-sp1-with-azure-application-proxy"></a>Azure 애플리케이션 프록시를 사용하여 MIM(Microsoft Identity Manager) 2016 SP1과 Azure AD B2B(기업 간) 공동 작업
 ============================================================================================================================
 
-초기 시나리오는 외부 사용자 AD 계정 수명 주기 관리입니다.   이 시나리오에서 조직은 Azure AD 디렉터리에 게스트를 초대하고 [Azure AD 응용 프로그램](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-publish) 프록시 또는 기타 게이트웨이 메커니즘을 통해 온-프레미스 Windows 통합 인증 또는 Kerberos 기반 응용 프로그램에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다. Azure AD 응용 프로그램 프록시를 사용하려면 식별 및 위임용으로 각 사용자에게 고유한 AD DS 계정이 있어야 합니다.
+초기 시나리오는 외부 사용자 AD 계정 수명 주기 관리입니다.   이 시나리오에서 조직은 Azure AD 디렉터리에 게스트를 초대하고 [Azure AD 애플리케이션](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-publish) 프록시 또는 기타 게이트웨이 메커니즘을 통해 온-프레미스 Windows 통합 인증 또는 Kerberos 기반 애플리케이션에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다. Azure AD 애플리케이션 프록시를 사용하려면 식별 및 위임용으로 각 사용자에게 고유한 AD DS 계정이 있어야 합니다.
 
 ## <a name="scenario-specific-guidance"></a>시나리오별 지침
 
-MIM 및 Azure AD 응용 프로그램 프록시를 사용한 B2B 구성에서의 몇 가지 가정:
+MIM 및 Azure AD 애플리케이션 프록시를 사용한 B2B 구성에서의 몇 가지 가정:
 
 -   온-프레미스 AD를 이미 배포했고, Microsoft Identity Manager가 설치되었으며 MIM 서비스의 기본 구성, MIM 포털, AD MA(Active Directory 관리 에이전트) 및FIM MA(FIM 관리 에이전트)가 설치되었습니다.
     <https://docs.microsoft.com/microsoft-identity-manager/microsoft-identity-manager-deploy>
@@ -32,11 +32,11 @@ MIM 및 Azure AD 응용 프로그램 프록시를 사용한 B2B 구성에서의 
 
 -   사용자 및 그룹을 Azure AD로 동기화하기 위해 Azure AD Connect를 구성했습니다.
 
--   응용 프로그램 제어를 위해 Office 그룹을 [온-프레미스 AD DS에 다시](http://robsgroupsblog.com/blog/how-to-write-back-an-office-group-in-azure-active-directory-to-a-mail-enabled-security-group-in-an-on-premises-active-directory) 동기화하도록 Azure AD Connect를 구성했습니다.
+-   애플리케이션 제어를 위해 Office 그룹을 [온-프레미스 AD DS에 다시](http://robsgroupsblog.com/blog/how-to-write-back-an-office-group-in-azure-active-directory-to-a-mail-enabled-security-group-in-an-on-premises-active-directory) 동기화하도록 Azure AD Connect를 구성했습니다.
 
--   응용 프로그램 프록시 커넥터 및 커넥터 그룹을 이미 설정했습니다. 그렇지 않은 경우 [여기](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-enable#install-and-register-a-connector)를 방문하여 설치하고 구성할 수 있습니다.
+-   애플리케이션 프록시 커넥터 및 커넥터 그룹을 이미 설정했습니다. 그렇지 않은 경우 [여기](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-enable#install-and-register-a-connector)를 방문하여 설치하고 구성할 수 있습니다.
 
--   Azure AD 앱 프록시를 통해 Windows 통합 인증 또는 개별 AD 계정을 사용하는 응용 프로그램을 이미 하나 이상 게시했습니다.
+-   Azure AD 앱 프록시를 통해 Windows 통합 인증 또는 개별 AD 계정을 사용하는 애플리케이션을 이미 하나 이상 게시했습니다.
 
 -   Azure AD에 하나 이상의 사용자가 만들어지는 하나 이상의 게스트를 초대하거나 초대했습니다. <https://docs.microsoft.com/azure/active-directory/active-directory-b2b-self-service-portal>
 
@@ -46,14 +46,14 @@ MIM 및 Azure AD 응용 프로그램 프록시를 사용한 B2B 구성에서의 
 
 이 가이드는 다음 시나리오를 기반으로 합니다.
 
-Contoso Pharmaceuticals는 R&D 부서의 일부로 Trey Research Inc.를 운영합니다. Trey Research 직원은 Contoso Pharmaceuticals에서 제공하는 연구 보고 응용 프로그램에 액세스해야 합니다.
+Contoso Pharmaceuticals는 R&D 부서의 일부로 Trey Research Inc.를 운영합니다. Trey Research 직원은 Contoso Pharmaceuticals에서 제공하는 연구 보고 애플리케이션에 액세스해야 합니다.
 
 -   Contoso Pharmaceuticals는 고유한 테넌트에 있으며 사용자 지정 도메인을 구성했습니다.
 
 -   외부 사용자를 Contoso Pharmaceuticals 테넌트로 초대했습니다.
     이 사용자는 초대를 수락했으며 공유되는 리소스에 액세스할 수 있습니다.
 
--   Contoso Pharmaceuticals는 앱 프록시를 통해 응용 프로그램을 게시했습니다. 이 시나리오에서 예제 응용 프로그램은 MIM 포털입니다. 이렇게 하면 게스트 사용자는 도움말 데스크 시나리오와 같은 MIM 프로세스에 참여하거나 MIM의 그룹에 대한 액세스를 요청할 수 있습니다.
+-   Contoso Pharmaceuticals는 앱 프록시를 통해 애플리케이션을 게시했습니다. 이 시나리오에서 예제 애플리케이션은 MIM 포털입니다. 이렇게 하면 게스트 사용자는 도움말 데스크 시나리오와 같은 MIM 프로세스에 참여하거나 MIM의 그룹에 대한 액세스를 요청할 수 있습니다.
 
 
 ## <a name="configure-ad-and-azure-ad-connect-to-exclude-users-added-from-azure-ad"></a>Azure AD에서 추가된 사용자를 제외하도록 AD 및 Azure AD Connect를 구성합니다.
@@ -66,11 +66,11 @@ Contoso Pharmaceuticals는 R&D 부서의 일부로 Trey Research Inc.를 운영�
 [Azure AD Connect 동기화: 필터링 구성](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-configure-filtering)에서 자세한 정보를 찾을 수 있습니다. 
  
 
-## <a name="create-the-azure-ad-application"></a>Azure AD 응용 프로그램 만들기 
+## <a name="create-the-azure-ad-application"></a>Azure AD 애플리케이션 만들기 
 
 
-참고: MIM 동기화에서 그래프 커넥터에 대한 관리 에이전트를 만들기 전에 [Graph 커넥터](microsoft-identity-manager-2016-connector-graph.md) 배포에 대한 가이드를 검토했고, 클라이언트 ID 및 비밀을 사용하여 응용 프로그램을 만들었는지 확인합니다.
-응용 프로그램에 이러한 사용 권한 중 하나 이상에 대한 권한이 부여되었는지 확인합니다. `User.Read.All`, `User.ReadWrite.All`, `Directory.Read.All` 또는 `Directory.ReadWrite.All` 
+참고: MIM 동기화에서 그래프 커넥터에 대한 관리 에이전트를 만들기 전에 [Graph 커넥터](microsoft-identity-manager-2016-connector-graph.md) 배포에 대한 가이드를 검토했고, 클라이언트 ID 및 비밀을 사용하여 애플리케이션을 만들었는지 확인합니다.
+애플리케이션에 이러한 사용 권한 중 하나 이상에 대한 권한이 부여되었는지 확인합니다. `User.Read.All`, `User.ReadWrite.All`, `Directory.Read.All` 또는 `Directory.ReadWrite.All` 
 
 ## <a name="create-the-new-management-agent"></a>새 관리 에이전트 만들기
 
@@ -291,7 +291,7 @@ MIM 포털로 이동하고, 동기화 규칙을 선택하고, 새로 만들기�
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/506f0a093c8b58cbb62cc4341b251564.png)
 
 
-## <a name="optional-application-proxy-for-b2b-guests-logging-into-mim-portal"></a>선택 사항: MIM 포털로 로그인하는 B2B 게스트에 대한 응용 프로그램 프록시
+## <a name="optional-application-proxy-for-b2b-guests-logging-into-mim-portal"></a>선택 사항: MIM 포털로 로그인하는 B2B 게스트에 대한 애플리케이션 프록시
 
 이제 MIM에서 동기화 규칙을 만들었습니다. 앱 프록시 구성에서 클라우드 원칙을 사용하여 앱 프록시에서 KCD를 허용하도록 정의합니다.
 다음으로 사용자를 수동으로 추가하여 사용자 및 그룹을 관리합니다. 사용자를 만든 다음에야 표시하는 옵션을 MIM에서 사용하여 office 그룹에 게스트를 추가합니다. 프로비저닝한 다음에는 이 문서에 설명되지 않은 추가 구성이 좀 더 필요합니다.
@@ -303,7 +303,7 @@ MIM 포털로 이동하고, 동기화 규칙을 선택하고, 새로 만들기�
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/0c2361d137f3efcad9139069c0abcb4d.png)
 
 
-모두 구성되면 B2B 사용자가 로그인하여 응용 프로그램을 확인합니다.
+모두 구성되면 B2B 사용자가 로그인하여 애플리케이션을 확인합니다.
 
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/275fc989d20d2598df55cde4b4524dca.png)
 

@@ -68,11 +68,11 @@ ms.locfileid: "52825810"
 
 12. MIM 포털에 대한 MIM 서비스 서버 주소를 *CORPIDM*(이 컴퓨터의 이름)으로 지정합니다.
 
-13. SharePoint 사이트 모음 URL로 `*http://mim.contoso.com*`을 지정합니다.
+13. SharePoint 사이트 모음 URL로 `* http://mim.contoso.com*`을 지정합니다.
 
-14. 암호 등록 URL 포트 80으로 `*http://passwordregistration.contoso.com*`을 지정하고, 나중에 443에서 SSL 인증서로 업데이트하는 것이 좋습니다.
+14. 암호 등록 URL 포트 80으로 `* http://passwordregistration.contoso.com*`을 지정하고, 나중에 443에서 SSL 인증서로 업데이트하는 것이 좋습니다.
 
-15. 암호 재설정 URL 포트 80으로 `*http://passwordreset.contoso.com*`을 지정하고, 나중에 443에서 SSL 인증서로 업데이트하는 것이 좋습니다.
+15. 암호 재설정 URL 포트 80으로 `* http://passwordreset.contoso.com*`을 지정하고, 나중에 443에서 SSL 인증서로 업데이트하는 것이 좋습니다.
 
 16. 방화벽에서 포트 5725 및 5726 열기에 대한 확인란 및 MIM 포털에 대해 모든 인증된 사용자 액세스 권한 부여에 대한 확인란을 선택합니다.
 
@@ -134,7 +134,7 @@ ms.locfileid: "52825810"
 
         -   Forefront Identity Manager 서비스(웹 서비스)
 
-    4.  마법사를 완료하고 **Windows 방화벽** 응용 프로그램을 닫습니다.
+    4.  마법사를 완료하고 **Windows 방화벽** 애플리케이션을 닫습니다.
 
     5.  **제어판 » 네트워크 및 인터넷 » 네트워크 상태 및 작업 보기**를 시작합니다.
 
