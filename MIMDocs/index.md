@@ -76,7 +76,7 @@ Microsoft Identity Manager 2016은 Active Directory, LDAP, Oracle 및 Azure Acti
 > [!WARNING]
 > FIM(Forefront Identity Manager) 일반 지원이 2017년 10월 10일에 종료되었습니다. Microsoft Identity Manager 2016으로 <a href="microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md" data-raw-source="[upgrade](microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md)">업그레이드</a>하세요. 추가 정보: 
 > - FIM 수명 주기 정보는 <a href="https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010" data-raw-source="[here](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010)">여기</a>에 제공됩니다. 
-> - - ID 제품의 공개 릴리스에 대한 정보는 <a href="https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/" data-raw-source="[Microsoft Identity Software: Public Release Build Versions](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)">Microsoft Identity Software: Public Release Build Versions</a>(Microsoft Identity 소프트웨어: 공용 릴리스 빌드 버전)라는 게시물을 검토하세요.
+> - ID 제품의 공개 릴리스에 대한 정보는 <a href="https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/" data-raw-source="[Microsoft Identity Software: Public Release Build Versions](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)">Microsoft Identity Software: Public Release Build Versions</a>(Microsoft Identity 소프트웨어: 공용 릴리스 빌드 버전)라는 게시물을 검토하세요.
 
 <h2>참조</h2>
 <ul class="panelContent cardsFTitle">
