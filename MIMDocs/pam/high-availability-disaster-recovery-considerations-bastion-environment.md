@@ -106,7 +106,7 @@ MIM에는 기존 도메인의 사용자 및 그룹을 정기적으로 확인하�
 - 장애 조치(failover) 클러스터에서 SQL Server 고가용성을 사용하려면 SQL Server를 제공하는 두 개 이상의 서버가 필요한데 도메인 컨트롤러와 같을 수 없습니다.
 - 각 서버의 공격 노출 영역을 최소화하기 위해 MIM 서비스를 도메인 컨트롤러에 설치하지 않아야 합니다.
 
-배스천 환경에서 모든 기능에 대한 가장 작은 고가용성 토폴로지는 4개 이상의 서버 및 공유 저장소로 구성됩니다. 두 서버는 Active Directory 도메인 서비스를 제공하는 도메인 컨트롤러로 구성해야 합니다. 다른 두 서버는 SQL Server를 제공하는 장애 조치(failover) 클러스터로 구성될 수 있으며 MIM 서비스를 제공합니다.
+배스천 환경에서 모든 기능에 대한 가장 작은 고가용성 토폴로지는 4개 이상의 서버 및 공유 스토리지로 구성됩니다. 두 서버는 Active Directory 도메인 서비스를 제공하는 도메인 컨트롤러로 구성해야 합니다. 다른 두 서버는 SQL Server를 제공하는 장애 조치(failover) 클러스터로 구성될 수 있으며 MIM 서비스를 제공합니다.
 
 또한 배스천 환경의 일반 배포에는 이러한 서버 관리에 대해 권한 있는 관리 워크스테이션뿐만 아니라 모니터링 구성 요소도 포함됩니다.
 
@@ -151,11 +151,11 @@ MIM에는 기존 도메인의 사용자 및 그룹을 정기적으로 확인하�
 - 기존 도메인에서 발생하는 공격을 방지하기 위해 배스천 환경의 관리는 기존 도메인의 관리자 계정에서 격리되어야 합니다.
 - 배스천 환경에는 기존 도메인의 도메인 컨트롤러에 대한 TCP/IP 연결이 필요합니다.  포트 목록은 [도메인 및 트러스트를 위한 방화벽을 구성하는 방법](https://support.microsoft.com/kb/179442)에서 찾을 수 있습니다.
 - Active Directory 도메인 서비스의 가상화된 배포에는 [가상화된 도메인 컨트롤러 배포 및 구성](https://technet.microsoft.com/library/jj574223.aspx)에 설명된 가상화 플랫폼의 특정 기능이 필요합니다.
-- MIM 서비스에 대한 SQL Server의 고가용성 배포에는 아래 [SQL Server 데이터베이스 저장소](#sql-server-database-storage) 섹션에 설명된 특수 저장소 구성이 필요합니다.  현재 모든 호스팅 공급자가 SQL Server 장애 조치(failover) 클러스터에 적합한 디스크 구성의 Windows Server 호스팅을 제공하는 것은 아닙니다.
+- MIM 서비스에 대한 SQL Server의 고가용성 배포에는 아래 [SQL Server 데이터베이스 스토리지](#sql-server-database-storage) 섹션에 설명된 특수 스토리지 구성이 필요합니다.  현재 모든 호스팅 공급자가 SQL Server 장애 조치(failover) 클러스터에 적합한 디스크 구성의 Windows Server 호스팅을 제공하는 것은 아닙니다.
 
 ## <a name="deployment-preparation-and-recovery-procedures"></a>배포 준비 및 복구 절차
 
-배스천 환경의 고가용성 또는 재해 복구 준비 배포를 준비할 때는 Windows Server Active Directory, SQL Server와 공유 저장소의 해당 데이터베이스 및 MIM 서비스와 해당 PAM 구성 요소를 설치하는 방법을 고려해야 합니다.
+배스천 환경의 고가용성 또는 재해 복구 준비 배포를 준비할 때는 Windows Server Active Directory, SQL Server와 공유 스토리지의 해당 데이터베이스 및 MIM 서비스와 해당 PAM 구성 요소를 설치하는 방법을 고려해야 합니다.
 
 ### <a name="windows-server"></a>Windows Server
 
@@ -188,9 +188,9 @@ Privileged Access Management의 일반적인 프로덕션 배포에는 배스천
 
 또한 해당 도메인 컨트롤러와 트러스트 관계가 있는 CORP 도메인의 도메인 컨트롤러뿐만 아니라 배스천 환경에 가입된 컴퓨터의 DNS 설정을 확인하여 해당 도메인 컨트롤러 컴퓨터의 IP 주소에 대한 종속성으로 하드 코드되지 않았는지 확인하는 것이 좋습니다.
 
-### <a name="sql-server-database-storage"></a>SQL Server 데이터베이스 저장소
+### <a name="sql-server-database-storage"></a>SQL Server 데이터베이스 스토리지
 
-고가용성 배포에는 SQL Server 장애 조치(failover) 클러스터가 필요하고 SQL Server 장애 조치(failover) 클러스터 인스턴스는 로그 저장소와 데이터베이스의 모든 노드 간 공유 저장소를 사용합니다. 공유 저장소는 Windows Server 장애 조치(failover) 클러스터링 클러스터 디스크, SAN(저장 영역 네트워크)의 디스크 또는 SMB 서버의 파일 공유 형식일 수 있습니다.  공유 저장소는 배스천 환경에만 사용해야 합니다. 배스천 환경 외부의 다른 워크로드와 저장소를 공유하는 것은 배스천 환경의 무결성을 위협할 수 있으므로 권장되지 않습니다.
+고가용성 배포에는 SQL Server 장애 조치(failover) 클러스터가 필요하고 SQL Server 장애 조치(failover) 클러스터 인스턴스는 로그 스토리지와 데이터베이스의 모든 노드 간 공유 스토리지를 사용합니다. 공유 스토리지는 Windows Server 장애 조치(failover) 클러스터링 클러스터 디스크, SAN(저장 영역 네트워크)의 디스크 또는 SMB 서버의 파일 공유 형식일 수 있습니다.  공유 스토리지는 배스천 환경에만 사용해야 합니다. 배스천 환경 외부의 다른 워크로드와 스토리지를 공유하는 것은 배스천 환경의 무결성을 위협할 수 있으므로 권장되지 않습니다.
 
 ### <a name="sql-server"></a>SQL  Server
 
@@ -214,7 +214,7 @@ SQL Server가 실패하거나 SQL Server와 MIM 서비스 간의 연결이 끊�
 
 #### <a name="preparation"></a>준비
 PRIV 도메인에 가입된 여러 서버에 MIM 서비스를 배포하는 것이 좋습니다.
-고가용성에 대한 자세한 내용은 Windows Server 문서, [장애 조치(failover) 클러스터링 하드웨어 요구 사항 및 저장소 옵션](https://technet.microsoft.com/library/jj612869.aspx) 및 [Windows Server 2012 장애 조치(failover) 클러스터 만들기](http://blogs.msdn.com/b/clustering/archive/2012/05/01/10299698.aspx)를 참조하세요.
+고가용성에 대한 자세한 내용은 Windows Server 문서, [장애 조치(failover) 클러스터링 하드웨어 요구 사항 및 스토리지 옵션](https://technet.microsoft.com/library/jj612869.aspx) 및 [Windows Server 2012 장애 조치(failover) 클러스터 만들기](http://blogs.msdn.com/b/clustering/archive/2012/05/01/10299698.aspx)를 참조하세요.
 
 여러 서버에서 프로덕션 배포의 경우 NLB(네트워크 부하 분산)를 사용하여 처리 부하를 분산할 수 있습니다.  하나의 공통 이름을 사용자에게 노출하도록 별칭(예: A 또는 CNAME 레코드)이 있어야 합니다.
 

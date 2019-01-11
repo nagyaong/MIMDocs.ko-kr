@@ -139,7 +139,7 @@ MIM 2016 Service 서비스 계정에 대해 Microsoft Exchange Server를 구성�
 
 -   크기가 1MB보다 큰 메일은 거부하도록 서비스 계정을 구성합니다. 모범 사례를 따라 사서함 또는 메일 사용이 가능한 공용 폴더에 대해 [메시지 크기 제한을 구성](http://go.microsoft.com/fwlink/?LinkID=183626)합니다.
 
--   사서함 저장소 할당량이 5GB가 되도록 서비스 계정을 구성합니다. 최적의 결과를 얻으려면 [Configure Storage Quotas for a Mailbox](http://go.microsoft.com/fwlink/?LinkID=156929)(사서함에 대한 저장소 할당량 구성)에 나열되는 모범 사례를 따르세요.
+-   사서함 스토리지 할당량이 5GB가 되도록 서비스 계정을 구성합니다. 최적의 결과를 얻으려면 [Configure Storage Quotas for a Mailbox](http://go.microsoft.com/fwlink/?LinkID=156929)(사서함에 대한 스토리지 할당량 구성)에 나열되는 모범 사례를 따르세요.
 
 ## <a name="mim-portal"></a>MIM 포털
 

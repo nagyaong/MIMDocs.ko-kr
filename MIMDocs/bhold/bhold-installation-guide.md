@@ -85,11 +85,11 @@ BHOLD Suite SP1과 FIM 포털이 단일 서버에 함께 설치되면 BHOLD 및 
 
 - FIM 또는 BHOLD 서비스의 별도 서버에 SQL Server를 배포합니다.
 - 실제 디스크 수준에서 데이터 파일로부터 로그 파일을 격리합니다.
-- 저장소 중복성을 제공하기 위해 RAID를 사용하는 경우 RAID 수준 10(1+0)을 사용합니다. RAID 수준 5를 사용하지 마십시오.
+- 스토리지 중복성을 제공하기 위해 RAID를 사용하는 경우 RAID 수준 10(1+0)을 사용합니다. RAID 수준 5를 사용하지 마십시오.
 - SQL Server를 실행하는 서버에 2GB 이상의 실제 메모리를 사용하는 경우 올바른 설정을 구성해야 합니다.
 - 최적의 BHOLD 성능을 위해 Microsoft SQL Server 2008 R2 이상을 사용합니다.
 
-SQL Server 모범 사례에 대한 자세한 내용은 Microsoft TechNet 라이브러리에서 [저장소 관련 상위 10가지 모범 사례](https://www.microsoft.com/technet/prodtechnol/sql/bestpractice/storage-top-10.mspx)를 참조하세요.
+SQL Server 모범 사례에 대한 자세한 내용은 Microsoft TechNet 라이브러리에서 [스토리지 관련 상위 10가지 모범 사례](https://www.microsoft.com/technet/prodtechnol/sql/bestpractice/storage-top-10.mspx)를 참조하세요.
 
 ### <a name="trusted-certificates-list-update"></a>신뢰할 수 있는 인증서 목록 업데이트
 

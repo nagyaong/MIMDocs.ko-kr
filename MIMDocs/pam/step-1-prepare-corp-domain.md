@@ -47,7 +47,7 @@ Windows Server 2012 R2 이상을 실행하는 도메인 컨트롤러가 있는 �
 
 ### <a name="add-roles-to-establish-a-domain-controller"></a>역할을 추가하여 도메인 컨트롤러 설정
 
-이 섹션에서는 AD DS(Active Directory 도메인 서비스), DNS 서버 및 파일 서버(파일 및 저장소 서비스 섹션의 일부) 역할을 추가하고 이 서버의 수준을 새 포리스트 contoso.local의 도메인 컨트롤러로 올립니다.
+이 섹션에서는 AD DS(Active Directory Domain Services), DNS 서버 및 파일 서버(파일 및 스토리지 서비스 섹션의 일부) 역할을 추가하고 이 서버의 수준을 새 포리스트 contoso.local의 도메인 컨트롤러로 올립니다.
 
 > [!NOTE]  
 > 이미 CORP 도메인으로 사용할 도메인이 있고 해당 도메인이 도메인 컨트롤러로 Windows Server 2012 R2 이상을 사용하는 경우 [데모용 추가 사용자 및 그룹 만들기](#create-additional-users-and-groups-for-demonstration-purposes)로 건너뛸 수 있습니다.
