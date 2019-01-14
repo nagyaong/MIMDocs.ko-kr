@@ -47,7 +47,7 @@ MIM Synchronization Service Manager 콘솔에서 이 사용자를 추적할 수 
     - 동기화 서비스 클라이언트 열기
         - 메타버스 디자이너를 사용하면 특성 흐름 가져오기 및 우선 순위를 확인할 수 있습니다.
 ![mim-privacy-compliance_1.PNG](media/mim-privacy-compliance/mim-privacy-compliance_1.PNG)
-        - 메타버스 검색을 사용하면 데이터베이스 ![mim-privacy-compliance_2.PNG](media/mim-privacy-compliance/mim-privacy-compliance_2.PNG)에서 모든 개체 및 특성을 검색할 수 있습니다.
+        - 메타버스 검색을 사용하면 데이터베이스 에서 모든 개체 및 특성을 검색할 수 있습니다. ![mim-privacy-compliance_2.PNG](media/mim-privacy-compliance/mim-privacy-compliance_2.PNG)
  
 개체를 찾은 후 개체를 클릭하면 사용자 프로필 페이지가 열립니다. 개체 세부 정보는 개체에 대한 포괄적인 세부 정보, 해당 특성, 마지막으로 수정된 날짜 및 인증 원본, 아래 관리 에이전트 구성 예제에서 파생된 관련 연결된 데이터 원본을 제공합니다.
 
