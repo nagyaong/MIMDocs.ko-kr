@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 1bc313a66776778fe3617969645076a6d2d10418
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: cec04cf430ba38ec40b61e4aad68fd8447d13c99
+ms.sourcegitcommit: 4f0b2883922bcb8fbef6b4284c35c6ca62c11565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357839"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56952182"
 ---
 # <a name="install-mim-2016-mim-synchronization-service"></a>MIM 2016 설치: MIM 동기화 서비스
 
@@ -37,7 +37,7 @@ Microsoft Identity Manager 2016 구성 요소를 설치하려면 먼저 설치 �
 
 1. ID 관리 동기화 서버 **corpsync**에 사용할 서버에 *contoso\miminstall*로 로그인합니다.
 
-2. MIM 설치 패키지의 압축을 풀거나 MIM 이미지 DVD를 마운트합니다.
+2. MIM 설치 패키지의 압축을 풀거나 MIM 이미지 DVD를 마운트합니다.  이 DVD가 없는 경우 [Microsoft Identity Manager 라이선스 및 다운로드](microsoft-identity-manager-licensing.md)를 참조하세요.
 
 ## <a name="install-mim-2016-sp1-synchronization-service"></a>MIM 2016 SP1 동기화 서비스 설치
 
@@ -57,7 +57,7 @@ Microsoft Identity Manager 2016 구성 요소를 설치하려면 먼저 설치 �
 
 6. 동기화 서비스 데이터베이스 구성 화면에서 다음을 선택합니다.
 
-   1.  SQL Server 위치: **corpsql.contoso.com**라고 하는 **원격 컴퓨터**.
+   1.  SQL Server의 위치: **원격 머신**이 **corpsql.contoso.com**을 호출했습니다.
 
    2.  SQL Server 인스턴스: **기본 인스턴스**
 

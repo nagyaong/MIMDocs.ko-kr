@@ -1,5 +1,5 @@
 ---
-title: Microsoft Identity Manager 2016 | Microsoft 문서
+title: Microsoft Identity Manager 2016 사용자를 AD로 프로비전 | Microsoft Docs
 description: Microsoft Identity Manager 2016을 사용하여 ADDS에 사용자를 만드는 프로세스 이해
 keywords: ''
 author: billmath
@@ -9,12 +9,12 @@ ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: 88473df88271937b07450df409353c0b3ca08684
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 5e259df617c5a95fcd54f49c9cbb70f9cd0c36a4
+ms.sourcegitcommit: 486f860f0951413aed335138eb6ad4ce6c50ed4d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358791"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56852666"
 ---
 # <a name="how-do-i-provision-users-to-ad-ds"></a>How Do I Provision Users to AD DS(AD DS로 사용자를 프로비전하는 방법)
 
@@ -170,7 +170,7 @@ AD DS 계정에 대한 암호를 설정하는 경우, 활성화된 계정으로 
 | 관리 에이전트 디자이너 페이지                          | 구성                                                  |
 |---------------------------------------------------------|----------------------------------------------------------------|
 | 관리 에이전트 만들기                                 | 1. **관리 에이전트 대상:** AD DS  <br/> 2.  **이름:** Fabrikam ADMA |
-| Active Directory 포리스트에 연결                      | 1. **디렉터리 파티션 선택:** "DC = Fabrikam,DC = com"   <br/>   2. **컨테이너**를 클릭하여 **컨테이너 선택** 대화 상자를 열고 **MIMObjects**만이 선택된 OU인지 확인합니다.        |
+| Active Directory 포리스트에 연결                      | 1. **디렉터리 파티션 선택:** “DC=Fabrikam,DC=com”   <br/>   2. **컨테이너**를 클릭하여 **컨테이너 선택** 대화 상자를 열고 **MIMObjects**만이 선택된 OU인지 확인합니다.        |
 | 개체 유형 선택                                     | 이미 선택한 개체 유형과 더불어 **사용자**를 선택합니다. |
 | 특성 선택                                       | 1. **모두 표시**를 클릭합니다. <br/>   2. 다음 특성을 선택합니다. <br/> &nbsp;&nbsp;&nbsp;&#176; **displayName** <br/> &nbsp;&nbsp;&nbsp;&#176; **givenName** <br/> &nbsp;&nbsp;&nbsp;&#176;  **sn** <br/> &nbsp;&nbsp;&nbsp;&#176;  **SamAccountName** <br/> &nbsp;&nbsp;&nbsp;&#176;  **unicodePwd** <br/> &nbsp;&nbsp;&nbsp;&#176;  **userAccountControl**     
 
@@ -296,7 +296,7 @@ FIM 서비스를 구성하려면 Windows Internet Explorer®에서 http://localh
 > [!NOTE]
 >  DN을 대상으로 하는 특성 흐름에 대해 초기 흐름만을 선택했는지 확인합니다.                                                                          
 
-### <a name="step-7-create-the-workflow"></a>단계 7: 워크플로 만들기
+### <a name="step-7-create-the-workflow"></a>7단계: 워크플로 만들기
 
 AD 프로비전 워크플로의 목표는 Fabrikam 프로비전 동기화 규칙을 리소스에 추가하는 것입니다. 다음 표에서 구성을 보여 줍니다.  아래 표의 데이터에 따라 워크플로를 만듭니다.
 
@@ -493,7 +493,7 @@ FIM의 각 내보내기 실행에서 내보내기 작업을 완료하려면 다�
 > [!IMPORTANT]
 > 각 실행 프로필은 오류 없이 성공적으로 실행되어야 합니다.
 
-### <a name="step-14-verify-the-provisioned-user-in-ad-ds"></a>14단계: AD DS에서 프로비전된 사용자 확인
+### <a name="step-14-verify-the-provisioned-user-in-ad-ds"></a>14단계: AD DS에서 프로비저닝된 사용자 확인
 
 샘플 사용자가 AD DS에 프로비전되었는지 확인하려면 FIMObjects OU를 엽니다. Britta Simon은 FIMObjects OU 안에 있어야 합니다.
 
@@ -524,7 +524,7 @@ FIM의 각 내보내기 실행에서 내보내기 작업을 완료하려면 다�
 
 [How Can I Manage My FIM MA Account](http://go.microsoft.com/FWLink/p/?LinkId=189672)(FIM MA 계정 관리 방법)
 
-[Detecting Nonauthoritative Accounts – Part 1: Envisioning](http://go.microsoft.com/FWLink/p/?LinkId=189673)(권한이 없는 계정 탐색 – 1부: 구상)
+[권한이 없는 계정 탐색 – 1부: 구상](http://go.microsoft.com/FWLink/p/?LinkId=189673)
 
 [The Poor Man’s Version of a Connector Detection Mechanism](http://go.microsoft.com/FWLink/p/?LinkId=189674)(커넥터 감지 메커니즘의 경제적 버전)
 

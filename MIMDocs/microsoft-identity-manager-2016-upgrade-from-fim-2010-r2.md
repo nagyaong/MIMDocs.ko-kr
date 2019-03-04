@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 07998c20fcdc325cd33d8f9ee3d06c9c8572b654
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 36b5e97675d5900bf3b5348ad4857827c426e60e
+ms.sourcegitcommit: 4f0b2883922bcb8fbef6b4284c35c6ca62c11565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358674"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56952165"
 ---
 # <a name="upgrade-from-forefront-identity-manager-2010-r2"></a>Forefront Identity Manager 2010 R2에서 업그레이드
 
@@ -41,7 +41,7 @@ ms.locfileid: "49358674"
 
 2.  FIM 2010 R2 구성 요소가 설치된 각 서버(예: *CORPIDM*)에서 Contoso\Administrator로 로그인합니다. 이 배포 예제에서는 FIM 2010 R2를 **MIM**으로 업그레이드하기 위해 관리자 권한이 필요합니다.
 
-3.  MIM 소프트웨어를 다운로드하거나 압축을 풉니다.
+3.  MIM 소프트웨어를 다운로드하거나 압축을 풉니다.  이 소프트웨어가 없는 경우 [Microsoft Identity Manager 라이선스 및 다운로드](microsoft-identity-manager-licensing.md)를 참조하세요.
 
 ## <a name="upgrade-the-synchronization-service"></a>동기화 서비스 업그레이드
 
