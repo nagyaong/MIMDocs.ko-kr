@@ -32,7 +32,7 @@ ms.locfileid: "49358655"
 
 Microsoft Graph용 Microsoft Identity Manager 커넥터의 초기 시나리오는 외부 사용자에 대한 AD DS 계정 수명 주기 관리를 자동화하는 데 도움이 되는 커넥터입니다. 이 시나리오에서 조직은 Azure AD Connect를 사용하여 AD DS에서 Azure AD로 직원을 동기화하고, Azure AD 디렉터리로 게스트를 초대합니다. 게스트를 초대하면 외부 사용자 개체가 해당 조직의 AD DS가 아닌 해당 조직의 Azure AD 디렉터리에 있게 됩니다. 그런 다음, 조직은 [Azure AD 애플리케이션 프록시](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-publish) 또는 기타 게이트웨이 메커니즘을 통해 온-프레미스 Windows 통합 인증 또는 Kerberos 기반 애플리케이션에 대한 액세스 권한을 이 게스트에게 부여하려고 합니다. Azure AD 애플리케이션 프록시를 사용하려면 식별 및 위임용으로 각 사용자에게 고유한 AD DS 계정이 있어야 합니다.  
 
-게스트에 대한 AD DS 계정을 자동으로 만들고 유지 관리하도록 MIM 동기화를 구성하는 방법을 알아보려면 [Azure 애플리케이션 프록시를 사용하여 MIM 2016 SP1과 Azure AD B2B(기업 간) 공동 작업](~/microsoft-identity-manager-2016-graph-b2b-scenario.md) 문서를 참조하세요.  해당 문서는 커넥터에 필요한 동기화 규칙을 보여줍니다.
+게스트에 대한 AD DS 계정을 자동으로 만들고 유지 관리하도록 MIM 동기화를 구성하는 방법을 알아보려면 [Azure 애플리케이션 프록시를 사용하여 MIM 2016 SP1과 Azure AD B2B(기업 간) 협업](~/microsoft-identity-manager-2016-graph-b2b-scenario.md) 문서를 참조하세요.  해당 문서는 커넥터에 필요한 동기화 규칙을 보여줍니다.
 
 <a name="other-identity-management-scenarios"></a>기타 ID 관리 시나리오
 ---------------
