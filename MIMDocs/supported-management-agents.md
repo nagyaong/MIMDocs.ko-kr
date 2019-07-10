@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 8bc2f6d2-9f53-4db6-aee6-a937ae468163
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 023232b9ddb3cb0a299cbc14ab4c311b8c63fc47
-ms.sourcegitcommit: fa30a8eb9c3a7f1ed6f8ce0f67362ca32751e00d
+ms.openlocfilehash: 1f7d4150ce7012cd4726126ba50b1ab0f94f474c
+ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56667202"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67690681"
 ---
 # <a name="connect-to-your-directories"></a>디렉터리에 연결
 
@@ -43,8 +43,8 @@ Forefront Identity Manager에서는 커넥터를 관리 에이전트라고 했�
 | Oracle(이전의 Sun 및 Netscape) 디렉터리 서버 | Sun 디렉터리 서버 6.x, 7.x 및 Oracle 11 |
 | [Windows PowerShell 커넥터](https://msdn.microsoft.com/library/dn640417.aspx) | Windows PowerShell 2.0 이상 |
 | [Microsoft Azure Active Directory 커넥터](https://msdn.microsoft.com/library/dn511001.aspx) | Microsoft Azure Active Directory(새 배포에는 권장되지 않음) |
-| [일반 LDAP 커넥터](https://msdn.microsoft.com/library/dn510997.aspx) | [LDAP v3 서버(RFC 4510 규격)](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-connector-genericldap) |
-| [일반 SQL 커넥터](./reference/microsoft-identity-manager-2016-connector-genericsql.md) | [커넥터는 모든 64비트 ODBC 드라이버와 함께 지원됨](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-connector-genericsql.md) |
+| [일반 LDAP 커넥터](https://msdn.microsoft.com/library/dn510997.aspx) | [LDAP v3 서버(RFC 4510 규격)](reference/microsoft-identity-manager-2016-connector-genericldap.md#overview-of-the-generic-ldap-connector) |
+| [일반 SQL 커넥터](reference/microsoft-identity-manager-2016-connector-genericsql.md) | [커넥터는 모든 64비트 ODBC 드라이버와 함께 지원됨](reference/microsoft-identity-manager-2016-connector-genericsql.md#overview-of-the-generic-sql-connector) |
 | [Lotus Domino용 커넥터](https://msdn.microsoft.com/library/hh859750.aspx) | Lotus Notes 릴리스 v8.5.x |
 | [SharePoint Services 커넥터 UPA](https://msdn.microsoft.com/library/dn511003.aspx) | UPA(사용자 프로필 서비스 애플리케이션)를 포함하는 SharePoint Server 2013 또는 2016 |
 | [웹 서비스용 커넥터](https://www.microsoft.com/en-us/download/details.aspx?id=51495) | [SAP ECC 5.0 또는 6.0, Oracle PeopleSoft 9.1; Oracle eBusiness 12.1 및 기타 SOAP와 REST API](https://docs.microsoft.com/microsoft-identity-manager/reference/microsoft-identity-manager-2016-ma-ws) |
