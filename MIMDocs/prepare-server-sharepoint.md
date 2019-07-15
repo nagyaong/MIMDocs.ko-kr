@@ -11,14 +11,14 @@ ms.prod: microsoft-identity-manager
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 466f5eb7d4aee27336948e15f96087d6ba898170
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 5beee58388c12abbe8e3245ff610d3528b03786a
+ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358638"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67690764"
 ---
-# <a name="set-up-an-identity-management-server-sharepoint"></a>ID 관리 서버 설치: SharePoint
+# <a name="set-up-an-identity-management-server-sharepoint"></a>ID 관리 서버 설정: SharePoint
 
 > [!div class="step-by-step"]
 > [« SQL Server 2016](prepare-server-sql2016.md)
@@ -70,7 +70,7 @@ SharePoint 2016을 설치하려면 다음 단계를 따르세요. 설치가 완�
 2. 이 서버를 구성 데이터베이스에 대한 데이터베이스 서버(예: **corpsql**)로 지정하고 *Contoso\SharePoint*를 SharePoint에서 사용할 데이터베이스 액세스 계정으로 지정합니다.
 3. 팜 보안 암호로 사용할 암호를 만듭니다.
 
-4. 구성 마법사에서 [MinRole](https://docs.microsoft.com/sharepoint/install/overview-of-minrole-server-roles-in-sharepoint-server-2016) 유형으로 **프런트 엔드**를 선택하는 것이 좋습니다.
+4. 구성 마법사에서 [MinRole](/sharepoint/install/overview-of-minrole-server-roles-in-sharepoint-server) 유형의 **프런트 엔드**를 선택하는 것이 좋습니다.
 
 5. 구성 마법사가 구성 작업 10/10을 완료할 때 [마침]을 클릭하면 웹 브라우저가 열립니다.
 
@@ -84,7 +84,7 @@ SharePoint 2016을 설치하려면 다음 단계를 따르세요. 설치가 완�
 > [!NOTE]
 > 처음에는 SSL이 구성되어 있지 않습니다. 이 포털에 액세스할 수 있으려면 SSL 또는 이와 동등한 것을 구성해야 합니다.
 
-1. **SharePoint 2016 관리 셸**을 시작하고 다음 PowerShell 스크립트를 실행하여 **SharePoint 2016 웹 응용 프로그램**을 만듭니다.
+1. **SharePoint 2016 관리 셸**을 시작하고 다음 PowerShell 스크립트를 실행하여 **SharePoint 2016 웹 애플리케이션**을 만듭니다.
 
     ```
     New-SPManagedAccount ##Will prompt for new account enter contoso\mimpool 
@@ -117,9 +117,9 @@ SharePoint 2016을 설치하려면 다음 단계를 따르세요. 설치가 완�
    Get-SPTimerJob hourly-all-sptimerservice-health-analysis-job | disable-SPTimerJob
    ```
 
-4. ID 관리 서버에서 새 웹 브라우저 탭을 열고 http://mim.contoso.com/으로 이동하여 *contoso\miminstall*로 로그인합니다.  *MIM 포털* 이라는 빈 SharePoint 사이트가 나타납니다.
+4. ID 관리 서버에서 새 웹 브라우저 탭을 열고 http://mim.contoso.com/ 으로 이동하여 *contoso\miminstall*로 로그인합니다.  *MIM 포털* 이라는 빈 SharePoint 사이트가 나타납니다.
 
-    ![http://mim.contoso.com/의 MIM 포털 이미지](media/prepare-server-sharepoint/MIM_DeploySP1new.png)
+    ![http://mim.contoso.com/ 의 MIM 포털 이미지](media/prepare-server-sharepoint/MIM_DeploySP1new.png)
 
 5. URL을 복사한 다음 Internet Explorer에서 **인터넷 옵션**을 열고 **보안** 탭으로 변경한 후 **로컬 인트라넷**을 선택하고 **사이트**를 클릭합니다.
 

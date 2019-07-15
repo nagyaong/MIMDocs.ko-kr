@@ -9,12 +9,12 @@ ms.date: 05/23/2018
 ms.topic: get-started-article
 ms.prod: microsoft-identity-manager
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
-ms.openlocfilehash: 61d5f4ec20f5e29d1846a6822bec9669b364760f
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 2d843dcd5285d02a67955e763769a16f1a535abb
+ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358706"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67690724"
 ---
 # <a name="supported-languages"></a>지원되는 언어
 
@@ -30,12 +30,12 @@ Microsoft MIM 서비스 및 포털 언어 팩은 다음 33개의 언어를 지�
 > [!IMPORTANT]
 > SSPR 추가 기능 및 포털의 텍스트는 지역화되지만, 질문은 추가 작업이 없으면 지역화되지 않습니다. 각 언어의 질문에 대한 대상을 대상 위치로 지정하려면 AuthN 워크플로(및 이를 대상으로 지정하기 위한 해당 집합 및 MPR)를 만들어야 합니다.
 
-|       Language        | FIM(4.3.x.x)/MIM(4.4.xx) | MIM(4.5.x.x) |
+|       언어        | FIM(4.3.x.x)/MIM(4.4.xx) | MIM(4.5.x.x) |
 |-----------------------|--------------------------|--------------|
 |       불가리아어       |          bg-BG           |      bg      |
 | 중국어(간체)  |          zh-CN           |   zh-hans    |
 |   중국어(대만)    |          zh-TW           |   zh-hant    |
-|       크로아티아어        |          hr-HR           |      시간      |
+|       크로아티아어        |          hr-HR           |      hr      |
 |         체코어         |          cs-CZ           |      cs      |
 |        덴마크어         |          da-DK           |      da      |
 |         네덜란드어         |          nl-NL           |      nl      |
@@ -69,7 +69,7 @@ Microsoft MIM 서비스 및 포털 언어 팩은 다음 33개의 언어를 지�
 ## <a name="certificate-management"></a>인증서 관리 
 Microsoft 인증서 관리는 다음 9개 언어를 지원합니다. 
 
-|Language|FIM(4.3.x.x)/MIM(4.4.xx)|새 MIM(4.5.x.x)
+|언어|FIM(4.3.x.x)/MIM(4.4.xx)|새 MIM(4.5.x.x)
 |-----|-----|-----|-----|
 |중국어(간체)|zh-CN|zh-hans|
 |중국어(대만)|zh-TW|zh-hant|
@@ -84,7 +84,7 @@ Microsoft 인증서 관리는 다음 9개 언어를 지원합니다.
 ## <a name="certificate-management-modern-application"></a>인증서 관리 최신 애플리케이션  
 Microsoft 인증서 관리 최신 애플리케이션은 다음 33개 언어를 지원합니다. 
 
-|Language | [1.0.225.104](https://www.microsoft.com/en-us/download/details.aspx?id=54954) | |
+|언어 | [1.0.225.104](https://www.microsoft.com/en-us/download/details.aspx?id=54954) | |
 |-----|-----|-----|-----|
 |네덜란드어|nl-NL|nl|
 |중국어(간체)|zh-CN|zh-hans|
@@ -112,4 +112,4 @@ Microsoft 인증서 관리 최신 애플리케이션은 다음 33개 언어를 �
 ## <a name="next-steps"></a>다음 단계
 
 - [처음 배포](microsoft-identity-manager-deploy.md)
-- [버전 기록](/reference/version-history.md)
+- [버전 기록](reference/version-history.md)

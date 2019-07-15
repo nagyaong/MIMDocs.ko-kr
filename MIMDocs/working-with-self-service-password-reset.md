@@ -5,27 +5,27 @@ keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
-ms.date: 08/30/2018
+ms.date: 05/11/2019
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: 3a86569a8de77f4cf4d5aeafe0cd01dab40232b3
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 90452391170114270765e9a7fe08e98eea0747e4
+ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358469"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67690689"
 ---
 # <a name="self-service-password-reset-deployment-options"></a>셀프 서비스 암호 재설정 배포 옵션
 
-[Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-licensing)에 대한 라이선스가 있는 신규 고객의 경우 [Azure AD 셀프 서비스 암호 재설정](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-howitworks.md)을 사용하여 최종 사용자 환경을 제공하는 것이 좋습니다.  Azure AD 셀프 서비스 암호 재설정은 사용자가 자신의 암호를 재설정할 수 있도록 웹 기반 및 Windows 통합 환경을 제공하며 대체 이메일 및 Q&A 게이트와 같은 MIM과 동일한 기능을 대부분 지원합니다.  Azure AD 셀프 서비스 암호 재설정을 배포할 때 Azure AD Connect는 [새 암호를 AD DS에 다시 쓰는 것](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-writeback.md)을 지원하고 MIM [암호 변경 알림 서비스](deploying-mim-password-change-notification-service-on-domain-controller.md)를 사용하여 암호를 다른 시스템(예: 다른 공급업체의 디렉터리 서버)에도 전달할 수 있습니다.  [암호 관리](infrastructure/mim2016-password-management.md)를 위한 MIM 배포를 위해서 MIM 서비스 또는 MIM 셀프 서비스 암호 재설정이 필요하지 않으며 등록 포털을 배포하지 않아도 됩니다.  대신, 다음 단계를 수행하세요.
+[Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-licensing)에 대한 라이선스가 있는 신규 고객의 경우 [Azure AD 셀프 서비스 암호 재설정](/azure/active-directory/authentication/concept-sspr-howitworks)을 사용하여 최종 사용자 환경을 제공하는 것이 좋습니다.  Azure AD 셀프 서비스 암호 재설정은 사용자가 자신의 암호를 재설정할 수 있도록 웹 기반 및 Windows 통합 환경을 제공하며 대체 이메일 및 Q&A 게이트와 같은 MIM과 동일한 기능을 대부분 지원합니다.  Azure AD 셀프 서비스 암호 재설정을 배포할 때 Azure AD Connect는 [새 암호를 AD DS에 다시 쓰는 것](/azure/active-directory/authentication/concept-sspr-writeback)을 지원하고 MIM [암호 변경 알림 서비스](deploying-mim-password-change-notification-service-on-domain-controller.md)를 사용하여 암호를 다른 시스템(예: 다른 공급업체의 디렉터리 서버)에도 전달할 수 있습니다.  [암호 관리](infrastructure/mim2016-password-management.md)를 위한 MIM 배포를 위해서 MIM 서비스 또는 MIM 셀프 서비스 암호 재설정이 필요하지 않으며 등록 포털을 배포하지 않아도 됩니다.  대신, 다음 단계를 수행하세요.
 
 - 먼저, Azure AD 및 AD DS가 아닌 다른 디렉터리에 암호를 보내야 하는 경우 Active Directory Domain Services 및 추가 대상 시스템에 대한 커넥터가 있는 MIM 동기화를 배포하고 [암호 관리](infrastructure/mim2016-password-management.md)를 위한 MIM을 구성한 다음, [암호 변경 알림 서비스](deploying-mim-password-change-notification-service-on-domain-controller.md)를 배포합니다.
-- 그런 다음, Azure AD가 아닌 디렉터리에 암호를 보내야 하는 경우 [새 암호를 AD DS에 다시 쓰기](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-writeback.md) 위한 Azure AD Connect를 구성합니다.
-- 필요에 따라 [사용자를 미리 등록](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-authenticationdata.md)합니다.
-- 마지막으로, [Azure AD 셀프 서비스 암호 재설정을 최종 사용자에게 롤아웃](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment.md)합니다.
+- 그런 다음, Azure AD가 아닌 디렉터리에 암호를 보내야 하는 경우 [새 암호를 AD DS에 다시 쓰기](/azure/active-directory/authentication/concept-sspr-writeback) 위한 Azure AD Connect를 구성합니다.
+- 필요에 따라 [사용자를 미리 등록](/azure/active-directory/authentication/howto-sspr-authenticationdata)합니다.
+- 마지막으로, [Azure AD 셀프 서비스 암호 재설정을 최종 사용자에게 롤아웃](/azure/active-directory/authentication/howto-sspr-deployment)합니다.
 
-이전에 셀프 서비스 암호 재설정을 위해 FIM(Forefront Identity Manager)을 배포했고 Azure Active Directory Premium에 대한 라이선스가 있는 기존 고객이라면  Azure AD 셀프 서비스 암호 재설정으로 전환을 계획하는 것이 좋습니다.  [사용자의 보조 이메일 또는 휴대폰 번호를 PowerShell을 통해 동기화하거나 설정](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-authenticationdata.md)하여 최종 사용자를 다시 등록할 필요 없이 Azure AD 셀프 서비스 암호 재설정으로 전환할 수 있습니다. 사용자가 Azure AD 셀프 서비스 암호 재설정에 등록되면 FIM 암호 재설정 포털을 서비스 해제할 수 있습니다.
+이전에 셀프 서비스 암호 재설정을 위해 FIM(Forefront Identity Manager)을 배포했고 Azure Active Directory Premium에 대한 라이선스가 있는 기존 고객이라면  Azure AD 셀프 서비스 암호 재설정으로 전환을 계획하는 것이 좋습니다.  [사용자의 보조 이메일 또는 휴대폰 번호를 PowerShell을 통해 동기화하거나 설정](/azure/active-directory/authentication/howto-sspr-authenticationdata)하여 최종 사용자를 다시 등록할 필요 없이 Azure AD 셀프 서비스 암호 재설정으로 전환할 수 있습니다. 사용자가 Azure AD 셀프 서비스 암호 재설정에 등록되면 FIM 암호 재설정 포털을 서비스 해제할 수 있습니다.
 
 해당 사용자에 대해 Azure AD 셀프 서비스 암호 재설정을 아직 배포하지 않은 고객의 경우 MIM은 셀프 서비스 암호 재설정 포털도 제공합니다.  FIM과는 달리, MIM 2016은 다음과 같이 변경되었습니다.
 
@@ -79,7 +79,7 @@ Azure MFA를 사용하는 경우 사용자가 해당 계정 및 리소스에 대
 
 ### <a name="register-your-multi-factor-authentication-provider-in-azure"></a>Azure에서 다단계 인증 공급자 등록
 
-1.  [MFA 공급자](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider.md)를 만듭니다.
+1.  [MFA 공급자](/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider)를 만듭니다.
 
 2. 지원 사례를 열고 ASP.net 2.0 C#에 대한 직접 SDK를 요청합니다. 직접 SDK는 더 이상 사용되지 않으므로 SDK는 MFA를 통해 MIM의 현재 사용자에게만 제공됩니다. 새 고객은 MFA 서버와 통합될 MIM의 다음 버전을 채택해야 합니다.
 
@@ -124,6 +124,8 @@ Azure MFA를 사용하는 경우 사용자가 해당 계정 및 리소스에 대
 3.  **활동** 탭을 클릭하고 **활동 추가**까지 아래로 스크롤합니다.
 
 4.  **전화 게이트** 또는 **일회용 암호 SMS 게이트**를 선택하고 **선택** 및 **확인**을 차례로 클릭합니다.
+
+참고: Azure MFA 서버 또는 자체 일회용 암호를 생성하는 다른 공급자를 사용하는 경우, 위에 구성된 길이 필드가 MFA 공급자가 생성한 길이와 동일한지 확인합니다.  Azure MFA 서버의 경우 이 길이는 6이어야 합니다.  또한 Azure MFA 서버는 자체 메시지 텍스트를 생성하여 SMS 문자 메시지를 무시합니다.
 
 이제 조직의 사용자가 암호 재설정을 위해 등록할 수 있습니다.  이 과정에서 사용자는 회사 전화 번호나 휴대폰 번호를 입력하게 되며, 이를 통해 시스템은 사용자에게 전화할(또는 SMS 메시지 보내기) 방법을 파악할 수 있습니다.
 

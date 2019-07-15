@@ -9,12 +9,12 @@ manager: mtillman
 ms.date: 09/04/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.openlocfilehash: 750947d04f540e2c8317861c5826c2145deba1fd
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 7fb111520f94541672fc56d0fd2ee95bfcd3a49e
+ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358405"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67690756"
 ---
 # <a name="use-a-custom-multi-factor-authentication-provider-via-an-api-during-pam-role-activation-or-in-sspr"></a>PAM 역할 활성화 중에 또는 SSPR에서 API를 통해 사용자 지정 Multi-Factor Authentication 공급자 사용
 
@@ -32,12 +32,12 @@ MIM 고객에게는 두 가지 추가 옵션이 제공됩니다.
 사용자 지정 Multi-Factor Authentication 공급자 API와 MIM을 함께 사용하려면 다음이 필요합니다.
 
 - 모든 후보 사용자의 전화 번호
-- MIM 핫픽스 [4.5.202.0](https://www.microsoft.com/download/details.aspx?id=57278) 이상 - 공지 사항은 [버전 기록](/reference/version-history.md) 참조
+- MIM 핫픽스 [4.5.202.0](https://www.microsoft.com/download/details.aspx?id=57278) 이상 - 공지 사항은 [버전 기록](reference/version-history.md) 참조
 - SSPR 또는 PAM에 대해 구성된 MIM 서비스
 
 ## <a name="approach-using-custom-multi-factor-authentication-code"></a>사용자 지정 다단계 인증 코드를 사용하는 방법
 
-### <a name="step-1-ensure-mim-service-is-at-version-452020-or-later"></a>1단계: MIM 서비스 버전이 4.5.202.0 이상인지 확인
+### <a name="step-1-ensure-mim-service-is-at-version-452020-or-later"></a>1단계: MIM 서비스가 버전 4.5.202.0 이상인지 확인
 
 MIM 핫픽스 [4.5.202.0](https://www.microsoft.com/download/details.aspx?id=57278) 이상의 버전을 다운로드하여 설치합니다.
 
@@ -47,7 +47,7 @@ DLL에는 세 가지 메서드를 구현하는 클래스가 포함되어야 합�
 
 - `InitiateCall`: MIM 서비스가 이 메서드를 호출합니다. 이 서비스는 전화 번호 및 요청 ID를 매개 변수로 전달합니다.  메서드는 `Pending`, `Success` 또는 `Failed`의 `PhoneCallStatus` 값을 반환해야 합니다.
 - `GetCallStatus`: `initiateCall`에 대한 이전 호출이 `Pending`을 반환한 경우 MIM 서비스는 이 메서드를 호출합니다. 이 메서드는 `Pending`, `Success` 또는 `Failed`의 `PhoneCallStatus` 값도 반환합니다.
-- `GetFailureMessage`: `InitiateCall` 또는 `GetCallStatus`이 이전 호출이 `Failed`를 반환한 경우 MIM 서비스는 이 메서드를 호출합니다. 이 메서드는 진단 메시지를 반환합니다.
+- `GetFailureMessage`: `InitiateCall` 또는 `GetCallStatus`의 이전 호출이 `Failed`를 반환한 경우 MIM 서비스는 이 메서드를 호출합니다. 이 메서드는 진단 메시지를 반환합니다.
 
 이러한 메서드의 구현은 스레드로부터 안전해야 하며, 또한 `GetCallStatus` 및 `GetFailureMessage`의 구현은 `InitiateCall`에 대한 이전 호출과 동일한 스레드에 의해 호출될 것이라고 가정해서는 안 됩니다.
 
@@ -135,7 +135,7 @@ namespace CustomPhoneGate
     }
 }
 ```
-### <a name="step-3-backup-the-mfasettingsxml-located-in-the-cprogram-filesmicrosoft-forefront-identity-manager2010service"></a>3단계: “C:\Program Files\Microsoft Forefront Identity Manager\2010\Service”에 있는 MfaSettings.xml 백업
+### <a name="step-3-backup-the-mfasettingsxml-located-in-the-cprogram-filesmicrosoft-forefront-identity-manager2010service"></a>3단계: "C:\Program Files\Microsoft Forefront Identity Manager\2010\Service"에 있는 MfaSettings.xml 백업
 
 ### <a name="step-4-edit-the-mfasettingsxml-file"></a>4단계: MfaSettings.xml 파일 편집
 
