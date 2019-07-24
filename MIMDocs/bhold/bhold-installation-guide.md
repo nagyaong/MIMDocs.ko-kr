@@ -9,12 +9,12 @@ ms.date: 09/11/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: d5edf4c16f32c401db32abb9bab1fa7e9e23e4a5
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 05eb2afc0ddbf6104e27a5c24e121a55bd805292
+ms.sourcegitcommit: 4c4bc7aa42cd5984c838abdd302490355ddcb4ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358504"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68238894"
 ---
 # <a name="microsoft-bhold-suite-sp1-60-installation-guide"></a>Microsoft BHOLD Suite SP1(6.0) 설치 가이드
 
@@ -38,7 +38,7 @@ Microsoft® BHOLD Suite SP1(Service Pack 1)은 애플리케이션의 컬렉션�
 
 ## <a name="pre-requisite-knowledge"></a>필수 정보
 
-이 문서에서는 서버 컴퓨터에 소프트웨어를 설치하는 방법을 기본적으로 이해한다고 가정합니다. 또한 Active Directory® Domain Services, Microsoft Identity Manager SP1(FIM) 및 Microsoft SQL Server 2008 데이터베이스 소프트웨어에 대한 기본 지식이 있다고 가정합니다. AD DS 및 FIM 등의 종속 기술을 설정하고 구성하는 방법은 이 설명서에서 다루지 않습니다. Microsoft BHOLD 모듈이 수행하는 함수에 대한 정보는 [Microsoft BHOLD Suite 개념 가이드](https://technet.microsoft.com/library/jj134102(v=ws.10).aspx)를 참조하세요.
+이 문서에서는 서버 컴퓨터에 소프트웨어를 설치하는 방법을 기본적으로 이해한다고 가정합니다. 또한 Active Directory® Domain Services, Microsoft Identity Manager SP1(FIM) 및 Microsoft SQL Server 2012 데이터베이스 소프트웨어에 대한 기본 지식이 있다고 가정합니다. AD DS 및 FIM 등의 종속 기술을 설정하고 구성하는 방법은 이 설명서에서 다루지 않습니다. Microsoft BHOLD 모듈이 수행하는 함수에 대한 정보는 [Microsoft BHOLD Suite 개념 가이드](https://technet.microsoft.com/library/jj134102(v=ws.10).aspx)를 참조하세요.
 
 ## <a name="audience"></a>대상 그룹
 
@@ -87,7 +87,6 @@ BHOLD Suite SP1과 FIM 포털이 단일 서버에 함께 설치되면 BHOLD 및 
 - 실제 디스크 수준에서 데이터 파일로부터 로그 파일을 격리합니다.
 - 스토리지 중복성을 제공하기 위해 RAID를 사용하는 경우 RAID 수준 10(1+0)을 사용합니다. RAID 수준 5를 사용하지 마십시오.
 - SQL Server를 실행하는 서버에 2GB 이상의 실제 메모리를 사용하는 경우 올바른 설정을 구성해야 합니다.
-- 최적의 BHOLD 성능을 위해 Microsoft SQL Server 2008 R2 이상을 사용합니다.
 
 SQL Server 모범 사례에 대한 자세한 내용은 Microsoft TechNet 라이브러리에서 [스토리지 관련 상위 10가지 모범 사례](https://www.microsoft.com/technet/prodtechnol/sql/bestpractice/storage-top-10.mspx)를 참조하세요.
 
