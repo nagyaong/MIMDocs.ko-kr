@@ -6,17 +6,17 @@ author: billmath
 ms.author: billmath
 manager: mtillman
 ms.date: 04/26/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: a0fa1e837fd73872043748ee73f19a29d1d1412f
-ms.sourcegitcommit: 3b514aba69af203f176b40cdb7c2a51c477c944a
+ms.openlocfilehash: 7348507593426ba112feef9d68686ee493a6391d
+ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51718325"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701404"
 ---
 # <a name="set-up-an-identity-management-server-windows-server-2016"></a>ID 관리 서버 설정: Windows Server 2016
 
@@ -54,7 +54,7 @@ ms.locfileid: "51718325"
 
     잠시 후 "컴퓨터 정책 업데이트가 완료되었습니다."라는 메시지와 함께 완료됩니다.
 
-6. **웹 서버(IIS)** 및 **응용 프로그램 서버** 역할, **.NET Framework** 3.5, 4.0 및 4.5 기능, Windows PowerShell용 **Active Directory** 모듈을 추가합니다.
+6. **웹 서버(IIS)** 및 **애플리케이션 서버** 역할, **.NET Framework** 3.5, 4.0 및 4.5 기능, Windows PowerShell용 **Active Directory** 모듈을 추가합니다.
 
     ![PowerShell 기능 이미지](media/MIM-DeployWS2.png)
 

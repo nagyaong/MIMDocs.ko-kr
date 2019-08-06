@@ -8,13 +8,12 @@ manager: mtillman
 ms.date: 11/05/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: security
-ms.openlocfilehash: 60d40a622475351efee846d8510373ecdc565a24
-ms.sourcegitcommit: 486f860f0951413aed335138eb6ad4ce6c50ed4d
+ms.openlocfilehash: e1419f7b7ae49ec56f4294051d8e094846ac2ed0
+ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56852632"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701448"
 ---
 # <a name="microsoft-identity-manager-2016-news-and-updates"></a>Microsoft Identity Manager 2016 뉴스 및 업데이트
 
@@ -34,7 +33,7 @@ Microsoft는 고객 요청 및 버그 수정에 대한 개선 사항을 비롯�
 
 ### <a name="major-new-and-updated-scenarios"></a>주요 새 시나리오 및 업데이트된 시나리오
 
-- [MIM Graph 커넥터 및 Azure 애플리케이션 프록시를 사용한 Azure AD B2B 공동 작업은 GA임](microsoft-identity-manager-2016-graph-b2b-scenario.md)(마지막 업데이트: 2018년 4월)
+- [MIM Graph 커넥터 및 Azure 애플리케이션 프록시를 사용한 Azure AD B2B 협업은 GA임](microsoft-identity-manager-2016-graph-b2b-scenario.md)(마지막 업데이트: 2018년 4월)
 - [하이브리드 MIM 보고가 일반 공급됨](https://cloudblogs.microsoft.com/enterprisemobility/2018/02/23/hybrid-mim-reporting-now-available-in-azure-active-directory/)(마지막 업데이트: 2018년 2월)
 - [MIM의 더 이상 사용되지 않는 기능 목록이 수정됨](microsoft-identity-manager-2016-deprecated-features.md)(마지막 업데이트: 2018년 2월)
 

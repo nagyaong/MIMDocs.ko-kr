@@ -3,21 +3,20 @@ title: Microsoft Identity Manager 라이선스 및 다운로드 | Microsoft Docs
 description: 이 문서에서는 소프트웨어를 다운로드할 위치에 대한 포인터가 포함된 MIM(Microsoft Identity Manager) 2016 라이선스에 대한 방법을 간략하게 설명합니다.
 keywords: ''
 author: markwahl-msft
-ms.author: markwahl-msft
+ms.author: mwahl
 manager: femila
 ms.date: 02/25/2019
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.reviewer: billmath
 ms.suite: ems
-ms.openlocfilehash: 7c5ab987801c63dca2457025442a35560dca3b86
-ms.sourcegitcommit: 225fca802d6b59bdc98d50020b297eb6393f70eb
+ms.openlocfilehash: f8c2ec9c0fbdf797acca4a699fec6d358b63f5c8
+ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "64518744"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701435"
 ---
 # <a name="microsoft-identity-manager-2016-licensing-and-downloads"></a>Microsoft Identity Manager 2016 라이선스 및 다운로드
 
