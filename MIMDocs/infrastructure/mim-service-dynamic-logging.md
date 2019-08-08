@@ -6,16 +6,17 @@ ms.author: billmath
 manager: mtillman
 ms.date: 10/29/2018
 ms.topic: article
-ms.openlocfilehash: e5d8bcc640ad77b71a515b13bcb3bcf6985654f5
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.prod: microsoft-identity-manager
+ms.openlocfilehash: 90ef2ab63be3914d1d48c7319821177e7e62f9e0
+ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50380088"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701309"
 ---
 # <a name="mim-sp1-4414360--service-dynamic-logging"></a>MIM SP1(4.4.1436.0) 서비스 동적 로깅
 
-4.4.1436.0에서는 새로운 로깅 기능을 도입했습니다. 이 기능을 사용하면 관리자와 지원 엔지니어가 관리 서비스를 다시 시작하지 않고도 로깅을 설정할 수 있습니다.
+4\.4.1436.0에서는 새로운 로깅 기능을 도입했습니다. 이 기능을 사용하면 관리자와 지원 엔지니어가 관리 서비스를 다시 시작하지 않고도 로깅을 설정할 수 있습니다.
 
 설치하면 호출되는 Microsoft.ResourceManagement.Service.exe.config에서 다음과 같은 새 줄이 표시됩니다.
 
@@ -30,7 +31,7 @@ ms.locfileid: "50380088"
 - Critical = 기본 수준 서비스에서 중요한 이벤트만 기록합니다.
 - 줄 8(dynamicLogging mode="true" loggingLevel="Critical")을 기본 설정 로깅 값으로 업데이트
 
-줄 266에 있는 동적 로깅 구성: Microsoft.ResourceManagement.Service.exe.config
+266줄에 있는 동적 로깅 구성: Microsoft.ResourceManagement.Service.exe.config
 
 ![사용할 수 있는 다양한 로깅 영역이 포함된 줄을 보여 주는 강조 표시된 섹션](media/mim-service-dynamic-logging/screen02.png)
 

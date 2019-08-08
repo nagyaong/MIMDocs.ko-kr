@@ -6,16 +6,16 @@ author: billmath
 ms.author: billmath
 manager: mtillman
 ms.date: 12/02/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.suite: ems
-ms.openlocfilehash: f75eb69360852c9f629b60d4900638c8b51e068a
-ms.sourcegitcommit: 9e420840815adb133ac014a8694de9af4d307815
+ms.openlocfilehash: 6f861c5b1984de70a91edcac89276402f289e355
+ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52825793"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701490"
 ---
 # <a name="microsoft-identity-manager-data-handling"></a>Microsoft Identity Manager 데이터 처리 
 
@@ -167,17 +167,17 @@ CM에서 사용자를 제거하려면 Active Directory에서 사용자를 삭제
 이전 빌드 FIM/MIM은 각 배포에 대한 익명화된 원격 분석을 수집하고 이 데이터를 HTTPS를 통해 Microsoft 서버로 전송하는 데 사용되었습니다. 이 데이터는 이전에는 Microsoft에서 향후 버전의 FIM/MIM을 개선하는 데 사용되었습니다.
 
 >[!Note] 
-> 4.5.x.x 이상 데이터 컬렉션의 이후 릴리스는 사용할 수 없습니다.
+> 4\.5.x.x 이상 데이터 컬렉션의 이후 릴리스는 사용할 수 없습니다.
 
 이전 버전의 데이터 컬렉션을 사용하지 않으려면 변경 모드를 실행하고 다음 프롬프트를 선택 취소합니다.
 
 ![mim-privacy-compliance-ceip.PNG](media/mim-privacy-compliance/mim-privacy-compliance-ceip.PNG)
 
-또는 레지스트리를 편집하고 값을 0으로 설정: (구성 요소)CEIP HKLM\SOFTWARE\Microsoft\Forefront Identity Manager\2010
+또는 레지스트리를 편집하고 값을 0으로 설정합니다. (구성 요소)CEIP HKLM\SOFTWARE\Microsoft\Forefront Identity Manager\2010
 
 ![mim-privacy-compliance-ceip2.PNG](media/mim-privacy-compliance/mim-privacy-compliance-ceip2.PNG)
 
 ## <a name="next-steps"></a>다음 단계 
 - [SQL 관련 개인 정보 취급 방침 관련 지침](https://docs.microsoft.com/sql/relational-databases/security/microsoft-sql-and-the-gdpr-requirements?view=sql-server-2017)
 - [Service Trust Portal의 GDPR 섹션](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
-- [FIM 2010 Archive: Ramp Up - Implementing Forefront Identity Manager 2010](https://social.technet.microsoft.com/wiki/contents/articles/35789.fim-2010-archive-ramp-up-implementing-forefront-identity-manager-2010.aspx)(FIM 2010 보관: 확장 - Forefront Identity Manager 2010 구현)
+- [FIM 2010 보관: 확장 - Forefront Identity Manager 2010 구현](https://social.technet.microsoft.com/wiki/contents/articles/35789.fim-2010-archive-ramp-up-implementing-forefront-identity-manager-2010.aspx)

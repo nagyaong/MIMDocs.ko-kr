@@ -6,17 +6,17 @@ author: billmath
 ms.author: billmath
 manager: mtillman
 ms.date: 10/12/2017
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 75935513ccb4ec3ebc089f9c5aad1d1624789a13
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 69698721b0fbabc78cf5bb4c1032ab8fc2613772
+ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358825"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701208"
 ---
 # <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>MIM 2016 설치: Active Directory와 MIM 서비스 동기화
 
@@ -55,7 +55,7 @@ MIM 관리 에이전트를 구성할 때 사용자 계정을 지정해야 합니
 
     -   서버: localhost
 
-    -   데이터베이스 FIMService
+    -   데이터베이스: FIMService
 
     -   MIM 서비스 기본 주소: http://localhost:5725
 
@@ -306,7 +306,7 @@ AD 사용자 인바운드 동기화 규칙을 만들려면
 4. **일반** 탭에서 다음 정보를 입력한 후 **다음**을 클릭합니다.
 
     -   표시 이름: AD 사용자 인바운드 동기화 규칙
-    -   데이터 흐름 방향: 인바운드
+    -   Data Flow 방향: 인바운드
 
 5. **범위** 탭에서 다음 정보를 입력하고 **다음**을 클릭합니다.
 
