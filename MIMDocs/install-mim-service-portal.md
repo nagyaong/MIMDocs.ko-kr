@@ -6,17 +6,17 @@ author: billmath
 ms.author: billmath
 manager: mtillman
 ms.date: 04/30/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: fc70a0edb610fcb862d85902dd5e611e65f6e689
-ms.sourcegitcommit: 9e420840815adb133ac014a8694de9af4d307815
+ms.openlocfilehash: ca2a9a4a646387b044e3a504c19eae904b2a6be1
+ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52825810"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701278"
 ---
 # <a name="install-mim-2016-mim-service-and-portal"></a>MIM 2016 설치: MIM 서비스 및 포털
 
@@ -116,7 +116,7 @@ ms.locfileid: "52825810"
 
     1.  Internet Explorer를 사용하여 **MIM 포털**에서 **관리 정책 규칙**을 클릭합니다.
 
-    2.  관리 정책 규칙 **사용자 관리: 사용자가 자체 특성을 읽을 수 있음**을 검색합니다.
+    2.  관리 정책 규칙인 **사용자 관리를 검색합니다. 사용자는 자신의 속성을 읽을 수 있습니다.**
 
     3.  이 관리 정책 규칙을 선택하고 **정책 사용 안 함**을 선택 취소합니다.
 
@@ -143,7 +143,7 @@ ms.locfileid: "52825810"
     7.  **제어판**을 닫습니다.
 
 > [!NOTE]
-> 선택 사항: 이제 MIM 추가 기능 및 확장을 설치할 수 있습니다.
+> 옵션: 이제 MIM 추가 기능 및 확장을 설치할 수 있습니다.
 > 
 > [!div class="step-by-step"]  
 > [« MIM 동기화 서비스](install-mim-sync.md)
