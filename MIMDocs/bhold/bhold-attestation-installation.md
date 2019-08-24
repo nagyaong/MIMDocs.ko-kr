@@ -18,7 +18,7 @@ ms.locfileid: "49358111"
 ---
 # <a name="bhold-attestation-installation"></a>BHOLD Attestation 설치
 
-BHOLD Attestation 모듈을 사용하면 검토자를 지정하고 사용자 간에 관계 및 응용 프로그램별 사용 권한과 계정의 되풀이 검토를 수행할 수 있습니다.
+BHOLD Attestation 모듈을 사용하면 검토자를 지정하고 사용자 간에 관계 및 애플리케이션별 사용 권한과 계정의 되풀이 검토를 수행할 수 있습니다.
 
 ## <a name="bhold-attestation-installation-requirements"></a>BHOLD Attestation 설치 요구 사항
 
